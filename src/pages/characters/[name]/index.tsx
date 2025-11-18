@@ -67,36 +67,6 @@ const CharacterAbout = () => {
       ) : (
         <Container>
           <Header color={data.colorPalette[0]}>
-            <span
-              style={{
-                position: "absolute",
-                left: 100,
-                fontSize: 60,
-                color: previousCharacterId
-                  ? "white"
-                  : "rgb(from white r g b / 0.5)",
-                transform: "scale(1.5, 1)",
-                cursor: previousCharacterId ? "pointer" : "default",
-              }}
-              onClick={handlePrevious}
-            >
-              {"◀"}
-            </span>
-            <span
-              style={{
-                position: "absolute",
-                right: 100,
-                fontSize: 60,
-                color: nextCharacterId
-                  ? "white"
-                  : "rgb(from white r g b / 0.5)",
-                transform: "scale(1.5, 1)",
-                cursor: nextCharacterId ? "pointer" : "default",
-              }}
-              onClick={handleNext}
-            >
-              {"▶"}
-            </span>
             <BoardContainer>
               <NameBoard
                 name={data.name}
@@ -104,7 +74,144 @@ const CharacterAbout = () => {
                 color={data.colorPalette[0]}
               />
             </BoardContainer>
+            <div
+              style={{
+                display: "flex",
+                height: "100%",
+                justifyContent: "center",
+                alignItems: "center",
+                gap: 920,
+              }}
+            >
+              <span
+                style={{
+                  fontSize: 60,
+                  color: previousCharacterId
+                    ? "white"
+                    : "rgb(from white r g b / 0.5)",
+                  cursor: previousCharacterId ? "pointer" : "default",
+                  transform: "scale(1.7, 1)",
+                }}
+                onClick={handlePrevious}
+              >
+                {"◀"}
+              </span>
+              <span
+                style={{
+                  fontSize: 60,
+                  color: nextCharacterId
+                    ? "white"
+                    : "rgb(from white r g b / 0.5)",
+                  transform: "scale(1.7, 1)",
+                  cursor: nextCharacterId ? "pointer" : "default",
+                }}
+                onClick={handleNext}
+              >
+                {"▶"}
+              </span>
+            </div>
           </Header>
+          <div style={{ width: "100%", height: "620px", position: "relative" }}>
+            <img
+              src={data.backgroundUrl}
+              style={{
+                position: "absolute",
+                objectFit: "cover",
+                width: "100%",
+                height: "100%",
+                zIndex: "-1",
+              }}
+            />
+            <div
+              style={{
+                maxWidth: "1200px",
+                height: "100%",
+                margin: "auto",
+                display: "flex",
+                position: "relative",
+              }}
+            >
+              <div
+                style={{
+                  backgroundColor: "white",
+                  border: "10px solid #707070",
+                  borderRadius: "20px",
+                  width: 608,
+                  height: 320,
+                  marginTop: 108,
+                  padding: 54,
+                }}
+              >
+                <h3 style={{ margin: 0, fontSize: "48px", lineHeight: 0.8 }}>
+                  プロフィール
+                </h3>
+                <div style={{ display: "flex" }}>
+                  <div
+                    style={{
+                      paddingTop: 40,
+                      paddingRight: 40,
+                      lineHeight: 1.8,
+                      whiteSpace: "pre-wrap",
+                      fontSize: 12,
+                    }}
+                  >
+                    {data.profile.description}
+                  </div>
+                  <div
+                    style={{
+                      flexShrink: 0,
+                      display: "flex",
+                      gap: 4,
+                      flexDirection: "column",
+                      fontFamily: "'Noto Sans JP'",
+                      fontWeight: 300,
+                    }}
+                  >
+                    {Object.entries(data.profile).map(([key, profileData]) => {
+                      return (
+                        key !== "description" && (
+                          <div
+                            style={{
+                              display: "flex",
+                              alignItems: "center",
+                              gap: 12,
+                              fontSize: 18,
+                            }}
+                          >
+                            <div
+                              style={{
+                                width: 100,
+                                height: 36,
+                                backgroundColor: data.colorPalette[0],
+                                display: "flex",
+                                justifyContent: "center",
+                                alignItems: "center",
+                                color: "white",
+                                fontSize: 12,
+                              }}
+                            >
+                              {key.toUpperCase()}
+                            </div>
+                            {profileData}
+                          </div>
+                        )
+                      );
+                    })}
+                  </div>
+                </div>
+              </div>
+              <img
+                style={{
+                  position: "absolute",
+                  bottom: -160,
+                  height: "130%",
+                  right: 0,
+                  zIndex: 1000,
+                }}
+                src={data.spritesUrl[0]}
+              />
+            </div>
+          </div>
         </Container>
       )}
     </>

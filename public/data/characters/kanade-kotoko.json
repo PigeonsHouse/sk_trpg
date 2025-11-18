@@ -2,11 +2,12 @@
   "index": 1,
   "name": "奏 琴子",
   "enName": "KANADE KOTOKO",
-  "thumbnailUrl": "https://image.iaproject.app/e9d14d6e-d91a-4015-8a0a-e8ae8d4ca567",
+  "thumbnailUrl": "/images/kotoko.png",
   "colorPalette": ["#1B29A4", "#9398B2", "#ECF222"],
   "iconUrl": "",
+  "backgroundUrl": "https://user0514.cdnw.net/shared/img/thumb/PK-sc02-IMGP6388-h_TP_V.jpg",
   "profile": {
-    "description": "絵に描いたような好青年。常に笑顔を絶やさず、相手への気遣いを欠かさない。\n職業は指揮者\n音楽家の家庭に生まれ、幼少期から音楽に囲まれた生活を送ってきた。\nあらゆる楽器に触れてきたが、大学で指揮者としての才能が開花する",
+    "description": "バンドのピアノ担当。小さく体も弱いが、性格は明るく太陽のような笑顔で皆を照らす。\n福岡の方言が出ることがある。\n知的好奇心が強く勉強が好き。人々が歩んできた歴史に興味があり文系を選択。\n\n音楽の名家である奏家に生まれたが、虚弱体質な上に音楽の才には恵まれず親戚の大人達からは見放されている。\nしかし、彼女自身は音楽というものを強く愛しており、高校では軽音部に入った。\n\nQ. なぜ吹奏楽部ではなく軽音部？\n「うーん...。なんでやろうね？\n　吹部も見に行ったんやけど、なんかちがかったんよね。\n　軽音、おもろいやん！」",
     "age": "17",
     "sex": "女性",
     "height": "147cm",
@@ -15,29 +16,26 @@
     "like": "？？？",
     "hobby": "？？？"
   },
-  "spritesUrl": {
-    "big": [
-      "https://image.iaproject.app/e9d14d6e-d91a-4015-8a0a-e8ae8d4ca567",
-      "https://image.iaproject.app/e9d14d6e-d91a-4015-8a0a-e8ae8d4ca567"
-    ]
-  },
-  "status": {
-    "type": "CoC6版",
-    "STR": 8,
-    "CON": 10,
-    "POW": 14,
-    "DEX": 9,
-    "APP": 12,
-    "INT": 13,
-    "EDU": 16,
-    "SAN": 70,
-    "HP": 10,
-    "MP": 14,
-    "DB": "-",
-    "LUCK": 70,
-    "IDEA": 65,
-    "KNOWLEDGE": 80
-  },
+  "spritesUrl": ["/images/kotoko.png", "/images/kotoko.png"],
+  "status": [
+    {
+      "type": "CoC6版",
+      "STR": 8,
+      "CON": 10,
+      "POW": 14,
+      "DEX": 9,
+      "APP": 12,
+      "INT": 13,
+      "EDU": 16,
+      "SAN": 70,
+      "HP": 10,
+      "MP": 14,
+      "DB": "-",
+      "LUCK": 70,
+      "IDEA": 65,
+      "KNOWLEDGE": 80
+    }
+  ],
   "skills": {
     "回避": 25,
     "聞き耳": 73
@@ -49,12 +47,12 @@
       "companions": [
         {
           "name": "守 惑",
-          "en-name": "SHU YOU",
+          "enName": "SHU YOU",
           "iconUrl": ""
         },
         {
           "name": "守 惑",
-          "en-name": "SHU YOU",
+          "enName": "SHU YOU",
           "iconUrl": ""
         }
       ]

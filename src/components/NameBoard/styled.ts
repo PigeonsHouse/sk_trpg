@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 
 export const BoardContainer = styled.div`
   display: inline-block;
-  min-width: 600px;
+  width: 600px;
   height: 176px;
   text-align: center;
   background-color: white;
@@ -13,6 +13,7 @@ export const BoardContainer = styled.div`
   justify-content: space-between;
   padding: 20px;
   box-sizing: border-box;
+  z-index: 1;
 `;
 
 export const NameContainer = styled.div`
@@ -20,13 +21,15 @@ export const NameContainer = styled.div`
   flex-direction: column;
 `;
 
-export const CharacterName = styled.span`
-  line-height: 1.1;
-  font-size: 64px;
+export const CharacterName = styled.span<{ size?: "sm" | "md" | "lg" }>`
+  line-height: 72px;
   font-weight: 500;
   font-family: YuGothic;
-  letter-spacing: 4px;
   white-space: nowrap;
+  font-size: ${(props) =>
+    props.size === "md" ? 52 : props.size === "sm" ? 48 : 64}px;
+  letter-spacing: ${(props) =>
+    props.size === "md" ? -8 : props.size === "sm" ? -6 : 4}px;
 `;
 
 export const EnCharacterName = styled.span`

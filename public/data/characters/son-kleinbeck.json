@@ -1,12 +1,13 @@
 {
   "index": 2,
-  "name": "ソーン・クラインベック",
+  "name": "ソーン･クラインベック",
   "enName": "SON KLEINBECK",
-  "thumbnailUrl": "https://image.iaproject.app/e9d14d6e-d91a-4015-8a0a-e8ae8d4ca567",
+  "thumbnailUrl": "https://image.iaproject.app/93301d96-9806-40e6-8364-fa406e08280b",
   "colorPalette": ["#FF0A0A", "#F1F1F1", "#F5ED00"],
   "iconUrl": "",
+  "backgroundUrl": "https://sakuranouta.biz/wp-content/uploads/2023/10/%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84%E3%81%AE%E9%83%A8%E5%B1%8B_6_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89-1-1024x576.jpg",
   "profile": {
-    "description": "絵に描いたような好青年。常に笑顔を絶やさず、相手への気遣いを欠かさない。\n職業は指揮者\n音楽家の家庭に生まれ、幼少期から音楽に囲まれた生活を送ってきた。\nあらゆる楽器に触れてきたが、大学で指揮者としての才能が開花する",
+    "description": "3年、アルテナス寮の寮長を務めている。\n自信家で傲慢、しかしどこか人を従えさせてしまうだけのカリスマ性がある。\nそのことにも自覚があるのか、自分がこの世界の王になると語っている。\n\n「俺はこの世界の王になる男だからな！安心して付いてくるが良いぞ！」\n\n傲慢ゆえに時に無神経な発言も見受けられるが、当人としてはあくまで事実を述べているという認識である。\nだが、人情がないわけではないため、人の努力や考えを無下にはしない。\n\n「何、俺に負けて悔しいのか？それはお前の実力不足だな！\n　だが、筋は良い。ほれ、魔力の扱い方を見てやるからもう一度やってみろ。」\n\n◆バックグラウンド\n魔法族の父と非魔法族の母の間に生まれたデュアル。\n愛情深く育てられたため、自分に対して強い自信がある。\nそのため、混血であることに対しても気にしていないどころか、むしろ誇りに思っている節がある。\n\n「魔法族と非魔法族との間に生まれた俺には魔法の才が与えられた。\n　それは、俺は魔法を扱うべくして生まれたということではないか？\n　つまり、俺にこの力で世界の王に成れと神が言っているのだな！」\n\n音楽に精通しているのは音楽家の母の影響。",
     "age": "25",
     "sex": "男性",
     "height": "171cm",
@@ -15,29 +16,29 @@
     "like": "？？？",
     "hobby": "？？？"
   },
-  "spritesUrl": {
-    "big": [
-      "https://image.iaproject.app/e9d14d6e-d91a-4015-8a0a-e8ae8d4ca567",
-      "https://image.iaproject.app/e9d14d6e-d91a-4015-8a0a-e8ae8d4ca567"
-    ]
-  },
-  "status": {
-    "type": "CoC6版",
-    "STR": 8,
-    "CON": 10,
-    "POW": 14,
-    "DEX": 9,
-    "APP": 12,
-    "INT": 13,
-    "EDU": 16,
-    "SAN": 70,
-    "HP": 10,
-    "MP": 14,
-    "DB": "-",
-    "LUCK": 70,
-    "IDEA": 65,
-    "KNOWLEDGE": 80
-  },
+  "spritesUrl": [
+    "https://image.iaproject.app/93301d96-9806-40e6-8364-fa406e08280b",
+    "https://image.iaproject.app/93301d96-9806-40e6-8364-fa406e08280b"
+  ],
+  "status": [
+    {
+      "type": "CoC6版",
+      "STR": 8,
+      "CON": 10,
+      "POW": 14,
+      "DEX": 9,
+      "APP": 12,
+      "INT": 13,
+      "EDU": 16,
+      "SAN": 70,
+      "HP": 10,
+      "MP": 14,
+      "DB": "-",
+      "LUCK": 70,
+      "IDEA": 65,
+      "KNOWLEDGE": 80
+    }
+  ],
   "skills": {
     "回避": 25,
     "聞き耳": 73
@@ -49,12 +50,12 @@
       "companions": [
         {
           "name": "守 惑",
-          "en-name": "SHU YOU",
+          "enName": "SHU YOU",
           "iconUrl": ""
         },
         {
           "name": "守 惑",
-          "en-name": "SHU YOU",
+          "enName": "SHU YOU",
           "iconUrl": ""
         }
       ]

@@ -5,8 +5,9 @@
   "thumbnailUrl": "https://image.iaproject.app/e9d14d6e-d91a-4015-8a0a-e8ae8d4ca567",
   "colorPalette": ["#8A809E", "#95B2CC", "#FFDE00"],
   "iconUrl": "",
+  "backgroundUrl": "https://user0514.cdnw.net/shared/img/thumb/073Kazuki17103_TP_V.jpg",
   "profile": {
-    "description": "絵に描いたような好青年。常に笑顔を絶やさず、相手への気遣いを欠かさない。\n職業は指揮者\n音楽家の家庭に生まれ、幼少期から音楽に囲まれた生活を送ってきた。\nあらゆる楽器に触れてきたが、大学で指揮者としての才能が開花する",
+    "description": "絵に描いたような好青年。常に笑顔を絶やさず、相手への気遣いを欠かさない。\n職業は指揮者。\n音楽家の家庭に生まれ、幼少期から音楽に囲まれた生活を送ってきた。あらゆる楽器に触れてきたが、大学で指揮者としての才能が開花する。高い能力が評価され、近年では国内外での活躍が増えている。\n超論理型で、高いコミュニケーション能力と論理的思考で楽団を取り纏める。",
     "age": "25",
     "sex": "男性",
     "height": "171cm",
@@ -15,29 +16,29 @@
     "like": "？？？",
     "hobby": "？？？"
   },
-  "spritesUrl": {
-    "big": [
-      "https://image.iaproject.app/e9d14d6e-d91a-4015-8a0a-e8ae8d4ca567",
-      "https://image.iaproject.app/e9d14d6e-d91a-4015-8a0a-e8ae8d4ca567"
-    ]
-  },
-  "status": {
-    "type": "CoC6版",
-    "STR": 8,
-    "CON": 10,
-    "POW": 14,
-    "DEX": 9,
-    "APP": 12,
-    "INT": 13,
-    "EDU": 16,
-    "SAN": 70,
-    "HP": 10,
-    "MP": 14,
-    "DB": "-",
-    "LUCK": 70,
-    "IDEA": 65,
-    "KNOWLEDGE": 80
-  },
+  "spritesUrl": [
+    "https://image.iaproject.app/e9d14d6e-d91a-4015-8a0a-e8ae8d4ca567",
+    "https://image.iaproject.app/e9d14d6e-d91a-4015-8a0a-e8ae8d4ca567"
+  ],
+  "status": [
+    {
+      "type": "CoC6版",
+      "STR": 8,
+      "CON": 10,
+      "POW": 14,
+      "DEX": 9,
+      "APP": 12,
+      "INT": 13,
+      "EDU": 16,
+      "SAN": 70,
+      "HP": 10,
+      "MP": 14,
+      "DB": "-",
+      "LUCK": 70,
+      "IDEA": 65,
+      "KNOWLEDGE": 80
+    }
+  ],
   "skills": {
     "回避": 25,
     "聞き耳": 73
@@ -49,12 +50,12 @@
       "companions": [
         {
           "name": "守 惑",
-          "en-name": "SHU YOU",
+          "enName": "SHU YOU",
           "iconUrl": ""
         },
         {
           "name": "守 惑",
-          "en-name": "SHU YOU",
+          "enName": "SHU YOU",
           "iconUrl": ""
         }
       ]

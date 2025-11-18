@@ -3,6 +3,7 @@ export type CharacterSummary = {
   name: string;
   enName: string;
   thumbnailUrl: string;
+  backgroundUrl: string;
   color: string;
 };
 
@@ -27,11 +28,12 @@ type Coc6Status = {
 type Status = Coc6Status;
 
 export type CharacterDetail = {
-  name: string;
+  name: string; // ここには全角文字しか含まれない
   enName: string;
   thumbnailUrl: string;
   colorPalette: string[];
   iconUrl: string;
+  backgroundUrl: string;
   profile: {
     description: string;
     age: string;
@@ -42,10 +44,8 @@ export type CharacterDetail = {
     like: string;
     hobby: string;
   };
-  spritesUrl: {
-    big: string[];
-  };
-  status: Status;
+  spritesUrl: string[];
+  status: Status[];
   skills: {
     [skill: string]: number;
   };

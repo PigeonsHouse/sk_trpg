@@ -28,9 +28,18 @@ const Characters = () => {
                     boxShadow: "0 4px 20px #666",
                     borderRadius: 4,
                     overflow: "hidden",
-                    backgroundColor: `rgb(from ${data.color} r g b / 0.3)`,
+                    // backgroundColor: `rgb(from ${data.color} r g b / 0.3)`,
+                    backgroundImage: `url(${data.backgroundUrl})`,
                   }}
                 >
+                  <div
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      backgroundColor: data.color,
+                      opacity: 0.3,
+                    }}
+                  />
                   <div
                     style={{
                       position: "absolute",

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useMemo } from "react";
 import {
   Bar,
   BoardContainer,
@@ -18,10 +18,22 @@ export const NameBoard: React.FC<NameBoardProps> = ({
   enName,
   color,
 }) => {
+  const size = useMemo(() => {
+    if (name.length < 8) {
+      return "lg";
+    }
+    if (name.length < 12) {
+      return "md";
+    }
+    return "sm";
+  }, [name]);
+
+  console.log(size);
+
   return (
     <BoardContainer>
       <NameContainer>
-        <CharacterName>{name}</CharacterName>
+        <CharacterName size={size}>{name}</CharacterName>
         <EnCharacterName>{enName}</EnCharacterName>
       </NameContainer>
       <Bar color={color} />
