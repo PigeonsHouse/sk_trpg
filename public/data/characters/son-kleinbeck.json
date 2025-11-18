@@ -1,0 +1,91 @@
+{
+  "index": 2,
+  "name": "ソーン・クラインベック",
+  "enName": "SON KLEINBECK",
+  "thumbnailUrl": "https://image.iaproject.app/e9d14d6e-d91a-4015-8a0a-e8ae8d4ca567",
+  "colorPalette": ["#FF0A0A", "#F1F1F1", "#F5ED00"],
+  "iconUrl": "",
+  "profile": {
+    "description": "絵に描いたような好青年。常に笑顔を絶やさず、相手への気遣いを欠かさない。\n職業は指揮者\n音楽家の家庭に生まれ、幼少期から音楽に囲まれた生活を送ってきた。\nあらゆる楽器に触れてきたが、大学で指揮者としての才能が開花する",
+    "age": "25",
+    "sex": "男性",
+    "height": "171cm",
+    "weight": "55kg",
+    "job": "指揮者",
+    "like": "？？？",
+    "hobby": "？？？"
+  },
+  "spritesUrl": {
+    "big": [
+      "https://image.iaproject.app/e9d14d6e-d91a-4015-8a0a-e8ae8d4ca567",
+      "https://image.iaproject.app/e9d14d6e-d91a-4015-8a0a-e8ae8d4ca567"
+    ]
+  },
+  "status": {
+    "type": "CoC6版",
+    "STR": 8,
+    "CON": 10,
+    "POW": 14,
+    "DEX": 9,
+    "APP": 12,
+    "INT": 13,
+    "EDU": 16,
+    "SAN": 70,
+    "HP": 10,
+    "MP": 14,
+    "DB": "-",
+    "LUCK": 70,
+    "IDEA": 65,
+    "KNOWLEDGE": 80
+  },
+  "skills": {
+    "回避": 25,
+    "聞き耳": 73
+  },
+  "history": [
+    {
+      "title": "星の神話、エンドロール",
+      "comment": "ほんの数日にいろんなことがあったね。",
+      "companions": [
+        {
+          "name": "守 惑",
+          "en-name": "SHU YOU",
+          "iconUrl": ""
+        },
+        {
+          "name": "守 惑",
+          "en-name": "SHU YOU",
+          "iconUrl": ""
+        }
+      ]
+    },
+    {
+      "title": "星の神話、エンドロール",
+      "comment": "ほんの数日にいろんなことがあったね。",
+      "companions": [
+        {
+          "name": "守 惑",
+          "enName": "SHU YOU",
+          "iconUrl": ""
+        },
+        {
+          "name": "守 惑",
+          "enName": "SHU YOU",
+          "iconUrl": ""
+        }
+      ]
+    }
+  ],
+  "qa": [
+    {
+      "question": "",
+      "answer": ""
+    },
+    {
+      "question": "",
+      "answer": ""
+    }
+  ],
+  "comment": "自由記述",
+  "artGallery": [""]
+}

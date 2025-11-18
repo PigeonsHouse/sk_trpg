@@ -1,0 +1,23 @@
+[
+  {
+    "id": "kanade-shirabe",
+    "name": "奏 調",
+    "enName": "KANADE SHIRABE",
+    "thumbnailUrl": "https://image.iaproject.app/e9d14d6e-d91a-4015-8a0a-e8ae8d4ca567",
+    "color": "#8A809E"
+  },
+  {
+    "id": "kanade-kotoko",
+    "name": "奏 琴子",
+    "enName": "KANADE KOTOKO",
+    "thumbnailUrl": "https://image.iaproject.app/e9d14d6e-d91a-4015-8a0a-e8ae8d4ca567",
+    "color": "#1B29A4"
+  },
+  {
+    "id": "son-kleinbeck",
+    "name": "ソーン・クラインベック",
+    "enName": "SON KLEINBECK",
+    "thumbnailUrl": "https://image.iaproject.app/e9d14d6e-d91a-4015-8a0a-e8ae8d4ca567",
+    "color": "#FF0A0A"
+  }
+]
