@@ -201,7 +201,7 @@ const CharacterAbout = () => {
               />
             </div>
           </div>
-          <div style={{ height: 4000 }} />
+          <div style={{ height: 800 }} />
         </Container>
       )}
     </>
