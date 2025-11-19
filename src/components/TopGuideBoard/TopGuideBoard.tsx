@@ -11,10 +11,15 @@ import {
   TopLabel,
 } from "./styled";
 import { RiArrowLeftUpLine } from "react-icons/ri";
+import type React from "react";
 
-export const TopGuideBoard = () => {
+type TopGuideBoardProps = {
+  className?: string;
+};
+
+export const TopGuideBoard: React.FC<TopGuideBoardProps> = ({ className }) => {
   return (
-    <Container>
+    <Container className={className}>
       <Link to="/" className={NoDecorationLinkStyle}>
         <TopContainer>
           <RiArrowLeftUpLine size={80} />

@@ -8,12 +8,14 @@ import {
 } from "./styled";
 
 type NameBoardProps = {
+  className?: string;
   name: string;
   enName: string;
   color: string;
 };
 
 export const NameBoard: React.FC<NameBoardProps> = ({
+  className,
   name,
   enName,
   color,
@@ -29,7 +31,7 @@ export const NameBoard: React.FC<NameBoardProps> = ({
   }, [name]);
 
   return (
-    <BoardContainer>
+    <BoardContainer className={className}>
       <NameContainer>
         <CharacterName size={size}>{name}</CharacterName>
         <EnCharacterName>{enName}</EnCharacterName>

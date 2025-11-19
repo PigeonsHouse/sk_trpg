@@ -1,5 +1,11 @@
 import styled from "@emotion/styled";
 
+export const Container = styled.div`
+  position: sticky;
+  top: 0;
+  z-index: 10;
+`;
+
 export const Header = styled.div<{ color: string; isSmall?: boolean }>`
   background-color: ${(props) => props.color};
   position: relative;
@@ -47,4 +53,20 @@ export const EnCharacterName = styled.span`
   font-family: Impact;
   letter-spacing: 1px;
   color: white;
+`;
+
+export const ArrowContainer = styled.div`
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 920px;
+`;
+
+export const DesignedArrow = styled.span<{ isActive: boolean }>`
+  font-size: 60px;
+  transform: scale(1.7, 1);
+  color: ${(props) =>
+    props.isActive ? "white" : "rgb(from white r g b / 0.5)"};
+  cursor: ${(props) => (props.isActive ? "pointer" : "default")};
 `;

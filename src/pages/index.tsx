@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { TopGuideBoard } from "../components";
 import type { CharacterSummary } from "../types";
 import { Link } from "react-router";
+import { AppName } from "../definitions";
 
 const Top = () => {
   const [summary, setSummary] = useState<CharacterSummary[]>([]);
@@ -12,107 +13,110 @@ const Top = () => {
   }, []);
 
   return (
-    <div style={{ position: "relative", overflowX: "auto", height: "100vh" }}>
-      <div
-        style={{
-          display: "flex",
-          minWidth: "fit-content",
-          height: "100%",
-          backgroundImage: `repeating-linear-gradient(90deg, #ccc,#ccc 2px,transparent 1px,transparent 440px),
-            linear-gradient(0deg, transparent, transparent 150px, #ccc 151px, #ccc 151px, transparent 152px),
-            linear-gradient(0deg, transparent, transparent 340px, #ccc 341px, #ccc 341px, transparent 342px)`,
-        }}
-      >
+    <>
+      <title>{AppName}</title>
+      <div style={{ position: "relative", overflowX: "auto", height: "100vh" }}>
         <div
           style={{
             display: "flex",
-            paddingTop: 200,
-            paddingLeft: 48,
-            gap: 40,
-            alignItems: "flex-start",
+            minWidth: "fit-content",
+            height: "100%",
+            backgroundImage: `repeating-linear-gradient(90deg, #ccc,#ccc 2px,transparent 1px,transparent 440px),
+            linear-gradient(0deg, transparent, transparent 150px, #ccc 151px, #ccc 151px, transparent 152px),
+            linear-gradient(0deg, transparent, transparent 340px, #ccc 341px, #ccc 341px, transparent 342px)`,
           }}
         >
-          <TopGuideBoard />
-          {summary.map((character, i) => {
-            return (
-              <div
-                key={character.id}
-                style={
-                  i === summary.length - 1
-                    ? {
-                        marginRight: 320,
-                      }
-                    : {}
-                }
-              >
-                <Link
-                  to={`/characters/${character.id}`}
-                  style={{
-                    display: "inline-block",
-                    textDecoration: "none",
-                  }}
+          <div
+            style={{
+              display: "flex",
+              paddingTop: 200,
+              paddingLeft: 48,
+              gap: 40,
+              alignItems: "flex-start",
+            }}
+          >
+            <TopGuideBoard />
+            {summary.map((character, i) => {
+              return (
+                <div
+                  key={character.id}
+                  style={
+                    i === summary.length - 1
+                      ? {
+                          marginRight: 320,
+                        }
+                      : {}
+                  }
                 >
-                  <div
+                  <Link
+                    to={`/characters/${character.id}`}
                     style={{
-                      position: "relative",
-                      aspectRatio: 16 / 9,
-                      height: 560,
-                      boxShadow: "0 4px 20px #666",
-                      borderRadius: 4,
-                      overflow: "hidden",
-                      // backgroundColor: `rgb(from ${character.color} r g b / 0.3)`,
-                      backgroundImage: `url(${character.backgroundUrl})`,
+                      display: "inline-block",
+                      textDecoration: "none",
                     }}
                   >
                     <div
                       style={{
-                        width: "100%",
-                        height: "100%",
-                        backgroundColor: character.color,
-                        opacity: 0.3,
-                      }}
-                    />
-                    <div
-                      style={{
-                        position: "absolute",
-                        inset: 0,
+                        position: "relative",
+                        aspectRatio: 16 / 9,
+                        height: 560,
+                        boxShadow: "0 4px 20px #666",
+                        borderRadius: 4,
+                        overflow: "hidden",
+                        // backgroundColor: `rgb(from ${character.color} r g b / 0.3)`,
+                        backgroundImage: `url(${character.backgroundUrl})`,
                       }}
                     >
-                      <img
-                        src={character.thumbnailUrl}
+                      <div
                         style={{
-                          objectFit: "cover",
                           width: "100%",
                           height: "100%",
-                          objectPosition: "top",
-                          transform: "scale(1.2)",
+                          backgroundColor: character.color,
+                          opacity: 0.3,
                         }}
                       />
+                      <div
+                        style={{
+                          position: "absolute",
+                          inset: 0,
+                        }}
+                      >
+                        <img
+                          src={character.thumbnailUrl}
+                          style={{
+                            objectFit: "cover",
+                            width: "100%",
+                            height: "100%",
+                            objectPosition: "top",
+                            transform: "scale(1.2)",
+                          }}
+                        />
+                      </div>
+                      <div
+                        style={{
+                          position: "absolute",
+                          bottom: 0,
+                          color: "#333",
+                          fontWeight: "bold",
+                          fontSize: 24,
+                          width: "100%",
+                          padding: "16px 24px",
+                          boxSizing: "border-box",
+                          background: "linear-gradient(transparent, white)",
+                        }}
+                      >
+                        {character.name}{" "}
+                        <span style={{ fontSize: 12 }}>{character.enName}</span>
+                      </div>
                     </div>
-                    <div
-                      style={{
-                        position: "absolute",
-                        bottom: 0,
-                        color: "#333",
-                        fontWeight: "bold",
-                        fontSize: 24,
-                        width: "100%",
-                        padding: "16px 24px",
-                        boxSizing: "border-box",
-                        background: "linear-gradient(transparent, white)",
-                      }}
-                    >
-                      {character.name}{" "}
-                      <span style={{ fontSize: 12 }}>{character.enName}</span>
-                    </div>
-                  </div>
-                </Link>
-              </div>
-            );
-          })}
+                  </Link>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

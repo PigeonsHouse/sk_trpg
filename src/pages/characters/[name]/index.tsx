@@ -1,8 +1,23 @@
-import { useCallback, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+import { MdLocationPin } from "react-icons/md";
 import { useNavigate, useParams } from "react-router";
+import { CharacterHeader, ProfileFrame } from "../../../components";
 import type { CharacterDetail, CharacterSummary } from "../../../types";
-import { Container } from "./styled";
-import { CharacterHeader } from "../../../components";
+import {
+  CharacterHeaderContainer,
+  Container,
+  Loading,
+  ProfileMainContainer,
+  ProfileFrameStyle,
+  BackgroundImage,
+  ProfileContainer,
+  MainSpriteImage,
+  GradationBackground,
+  StatusMainContainer,
+  CostumeTitle,
+  CostumeTitleContainer,
+} from "./styled";
+import { AppName } from "../../../definitions";
 
 const CharacterAbout = () => {
   const navigate = useNavigate();
@@ -15,6 +30,8 @@ const CharacterAbout = () => {
   >();
   const [nextCharacterId, setNextCharacterId] = useState<string | undefined>();
 
+  const [displaySprite, setDisplaySprite] = useState<string | undefined>();
+
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}data/characters.json`)
       .then((res) => res.json())
@@ -26,6 +43,7 @@ const CharacterAbout = () => {
       .then((data) => {
         const castedData = data as CharacterDetail;
         setData(castedData);
+        setDisplaySprite(castedData.spritesUrl[0]);
 
         let prevId: string | undefined = undefined;
         let nextId: string | undefined = undefined;
@@ -46,18 +64,20 @@ const CharacterAbout = () => {
   }, [characterId, summary]);
 
   const isLoading = data === undefined;
-  const title = data ? `${data.name} - キャラクター` : "キャラクター";
+  const title = data
+    ? `${data.name} - ${AppName}`
+    : `キャラクター - ${AppName}`;
 
-  const handlePrevious = useCallback(() => {
-    if (previousCharacterId) {
-      navigate(`/characters/${previousCharacterId}`);
-    }
-  }, [previousCharacterId]);
-  const handleNext = useCallback(() => {
-    if (nextCharacterId) {
-      navigate(`/characters/${nextCharacterId}`);
-    }
-  }, [nextCharacterId]);
+  const handlePrevious = previousCharacterId
+    ? () => {
+        navigate(`/characters/${previousCharacterId}`);
+      }
+    : undefined;
+  const handleNext = nextCharacterId
+    ? () => {
+        navigate(`/characters/${nextCharacterId}`);
+      }
+    : undefined;
 
   const [isScroll, setIsScroll] = useState(false);
   useEffect(() => {
@@ -66,142 +86,47 @@ const CharacterAbout = () => {
     };
     window.addEventListener("scroll", callback);
     return () => window.removeEventListener("scroll", callback);
-  });
+  }, []);
 
   return (
     <>
       <title>{title}</title>
       {isLoading ? (
-        <div
-          style={{
-            height: "100vh",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            color: "gray",
-            fontSize: 40,
-          }}
-        >
-          isLoading...
-        </div>
+        <Loading>isLoading...</Loading>
       ) : (
         <Container>
-          <div
-            style={{ position: "fixed", left: 0, right: 0, top: 0, zIndex: 10 }}
-          >
+          <CharacterHeaderContainer>
             <CharacterHeader
               name={data.name}
               enName={data.enName}
               color={data.colorPalette[0]}
               isSmall={isScroll}
-              handlePrevious={previousCharacterId ? handlePrevious : undefined}
-              handleNext={nextCharacterId ? handleNext : undefined}
+              handlePrevious={handlePrevious}
+              handleNext={handleNext}
             />
-          </div>
-          <div style={{ width: "100%", height: "620px", position: "relative" }}>
-            <img
-              src={data.backgroundUrl}
-              style={{
-                position: "absolute",
-                objectFit: "cover",
-                width: "100%",
-                height: "calc(100% + 80px)",
-                zIndex: "-1",
-                transform: "translateY(-80px)",
-              }}
-            />
-            <div
-              style={{
-                maxWidth: "1200px",
-                height: "100%",
-                margin: "auto",
-                display: "flex",
-                position: "relative",
-              }}
-            >
-              <div
-                style={{
-                  backgroundColor: "white",
-                  border: "10px solid #707070",
-                  borderRadius: "20px",
-                  width: 608,
-                  height: 320,
-                  marginTop: 108,
-                  padding: 54,
-                }}
-              >
-                <h3 style={{ margin: 0, fontSize: "48px", lineHeight: 0.8 }}>
-                  プロフィール
-                </h3>
-                <div style={{ display: "flex" }}>
-                  <div
-                    style={{
-                      paddingTop: 40,
-                      paddingRight: 40,
-                      lineHeight: 1.8,
-                      whiteSpace: "pre-wrap",
-                      fontSize: 12,
-                    }}
-                  >
-                    {data.profile.description}
-                  </div>
-                  <div
-                    style={{
-                      flexShrink: 0,
-                      display: "flex",
-                      gap: 4,
-                      flexDirection: "column",
-                      fontFamily: "'Noto Sans JP'",
-                      fontWeight: 300,
-                    }}
-                  >
-                    {Object.entries(data.profile).map(([key, profileData]) => {
-                      return (
-                        key !== "description" && (
-                          <div
-                            key={key}
-                            style={{
-                              display: "flex",
-                              alignItems: "center",
-                              gap: 12,
-                              fontSize: 18,
-                            }}
-                          >
-                            <div
-                              style={{
-                                width: 100,
-                                height: 36,
-                                backgroundColor: data.colorPalette[0],
-                                display: "flex",
-                                justifyContent: "center",
-                                alignItems: "center",
-                                color: "white",
-                                fontSize: 12,
-                              }}
-                            >
-                              {key.toUpperCase()}
-                            </div>
-                            {profileData}
-                          </div>
-                        )
-                      );
-                    })}
-                  </div>
-                </div>
-              </div>
-              <img
-                style={{
-                  position: "absolute",
-                  bottom: -160,
-                  height: "130%",
-                  right: 0,
-                  zIndex: 1000,
-                }}
-                src={data.spritesUrl[0]}
+          </CharacterHeaderContainer>
+          <ProfileContainer>
+            <BackgroundImage src={data.backgroundUrl} />
+            <ProfileMainContainer>
+              <ProfileFrame
+                className={ProfileFrameStyle}
+                color={data.colorPalette[0]}
+                profileData={data.profile}
               />
-            </div>
-          </div>
-          <div style={{ height: 800 }} />
+              {displaySprite && <MainSpriteImage src={displaySprite} />}
+            </ProfileMainContainer>
+          </ProfileContainer>
+          <GradationBackground
+            startColor={data.colorPalette[0]}
+            endColor={data.colorPalette[1]}
+          >
+            <StatusMainContainer>
+              <CostumeTitleContainer>
+                <MdLocationPin size={64} color="#4B4B4B" />
+                <CostumeTitle>衣装差分</CostumeTitle>
+              </CostumeTitleContainer>
+            </StatusMainContainer>
+          </GradationBackground>
         </Container>
       )}
     </>

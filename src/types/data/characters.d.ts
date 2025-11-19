@@ -7,6 +7,17 @@ export type CharacterSummary = {
   color: string;
 };
 
+export type Profile = {
+  description: string;
+  age: string;
+  sex: string;
+  height: string;
+  weight: string;
+  job: string;
+  like: string;
+  hobby: string;
+};
+
 type Coc6Status = {
   type: "CoC6版";
   STR: number;
@@ -34,16 +45,7 @@ export type CharacterDetail = {
   colorPalette: string[];
   iconUrl: string;
   backgroundUrl: string;
-  profile: {
-    description: string;
-    age: string;
-    sex: string;
-    height: string;
-    weight: string;
-    job: string;
-    like: string;
-    hobby: string;
-  };
+  profile: Profile;
   spritesUrl: string[];
   status: Status[];
   skills: {

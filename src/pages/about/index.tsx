@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Anchor, TopGuideBoard } from "../../components";
 import type { CharacterSummary } from "../../types";
 import { Link } from "react-router";
+import { AppName } from "../../definitions";
 
 const About = () => {
   const [summary, setSummary] = useState<CharacterSummary[] | undefined>();
@@ -11,10 +12,11 @@ const About = () => {
       .then((data) => setSummary(data));
   }, []);
   const isLoading = summary === undefined;
+  const title = `このサイトは何？ - ${AppName}`;
 
   return (
     <>
-      <title>このサイトは何？</title>
+      <title>{title}</title>
       <div>
         <div style={{ paddingTop: 200, position: "relative" }}>
           <div style={{ position: "fixed", left: 48 }}>
