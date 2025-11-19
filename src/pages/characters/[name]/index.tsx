@@ -1,7 +1,12 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { MdLocationPin } from "react-icons/md";
 import { useNavigate, useParams } from "react-router";
-import { CharacterHeader, ProfileFrame } from "../../../components";
+import {
+  CharacterHeader,
+  CostumeList,
+  ProfileFrame,
+  type CostumeItem,
+} from "../../../components";
 import { AppName } from "../../../definitions";
 import type { CharacterDetail, CharacterSummary } from "../../../types";
 import {
@@ -30,7 +35,7 @@ const CharacterAbout = () => {
   >();
   const [nextCharacterId, setNextCharacterId] = useState<string | undefined>();
 
-  const [displaySprite, setDisplaySprite] = useState<string | undefined>();
+  const [displaySpriteIndex, setDisplaySpriteIndex] = useState(0);
 
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}data/characters.json`)
@@ -43,7 +48,6 @@ const CharacterAbout = () => {
       .then((data) => {
         const castedData = data as CharacterDetail;
         setData(castedData);
-        setDisplaySprite(castedData.spritesUrl[0]);
 
         let prevId: string | undefined = undefined;
         let nextId: string | undefined = undefined;
@@ -70,11 +74,13 @@ const CharacterAbout = () => {
 
   const handlePrevious = previousCharacterId
     ? () => {
+        setDisplaySpriteIndex(0);
         navigate(`/characters/${previousCharacterId}`);
       }
     : undefined;
   const handleNext = nextCharacterId
     ? () => {
+        setDisplaySpriteIndex(0);
         navigate(`/characters/${nextCharacterId}`);
       }
     : undefined;
@@ -87,6 +93,18 @@ const CharacterAbout = () => {
     window.addEventListener("scroll", callback);
     return () => window.removeEventListener("scroll", callback);
   }, []);
+
+  const costumeList: CostumeItem[] = useMemo(() => {
+    return data
+      ? data.spritesUrl.map((url, index) => ({
+          isSelected: displaySpriteIndex === index,
+          imageUrl: url,
+          onClick: () => {
+            setDisplaySpriteIndex(index);
+          },
+        }))
+      : [];
+  }, [data, displaySpriteIndex, setDisplaySpriteIndex]);
 
   return (
     <>
@@ -113,7 +131,7 @@ const CharacterAbout = () => {
                 color={data.colorPalette[0]}
                 profileData={data.profile}
               />
-              {displaySprite && <MainSpriteImage src={displaySprite} />}
+              <MainSpriteImage src={data.spritesUrl[displaySpriteIndex]} />
             </ProfileMainContainer>
           </ProfileContainer>
           <GradationBackground
@@ -125,6 +143,11 @@ const CharacterAbout = () => {
                 <MdLocationPin size={64} color="#4B4B4B" />
                 <CostumeTitle>衣装差分</CostumeTitle>
               </CostumeTitleContainer>
+              <CostumeList
+                items={costumeList}
+                color={data.colorPalette[0]}
+                selectedColor={data.colorPalette[2]}
+              />
             </StatusMainContainer>
           </GradationBackground>
         </Container>
