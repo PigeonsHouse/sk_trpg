@@ -105,8 +105,9 @@ const CharacterAbout = () => {
                 position: "absolute",
                 objectFit: "cover",
                 width: "100%",
-                height: "100%",
+                height: "calc(100% + 80px)",
                 zIndex: "-1",
+                transform: "translateY(-80px)",
               }}
             />
             <div
