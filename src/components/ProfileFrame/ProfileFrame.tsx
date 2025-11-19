@@ -1,4 +1,5 @@
 import { cx } from "@emotion/css";
+import type { Profile } from "../../types";
 import { CommonFrame } from "../CommonFrame";
 import {
   ContentsContainer,
@@ -9,7 +10,6 @@ import {
   ProfilesContainer,
   Title,
 } from "./styled";
-import type { Profile } from "../../types";
 
 type ProfileFrameProps = {
   className?: string;

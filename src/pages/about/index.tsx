@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import { Anchor, TopGuideBoard } from "../../components";
-import type { CharacterSummary } from "../../types";
 import { Link } from "react-router";
+import { Anchor, TopGuideBoard } from "../../components";
 import { AppName } from "../../definitions";
+import type { CharacterSummary } from "../../types";
 
 const About = () => {
   const [summary, setSummary] = useState<CharacterSummary[] | undefined>();

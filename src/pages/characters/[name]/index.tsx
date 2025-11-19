@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { MdLocationPin } from "react-icons/md";
 import { useNavigate, useParams } from "react-router";
 import { CharacterHeader, ProfileFrame } from "../../../components";
+import { AppName } from "../../../definitions";
 import type { CharacterDetail, CharacterSummary } from "../../../types";
 import {
   CharacterHeaderContainer,
@@ -17,7 +18,6 @@ import {
   CostumeTitle,
   CostumeTitleContainer,
 } from "./styled";
-import { AppName } from "../../../definitions";
 
 const CharacterAbout = () => {
   const navigate = useNavigate();

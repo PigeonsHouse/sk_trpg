@@ -1,3 +1,5 @@
+import type React from "react";
+import { RiArrowLeftUpLine } from "react-icons/ri";
 import { Link } from "react-router";
 import {
   BigText,
@@ -10,8 +12,6 @@ import {
   TopContainer,
   TopLabel,
 } from "./styled";
-import { RiArrowLeftUpLine } from "react-icons/ri";
-import type React from "react";
 
 type TopGuideBoardProps = {
   className?: string;
