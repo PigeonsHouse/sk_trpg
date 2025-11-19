@@ -4,12 +4,13 @@ import type { CharacterSummary } from "../../types";
 import { Link } from "react-router";
 
 const About = () => {
-  const [summary, setSummary] = useState<CharacterSummary[]>([]);
+  const [summary, setSummary] = useState<CharacterSummary[] | undefined>();
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}data/characters.json`)
       .then((res) => res.json())
       .then((data) => setSummary(data));
   }, []);
+  const isLoading = summary === undefined;
 
   return (
     <>
@@ -27,8 +28,8 @@ const About = () => {
               marginBottom: 200,
             }}
           >
-            <Anchor id="about" />
             <h2 style={{ fontSize: 80, marginTop: 0, letterSpacing: 4 }}>
+              <Anchor id="about" offset={-200} disabledScroll={isLoading} />
               What is this?
             </h2>
             <h5 style={{ fontSize: 24, letterSpacing: 4, lineHeight: 2 }}>
@@ -38,8 +39,18 @@ const About = () => {
               <br />
               かわいいうちの子を見ていってください～！
             </h5>
-            <Anchor id="characters" />
-            <h2 style={{ fontSize: 80, letterSpacing: 4, color: "#444444" }}>
+            <h2
+              style={{
+                fontSize: 80,
+                letterSpacing: 4,
+                color: "#444444",
+              }}
+            >
+              <Anchor
+                id="characters"
+                offset={-200}
+                disabledScroll={isLoading}
+              />
               CHARACTER
             </h2>
             <div
@@ -50,9 +61,9 @@ const About = () => {
                 gap: 36,
               }}
             >
-              {summary.map((character) => {
+              {summary?.map((character) => {
                 return (
-                  <div>
+                  <div key={character.id}>
                     <Link
                       to={`/characters/${character.id}`}
                       style={{
@@ -121,10 +132,14 @@ const About = () => {
                 );
               })}
             </div>
-
-            <Anchor id="twitter" />
-            <h2 style={{ fontSize: 80, letterSpacing: 4, color: "#444444" }}>
-              X
+            <h2
+              style={{
+                fontSize: 80,
+                letterSpacing: 4,
+                color: "#444444",
+              }}
+            >
+              <Anchor id="twitter" offset={-200} disabledScroll={isLoading} />X
             </h2>
             <a
               href="https://x.com/Suzuki_sepa"
@@ -143,8 +158,14 @@ const About = () => {
                 style={{ height: "100%", width: 80 }}
               />
             </a>
-            <Anchor id="skeb" />
-            <h2 style={{ fontSize: 80, letterSpacing: 4, color: "#444444" }}>
+            <h2
+              style={{
+                fontSize: 80,
+                letterSpacing: 4,
+                color: "#444444",
+              }}
+            >
+              <Anchor id="skeb" offset={-200} disabledScroll={isLoading} />
               Skeb
             </h2>
             <a href="https://skeb.jp/@Suzuki_sepa">

@@ -8,6 +8,7 @@ export const Container = styled.div`
   border: 10px solid #5a5a5a;
   padding: 32px 20px;
   color: #1a1a1a;
+  flex-shrink: 0;
 `;
 
 export const NoDecorationLinkStyle = css`

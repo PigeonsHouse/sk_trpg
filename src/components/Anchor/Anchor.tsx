@@ -1,22 +1,27 @@
 import { useCallback, useEffect, useRef } from "react";
 import { useLocation } from "react-router";
-import { sleep } from "../../utils";
 
 interface AnchorProps {
   id: string;
+  offset?: number;
+  disabledScroll?: boolean;
 }
 
-export const Anchor: React.FC<AnchorProps> = ({ id }) => {
-  const ref = useRef<any>(null);
+export const Anchor: React.FC<AnchorProps> = ({
+  id,
+  offset,
+  disabledScroll,
+}) => {
+  const ref = useRef<HTMLDivElement | null>(null);
   const location = useLocation();
 
   const handleHashChange = useCallback(() => {
-    sleep(2).then(() => {
-      if (location.hash.substring(1) === id && ref.current) {
-        ref.current.scrollIntoView({ behavior: "smooth" });
-      }
-    });
-  }, [id, location, ref]);
+    if (!disabledScroll && location.hash.substring(1) === id && ref.current) {
+      const top =
+        -window.scrollY + ref.current.offsetTop + (offset ? offset : 0);
+      window.scrollBy({ top, behavior: "smooth" });
+    }
+  }, [id, disabledScroll, location, ref]);
 
   useEffect(() => {
     handleHashChange();

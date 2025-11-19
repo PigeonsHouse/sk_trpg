@@ -171,6 +171,7 @@ const CharacterAbout = () => {
                       return (
                         key !== "description" && (
                           <div
+                            key={key}
                             style={{
                               display: "flex",
                               alignItems: "center",
