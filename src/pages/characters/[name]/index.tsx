@@ -1,8 +1,8 @@
 import { useCallback, useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router";
-import { NameBoard } from "../../../components";
-import { BoardContainer, Container, Header } from "./styled";
 import type { CharacterDetail, CharacterSummary } from "../../../types";
+import { Container } from "./styled";
+import { CharacterHeader } from "../../../components";
 
 const CharacterAbout = () => {
   const navigate = useNavigate();
@@ -59,58 +59,45 @@ const CharacterAbout = () => {
     }
   }, [nextCharacterId]);
 
+  const [isScroll, setIsScroll] = useState(false);
+  useEffect(() => {
+    const callback = () => {
+      setIsScroll(window.scrollY !== 0);
+    };
+    window.addEventListener("scroll", callback);
+    return () => window.removeEventListener("scroll", callback);
+  });
+
   return (
     <>
       <title>{title}</title>
       {isLoading ? (
-        <>isLoading...</>
+        <div
+          style={{
+            height: "100vh",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            color: "gray",
+            fontSize: 40,
+          }}
+        >
+          isLoading...
+        </div>
       ) : (
         <Container>
-          <Header color={data.colorPalette[0]}>
-            <BoardContainer>
-              <NameBoard
-                name={data.name}
-                enName={data.enName}
-                color={data.colorPalette[0]}
-              />
-            </BoardContainer>
-            <div
-              style={{
-                display: "flex",
-                height: "100%",
-                justifyContent: "center",
-                alignItems: "center",
-                gap: 920,
-              }}
-            >
-              <span
-                style={{
-                  fontSize: 60,
-                  color: previousCharacterId
-                    ? "white"
-                    : "rgb(from white r g b / 0.5)",
-                  cursor: previousCharacterId ? "pointer" : "default",
-                  transform: "scale(1.7, 1)",
-                }}
-                onClick={handlePrevious}
-              >
-                {"◀"}
-              </span>
-              <span
-                style={{
-                  fontSize: 60,
-                  color: nextCharacterId
-                    ? "white"
-                    : "rgb(from white r g b / 0.5)",
-                  transform: "scale(1.7, 1)",
-                  cursor: nextCharacterId ? "pointer" : "default",
-                }}
-                onClick={handleNext}
-              >
-                {"▶"}
-              </span>
-            </div>
-          </Header>
+          <div
+            style={{ position: "fixed", left: 0, right: 0, top: 0, zIndex: 10 }}
+          >
+            <CharacterHeader
+              name={data.name}
+              enName={data.enName}
+              color={data.colorPalette[0]}
+              isSmall={isScroll}
+              handlePrevious={previousCharacterId ? handlePrevious : undefined}
+              handleNext={nextCharacterId ? handleNext : undefined}
+            />
+          </div>
           <div style={{ width: "100%", height: "620px", position: "relative" }}>
             <img
               src={data.backgroundUrl}
@@ -213,6 +200,7 @@ const CharacterAbout = () => {
               />
             </div>
           </div>
+          <div style={{ height: 4000 }} />
         </Container>
       )}
     </>

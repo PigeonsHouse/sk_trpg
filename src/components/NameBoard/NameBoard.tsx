@@ -28,8 +28,6 @@ export const NameBoard: React.FC<NameBoardProps> = ({
     return "sm";
   }, [name]);
 
-  console.log(size);
-
   return (
     <BoardContainer>
       <NameContainer>
