@@ -4,8 +4,9 @@ import { UiColor } from "../../definitions";
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 16px 0;
+  padding-top: 16px;
   padding-left: 40px;
+  padding-bottom: 48px;
   position: relative;
   box-sizing: border-box;
   min-height: 300px;
