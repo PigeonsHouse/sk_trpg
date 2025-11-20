@@ -1,13 +1,13 @@
 import { css } from "@emotion/css";
 import styled from "@emotion/styled";
+import { UiColor } from "../../definitions";
 
 export const Container = styled.div`
   display: inline-flex;
   flex-direction: column;
-  background-color: #ffe600;
+  background-color: ${UiColor.yellow};
   border: 10px solid #5a5a5a;
   padding: 32px 20px;
-  color: #1a1a1a;
   flex-shrink: 0;
 `;
 

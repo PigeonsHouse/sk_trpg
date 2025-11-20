@@ -1,3 +1,5 @@
+import { UiColor } from "../../definitions";
+
 export type CostumeItem = {
   isSelected: boolean;
   imageUrl: string;
@@ -45,7 +47,7 @@ export const CostumeList: React.FC<CostumeListProps> = ({
                   (isFirst ? 0 : 36) +
                   (splitItems.length === 4 ? 36 : 0),
                 top: 40 + 156 * i,
-                backgroundColor: "#707070",
+                backgroundColor: UiColor.gray,
                 marginLeft: isFirst ? 48 : 12,
               }}
             />
@@ -71,7 +73,7 @@ export const CostumeList: React.FC<CostumeListProps> = ({
                       style={{
                         width: item.isSelected ? 28 : 16,
                         height: item.isSelected ? 28 : 16,
-                        border: "6px solid #707070",
+                        border: `6px solid ${UiColor.gray}`,
                         backgroundColor: item.isSelected
                           ? selectedColor
                           : "white",

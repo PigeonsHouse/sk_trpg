@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@emotion/css": "^11.13.5",
+    "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
     "@generouted/react-router": "^1.20.0",
     "react": "^19.2.0",
