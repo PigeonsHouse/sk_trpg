@@ -1,5 +1,6 @@
 import { css } from "@emotion/css";
 import styled from "@emotion/styled";
+import { UiColor } from "../../../definitions";
 
 export const Loading = styled.div`
   height: 100dvh;
@@ -67,12 +68,26 @@ export const GradationBackground = styled.div<{
   startColor: string;
   endColor: string;
 }>`
-  background: linear-gradient(
-    hsl(from ${(props) => props.startColor} h calc(s + 20) 80 / 0.5),
-    hsl(from ${(props) => props.endColor} h calc(s + 20) 80 / 0.5)
-  );
   padding-top: 36px;
   overflow: hidden;
+  background-image:
+    linear-gradient(
+      hsl(from ${(props) => props.startColor} h calc(s + 20) 80 / 0.5),
+      hsl(from ${(props) => props.endColor} h calc(s + 20) 80 / 0.5)
+    ),
+    repeating-linear-gradient(
+      ${UiColor.gray},
+      ${UiColor.gray} 1px,
+      transparent 1px,
+      transparent 255px
+    ),
+    repeating-linear-gradient(
+      270deg,
+      ${UiColor.gray},
+      ${UiColor.gray} 1px,
+      transparent 1px,
+      transparent 435px
+    );
 `;
 
 export const StatusMainContainer = styled.div`
