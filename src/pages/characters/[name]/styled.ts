@@ -72,11 +72,16 @@ export const GradationBackground = styled.div<{
     hsl(from ${(props) => props.endColor} h calc(s + 20) 80 / 0.5)
   );
   padding-top: 36px;
+  overflow: hidden;
 `;
 
 export const StatusMainContainer = styled.div`
   max-width: 1200px;
   margin: auto;
+`;
+
+export const CostumeContainer = styled.div`
+  padding-left: 32px;
 `;
 
 export const CostumeTitleContainer = styled.div`
@@ -89,4 +94,23 @@ export const CostumeTitle = styled.span`
   font-size: 44px;
   font-weight: bold;
   line-height: 1;
+`;
+
+export const TwoColumnsContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  gap: 64px;
+  margin: 0 32px;
+  margin-bottom: 80px;
+`;
+
+export const LeftColumnContainer = styled.div`
+  flex-grow: 1;
+  flex-shrink: 0;
+`;
+
+export const RightColumnContainer = styled.div`
+  flex-grow: 1;
+  flex-shrink: 0;
+  padding-top: 176px;
 `;

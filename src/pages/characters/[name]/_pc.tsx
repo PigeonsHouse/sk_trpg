@@ -5,6 +5,8 @@ import {
   CharacterHeader,
   CostumeList,
   ProfileFrame,
+  SkillsFrame,
+  StatusFrame,
   type CostumeItem,
 } from "../../../components";
 import type { CharacterDetail, CharacterSummary } from "../../../types";
@@ -20,6 +22,10 @@ import {
   StatusMainContainer,
   CostumeTitle,
   CostumeTitleContainer,
+  CostumeContainer,
+  TwoColumnsContainer,
+  LeftColumnContainer,
+  RightColumnContainer,
 } from "./styled";
 
 type PcCharacterAboutProps = {
@@ -123,15 +129,31 @@ export const PcCharacterAbout: React.FC<PcCharacterAboutProps> = ({
         </ProfileContainer>
         <GradationBackground startColor={mainColor} endColor={secondColor}>
           <StatusMainContainer>
-            <CostumeTitleContainer>
-              <MdLocationPin size={64} color="#4B4B4B" />
-              <CostumeTitle>衣装差分</CostumeTitle>
-            </CostumeTitleContainer>
-            <CostumeList
-              items={costumeList}
-              color={mainColor}
-              selectedColor={yellowColor}
-            />
+            <CostumeContainer>
+              <CostumeTitleContainer>
+                <MdLocationPin size={64} color="#4B4B4B" />
+                <CostumeTitle>衣装差分</CostumeTitle>
+              </CostumeTitleContainer>
+              <CostumeList
+                items={costumeList}
+                color={mainColor}
+                selectedColor={yellowColor}
+              />
+            </CostumeContainer>
+            <TwoColumnsContainer>
+              <LeftColumnContainer>
+                <StatusFrame
+                  status={data.status}
+                  colorPalette={data.colorPalette}
+                />
+              </LeftColumnContainer>
+              <RightColumnContainer>
+                <SkillsFrame
+                  skills={data.skills}
+                  colorPalette={data.colorPalette}
+                />
+              </RightColumnContainer>
+            </TwoColumnsContainer>
           </StatusMainContainer>
         </GradationBackground>
       </Container>

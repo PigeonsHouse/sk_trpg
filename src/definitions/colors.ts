@@ -16,6 +16,9 @@ const gray6 = "#D2D2D2";
 // 位置座標マークの色
 const gray4 = "#4B4B4B";
 
+// 信号機の色
+const black = "#272727";
+
 export const UiColor = {
   black: "#1A1A1A",
   gray: "#707070",

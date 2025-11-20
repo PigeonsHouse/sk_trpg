@@ -20,23 +20,27 @@ export type Profile = {
 
 type Coc6Status = {
   type: "CoC6版";
-  STR: number;
-  CON: number;
-  POW: number;
-  DEX: number;
-  APP: number;
-  INT: number;
-  EDU: number;
-  SAN: number;
-  HP: number;
-  MP: number;
-  DB: string;
-  LUCK: number;
-  IDEA: number;
-  KNOWLEDGE: number;
+  str: number;
+  con: number;
+  pow: number;
+  dex: number;
+  app: number;
+  int: number;
+  edu: number;
+  san: number;
+  hp: number;
+  mp: number;
+  db: string;
+  luck: number;
+  idea: number;
+  knowledge: number;
 };
 
-type Status = Coc6Status;
+export type Status = Coc6Status;
+
+export type Skills = {
+  [skill: string]: number;
+};
 
 export type CharacterDetail = {
   name: string;
@@ -47,10 +51,8 @@ export type CharacterDetail = {
   backgroundUrl: string;
   profile: Profile;
   spritesUrl: string[];
-  status: Status[];
-  skills: {
-    [skill: string]: number;
-  };
+  status: Status;
+  skills: Skills;
   history: {
     title: string;
     comment: string;

@@ -28,25 +28,23 @@
     "https://image.iaproject.app/e9d14d6e-d91a-4015-8a0a-e8ae8d4ca567",
     "https://image.iaproject.app/e9d14d6e-d91a-4015-8a0a-e8ae8d4ca567"
   ],
-  "status": [
-    {
-      "type": "CoC6版",
-      "STR": 8,
-      "CON": 10,
-      "POW": 14,
-      "DEX": 9,
-      "APP": 12,
-      "INT": 13,
-      "EDU": 16,
-      "SAN": 70,
-      "HP": 10,
-      "MP": 14,
-      "DB": "-",
-      "LUCK": 70,
-      "IDEA": 65,
-      "KNOWLEDGE": 80
-    }
-  ],
+  "status": {
+    "type": "CoC6版",
+    "str": 8,
+    "con": 10,
+    "pow": 14,
+    "dex": 9,
+    "app": 12,
+    "int": 13,
+    "edu": 16,
+    "san": 70,
+    "hp": 10,
+    "mp": 14,
+    "db": "-",
+    "luck": 70,
+    "idea": 65,
+    "knowledge": 80
+  },
   "skills": {
     "回避": 25,
     "聞き耳": 73

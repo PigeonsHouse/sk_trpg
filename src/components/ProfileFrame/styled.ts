@@ -40,14 +40,3 @@ export const ProfileOneLineContainer = styled.div`
   gap: 12px;
   font-size: 18px;
 `;
-
-export const ProfileKeyBox = styled.div<{ color: string }>`
-  width: 100px;
-  height: 36px;
-  background-color: ${(props) => props.color};
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  fontsize: 12px;
-`;

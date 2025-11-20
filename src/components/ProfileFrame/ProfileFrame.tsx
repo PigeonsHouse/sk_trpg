@@ -1,11 +1,11 @@
 import { cx } from "@emotion/css";
 import type { Profile } from "../../types";
 import { CommonFrame } from "../CommonFrame";
+import { LabelBox } from "../LabelBox";
 import {
   ContentsContainer,
   DescriptionContainer,
   ProfileFrameStyle,
-  ProfileKeyBox,
   ProfileOneLineContainer,
   ProfilesContainer,
   Title,
@@ -32,7 +32,7 @@ export const ProfileFrame: React.FC<ProfileFrameProps> = ({
             if (key === "description") return;
             return (
               <ProfileOneLineContainer key={key}>
-                <ProfileKeyBox color={color}>{key.toUpperCase()}</ProfileKeyBox>
+                <LabelBox color={color}>{key.toUpperCase()}</LabelBox>
                 {profileData}
               </ProfileOneLineContainer>
             );

@@ -1,3 +1,4 @@
+import { arraySplit } from "../../utils";
 import {
   Bar,
   Container,
@@ -20,9 +21,6 @@ type CostumeListProps = {
   color: string;
   selectedColor: string;
 };
-
-const arraySplit = (arr: any[], size: number) =>
-  arr.flatMap((_, i, a) => (i % size ? [] : [a.slice(i, i + size)]));
 
 const MAX_WIDTH_ITEM = 4;
 

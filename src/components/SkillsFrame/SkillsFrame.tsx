@@ -1,0 +1,65 @@
+import { useMemo } from "react";
+import type { Skills } from "../../types";
+import { arraySplit } from "../../utils";
+import { CommonFrame } from "../CommonFrame";
+import { LabelBox } from "../LabelBox";
+import {
+  FrameStatus,
+  SkillsColumnContainer,
+  StatusContainer,
+  SkillsOneLineContainer,
+  Title,
+  Value,
+  TopBar,
+  BottomBar,
+  LightContainer,
+  Light,
+} from "./styled";
+
+type SkillsFrameProps = {
+  skills: Skills;
+  colorPalette: string[];
+};
+
+export const SkillsFrame: React.FC<SkillsFrameProps> = ({
+  skills,
+  colorPalette,
+}) => {
+  const mainColor = colorPalette[0];
+
+  const [leftArray, rightArray] = useMemo(() => {
+    const { type, ...displaySkills } = skills;
+    const skillsArray = Object.entries(displaySkills);
+    return arraySplit(skillsArray, Math.floor(skillsArray.length / 2));
+  }, [skills]);
+
+  return (
+    <CommonFrame className={FrameStatus}>
+      <Title>技能値</Title>
+      <StatusContainer>
+        <SkillsColumnContainer>
+          {leftArray.map(([label, value]) => (
+            <SkillsOneLineContainer key={label}>
+              <LabelBox color={mainColor}>{label.toUpperCase()}</LabelBox>
+              <Value>{value}</Value>
+            </SkillsOneLineContainer>
+          ))}
+        </SkillsColumnContainer>
+        <SkillsColumnContainer>
+          {rightArray.map(([label, value]) => (
+            <SkillsOneLineContainer key={label}>
+              <LabelBox color={mainColor}>{label.toUpperCase()}</LabelBox>
+              <Value>{value}</Value>
+            </SkillsOneLineContainer>
+          ))}
+        </SkillsColumnContainer>
+      </StatusContainer>
+
+      <TopBar />
+      <BottomBar />
+      <LightContainer>
+        <Light color={colorPalette[2]} />
+      </LightContainer>
+    </CommonFrame>
+  );
+};
