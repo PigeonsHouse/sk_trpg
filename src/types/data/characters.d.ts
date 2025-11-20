@@ -39,7 +39,7 @@ type Coc6Status = {
 type Status = Coc6Status;
 
 export type CharacterDetail = {
-  name: string; // ここには全角文字しか含まれない
+  name: string;
   enName: string;
   thumbnailUrl: string;
   colorPalette: string[];
