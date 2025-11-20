@@ -67,7 +67,6 @@ export const CostumeList: React.FC<CostumeListProps> = ({
                       flexDirection: "column",
                       alignItems: "center",
                     }}
-                    onClick={item.onClick}
                   >
                     <div
                       style={{
@@ -90,7 +89,9 @@ export const CostumeList: React.FC<CostumeListProps> = ({
                         overflow: "hidden",
                         width: 100,
                         height: 100,
+                        cursor: "pointer",
                       }}
+                      onClick={item.onClick}
                     >
                       <img
                         src={item.imageUrl}
