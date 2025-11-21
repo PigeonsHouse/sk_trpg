@@ -46,10 +46,10 @@ export const HistoriesContainer = styled.div`
 export const HistoryLightBar = styled.div<{ count: number }>`
   position: absolute;
   width: 5px;
-  height: ${(props) => 60 * (props.count - 1)}px;
+  height: ${(props) => 60 * (props.count - 1) + 4}px;
   background-color: ${UiColor.gray};
-  left: 11px;
-  top: 21px;
+  left: 11.5px;
+  top: 21.5px;
 `;
 
 export const HistoryOneLineContainer = styled.div`
