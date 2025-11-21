@@ -72,7 +72,7 @@ export type CharacterDetail = {
   qa: {
     question: string;
     answer: string;
-  };
+  }[];
   comment: string;
   artGallery: string[];
 };
