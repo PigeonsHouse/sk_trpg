@@ -7,6 +7,7 @@ import {
   CommonFrame,
   CostumeList,
   HistoryFrame,
+  NameBoard,
   ProfileFrame,
   QAFrame,
   SkillsFrame,
@@ -14,6 +15,7 @@ import {
   Window,
   type CostumeItem,
 } from "../../../components";
+import { UiColor } from "../../../definitions";
 import type { CharacterDetail, CharacterSummary } from "../../../types";
 import {
   CharacterHeaderContainer,
@@ -193,13 +195,30 @@ export const PcCharacterAbout: React.FC<PcCharacterAboutProps> = ({
             alignItems: "center",
             paddingTop: 120,
             paddingBottom: 240,
+            backgroundImage: `
+              repeating-linear-gradient(
+                transparent,
+                transparent 255px,
+                ${UiColor.gray} 256px,
+                ${UiColor.gray} 256px
+              ),
+              repeating-linear-gradient(
+                270deg,
+                transparent,
+                transparent 435px,
+                ${UiColor.gray} 436px,
+                ${UiColor.gray} 436px
+              )`,
+            overflowX: "hidden",
           }}
         >
+          <div style={{}} />
           <CommonFrame
             className={css`
               width: 880px;
               box-sizing: border-box;
               padding: 56px;
+              margin-bottom: 120px;
             `}
           >
             <h3 style={{ fontSize: 32, margin: 0, marginBottom: 12 }}>
@@ -215,6 +234,56 @@ export const PcCharacterAbout: React.FC<PcCharacterAboutProps> = ({
               {data.comment}
             </div>
           </CommonFrame>
+          {data.artGallery.length > 0 && (
+            <div style={{ width: 1200, margin: "auto" }}>
+              <h1
+                style={{
+                  margin: 0,
+                  fontSize: 64,
+                  marginBottom: 80,
+                  textAlign: "center",
+                }}
+              >
+                アートギャラリー
+              </h1>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: 80,
+                  paddingBottom: 200,
+                }}
+              >
+                {data.artGallery.map((artImage, i) => (
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: i % 2 === 0 ? "flex-end" : "flex-start",
+                    }}
+                  >
+                    <img
+                      style={{
+                        height: 480,
+                        maxWidth: 1200,
+                        objectFit: "contain",
+                      }}
+                      src={artImage}
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+          <div
+            style={{ cursor: "pointer" }}
+            onClick={() => navigate("/about#characters")}
+          >
+            <NameBoard
+              name="一覧に戻る"
+              enName="GO TO CHARACTER LIST"
+              color={mainColor}
+            />
+          </div>
         </div>
       </Container>
     </>

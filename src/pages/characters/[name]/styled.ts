@@ -76,17 +76,17 @@ export const GradationBackground = styled.div<{
       hsl(from ${(props) => props.endColor} h calc(s + 20) 80 / 0.5)
     ),
     repeating-linear-gradient(
-      ${UiColor.gray},
-      ${UiColor.gray} 1px,
-      transparent 1px,
-      transparent 255px
+      transparent,
+      transparent 255px,
+      ${UiColor.gray} 256px,
+      ${UiColor.gray} 256px
     ),
     repeating-linear-gradient(
       270deg,
-      ${UiColor.gray},
-      ${UiColor.gray} 1px,
-      transparent 1px,
-      transparent 435px
+      transparent,
+      transparent 435px,
+      ${UiColor.gray} 436px,
+      ${UiColor.gray} 436px
     );
 `;
 
