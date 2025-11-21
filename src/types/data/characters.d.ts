@@ -42,15 +42,18 @@ export type Skills = {
   [skill: string]: number;
 };
 
+export type Companion = {
+  name: string;
+  enName: string;
+  color: string;
+  iconUrl: string;
+};
+
 export type History = {
   title: string;
   comment: string;
   iconUrl: string;
-  companions: {
-    name: string;
-    enName: string;
-    iconUrl: string;
-  }[];
+  companions: Companion[];
 };
 
 export type CharacterDetail = {

@@ -164,10 +164,11 @@ export const SingleCompanionInfoContainer = styled.div`
   align-items: center;
 `;
 
-export const CompanionIconImage = styled.img`
+export const CompanionIconImage = styled.img<{ color: string }>`
   width: 64px;
   height: 64px;
   border-radius: 9999px;
+  background-color: ${(props) => props.color};
 `;
 
 export const CompanionNameContainer = styled.div`
