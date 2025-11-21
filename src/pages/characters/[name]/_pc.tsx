@@ -168,6 +168,24 @@ export const PcCharacterAbout: React.FC<PcCharacterAboutProps> = ({
             />
           </StatusMainContainer>
         </GradationBackground>
+        <div
+          style={{
+            height: 1080,
+            position: "relative",
+            backgroundColor: mainColor,
+            zIndex: -1,
+          }}
+        >
+          <div
+            style={{
+              position: "absolute",
+              bottom: 0,
+              height: 256,
+              width: "100%",
+              backgroundColor: secondColor,
+            }}
+          ></div>
+        </div>
       </Container>
     </>
   );
