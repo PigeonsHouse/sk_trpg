@@ -1,8 +1,10 @@
 import { useEffect, useMemo, useState } from "react";
 import { MdLocationPin } from "react-icons/md";
 import { useNavigate } from "react-router";
+import { css } from "@emotion/css";
 import {
   CharacterHeader,
+  CommonFrame,
   CostumeList,
   HistoryFrame,
   ProfileFrame,
@@ -184,6 +186,36 @@ export const PcCharacterAbout: React.FC<PcCharacterAboutProps> = ({
           />
           <QAFrame qaList={data.qaList} />
         </TrainBody>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            paddingTop: 120,
+            paddingBottom: 240,
+          }}
+        >
+          <CommonFrame
+            className={css`
+              width: 880px;
+              box-sizing: border-box;
+              padding: 56px;
+            `}
+          >
+            <h3 style={{ fontSize: 32, margin: 0, marginBottom: 12 }}>
+              鈴木乖離のコメント
+            </h3>
+            <div
+              style={{
+                whiteSpace: "pre-wrap",
+                fontSize: 16,
+                lineHeight: "30px",
+              }}
+            >
+              {data.comment}
+            </div>
+          </CommonFrame>
+        </div>
       </Container>
     </>
   );
