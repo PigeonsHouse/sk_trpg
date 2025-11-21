@@ -7,6 +7,8 @@ export * from "./HistoryFrame";
 export * from "./LabelBox";
 export * from "./NameBoard";
 export * from "./ProfileFrame";
+export * from "./QAFrame";
 export * from "./SkillsFrame";
 export * from "./StatusFrame";
 export * from "./TopGuideBoard";
+export * from "./Window";

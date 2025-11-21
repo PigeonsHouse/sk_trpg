@@ -56,6 +56,11 @@ export type History = {
   companions: Companion[];
 };
 
+export type QA = {
+  question: string;
+  answer: string;
+};
+
 export type CharacterDetail = {
   number: number;
   name: string;
@@ -69,10 +74,7 @@ export type CharacterDetail = {
   status: Status;
   skills: Skills;
   histories: History[];
-  qa: {
-    question: string;
-    answer: string;
-  }[];
+  qaList: QA[];
   comment: string;
   artGallery: string[];
 };

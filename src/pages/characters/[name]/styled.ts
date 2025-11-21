@@ -129,3 +129,32 @@ export const RightColumnContainer = styled.div`
   flex-shrink: 0;
   padding-top: 176px;
 `;
+
+export const TrainBody = styled.div<{ mainColor: string; secondColor: string }>`
+  min-height: 1080px;
+  position: relative;
+  background: linear-gradient(
+    0deg,
+    ${(props) => props.secondColor},
+    ${(props) => props.secondColor} 256px,
+    ${(props) => props.mainColor} 257px
+  );
+  z-index: 0;
+  padding: 80px 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+`;
+
+// 50%で左辺を中央寄せ、800pxで右辺を中央寄せ、440px(枠880pxの半分)で右辺を枠辺にぴったり、そこから40px離す
+export const LeftWindowStyle = css`
+  top: 160px;
+  left: calc(50% - 800px - 440px - 40px);
+`;
+
+// 50%で右辺を中央寄せ、800pxで左辺を中央寄せ、440px(枠880pxの半分)で左辺を枠辺にぴったり、そこから40px離す
+export const RightWindowStyle = css`
+  top: 160px;
+  right: calc(50% - 800px - 440px - 40px);
+`;

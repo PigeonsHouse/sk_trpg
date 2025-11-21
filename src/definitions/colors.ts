@@ -19,6 +19,9 @@
 // // 信号機の色
 // const black = "#272727";
 
+// // 窓の枠線の色
+// const gray8 = "#DCEBEE";
+
 export const UiColor = {
   black: "#1A1A1A",
   gray: "#707070",

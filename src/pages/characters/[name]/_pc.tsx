@@ -1,15 +1,15 @@
 import { useEffect, useMemo, useState } from "react";
 import { MdLocationPin } from "react-icons/md";
 import { useNavigate } from "react-router";
-import { css } from "@emotion/css";
 import {
   CharacterHeader,
-  CommonFrame,
   CostumeList,
   HistoryFrame,
   ProfileFrame,
+  QAFrame,
   SkillsFrame,
   StatusFrame,
+  Window,
   type CostumeItem,
 } from "../../../components";
 import type { CharacterDetail, CharacterSummary } from "../../../types";
@@ -29,6 +29,9 @@ import {
   TwoColumnsContainer,
   LeftColumnContainer,
   RightColumnContainer,
+  LeftWindowStyle,
+  RightWindowStyle,
+  TrainBody,
 } from "./styled";
 
 type PcCharacterAboutProps = {
@@ -170,132 +173,17 @@ export const PcCharacterAbout: React.FC<PcCharacterAboutProps> = ({
             />
           </StatusMainContainer>
         </GradationBackground>
-        <div
-          style={{
-            minHeight: 1080,
-            position: "relative",
-            backgroundColor: mainColor,
-            zIndex: 0,
-            padding: "80px 0",
-            boxSizing: "border-box",
-            display: "flex",
-            flexDirection: "column",
-            overflowX: "hidden",
-          }}
-        >
-          <div
-            style={{
-              position: "absolute",
-              bottom: 0,
-              height: 256,
-              width: "100%",
-              backgroundColor: secondColor,
-              zIndex: 1,
-            }}
+        <TrainBody mainColor={mainColor} secondColor={secondColor}>
+          <Window
+            className={LeftWindowStyle}
+            colorPalette={data.colorPalette}
           />
-          <div
-            style={{
-              position: "absolute",
-              top: 160,
-              width: 720,
-              height: 360,
-              border: "40px solid #DCEBEE",
-              borderRadius: 60,
-              left: "calc(50% - 800px - 440px - 40px)",
-              background: `linear-gradient(135deg, ${mainColor}, ${secondColor})`,
-              overflow: "hidden",
-            }}
-          >
-            <div
-              style={{
-                position: "absolute",
-                bottom: 250,
-                height: 300,
-                width: "100%",
-                backgroundColor: "rgb(255 255 255 / 0.25)",
-                transform: "rotate(12.5deg) scaleX(2)",
-              }}
-            />
-            <div
-              style={{
-                position: "absolute",
-                top: 0,
-                left: "calc(50% - 20px)",
-                width: 40,
-                bottom: 0,
-                backgroundColor: "#DCEBEE",
-              }}
-            />
-          </div>
-          <div
-            style={{
-              position: "absolute",
-              top: 160,
-              width: 720,
-              height: 360,
-              border: "40px solid #DCEBEE",
-              borderRadius: 60,
-              right: "calc(50% - 800px - 440px - 40px)",
-              background: `linear-gradient(135deg, ${mainColor}, ${secondColor})`,
-              overflow: "hidden",
-            }}
-          >
-            <div
-              style={{
-                position: "absolute",
-                bottom: 250,
-                height: 300,
-                width: "100%",
-                backgroundColor: "rgb(255 255 255 / 0.25)",
-                transform: "rotate(12.5deg) scaleX(2)",
-              }}
-            />
-            <div
-              style={{
-                position: "absolute",
-                top: 0,
-                left: "calc(50% - 20px)",
-                width: 40,
-                bottom: 0,
-                backgroundColor: "#DCEBEE",
-              }}
-            />
-          </div>
-
-          <CommonFrame
-            className={css`
-              width: 880px;
-              margin: auto;
-              padding: 40px 100px;
-              flex-grow: 1;
-              z-index: 2;
-              box-sizing: border-box;
-            `}
-          >
-            <h3
-              style={{
-                textAlign: "center",
-                margin: 0,
-                fontSize: 64,
-                marginBottom: 48,
-              }}
-            >
-              Q&A
-            </h3>
-            <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
-              {data.qa.map((questionAndAnswer) => {
-                return (
-                  <div style={{ fontSize: 24, fontWeight: "bold" }}>
-                    <div style={{ marginBottom: 8 }}>
-                      Q. {questionAndAnswer.question}
-                    </div>
-                    <div>A. {questionAndAnswer.answer}</div>
-                  </div>
-                );
-              })}
-            </div>
-          </CommonFrame>
-        </div>
+          <Window
+            className={RightWindowStyle}
+            colorPalette={data.colorPalette}
+          />
+          <QAFrame qaList={data.qaList} />
+        </TrainBody>
       </Container>
     </>
   );
