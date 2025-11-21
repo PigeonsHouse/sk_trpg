@@ -42,26 +42,30 @@ export type Skills = {
   [skill: string]: number;
 };
 
+export type History = {
+  title: string;
+  comment: string;
+  iconUrl: string;
+  companions: {
+    name: string;
+    enName: string;
+    iconUrl: string;
+  }[];
+};
+
 export type CharacterDetail = {
+  number: number;
   name: string;
   enName: string;
+  shortId: string;
   thumbnailUrl: string;
   colorPalette: string[];
-  iconUrl: string;
   backgroundUrl: string;
   profile: Profile;
   spritesUrl: string[];
   status: Status;
   skills: Skills;
-  history: {
-    title: string;
-    comment: string;
-    companions: {
-      name: string;
-      enName: string;
-      iconUrl: string;
-    }[];
-  }[];
+  histories: History[];
   qa: {
     question: string;
     answer: string;

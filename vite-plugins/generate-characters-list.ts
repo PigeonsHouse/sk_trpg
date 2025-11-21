@@ -1,6 +1,6 @@
-import type { Plugin } from "vite";
 import * as fs from "fs";
 import * as path from "path";
+import type { Plugin } from "vite";
 
 /**
  * Viteプラグイン: src/data/characters/内のJSONファイル一覧を
@@ -36,7 +36,7 @@ export function generateCharactersList(): Plugin {
           thumbnailUrl: data.thumbnailUrl,
           backgroundUrl: data.backgroundUrl,
           color: data.colorPalette[0],
-          index: data.index,
+          index: data.number,
         };
       });
       const sorted = updatedFiles

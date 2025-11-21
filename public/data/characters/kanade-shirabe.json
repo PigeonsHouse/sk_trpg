@@ -1,10 +1,10 @@
 {
-  "index": 0,
+  "number": 1,
+  "shortId": "SRB",
   "name": "奏 調",
   "enName": "KANADE SHIRABE",
   "thumbnailUrl": "https://image.iaproject.app/e9d14d6e-d91a-4015-8a0a-e8ae8d4ca567",
   "colorPalette": ["#8A809E", "#95B2CC", "#FFDE00"],
-  "iconUrl": "",
   "backgroundUrl": "https://user0514.cdnw.net/shared/img/thumb/073Kazuki17103_TP_V.jpg",
   "profile": {
     "description": "絵に描いたような好青年。常に笑顔を絶やさず、相手への気遣いを欠かさない。\n職業は指揮者。\n音楽家の家庭に生まれ、幼少期から音楽に囲まれた生活を送ってきた。あらゆる楽器に触れてきたが、大学で指揮者としての才能が開花する。高い能力が評価され、近年では国内外での活躍が増えている。\n超論理型で、高いコミュニケーション能力と論理的思考で楽団を取り纏める。",
@@ -49,36 +49,89 @@
     "回避": 25,
     "聞き耳": 73
   },
-  "history": [
+  "histories": [
     {
       "title": "星の神話、エンドロール",
-      "comment": "ほんの数日にいろんなことがあったね。",
+      "comment": "ほんの数日にいろんなことがあったね。\n悲しい事だってあったけど...それがみんなの\"選択\"なら、僕は肯定するよ。\nふふっ、またみんなに会いたいな～、ちょっと連絡してみるよ。",
+      "iconUrl": "https://image.iaproject.app/e13a4682-95d6-41cf-8fd6-237db46df79b",
       "companions": [
         {
           "name": "守 惑",
           "enName": "SHU YOU",
-          "iconUrl": ""
+          "iconUrl": "https://image.iaproject.app/765d2515-1cbe-413c-81fd-681f949b0053"
         },
         {
-          "name": "守 惑",
-          "enName": "SHU YOU",
-          "iconUrl": ""
+          "name": "天川 綾",
+          "enName": "AMAKAWA AYA",
+          "iconUrl": "/images/amakawa_aya.png"
         }
       ]
     },
     {
       "title": "星の神話、エンドロール",
       "comment": "ほんの数日にいろんなことがあったね。",
+      "iconUrl": "https://image.iaproject.app/e13a4682-95d6-41cf-8fd6-237db46df79b",
       "companions": [
         {
           "name": "守 惑",
           "enName": "SHU YOU",
-          "iconUrl": ""
+          "iconUrl": "https://image.iaproject.app/765d2515-1cbe-413c-81fd-681f949b0053"
+        },
+        {
+          "name": "天川 綾",
+          "enName": "AMAKAWA AYA",
+          "iconUrl": "/images/amakawa_aya.png"
+        }
+      ]
+    },
+    {
+      "title": "星の神話、エンドロール",
+      "comment": "ほんの数日にいろんなことがあったね。",
+      "iconUrl": "https://image.iaproject.app/e13a4682-95d6-41cf-8fd6-237db46df79b",
+      "companions": [
+        {
+          "name": "守 惑",
+          "enName": "SHU YOU",
+          "iconUrl": "https://image.iaproject.app/765d2515-1cbe-413c-81fd-681f949b0053"
         },
         {
           "name": "守 惑",
           "enName": "SHU YOU",
-          "iconUrl": ""
+          "iconUrl": "https://image.iaproject.app/765d2515-1cbe-413c-81fd-681f949b0053"
+        }
+      ]
+    },
+    {
+      "title": "星の神話、エンドロール",
+      "comment": "ほんの数日にいろんなことがあったね。",
+      "iconUrl": "https://image.iaproject.app/e13a4682-95d6-41cf-8fd6-237db46df79b",
+      "companions": [
+        {
+          "name": "守 惑",
+          "enName": "SHU YOU",
+          "iconUrl": "https://image.iaproject.app/765d2515-1cbe-413c-81fd-681f949b0053"
+        },
+        {
+          "name": "守 惑",
+          "enName": "SHU YOU",
+          "iconUrl": "https://image.iaproject.app/765d2515-1cbe-413c-81fd-681f949b0053"
+        }
+      ]
+    },
+    {
+      "title": "星の神話、エンドロール",
+      "comment": "ほんの数日にいろんなことがあったね。",
+      "iconUrl": "https://image.iaproject.app/e13a4682-95d6-41cf-8fd6-237db46df79b",
+      "companions": [
+        {
+          "name": "守 惑",
+          "enName": "SHU YOU",
+          "iconUrl": "https://image.iaproject.app/765d2515-1cbe-413c-81fd-681f949b0053"
+        },
+        {
+          "name": "守 惑",
+          "enName": "SHU YOU",
+          "iconUrl": "https://image.iaproject.app/765d2515-1cbe-413c-81fd-681f949b0053"
         }
       ]
     }

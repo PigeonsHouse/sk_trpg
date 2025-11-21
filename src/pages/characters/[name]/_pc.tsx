@@ -4,6 +4,7 @@ import { useNavigate } from "react-router";
 import {
   CharacterHeader,
   CostumeList,
+  HistoryFrame,
   ProfileFrame,
   SkillsFrame,
   StatusFrame,
@@ -45,6 +46,7 @@ export const PcCharacterAbout: React.FC<PcCharacterAboutProps> = ({
   >();
   const [nextCharacterId, setNextCharacterId] = useState<string | undefined>();
   const [displaySpriteIndex, setDisplaySpriteIndex] = useState(0);
+  const [selectedHistoryIndex, setSelectedHistoryIndex] = useState(0);
   const [isScroll, setIsScroll] = useState(false);
 
   useEffect(() => {
@@ -81,6 +83,7 @@ export const PcCharacterAbout: React.FC<PcCharacterAboutProps> = ({
     return data.spritesUrl.map((url, index) => ({
       isSelected: displaySpriteIndex === index,
       imageUrl: url,
+      // MEMO: 奏 調の特殊挙動はこの辺でカスタマイズできる
       onClick: () => {
         setDisplaySpriteIndex(index);
       },
@@ -154,6 +157,15 @@ export const PcCharacterAbout: React.FC<PcCharacterAboutProps> = ({
                 />
               </RightColumnContainer>
             </TwoColumnsContainer>
+            <HistoryFrame
+              selectedIndex={selectedHistoryIndex}
+              changeIndex={setSelectedHistoryIndex}
+              histories={data.histories}
+              shortId={data.shortId}
+              number={data.number}
+              color={mainColor}
+              selectedColor={yellowColor}
+            />
           </StatusMainContainer>
         </GradationBackground>
       </Container>
