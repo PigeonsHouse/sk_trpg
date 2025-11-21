@@ -1,6 +1,5 @@
 import { useMemo } from "react";
 import { MdLocationPin } from "react-icons/md";
-import { UiColor } from "../../definitions";
 import type { History } from "../../types";
 import { CommonFrame } from "../CommonFrame";
 import {
@@ -10,6 +9,28 @@ import {
   TopBar,
   BottomBar,
   IndexCircle,
+  Container,
+  ScrollContainer,
+  HistoriesContainer,
+  HistoryLightBar,
+  HistoryOneLineContainer,
+  HistoryLight,
+  HistoryTitle,
+  ShortIdBoard,
+  HistoryDetailAreaContainer,
+  HistoryDetailContainer,
+  SpeechBubbleTriangle,
+  HistoryCommentContainer,
+  HistoryIconImage,
+  HistoryComment,
+  CompanionContainer,
+  CompanionTitle,
+  CompanionInfoContainer,
+  SingleCompanionInfoContainer,
+  CompanionIconImage,
+  CompanionNameContainer,
+  CompanionName,
+  CompanionEnName,
 } from "./styled";
 
 type HistoryFrameProps = {
@@ -37,182 +58,64 @@ export const HistoryFrame: React.FC<HistoryFrameProps> = ({
   );
 
   return (
-    <div style={{ display: "flex", gap: 32 }}>
+    <Container>
       <CommonFrame className={FrameStyle}>
         <TitleContainer>
           <MdLocationPin size={44} color="#4B4B4B" />
           <Title>停車駅</Title>
         </TitleContainer>
-        <div style={{ overflowY: "auto", height: "100%" }}>
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              gap: 12,
-              position: "relative",
-            }}
-          >
-            <div
-              style={{
-                position: "absolute",
-                width: 5,
-                height: 60 * (histories.length - 1),
-                backgroundColor: UiColor.gray,
-                left: 11,
-                top: 21,
-              }}
-            />
+        <ScrollContainer>
+          <HistoriesContainer>
+            <HistoryLightBar count={histories.length} />
             {histories.map((history, idx) => (
-              <div
-                style={{ display: "flex", alignItems: "center", gap: 8 }}
+              <HistoryOneLineContainer
                 onClick={() => changeIndex(idx)}
+                key={idx}
               >
-                <div
-                  style={{
-                    width: idx === selectedIndex ? 28 : 18,
-                    height: idx === selectedIndex ? 28 : 18,
-                    backgroundColor:
-                      idx === selectedIndex ? selectedColor : "white",
-                    margin: idx === selectedIndex ? 0 : 5,
-                    border: `5px solid ${UiColor.gray}`,
-                    borderRadius: 4,
-                    boxSizing: "border-box",
-                    zIndex: 1,
-                  }}
+                <HistoryLight
+                  isSelected={selectedIndex === idx}
+                  selectedColor={selectedColor}
                 />
                 <IndexCircle color={color}>{idx + 1}</IndexCircle>
-                <div
-                  style={{
-                    fontWeight: "bold",
-                    fontSize: 24,
-                    marginTop: -8,
-                  }}
-                >
-                  {history.title}
-                </div>
-              </div>
+                <HistoryTitle>{history.title}</HistoryTitle>
+              </HistoryOneLineContainer>
             ))}
-          </div>
-        </div>
+          </HistoriesContainer>
+        </ScrollContainer>
 
         <TopBar />
         <BottomBar />
-        <div
-          style={{
-            backgroundColor: selectedColor,
-            fontFamily: '"BIZ UDGothic"',
-            width: 260,
-            height: 160,
-            position: "absolute",
-            fontWeight: "bold",
-            fontSize: 50,
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-            gap: 24,
-            left: -300,
-            bottom: -70,
-          }}
-        >
+        <ShortIdBoard color={selectedColor}>
           <div>{shortId}</div>
           <div>{`#${String(number).padStart(2, "0")}`}</div>
-        </div>
+        </ShortIdBoard>
       </CommonFrame>
-      <div style={{ flexGrow: 1 }}>
-        <div
-          style={{
-            width: "100%",
-            backgroundColor: color,
-            borderRadius: 20,
-            padding: 36,
-            paddingLeft: 72,
-            boxSizing: "border-box",
-            position: "relative",
-          }}
-        >
-          <div
-            style={{
-              position: "absolute",
-              borderStyle: "solid",
-              borderWidth: "28px 48px",
-              borderLeftWidth: 0,
-              borderColor: "transparent",
-              borderRightColor: color,
-              left: -48,
-              top: 60,
-            }}
-          />
-          <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              gap: 16,
-              marginBottom: 28,
-            }}
-          >
-            <img
-              src={selectedHistory.iconUrl}
-              style={{
-                height: 100,
-                width: 100,
-                backgroundColor: "white",
-                borderRadius: 9999,
-                flexShrink: 0,
-              }}
-            />
-            <div
-              style={{
-                color: "white",
-                whiteSpace: "pre-wrap",
-                fontSize: 12,
-                lineHeight: "20px",
-              }}
-            >
-              {selectedHistory.comment}
-            </div>
-          </div>
+
+      <HistoryDetailAreaContainer>
+        <HistoryDetailContainer color={color}>
+          <SpeechBubbleTriangle color={color} />
+          <HistoryCommentContainer>
+            <HistoryIconImage src={selectedHistory.iconUrl} />
+            <HistoryComment>{selectedHistory.comment}</HistoryComment>
+          </HistoryCommentContainer>
           {selectedHistory.companions.length > 0 && (
-            <div
-              style={{
-                backgroundColor: "white",
-                borderRadius: 20,
-                padding: "16px 24px",
-                paddingBottom: 32,
-              }}
-            >
-              <h4 style={{ fontSize: 24, margin: 0 }}>同行者</h4>
-              <div
-                style={{ display: "flex", gap: 26, justifyContent: "center" }}
-              >
+            <CompanionContainer>
+              <CompanionTitle>同行者</CompanionTitle>
+              <CompanionInfoContainer>
                 {selectedHistory.companions.map((companion) => (
-                  <div
-                    style={{ display: "flex", alignItems: "center", gap: 8 }}
-                  >
-                    <img
-                      src={companion.iconUrl}
-                      style={{ width: 64, height: 64, borderRadius: 9999 }}
-                    />
-                    <div style={{ textAlign: "center" }}>
-                      <div style={{ fontSize: 27, fontWeight: "bold" }}>
-                        {companion.name}
-                      </div>
-                      <div
-                        style={{
-                          fontSize: 8,
-                          fontFamily: "Impact",
-                        }}
-                      >
-                        {companion.enName}
-                      </div>
-                    </div>
-                  </div>
+                  <SingleCompanionInfoContainer>
+                    <CompanionIconImage src={companion.iconUrl} />
+                    <CompanionNameContainer>
+                      <CompanionName>{companion.name}</CompanionName>
+                      <CompanionEnName>{companion.enName}</CompanionEnName>
+                    </CompanionNameContainer>
+                  </SingleCompanionInfoContainer>
                 ))}
-              </div>
-            </div>
+              </CompanionInfoContainer>
+            </CompanionContainer>
           )}
-        </div>
-      </div>
-    </div>
+        </HistoryDetailContainer>
+      </HistoryDetailAreaContainer>
+    </Container>
   );
 };

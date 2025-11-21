@@ -2,6 +2,11 @@ import { css } from "@emotion/css";
 import styled from "@emotion/styled";
 import { BREAK_POINT, UiColor } from "../../definitions";
 
+export const Container = styled.div`
+  display: flex;
+  gap: 32px;
+`;
+
 export const FrameStyle = css`
   position: relative;
   width: 480px;
@@ -12,6 +17,171 @@ export const FrameStyle = css`
   display: flex;
   flex-direction: column;
   gap: 12px;
+`;
+
+export const TitleContainer = styled.div`
+  height: 48px;
+  display: flex;
+  align-items: center;
+`;
+
+export const Title = styled.span`
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: -4px;
+`;
+
+export const ScrollContainer = styled.div`
+  overflow-y: auto;
+  height: 100%;
+`;
+
+export const HistoriesContainer = styled.div`
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+`;
+
+export const HistoryLightBar = styled.div<{ count: number }>`
+  position: absolute;
+  width: 5px;
+  height: ${(props) => 60 * (props.count - 1)}px;
+  background-color: ${UiColor.gray};
+  left: 11px;
+  top: 21px;
+`;
+
+export const HistoryOneLineContainer = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 8px;
+`;
+
+export const HistoryLight = styled.div<{
+  isSelected: boolean;
+  selectedColor: string;
+}>`
+  width: ${(props) => (props.isSelected ? 28 : 18)}px;
+  height: ${(props) => (props.isSelected ? 28 : 18)}px;
+  background-color: ${(props) =>
+    props.isSelected ? props.selectedColor : "white"};
+  margin: ${(props) => (props.isSelected ? 0 : 5)}px;
+  border: 5px solid ${UiColor.gray};
+  border-radius: 4px;
+  box-sizing: border-box;
+  z-index: 1;
+`;
+
+export const IndexCircle = styled.div<{ color: string }>`
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border: 10px solid ${(props) => props.color};
+  border-radius: 9999px;
+  font-weight: bold;
+  font-size: 22px;
+  padding-bottom: 4px;
+`;
+
+export const HistoryTitle = styled.div`
+  font-weight: bold;
+  font-size: 24px;
+  margin-top: -8px;
+`;
+
+export const HistoryDetailAreaContainer = styled.div`
+  flex-grow: 1;
+`;
+
+export const HistoryDetailContainer = styled.div<{ color: string }>`
+  width: 100%;
+  background-color: ${(props) => props.color};
+  border-radius: 20px;
+  padding: 36px;
+  padding-left: 72px;
+  box-sizing: border-box;
+  position: relative;
+`;
+
+export const SpeechBubbleTriangle = styled.div<{ color: string }>`
+  position: absolute;
+  border-style: solid;
+  border-width: 28px 48px;
+  border-left-width: 0;
+  border-color: transparent;
+  border-right-color: ${(props) => props.color};
+  left: -48px;
+  top: 60px;
+`;
+
+export const HistoryCommentContainer = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 28px;
+`;
+
+export const HistoryIconImage = styled.img`
+  height: 100px;
+  width: 100px;
+  background-color: white;
+  border-radius: 9999px;
+  flex-shrink: 0;
+`;
+
+export const HistoryComment = styled.div`
+  color: white;
+  white-space: pre-wrap;
+  font-size: 12px;
+  line-height: 20px;
+`;
+
+export const CompanionContainer = styled.div`
+  background-color: white;
+  border-radius: 20px;
+  padding: 16px 24px;
+  padding-bottom: 32px;
+`;
+
+export const CompanionTitle = styled.h4`
+  margin: 0;
+  font-size: 24px;
+`;
+
+export const CompanionInfoContainer = styled.div`
+  display: flex;
+  gap: 26px;
+  justify-content: center;
+`;
+
+export const SingleCompanionInfoContainer = styled.div`
+  display: flex;
+  gap: 8px;
+  align-items: center;
+`;
+
+export const CompanionIconImage = styled.img`
+  width: 64px;
+  height: 64px;
+  border-radius: 9999px;
+`;
+
+export const CompanionNameContainer = styled.div`
+  text-align: center;
+`;
+
+export const CompanionName = styled.div`
+  font-size: 27px;
+  font-weight: bold;
+`;
+
+export const CompanionEnName = styled.div`
+  font-size: 8px;
+  font-family: Impact;
 `;
 
 export const TopBar = styled.div`
@@ -32,28 +202,19 @@ export const BottomBar = styled.div`
   bottom: 24px;
 `;
 
-export const TitleContainer = styled.div`
-  height: 48px;
-  display: flex;
-  align-items: center;
-`;
-
-export const Title = styled.span`
-  font-size: 36px;
+export const ShortIdBoard = styled.div<{ color: string }>`
+  background-color: ${(props) => props.color};
+  font-family: "BIZ UDGothic";
+  width: 260px;
+  height: 160px;
+  position: absolute;
   font-weight: bold;
-  margin-top: -4px;
-`;
-
-export const IndexCircle = styled.div<{ color: string }>`
-  width: 48px;
-  height: 48px;
+  font-size: 50px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-sizing: border-box;
-  border: 10px solid ${(props) => props.color};
-  border-radius: 9999px;
-  font-weight: bold;
-  font-size: 22px;
-  padding-bottom: 4px;
+  gap: 24px;
+  left: -300px;
+  bottom: -70px;
 `;
