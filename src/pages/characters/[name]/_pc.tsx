@@ -172,7 +172,7 @@ export const PcCharacterAbout: React.FC<PcCharacterAboutProps> = ({
         </GradationBackground>
         <div
           style={{
-            height: 1080,
+            minHeight: 1080,
             position: "relative",
             backgroundColor: mainColor,
             zIndex: 0,

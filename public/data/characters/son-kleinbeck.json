@@ -86,14 +86,10 @@
   ],
   "qa": [
     {
-      "question": "",
-      "answer": ""
-    },
-    {
-      "question": "",
-      "answer": ""
+      "question": "ほげほげ",
+      "answer": "ふがふが"
     }
   ],
   "comment": "自由記述",
-  "artGallery": [""]
+  "artGallery": []
 }
