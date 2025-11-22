@@ -1,11 +1,10 @@
 import { useMemo } from "react";
-import { NameBoard } from "../";
+import { NameBoard, NavigateArrow } from "../";
 import {
   ArrowContainer,
   BoardContainer,
   CharacterName,
   Container,
-  DesignedArrow,
   EnCharacterName,
   Header,
   NameContainer,
@@ -51,12 +50,18 @@ export const CharacterHeader: React.FC<CharacterHeaderProps> = ({
           <EnCharacterName>{enName}</EnCharacterName>
         </NameContainer>
         <ArrowContainer>
-          <DesignedArrow isActive={!!handlePrevious} onClick={handlePrevious}>
-            ◀
-          </DesignedArrow>
-          <DesignedArrow isActive={!!handleNext} onClick={handleNext}>
-            ▶
-          </DesignedArrow>
+          <NavigateArrow
+            direction="left"
+            height={64}
+            disabled={!handlePrevious}
+            onClick={handlePrevious}
+          />
+          <NavigateArrow
+            direction="right"
+            height={64}
+            disabled={!handleNext}
+            onClick={handleNext}
+          />
         </ArrowContainer>
       </Header>
     </Container>

@@ -1,6 +1,6 @@
 import { css } from "@emotion/css";
 import styled from "@emotion/styled";
-import { UiColor } from "../../../definitions";
+import { BREAK_POINT, UiColor } from "../../../definitions";
 
 export const Loading = styled.div`
   height: 100dvh;
@@ -47,7 +47,7 @@ export const ProfileMainContainer = styled.div`
   position: relative;
   display: flex;
   height: 100%;
-  max-width: 1200px;
+  max-width: ${BREAK_POINT}px;
   margin: auto;
 `;
 
@@ -88,11 +88,6 @@ export const GradationBackground = styled.div<{
       ${UiColor.gray} 436px,
       ${UiColor.gray} 436px
     );
-`;
-
-export const StatusMainContainer = styled.div`
-  max-width: 1200px;
-  margin: auto;
 `;
 
 export const CostumeContainer = styled.div`
@@ -157,4 +152,94 @@ export const LeftWindowStyle = css`
 export const RightWindowStyle = css`
   top: 160px;
   right: calc(50% - 800px - 440px - 40px);
+`;
+
+export const RoadBackGround = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 120px;
+  padding-bottom: 200px;
+  background-image:
+    repeating-linear-gradient(
+      transparent,
+      transparent 255px,
+      ${UiColor.gray} 256px,
+      ${UiColor.gray} 256px
+    ),
+    repeating-linear-gradient(
+      270deg,
+      transparent,
+      transparent 435px,
+      ${UiColor.gray} 436px,
+      ${UiColor.gray} 436px
+    );
+  overflow-x: hidden;
+  position: relative;
+`;
+
+export const MarginContainer = styled.div`
+  width: ${BREAK_POINT}px;
+  margin: auto;
+`;
+
+export const BrailleBlock = styled.div<{ color: string }>`
+  position: absolute;
+  width: 116px;
+  top: 0;
+  bottom: 0;
+  background:
+    repeating-linear-gradient(
+      180deg,
+      transparent,
+      transparent 116px,
+      white 116px,
+      white 120px
+    ),
+    linear-gradient(
+      90deg,
+      ${(props) => props.color},
+      ${(props) => props.color} 36px,
+      white 36px,
+      white 40px,
+      ${(props) => props.color} 40px,
+      ${(props) => props.color} 76px,
+      white 76px,
+      white 80px,
+      ${(props) => props.color} 80px,
+      ${(props) => props.color} 116px
+    );
+  right: calc(50% - 120px - 600px - 160px);
+`;
+
+export const BottomNavigatorContainer = styled.div`
+  width: 100%;
+  margin: auto;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+`;
+
+export const NameBoardContainer = styled.button`
+  cursor: pointer;
+  background: none;
+  padding: 0;
+  border: none;
+`;
+
+export const BottomArrowStyle = css`
+  position: relative;
+`;
+
+export const BottomNameStyle = (position: "left" | "right") => css`
+  position: absolute;
+  ${position}: -120px;
+  top: 60px;
+  & span {
+    color: black;
+  }
+  & span:first-child {
+    font-size: 40px;
+    letter-spacing: initial;
+  }
 `;

@@ -1,13 +1,14 @@
-import { useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import { MdLocationPin } from "react-icons/md";
 import { useNavigate } from "react-router";
-import { css } from "@emotion/css";
 import {
   CharacterHeader,
-  CommonFrame,
+  CommentFrame,
   CostumeList,
   HistoryFrame,
   NameBoard,
+  NameContainer,
+  NavigateArrow,
   ProfileFrame,
   QAFrame,
   SkillsFrame,
@@ -15,7 +16,7 @@ import {
   Window,
   type CostumeItem,
 } from "../../../components";
-import { BREAK_POINT, UiColor } from "../../../definitions";
+import { ArtGallery } from "../../../components/ArtGallery/ArtGallery";
 import type { CharacterDetail, CharacterSummary } from "../../../types";
 import {
   CharacterHeaderContainer,
@@ -26,7 +27,6 @@ import {
   ProfileContainer,
   MainSpriteImage,
   GradationBackground,
-  StatusMainContainer,
   CostumeTitle,
   CostumeTitleContainer,
   CostumeContainer,
@@ -36,6 +36,13 @@ import {
   LeftWindowStyle,
   RightWindowStyle,
   TrainBody,
+  BrailleBlock,
+  RoadBackGround,
+  MarginContainer,
+  BottomNavigatorContainer,
+  NameBoardContainer,
+  BottomArrowStyle,
+  BottomNameStyle,
 } from "./styled";
 
 type PcCharacterAboutProps = {
@@ -106,14 +113,20 @@ export const PcCharacterAbout: React.FC<PcCharacterAboutProps> = ({
     ? () => {
         setDisplaySpriteIndex(0);
         navigate(`/characters/${previousCharacterId}`);
+        scrollTo(0, 0);
       }
     : undefined;
   const handleNext = nextCharacterId
     ? () => {
         setDisplaySpriteIndex(0);
         navigate(`/characters/${nextCharacterId}`);
+        scrollTo(0, 0);
       }
     : undefined;
+
+  const handleAboutCharacters = useCallback(() => {
+    navigate("/about#characters");
+  }, [navigate]);
 
   return (
     <>
@@ -140,7 +153,7 @@ export const PcCharacterAbout: React.FC<PcCharacterAboutProps> = ({
           </ProfileMainContainer>
         </ProfileContainer>
         <GradationBackground startColor={mainColor} endColor={secondColor}>
-          <StatusMainContainer>
+          <MarginContainer>
             <CostumeContainer>
               <CostumeTitleContainer>
                 <MdLocationPin size={64} color="#4B4B4B" />
@@ -175,7 +188,7 @@ export const PcCharacterAbout: React.FC<PcCharacterAboutProps> = ({
               color={mainColor}
               selectedColor={yellowColor}
             />
-          </StatusMainContainer>
+          </MarginContainer>
         </GradationBackground>
         <TrainBody mainColor={mainColor} secondColor={secondColor}>
           <Window
@@ -188,139 +201,54 @@ export const PcCharacterAbout: React.FC<PcCharacterAboutProps> = ({
           />
           <QAFrame qaList={data.qaList} />
         </TrainBody>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            paddingTop: 120,
-            paddingBottom: 200,
-            backgroundImage: `
-              repeating-linear-gradient(
-                transparent,
-                transparent 255px,
-                ${UiColor.gray} 256px,
-                ${UiColor.gray} 256px
-              ),
-              repeating-linear-gradient(
-                270deg,
-                transparent,
-                transparent 435px,
-                ${UiColor.gray} 436px,
-                ${UiColor.gray} 436px
-              )`,
-            overflowX: "hidden",
-            position: "relative",
-          }}
-        >
-          <div
-            style={{
-              position: "absolute",
-              width: 116,
-              top: 0,
-              bottom: 0,
-              background: `
-                repeating-linear-gradient(
-                  180deg,
-                  transparent, transparent 116px,
-                  white 116px, white 120px
-                ),
-                linear-gradient(
-                  90deg,
-                  ${yellowColor}, ${yellowColor} 36px,
-                  white 36px, white 40px,
-                  ${yellowColor} 40px, ${yellowColor} 76px,
-                  white 76px, white 80px,
-                  ${yellowColor} 80px, ${yellowColor} 116px
-                )
-              `,
-              right: "calc(50% - 120px - 600px - 160px)",
-            }}
-          />
-          <CommonFrame
-            className={css`
-              width: 880px;
-              box-sizing: border-box;
-              padding: 56px;
-              margin-bottom: 120px;
-            `}
-          >
-            <h3 style={{ fontSize: 32, margin: 0, marginBottom: 12 }}>
-              鈴木乖離のコメント
-            </h3>
-            <div
-              style={{
-                whiteSpace: "pre-wrap",
-                fontSize: 16,
-                lineHeight: "30px",
-              }}
-            >
-              {data.comment}
-            </div>
-          </CommonFrame>
-          {data.artGallery.length > 0 && (
-            <div style={{ width: 1200, margin: "auto" }}>
-              <h1
-                style={{
-                  margin: 0,
-                  fontSize: 64,
-                  marginBottom: 80,
-                  textAlign: "center",
-                }}
-              >
-                アートギャラリー
-              </h1>
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  gap: 80,
-                  paddingBottom: 200,
-                }}
-              >
-                {data.artGallery.map((artImage, i) => (
-                  <div
-                    style={{
-                      display: "flex",
-                      justifyContent: i % 2 === 0 ? "flex-end" : "flex-start",
-                    }}
-                  >
-                    <img
-                      style={{
-                        height: 480,
-                        maxWidth: 1200,
-                        objectFit: "contain",
-                      }}
-                      src={artImage}
-                    />
-                  </div>
-                ))}
-              </div>
-            </div>
-          )}
-          <div
-            style={{
-              width: BREAK_POINT,
-              margin: "auto",
-              justifyContent: "space-between",
-              display: "flex",
-              alignItems: "center",
-            }}
-          >
-            <div>◀</div>
-            <div
-              style={{ cursor: "pointer" }}
-              onClick={() => navigate("/about#characters")}
-            >
-              <NameBoard
-                name="一覧に戻る"
-                enName="GO TO CHARACTER LIST"
+        <RoadBackGround>
+          <MarginContainer>
+            <BrailleBlock color={yellowColor} />
+            <CommentFrame comment={data.comment} />
+            {data.artGallery.length > 0 && (
+              <MarginContainer>
+                <ArtGallery artGallery={data.artGallery} />
+              </MarginContainer>
+            )}
+            <BottomNavigatorContainer>
+              <NavigateArrow
+                direction="left"
+                disabled={!previousCharacterId}
+                height={80}
                 color={mainColor}
-              />
-            </div>
-            <div>▶</div>
-          </div>
-        </div>
+                onClick={handlePrevious}
+                className={BottomArrowStyle}
+              >
+                <NameContainer
+                  name="まえへ"
+                  enName="Previous Character"
+                  className={BottomNameStyle("right")}
+                />
+              </NavigateArrow>
+              <NameBoardContainer onClick={handleAboutCharacters}>
+                <NameBoard
+                  name="一覧に戻る"
+                  enName="GO TO CHARACTER LIST"
+                  color={mainColor}
+                />
+              </NameBoardContainer>
+              <NavigateArrow
+                direction="right"
+                height={80}
+                color={mainColor}
+                onClick={handleNext}
+                disabled={!nextCharacterId}
+                className={BottomArrowStyle}
+              >
+                <NameContainer
+                  name="つぎへ"
+                  enName="Next Character"
+                  className={BottomNameStyle("left")}
+                />
+              </NavigateArrow>
+            </BottomNavigatorContainer>
+          </MarginContainer>
+        </RoadBackGround>
       </Container>
     </>
   );

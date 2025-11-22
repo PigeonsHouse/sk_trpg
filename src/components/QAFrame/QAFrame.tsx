@@ -18,14 +18,12 @@ export const QAFrame: React.FC<QAFrameProps> = ({ qaList }) => {
     <CommonFrame className={FrameStyle}>
       <Title>Q&A</Title>
       <ContentContainer>
-        {qaList.map((qa) => {
-          return (
-            <QAContainer>
-              <Question>Q. {qa.question}</Question>
-              <Answer>A. {qa.answer}</Answer>
-            </QAContainer>
-          );
-        })}
+        {qaList.map((qa, i) => (
+          <QAContainer key={i}>
+            <Question>Q. {qa.question}</Question>
+            <Answer>A. {qa.answer}</Answer>
+          </QAContainer>
+        ))}
       </ContentContainer>
     </CommonFrame>
   );

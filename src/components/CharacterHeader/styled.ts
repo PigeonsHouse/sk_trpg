@@ -19,7 +19,6 @@ export const BoardContainer = styled.div<{ isSmall?: boolean }>`
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: top;
   opacity: ${(props) => (props.isSmall ? 0 : 1)};
   transition: opacity 0.2s;
 `;
@@ -61,12 +60,7 @@ export const ArrowContainer = styled.div`
   justify-content: center;
   align-items: center;
   gap: 920px;
-`;
-
-export const DesignedArrow = styled.span<{ isActive: boolean }>`
-  font-size: 60px;
-  transform: scale(1.7, 1);
-  color: ${(props) =>
-    props.isActive ? "white" : "rgb(from white r g b / 0.5)"};
-  cursor: ${(props) => (props.isActive ? "pointer" : "default")};
+  position: absolute;
+  width: 100%;
+  z-index: 1;
 `;

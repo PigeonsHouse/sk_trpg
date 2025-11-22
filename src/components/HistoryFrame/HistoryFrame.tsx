@@ -102,8 +102,8 @@ export const HistoryFrame: React.FC<HistoryFrameProps> = ({
             <CompanionContainer>
               <CompanionTitle>同行者</CompanionTitle>
               <CompanionInfoContainer>
-                {selectedHistory.companions.map((companion) => (
-                  <SingleCompanionInfoContainer>
+                {selectedHistory.companions.map((companion, i) => (
+                  <SingleCompanionInfoContainer key={i}>
                     <CompanionIconImage
                       src={companion.iconUrl}
                       color={companion.color}
