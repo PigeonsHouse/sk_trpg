@@ -15,7 +15,7 @@ import {
   Window,
   type CostumeItem,
 } from "../../../components";
-import { UiColor } from "../../../definitions";
+import { BREAK_POINT, UiColor } from "../../../definitions";
 import type { CharacterDetail, CharacterSummary } from "../../../types";
 import {
   CharacterHeaderContainer,
@@ -194,7 +194,7 @@ export const PcCharacterAbout: React.FC<PcCharacterAboutProps> = ({
             flexDirection: "column",
             alignItems: "center",
             paddingTop: 120,
-            paddingBottom: 240,
+            paddingBottom: 200,
             backgroundImage: `
               repeating-linear-gradient(
                 transparent,
@@ -210,9 +210,33 @@ export const PcCharacterAbout: React.FC<PcCharacterAboutProps> = ({
                 ${UiColor.gray} 436px
               )`,
             overflowX: "hidden",
+            position: "relative",
           }}
         >
-          <div style={{}} />
+          <div
+            style={{
+              position: "absolute",
+              width: 116,
+              top: 0,
+              bottom: 0,
+              background: `
+                repeating-linear-gradient(
+                  180deg,
+                  transparent, transparent 116px,
+                  white 116px, white 120px
+                ),
+                linear-gradient(
+                  90deg,
+                  ${yellowColor}, ${yellowColor} 36px,
+                  white 36px, white 40px,
+                  ${yellowColor} 40px, ${yellowColor} 76px,
+                  white 76px, white 80px,
+                  ${yellowColor} 80px, ${yellowColor} 116px
+                )
+              `,
+              right: "calc(50% - 120px - 600px - 160px)",
+            }}
+          />
           <CommonFrame
             className={css`
               width: 880px;
@@ -275,14 +299,26 @@ export const PcCharacterAbout: React.FC<PcCharacterAboutProps> = ({
             </div>
           )}
           <div
-            style={{ cursor: "pointer" }}
-            onClick={() => navigate("/about#characters")}
+            style={{
+              width: BREAK_POINT,
+              margin: "auto",
+              justifyContent: "space-between",
+              display: "flex",
+              alignItems: "center",
+            }}
           >
-            <NameBoard
-              name="一覧に戻る"
-              enName="GO TO CHARACTER LIST"
-              color={mainColor}
-            />
+            <div>◀</div>
+            <div
+              style={{ cursor: "pointer" }}
+              onClick={() => navigate("/about#characters")}
+            >
+              <NameBoard
+                name="一覧に戻る"
+                enName="GO TO CHARACTER LIST"
+                color={mainColor}
+              />
+            </div>
+            <div>▶</div>
           </div>
         </div>
       </Container>
