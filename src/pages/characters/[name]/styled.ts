@@ -58,8 +58,8 @@ export const ProfileFrameStyle = css`
 
 export const MainSpriteImage = styled.img`
   position: absolute;
-  bottom: -160px;
-  height: 130%;
+  bottom: -240px;
+  width: 560px;
   right: 0px;
   z-index: 1000;
 `;
