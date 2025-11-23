@@ -1,12 +1,18 @@
+import { MdLocationPin } from "react-icons/md";
+import { size } from "../../definitions";
 import { arraySplit } from "../../utils";
 import {
   Bar,
   Container,
   Image,
   ImageContainer,
+  Item,
   ItemLight,
+  ListContainer,
   OneLineContainer,
   SingleItemContainer,
+  Title,
+  TitleContainer,
 } from "./styled";
 
 export type CostumeItem = {
@@ -34,28 +40,39 @@ export const CostumeList: React.FC<CostumeListProps> = ({
   const lastLineIndex = Math.floor(items.length / MAX_WIDTH_ITEM);
 
   return (
-    <Container className={className}>
-      {splittedList.map((splitItems, i) => (
-        <OneLineContainer key={i}>
-          <Bar
-            idx={i}
-            count={splitItems.length}
-            extendLeft={i !== 0}
-            extendRight={splitItems.length === 4 && i !== lastLineIndex}
-          />
-          {splitItems.map((item, j) => (
-            <SingleItemContainer key={`${i}-${j}`}>
-              <ItemLight
-                isSelected={item.isSelected}
-                selectedColor={selectedColor}
-              />
-              <ImageContainer color={color} onClick={item.onClick}>
-                <Image src={item.imageUrl} />
-              </ImageContainer>
-            </SingleItemContainer>
-          ))}
-        </OneLineContainer>
-      ))}
+    <Container>
+      <TitleContainer>
+        <MdLocationPin size={size.x8} color="#4B4B4B" />
+        <Title>衣装差分</Title>
+      </TitleContainer>
+      <ListContainer className={className}>
+        {splittedList.map((splitItems, i) => (
+          <OneLineContainer key={i}>
+            {splitItems.map((item, j) => (
+              <Item key={`${i}-${j}`}>
+                <SingleItemContainer onClick={item.onClick}>
+                  <ItemLight
+                    isSelected={item.isSelected}
+                    selectedColor={selectedColor}
+                  />
+                  <ImageContainer color={color} isSelected={item.isSelected}>
+                    <Image src={item.imageUrl} />
+                  </ImageContainer>
+                </SingleItemContainer>
+              </Item>
+            ))}
+
+            <Bar
+              idx={i}
+              count={splitItems.length}
+              extendLeft={i !== 0}
+              extendRight={
+                splitItems.length === MAX_WIDTH_ITEM && i !== lastLineIndex
+              }
+            />
+          </OneLineContainer>
+        ))}
+      </ListContainer>
     </Container>
   );
 };

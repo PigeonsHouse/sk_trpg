@@ -1,7 +1,23 @@
 import styled from "@emotion/styled";
 import { UiColor } from "../../definitions";
 
-export const Container = styled.div`
+export const Container = styled.div``;
+
+export const TitleContainer = styled.div`
+  height: 64px;
+  display: flex;
+  align-items: center;
+`;
+
+export const Title = styled.h2`
+  margin: 0;
+  font-size: 44px;
+  font-weight: bold;
+  line-height: 1;
+`;
+
+export const ListContainer = styled.ul`
+  margin: 0;
   display: flex;
   flex-direction: column;
   padding-top: 16px;
@@ -9,7 +25,7 @@ export const Container = styled.div`
   padding-bottom: 48px;
   position: relative;
   box-sizing: border-box;
-  min-height: 300px;
+  list-style: none;
 `;
 
 export const Bar = styled.div<{
@@ -35,10 +51,18 @@ export const OneLineContainer = styled.div`
   gap: 20px;
 `;
 
-export const SingleItemContainer = styled.div`
+export const Item = styled.li``;
+
+export const SingleItemContainer = styled.button`
+  padding: 0;
+  border: none;
+  background: none;
   display: flex;
   flex-direction: column;
   align-items: center;
+  &:focus > div {
+    filter: brightness(100%);
+  }
 `;
 
 export const ItemLight = styled.div<{
@@ -55,14 +79,23 @@ export const ItemLight = styled.div<{
   z-index: 1;
 `;
 
-export const ImageContainer = styled.div<{ color: string }>`
+export const ImageContainer = styled.div<{
+  color: string;
+  isSelected: boolean;
+}>`
   display: inline-block;
   background-color: ${(props) => props.color};
-  border-radius: 9999px;
+  border-radius: 50%;
   overflow: hidden;
   width: 100px;
   height: 100px;
   cursor: pointer;
+  transition: filter 0.1s;
+  ${(props) =>
+    !props.isSelected &&
+    `&:not(:hover) {
+      filter: brightness(50%);
+    }`}
 `;
 
 export const Image = styled.img`

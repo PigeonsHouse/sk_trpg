@@ -9,6 +9,4 @@ const styles = css`
   }
 `;
 
-export const GlobalStyles = () => {
-  return <Global styles={styles} />;
-};
+export const GlobalStyles = () => <Global styles={styles} />;

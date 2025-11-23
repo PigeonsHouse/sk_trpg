@@ -10,7 +10,7 @@ export const FrameStyle = css`
   box-sizing: border-box;
 `;
 
-export const Title = styled.h3`
+export const Title = styled.h2`
   text-align: center;
   margin: 0;
   font-size: 64px;

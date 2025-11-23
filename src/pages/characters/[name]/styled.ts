@@ -94,18 +94,6 @@ export const CostumeContainer = styled.div`
   padding-left: 32px;
 `;
 
-export const CostumeTitleContainer = styled.div`
-  height: 64px;
-  display: flex;
-  align-items: center;
-`;
-
-export const CostumeTitle = styled.span`
-  font-size: 44px;
-  font-weight: bold;
-  line-height: 1;
-`;
-
 export const TwoColumnsContainer = styled.div`
   display: flex;
   justify-content: space-between;
@@ -210,36 +198,4 @@ export const BrailleBlock = styled.div<{ color: string }>`
       ${(props) => props.color} 116px
     );
   right: calc(50% - 120px - 600px - 160px);
-`;
-
-export const BottomNavigatorContainer = styled.div`
-  width: 100%;
-  margin: auto;
-  justify-content: space-between;
-  display: flex;
-  align-items: center;
-`;
-
-export const NameBoardContainer = styled.button`
-  cursor: pointer;
-  background: none;
-  padding: 0;
-  border: none;
-`;
-
-export const BottomArrowStyle = css`
-  position: relative;
-`;
-
-export const BottomNameStyle = (position: "left" | "right") => css`
-  position: absolute;
-  ${position}: 0;
-  top: 60px;
-  & span {
-    color: black;
-  }
-  & span:first-child {
-    font-size: 40px;
-    letter-spacing: initial;
-  }
 `;

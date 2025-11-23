@@ -1,13 +1,12 @@
 import { useMemo } from "react";
-import { NameBoard, NavigateArrow } from "../";
+import { NameBoard, NameContainer, NavigateArrow } from "../";
+import { size } from "../../definitions";
 import {
   ArrowContainer,
   BoardContainer,
-  CharacterName,
   Container,
-  EnCharacterName,
   Header,
-  NameContainer,
+  SmallNameContainerStyle,
 } from "./styled";
 
 type CharacterHeaderProps = {
@@ -15,7 +14,7 @@ type CharacterHeaderProps = {
   name: string;
   enName: string;
   color: string;
-  isSmall?: boolean;
+  isShrink?: boolean;
   handlePrevious?: () => void;
   handleNext?: () => void;
 };
@@ -25,40 +24,47 @@ export const CharacterHeader: React.FC<CharacterHeaderProps> = ({
   name,
   enName,
   color,
-  isSmall,
+  isShrink,
   handlePrevious,
   handleNext,
 }) => {
-  const size = useMemo(() => {
+  const nameSize = useMemo(() => {
     if (name.length < 8) {
       return "lg";
-    }
-    if (name.length < 12) {
+    } else if (name.length < 12) {
       return "md";
+    } else {
+      return "sm";
     }
-    return "sm";
   }, [name]);
 
   return (
     <Container className={className}>
-      <Header color={color} isSmall={isSmall}>
-        <BoardContainer isSmall={isSmall}>
-          <NameBoard name={name} enName={enName} color={color} />
+      <Header color={color} isShrink={isShrink}>
+        <BoardContainer isShrink={isShrink}>
+          <NameBoard
+            name={name}
+            enName={enName}
+            color={color}
+            nameSize={nameSize}
+          />
         </BoardContainer>
-        <NameContainer isSmall={isSmall}>
-          <CharacterName size={size}>{name}</CharacterName>
-          <EnCharacterName>{enName}</EnCharacterName>
-        </NameContainer>
+        <NameContainer
+          name={name}
+          enName={enName}
+          size={nameSize}
+          className={SmallNameContainerStyle(isShrink)}
+        />
         <ArrowContainer>
           <NavigateArrow
             direction="left"
-            height={64}
+            height={size.x8}
             disabled={!handlePrevious}
             onClick={handlePrevious}
           />
           <NavigateArrow
             direction="right"
-            height={64}
+            height={size.x8}
             disabled={!handleNext}
             onClick={handleNext}
           />

@@ -1,14 +1,12 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
-import { MdLocationPin } from "react-icons/md";
 import { useNavigate } from "react-router";
 import {
+  ArtGallery,
+  BottomNavigator,
   CharacterHeader,
   CommentFrame,
   CostumeList,
   HistoryFrame,
-  NameBoard,
-  NameContainer,
-  NavigateArrow,
   ProfileFrame,
   QAFrame,
   SkillsFrame,
@@ -16,7 +14,6 @@ import {
   Window,
   type CostumeItem,
 } from "../../../components";
-import { ArtGallery } from "../../../components/ArtGallery/ArtGallery";
 import type { CharacterDetail, CharacterSummary } from "../../../types";
 import {
   CharacterHeaderContainer,
@@ -27,8 +24,6 @@ import {
   ProfileContainer,
   MainSpriteImage,
   GradationBackground,
-  CostumeTitle,
-  CostumeTitleContainer,
   CostumeContainer,
   TwoColumnsContainer,
   LeftColumnContainer,
@@ -39,10 +34,6 @@ import {
   BrailleBlock,
   RoadBackGround,
   MarginContainer,
-  BottomNavigatorContainer,
-  NameBoardContainer,
-  BottomArrowStyle,
-  BottomNameStyle,
 } from "./styled";
 
 type PcCharacterAboutProps = {
@@ -63,7 +54,7 @@ export const PcCharacterAbout: React.FC<PcCharacterAboutProps> = ({
   const [nextCharacterId, setNextCharacterId] = useState<string | undefined>();
   const [displaySpriteIndex, setDisplaySpriteIndex] = useState(0);
   const [selectedHistoryIndex, setSelectedHistoryIndex] = useState(0);
-  const [isScroll, setIsScroll] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}data/characters.json`)
@@ -89,7 +80,7 @@ export const PcCharacterAbout: React.FC<PcCharacterAboutProps> = ({
   }, [data, summary]);
   useEffect(() => {
     const callback = () => {
-      setIsScroll(window.scrollY !== 0);
+      setIsScrolled(window.scrollY !== 0);
     };
     window.addEventListener("scroll", callback);
     return () => window.removeEventListener("scroll", callback);
@@ -136,7 +127,7 @@ export const PcCharacterAbout: React.FC<PcCharacterAboutProps> = ({
             name={data.name}
             enName={data.enName}
             color={mainColor}
-            isSmall={isScroll}
+            isShrink={isScrolled}
             handlePrevious={handlePrevious}
             handleNext={handleNext}
           />
@@ -155,10 +146,6 @@ export const PcCharacterAbout: React.FC<PcCharacterAboutProps> = ({
         <GradationBackground startColor={mainColor} endColor={secondColor}>
           <MarginContainer>
             <CostumeContainer>
-              <CostumeTitleContainer>
-                <MdLocationPin size={64} color="#4B4B4B" />
-                <CostumeTitle>衣装差分</CostumeTitle>
-              </CostumeTitleContainer>
               <CostumeList
                 items={costumeList}
                 color={mainColor}
@@ -210,43 +197,12 @@ export const PcCharacterAbout: React.FC<PcCharacterAboutProps> = ({
                 <ArtGallery artGallery={data.artGallery} />
               </MarginContainer>
             )}
-            <BottomNavigatorContainer>
-              <NavigateArrow
-                direction="left"
-                disabled={!previousCharacterId}
-                height={80}
-                color={mainColor}
-                onClick={handlePrevious}
-                className={BottomArrowStyle}
-              >
-                <NameContainer
-                  name="まえへ"
-                  enName="Previous Character"
-                  className={BottomNameStyle("left")}
-                />
-              </NavigateArrow>
-              <NameBoardContainer onClick={handleAboutCharacters}>
-                <NameBoard
-                  name="一覧に戻る"
-                  enName="GO TO CHARACTER LIST"
-                  color={mainColor}
-                />
-              </NameBoardContainer>
-              <NavigateArrow
-                direction="right"
-                height={80}
-                color={mainColor}
-                onClick={handleNext}
-                disabled={!nextCharacterId}
-                className={BottomArrowStyle}
-              >
-                <NameContainer
-                  name="つぎへ"
-                  enName="Next Character"
-                  className={BottomNameStyle("right")}
-                />
-              </NavigateArrow>
-            </BottomNavigatorContainer>
+            <BottomNavigator
+              color={mainColor}
+              handlePrevious={handlePrevious}
+              handleNext={handleNext}
+              handleAboutCharacters={handleAboutCharacters}
+            />
           </MarginContainer>
         </RoadBackGround>
       </Container>

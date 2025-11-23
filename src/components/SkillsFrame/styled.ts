@@ -4,11 +4,12 @@ import { BREAK_POINT, UiColor } from "../../definitions";
 
 export const FrameStatus = css`
   padding: 24px;
-  min-height: 300px;
+  min-height: 360px;
   position: relative;
+  box-sizing: border-box;
 `;
 
-export const Title = styled.h3`
+export const Title = styled.h2`
   margin: 0;
   margin-top: -8px;
   font-size: 32px;
@@ -75,5 +76,5 @@ export const Light = styled.div<{ color: string }>`
   height: 110px;
   border: 12px solid ${UiColor.black};
   background-color: ${(props) => props.color};
-  border-radius: 9999px;
+  border-radius: 50%;
 `;

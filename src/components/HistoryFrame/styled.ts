@@ -36,11 +36,14 @@ export const ScrollContainer = styled.div`
   height: 100%;
 `;
 
-export const HistoriesContainer = styled.div`
+export const HistoriesContainer = styled.ol`
   position: relative;
   display: flex;
   flex-direction: column;
   gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 `;
 
 export const HistoryLightBar = styled.div<{ count: number }>`
@@ -52,7 +55,11 @@ export const HistoryLightBar = styled.div<{ count: number }>`
   top: 21.5px;
 `;
 
-export const HistoryOneLineContainer = styled.div`
+export const HistoryOneLineContainer = styled.button`
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  background: none;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -81,10 +88,9 @@ export const IndexCircle = styled.div<{ color: string }>`
   align-items: center;
   box-sizing: border-box;
   border: 10px solid ${(props) => props.color};
-  border-radius: 9999px;
+  border-radius: 50%;
   font-weight: bold;
   font-size: 22px;
-  padding-bottom: 4px;
 `;
 
 export const HistoryTitle = styled.div`
@@ -129,7 +135,7 @@ export const HistoryIconImage = styled.img`
   height: 100px;
   width: 100px;
   background-color: white;
-  border-radius: 9999px;
+  border-radius: 50%;
   flex-shrink: 0;
 `;
 
@@ -147,18 +153,19 @@ export const CompanionContainer = styled.div`
   padding-bottom: 32px;
 `;
 
-export const CompanionTitle = styled.h4`
+export const CompanionTitle = styled.h2`
   margin: 0;
   font-size: 24px;
 `;
 
-export const CompanionInfoContainer = styled.div`
+export const CompanionInfoContainer = styled.ul`
   display: flex;
   gap: 26px;
   justify-content: center;
+  list-style: none;
 `;
 
-export const SingleCompanionInfoContainer = styled.div`
+export const SingleCompanionInfoContainer = styled.li`
   display: flex;
   gap: 8px;
   align-items: center;
@@ -167,22 +174,21 @@ export const SingleCompanionInfoContainer = styled.div`
 export const CompanionIconImage = styled.img<{ color: string }>`
   width: 64px;
   height: 64px;
-  border-radius: 9999px;
+  border-radius: 50%;
   background-color: ${(props) => props.color};
 `;
 
-export const CompanionNameContainer = styled.div`
-  text-align: center;
-`;
-
-export const CompanionName = styled.div`
-  font-size: 27px;
-  font-weight: bold;
-`;
-
-export const CompanionEnName = styled.div`
-  font-size: 8px;
-  font-family: Impact;
+export const CompanionNameStyle = css`
+  & > span:first-child {
+    font-size: 28px;
+    font-weight: bold;
+    line-height: normal;
+    letter-spacing: 0;
+  }
+  & > span:last-child {
+    font-size: 8px;
+    letter-spacing: 0;
+  }
 `;
 
 export const TopBar = styled.div`
@@ -219,3 +225,6 @@ export const ShortIdBoard = styled.div<{ color: string }>`
   left: -300px;
   bottom: -70px;
 `;
+
+export const ShortId = styled.span``;
+export const ShortIdNumber = styled.span``;

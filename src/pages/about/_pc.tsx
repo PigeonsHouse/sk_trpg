@@ -140,7 +140,7 @@ export const PcAbout = () => {
               justifyContent: "center",
               alignItems: "center",
               backgroundColor: "black",
-              borderRadius: 9999,
+              borderRadius: "50%",
               width: 120,
               height: 120,
             }}

@@ -2,6 +2,7 @@ import { useMemo } from "react";
 import { MdLocationPin } from "react-icons/md";
 import type { History } from "../../types";
 import { CommonFrame } from "../CommonFrame";
+import { NameContainer } from "../NameContainer";
 import {
   Title,
   FrameStyle,
@@ -28,9 +29,9 @@ import {
   CompanionInfoContainer,
   SingleCompanionInfoContainer,
   CompanionIconImage,
-  CompanionNameContainer,
-  CompanionName,
-  CompanionEnName,
+  ShortId,
+  ShortIdNumber,
+  CompanionNameStyle,
 } from "./styled";
 
 type HistoryFrameProps = {
@@ -86,8 +87,8 @@ export const HistoryFrame: React.FC<HistoryFrameProps> = ({
         <TopBar />
         <BottomBar />
         <ShortIdBoard color={selectedColor}>
-          <div>{shortId}</div>
-          <div>{`#${String(number).padStart(2, "0")}`}</div>
+          <ShortId>{shortId}</ShortId>
+          <ShortIdNumber>{`#${String(number).padStart(2, "0")}`}</ShortIdNumber>
         </ShortIdBoard>
       </CommonFrame>
 
@@ -108,10 +109,11 @@ export const HistoryFrame: React.FC<HistoryFrameProps> = ({
                       src={companion.iconUrl}
                       color={companion.color}
                     />
-                    <CompanionNameContainer>
-                      <CompanionName>{companion.name}</CompanionName>
-                      <CompanionEnName>{companion.enName}</CompanionEnName>
-                    </CompanionNameContainer>
+                    <NameContainer
+                      name={companion.name}
+                      enName={companion.enName}
+                      className={CompanionNameStyle}
+                    />
                   </SingleCompanionInfoContainer>
                 ))}
               </CompanionInfoContainer>

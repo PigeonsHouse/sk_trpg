@@ -10,7 +10,7 @@ type NavigateArrowProps = {
 export const NavigateArrow = styled.button<NavigateArrowProps>`
   padding: 0;
   background: none;
-  cursor: ${(props) => (props.disabled ? "normal" : "pointer")};
+  cursor: ${(props) => (props.disabled ? "default" : "pointer")};
   border-style: solid;
   border-color: transparent;
   border-width: ${(props) => props.height / 2}px;

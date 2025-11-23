@@ -8,6 +8,4 @@ type CommonFrameProps = {
 export const CommonFrame: React.FC<CommonFrameProps> = ({
   className,
   children,
-}) => {
-  return <Container className={className}>{children}</Container>;
-};
+}) => <Container className={className}>{children}</Container>;

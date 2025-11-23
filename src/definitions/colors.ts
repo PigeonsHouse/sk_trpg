@@ -26,4 +26,4 @@ export const UiColor = {
   black: "#1A1A1A",
   gray: "#707070",
   yellow: "#FFE600",
-};
+} as const;

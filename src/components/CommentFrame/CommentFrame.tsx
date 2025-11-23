@@ -5,11 +5,9 @@ type CommentFrameProps = {
   comment: string;
 };
 
-export const CommentFrame: React.FC<CommentFrameProps> = ({ comment }) => {
-  return (
-    <CommonFrame className={FrameStyle}>
-      <Title>鈴木乖離のコメント</Title>
-      <Comment>{comment}</Comment>
-    </CommonFrame>
-  );
-};
+export const CommentFrame: React.FC<CommentFrameProps> = ({ comment }) => (
+  <CommonFrame className={FrameStyle}>
+    <Title>鈴木乖離のコメント</Title>
+    <Comment>{comment}</Comment>
+  </CommonFrame>
+);

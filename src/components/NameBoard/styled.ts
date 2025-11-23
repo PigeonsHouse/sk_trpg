@@ -1,4 +1,6 @@
+import { css } from "@emotion/css";
 import styled from "@emotion/styled";
+import { size } from "../../definitions";
 
 export const BoardContainer = styled.div`
   display: inline-block;
@@ -14,28 +16,6 @@ export const BoardContainer = styled.div`
   padding: 20px;
   box-sizing: border-box;
   z-index: 1;
-`;
-
-export const NameContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
-
-export const CharacterName = styled.span<{ size?: "sm" | "md" | "lg" }>`
-  line-height: 72px;
-  font-weight: 500;
-  font-family: YuGothic;
-  white-space: nowrap;
-  font-size: ${(props) =>
-    props.size === "md" ? 52 : props.size === "sm" ? 48 : 64}px;
-  letter-spacing: ${(props) =>
-    props.size === "md" ? -8 : props.size === "sm" ? -6 : 4}px;
-`;
-
-export const EnCharacterName = styled.span`
-  font-size: 16px;
-  font-family: Impact;
-  letter-spacing: 1px;
 `;
 
 export const Bar = styled.div<{ color: string }>`
@@ -57,5 +37,27 @@ export const Bar = styled.div<{ color: string }>`
     display: inline-block;
     width: 0;
     height: 0;
+  }
+`;
+
+const fontSize = (nameSize?: "sm" | "md" | "lg") => {
+  switch (nameSize) {
+    case "sm":
+      return size.x6;
+    case "md":
+      return size.x7;
+    case "lg":
+      return size.x8;
+    default:
+      return size.x8;
+  }
+};
+
+export const NameContainerStyle = (nameSize?: "sm" | "md" | "lg") => css`
+  & > span:first-child {
+    font-size: ${fontSize(nameSize)}px;
+  }
+  & > span:last-child {
+    font-size: 16px;
   }
 `;

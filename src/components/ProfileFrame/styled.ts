@@ -2,15 +2,17 @@ import { css } from "@emotion/css";
 import styled from "@emotion/styled";
 
 export const ProfileFrameStyle = css`
-  width: 608px;
-  height: 320px;
+  width: 720px;
+  height: 460px;
   padding: 54px;
+  box-sizing: border-box;
 `;
 
-export const Title = styled.h3`
+export const Title = styled.h2`
   margin: 0;
   font-size: 48px;
-  line-height: 0.8;
+  margin-top: -4px;
+  line-height: 58px;
 `;
 
 export const ContentsContainer = styled.div`

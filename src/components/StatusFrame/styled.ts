@@ -25,7 +25,7 @@ export const BottomBar = styled.div`
   bottom: calc(48px);
 `;
 
-export const Title = styled.h3`
+export const Title = styled.h2`
   margin: 0;
   margin-top: -8px;
   font-size: 32px;
@@ -74,6 +74,6 @@ export const TrafficLightContainer = styled.div`
 export const TrafficLight = styled.div<{ color: string }>`
   width: 70px;
   height: 70px;
-  border-radius: 9999px;
+  border-radius: 50%;
   background-color: ${(props) => props.color};
 `;

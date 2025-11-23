@@ -1,4 +1,6 @@
 export * from "./Anchor";
+export * from "./ArtGallery";
+export * from "./BottomNavigator";
 export * from "./CharacterHeader";
 export * from "./CommentFrame";
 export * from "./CommonFrame";
