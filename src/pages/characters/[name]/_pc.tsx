@@ -222,7 +222,7 @@ export const PcCharacterAbout: React.FC<PcCharacterAboutProps> = ({
                 <NameContainer
                   name="まえへ"
                   enName="Previous Character"
-                  className={BottomNameStyle("right")}
+                  className={BottomNameStyle("left")}
                 />
               </NavigateArrow>
               <NameBoardContainer onClick={handleAboutCharacters}>
@@ -243,7 +243,7 @@ export const PcCharacterAbout: React.FC<PcCharacterAboutProps> = ({
                 <NameContainer
                   name="つぎへ"
                   enName="Next Character"
-                  className={BottomNameStyle("left")}
+                  className={BottomNameStyle("right")}
                 />
               </NavigateArrow>
             </BottomNavigatorContainer>

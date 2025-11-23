@@ -233,7 +233,7 @@ export const BottomArrowStyle = css`
 
 export const BottomNameStyle = (position: "left" | "right") => css`
   position: absolute;
-  ${position}: -120px;
+  ${position}: 0;
   top: 60px;
   & span {
     color: black;
