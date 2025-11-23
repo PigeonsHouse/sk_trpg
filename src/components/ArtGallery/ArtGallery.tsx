@@ -6,7 +6,7 @@ import {
   Title,
 } from "./styled";
 
-type ArtGalleryProps = {
+export type ArtGalleryProps = {
   artGallery: string[];
 };
 
