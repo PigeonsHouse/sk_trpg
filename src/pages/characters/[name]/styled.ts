@@ -1,6 +1,6 @@
 import { css } from "@emotion/css";
 import styled from "@emotion/styled";
-import { BREAK_POINT, UiColor } from "../../../definitions";
+import { BREAK_POINT, SP_MAX_WIDTH, UiColor } from "../../../definitions";
 
 export const Loading = styled.div`
   height: 100dvh;
@@ -198,4 +198,18 @@ export const BrailleBlock = styled.div<{ color: string }>`
       ${(props) => props.color} 116px
     );
   right: calc(50% - 120px - 600px - 160px);
+`;
+
+/// ここからSPのみ利用するstyle
+export const SpContainer = styled.div`
+  margin-top: 100px;
+`;
+
+export const SpSpriteContainer = styled.div<{ color: string }>`
+  background-color: ${(props) => props.color};
+`;
+
+export const SpMarginContainer = styled.div`
+  max-width: ${SP_MAX_WIDTH}px;
+  margin: auto;
 `;

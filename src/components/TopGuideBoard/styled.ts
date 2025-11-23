@@ -31,7 +31,7 @@ export const TopContainer = styled.div`
 export const TopLabel = styled.span`
   font-size: 68px;
   font-weight: bold;
-  line-height: 68px;
+  margin-top: -16px;
 `;
 
 export const OneLineContainer = styled.div`
@@ -50,8 +50,8 @@ export const TextContainer = styled.div``;
 
 export const BigText = styled.div`
   font-size: 36px;
-  line-height: 44px;
   font-weight: bold;
+  margin-top: -12px;
 `;
 
 export const SmallText = styled.div`

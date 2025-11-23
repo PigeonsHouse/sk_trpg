@@ -1,6 +1,19 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useNavigate } from "react-router";
+import { css } from "@emotion/css";
+import {
+  CostumeList,
+  NameBoard,
+  NavigateArrow,
+  type CostumeItem,
+} from "../../../components";
 import type { CharacterDetail, CharacterSummary } from "../../../types";
+import {
+  GradationBackground,
+  SpContainer,
+  SpMarginContainer,
+  SpSpriteContainer,
+} from "./styled";
 
 type SpCharacterAboutProps = {
   characterId: string;
@@ -43,6 +56,21 @@ export const SpCharacterAbout: React.FC<SpCharacterAboutProps> = ({
     setNextCharacterId(nextId);
   }, [data, summary]);
 
+  const costumeList: CostumeItem[] = useMemo(() => {
+    return data.spritesUrl.map((url, index) => ({
+      isSelected: displaySpriteIndex === index,
+      imageUrl: url,
+      // MEMO: 奏 調の特殊挙動はこの辺でカスタマイズできる
+      onClick: () => {
+        scrollTo(0, 0);
+        setDisplaySpriteIndex(index);
+      },
+    }));
+  }, [data, displaySpriteIndex, setDisplaySpriteIndex]);
+  const [mainColor, secondColor, yellowColor] = useMemo(() => {
+    return data.colorPalette;
+  }, [data]);
+
   const handlePrevious = previousCharacterId
     ? () => {
         setDisplaySpriteIndex(0);
@@ -57,34 +85,76 @@ export const SpCharacterAbout: React.FC<SpCharacterAboutProps> = ({
     : undefined;
 
   return (
-    <div
-      style={{
-        backgroundColor: `rgb(from ${data.colorPalette[0]} calc(r + 50) calc(g + 50) calc(b + 50))`,
-        minHeight: "100dvh",
-        textAlign: "center",
-        color: "white",
-      }}
-    >
+    <SpContainer>
       <div
         style={{
-          maxWidth: 400,
-          height: "100dvh",
-          margin: "auto",
-          backgroundColor: data.colorPalette[0],
+          position: "fixed",
+          top: 0,
+          left: 0,
+          right: 0,
+          backgroundColor: mainColor,
+          height: 100,
+          textAlign: "center",
+          fontSize: 60,
         }}
       >
-        <div onClick={handlePrevious} style={{ height: 30 }}>
-          {previousCharacterId ? "←前へ" : ""}
-        </div>
-        <h1 style={{ margin: 0 }}>{data.name}</h1>
-        <div onClick={handleNext} style={{ height: 30 }}>
-          {nextCharacterId ? "次へ→" : ""}
-        </div>
-        <img
-          src={data.spritesUrl[displaySpriteIndex]}
-          style={{ width: "100%", objectFit: "cover" }}
+        {/* TODO: 後でtransformじゃない実装に修正する */}
+        <NameBoard
+          name={data.name}
+          enName={data.enName}
+          color={mainColor}
+          className={css`
+            transform: translateX(calc(50vw - 300px)) translateY(-38px)
+              scale(0.4);
+          `}
+        />
+        <NavigateArrow
+          height={24}
+          direction="left"
+          style={{
+            position: "absolute",
+            top: "calc(50% - 12px)",
+            left: "calc(50% - 120px - 36px - 16px)",
+          }}
+          disabled={!handlePrevious}
+          onClick={handlePrevious}
+        />
+        <NavigateArrow
+          height={24}
+          direction="right"
+          style={{
+            position: "absolute",
+            top: "calc(50% - 12px)",
+            right: "calc(50% - 120px - 36px - 16px)",
+          }}
+          disabled={!handleNext}
+          onClick={handleNext}
         />
       </div>
-    </div>
+      <SpSpriteContainer color={mainColor}>
+        <SpMarginContainer>
+          <img
+            style={{ width: "100%" }}
+            src={data.spritesUrl[displaySpriteIndex]}
+          />
+        </SpMarginContainer>
+      </SpSpriteContainer>
+      <GradationBackground
+        style={{ paddingLeft: 20, paddingRight: 20 }}
+        startColor={mainColor}
+        endColor={secondColor}
+      >
+        <SpMarginContainer>
+          <CostumeList
+            items={costumeList}
+            color={mainColor}
+            selectedColor={yellowColor}
+            className={css`
+              transform: translateX(-60px) scale(0.6);
+            `}
+          />
+        </SpMarginContainer>
+      </GradationBackground>
+    </SpContainer>
   );
 };

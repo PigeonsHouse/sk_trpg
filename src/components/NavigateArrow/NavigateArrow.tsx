@@ -4,7 +4,7 @@ type NavigateArrowProps = {
   direction: "left" | "right";
   height: number;
   color?: string;
-  disabled: boolean;
+  disabled?: boolean;
 };
 
 export const NavigateArrow = styled.button<NavigateArrowProps>`

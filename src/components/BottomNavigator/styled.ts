@@ -7,6 +7,8 @@ export const Container = styled.div`
   justify-content: space-between;
   display: flex;
   align-items: center;
+  padding: 0 16px;
+  box-sizing: border-box;
 `;
 
 export const NameBoardContainer = styled.button`

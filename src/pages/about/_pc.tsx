@@ -51,25 +51,36 @@ export const PcAbout = () => {
             style={{
               display: "flex",
               flexWrap: "wrap",
-              justifyContent: "space-between",
-              gap: 36,
+              justifyContent: "center",
             }}
           >
             {summary?.map((character) => {
               return (
-                <div key={character.id}>
+                <div
+                  style={{
+                    width: "50%",
+                    boxSizing: "border-box",
+                    padding: "8px",
+                    aspectRatio: "4 / 3",
+                    minWidth: 400,
+                  }}
+                  key={character.id}
+                >
                   <Link
                     to={`/characters/${character.id}`}
                     style={{
                       display: "inline-block",
                       textDecoration: "none",
+                      width: "100%",
+                      height: "100%",
+                      verticalAlign: "middle",
                     }}
                   >
                     <div
                       style={{
                         position: "relative",
-                        width: 400,
-                        height: 300,
+                        width: "100%",
+                        height: "100%",
                         boxShadow: "0 4px 20px #666",
                         borderRadius: 4,
                         overflow: "hidden",
