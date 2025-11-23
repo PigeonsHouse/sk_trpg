@@ -1,5 +1,4 @@
 import { MdLocationPin } from "react-icons/md";
-import { size } from "../../definitions";
 import { arraySplit } from "../../utils";
 import {
   Bar,
@@ -42,7 +41,7 @@ export const CostumeList: React.FC<CostumeListProps> = ({
   return (
     <Container>
       <TitleContainer>
-        <MdLocationPin size={size.x8} color="#4B4B4B" />
+        <MdLocationPin size={64} color="#4B4B4B" />
         <Title>衣装差分</Title>
       </TitleContainer>
       <ListContainer className={className}>

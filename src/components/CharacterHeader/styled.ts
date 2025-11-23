@@ -1,6 +1,5 @@
 import { css } from "@emotion/css";
 import styled from "@emotion/styled";
-import { size } from "../../definitions";
 
 export const Container = styled.div`
   position: sticky;
@@ -11,13 +10,13 @@ export const Container = styled.div`
 export const Header = styled.div<{ color: string; isShrink?: boolean }>`
   background-color: ${(props) => props.color};
   position: relative;
-  height: ${(props) => (props.isShrink ? size.x15 : size.x30)}px;
+  height: ${(props) => (props.isShrink ? 120 : 200)}px;
   transition: height 0.2s;
 `;
 
 export const BoardContainer = styled.div<{ isShrink?: boolean }>`
   position: absolute;
-  top: ${size.x8}px;
+  top: 64px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -43,7 +42,7 @@ export const ArrowContainer = styled.div`
   height: 100%;
   justify-content: center;
   align-items: center;
-  gap: ${size.x115}px;
+  gap: 920px;
   position: absolute;
   width: 100%;
   z-index: 1;

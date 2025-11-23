@@ -1,23 +1,22 @@
 import { css } from "@emotion/css";
 import styled from "@emotion/styled";
-import { size } from "../../definitions";
 
 export const FrameStyle = css`
-  width: ${size.x110}px;
+  width: 880px;
   box-sizing: border-box;
-  padding: ${size.x7}px;
+  padding: 56px;
   margin: auto;
-  margin-bottom: ${size.x15}px;
+  margin-bottom: 120px;
 `;
 
 export const Title = styled.h2`
-  font-size: ${size.x4}px;
+  font-size: 32px;
   margin: 0;
-  margin-bottom: ${size.x2half}px;
+  margin-bottom: 20px;
 `;
 
 export const Comment = styled.div`
   white-space: pre-wrap;
-  font-size: ${size.x2}px;
-  line-height: ${size.x4}px;
+  font-size: 16px;
+  line-height: 32px;
 `;

@@ -1,6 +1,5 @@
 import { css } from "@emotion/css";
 import styled from "@emotion/styled";
-import { size } from "../../definitions";
 
 export const Container = styled.div`
   width: 100%;
@@ -24,12 +23,12 @@ export const BottomArrowStyle = css`
 export const BottomNameStyle = (position: "left" | "right") => css`
   position: absolute;
   ${position}: 0;
-  top: ${size.x8}px;
+  top: 64px;
   & span {
     color: black;
   }
   & span:first-child {
-    font-size: ${size.x5}px;
+    font-size: 40px;
     letter-spacing: initial;
   }
 `;

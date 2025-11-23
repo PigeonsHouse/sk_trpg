@@ -1,6 +1,5 @@
 import { useMemo } from "react";
 import { NameBoard, NameContainer, NavigateArrow } from "../";
-import { size } from "../../definitions";
 import {
   ArrowContainer,
   BoardContainer,
@@ -58,13 +57,13 @@ export const CharacterHeader: React.FC<CharacterHeaderProps> = ({
         <ArrowContainer>
           <NavigateArrow
             direction="left"
-            height={size.x8}
+            height={64}
             disabled={!handlePrevious}
             onClick={handlePrevious}
           />
           <NavigateArrow
             direction="right"
-            height={size.x8}
+            height={64}
             disabled={!handleNext}
             onClick={handleNext}
           />

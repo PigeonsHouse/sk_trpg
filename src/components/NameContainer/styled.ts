@@ -1,5 +1,4 @@
 import styled from "@emotion/styled";
-import { size } from "../../definitions";
 
 export const ContainerStyle = `
   display: flex;
@@ -19,13 +18,13 @@ export const CharacterName = styled.span<{ size?: "sm" | "md" | "lg" }>`
   font-size: ${(props) => {
     switch (props.size) {
       case "sm":
-        return size.x5;
+        return 40;
       case "md":
-        return size.x6;
+        return 48;
       case "lg":
-        return size.x7;
+        return 56;
       default:
-        return size.x7;
+        return 56;
     }
   }}px;
   letter-spacing: ${(props) => {
@@ -40,7 +39,7 @@ export const CharacterName = styled.span<{ size?: "sm" | "md" | "lg" }>`
         return 4;
     }
   }}px;
-  line-height: ${size.x9}px;
+  line-height: 72px;
 `;
 
 export const EnCharacterName = styled.span`

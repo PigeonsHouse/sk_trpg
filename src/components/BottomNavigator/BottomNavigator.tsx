@@ -1,5 +1,4 @@
 import { NameBoard, NameContainer, NavigateArrow } from "../";
-import { size } from "../../definitions";
 import {
   Container,
   NameBoardContainer,
@@ -24,7 +23,7 @@ export const BottomNavigator: React.FC<BottomNavigatorProps> = ({
     <NavigateArrow
       direction="left"
       disabled={!handlePrevious}
-      height={size.x10}
+      height={80}
       color={color}
       onClick={handlePrevious}
       className={BottomArrowStyle}
@@ -44,7 +43,7 @@ export const BottomNavigator: React.FC<BottomNavigatorProps> = ({
     </NameBoardContainer>
     <NavigateArrow
       direction="right"
-      height={size.x10}
+      height={80}
       color={color}
       onClick={handleNext}
       disabled={!handleNext}

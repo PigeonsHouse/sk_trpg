@@ -1,6 +1,5 @@
 import { css } from "@emotion/css";
 import styled from "@emotion/styled";
-import { size } from "../../definitions";
 
 export const BoardContainer = styled.div`
   display: inline-block;
@@ -43,13 +42,13 @@ export const Bar = styled.div<{ color: string }>`
 const fontSize = (nameSize?: "sm" | "md" | "lg") => {
   switch (nameSize) {
     case "sm":
-      return size.x6;
+      return 48;
     case "md":
-      return size.x7;
+      return 56;
     case "lg":
-      return size.x8;
+      return 64;
     default:
-      return size.x8;
+      return 64;
   }
 };
 
