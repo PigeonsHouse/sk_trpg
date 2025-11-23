@@ -15,8 +15,8 @@ export const ArtGallery: React.FC<ArtGalleryProps> = ({ artGallery }) => {
     <Container>
       <Title>アートギャラリー</Title>
       <ArtContainer>
-        {artGallery.map((artImage) => (
-          <ImageContainer>
+        {artGallery.map((artImage, i) => (
+          <ImageContainer key={i}>
             <Image src={artImage} />
           </ImageContainer>
         ))}
