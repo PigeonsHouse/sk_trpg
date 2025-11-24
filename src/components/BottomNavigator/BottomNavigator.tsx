@@ -4,6 +4,7 @@ import {
   NameBoardContainer,
   BottomArrowStyle,
   BottomNameStyle,
+  BoardStyle,
 } from "./styled";
 
 type BottomNavigatorProps = {
@@ -23,7 +24,7 @@ export const BottomNavigator: React.FC<BottomNavigatorProps> = ({
     <NavigateArrow
       direction="left"
       disabled={!handlePrevious}
-      height={80}
+      height={64}
       color={color}
       onClick={handlePrevious}
       className={BottomArrowStyle}
@@ -39,11 +40,12 @@ export const BottomNavigator: React.FC<BottomNavigatorProps> = ({
         name="一覧に戻る"
         enName="GO TO CHARACTER LIST"
         color={color}
+        className={BoardStyle}
       />
     </NameBoardContainer>
     <NavigateArrow
       direction="right"
-      height={80}
+      height={64}
       color={color}
       onClick={handleNext}
       disabled={!handleNext}

@@ -19,7 +19,7 @@ export const BoardContainer = styled.div`
 
 export const Bar = styled.div<{ color: string }>`
   background-color: ${(props) => props.color};
-  width: 480px;
+  width: 90%;
   height: 18px;
   position: relative;
   margin-right: 18px;

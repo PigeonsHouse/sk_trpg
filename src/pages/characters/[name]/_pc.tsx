@@ -197,13 +197,13 @@ export const PcCharacterAbout: React.FC<PcCharacterAboutProps> = ({
                 <ArtGallery artGallery={data.artGallery} />
               </MarginContainer>
             )}
-            <BottomNavigator
-              color={mainColor}
-              handlePrevious={handlePrevious}
-              handleNext={handleNext}
-              handleAboutCharacters={handleAboutCharacters}
-            />
           </MarginContainer>
+          <BottomNavigator
+            color={mainColor}
+            handlePrevious={handlePrevious}
+            handleNext={handleNext}
+            handleAboutCharacters={handleAboutCharacters}
+          />
         </RoadBackGround>
       </Container>
     </>
