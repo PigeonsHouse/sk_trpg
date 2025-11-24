@@ -78,6 +78,7 @@ export const HistoryLight = styled.div<{
   border-radius: 4px;
   box-sizing: border-box;
   z-index: 1;
+  flex-shrink: 0;
 `;
 
 export const IndexCircle = styled.div<{ color: string }>`
@@ -91,12 +92,16 @@ export const IndexCircle = styled.div<{ color: string }>`
   border-radius: 50%;
   font-weight: bold;
   font-size: 22px;
+  flex-shrink: 0;
 `;
 
 export const HistoryTitle = styled.div`
   font-weight: bold;
   font-size: 24px;
   margin-top: -8px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 `;
 
 export const HistoryDetailAreaContainer = styled.div`
