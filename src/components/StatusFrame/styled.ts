@@ -63,7 +63,7 @@ export const TrafficLightContainer = styled.div`
   background-color: #272727;
   border-radius: 9999px;
   top: -132px;
-  left: -270px;
+  left: -280px;
   display: flex;
   flex-direction: column;
   justify-content: center;

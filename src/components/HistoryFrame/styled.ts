@@ -222,7 +222,7 @@ export const ShortIdBoard = styled.div<{ color: string }>`
   justify-content: center;
   align-items: center;
   gap: 24px;
-  left: -300px;
+  left: -310px;
   bottom: -70px;
 `;
 
