@@ -1,5 +1,6 @@
 import { css } from "@emotion/css";
 import styled from "@emotion/styled";
+import { BREAK_POINT } from "../../definitions";
 
 export const Container = styled.div`
   position: sticky;
@@ -10,18 +11,30 @@ export const Container = styled.div`
 export const Header = styled.div<{ color: string; isShrink?: boolean }>`
   background-color: ${(props) => props.color};
   position: relative;
-  height: ${(props) => (props.isShrink ? 120 : 200)}px;
+  height: ${(props) => (props.isShrink ? 120 : 160)}px;
   transition: height 0.2s;
 `;
 
 export const BoardContainer = styled.div<{ isShrink?: boolean }>`
   position: absolute;
-  top: 64px;
-  width: 100%;
+  top: ${(props) => (props.isShrink ? 0 : 16)}px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  max-width: ${BREAK_POINT}px;
   display: flex;
-  justify-content: center;
-  opacity: ${(props) => (props.isShrink ? 0 : 1)};
-  transition: opacity 0.2s;
+  justify-content: space-between;
+  align-items: center;
+  ${(props) => (props.isShrink ? "height: 100%;" : "")}
+`;
+
+export const BoardStyle = (isShrink?: boolean) => css`
+  && {
+    opacity: ${isShrink ? 0 : 1};
+    transition: opacity 0.2s;
+    transition: height 0.2s;
+    ${isShrink ? "height: 120px;" : ""}
+  }
 `;
 
 export const SmallNameContainerStyle = (isShrink?: boolean) => css`

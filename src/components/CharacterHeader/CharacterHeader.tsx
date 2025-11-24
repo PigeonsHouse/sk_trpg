@@ -1,8 +1,8 @@
 import { useMemo } from "react";
 import { NameBoard, NameContainer, NavigateArrow } from "../";
 import {
-  ArrowContainer,
   BoardContainer,
+  BoardStyle,
   Container,
   Header,
   SmallNameContainerStyle,
@@ -41,25 +41,24 @@ export const CharacterHeader: React.FC<CharacterHeaderProps> = ({
     <Container className={className}>
       <Header color={color} isShrink={isShrink}>
         <BoardContainer isShrink={isShrink}>
-          <NameBoard
-            name={name}
-            enName={enName}
-            color={color}
-            nameSize={nameSize}
-          />
-        </BoardContainer>
-        <NameContainer
-          name={name}
-          enName={enName}
-          size={nameSize}
-          className={SmallNameContainerStyle(isShrink)}
-        />
-        <ArrowContainer>
           <NavigateArrow
             direction="left"
             height={64}
             disabled={!handlePrevious}
             onClick={handlePrevious}
+          />
+          <NameBoard
+            name={name}
+            enName={enName}
+            color={color}
+            nameSize={nameSize}
+            className={BoardStyle(isShrink)}
+          />
+          <NameContainer
+            name={name}
+            enName={enName}
+            size={nameSize}
+            className={SmallNameContainerStyle(isShrink)}
           />
           <NavigateArrow
             direction="right"
@@ -67,7 +66,7 @@ export const CharacterHeader: React.FC<CharacterHeaderProps> = ({
             disabled={!handleNext}
             onClick={handleNext}
           />
-        </ArrowContainer>
+        </BoardContainer>
       </Header>
     </Container>
   );
