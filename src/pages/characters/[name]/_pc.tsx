@@ -122,7 +122,7 @@ export const PcCharacterAbout: React.FC<PcCharacterAboutProps> = ({
   return (
     <>
       <Container>
-        <CharacterHeaderContainer>
+        <CharacterHeaderContainer isShrink={isScrolled}>
           <CharacterHeader
             name={data.name}
             enName={data.enName}

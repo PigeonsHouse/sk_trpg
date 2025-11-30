@@ -19,12 +19,12 @@ export const Container = styled.div`
   padding-top: 80px;
 `;
 
-export const CharacterHeaderContainer = styled.div`
+export const CharacterHeaderContainer = styled.div<{ isShrink: boolean }>`
   position: fixed;
   left: 0;
   right: 0;
   top: 0;
-  z-index: 100;
+  z-index: ${(props) => (props.isShrink ? 500 : 1)};
 `;
 
 export const ProfileContainer = styled.div`
