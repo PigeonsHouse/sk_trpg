@@ -43,7 +43,7 @@
 - スタイリング
   - emotion
 - アイコン
-  - react-icons
+  - google-font
 - ルーティング
   - generouted (react-router)
 - データ取得

@@ -28,6 +28,10 @@ export const TopContainer = styled.div`
   align-items: flex-start;
 `;
 
+export const ArrowStyle = css`
+  transform: scaleX(-1);
+`;
+
 export const TopLabel = styled.span`
   font-size: 68px;
   font-weight: bold;

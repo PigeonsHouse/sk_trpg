@@ -1,7 +1,8 @@
 import type React from "react";
-import { RiArrowLeftUpLine } from "react-icons/ri";
 import { Link } from "react-router";
+import { GoogleFontIcon } from "../GoogleFontIcon";
 import {
+  ArrowStyle,
   BigText,
   Box,
   Container,
@@ -22,7 +23,11 @@ export const TopGuideBoard: React.FC<TopGuideBoardProps> = ({ className }) => {
     <Container className={className}>
       <Link to="/" className={NoDecorationLinkStyle}>
         <TopContainer>
-          <RiArrowLeftUpLine size={80} />
+          <GoogleFontIcon
+            iconName="arrow_outward"
+            size={80}
+            className={ArrowStyle}
+          />
           <TopLabel>TOP</TopLabel>
         </TopContainer>
       </Link>
