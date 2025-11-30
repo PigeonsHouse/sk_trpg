@@ -92,6 +92,7 @@ export const PcCharacterAbout: React.FC<PcCharacterAboutProps> = ({
       imageUrl: url.iconUrl,
       // MEMO: 奏 調の特殊挙動はこの辺でカスタマイズできる
       onClick: () => {
+        scrollTo({ top: 0, behavior: "smooth" });
         setDisplaySpriteIndex(index);
       },
     }));
