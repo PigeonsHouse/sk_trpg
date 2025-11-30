@@ -37,7 +37,7 @@ export const CostumeList: React.FC<CostumeListProps> = ({
   selectedColor,
 }) => {
   const splittedList = arraySplit(items, MAX_WIDTH_ITEM);
-  const lastLineIndex = Math.floor(items.length / MAX_WIDTH_ITEM);
+  const lastLineIndex = Math.ceil(items.length / MAX_WIDTH_ITEM) - 1;
 
   return (
     <Container>
