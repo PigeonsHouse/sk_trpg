@@ -133,13 +133,13 @@ export const TrainBody = styled.div<{ mainColor: string; secondColor: string }>`
 // 50%で左辺を中央寄せ、800pxで右辺を中央寄せ、440px(枠880pxの半分)で右辺を枠辺にぴったり、そこから40px離す
 export const LeftWindowStyle = css`
   top: 160px;
-  left: calc(50% - 800px - 440px - 40px);
+  left: calc(50% - 800px - 480px - 40px);
 `;
 
 // 50%で右辺を中央寄せ、800pxで左辺を中央寄せ、440px(枠880pxの半分)で左辺を枠辺にぴったり、そこから40px離す
 export const RightWindowStyle = css`
   top: 160px;
-  right: calc(50% - 800px - 440px - 40px);
+  right: calc(50% - 800px - 480px - 40px);
 `;
 
 export const RoadBackGround = styled.div`

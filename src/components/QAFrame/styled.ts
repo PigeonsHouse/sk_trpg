@@ -2,9 +2,9 @@ import { css } from "@emotion/css";
 import styled from "@emotion/styled";
 
 export const FrameStyle = css`
-  width: 880px;
+  width: 960px;
   margin: auto;
-  padding: 40px 100px;
+  padding: 64px 120px;
   flex-grow: 1;
   z-index: 2;
   box-sizing: border-box;
@@ -13,23 +13,82 @@ export const FrameStyle = css`
 export const Title = styled.h2`
   text-align: center;
   margin: 0;
-  font-size: 64px;
+  font-size: 48px;
   margin-bottom: 48px;
+  line-height: 1;
 `;
 
 export const ContentContainer = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 32px;
 `;
 
 export const QAContainer = styled.div`
   font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+`;
+
+export const QuestionContainer = styled.div``;
+
+export const QuestionIcon = styled.span<{ color: string }>`
+  display: inline-flex;
+  background-color: ${(props) => props.color};
+  width: 48px;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding-bottom: 8px;
+  color: white;
+  box-sizing: border-box;
+  margin-right: 16px;
+`;
+
+export const QuestionTitle = styled.span`
   font-weight: bold;
 `;
 
-export const Question = styled.div`
-  margin-bottom: 8px;
+export const AnswerContainer = styled.div`
+  display: flex;
 `;
 
-export const Answer = styled.div``;
+export const AnswerIcon = styled.img<{ color: string }>`
+  width: 100px;
+  height: 100px;
+  background-color: ${(props) => props.color};
+  border-radius: 50%;
+  vertical-align: middle;
+`;
+
+export const Answer = styled.div`
+  margin-left: 48px;
+  padding: 0 24px;
+  display: inline-flex;
+  align-items: center;
+  background-color: ${(props) => props.color};
+  color: white;
+  height: 100px;
+  border-radius: 8px;
+  font-size: 12px;
+  flex-grow: 1;
+  box-sizing: border-box;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 16px 32px;
+    border-right-color: ${(props) => props.color};
+    border-left: 0;
+    top: calc(50% - 16px);
+    left: -32px;
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+  }
+`;

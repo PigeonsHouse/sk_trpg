@@ -62,8 +62,8 @@ export type History = {
 };
 
 export type QA = {
-  question: string;
   answer: string;
+  iconUrl: string;
 };
 
 export type CharacterDetail = {

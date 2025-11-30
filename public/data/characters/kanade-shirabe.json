@@ -166,48 +166,20 @@
   ],
   "qaList": [
     {
-      "question": "ほげほげ",
-      "answer": "ふがふが"
+      "iconUrl": "/images/icon_にせもの.jpg",
+      "answer": "休日を過ごしているよ"
     },
     {
-      "question": "ほげほげ",
-      "answer": "ふがふが"
+      "iconUrl": "/images/icon_にせもの.jpg",
+      "answer": "海か山か...どちらも良いところがあるね"
     },
     {
-      "question": "ほげほげ",
-      "answer": "ふがふが"
+      "iconUrl": "/images/icon_にせもの.jpg",
+      "answer": "願い事が一つ叶うとしたら...そうだね、僕の願いが叶うなら、僕の願いを叶えてほしいかな。もしくは、僕以外の願いを叶えてほしいね。だって願い事が一つ叶うのだから、願い事は叶えたいからね。"
     },
     {
-      "question": "ほげほげ",
-      "answer": "ふがふが"
-    },
-    {
-      "question": "ほげほげ",
-      "answer": "ふがふが"
-    },
-    {
-      "question": "ほげほげ",
-      "answer": "ふがふが"
-    },
-    {
-      "question": "ほげほげ",
-      "answer": "ふがふが"
-    },
-    {
-      "question": "ほげほげ",
-      "answer": "ふがふが"
-    },
-    {
-      "question": "ほげほげ",
-      "answer": "ふがふが"
-    },
-    {
-      "question": "ほげほげ",
-      "answer": "ふがふが"
-    },
-    {
-      "question": "ほげほげ",
-      "answer": "ふがふが"
+      "iconUrl": "/images/icon_にせもの.jpg",
+      "answer": "最後の一日を大切に過ごすよ"
     }
   ],
   "comment": "自由記述",

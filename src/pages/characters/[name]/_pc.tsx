@@ -186,7 +186,7 @@ export const PcCharacterAbout: React.FC<PcCharacterAboutProps> = ({
             className={RightWindowStyle}
             colorPalette={data.colorPalette}
           />
-          <QAFrame qaList={data.qaList} />
+          <QAFrame qaList={data.qaList} color={mainColor} />
         </TrainBody>
         <RoadBackGround>
           <MarginContainer>

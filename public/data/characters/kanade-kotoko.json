@@ -85,8 +85,20 @@
   ],
   "qaList": [
     {
-      "question": "ほげほげ",
-      "answer": "ふがふが"
+      "iconUrl": "/images/icon_にせもの2.jpg",
+      "answer": "お休みの日は、おやすみしとるよー"
+    },
+    {
+      "iconUrl": "/images/icon_にせもの2.jpg",
+      "answer": "海も山もどっちも好きやね。"
+    },
+    {
+      "iconUrl": "/images/icon_にせもの2.jpg",
+      "answer": "うーん、願い事かあ...なんやろうね？"
+    },
+    {
+      "iconUrl": "/images/icon_にせもの2.jpg",
+      "answer": "地球が滅亡するなら、最後の日を過ごしたいねー"
     }
   ],
   "comment": "自由記述",
