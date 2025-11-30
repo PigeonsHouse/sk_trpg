@@ -25,7 +25,7 @@ export const NameContainer: React.FC<NameContainerProps> = ({
   return (
     <SpecifiedContainer className={className}>
       <CharacterName size={size}>{name}</CharacterName>
-      <EnCharacterName>{enName}</EnCharacterName>
+      <EnCharacterName>{enName.toUpperCase()}</EnCharacterName>
     </SpecifiedContainer>
   );
 };

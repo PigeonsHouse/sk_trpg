@@ -60,6 +60,10 @@ export const PcCharacterAbout: React.FC<PcCharacterAboutProps> = ({
     displaySpriteIndex,
     data.sprites.length - 1
   );
+  const safeSelectedHistoryIndex = Math.min(
+    selectedHistoryIndex,
+    data.histories.length - 1
+  );
 
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}data/characters.json`)
@@ -94,10 +98,14 @@ export const PcCharacterAbout: React.FC<PcCharacterAboutProps> = ({
   useEffect(() => {
     switch (characterId) {
       case "kanade-shirabe-adult":
-        setDisplaySpriteIndex(1);
+        if (displaySpriteIndex === 0) {
+          setDisplaySpriteIndex(1);
+        }
         break;
       case "kanade-shirabe-student":
-        setDisplaySpriteIndex(1);
+        if (displaySpriteIndex === 0) {
+          setDisplaySpriteIndex(1);
+        }
         break;
       default:
         setDisplaySpriteIndex(0);
@@ -108,7 +116,6 @@ export const PcCharacterAbout: React.FC<PcCharacterAboutProps> = ({
     return data.sprites.map((url, index) => ({
       isSelected: displaySpriteIndex === index,
       imageUrl: url.iconUrl,
-      // MEMO: 奏 調の特殊挙動はこの辺でカスタマイズできる
       onClick: () => {
         switch (characterId) {
           case "kanade-shirabe":
@@ -130,7 +137,7 @@ export const PcCharacterAbout: React.FC<PcCharacterAboutProps> = ({
               navigate("/characters/kanade-shirabe-student");
               return;
             } else if (index === 0) {
-              setDisplaySpriteIndex(0);
+              setDisplaySpriteIndex(index);
               navigate("/characters/kanade-shirabe");
               return;
             }
@@ -218,7 +225,7 @@ export const PcCharacterAbout: React.FC<PcCharacterAboutProps> = ({
               </RightColumnContainer>
             </TwoColumnsContainer>
             <HistoryFrame
-              selectedIndex={selectedHistoryIndex}
+              selectedIndex={safeSelectedHistoryIndex}
               changeIndex={setSelectedHistoryIndex}
               histories={data.histories}
               shortId={data.shortId}

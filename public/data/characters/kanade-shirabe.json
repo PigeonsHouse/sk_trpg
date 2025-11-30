@@ -30,12 +30,12 @@
       "spriteUrl": "/images/KanadeShirabe/sprite/kanadeshirabe_sprite_3.png"
     },
     {
-      "iconUrl": "/images/KanadeShirabe/icon/kanadeshirabe_icon_4_hide.png",
-      "spriteUrl": "/images/KanadeShirabe/sprite/kanadeshirabe_sprite_4.png"
-    },
-    {
       "iconUrl": "/images/KanadeShirabe/icon/kanadeshirabe_icon_5.png",
       "spriteUrl": "/images/KanadeShirabe/sprite/kanadeshirabe_sprite_5.png"
+    },
+    {
+      "iconUrl": "/images/KanadeShirabe/icon/kanadeshirabe_icon_4_hide.png",
+      "spriteUrl": "/images/KanadeShirabe/sprite/kanadeshirabe_sprite_4.png"
     },
     {
       "iconUrl": "/images/KanadeShirabe/icon/kanadeshirabe_icon_6.png",
@@ -71,7 +71,7 @@
     {
       "title": "星の神話、エンドロール",
       "comment": "ほんの数日にいろんなことがあったね。\n悲しい事だってあったけど...それがみんなの\"選択\"なら、僕は肯定するよ。\nふふっ、またみんなに会いたいな～、ちょっと連絡してみるよ。",
-      "iconUrl": "https://image.iaproject.app/e13a4682-95d6-41cf-8fd6-237db46df79b",
+      "iconUrl": "/images/KanadeShirabe/icon/kanadeshirabe_icon_1.png",
       "companions": [
         {
           "name": "守 惑",
@@ -90,7 +90,7 @@
     {
       "title": "星の神話、エンドロール",
       "comment": "ほんの数日にいろんなことがあったね。",
-      "iconUrl": "https://image.iaproject.app/e13a4682-95d6-41cf-8fd6-237db46df79b",
+      "iconUrl": "/images/KanadeShirabe/icon/kanadeshirabe_icon_1.png",
       "companions": [
         {
           "name": "守 惑",
@@ -109,7 +109,7 @@
     {
       "title": "Re:ゼロから始める異世界生活",
       "comment": "ほんの数日にいろんなことがあったね。",
-      "iconUrl": "https://image.iaproject.app/e13a4682-95d6-41cf-8fd6-237db46df79b",
+      "iconUrl": "/images/KanadeShirabe/icon/kanadeshirabe_icon_1.png",
       "companions": [
         {
           "name": "守 惑",
@@ -128,7 +128,7 @@
     {
       "title": "星の神話、エンドロール",
       "comment": "ほんの数日にいろんなことがあったね。",
-      "iconUrl": "https://image.iaproject.app/e13a4682-95d6-41cf-8fd6-237db46df79b",
+      "iconUrl": "/images/KanadeShirabe/icon/kanadeshirabe_icon_1.png",
       "companions": [
         {
           "name": "守 惑",
@@ -147,7 +147,7 @@
     {
       "title": "星の神話、エンドロール",
       "comment": "ほんの数日にいろんなことがあったね。",
-      "iconUrl": "https://image.iaproject.app/e13a4682-95d6-41cf-8fd6-237db46df79b",
+      "iconUrl": "/images/KanadeShirabe/icon/kanadeshirabe_icon_1.png",
       "companions": [
         {
           "name": "守 惑",

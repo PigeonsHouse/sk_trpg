@@ -18,24 +18,20 @@
   },
   "sprites": [
     {
-      "iconUrl": "https://image.iaproject.app/a5e71d8c-cfe7-4423-9c55-fdadd6fc91b4",
-      "spriteUrl": "https://image.iaproject.app/93301d96-9806-40e6-8364-fa406e08280b"
+      "iconUrl": "/images/Son/icon/son_icon_1.png",
+      "spriteUrl": "/images/Son/sprite/son_sprite_1.png"
     },
     {
-      "iconUrl": "https://image.iaproject.app/a5e71d8c-cfe7-4423-9c55-fdadd6fc91b4",
-      "spriteUrl": "https://image.iaproject.app/93301d96-9806-40e6-8364-fa406e08280b"
+      "iconUrl": "/images/Son/icon/son_icon_2.png",
+      "spriteUrl": "/images/Son/sprite/son_sprite_2.png"
     },
     {
-      "iconUrl": "https://image.iaproject.app/a5e71d8c-cfe7-4423-9c55-fdadd6fc91b4",
-      "spriteUrl": "https://image.iaproject.app/93301d96-9806-40e6-8364-fa406e08280b"
+      "iconUrl": "/images/Son/icon/son_icon_3.png",
+      "spriteUrl": "/images/Son/sprite/son_sprite_3.png"
     },
     {
-      "iconUrl": "https://image.iaproject.app/a5e71d8c-cfe7-4423-9c55-fdadd6fc91b4",
-      "spriteUrl": "https://image.iaproject.app/93301d96-9806-40e6-8364-fa406e08280b"
-    },
-    {
-      "iconUrl": "https://image.iaproject.app/a5e71d8c-cfe7-4423-9c55-fdadd6fc91b4",
-      "spriteUrl": "https://image.iaproject.app/93301d96-9806-40e6-8364-fa406e08280b"
+      "iconUrl": "/images/Son/icon/son_icon_4.png",
+      "spriteUrl": "/images/Son/sprite/son_sprite_4.png"
     }
   ],
   "status": {
@@ -61,40 +57,27 @@
   },
   "histories": [
     {
-      "title": "星の神話、エンドロール",
+      "title": "夜明けを求めた者たち",
       "comment": "ほんの数日にいろんなことがあったね。",
-      "iconUrl": "https://image.iaproject.app/a5e71d8c-cfe7-4423-9c55-fdadd6fc91b4",
+      "iconUrl": "/images/Son/icon/son_icon_1.png",
       "companions": [
         {
-          "name": "守 惑",
-          "enName": "SHU YOU",
-          "color": "#517BF1",
-          "iconUrl": "https://image.iaproject.app/765d2515-1cbe-413c-81fd-681f949b0053"
+          "name": "セシリア・アマノ・メリニコフ",
+          "enName": "Сесилия・Амано・Мельников",
+          "color": "#808080",
+          "iconUrl": "/images/Son/companions/cecilia.png"
         },
         {
-          "name": "守 惑",
-          "enName": "SHU YOU",
-          "color": "#517BF1",
-          "iconUrl": "https://image.iaproject.app/765d2515-1cbe-413c-81fd-681f949b0053"
-        }
-      ]
-    },
-    {
-      "title": "星の神話、エンドロール",
-      "comment": "ほんの数日にいろんなことがあったね。",
-      "iconUrl": "https://image.iaproject.app/a5e71d8c-cfe7-4423-9c55-fdadd6fc91b4",
-      "companions": [
-        {
-          "name": "守 惑",
-          "enName": "SHU YOU",
-          "color": "#517BF1",
-          "iconUrl": "https://image.iaproject.app/765d2515-1cbe-413c-81fd-681f949b0053"
+          "name": "イオ・アストレア",
+          "enName": "Io Astrea",
+          "color": "#808080",
+          "iconUrl": "/images/Son/companions/io.png"
         },
         {
-          "name": "守 惑",
-          "enName": "SHU YOU",
-          "color": "#517BF1",
-          "iconUrl": "https://image.iaproject.app/765d2515-1cbe-413c-81fd-681f949b0053"
+          "name": "エミリー・フレイア",
+          "enName": "Emily Freiya",
+          "color": "#808080",
+          "iconUrl": "/images/Son/companions/emily.png"
         }
       ]
     }

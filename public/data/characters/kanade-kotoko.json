@@ -18,8 +18,8 @@
   },
   "sprites": [
     {
-      "spriteUrl": "/images/kotoko.png",
-      "iconUrl": "https://image.iaproject.app/e13a4682-95d6-41cf-8fd6-237db46df79b"
+      "spriteUrl": "/images/KanadeKotoko/sprite/kanadekotoko_sprite_1.png",
+      "iconUrl": "/images/KanadeKotoko/icon/kanadekotoko_icon_1.png"
     }
   ],
   "status": {
@@ -45,40 +45,27 @@
   },
   "histories": [
     {
-      "title": "星の神話、エンドロール",
-      "comment": "ほんの数日にいろんなことがあったね。",
-      "iconUrl": "https://image.iaproject.app/e13a4682-95d6-41cf-8fd6-237db46df79b",
+      "title": "凍夏",
+      "comment": "ほんの数日やったけど、いろんなことがあったね。",
+      "iconUrl": "/images/KanadeKotoko/icon/kanadekotoko_icon_1.png",
       "companions": [
         {
-          "name": "守 惑",
-          "enName": "SHU YOU",
-          "color": "#517BF1",
-          "iconUrl": "https://image.iaproject.app/765d2515-1cbe-413c-81fd-681f949b0053"
+          "name": "夜想 八",
+          "enName": "YASOU HACHI",
+          "color": "#0346B9",
+          "iconUrl": "/images/KanadeKotoko/companions/yasohachi.png"
         },
         {
-          "name": "守 惑",
-          "enName": "SHU YOU",
-          "color": "#517BF1",
-          "iconUrl": "https://image.iaproject.app/765d2515-1cbe-413c-81fd-681f949b0053"
-        }
-      ]
-    },
-    {
-      "title": "星の神話、エンドロール",
-      "comment": "ほんの数日にいろんなことがあったね。",
-      "iconUrl": "https://image.iaproject.app/e13a4682-95d6-41cf-8fd6-237db46df79b",
-      "companions": [
-        {
-          "name": "守 惑",
-          "enName": "SHU YOU",
-          "color": "#517BF1",
-          "iconUrl": "https://image.iaproject.app/765d2515-1cbe-413c-81fd-681f949b0053"
+          "name": "夜想 八",
+          "enName": "YASOU HACHI",
+          "color": "#808080",
+          "iconUrl": "/images/companions_NoImage.png"
         },
         {
-          "name": "守 惑",
-          "enName": "SHU YOU",
-          "color": "#517BF1",
-          "iconUrl": "https://image.iaproject.app/765d2515-1cbe-413c-81fd-681f949b0053"
+          "name": "夜想 八",
+          "enName": "YASOU HACHI",
+          "color": "#808080",
+          "iconUrl": "/images/companions_NoImage.png"
         }
       ]
     }

@@ -21,7 +21,6 @@ import {
   ShortIdBoard,
   HistoryDetailAreaContainer,
   HistoryDetailContainer,
-  SpeechBubbleTriangle,
   HistoryCommentContainer,
   HistoryIconImage,
   HistoryComment,
@@ -95,7 +94,6 @@ export const HistoryFrame: React.FC<HistoryFrameProps> = ({
 
       <HistoryDetailAreaContainer>
         <HistoryDetailContainer color={color}>
-          <SpeechBubbleTriangle color={color} />
           <HistoryCommentContainer>
             <HistoryIconImage src={selectedHistory.iconUrl} />
             <HistoryComment>{selectedHistory.comment}</HistoryComment>

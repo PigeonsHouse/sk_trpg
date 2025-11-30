@@ -116,17 +116,21 @@ export const HistoryDetailContainer = styled.div<{ color: string }>`
   padding-left: 72px;
   box-sizing: border-box;
   position: relative;
-`;
+  margin-bottom: 64px;
+  box-shadow: 0 4px 8px rgb(from gray r g b / 0.8);
+  position: relative;
 
-export const SpeechBubbleTriangle = styled.div<{ color: string }>`
-  position: absolute;
-  border-style: solid;
-  border-width: 28px 48px;
-  border-left-width: 0;
-  border-color: transparent;
-  border-right-color: ${(props) => props.color};
-  left: -48px;
-  top: 60px;
+  &::after {
+    content: "";
+    position: absolute;
+    border-style: solid;
+    border-width: 28px 48px;
+    border-left-width: 0;
+    border-color: transparent;
+    border-right-color: ${(props) => props.color};
+    left: -48px;
+    top: 60px;
+  }
 `;
 
 export const HistoryCommentContainer = styled.div`
@@ -161,31 +165,41 @@ export const CompanionContainer = styled.div`
 export const CompanionTitle = styled.h2`
   margin: 0;
   font-size: 24px;
+  margin-bottom: 16px;
 `;
 
 export const CompanionInfoContainer = styled.ul`
   display: flex;
   gap: 26px;
-  justify-content: center;
+  justify-content: flex-start;
+  flex-direction: column;
   list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
 `;
 
 export const SingleCompanionInfoContainer = styled.li`
   display: flex;
   gap: 8px;
   align-items: center;
+  padding-left: 32px;
 `;
 
 export const CompanionIconImage = styled.img<{ color: string }>`
-  width: 64px;
-  height: 64px;
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
   background-color: ${(props) => props.color};
 `;
 
 export const CompanionNameStyle = css`
+  && {
+    align-items: flex-start;
+    flex-grow: 1;
+  }
   & > span:first-child {
-    font-size: 28px;
+    font-size: 20px;
     font-weight: bold;
     line-height: normal;
     letter-spacing: 0;
@@ -193,6 +207,7 @@ export const CompanionNameStyle = css`
   & > span:last-child {
     font-size: 8px;
     letter-spacing: 0;
+    margin-left: 2px;
   }
 `;
 
