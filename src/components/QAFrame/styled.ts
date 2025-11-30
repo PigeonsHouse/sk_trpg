@@ -41,14 +41,16 @@ export const QuestionIcon = styled.span<{ color: string }>`
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  padding-bottom: 8px;
   color: white;
   box-sizing: border-box;
   margin-right: 16px;
+  font-weight: 700;
+  font-family: "BIZ UDPGothic", sans-serif;
+  user-select: none;
 `;
 
 export const QuestionTitle = styled.span`
-  font-weight: bold;
+  font-weight: 700;
 `;
 
 export const AnswerContainer = styled.div`

@@ -34,7 +34,7 @@ export const ArrowStyle = css`
 
 export const TopLabel = styled.span`
   font-size: 68px;
-  font-weight: bold;
+  font-weight: 700;
   margin-top: -16px;
 `;
 
@@ -54,12 +54,11 @@ export const TextContainer = styled.div``;
 
 export const BigText = styled.div`
   font-size: 36px;
-  font-weight: bold;
+  font-weight: 700;
   margin-top: -12px;
 `;
 
 export const SmallText = styled.div`
   font-size: 20px;
   line-height: 16px;
-  font-weight: 500;
 `;

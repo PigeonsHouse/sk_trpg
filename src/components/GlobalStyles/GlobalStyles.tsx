@@ -6,6 +6,8 @@ const styles = css`
   body {
     margin: 0;
     color: ${UiColor.black};
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 400;
   }
 `;
 

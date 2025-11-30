@@ -8,6 +8,7 @@ type NameBoardProps = {
   enName: string;
   nameSize?: "lg" | "md" | "sm";
   color: string;
+  isHeading?: boolean;
 };
 
 export const NameBoard: React.FC<NameBoardProps> = ({
@@ -16,6 +17,7 @@ export const NameBoard: React.FC<NameBoardProps> = ({
   enName,
   nameSize,
   color,
+  isHeading,
 }) => (
   <BoardContainer className={className}>
     <NameContainer
@@ -23,6 +25,7 @@ export const NameBoard: React.FC<NameBoardProps> = ({
       enName={enName}
       size={nameSize}
       className={NameContainerStyle(nameSize)}
+      isHeading={isHeading}
     />
     <Bar color={color} />
   </BoardContainer>

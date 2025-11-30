@@ -53,6 +53,7 @@ export const CharacterHeader: React.FC<CharacterHeaderProps> = ({
             color={color}
             nameSize={nameSize}
             className={BoardStyle(isShrink)}
+            isHeading
           />
           <NameContainer
             name={name}

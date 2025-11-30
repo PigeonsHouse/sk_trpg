@@ -34,8 +34,7 @@ export const SkillsOneLineContainer = styled.div`
   align-items: center;
   font-size: 18px;
   width: 180px;
-  font-family: "Noto Sans JP";
-  font-weight: 300;
+  font-weight: 500;
 `;
 
 export const Value = styled.div``;

@@ -5,6 +5,7 @@ export const ContainerStyle = `
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0;
 `;
 
 export const Container = styled.div(ContainerStyle);
@@ -12,8 +13,8 @@ export const ContainerH1 = styled.h1(ContainerStyle);
 
 // 目安　lg: 7文字以内、md: それより長い、sm: 未想定
 export const CharacterName = styled.span<{ size?: "sm" | "md" | "lg" }>`
-  font-family: YuGothic;
-  font-weight: 500;
+  font-family: "BIZ UDPGothic", sans-serif;
+  font-weight: 700;
   white-space: nowrap;
   font-size: ${(props) => {
     switch (props.size) {
@@ -30,9 +31,9 @@ export const CharacterName = styled.span<{ size?: "sm" | "md" | "lg" }>`
   letter-spacing: ${(props) => {
     switch (props.size) {
       case "sm":
-        return -12;
-      case "md":
         return -8;
+      case "md":
+        return -4;
       case "lg":
         return 4;
       default:
@@ -44,6 +45,6 @@ export const CharacterName = styled.span<{ size?: "sm" | "md" | "lg" }>`
 
 export const EnCharacterName = styled.span`
   font-size: 12px;
-  font-family: Impact;
+  font-family: Anton, sans-serif;
   letter-spacing: 1px;
 `;

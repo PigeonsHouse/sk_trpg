@@ -5,7 +5,8 @@ export const Container = styled.div``;
 
 export const Title = styled.h2`
   margin: 0;
-  font-size: 64px;
+  font-family: "BIZ UDGothic", sans-serif;
+  font-size: 48px;
   margin-bottom: 80px;
   text-align: center;
 `;

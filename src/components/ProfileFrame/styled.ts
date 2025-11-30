@@ -32,8 +32,7 @@ export const ProfilesContainer = styled.div`
   display: flex;
   gap: 4px;
   flex-direction: column;
-  font-family: "Noto Sans JP";
-  font-weight: 300;
+  font-weight: 500;
 `;
 
 export const ProfileOneLineContainer = styled.div`
