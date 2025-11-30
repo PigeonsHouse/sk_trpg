@@ -120,11 +120,10 @@ export const HistoryFrame: React.FC<HistoryFrameProps> = ({
                       enName={companion.enName}
                       className={CompanionNameStyle}
                     />
-                    <NickNameContainer>
+                    <NickNameContainer color={color}>
                       <GoogleFontIcon
                         iconName="spatial_audio_off"
                         size={24}
-                        color={UiColor.darkGray}
                         className={CallIconStyle}
                       />
                       <NickName>{companion.nickName}</NickName>
