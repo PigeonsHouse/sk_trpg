@@ -16,12 +16,27 @@
     "like": "？？？",
     "hobby": "？？？"
   },
-  "spritesUrl": [
-    "https://image.iaproject.app/93301d96-9806-40e6-8364-fa406e08280b",
-    "https://image.iaproject.app/93301d96-9806-40e6-8364-fa406e08280b",
-    "https://image.iaproject.app/93301d96-9806-40e6-8364-fa406e08280b",
-    "https://image.iaproject.app/93301d96-9806-40e6-8364-fa406e08280b",
-    "https://image.iaproject.app/93301d96-9806-40e6-8364-fa406e08280b"
+  "sprites": [
+    {
+      "iconUrl": "https://image.iaproject.app/a5e71d8c-cfe7-4423-9c55-fdadd6fc91b4",
+      "spriteUrl": "https://image.iaproject.app/93301d96-9806-40e6-8364-fa406e08280b"
+    },
+    {
+      "iconUrl": "https://image.iaproject.app/a5e71d8c-cfe7-4423-9c55-fdadd6fc91b4",
+      "spriteUrl": "https://image.iaproject.app/93301d96-9806-40e6-8364-fa406e08280b"
+    },
+    {
+      "iconUrl": "https://image.iaproject.app/a5e71d8c-cfe7-4423-9c55-fdadd6fc91b4",
+      "spriteUrl": "https://image.iaproject.app/93301d96-9806-40e6-8364-fa406e08280b"
+    },
+    {
+      "iconUrl": "https://image.iaproject.app/a5e71d8c-cfe7-4423-9c55-fdadd6fc91b4",
+      "spriteUrl": "https://image.iaproject.app/93301d96-9806-40e6-8364-fa406e08280b"
+    },
+    {
+      "iconUrl": "https://image.iaproject.app/a5e71d8c-cfe7-4423-9c55-fdadd6fc91b4",
+      "spriteUrl": "https://image.iaproject.app/93301d96-9806-40e6-8364-fa406e08280b"
+    }
   ],
   "status": {
     "type": "CoC6版",

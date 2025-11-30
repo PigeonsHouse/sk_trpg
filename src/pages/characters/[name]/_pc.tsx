@@ -87,9 +87,9 @@ export const PcCharacterAbout: React.FC<PcCharacterAboutProps> = ({
   }, []);
 
   const costumeList: CostumeItem[] = useMemo(() => {
-    return data.spritesUrl.map((url, index) => ({
+    return data.sprites.map((url, index) => ({
       isSelected: displaySpriteIndex === index,
-      imageUrl: url,
+      imageUrl: url.iconUrl,
       // MEMO: 奏 調の特殊挙動はこの辺でカスタマイズできる
       onClick: () => {
         setDisplaySpriteIndex(index);
@@ -140,7 +140,7 @@ export const PcCharacterAbout: React.FC<PcCharacterAboutProps> = ({
               color={mainColor}
               profileData={data.profile}
             />
-            <MainSpriteImage src={data.spritesUrl[displaySpriteIndex]} />
+            <MainSpriteImage src={data.sprites[displaySpriteIndex].spriteUrl} />
           </ProfileMainContainer>
         </ProfileContainer>
         <GradationBackground startColor={mainColor} endColor={secondColor}>

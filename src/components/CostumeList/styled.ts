@@ -102,5 +102,4 @@ export const Image = styled.img`
   object-fit: cover;
   object-position: top;
   width: 100px;
-  transform: scale(3) translateY(35%);
 `;

@@ -16,7 +16,12 @@
     "like": "？？？",
     "hobby": "？？？"
   },
-  "spritesUrl": ["/images/kotoko.png"],
+  "sprites": [
+    {
+      "spriteUrl": "/images/kotoko.png",
+      "iconUrl": "https://image.iaproject.app/e13a4682-95d6-41cf-8fd6-237db46df79b"
+    }
+  ],
   "status": {
     "type": "CoC6版",
     "str": 8,

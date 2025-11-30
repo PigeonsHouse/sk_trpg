@@ -18,6 +18,11 @@ export type Profile = {
   hobby: string;
 };
 
+type Sprites = {
+  spriteUrl: string;
+  iconUrl: string;
+};
+
 type Coc6Status = {
   type: "CoC6版";
   str: number;
@@ -70,7 +75,7 @@ export type CharacterDetail = {
   colorPalette: string[];
   backgroundUrl: string;
   profile: Profile;
-  spritesUrl: string[];
+  sprites: Sprites[];
   status: Status;
   skills: Skills;
   histories: History[];

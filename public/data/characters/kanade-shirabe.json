@@ -16,17 +16,35 @@
     "like": "？？？",
     "hobby": "？？？"
   },
-  "spritesUrl": [
-    "https://image.iaproject.app/e9d14d6e-d91a-4015-8a0a-e8ae8d4ca567",
-    "https://image.iaproject.app/e9d14d6e-d91a-4015-8a0a-e8ae8d4ca567",
-    "https://image.iaproject.app/e9d14d6e-d91a-4015-8a0a-e8ae8d4ca567",
-    "https://image.iaproject.app/e9d14d6e-d91a-4015-8a0a-e8ae8d4ca567",
-    "https://image.iaproject.app/e9d14d6e-d91a-4015-8a0a-e8ae8d4ca567",
-    "https://image.iaproject.app/e9d14d6e-d91a-4015-8a0a-e8ae8d4ca567",
-    "https://image.iaproject.app/e9d14d6e-d91a-4015-8a0a-e8ae8d4ca567",
-    "https://image.iaproject.app/e9d14d6e-d91a-4015-8a0a-e8ae8d4ca567",
-    "https://image.iaproject.app/e9d14d6e-d91a-4015-8a0a-e8ae8d4ca567",
-    "https://image.iaproject.app/e9d14d6e-d91a-4015-8a0a-e8ae8d4ca567"
+  "sprites": [
+    {
+      "iconUrl": "/images/KanadeShirabe/icon/kanadeshirabe_icon_1.png",
+      "spriteUrl": "/images/KanadeShirabe/sprite/kanadeshirabe_sprite_1.png"
+    },
+    {
+      "iconUrl": "/images/KanadeShirabe/icon/kanadeshirabe_icon_2.png",
+      "spriteUrl": "/images/KanadeShirabe/sprite/kanadeshirabe_sprite_2.png"
+    },
+    {
+      "iconUrl": "/images/KanadeShirabe/icon/kanadeshirabe_icon_3.png",
+      "spriteUrl": "/images/KanadeShirabe/sprite/kanadeshirabe_sprite_3.png"
+    },
+    {
+      "iconUrl": "/images/KanadeShirabe/icon/kanadeshirabe_icon_4_hide.png",
+      "spriteUrl": "/images/KanadeShirabe/sprite/kanadeshirabe_sprite_4.png"
+    },
+    {
+      "iconUrl": "/images/KanadeShirabe/icon/kanadeshirabe_icon_5.png",
+      "spriteUrl": "/images/KanadeShirabe/sprite/kanadeshirabe_sprite_5.png"
+    },
+    {
+      "iconUrl": "/images/KanadeShirabe/icon/kanadeshirabe_icon_6.png",
+      "spriteUrl": "/images/KanadeShirabe/sprite/kanadeshirabe_sprite_6.png"
+    },
+    {
+      "iconUrl": "/images/KanadeShirabe/icon/kanadeshirabe_icon_7.png",
+      "spriteUrl": "/images/KanadeShirabe/sprite/kanadeshirabe_sprite_7.png"
+    }
   ],
   "status": {
     "type": "CoC6版",
