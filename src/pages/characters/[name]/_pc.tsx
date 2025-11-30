@@ -56,6 +56,11 @@ export const PcCharacterAbout: React.FC<PcCharacterAboutProps> = ({
   const [selectedHistoryIndex, setSelectedHistoryIndex] = useState(0);
   const [isScrolled, setIsScrolled] = useState(false);
 
+  const safeDisplaySpriteIndex = Math.min(
+    displaySpriteIndex,
+    data.sprites.length - 1
+  );
+
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}data/characters.json`)
       .then((res) => res.json())
@@ -86,12 +91,53 @@ export const PcCharacterAbout: React.FC<PcCharacterAboutProps> = ({
     return () => window.removeEventListener("scroll", callback);
   }, []);
 
+  useEffect(() => {
+    switch (characterId) {
+      case "kanade-shirabe-adult":
+        setDisplaySpriteIndex(1);
+        break;
+      case "kanade-shirabe-student":
+        setDisplaySpriteIndex(1);
+        break;
+      default:
+        setDisplaySpriteIndex(0);
+    }
+  }, [characterId]);
+
   const costumeList: CostumeItem[] = useMemo(() => {
     return data.sprites.map((url, index) => ({
       isSelected: displaySpriteIndex === index,
       imageUrl: url.iconUrl,
       // MEMO: 奏 調の特殊挙動はこの辺でカスタマイズできる
       onClick: () => {
+        switch (characterId) {
+          case "kanade-shirabe":
+            if (url.iconUrl.includes("hide")) {
+              setDisplaySpriteIndex(1);
+              navigate("/characters/kanade-shirabe-student");
+            } else {
+              setDisplaySpriteIndex(index);
+              navigate("/characters/kanade-shirabe-adult");
+            }
+            return;
+          case "kanade-shirabe-student":
+            setDisplaySpriteIndex(0);
+            navigate("/characters/kanade-shirabe");
+            return;
+          case "kanade-shirabe-adult":
+            if (url.iconUrl.includes("hide")) {
+              setDisplaySpriteIndex(1);
+              navigate("/characters/kanade-shirabe-student");
+              return;
+            } else if (index === 0) {
+              setDisplaySpriteIndex(0);
+              navigate("/characters/kanade-shirabe");
+              return;
+            }
+            break;
+          default:
+            break;
+        }
         scrollTo({ top: 0, behavior: "smooth" });
         setDisplaySpriteIndex(index);
       },
@@ -101,20 +147,22 @@ export const PcCharacterAbout: React.FC<PcCharacterAboutProps> = ({
     return data.colorPalette;
   }, [data]);
 
-  const handlePrevious = previousCharacterId
-    ? () => {
-        setDisplaySpriteIndex(0);
-        navigate(`/characters/${previousCharacterId}`);
-        scrollTo(0, 0);
-      }
-    : undefined;
-  const handleNext = nextCharacterId
-    ? () => {
-        setDisplaySpriteIndex(0);
-        navigate(`/characters/${nextCharacterId}`);
-        scrollTo(0, 0);
-      }
-    : undefined;
+  const handlePrevious =
+    previousCharacterId && !data.hide
+      ? () => {
+          setDisplaySpriteIndex(0);
+          navigate(`/characters/${previousCharacterId}`);
+          scrollTo(0, 0);
+        }
+      : undefined;
+  const handleNext =
+    nextCharacterId && !data.hide
+      ? () => {
+          setDisplaySpriteIndex(0);
+          navigate(`/characters/${nextCharacterId}`);
+          scrollTo(0, 0);
+        }
+      : undefined;
 
   const handleAboutCharacters = useCallback(() => {
     navigate("/about#characters");
@@ -141,7 +189,9 @@ export const PcCharacterAbout: React.FC<PcCharacterAboutProps> = ({
               color={mainColor}
               profileData={data.profile}
             />
-            <MainSpriteImage src={data.sprites[displaySpriteIndex].spriteUrl} />
+            <MainSpriteImage
+              src={data.sprites[safeDisplaySpriteIndex].spriteUrl}
+            />
           </ProfileMainContainer>
         </ProfileContainer>
         <GradationBackground startColor={mainColor} endColor={secondColor}>

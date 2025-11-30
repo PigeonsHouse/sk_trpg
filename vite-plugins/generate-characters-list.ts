@@ -37,12 +37,15 @@ export function generateCharactersList(): Plugin {
           backgroundUrl: data.backgroundUrl,
           color: data.colorPalette[0],
           index: data.number,
+          hide: data.hide || false,
         };
       });
       const sorted = updatedFiles
+        .filter((file) => !file.hide)
         .sort((a, b) => a.index - b.index)
         .map((file) => {
           delete file.index;
+          delete file.hide;
           return file;
         });
 

@@ -68,6 +68,7 @@ export type QA = {
 
 export type CharacterDetail = {
   number: number;
+  hide?: boolean;
   name: string;
   enName: string;
   shortId: string;
