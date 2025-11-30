@@ -62,7 +62,7 @@ export const LightContainer = styled.div`
   position: absolute;
   width: 178px;
   height: 178px;
-  background-color: #272727;
+  background-color: ${UiColor.darkGray};
   border-radius: 32px 32px 50% 50%;
   right: -314px;
   bottom: -34px;

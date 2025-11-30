@@ -19,11 +19,12 @@ export const NavigateArrow = styled.button<NavigateArrowProps>`
       ? `
       border-left-width: 0;
       border-right-width: ${props.height * 1.5}px;
-      border-right-color: ${props.disabled ? (props.color ? `hsl(from ${props.color} h s calc((l + 100) / 2))` : "#FFFFFF7F") : props.color || "white"};
+      border-right-color: ${props.disabled ? (props.color ? `hsl(from ${props.color} h s calc((l + 100) / 2))` : "rgb(255 255 255 / .5)") : props.color || "white"};
     `
       : `
       border-right-width: 0;
       border-left-width: ${props.height * 1.5}px;
-      border-left-color: ${props.disabled ? (props.color ? `hsl(from ${props.color} h s calc((l + 100) / 2))` : "#FFFFFF7F") : props.color || "white"};
+      border-left-color: ${props.disabled ? (props.color ? `hsl(from ${props.color} h s calc((l + 100) / 2))` : "rgb(255 255 255 / .5)") : props.color || "white"};
       `}
+  z-index: 1;
 `;

@@ -11,19 +11,10 @@
 // // about各見出しの色
 // const gray3 = "#444444";
 
-// // 名前枠の枠線の色
-// const gray6 = "#D2D2D2";
-// // 位置座標マークの色
-// const gray4 = "#4B4B4B";
-
-// // 信号機の色
-// const black = "#272727";
-
-// // 窓の枠線の色
-// const gray8 = "#DCEBEE";
-
 export const UiColor = {
   black: "#1A1A1A",
+  darkGray: "#272727",
   gray: "#707070",
+  lightGray: "#DCEBEE",
   yellow: "#FFE600",
 } as const;

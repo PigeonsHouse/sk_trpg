@@ -24,7 +24,7 @@ export const CharacterHeaderContainer = styled.div`
   left: 0;
   right: 0;
   top: 0;
-  z-index: 10;
+  z-index: 100;
 `;
 
 export const ProfileContainer = styled.div`
@@ -61,7 +61,7 @@ export const MainSpriteImage = styled.img`
   bottom: -240px;
   width: 560px;
   right: 0px;
-  z-index: 1000;
+  z-index: 50;
 `;
 
 export const GradationBackground = styled.div<{

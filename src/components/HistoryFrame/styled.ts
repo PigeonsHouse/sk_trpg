@@ -229,6 +229,7 @@ export const ShortIdBoard = styled.div<{ color: string }>`
   gap: 24px;
   left: -310px;
   bottom: -70px;
+  user-select: none;
 `;
 
 export const ShortId = styled.span``;

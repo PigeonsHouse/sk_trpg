@@ -5,7 +5,6 @@ import { BREAK_POINT } from "../../definitions";
 export const Container = styled.div`
   position: sticky;
   top: 0;
-  z-index: 10;
 `;
 
 export const Header = styled.div<{ color: string; isShrink?: boolean }>`

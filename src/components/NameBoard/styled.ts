@@ -1,5 +1,6 @@
 import { css } from "@emotion/css";
 import styled from "@emotion/styled";
+import { UiColor } from "../../definitions";
 
 export const BoardContainer = styled.div`
   display: inline-block;
@@ -7,13 +8,14 @@ export const BoardContainer = styled.div`
   height: 176px;
   text-align: center;
   background-color: white;
-  border: 5px solid #d2d2d2;
+  border: 5px solid ${UiColor.lightGray};
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
   padding: 20px;
   box-sizing: border-box;
+  user-select: none;
   z-index: 1;
 `;
 

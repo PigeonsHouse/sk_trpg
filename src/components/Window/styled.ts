@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { UiColor } from "../../definitions";
 
 export const WindowFrame = styled.div<{
   mainColor: string;
@@ -7,7 +8,7 @@ export const WindowFrame = styled.div<{
   position: absolute;
   width: 720px;
   height: 360px;
-  border: 40px solid #dcebee;
+  border: 40px solid ${UiColor.lightGray};
   border-radius: 60px;
   background: linear-gradient(
     135deg,
@@ -32,5 +33,5 @@ export const VerticalBar = styled.div`
   left: calc(50% - 20px);
   width: 40px;
   bottom: 0;
-  background-color: #dcebee;
+  background-color: ${UiColor.lightGray};
 `;

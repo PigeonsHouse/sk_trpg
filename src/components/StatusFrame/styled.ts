@@ -60,7 +60,7 @@ export const TrafficLightContainer = styled.div`
   position: absolute;
   width: 200px;
   height: 400px;
-  background-color: #272727;
+  background-color: ${UiColor.darkGray};
   border-radius: 9999px;
   top: -132px;
   left: -280px;

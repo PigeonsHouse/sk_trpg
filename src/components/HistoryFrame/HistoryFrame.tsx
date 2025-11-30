@@ -1,5 +1,6 @@
 import { useMemo } from "react";
 import { MdLocationPin } from "react-icons/md";
+import { UiColor } from "../../definitions";
 import type { History } from "../../types";
 import { CommonFrame } from "../CommonFrame";
 import { NameContainer } from "../NameContainer";
@@ -62,7 +63,7 @@ export const HistoryFrame: React.FC<HistoryFrameProps> = ({
     <Container>
       <CommonFrame className={FrameStyle}>
         <TitleContainer>
-          <MdLocationPin size={44} color="#4B4B4B" />
+          <MdLocationPin size={44} color={UiColor.black} />
           <Title>停車駅</Title>
         </TitleContainer>
         <ScrollContainer>
