@@ -65,19 +65,22 @@
           "name": "セシリア・アマノ・メリニコフ",
           "enName": "Сесилия・Амано・Мельников",
           "color": "#808080",
-          "iconUrl": "/images/Son/companions/cecilia.png"
+          "iconUrl": "/images/Son/companions/cecilia.png",
+          "nickName": "セシリア"
         },
         {
           "name": "イオ・アストレア",
           "enName": "Io Astrea",
           "color": "#808080",
-          "iconUrl": "/images/Son/companions/io.png"
+          "iconUrl": "/images/Son/companions/io.png",
+          "nickName": "イオ"
         },
         {
           "name": "エミリー・フレイア",
           "enName": "Emily Freiya",
           "color": "#808080",
-          "iconUrl": "/images/Son/companions/emily.png"
+          "iconUrl": "/images/Son/companions/emily.png",
+          "nickName": "エミリー"
         }
       ]
     }

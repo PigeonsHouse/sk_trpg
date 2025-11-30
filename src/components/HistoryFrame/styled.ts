@@ -193,6 +193,19 @@ export const CompanionIconImage = styled.img<{ color: string }>`
   background-color: ${(props) => props.color};
 `;
 
+export const NickNameContainer = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+`;
+
+export const CallIconStyle = css`
+  transform: scaleX(-1);
+`;
+
+export const NickName = styled.span``;
+
 export const CompanionNameStyle = css`
   && {
     align-items: flex-start;

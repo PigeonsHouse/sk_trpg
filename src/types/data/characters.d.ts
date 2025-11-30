@@ -52,6 +52,7 @@ export type Companion = {
   enName: string;
   color: string;
   iconUrl: string;
+  nickName: string;
 };
 
 export type History = {

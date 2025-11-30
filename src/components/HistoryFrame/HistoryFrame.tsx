@@ -1,8 +1,8 @@
 import { useMemo } from "react";
-import { MdLocationPin } from "react-icons/md";
 import { UiColor } from "../../definitions";
 import type { History } from "../../types";
 import { CommonFrame } from "../CommonFrame";
+import { GoogleFontIcon } from "../GoogleFontIcon";
 import { NameContainer } from "../NameContainer";
 import {
   Title,
@@ -32,6 +32,9 @@ import {
   ShortId,
   ShortIdNumber,
   CompanionNameStyle,
+  CallIconStyle,
+  NickNameContainer,
+  NickName,
 } from "./styled";
 
 type HistoryFrameProps = {
@@ -62,7 +65,11 @@ export const HistoryFrame: React.FC<HistoryFrameProps> = ({
     <Container>
       <CommonFrame className={FrameStyle}>
         <TitleContainer>
-          <MdLocationPin size={44} color={UiColor.black} />
+          <GoogleFontIcon
+            iconName="fmd_good"
+            size={44}
+            color={UiColor.darkGray}
+          />
           <Title>停車駅</Title>
         </TitleContainer>
         <ScrollContainer>
@@ -113,6 +120,15 @@ export const HistoryFrame: React.FC<HistoryFrameProps> = ({
                       enName={companion.enName}
                       className={CompanionNameStyle}
                     />
+                    <NickNameContainer>
+                      <GoogleFontIcon
+                        iconName="spatial_audio_off"
+                        size={24}
+                        color={UiColor.darkGray}
+                        className={CallIconStyle}
+                      />
+                      <NickName>{companion.nickName}</NickName>
+                    </NickNameContainer>
                   </SingleCompanionInfoContainer>
                 ))}
               </CompanionInfoContainer>
