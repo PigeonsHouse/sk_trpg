@@ -61,6 +61,7 @@ export const MainSpriteImage = styled.img`
   bottom: -240px;
   width: 560px;
   right: 0px;
+  pointer-events: none;
   z-index: 50;
 `;
 
