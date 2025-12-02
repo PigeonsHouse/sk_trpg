@@ -117,6 +117,7 @@ export const PcCharacterAbout: React.FC<PcCharacterAboutProps> = ({
       isSelected: displaySpriteIndex === index,
       imageUrl: url.iconUrl,
       onClick: () => {
+        scrollTo({ top: 0, behavior: "smooth" });
         switch (characterId) {
           case "kanade-shirabe":
             if (url.iconUrl.includes("hide")) {
@@ -145,7 +146,6 @@ export const PcCharacterAbout: React.FC<PcCharacterAboutProps> = ({
           default:
             break;
         }
-        scrollTo({ top: 0, behavior: "smooth" });
         setDisplaySpriteIndex(index);
       },
     }));
