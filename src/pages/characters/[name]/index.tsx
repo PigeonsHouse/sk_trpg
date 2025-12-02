@@ -2,14 +2,20 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import { APP_NAME } from "../../../definitions";
 import { useBreakPoint } from "../../../hooks";
-import type { CharacterDetail } from "../../../types";
+import type { CharacterDetail, CharacterSummary } from "../../../types";
 import { PcCharacterAbout } from "./_pc";
 import { SpCharacterAbout } from "./_sp";
 import { Loading } from "./styled";
 
 const CharacterAbout = () => {
   const { name: characterId } = useParams();
+  const [summary, setSummary] = useState<CharacterSummary[]>([]);
   const [data, setData] = useState<CharacterDetail | undefined>();
+  useEffect(() => {
+    fetch(`${import.meta.env.BASE_URL}data/characters.json`)
+      .then((res) => res.json())
+      .then((data) => setSummary(data));
+  }, []);
   useEffect(() => {
     if (!characterId) return;
     fetch(`${import.meta.env.BASE_URL}data/characters/${characterId}.json`)
@@ -36,9 +42,17 @@ const CharacterAbout = () => {
       ) : (
         <>
           {isPc ? (
-            <PcCharacterAbout characterId={characterId} data={data} />
+            <PcCharacterAbout
+              summary={summary}
+              characterId={characterId}
+              data={data}
+            />
           ) : (
-            <SpCharacterAbout characterId={characterId} data={data} />
+            <SpCharacterAbout
+              summary={summary}
+              characterId={characterId}
+              data={data}
+            />
           )}
         </>
       )}

@@ -1,6 +1,11 @@
 import { css } from "@emotion/css";
 import styled from "@emotion/styled";
-import { BREAK_POINT, UiColor } from "../../definitions";
+import {
+  BREAK_POINT,
+  FontFamily,
+  FontWeight,
+  UiColor,
+} from "../../definitions";
 
 export const Container = styled.div`
   display: flex;
@@ -27,7 +32,7 @@ export const TitleContainer = styled.div`
 
 export const Title = styled.span`
   font-size: 36px;
-  font-weight: 700;
+  font-weight: ${FontWeight.Bold};
   margin-top: -4px;
 `;
 
@@ -90,13 +95,13 @@ export const IndexCircle = styled.div<{ color: string }>`
   box-sizing: border-box;
   border: 10px solid ${(props) => props.color};
   border-radius: 50%;
-  font-family: Anton, sans-serif;
+  font-family: ${FontFamily.Bold};
   font-size: 20px;
   flex-shrink: 0;
 `;
 
 export const HistoryTitle = styled.div`
-  font-weight: 700;
+  font-weight: ${FontWeight.Bold};
   font-size: 24px;
   margin-top: -8px;
   overflow: hidden;
@@ -214,7 +219,7 @@ export const CompanionNameStyle = css`
   }
   & > span:first-child {
     font-size: 20px;
-    font-weight: 700;
+    font-weight: ${FontWeight.Bold};
     line-height: normal;
     letter-spacing: 0;
   }
@@ -245,11 +250,11 @@ export const BottomBar = styled.div`
 
 export const ShortIdBoard = styled.div<{ color: string }>`
   background-color: ${(props) => props.color};
-  font-family: "BIZ UDGothic", sans-serif;
+  font-family: ${FontFamily.Header};
   width: 260px;
   height: 160px;
   position: absolute;
-  font-weight: 700;
+  font-weight: ${FontWeight.Bold};
   font-size: 50px;
   display: flex;
   flex-direction: column;

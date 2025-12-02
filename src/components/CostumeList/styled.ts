@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { UiColor } from "../../definitions";
+import { FontWeight, UiColor } from "../../definitions";
 
 export const Container = styled.div``;
 
@@ -12,7 +12,7 @@ export const TitleContainer = styled.div`
 export const Title = styled.h2`
   margin: 0;
   font-size: 44px;
-  font-weight: 700;
+  font-weight: ${FontWeight.Bold};
   line-height: 1;
 `;
 

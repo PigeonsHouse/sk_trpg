@@ -1,13 +1,13 @@
 import { css, Global } from "@emotion/react";
-import { UiColor } from "../../definitions";
+import { FontFamily, FontWeight, UiColor } from "../../definitions";
 
 const styles = css`
   html,
   body {
     margin: 0;
     color: ${UiColor.black};
-    font-family: "Noto Sans JP", sans-serif;
-    font-weight: 400;
+    font-family: ${FontFamily.Regular};
+    font-weight: ${FontWeight.Regular};
   }
 `;
 

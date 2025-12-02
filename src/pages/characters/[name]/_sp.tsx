@@ -16,28 +16,24 @@ import {
 } from "./styled";
 
 type SpCharacterAboutProps = {
+  summary: CharacterSummary[];
   characterId: string;
   data: CharacterDetail;
 };
 
 export const SpCharacterAbout: React.FC<SpCharacterAboutProps> = ({
+  summary,
   characterId,
   data,
 }) => {
   const navigate = useNavigate();
 
-  const [summary, setSummary] = useState<CharacterSummary[]>([]);
   const [previousCharacterId, setPreviousCharacterId] = useState<
     string | undefined
   >();
   const [nextCharacterId, setNextCharacterId] = useState<string | undefined>();
   const [displaySpriteIndex, setDisplaySpriteIndex] = useState(0);
 
-  useEffect(() => {
-    fetch(`${import.meta.env.BASE_URL}data/characters.json`)
-      .then((res) => res.json())
-      .then((data) => setSummary(data));
-  }, []);
   useEffect(() => {
     let prevId: string | undefined = undefined;
     let nextId: string | undefined = undefined;

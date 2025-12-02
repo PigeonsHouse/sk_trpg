@@ -1,9 +1,4 @@
-import {
-  CharacterName,
-  Container,
-  ContainerH1,
-  EnCharacterName,
-} from "./styled";
+import { CharacterName, Container, EnCharacterName } from "./styled";
 
 export type NameContainerProps = {
   className?: string;
@@ -20,12 +15,10 @@ export const NameContainer: React.FC<NameContainerProps> = ({
   enName,
   isHeading,
 }) => {
-  const SpecifiedContainer = isHeading ? ContainerH1 : Container;
-
   return (
-    <SpecifiedContainer className={className}>
+    <Container className={className} as={isHeading ? "h1" : undefined}>
       <CharacterName size={size}>{name}</CharacterName>
       <EnCharacterName>{enName.toUpperCase()}</EnCharacterName>
-    </SpecifiedContainer>
+    </Container>
   );
 };

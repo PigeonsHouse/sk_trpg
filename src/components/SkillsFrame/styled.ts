@@ -1,6 +1,6 @@
 import { css } from "@emotion/css";
 import styled from "@emotion/styled";
-import { BREAK_POINT, UiColor } from "../../definitions";
+import { BREAK_POINT, FontWeight, UiColor } from "../../definitions";
 
 export const FrameStatus = css`
   padding: 24px;
@@ -34,7 +34,7 @@ export const SkillsOneLineContainer = styled.div`
   align-items: center;
   font-size: 18px;
   width: 180px;
-  font-weight: 500;
+  font-weight: ${FontWeight.Medium};
 `;
 
 export const Value = styled.div``;

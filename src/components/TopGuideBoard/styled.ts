@@ -1,6 +1,6 @@
 import { css } from "@emotion/css";
 import styled from "@emotion/styled";
-import { UiColor } from "../../definitions";
+import { FontWeight, UiColor } from "../../definitions";
 
 export const Container = styled.div`
   display: inline-flex;
@@ -34,7 +34,7 @@ export const ArrowStyle = css`
 
 export const TopLabel = styled.span`
   font-size: 68px;
-  font-weight: 700;
+  font-weight: ${FontWeight.Bold};
   margin-top: -16px;
 `;
 
@@ -54,7 +54,7 @@ export const TextContainer = styled.div``;
 
 export const BigText = styled.div`
   font-size: 36px;
-  font-weight: 700;
+  font-weight: ${FontWeight.Bold};
   margin-top: -12px;
 `;
 

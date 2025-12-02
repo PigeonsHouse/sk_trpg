@@ -19,7 +19,7 @@ export const Container = styled.div`
   padding-top: 80px;
 `;
 
-export const CharacterHeaderContainer = styled.div<{ isShrink: boolean }>`
+export const CharacterHeaderContainer = styled.header<{ isShrink: boolean }>`
   position: fixed;
   left: 0;
   right: 0;
@@ -27,7 +27,7 @@ export const CharacterHeaderContainer = styled.div<{ isShrink: boolean }>`
   z-index: ${(props) => (props.isShrink ? 500 : 1)};
 `;
 
-export const ProfileContainer = styled.div`
+export const ProfileContainer = styled.section`
   width: 100%;
   height: 620px;
   position: relative;
@@ -65,7 +65,7 @@ export const MainSpriteImage = styled.img`
   z-index: 50;
 `;
 
-export const GradationBackground = styled.div<{
+export const GradationBackground = styled.section<{
   startColor: string;
   endColor: string;
 }>`
@@ -114,7 +114,10 @@ export const RightColumnContainer = styled.div`
   padding-top: 176px;
 `;
 
-export const TrainBody = styled.div<{ mainColor: string; secondColor: string }>`
+export const TrainBody = styled.section<{
+  mainColor: string;
+  secondColor: string;
+}>`
   min-height: 1080px;
   position: relative;
   background: linear-gradient(
@@ -143,7 +146,7 @@ export const RightWindowStyle = css`
   right: calc(50% - 800px - 480px - 40px);
 `;
 
-export const RoadBackGround = styled.div`
+export const RoadBackGround = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;

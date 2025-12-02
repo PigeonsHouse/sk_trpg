@@ -1,5 +1,6 @@
 import { css } from "@emotion/css";
 import styled from "@emotion/styled";
+import { FontFamily, FontWeight } from "../../definitions";
 
 export const FrameStyle = css`
   width: 960px;
@@ -44,13 +45,13 @@ export const QuestionIcon = styled.span<{ color: string }>`
   color: white;
   box-sizing: border-box;
   margin-right: 16px;
-  font-weight: 700;
-  font-family: "BIZ UDPGothic", sans-serif;
+  font-weight: ${FontWeight.Bold};
+  font-family: ${FontFamily.Header};
   user-select: none;
 `;
 
 export const QuestionTitle = styled.span`
-  font-weight: 700;
+  font-weight: ${FontWeight.Bold};
 `;
 
 export const AnswerContainer = styled.div`

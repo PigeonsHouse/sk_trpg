@@ -1,11 +1,11 @@
 import styled from "@emotion/styled";
-import { BREAK_POINT } from "../../definitions";
+import { BREAK_POINT, FontFamily } from "../../definitions";
 
 export const Container = styled.div``;
 
 export const Title = styled.h2`
   margin: 0;
-  font-family: "BIZ UDGothic", sans-serif;
+  font-family: ${FontFamily.Header};
   font-size: 48px;
   margin-bottom: 80px;
   text-align: center;

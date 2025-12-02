@@ -1,5 +1,6 @@
 import { css } from "@emotion/css";
 import styled from "@emotion/styled";
+import { FontWeight } from "../../definitions";
 
 export const ProfileFrameStyle = css`
   width: 720px;
@@ -32,7 +33,7 @@ export const ProfilesContainer = styled.div`
   display: flex;
   gap: 4px;
   flex-direction: column;
-  font-weight: 500;
+  font-weight: ${FontWeight.Medium};
 `;
 
 export const ProfileOneLineContainer = styled.div`

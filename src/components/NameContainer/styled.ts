@@ -1,6 +1,7 @@
 import styled from "@emotion/styled";
+import { FontFamily, FontWeight } from "../../definitions";
 
-export const ContainerStyle = `
+export const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,13 +9,10 @@ export const ContainerStyle = `
   margin: 0;
 `;
 
-export const Container = styled.div(ContainerStyle);
-export const ContainerH1 = styled.h1(ContainerStyle);
-
 // 目安　lg: 7文字以内、md: それより長い、sm: 未想定
 export const CharacterName = styled.span<{ size?: "sm" | "md" | "lg" }>`
-  font-family: "BIZ UDPGothic", sans-serif;
-  font-weight: 700;
+  font-family: ${FontFamily.Header};
+  font-weight: ${FontWeight.Bold};
   white-space: nowrap;
   font-size: ${(props) => {
     switch (props.size) {
@@ -45,6 +43,6 @@ export const CharacterName = styled.span<{ size?: "sm" | "md" | "lg" }>`
 
 export const EnCharacterName = styled.span`
   font-size: 12px;
-  font-family: Anton, sans-serif;
+  font-family: ${FontFamily.Bold};
   letter-spacing: 1px;
 `;
