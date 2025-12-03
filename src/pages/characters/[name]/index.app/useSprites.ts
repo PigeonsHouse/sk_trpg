@@ -60,7 +60,7 @@ export const useSprites = (
       imageUrl: url.iconUrl,
       onClick: onClickFactory(index, url),
     }));
-  }, [displaySpriteIndex, setDisplaySpriteIndex]);
+  }, [displaySpriteIndex, setDisplaySpriteIndex, onClickFactory]);
 
   useEffect(() => {
     const defaultIndex = characterDefaultSpriteIndex[characterId];
