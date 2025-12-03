@@ -11,7 +11,7 @@
     "id": "kanade-kotoko",
     "name": "奏 琴子",
     "enName": "KANADE KOTOKO",
-    "thumbnailUrl": "/images/kotoko.png",
+    "thumbnailUrl": "/images/KanadeKotoko/sprite/kanadekotoko_sprite_1.png",
     "backgroundUrl": "https://user0514.cdnw.net/shared/img/thumb/PK-sc02-IMGP6388-h_TP_V.jpg",
     "color": "#1B29A4"
   },
@@ -22,5 +22,13 @@
     "thumbnailUrl": "https://image.iaproject.app/93301d96-9806-40e6-8364-fa406e08280b",
     "backgroundUrl": "https://sakuranouta.biz/wp-content/uploads/2023/10/%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84%E3%81%AE%E9%83%A8%E5%B1%8B_6_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89-1-1024x576.jpg",
     "color": "#FF0A0A"
+  },
+  {
+    "id": "saotome-kaito",
+    "name": "早乙女 海翔",
+    "enName": "SAOTOME KAITO",
+    "thumbnailUrl": "/images/SaotomeKaito/sprite/SaotomeKaito_sprite_1.png",
+    "backgroundUrl": "https://sakuranouta.biz/wp-content/uploads/2023/10/%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84%E3%81%AE%E9%83%A8%E5%B1%8B_6_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89-1-1024x576.jpg",
+    "color": "#FF1C7E"
   }
 ]
