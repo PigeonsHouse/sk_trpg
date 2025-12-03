@@ -32,7 +32,7 @@ export const ProfileFrame: React.FC<ProfileFrameProps> = ({
             if (key === "description") return;
             return (
               <ProfileOneLineContainer key={key}>
-                <LabelBox color={color}>{key.toUpperCase()}</LabelBox>
+                <LabelBox backgroundColor={color}>{key.toUpperCase()}</LabelBox>
                 {profileData}
               </ProfileOneLineContainer>
             );

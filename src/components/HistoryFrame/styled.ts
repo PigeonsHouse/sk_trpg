@@ -86,14 +86,14 @@ export const HistoryLight = styled.div<{
   flex-shrink: 0;
 `;
 
-export const IndexCircle = styled.div<{ color: string }>`
+export const IndexCircle = styled.div<{ borderColor: string }>`
   width: 48px;
   height: 48px;
   display: flex;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  border: 10px solid ${(props) => props.color};
+  border: 10px solid ${(props) => props.borderColor};
   border-radius: 50%;
   font-family: ${FontFamily.Bold};
   font-size: 20px;
@@ -113,9 +113,9 @@ export const HistoryDetailAreaContainer = styled.div`
   flex-grow: 1;
 `;
 
-export const HistoryDetailContainer = styled.div<{ color: string }>`
+export const HistoryDetailContainer = styled.div<{ backgroundColor: string }>`
   width: 100%;
-  background-color: ${(props) => props.color};
+  background-color: ${(props) => props.backgroundColor};
   border-radius: 20px;
   padding: 36px;
   padding-left: 72px;
@@ -132,7 +132,7 @@ export const HistoryDetailContainer = styled.div<{ color: string }>`
     border-width: 28px 48px;
     border-left-width: 0;
     border-color: transparent;
-    border-right-color: ${(props) => props.color};
+    border-right-color: ${(props) => props.backgroundColor};
     left: -48px;
     top: 60px;
   }
@@ -191,19 +191,19 @@ export const SingleCompanionInfoContainer = styled.li`
   padding-left: 32px;
 `;
 
-export const CompanionIconImage = styled.img<{ color: string }>`
+export const CompanionIconImage = styled.img<{ backgroundColor: string }>`
   width: 56px;
   height: 56px;
   border-radius: 50%;
-  background-color: ${(props) => props.color};
+  background-color: ${(props) => props.backgroundColor};
 `;
 
-export const NickNameContainer = styled.div<{ color: string }>`
+export const NickNameContainer = styled.div<{ mainColor: string }>`
   display: flex;
   align-items: center;
   gap: 8px;
   font-size: 18px;
-  color: ${(props) => props.color};
+  color: ${(props) => props.mainColor};
 `;
 
 export const CallIconStyle = css`
@@ -248,8 +248,8 @@ export const BottomBar = styled.div`
   bottom: 24px;
 `;
 
-export const ShortIdBoard = styled.div<{ color: string }>`
-  background-color: ${(props) => props.color};
+export const ShortIdBoard = styled.div<{ backgroundColor: string }>`
+  background-color: ${(props) => props.backgroundColor};
   font-family: ${FontFamily.Header};
   width: 260px;
   height: 160px;

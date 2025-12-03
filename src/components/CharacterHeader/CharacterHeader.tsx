@@ -39,11 +39,11 @@ export const CharacterHeader: React.FC<CharacterHeaderProps> = ({
 
   return (
     <Container className={className}>
-      <Header color={color} isShrink={isShrink}>
+      <Header mainColor={color} isShrink={isShrink}>
         <BoardContainer isShrink={isShrink}>
           <NavigateArrow
-            direction="left"
-            height={64}
+            arrowDirection="left"
+            arrowHeight={64}
             disabled={!handlePrevious}
             onClick={handlePrevious}
           />
@@ -62,8 +62,8 @@ export const CharacterHeader: React.FC<CharacterHeaderProps> = ({
             className={SmallNameContainerStyle(isShrink)}
           />
           <NavigateArrow
-            direction="right"
-            height={64}
+            arrowDirection="right"
+            arrowHeight={64}
             disabled={!handleNext}
             onClick={handleNext}
           />

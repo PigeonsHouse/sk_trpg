@@ -7,8 +7,8 @@ export const Container = styled.div`
   top: 0;
 `;
 
-export const Header = styled.div<{ color: string; isShrink?: boolean }>`
-  background-color: ${(props) => props.color};
+export const Header = styled.div<{ mainColor: string; isShrink?: boolean }>`
+  background-color: ${(props) => props.mainColor};
   position: relative;
   height: ${(props) => (props.isShrink ? 120 : 160)}px;
   transition: height 0.2s;

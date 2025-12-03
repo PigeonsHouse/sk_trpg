@@ -22,10 +22,10 @@ export const BottomNavigator: React.FC<BottomNavigatorProps> = ({
 }) => (
   <Container>
     <NavigateArrow
-      direction="left"
+      arrowDirection="left"
       disabled={!handlePrevious}
-      height={64}
-      color={color}
+      arrowHeight={64}
+      mainColor={color}
       onClick={handlePrevious}
       className={BottomArrowStyle}
     >
@@ -44,9 +44,9 @@ export const BottomNavigator: React.FC<BottomNavigatorProps> = ({
       />
     </NameBoardContainer>
     <NavigateArrow
-      direction="right"
-      height={64}
-      color={color}
+      arrowDirection="right"
+      arrowHeight={64}
+      mainColor={color}
       onClick={handleNext}
       disabled={!handleNext}
       className={BottomArrowStyle}

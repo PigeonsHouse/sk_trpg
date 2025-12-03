@@ -84,7 +84,7 @@ export const HistoryFrame: React.FC<HistoryFrameProps> = ({
                   isSelected={selectedIndex === idx}
                   selectedColor={selectedColor}
                 />
-                <IndexCircle color={color}>{idx + 1}</IndexCircle>
+                <IndexCircle borderColor={color}>{idx + 1}</IndexCircle>
                 <HistoryTitle>{history.title}</HistoryTitle>
               </HistoryOneLineContainer>
             ))}
@@ -93,14 +93,14 @@ export const HistoryFrame: React.FC<HistoryFrameProps> = ({
 
         <TopBar />
         <BottomBar />
-        <ShortIdBoard color={selectedColor}>
+        <ShortIdBoard backgroundColor={selectedColor}>
           <ShortId>{shortId}</ShortId>
           <ShortIdNumber>{`#${String(number).padStart(2, "0")}`}</ShortIdNumber>
         </ShortIdBoard>
       </CommonFrame>
 
       <HistoryDetailAreaContainer>
-        <HistoryDetailContainer color={color}>
+        <HistoryDetailContainer backgroundColor={color}>
           <HistoryCommentContainer>
             <HistoryIconImage src={selectedHistory.iconUrl} />
             <HistoryComment>{selectedHistory.comment}</HistoryComment>
@@ -113,14 +113,14 @@ export const HistoryFrame: React.FC<HistoryFrameProps> = ({
                   <SingleCompanionInfoContainer key={i}>
                     <CompanionIconImage
                       src={companion.iconUrl}
-                      color={companion.color}
+                      backgroundColor={companion.color}
                     />
                     <NameContainer
                       name={companion.name}
                       enName={companion.enName}
                       className={CompanionNameStyle}
                     />
-                    <NickNameContainer color={color}>
+                    <NickNameContainer mainColor={color}>
                       <GoogleFontIcon
                         iconName="spatial_audio_off"
                         size={24}

@@ -25,7 +25,7 @@ export const SkillsFrame: React.FC<SkillsFrameProps> = ({
   skills,
   colorPalette,
 }) => {
-  const mainColor = colorPalette[0];
+  const [mainColor, , lightColor] = colorPalette;
 
   const [leftArray, rightArray] = useMemo(() => {
     const { type, ...displaySkills } = skills;
@@ -40,7 +40,9 @@ export const SkillsFrame: React.FC<SkillsFrameProps> = ({
         <SkillsColumnContainer>
           {leftArray.map(([label, value]) => (
             <SkillsOneLineContainer key={label}>
-              <LabelBox color={mainColor}>{label.toUpperCase()}</LabelBox>
+              <LabelBox backgroundColor={mainColor}>
+                {label.toUpperCase()}
+              </LabelBox>
               <Value>{value}</Value>
             </SkillsOneLineContainer>
           ))}
@@ -48,7 +50,9 @@ export const SkillsFrame: React.FC<SkillsFrameProps> = ({
         <SkillsColumnContainer>
           {rightArray.map(([label, value]) => (
             <SkillsOneLineContainer key={label}>
-              <LabelBox color={mainColor}>{label.toUpperCase()}</LabelBox>
+              <LabelBox backgroundColor={mainColor}>
+                {label.toUpperCase()}
+              </LabelBox>
               <Value>{value}</Value>
             </SkillsOneLineContainer>
           ))}
@@ -58,7 +62,7 @@ export const SkillsFrame: React.FC<SkillsFrameProps> = ({
       <TopBar />
       <BottomBar />
       <LightContainer>
-        <Light color={colorPalette[2]} />
+        <Light lightColor={lightColor} />
       </LightContainer>
     </CommonFrame>
   );

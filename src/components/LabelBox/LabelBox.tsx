@@ -1,9 +1,9 @@
 import styled from "@emotion/styled";
 
-export const LabelBox = styled.div<{ color: string }>`
+export const LabelBox = styled.div<{ backgroundColor: string }>`
   width: 100px;
   height: 36px;
-  background-color: ${(props) => props.color};
+  background-color: ${(props) => props.backgroundColor};
   display: flex;
   justify-content: center;
   align-items: center;

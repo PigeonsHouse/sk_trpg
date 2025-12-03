@@ -142,7 +142,7 @@ export const PcCharacterAbout: React.FC<PcCharacterAboutProps> = ({
         </TrainBody>
         <RoadBackGround>
           <MarginContainer>
-            <BrailleBlock color={yellowColor} />
+            <BrailleBlock blockColor={yellowColor} />
             <CommentFrame comment={data.comment} />
             {data.artGallery.length > 0 && (
               <MarginContainer>

@@ -70,10 +70,10 @@ export const LightContainer = styled.div`
   align-items: center;
 `;
 
-export const Light = styled.div<{ color: string }>`
+export const Light = styled.div<{ lightColor: string }>`
   width: 110px;
   height: 110px;
   border: 12px solid ${UiColor.black};
-  background-color: ${(props) => props.color};
+  background-color: ${(props) => props.lightColor};
   border-radius: 50%;
 `;

@@ -80,11 +80,11 @@ export const ItemLight = styled.div<{
 `;
 
 export const ImageContainer = styled.div<{
-  color: string;
+  backgroundColor: string;
   isSelected: boolean;
 }>`
   display: inline-block;
-  background-color: ${(props) => props.color};
+  background-color: ${(props) => props.backgroundColor};
   border-radius: 50%;
   overflow: hidden;
   width: 100px;

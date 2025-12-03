@@ -34,9 +34,9 @@ export const QAContainer = styled.div`
 
 export const QuestionContainer = styled.div``;
 
-export const QuestionIcon = styled.span<{ color: string }>`
+export const QuestionIcon = styled.span<{ backgroundColor: string }>`
   display: inline-flex;
-  background-color: ${(props) => props.color};
+  background-color: ${(props) => props.backgroundColor};
   width: 48px;
   height: 48px;
   align-items: center;
@@ -58,20 +58,20 @@ export const AnswerContainer = styled.div`
   display: flex;
 `;
 
-export const AnswerIcon = styled.img<{ color: string }>`
+export const AnswerIcon = styled.img<{ backgroundColor: string }>`
   width: 100px;
   height: 100px;
-  background-color: ${(props) => props.color};
+  background-color: ${(props) => props.backgroundColor};
   border-radius: 50%;
   vertical-align: middle;
 `;
 
-export const Answer = styled.div`
+export const Answer = styled.div<{ backgroundColor: string }>`
   margin-left: 48px;
   padding: 0 24px;
   display: inline-flex;
   align-items: center;
-  background-color: ${(props) => props.color};
+  background-color: ${(props) => props.backgroundColor};
   color: white;
   height: 100px;
   border-radius: 8px;
@@ -85,7 +85,7 @@ export const Answer = styled.div`
     border-color: transparent;
     border-style: solid;
     border-width: 16px 32px;
-    border-right-color: ${(props) => props.color};
+    border-right-color: ${(props) => props.backgroundColor};
     border-left: 0;
     top: calc(50% - 16px);
     left: -32px;

@@ -26,6 +26,7 @@ export const StatusFrame: React.FC<StatusFrameProps> = ({
   colorPalette,
 }) => {
   const mainColor = colorPalette[0];
+  const title = `ステータス：${status.type}`;
   const [leftArray, rightArray] = useMemo(() => {
     const { type, ...displayStatus } = status;
     const statusArray = Object.entries(displayStatus);
@@ -34,12 +35,14 @@ export const StatusFrame: React.FC<StatusFrameProps> = ({
 
   return (
     <CommonFrame className={FrameStatus}>
-      <Title>ステータス：{status.type}</Title>
+      <Title>{title}</Title>
       <StatusContainer>
         <StatusColumnContainer>
           {leftArray.map(([label, value]) => (
             <StatusOneLineContainer key={label}>
-              <LabelBox color={mainColor}>{label.toUpperCase()}</LabelBox>
+              <LabelBox backgroundColor={mainColor}>
+                {label.toUpperCase()}
+              </LabelBox>
               <Value>{value}</Value>
             </StatusOneLineContainer>
           ))}
@@ -47,7 +50,9 @@ export const StatusFrame: React.FC<StatusFrameProps> = ({
         <StatusColumnContainer>
           {rightArray.map(([label, value]) => (
             <StatusOneLineContainer key={label}>
-              <LabelBox color={mainColor}>{label.toUpperCase()}</LabelBox>
+              <LabelBox backgroundColor={mainColor}>
+                {label.toUpperCase()}
+              </LabelBox>
               <Value>{value}</Value>
             </StatusOneLineContainer>
           ))}
@@ -58,7 +63,7 @@ export const StatusFrame: React.FC<StatusFrameProps> = ({
       <BottomBar />
       <TrafficLightContainer>
         {colorPalette.map((color, i) => (
-          <TrafficLight key={i} color={color} />
+          <TrafficLight key={i} lightColor={color} />
         ))}
       </TrafficLightContainer>
     </CommonFrame>

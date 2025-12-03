@@ -19,8 +19,8 @@ export const BoardContainer = styled.div`
   z-index: 1;
 `;
 
-export const Bar = styled.div<{ color: string }>`
-  background-color: ${(props) => props.color};
+export const Bar = styled.div<{ mainColor: string }>`
+  background-color: ${(props) => props.mainColor};
   width: 90%;
   height: 18px;
   position: relative;
@@ -30,7 +30,7 @@ export const Bar = styled.div<{ color: string }>`
     border-color: transparent;
     border-style: solid;
     border-width: 9px 12px;
-    border-left-color: ${(props) => props.color};
+    border-left-color: ${(props) => props.mainColor};
     border-right: 0;
     top: 0;
     right: -12px;

@@ -33,12 +33,12 @@ export const QAFrame: React.FC<QAFrameProps> = ({ qaList, color }) => {
         {qaList.map((qa, i) => (
           <QAContainer key={i}>
             <QuestionContainer>
-              <QuestionIcon color={color}>Q</QuestionIcon>
+              <QuestionIcon backgroundColor={color}>Q</QuestionIcon>
               <QuestionTitle>{questionList[i]}</QuestionTitle>
             </QuestionContainer>
             <AnswerContainer>
-              <AnswerIcon color={color} src={qa.iconUrl} />
-              <Answer color={color}>{qa.answer}</Answer>
+              <AnswerIcon backgroundColor={color} src={qa.iconUrl} />
+              <Answer backgroundColor={color}>{qa.answer}</Answer>
             </AnswerContainer>
           </QAContainer>
         ))}

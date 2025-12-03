@@ -105,8 +105,8 @@ export const SpCharacterAbout: React.FC<SpCharacterAboutProps> = ({
           `}
         />
         <NavigateArrow
-          height={24}
-          direction="left"
+          arrowHeight={24}
+          arrowDirection="left"
           style={{
             position: "absolute",
             top: "calc(50% - 12px)",
@@ -116,8 +116,8 @@ export const SpCharacterAbout: React.FC<SpCharacterAboutProps> = ({
           onClick={handlePrevious}
         />
         <NavigateArrow
-          height={24}
-          direction="right"
+          arrowHeight={24}
+          arrowDirection="right"
           style={{
             position: "absolute",
             top: "calc(50% - 12px)",
@@ -127,7 +127,7 @@ export const SpCharacterAbout: React.FC<SpCharacterAboutProps> = ({
           onClick={handleNext}
         />
       </div>
-      <SpSpriteContainer color={mainColor}>
+      <SpSpriteContainer backgroundColor={mainColor}>
         <SpMarginContainer>
           <img
             style={{ width: "100%" }}

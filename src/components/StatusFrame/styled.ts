@@ -70,9 +70,9 @@ export const TrafficLightContainer = styled.div`
   gap: 12px;
 `;
 
-export const TrafficLight = styled.div<{ color: string }>`
+export const TrafficLight = styled.div<{ lightColor: string }>`
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  background-color: ${(props) => props.color};
+  background-color: ${(props) => props.lightColor};
 `;

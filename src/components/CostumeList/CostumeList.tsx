@@ -59,7 +59,10 @@ export const CostumeList: React.FC<CostumeListProps> = ({
                     isSelected={item.isSelected}
                     selectedColor={selectedColor}
                   />
-                  <ImageContainer color={color} isSelected={item.isSelected}>
+                  <ImageContainer
+                    backgroundColor={color}
+                    isSelected={item.isSelected}
+                  >
                     <Image src={item.imageUrl} />
                   </ImageContainer>
                 </SingleItemContainer>

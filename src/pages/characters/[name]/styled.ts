@@ -175,7 +175,7 @@ export const MarginContainer = styled.div`
   margin: auto;
 `;
 
-export const BrailleBlock = styled.div<{ color: string }>`
+export const BrailleBlock = styled.div<{ blockColor: string }>`
   position: absolute;
   width: 116px;
   top: 0;
@@ -190,16 +190,16 @@ export const BrailleBlock = styled.div<{ color: string }>`
     ),
     linear-gradient(
       90deg,
-      ${(props) => props.color},
-      ${(props) => props.color} 36px,
+      ${(props) => props.blockColor},
+      ${(props) => props.blockColor} 36px,
       white 36px,
       white 40px,
-      ${(props) => props.color} 40px,
-      ${(props) => props.color} 76px,
+      ${(props) => props.blockColor} 40px,
+      ${(props) => props.blockColor} 76px,
       white 76px,
       white 80px,
-      ${(props) => props.color} 80px,
-      ${(props) => props.color} 116px
+      ${(props) => props.blockColor} 80px,
+      ${(props) => props.blockColor} 116px
     );
   right: calc(50% - 120px - 600px - 160px);
 `;
@@ -209,8 +209,8 @@ export const SpContainer = styled.div`
   margin-top: 100px;
 `;
 
-export const SpSpriteContainer = styled.div<{ color: string }>`
-  background-color: ${(props) => props.color};
+export const SpSpriteContainer = styled.div<{ backgroundColor: string }>`
+  background-color: ${(props) => props.backgroundColor};
 `;
 
 export const SpMarginContainer = styled.div`

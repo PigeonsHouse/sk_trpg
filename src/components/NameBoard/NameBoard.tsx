@@ -27,6 +27,6 @@ export const NameBoard: React.FC<NameBoardProps> = ({
       className={NameContainerStyle(nameSize)}
       isHeading={isHeading}
     />
-    <Bar color={color} />
+    <Bar mainColor={color} />
   </BoardContainer>
 );
