@@ -8,7 +8,7 @@
     "color": "#8A809E"
   },
   {
-    "id": "kanade-kotoko",
+    "id": "03-kanade-kotoko",
     "name": "奏 琴子",
     "enName": "KANADE KOTOKO",
     "thumbnailUrl": "/images/KanadeKotoko/sprite/kanadekotoko_sprite_1.png",
@@ -16,7 +16,15 @@
     "color": "#1B29A4"
   },
   {
-    "id": "son-kleinbeck",
+    "id": "04-saotome-kaito",
+    "name": "早乙女 海翔",
+    "enName": "SAOTOME KAITO",
+    "thumbnailUrl": "/images/SaotomeKaito/sprite/SaotomeKaito_sprite_1.png",
+    "backgroundUrl": "https://sakuranouta.biz/wp-content/uploads/2023/10/%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84%E3%81%AE%E9%83%A8%E5%B1%8B_6_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89-1-1024x576.jpg",
+    "color": "#FF1C7E"
+  },
+  {
+    "id": "05-son-kleinbeck",
     "name": "ソーン･クラインベック",
     "enName": "SON KLEINBECK",
     "thumbnailUrl": "https://image.iaproject.app/93301d96-9806-40e6-8364-fa406e08280b",
@@ -24,11 +32,83 @@
     "color": "#FF0A0A"
   },
   {
-    "id": "saotome-kaito",
-    "name": "早乙女 海翔",
-    "enName": "SAOTOME KAITO",
-    "thumbnailUrl": "/images/SaotomeKaito/sprite/SaotomeKaito_sprite_1.png",
+    "id": "06-sasuga-kiara",
+    "name": "刺賀　煌亜来",
+    "enName": "SASUGA KIARA",
+    "thumbnailUrl": "/images/SasugaKiara/sprite/SasugaKiara_sprite_1.png",
     "backgroundUrl": "https://sakuranouta.biz/wp-content/uploads/2023/10/%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84%E3%81%AE%E9%83%A8%E5%B1%8B_6_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89-1-1024x576.jpg",
-    "color": "#FF1C7E"
+    "color": "#F20C43"
+  },
+  {
+    "id": "07-amira-kamal",
+    "name": "アミーラ☆カマル",
+    "enName": "AMIRA KAMAL",
+    "thumbnailUrl": "/images/AmiraKamal/sprite/AmiraKamal_sprite_1.png",
+    "backgroundUrl": "https://sakuranouta.biz/wp-content/uploads/2023/10/%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84%E3%81%AE%E9%83%A8%E5%B1%8B_6_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89-1-1024x576.jpg",
+    "color": "#FF26C5"
+  },
+  {
+    "id": "08-sarashina-kenji",
+    "name": "更科　健治",
+    "enName": "SRASHINA KENJI",
+    "thumbnailUrl": "/images/SarashinaKenji/sprite/SarashinaKenji_sprite_1.png",
+    "backgroundUrl": "https://sakuranouta.biz/wp-content/uploads/2023/10/%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84%E3%81%AE%E9%83%A8%E5%B1%8B_6_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89-1-1024x576.jpg",
+    "color": "#EE861E"
+  },
+  {
+    "id": "09-shiomi-ken",
+    "name": "潮海　犍",
+    "enName": "SHIOMI KEN",
+    "thumbnailUrl": "/images/ShiomiKen/sprite/ShiomiKen_sprite_1.png",
+    "backgroundUrl": "https://sakuranouta.biz/wp-content/uploads/2023/10/%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84%E3%81%AE%E9%83%A8%E5%B1%8B_6_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89-1-1024x576.jpg",
+    "color": "#1616FF"
+  },
+  {
+    "id": "10-shuang-ju",
+    "name": "霜菊 ",
+    "enName": "SHUANG JU",
+    "thumbnailUrl": "/images/ShuangJu/sprite/ShuangJu_sprite_1.png",
+    "backgroundUrl": "https://sakuranouta.biz/wp-content/uploads/2023/10/%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84%E3%81%AE%E9%83%A8%E5%B1%8B_6_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89-1-1024x576.jpg",
+    "color": "#AAE030"
+  },
+  {
+    "id": "11-saotome-karen",
+    "name": "早乙女　華恋",
+    "enName": "SAOTOMEE KAREN",
+    "thumbnailUrl": "/images/SaotomeKaren/sprite/SaotomeKaren_sprite_1.png",
+    "backgroundUrl": "https://sakuranouta.biz/wp-content/uploads/2023/10/%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84%E3%81%AE%E9%83%A8%E5%B1%8B_6_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89-1-1024x576.jpg",
+    "color": "#F85C9F"
+  },
+  {
+    "id": "12-shiki-kuryu",
+    "name": "しき",
+    "enName": "SHIKI KURYU",
+    "thumbnailUrl": "/images/ShikiKuryu/sprite/ShikiKuryu_sprite_1.png",
+    "backgroundUrl": "https://sakuranouta.biz/wp-content/uploads/2023/10/%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84%E3%81%AE%E9%83%A8%E5%B1%8B_6_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89-1-1024x576.jpg",
+    "color": "#1F4E22"
+  },
+  {
+    "id": "13-saishiki-kei",
+    "name": "才式　恵",
+    "enName": "SAISHIKI KEI",
+    "thumbnailUrl": "/images/SaishikiKei/sprite/SaishikiKei_sprite_1.png",
+    "backgroundUrl": "https://sakuranouta.biz/wp-content/uploads/2023/10/%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84%E3%81%AE%E9%83%A8%E5%B1%8B_6_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89-1-1024x576.jpg",
+    "color": "#187178"
+  },
+  {
+    "id": "14-scarlet-krieger",
+    "name": "スカーレット･クリーガー",
+    "enName": "SCARLET KRIEGER",
+    "thumbnailUrl": "/images/ScarletKrieger/sprite/ScarletKrieger_sprite_1.png",
+    "backgroundUrl": "https://sakuranouta.biz/wp-content/uploads/2023/10/%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84%E3%81%AE%E9%83%A8%E5%B1%8B_6_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89-1-1024x576.jpg",
+    "color": "#FF2B00"
+  },
+  {
+    "id": "15-satogashima-kumako",
+    "name": "郷ヶ島 熊子",
+    "enName": "SATOGASHIMA KUMAKO",
+    "thumbnailUrl": "/images/SatogashimaKumako/sprite/SatogashimaKumako_sprite_1.png",
+    "backgroundUrl": "https://sakuranouta.biz/wp-content/uploads/2023/10/%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84%E3%81%AE%E9%83%A8%E5%B1%8B_6_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89-1-1024x576.jpg",
+    "color": "#B15E00"
   }
 ]

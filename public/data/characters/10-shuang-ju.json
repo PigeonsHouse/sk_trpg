@@ -1,63 +1,86 @@
 {
-  "number": 5,
-  "shortId": "KIT",
-  "name": "早乙女 海翔",
-  "enName": "SAOTOME KAITO",
-  "thumbnailUrl": "/images/SaotomeKaito/sprite/SaotomeKaito_sprite_1.png",
-  "colorPalette": ["#FF1C7E", "#431BA4", "#EFFF17"],
+  "number": 10,
+  "shortId": "SHJ",
+  "name": "霜菊 ",
+  "enName": "SHUANG JU",
+  "thumbnailUrl": "/images/ShuangJu/sprite/ShuangJu_sprite_1.png",
+  "colorPalette": ["#AAE030", "#DB2812", "#F1EF01"],
   "backgroundUrl": "https://sakuranouta.biz/wp-content/uploads/2023/10/%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84%E3%81%AE%E9%83%A8%E5%B1%8B_6_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89-1-1024x576.jpg",
   "profile": {
     "description": "3年、アルテナス寮の寮長を務めている。\n自信家で傲慢、しかしどこか人を従えさせてしまうだけのカリスマ性がある。\nそのことにも自覚があるのか、自分がこの世界の王になると語っている。\n\n「俺はこの世界の王になる男だからな！安心して付いてくるが良いぞ！」\n\n傲慢ゆえに時に無神経な発言も見受けられるが、当人としてはあくまで事実を述べているという認識である。\nだが、人情がないわけではないため、人の努力や考えを無下にはしない。\n\n「何、俺に負けて悔しいのか？それはお前の実力不足だな！\n　だが、筋は良い。ほれ、魔力の扱い方を見てやるからもう一度やってみろ。」\n\n◆バックグラウンド\n魔法族の父と非魔法族の母の間に生まれたデュアル。\n愛情深く育てられたため、自分に対して強い自信がある。\nそのため、混血であることに対しても気にしていないどころか、むしろ誇りに思っている節がある。\n\n「魔法族と非魔法族との間に生まれた俺には魔法の才が与えられた。\n　それは、俺は魔法を扱うべくして生まれたということではないか？\n　つまり、俺にこの力で世界の王に成れと神が言っているのだな！」\n\n音楽に精通しているのは音楽家の母の影響。",
-    "age": "25",
-    "sex": "男性",
-    "height": "171cm",
-    "weight": "55kg",
-    "job": "指揮者",
-    "like": "？？？",
-    "hobby": "？？？"
+    "age": 18,
+    "sex": "男",
+    "height": "160cm",
+    "weight": "45kg",
+    "job": "娼夫（娼婦）",
+    "birthday": "???",
+    "from": "???"
   },
   "sprites": [
     {
-      "iconUrl": "/images/SaotomeKaito/icon/SaotomeKaito_icon_1.png",
-      "spriteUrl": "/images/SaotomeKaito/sprite/SaotomeKaito_sprite_0.png"
+      "iconUrl": "/images/ShuangJu/icon/ShuangJu_icon_1.png",
+      "spriteUrl": "/images/ShuangJu/sprite/ShuangJu_sprite_1.png"
     },
     {
-      "iconUrl": "/images/SaotomeKaito/icon/SaotomeKaito_icon_1.png",
-      "spriteUrl": "/images/SaotomeKaito/sprite/SaotomeKaito_sprite_1.png"
+      "iconUrl": "/images/ShuangJu/icon/ShuangJu_icon_2.png",
+      "spriteUrl": "/images/ShuangJu/sprite/ShuangJu_sprite_2.png"
     }
   ],
   "status": {
     "type": "CoC6版",
-    "str": 8,
-    "con": 10,
-    "pow": 14,
-    "dex": 9,
-    "app": 12,
-    "int": 13,
-    "edu": 16,
-    "san": 70,
-    "hp": 10,
-    "mp": 14,
-    "db": "-",
-    "luck": 70,
-    "idea": 65,
-    "knowledge": 80
+    "str": 17,
+    "con": 16,
+    "pow": 8,
+    "dex": 7,
+    "app": 10,
+    "siz": 9,
+    "int": 9,
+    "edu": 13,
+    "hp": 13,
+    "mp": 8,
+    "san": 40,
+    "idea": 45,
+    "luck": 40,
+    "knowledge": 65
   },
   "skills": {
-    "回避": 25,
-    "聞き耳": 73
+    "回避": 74,
+    "太刀": 95,
+    "mask01": 70,
+    "mask02": 85,
+    "mask03": 35,
+    "mask04": 10,
+    "mask05": 45,
+    "mask06": 32,
+    "芸術【色仕掛け】": 70
   },
+
   "histories": [
     {
-      "title": "夜明けを求めた者たち",
+      "title": "幽世常世の満天下",
       "comment": "ほんの数日にいろんなことがあったね。",
-      "iconUrl": "/images/SaotomeKaito/icon/SaotomeKaito_icon_1.png",
+      "iconUrl": "/images/ShuangJu/icon/ShuangJu_icon_1.png",
       "companions": [
         {
           "name": "セシリア・アマノ・メリニコフ",
           "enName": "Сесилия・Амано・Мельников",
           "color": "#808080",
-          "iconUrl": "/images/SaotomeKaito/companions/cecilia.png"
+          "iconUrl": "/images/ShuangJu/companions/cecilia.png",
+          "nickName": "セシリア"
+        },
+        {
+          "name": "イオ・アストレア",
+          "enName": "Io Astrea",
+          "color": "#808080",
+          "iconUrl": "/images/ShuangJu/companions/io.png",
+          "nickName": "イオ"
+        },
+        {
+          "name": "エミリー・フレイア",
+          "enName": "Emily Freiya",
+          "color": "#808080",
+          "iconUrl": "/images/ShuangJu/companions/emily.png",
+          "nickName": "エミリー"
         }
       ]
     }

@@ -1,0 +1,107 @@
+{
+  "number": 3,
+  "shortId": "KTK",
+  "name": "奏 琴子",
+  "enName": "KANADE KOTOKO",
+  "thumbnailUrl": "/images/KanadeKotoko/sprite/kanadekotoko_sprite_1.png",
+  "colorPalette": ["#1B29A4", "#9398B2", "#ECF222"],
+  "backgroundUrl": "https://user0514.cdnw.net/shared/img/thumb/PK-sc02-IMGP6388-h_TP_V.jpg",
+  "profile": {
+    "description": "バンドのピアノ担当。\n小さく体も弱いが、性格は明るく太陽のような笑顔で皆を照らす。\n知的好奇心が強く勉強が好き。音楽より勉学の方が秀でている。\n\n音楽の名家である奏家に生まれたが、虚弱体質な上に音楽の才には恵まれず親戚の大人達からは見放されている。しかし、彼女自身は音楽というものを強く愛しており、高校では軽音部に入った。\n\nQ. なぜ吹奏楽部ではなく軽音部？\n「うーん...。なんでやろうね？\n　吹部も見に行ったんやけど、なんかちがかったんよね。\n　軽音の方がチームって感じがするからかもね？」",
+    "age": "17",
+    "sex": "女性",
+    "height": "147cm",
+    "weight": "35kg",
+    "job": "高校生",
+    "birthday": "8月8日",
+    "from": "福岡"
+  },
+  "sprites": [
+    {
+      "spriteUrl": "/images/KanadeKotoko/sprite/kanadekotoko_sprite_1.png",
+      "iconUrl": "/images/KanadeKotoko/icon/kanadekotoko_icon_1.png"
+    }
+  ],
+  "status": {
+    "type": "CoC7版",
+    "str": 30,
+    "con": 45,
+    "pow": 45,
+    "dex": 50,
+    "app": 55,
+    "siz": 45,
+    "int": 85,
+    "edu": 85,
+    "san": 45,
+    "hp": 9,
+    "mp": 9,
+    "luck": 55,
+    "idea": 85,
+    "knowledge": 85
+  },
+  "skills": {
+    "応急手当": 51,
+    "精神分析": 51,
+    "図書館": 80,
+    "目星": 60,
+    "製作(作曲)": 50,
+    "ナビゲート": 50,
+    "信用": 9,
+    "説得": 50,
+    "言語(英語)": 51,
+    "芸術(キーボード)": 52,
+    "科学(天文学)": 4,
+    "心理学": 80,
+    "歴史": 50
+  },
+  "histories": [
+    {
+      "title": "凍夏",
+      "comment": "うふふ！うち、やっぱ軽音が好きやなぁ...。\nだって、心で繋がっとる感じがせん？\nって、みんな興味なさそうな顔せんで！もーいいもん、早く練習やろ！",
+      "iconUrl": "/images/KanadeKotoko/icon/kanadekotoko_icon_1.png",
+      "companions": [
+        {
+          "name": "夜想 八",
+          "enName": "YASOU HACHI",
+          "color": "#0346B9",
+          "iconUrl": "/images/KanadeKotoko/companions/yasohachi.png",
+          "nickName": "はっちゃん"
+        },
+        {
+          "name": "神崎 色",
+          "enName": "KANZAKI SHIKI",
+          "color": "#0346B9",
+          "iconUrl": "/images/companions_NoImage.png",
+          "nickName": "シッキー"
+        },
+        {
+          "name": "橘 弘樹",
+          "enName": "TACHIBANA KOUKI",
+          "color": "#0346B9",
+          "iconUrl": "/images/companions_NoImage.png",
+          "nickName": "こうちゃん"
+        }
+      ]
+    }
+  ],
+  "qaList": [
+    {
+      "iconUrl": "/images/icon_にせもの2.jpg",
+      "answer": "お休みの日は、おやすみしとるよー"
+    },
+    {
+      "iconUrl": "/images/icon_にせもの2.jpg",
+      "answer": "海も山もどっちも好きやね。"
+    },
+    {
+      "iconUrl": "/images/icon_にせもの2.jpg",
+      "answer": "うーん、願い事かあ...なんやろうね？"
+    },
+    {
+      "iconUrl": "/images/icon_にせもの2.jpg",
+      "answer": "地球が滅亡するなら、最後の日を過ごしたいねー"
+    }
+  ],
+  "comment": "自由記述",
+  "artGallery": []
+}

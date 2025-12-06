@@ -1,0 +1,103 @@
+{
+  "number": 13,
+  "shortId": "KEI",
+  "name": "才式　恵",
+  "enName": "SAISHIKI KEI",
+  "thumbnailUrl": "/images/SaishikiKei/sprite/SaishikiKei_sprite_1.png",
+  "colorPalette": ["#187178", "#1B1C1C", "#F3FD02"],
+  "backgroundUrl": "https://sakuranouta.biz/wp-content/uploads/2023/10/%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84%E3%81%AE%E9%83%A8%E5%B1%8B_6_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89-1-1024x576.jpg",
+  "profile": {
+    "description": "3年、アルテナス寮の寮長を務めている。\n自信家で傲慢、しかしどこか人を従えさせてしまうだけのカリスマ性がある。\nそのことにも自覚があるのか、自分がこの世界の王になると語っている。\n\n「俺はこの世界の王になる男だからな！安心して付いてくるが良いぞ！」\n\n傲慢ゆえに時に無神経な発言も見受けられるが、当人としてはあくまで事実を述べているという認識である。\nだが、人情がないわけではないため、人の努力や考えを無下にはしない。\n\n「何、俺に負けて悔しいのか？それはお前の実力不足だな！\n　だが、筋は良い。ほれ、魔力の扱い方を見てやるからもう一度やってみろ。」\n\n◆バックグラウンド\n魔法族の父と非魔法族の母の間に生まれたデュアル。\n愛情深く育てられたため、自分に対して強い自信がある。\nそのため、混血であることに対しても気にしていないどころか、むしろ誇りに思っている節がある。\n\n「魔法族と非魔法族との間に生まれた俺には魔法の才が与えられた。\n　それは、俺は魔法を扱うべくして生まれたということではないか？\n　つまり、俺にこの力で世界の王に成れと神が言っているのだな！」\n\n音楽に精通しているのは音楽家の母の影響。",
+    "age": "20",
+    "sex": "男性",
+    "height": "173cm",
+    "weight": "65kg",
+    "job": "大学生",
+    "birthday": "",
+    "from": ""
+  },
+  "sprites": [
+    {
+      "iconUrl": "/images/SaishikiKei/icon/SaishikiKei_icon_1.png",
+      "spriteUrl": "/images/SaishikiKei/sprite/SaishikiKei_sprite_1.png"
+    },
+    {
+      "iconUrl": "/images/SaishikiKei/icon/SaishikiKei_icon_2.png",
+      "spriteUrl": "/images/SaishikiKei/sprite/SaishikiKei_sprite_2.png"
+    },
+    {
+      "iconUrl": "/images/SaishikiKei/icon/SaishikiKei_icon_3.png",
+      "spriteUrl": "/images/SaishikiKei/sprite/SaishikiKei_sprite_3.png"
+    },
+    {
+      "iconUrl": "/images/SaishikiKei/icon/SaishikiKei_icon_4.png",
+      "spriteUrl": "/images/SaishikiKei/sprite/SaishikiKei_sprite_4.png"
+    }
+  ],
+  "status": {
+      "type": "CoC6版",
+      "str": 11,
+      "con": 13,
+      "pow": 13,
+      "dex": 10,
+      "app": 10,
+      "siz": 10,
+      "int": 13,
+      "edu": 19,
+      "san": 65,
+      "hp": 12,
+      "mp": 13,
+      "luck": 65,
+      "idea": 65,
+      "knowledge": 95
+  },
+  "skills": {
+    "回避": 70,
+    "キック": 65,
+    "応急手当": 80,
+    "聞き耳": 75,
+    "精神分析": 41,
+    "図書館": 85,
+    "目星": 50,
+    "医学": 75,
+    "心理学": 50,
+    "薬学": 31,
+    "歴史": 70
+  },
+  "histories": [
+    {
+      "title": "辜月のN",
+      "comment": "ほんの数日にいろんなことがあったね。",
+      "iconUrl": "/images/SaishikiKei/icon/SaishikiKei_icon_1.png",
+      "companions": [
+        {
+          "name": "セシリア・アマノ・メリニコフ",
+          "enName": "Сесилия・Амано・Мельников",
+          "color": "#808080",
+          "iconUrl": "/images/SaishikiKei/companions/cecilia.png",
+          "nickName": "セシリア"
+        }
+      ]
+    }
+  ],
+  "qaList": [
+    {
+      "iconUrl": "/images/icon_にせもの3.jpg",
+      "answer": "フン、休日は休日なのだから、俺の好きなように過ごすに決まっているだろう！"
+    },
+    {
+      "iconUrl": "/images/icon_にせもの3.jpg",
+      "answer": "海か山、どちらかが良いなどとは愚かな質問だな！海にも山にも両方に良い所があるに決まっているだろう！"
+    },
+    {
+      "iconUrl": "/images/icon_にせもの3.jpg",
+      "answer": "願い事を叶えてほしいなどとは、俺に失礼な質問だな！"
+    },
+    {
+      "iconUrl": "/images/icon_にせもの3.jpg",
+      "answer": "地球が滅亡するなどとは愚かな考えだな！そんなことは起こらないに決まっているだろう！なぜなら、地球が滅亡するのなら、地球が滅亡しないようにするからだ！"
+    }
+  ],
+  "comment": "自由記述",
+  "artGallery": []
+}

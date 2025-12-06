@@ -1,0 +1,124 @@
+{
+  "number": 15,
+  "shortId": "KMK",
+  "name": "郷ヶ島 熊子",
+  "enName": "SATOGASHIMA KUMAKO",
+  "thumbnailUrl": "/images/SatogashimaKumako/sprite/SatogashimaKumako_sprite_1.png",
+  "colorPalette": ["#B15E00", "#FF9900", "#FFEE00"],
+  "backgroundUrl": "https://sakuranouta.biz/wp-content/uploads/2023/10/%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84%E3%81%AE%E9%83%A8%E5%B1%8B_6_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89-1-1024x576.jpg",
+  "profile": {
+    "description": "3年、アルテナス寮の寮長を務めている。\n自信家で傲慢、しかしどこか人を従えさせてしまうだけのカリスマ性がある。\nそのことにも自覚があるのか、自分がこの世界の王になると語っている。\n\n「俺はこの世界の王になる男だからな！安心して付いてくるが良いぞ！」\n\n傲慢ゆえに時に無神経な発言も見受けられるが、当人としてはあくまで事実を述べているという認識である。\nだが、人情がないわけではないため、人の努力や考えを無下にはしない。\n\n「何、俺に負けて悔しいのか？それはお前の実力不足だな！\n　だが、筋は良い。ほれ、魔力の扱い方を見てやるからもう一度やってみろ。」\n\n◆バックグラウンド\n魔法族の父と非魔法族の母の間に生まれたデュアル。\n愛情深く育てられたため、自分に対して強い自信がある。\nそのため、混血であることに対しても気にしていないどころか、むしろ誇りに思っている節がある。\n\n「魔法族と非魔法族との間に生まれた俺には魔法の才が与えられた。\n　それは、俺は魔法を扱うべくして生まれたということではないか？\n　つまり、俺にこの力で世界の王に成れと神が言っているのだな！」\n\n音楽に精通しているのは音楽家の母の影響。",
+    "age": 25,
+    "sex": "メス",
+    "height": "160cm",
+    "weight": "67kg",
+    "job": "登山家",
+    "birthday": "",
+    "from": "北海道"
+  },
+  "sprites": [
+    {
+      "iconUrl": "/images/SatogashimaKumako/icon/SatogashimaKumako_icon_1.png",
+      "spriteUrl": "/images/SatogashimaKumako/sprite/SatogashimaKumako_sprite_1.png"
+    },
+    {
+      "iconUrl": "/images/SatogashimaKumako/icon/SatogashimaKumako_icon_2.png",
+      "spriteUrl": "/images/SatogashimaKumako/sprite/SatogashimaKumako_sprite_2.png"
+    }
+  ],
+  "status": {
+      "type": "CoC7版",
+      "str": 70,
+      "con": 55,
+      "pow": 70,
+      "dex": 35,
+      "app": 60,
+      "siz": 75,
+      "int": 70,
+      "edu": 70,
+      "san": 70,
+      "hp": 13,
+      "mp": 14,
+      "luck": 75,
+      "idea": 70,
+      "knowledge": 70
+  }
+  ,"skills": {
+    "回避": 50,
+    "応急手当": 60,
+    "聞き耳": 77,
+    "登攀": 77,
+    "目星": 77,
+    "跳躍": 50,
+    "ナビゲート": 53,
+    "信用": 10,
+    "クトゥルフ神話": 5,
+    "自然": 77,
+    "サバイバル(山岳)": 77
+  },
+
+  "histories": [
+    {
+      "title": "狂気山脈 ～邪神の山嶺～",
+      "comment": "ほんの数日にいろんなことがあったね。",
+      "iconUrl": "/images/SatogashimaKumako/icon/SatogashimaKumako_icon_1.png",
+      "companions": [
+        {
+          "name": "セシリア・アマノ・メリニコフ",
+          "enName": "Сесилия・Амано・Мельников",
+          "color": "#808080",
+          "iconUrl": "/images/SatogashimaKumako/companions/cecilia.png",
+          "nickName": "セシリア"
+        },
+        {
+          "name": "イオ・アストレア",
+          "enName": "Io Astrea",
+          "color": "#808080",
+          "iconUrl": "/images/SatogashimaKumako/companions/io.png",
+          "nickName": "イオ"
+        },
+        {
+          "name": "イオ・アストレア",
+          "enName": "Io Astrea",
+          "color": "#808080",
+          "iconUrl": "/images/SatogashimaKumako/companions/io.png",
+          "nickName": "イオ"
+        },
+        {
+          "name": "イオ・アストレア",
+          "enName": "Io Astrea",
+          "color": "#808080",
+          "iconUrl": "/images/SatogashimaKumako/companions/io.png",
+          "nickName": "イオ"
+        },
+        {
+          "name": "エミリー・フレイア",
+          "enName": "Emily Freiya",
+          "color": "#808080",
+          "iconUrl": "/images/SatogashimaKumako/companions/emily.png",
+          "nickName": "エミリー"
+        }
+      ]
+    }
+  ],
+  "qaList": [
+    {
+      "iconUrl": "/images/icon_にせもの3.jpg",
+      "answer": "フン、休日は休日なのだから、俺の好きなように過ごすに決まっているだろう！"
+    },
+    {
+      "iconUrl": "/images/icon_にせもの3.jpg",
+      "answer": "海か山、どちらかが良いなどとは愚かな質問だな！海にも山にも両方に良い所があるに決まっているだろう！"
+    },
+    {
+      "iconUrl": "/images/icon_にせもの3.jpg",
+      "answer": "願い事を叶えてほしいなどとは、俺に失礼な質問だな！"
+    },
+    {
+      "iconUrl": "/images/icon_にせもの3.jpg",
+      "answer": "地球が滅亡するなどとは愚かな考えだな！そんなことは起こらないに決まっているだろう！なぜなら、地球が滅亡するのなら、地球が滅亡しないようにするからだ！"
+    }
+  ],
+  "comment": "自由記述",
+  "artGallery": []
+}

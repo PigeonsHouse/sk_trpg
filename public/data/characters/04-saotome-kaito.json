@@ -1,0 +1,96 @@
+{
+  "number": 4,
+  "shortId": "KIT",
+  "name": "早乙女 海翔",
+  "enName": "SAOTOME KAITO",
+  "thumbnailUrl": "/images/SaotomeKaito/sprite/SaotomeKaito_sprite_1.png",
+  "colorPalette": ["#FF1C7E", "#431BA4", "#EFFF17"],
+  "backgroundUrl": "https://sakuranouta.biz/wp-content/uploads/2023/10/%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84%E3%81%AE%E9%83%A8%E5%B1%8B_6_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89-1-1024x576.jpg",
+  "profile": {
+    "description": "顔が良くてタッパがあるが、それしかないので人から信用がない。\nよく女の子を口説いているところを目撃されるが、学園内の女子からは軽くあしらわれる日々。一番モテるのは新年度始まって1か月。新入生に手を出しては撃沈する。\n\n顔は良いし、根が悪い奴というわけではないのでのけ者にされているわけではないが、あくまで面白いヤツとしか思われていない。\n当人としては、割と本気で彼女が欲しいと思っている。\nしかし、未だにアプローチの方法が分からないために失敗している。\n\n「あ～あ、俺ってばこんなに顔がいいってのになんでモテないんだろ～ね。そろそろブラックサンダー飽きたんですけど？」\n",
+    "age": 17,
+    "sex": "男",
+    "height": "189cm",
+    "weight": "82kg",
+    "job": "高校生",
+    "birthday": "3月14日"
+  },
+  "sprites": [
+    {
+      "iconUrl": "/images/SaotomeKaito/icon/SaotomeKaito_icon_1.png",
+      "spriteUrl": "/images/SaotomeKaito/sprite/SaotomeKaito_sprite_0.png"
+    },
+    {
+      "iconUrl": "/images/SaotomeKaito/icon/SaotomeKaito_icon_1.png",
+      "spriteUrl": "/images/SaotomeKaito/sprite/SaotomeKaito_sprite_1.png"
+    }
+  ],
+  "status": {
+      "type": "CoC6版",
+      "str": 6,
+      "con": 8,
+      "pow": 13,
+      "dex": 8,
+      "app": 14,
+      "siz": 8,
+      "int": 14,
+      "edu": 17,
+      "san": 65,
+      "hp": 8,
+      "mp": 13,
+      "luck": 65,
+      "idea": 70,
+      "knowledge": 85
+  },
+  "skills": {
+    "近接戦闘": 75,
+    "応急手当": 50,
+    "手さばき": 35,
+    "聞き耳": 70,
+    "登攀": 50,
+    "図書館": 50,
+    "目星": 54,
+    "ナビゲート": 30,
+    "信用": 9,
+    "魅惑": 80,
+    "言語(英語)": 31,
+    "英語": 36,
+    "自然": 50
+  },
+  "histories": [
+    {
+      "title": "星の吸血鬼にさよならを",
+      "comment": "ヘェ～イ龍ちゃん、\n彼女無しのサビシイ男たちで悲しくクリスマス過ごそうぜェ～！",
+      "iconUrl": "/images/SaotomeKaito/icon/SaotomeKaito_icon_1.png",
+      "companions": [
+        {
+          "name": "東島 龍斗",
+          "enName": "TOUDOU RYUTO",
+          "color": "#431BA4",
+          "iconUrl": "/images/companions_NoImage.png",
+          "nickName": "龍ちゃん"
+        }
+      ]
+    }
+  ],
+  "qaList": [
+    {
+      "iconUrl": "/images/icon_にせもの3.jpg",
+      "answer": "フン、休日は休日なのだから、俺の好きなように過ごすに決まっているだろう！"
+    },
+    {
+      "iconUrl": "/images/icon_にせもの3.jpg",
+      "answer": "海か山、どちらかが良いなどとは愚かな質問だな！海にも山にも両方に良い所があるに決まっているだろう！"
+    },
+    {
+      "iconUrl": "/images/icon_にせもの3.jpg",
+      "answer": "願い事を叶えてほしいなどとは、俺に失礼な質問だな！"
+    },
+    {
+      "iconUrl": "/images/icon_にせもの3.jpg",
+      "answer": "地球が滅亡するなどとは愚かな考えだな！そんなことは起こらないに決まっているだろう！なぜなら、地球が滅亡するのなら、地球が滅亡しないようにするからだ！"
+    }
+  ],
+  "comment": "自由記述",
+  "artGallery": []
+}

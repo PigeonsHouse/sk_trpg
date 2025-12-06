@@ -9,13 +9,13 @@
   "backgroundUrl": "https://user0514.cdnw.net/shared/img/thumb/073Kazuki17103_TP_V.jpg",
   "profile": {
     "description": "絵に描いたような好青年。常に笑顔を絶やさず、相手への気遣いを欠かさない。\n職業は指揮者。\n音楽家の家庭に生まれ、幼少期から音楽に囲まれた生活を送ってきた。あらゆる楽器に触れてきたが、大学で指揮者としての才能が開花する。高い能力が評価され、近年では国内外での活躍が増えている。\n超論理型で、高いコミュニケーション能力と論理的思考で楽団を取り纏める。",
-    "age": "25",
+    "age": 39,
     "sex": "男性",
     "height": "171cm",
     "weight": "55kg",
     "job": "指揮者",
-    "like": "？？？",
-    "hobby": "？？？"
+    "birthday": "10月1日",
+    "from": "福岡"
   },
   "sprites": [
     {
@@ -48,25 +48,38 @@
     }
   ],
   "status": {
-    "type": "CoC6版",
-    "str": 8,
-    "con": 10,
-    "pow": 14,
-    "dex": 9,
-    "app": 12,
-    "int": 13,
-    "edu": 16,
+    "type": "CoC7版",
+    "str": 40,
+    "con": 50,
+    "pow": 70,
+    "dex": 45,
+    "app": 60,
+    "siz": 45,
+    "int": 65,
+    "edu": 80,
     "san": 70,
-    "hp": 10,
+    "hp": 9,
     "mp": 14,
-    "db": "-",
     "luck": 70,
     "idea": 65,
     "knowledge": 80
   },
   "skills": {
     "回避": 25,
-    "聞き耳": 73
+    "近接戦闘": 30,
+    "聞き耳": 73,
+    "精神分析": 51,
+    "追跡": 12,
+    "図書館": 74,
+    "目星": 99,
+    "信用": 65,
+    "説得": 25,
+    "英語": 42,
+    "ドイツ語": 30,
+    "クトゥルフ神話": 17,
+    "芸術(音楽)": 90,
+    "心理学": 87,
+    "芸術（掃除）": 6
   },
   "histories": [
     {
@@ -78,53 +91,101 @@
           "name": "守 惑",
           "enName": "SHU YOU",
           "color": "#517BF1",
-          "iconUrl": "https://image.iaproject.app/765d2515-1cbe-413c-81fd-681f949b0053"
+          "iconUrl": "https://image.iaproject.app/765d2515-1cbe-413c-81fd-681f949b0053",
+          "nickName":"惑くん"
         },
         {
           "name": "天川 綾",
           "enName": "AMAKAWA AYA",
           "color": "#FF9100",
-          "iconUrl": "/images/amakawa_aya.png"
+          "iconUrl": "/images/KanadeShirabe/companions/Aya_2013.png",
+          "nickName":"天川さん"
         }
       ]
     },
     {
-      "title": "星の神話、エンドロール",
-      "comment": "ほんの数日にいろんなことがあったね。",
+      "title": "ごぜんにじにあいにきて。",
+      "comment": "惑くんからのお誘い、うれしかったなぁ。不思議な体験もしたし。\n...ふふっ、久しぶりにたくさんお話もできて、楽しかったなぁ。\nまた誘ってくれる？",
       "iconUrl": "/images/KanadeShirabe/icon/kanadeshirabe_icon_2.png",
       "companions": [
         {
           "name": "守 惑",
           "enName": "SHU YOU",
           "color": "#517BF1",
-          "iconUrl": "https://image.iaproject.app/765d2515-1cbe-413c-81fd-681f949b0053"
-        },
-        {
-          "name": "天川 綾",
-          "enName": "AMAKAWA AYA",
-          "color": "#FF9100",
-          "iconUrl": "/images/amakawa_aya.png"
+          "iconUrl": "https://image.iaproject.app/765d2515-1cbe-413c-81fd-681f949b0053",
+          "nickName":"惑くん"
         }
       ]
     },
     {
-      "title": "星の神話、エンドロール",
-      "comment": "ほんの数日にいろんなことがあったね。",
+      "title": "井藤チアキと云ふ女",
+      "comment": "正直、僕が死んでもみんなは絶対に送り届けようと思ってたから...。\nちゃんと、みんなで、生きて帰れて良かった～！",
       "iconUrl": "/images/KanadeShirabe/icon/kanadeshirabe_icon_2.png",
       "companions": [
         {
           "name": "守 惑",
           "enName": "SHU YOU",
           "color": "#517BF1",
-          "iconUrl": "https://image.iaproject.app/765d2515-1cbe-413c-81fd-681f949b0053"
+          "iconUrl": "/images/KanadeShirabe/companions/You_2023.png",
+          "nickName":"惑くん"
         },
         {
-          "name": "守 惑",
-          "enName": "SHU YOU",
-          "color": "#517BF1",
-          "iconUrl": "https://image.iaproject.app/765d2515-1cbe-413c-81fd-681f949b0053"
+          "name": "天川 綾",
+          "enName": "AMAKAWA AYA",
+          "color": "#FF9100",
+          "iconUrl": "/images/KanadeShirabe/companions/Aya_2023.png",
+          "nickName":"天川さん"
+        },
+        {
+          "name": "???",
+          "enName": "???",
+          "color": "#ffa2fc",
+          "iconUrl": "/images/KanadeShirabe/companions/JANE_DOE.png",
+          "nickName":"???ちゃん"
         }
       ]
+    },
+    {
+      "title": "Stella-della-sera",
+      "comment": "いや～珍しく酔いすぎちゃったね。\nちょっと怖いこともあったし...お酒はしばらくいいかな～！",
+      "iconUrl": "/images/KanadeShirabe/icon/kanadeshirabe_icon_2.png",
+      "companions": []
+    },
+    {
+      "title": "次、止まります",
+      "comment": "驚いた...なんというか、自分の気づいていない内面を認識させられたなあ。\n僕って、案外おせっかいなのかもね？",
+      "iconUrl": "/images/KanadeShirabe/icon/kanadeshirabe_icon_2.png",
+      "companions": []
+    },
+    {
+      "title": "ホワイトブラッククリスマス",
+      "comment": "ひどい目に合ったねぇ...。穏やかなクリスマスを過ごせると思っていたんだけど...。\nまあ、五体満足だし！ちょっといいこともあったし。よかったねぇ。",
+      "iconUrl": "/images/KanadeShirabe/icon/kanadeshirabe_icon_2.png",
+      "companions": []
+    },
+    {
+      "title": "伽藍堂書店へようこそ",
+      "comment": "僕という人間の物語は、どうやらまだまだ続くみたい。\nふふっ、ここから先は、自分で書き続けなきゃいけないみたいだ...ちゃんと、歩んでいかないとね。",
+      "iconUrl": "/images/KanadeShirabe/icon/kanadeshirabe_icon_2.png",
+      "companions": []
+    },
+    {
+      "title": "葬儀屋のアポトーシス",
+      "comment": "",
+      "iconUrl": "/images/KanadeShirabe/icon/kanadeshirabe_icon_2.png",
+      "companions": []
+    },
+    {
+      "title": "Fall in the festival!",
+      "comment": "なんだか、変な夢見ちゃった。\nあぁ、そうだ...そちらの惑くんと天川さんも、どうかそのワガママ坊やのことを見捨てないでやっておくれ。\n案外、寂しがりやで1人じゃ生きていけないボンクラだからね。",
+      "iconUrl": "/images/KanadeShirabe/icon/kanadeshirabe_icon_2.png",
+      "companions": []
+    },
+    {
+      "title": "ifの為のお茶会を",
+      "comment": "",
+      "iconUrl": "/images/KanadeShirabe/icon/kanadeshirabe_icon_2.png",
+      "companions": []
     }
   ],
   "qaList": [

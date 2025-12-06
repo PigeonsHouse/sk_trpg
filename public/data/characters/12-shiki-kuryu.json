@@ -1,0 +1,111 @@
+{
+  "number": 12,
+  "shortId": "KRY",
+  "name": "しき",
+  "enName": "SHIKI KURYU",
+  "thumbnailUrl": "/images/ShikiKuryu/sprite/ShikiKuryu_sprite_1.png",
+  "colorPalette": ["#1F4E22", "#A1F900", "#E7FF11"],
+  "backgroundUrl": "https://sakuranouta.biz/wp-content/uploads/2023/10/%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84%E3%81%AE%E9%83%A8%E5%B1%8B_6_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89-1-1024x576.jpg",
+  "profile": {
+    "description": "3年、アルテナス寮の寮長を務めている。\n自信家で傲慢、しかしどこか人を従えさせてしまうだけのカリスマ性がある。\nそのことにも自覚があるのか、自分がこの世界の王になると語っている。\n\n「俺はこの世界の王になる男だからな！安心して付いてくるが良いぞ！」\n\n傲慢ゆえに時に無神経な発言も見受けられるが、当人としてはあくまで事実を述べているという認識である。\nだが、人情がないわけではないため、人の努力や考えを無下にはしない。\n\n「何、俺に負けて悔しいのか？それはお前の実力不足だな！\n　だが、筋は良い。ほれ、魔力の扱い方を見てやるからもう一度やってみろ。」\n\n◆バックグラウンド\n魔法族の父と非魔法族の母の間に生まれたデュアル。\n愛情深く育てられたため、自分に対して強い自信がある。\nそのため、混血であることに対しても気にしていないどころか、むしろ誇りに思っている節がある。\n\n「魔法族と非魔法族との間に生まれた俺には魔法の才が与えられた。\n　それは、俺は魔法を扱うべくして生まれたということではないか？\n　つまり、俺にこの力で世界の王に成れと神が言っているのだな！」\n\n音楽に精通しているのは音楽家の母の影響。",
+    "age": 17,
+    "sex": "男",
+    "height": "157cm",
+    "weight": "",
+    "job": "魔法学生（3年生）",
+    "birthday": "3月1日",
+    "from": "フランス"
+  },
+  "sprites": [
+    {
+      "iconUrl": "/images/ShikiKuryu/icon/ShikiKuryu_icon_1.png",
+      "spriteUrl": "/images/ShikiKuryu/sprite/ShikiKuryu_sprite_1.png"
+    },
+    {
+      "iconUrl": "/images/ShikiKuryu/icon/ShikiKuryu_icon_2.png",
+      "spriteUrl": "/images/ShikiKuryu/sprite/ShikiKuryu_sprite_2.png"
+    }
+  ],
+  "status": {
+    "type": "CoC6版",
+    "str": 6,
+    "con": 8,
+    "pow": 13,
+    "dex": 8,
+    "app": 14,
+    "siz": 8,
+    "int": 14,
+    "edu": 17,
+    "san": 65,
+    "hp": 8,
+    "mp": 13,
+    "luck": 65,
+    "idea": 70,
+    "knowledge": 85
+},
+  "skills": {
+    "回避": 25,
+    "隠れる": 50,
+    "精神分析": 35,
+    "図書館": 75,
+    "目星": 75,
+    "ナビゲート": 80,
+    "信用": 70,
+    "芸術(音楽)": 90,
+    "心理学": 84,
+    "物理学": 11,
+    "法律": 50,
+    "歴史": 50
+  },
+
+  "histories": [
+    {
+      "title": "私のエトワール",
+      "comment": "ほんの数日にいろんなことがあったね。",
+      "iconUrl": "/images/ShikiKuryu/icon/ShikiKuryu_icon_1.png",
+      "companions": [
+        {
+          "name": "セシリア・アマノ・メリニコフ",
+          "enName": "Сесилия・Амано・Мельников",
+          "color": "#808080",
+          "iconUrl": "/images/ShikiKuryu/companions/cecilia.png",
+          "nickName": "セシリア"
+        },
+        {
+          "name": "イオ・アストレア",
+          "enName": "Io Astrea",
+          "color": "#808080",
+          "iconUrl": "/images/ShikiKuryu/companions/io.png",
+          "nickName": "イオ"
+        },
+        {
+          "name": "エミリー・フレイア",
+          "enName": "Emily Freiya",
+          "color": "#808080",
+          "iconUrl": "/images/ShikiKuryu/companions/emily.png",
+          "nickName": "エミリー"
+        }
+      ]
+    }
+  ],
+  "qaList": [
+    {
+      "iconUrl": "/images/icon_にせもの3.jpg",
+      "answer": "フン、休日は休日なのだから、俺の好きなように過ごすに決まっているだろう！"
+    },
+    {
+      "iconUrl": "/images/icon_にせもの3.jpg",
+      "answer": "海か山、どちらかが良いなどとは愚かな質問だな！海にも山にも両方に良い所があるに決まっているだろう！"
+    },
+    {
+      "iconUrl": "/images/icon_にせもの3.jpg",
+      "answer": "願い事を叶えてほしいなどとは、俺に失礼な質問だな！"
+    },
+    {
+      "iconUrl": "/images/icon_にせもの3.jpg",
+      "answer": "地球が滅亡するなどとは愚かな考えだな！そんなことは起こらないに決まっているだろう！なぜなら、地球が滅亡するのなら、地球が滅亡しないようにするからだ！"
+    }
+  ],
+  "comment": "自由記述",
+  "artGallery": []
+}
