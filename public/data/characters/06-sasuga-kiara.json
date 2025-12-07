@@ -43,15 +43,15 @@
     "idea": 65,
     "knowledge": 65
   },
-    "skills": {
-      "隠れる": 50,
-      "聞き耳": 85,
-      "写真術": 50,
-      "図書館": 50,
-      "目星": 60,
-      "信用": 85,
-      "生物学": 78,
-      "薬学": 51
+  "skills": {
+    "隠れる": 50,
+    "聞き耳": 85,
+    "写真術": 50,
+    "図書館": 50,
+    "目星": 60,
+    "信用": 85,
+    "生物学": 78,
+    "薬学": 51
   },
   "histories": [
     {
@@ -63,7 +63,7 @@
           "name": "斎表  上六",
           "enName": "SAIHYO UWAROKU",
           "color": "#DCE6E8",
-          "iconUrl": "/images/companions_NoImage.png",
+          "iconUrl": "/images/common/companions_NoImage.png",
           "nickName": "斎表さん"
         },
         {
@@ -77,7 +77,7 @@
           "name": "十 十",
           "enName": "YOKOTATE TSUNASHI",
           "color": "#4B4B4B",
-          "iconUrl": "/images/companions_NoImage.png",
+          "iconUrl": "/images/common/companions_NoImage.png",
           "nickName": "ヨコタテさん"
         }
       ]

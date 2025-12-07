@@ -27,21 +27,21 @@
     }
   ],
   "status": {
-      "type": "CoC6版",
-      "str": 11,
-      "con": 5,
-      "pow": 13,
-      "dex": 12,
-      "app": 15,
-      "siz": 10,
-      "int": 13,
-      "edu": 16,
-      "san": 65,
-      "hp": 8,
-      "mp": 13,
-      "luck": 65,
-      "idea": 65,
-      "knowledge": 80
+    "type": "CoC6版",
+    "str": 11,
+    "con": 5,
+    "pow": 13,
+    "dex": 12,
+    "app": 15,
+    "siz": 10,
+    "int": 13,
+    "edu": 16,
+    "san": 65,
+    "hp": 8,
+    "mp": 13,
+    "luck": 65,
+    "idea": 65,
+    "knowledge": 80
   },
   "skills": {
     "回避": 49,
@@ -77,7 +77,7 @@
           "name": "倉城 要",
           "enName": "KURASHIRO KANAME",
           "color": "#922A2A",
-          "iconUrl": "/images/companions_NoImage.png",
+          "iconUrl": "/images/common/companions_NoImage.png",
           "nickName": "倉城くん"
         },
         {

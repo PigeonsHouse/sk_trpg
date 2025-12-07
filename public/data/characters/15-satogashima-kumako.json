@@ -27,23 +27,23 @@
     }
   ],
   "status": {
-      "type": "CoC7版",
-      "str": 70,
-      "con": 55,
-      "pow": 70,
-      "dex": 35,
-      "app": 60,
-      "siz": 75,
-      "int": 70,
-      "edu": 70,
-      "san": 70,
-      "hp": 13,
-      "mp": 14,
-      "luck": 75,
-      "idea": 70,
-      "knowledge": 70
-  }
-  ,"skills": {
+    "type": "CoC7版",
+    "str": 70,
+    "con": 55,
+    "pow": 70,
+    "dex": 35,
+    "app": 60,
+    "siz": 75,
+    "int": 70,
+    "edu": 70,
+    "san": 70,
+    "hp": 13,
+    "mp": 14,
+    "luck": 75,
+    "idea": 70,
+    "knowledge": 70
+  },
+  "skills": {
     "回避": 50,
     "応急手当": 60,
     "聞き耳": 77,
@@ -81,14 +81,14 @@
           "name": "キャプリ・ダンフォース",
           "enName": "CAPRI DANFORTH",
           "color": "#CCE07B",
-          "iconUrl": "/images/companions_NoImage.png",
+          "iconUrl": "/images/common/companions_NoImage.png",
           "nickName": "きゃっぴー"
         },
         {
           "name": "桐ケ谷 令志",
           "enName": "KIRIGAYA REIJI",
           "color": "#191C20",
-          "iconUrl": "/images/companions_NoImage.png",
+          "iconUrl": "/images/common/companions_NoImage.png",
           "nickName": "きりのおじ"
         }
       ]

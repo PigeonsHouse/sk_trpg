@@ -31,21 +31,21 @@
     }
   ],
   "status": {
-      "type": "CoC6版",
-      "str": 11,
-      "con": 12,
-      "pow": 12,
-      "dex": 8,
-      "app": 9,
-      "siz": 11,
-      "int": 14,
-      "edu": 14,
-      "san": 60,
-      "hp": 12,
-      "mp": 12,
-      "luck": 60,
-      "idea": 70,
-      "knowledge": 70
+    "type": "CoC6版",
+    "str": 11,
+    "con": 12,
+    "pow": 12,
+    "dex": 8,
+    "app": 9,
+    "siz": 11,
+    "int": 14,
+    "edu": 14,
+    "san": 60,
+    "hp": 12,
+    "mp": 12,
+    "luck": 60,
+    "idea": 70,
+    "knowledge": 70
   },
   "skills": {
     "回避": 56,
@@ -72,7 +72,7 @@
           "name": "ヴァルド・ドラゴンハート",
           "enName": "VALDO DRAGONHEART",
           "color": "#ff0000",
-          "iconUrl": "/images/companions_NoImage.png",
+          "iconUrl": "/images/common/companions_NoImage.png",
           "nickName": "ヴァルドさん"
         },
         {
@@ -86,7 +86,7 @@
           "name": "†Xx漆黒の堕天使xX†",
           "enName": "JET BLACK FALLEN ANGEL",
           "color": "#6D35AE",
-          "iconUrl": "/images/companions_NoImage.png",
+          "iconUrl": "/images/common/companions_NoImage.png",
           "nickName": "天使さん"
         }
       ]

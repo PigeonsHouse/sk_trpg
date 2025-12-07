@@ -71,14 +71,14 @@
           "name": "神崎 色",
           "enName": "KANZAKI SHIKI",
           "color": "#0346B9",
-          "iconUrl": "/images/companions_NoImage.png",
+          "iconUrl": "/images/common/companions_NoImage.png",
           "nickName": "シッキー"
         },
         {
           "name": "橘 弘樹",
           "enName": "TACHIBANA KOUKI",
           "color": "#0346B9",
-          "iconUrl": "/images/companions_NoImage.png",
+          "iconUrl": "/images/common/companions_NoImage.png",
           "nickName": "こうちゃん"
         }
       ]

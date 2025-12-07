@@ -26,21 +26,21 @@
     }
   ],
   "status": {
-      "type": "CoC6版",
-      "str": 6,
-      "con": 8,
-      "pow": 13,
-      "dex": 8,
-      "app": 14,
-      "siz": 8,
-      "int": 14,
-      "edu": 17,
-      "san": 65,
-      "hp": 8,
-      "mp": 13,
-      "luck": 65,
-      "idea": 70,
-      "knowledge": 85
+    "type": "CoC6版",
+    "str": 6,
+    "con": 8,
+    "pow": 13,
+    "dex": 8,
+    "app": 14,
+    "siz": 8,
+    "int": 14,
+    "edu": 17,
+    "san": 65,
+    "hp": 8,
+    "mp": 13,
+    "luck": 65,
+    "idea": 70,
+    "knowledge": 85
   },
   "skills": {
     "近接戦闘": 75,
@@ -67,7 +67,7 @@
           "name": "東島 龍斗",
           "enName": "TOUDOU RYUTO",
           "color": "#431BA4",
-          "iconUrl": "/images/companions_NoImage.png",
+          "iconUrl": "/images/common/companions_NoImage.png",
           "nickName": "龍ちゃん"
         }
       ]
