@@ -79,6 +79,7 @@ export const Answer = styled.div<{ backgroundColor: string }>`
   flex-grow: 1;
   box-sizing: border-box;
   position: relative;
+  white-space: pre-wrap;
 
   &::after {
     position: absolute;
