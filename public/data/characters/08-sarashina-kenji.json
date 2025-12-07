@@ -67,25 +67,25 @@
       "iconUrl": "/images/SarashinaKenji/icon/SarashinaKenji_icon_1.png",
       "companions": [
         {
-          "name": "セシリア・アマノ・メリニコフ",
-          "enName": "Сесилия・Амано・Мельников",
-          "color": "#808080",
-          "iconUrl": "/images/SarashinaKenji/companions/cecilia.png",
-          "nickName": "セシリア"
+          "name": "コルティナ",
+          "enName": "CORTINA",
+          "color": "#2D5AE0",
+          "iconUrl": "/images/SarashinaKenji/companions/Cortina.png",
+          "nickName": "コルティナさん"
         },
         {
-          "name": "イオ・アストレア",
-          "enName": "Io Astrea",
-          "color": "#808080",
-          "iconUrl": "/images/SarashinaKenji/companions/io.png",
-          "nickName": "イオ"
+          "name": "倉城 要",
+          "enName": "KURASHIRO KANAME",
+          "color": "#922A2A",
+          "iconUrl": "/images/companions_NoImage.png",
+          "nickName": "倉城くん"
         },
         {
-          "name": "エミリー・フレイア",
-          "enName": "Emily Freiya",
-          "color": "#808080",
-          "iconUrl": "/images/SarashinaKenji/companions/emily.png",
-          "nickName": "エミリー"
+          "name": "七瀬 杏樹",
+          "enName": "NANASE ANJU",
+          "color": "##A80D17",
+          "iconUrl": "/images/SarashinaKenji/companions/Anju.png",
+          "nickName": "杏樹ちゃん"
         }
       ]
     }

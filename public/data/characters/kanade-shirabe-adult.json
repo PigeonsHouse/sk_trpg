@@ -8,14 +8,14 @@
   "colorPalette": ["#95B2CC", "#8A809E", "#FFDE00"],
   "backgroundUrl": "https://user0514.cdnw.net/shared/img/thumb/073Kazuki17103_TP_V.jpg",
   "profile": {
-    "description": "絵に描いたような好青年。常に笑顔を絶やさず、相手への気遣いを欠かさない。\n職業は指揮者。\n音楽家の家庭に生まれ、幼少期から音楽に囲まれた生活を送ってきた。あらゆる楽器に触れてきたが、大学で指揮者としての才能が開花する。高い能力が評価され、近年では国内外での活躍が増えている。\n超論理型で、高いコミュニケーション能力と論理的思考で楽団を取り纏める。",
+    "description": "絵に描いたような好青年。常に笑顔を絶やさず、相手への気遣いを欠かさない。\n職業は指揮者。\n音楽家の家庭に生まれ、幼少期から音楽に囲まれた生活を送ってきた。あらゆる楽器に触れてきたが、大学で指揮者としての才能が開花する。\n高い能力が評価され、近年では国内外での活躍が増えている。\n超論理型で、高いコミュニケーション能力と論理的思考で楽団を取り纏める。",
     "age": 39,
     "sex": "男性",
     "height": "171cm",
     "weight": "55kg",
     "job": "指揮者",
     "birthday": "10月1日",
-    "from": "福岡"
+    "from": "福岡県"
   },
   "sprites": [
     {
@@ -91,7 +91,7 @@
           "name": "守 惑",
           "enName": "SHU YOU",
           "color": "#517BF1",
-          "iconUrl": "https://image.iaproject.app/765d2515-1cbe-413c-81fd-681f949b0053",
+          "iconUrl": "/images/KanadeShirabe/companions/You_2013.png",
           "nickName":"惑くん"
         },
         {
@@ -112,7 +112,7 @@
           "name": "守 惑",
           "enName": "SHU YOU",
           "color": "#517BF1",
-          "iconUrl": "https://image.iaproject.app/765d2515-1cbe-413c-81fd-681f949b0053",
+          "iconUrl": "/images/KanadeShirabe/companions/You_2013.png",
           "nickName":"惑くん"
         }
       ]
@@ -191,7 +191,7 @@
   "qaList": [
     {
       "iconUrl": "/images/icon_にせもの.jpg",
-      "answer": "休日を過ごしているよ"
+      "answer": "休日、"
     },
     {
       "iconUrl": "/images/icon_にせもの.jpg",

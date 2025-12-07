@@ -7,14 +7,14 @@
   "colorPalette": ["#FF26C5", "#F20C43", "#FFDE00"],
   "backgroundUrl": "https://sakuranouta.biz/wp-content/uploads/2023/10/%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84%E3%81%AE%E9%83%A8%E5%B1%8B_6_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89-1-1024x576.jpg",
   "profile": {
-    "description": "3年、アルテナス寮の寮長を務めている。\n自信家で傲慢、しかしどこか人を従えさせてしまうだけのカリスマ性がある。\nそのことにも自覚があるのか、自分がこの世界の王になると語っている。\n\n「俺はこの世界の王になる男だからな！安心して付いてくるが良いぞ！」\n\n傲慢ゆえに時に無神経な発言も見受けられるが、当人としてはあくまで事実を述べているという認識である。\nだが、人情がないわけではないため、人の努力や考えを無下にはしない。\n\n「何、俺に負けて悔しいのか？それはお前の実力不足だな！\n　だが、筋は良い。ほれ、魔力の扱い方を見てやるからもう一度やってみろ。」\n\n◆バックグラウンド\n魔法族の父と非魔法族の母の間に生まれたデュアル。\n愛情深く育てられたため、自分に対して強い自信がある。\nそのため、混血であることに対しても気にしていないどころか、むしろ誇りに思っている節がある。\n\n「魔法族と非魔法族との間に生まれた俺には魔法の才が与えられた。\n　それは、俺は魔法を扱うべくして生まれたということではないか？\n　つまり、俺にこの力で世界の王に成れと神が言っているのだな！」\n\n音楽に精通しているのは音楽家の母の影響。",
+    "description": "私、刺賀　煌亜来（さすが　きあら）。\n月亜刺（つきあら）学園に通う高校一年生！\n憧れの高校生になった私は、新生活に心ラキラキ！\nだったんだけど...。\n\n変な怪物と一緒に、謎のゆるふわ生物・ニャッキーが表れて...\nもう大変！\n勢いに流されて、私はアミーラ☆カマルに変身しちゃった！？\nもう、何が何だかわかんないよ！\n\n次回：「ニャッキーのドキドキ☆潜入調査！プリンを探せ！」\n次回も～”ラキッと煌めけ！アミーラ☆カマル”！",
     "age": 16,
     "sex": "女",
     "height": "157cm",
     "weight": "40kg",
     "job": "魔法少女",
     "birthday": "",
-    "from": ""
+    "from": "月亜刺市"
   },
   "sprites": [
     {
@@ -69,25 +69,25 @@
       "iconUrl": "/images/AmiraKamal/icon/AmiraKamal_icon_1.png",
       "companions": [
         {
-          "name": "セシリア・アマノ・メリニコフ",
-          "enName": "Сесилия・Амано・Мельников",
-          "color": "#808080",
-          "iconUrl": "/images/AmiraKamal/companions/cecilia.png",
-          "nickName": "セシリア"
+          "name": "ヴァルド・ドラゴンハート",
+          "enName": "VALDO DRAGONHEART",
+          "color": "#ff0000",
+          "iconUrl": "/images/companions_NoImage.png",
+          "nickName": "ヴァルドさん"
         },
         {
-          "name": "イオ・アストレア",
-          "enName": "Io Astrea",
-          "color": "#808080",
-          "iconUrl": "/images/AmiraKamal/companions/io.png",
-          "nickName": "イオ"
+          "name": "Ψ☆i9Σa",
+          "enName": "SHIGMA",
+          "color": "#26372B",
+          "iconUrl": "/images/AmiraKamal/companions/Shiguma.png",
+          "nickName": "シグマさん"
         },
         {
-          "name": "エミリー・フレイア",
-          "enName": "Emily Freiya",
-          "color": "#808080",
-          "iconUrl": "/images/AmiraKamal/companions/emily.png",
-          "nickName": "エミリー"
+          "name": "†Xx漆黒の堕天使xX†",
+          "enName": "JET BLACK FALLEN ANGEL",
+          "color": "#6D35AE",
+          "iconUrl": "/images/companions_NoImage.png",
+          "nickName": "天使さん"
         }
       ]
     }

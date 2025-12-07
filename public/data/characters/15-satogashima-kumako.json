@@ -7,7 +7,7 @@
   "colorPalette": ["#B15E00", "#FF9900", "#FFEE00"],
   "backgroundUrl": "https://sakuranouta.biz/wp-content/uploads/2023/10/%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84%E3%81%AE%E9%83%A8%E5%B1%8B_6_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89-1-1024x576.jpg",
   "profile": {
-    "description": "3年、アルテナス寮の寮長を務めている。\n自信家で傲慢、しかしどこか人を従えさせてしまうだけのカリスマ性がある。\nそのことにも自覚があるのか、自分がこの世界の王になると語っている。\n\n「俺はこの世界の王になる男だからな！安心して付いてくるが良いぞ！」\n\n傲慢ゆえに時に無神経な発言も見受けられるが、当人としてはあくまで事実を述べているという認識である。\nだが、人情がないわけではないため、人の努力や考えを無下にはしない。\n\n「何、俺に負けて悔しいのか？それはお前の実力不足だな！\n　だが、筋は良い。ほれ、魔力の扱い方を見てやるからもう一度やってみろ。」\n\n◆バックグラウンド\n魔法族の父と非魔法族の母の間に生まれたデュアル。\n愛情深く育てられたため、自分に対して強い自信がある。\nそのため、混血であることに対しても気にしていないどころか、むしろ誇りに思っている節がある。\n\n「魔法族と非魔法族との間に生まれた俺には魔法の才が与えられた。\n　それは、俺は魔法を扱うべくして生まれたということではないか？\n　つまり、俺にこの力で世界の王に成れと神が言っているのだな！」\n\n音楽に精通しているのは音楽家の母の影響。",
+    "description": "「わ～はっは！\n　狂気山脈のてっぺんに一番最初に登るのはわしじゃ～！」\n\n高みを目指すだけのアルピニスト。\n好きで山に登っていたら、なんだかんだ注目されて、スポンサーが契約してくれたのでお金に困らず山に登れている。\n\n優しい祖父母に暖かく育てられ、ぬくぬくと育つ。\n基本的に山に登る際には暖かく見守ってくれる祖父母も、第二次登山隊への参画には反対していた。\nしかし、熊子の説得（駄々をこねただけ）に根負けし、生きて帰ってくることを条件に送り出してくれた。\n",
     "age": 25,
     "sex": "メス",
     "height": "160cm",
@@ -60,43 +60,36 @@
   "histories": [
     {
       "title": "狂気山脈 ～邪神の山嶺～",
-      "comment": "ほんの数日にいろんなことがあったね。",
+      "comment": "おじぃ！おばぁ！狂気山脈はブルーハワイ味のかき氷おにぎりなのじゃ！\nなに！？嘘じゃないのじゃ！ほんとなのじゃ！",
       "iconUrl": "/images/SatogashimaKumako/icon/SatogashimaKumako_icon_1.png",
       "companions": [
         {
-          "name": "セシリア・アマノ・メリニコフ",
-          "enName": "Сесилия・Амано・Мельников",
-          "color": "#808080",
-          "iconUrl": "/images/SatogashimaKumako/companions/cecilia.png",
-          "nickName": "セシリア"
+          "name": "阿倍 根性",
+          "enName": "ABE KONJO",
+          "color": "#2d5079",
+          "iconUrl": "/images/SatogashimaKumako/companions/Abe.png",
+          "nickName": "あべのおじ"
         },
         {
-          "name": "イオ・アストレア",
-          "enName": "Io Astrea",
-          "color": "#808080",
+          "name": "九条 優作",
+          "enName": "KUJO YUSAKU",
+          "color": "#2C642C",
           "iconUrl": "/images/SatogashimaKumako/companions/io.png",
-          "nickName": "イオ"
+          "nickName": "くじょー"
         },
         {
-          "name": "イオ・アストレア",
-          "enName": "Io Astrea",
-          "color": "#808080",
-          "iconUrl": "/images/SatogashimaKumako/companions/io.png",
-          "nickName": "イオ"
+          "name": "キャプリ・ダンフォース",
+          "enName": "CAPRI DANFORTH",
+          "color": "#CCE07B",
+          "iconUrl": "/images/companions_NoImage.png",
+          "nickName": "きゃっぴー"
         },
         {
-          "name": "イオ・アストレア",
-          "enName": "Io Astrea",
-          "color": "#808080",
-          "iconUrl": "/images/SatogashimaKumako/companions/io.png",
-          "nickName": "イオ"
-        },
-        {
-          "name": "エミリー・フレイア",
-          "enName": "Emily Freiya",
-          "color": "#808080",
-          "iconUrl": "/images/SatogashimaKumako/companions/emily.png",
-          "nickName": "エミリー"
+          "name": "桐ケ谷 令志",
+          "enName": "KIRIGAYA REIJI",
+          "color": "#191C20",
+          "iconUrl": "/images/companions_NoImage.png",
+          "nickName": "きりのおじ"
         }
       ]
     }

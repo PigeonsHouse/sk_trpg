@@ -8,14 +8,14 @@
   "colorPalette": ["#B1A6DF", "#95B2CC", "#FFDE00"],
   "backgroundUrl": "https://user0514.cdnw.net/shared/img/thumb/073Kazuki17103_TP_V.jpg",
   "profile": {
-    "description": "絵に描いたような好青年。常に笑顔を絶やさず、相手への気遣いを欠かさない。\n職業は指揮者。\n音楽家の家庭に生まれ、幼少期から音楽に囲まれた生活を送ってきた。あらゆる楽器に触れてきたが、大学で指揮者としての才能が開花する。高い能力が評価され、近年では国内外での活躍が増えている。\n超論理型で、高いコミュニケーション能力と論理的思考で楽団を取り纏める。",
+    "description": "絵に描いたような好青年。常に笑顔を絶やさず、相手への気遣いを欠かさない。\n優しい両親の元育てられ、穏やかな性格に育つ。\n音楽家の家庭に生まれ、幼少期から音楽に囲まれた生活を送ってきた。様々な楽器を触ってきたが、一番肌に合っていたバイオリンを今でも続けている。\n音楽科のある高校も検討したが、多様な人との交流を通じて感受性を磨くために普通科を選択した。\n\n「音って不思議。言葉みたいに明確な形はないけれど、そこには感情があるように思える。...それって素敵だと思わない？」",
     "age": 17,
     "sex": "男性",
     "height": "171cm",
     "weight": "55kg",
     "job": "学生",
     "birthday": "10月1日",
-    "from": "福岡"
+    "from": "???"
   },
   "sprites": [
     {
@@ -28,44 +28,56 @@
     }
   ],
   "status": {
-    "type": "CoC6版",
-    "str": 8,
-    "con": 10,
-    "pow": 14,
-    "dex": 9,
-    "app": 12,
-    "int": 13,
-    "edu": 16,
+    "type": "CoC7版",
+    "str": 40,
+    "con": 50,
+    "pow": 70,
+    "dex": 45,
+    "app": 60,
+    "siz": 45,
+    "int": 65,
+    "edu": 80,
     "san": 70,
-    "hp": 10,
+    "hp": 9,
     "mp": 14,
-    "db": "-",
     "luck": 70,
     "idea": 65,
     "knowledge": 80
   },
   "skills": {
     "回避": 25,
-    "聞き耳": 73
+    "近接戦闘": 30,
+    "聞き耳": 73,
+    "精神分析": 51,
+    "追跡": 12,
+    "図書館": 74,
+    "目星": 99,
+    "信用": 65,
+    "説得": 25,
+    "英語": 42,
+    "ドイツ語": 30,
+    "芸術(音楽)": 90,
+    "心理学": 87,
+    "芸術（掃除）": 6
   },
   "histories": [
     {
       "title": "Fall in the festival!",
-      "comment": "なんだか夢みたいな日だったね...。うふふ、でも、みんなと約束しちゃったからね。\nさぁて！次の流星群はいつだろうね？",
+      "comment": "なんだか、2年目の学祭は夢みたいな日だったね...。\nうふふ、でも、みんなと約束しちゃったからね。\nさぁて！次の流星群はいつだろうね？",
       "iconUrl": "/images/KanadeShirabe/icon/kanadeshirabe_icon_4.png",
       "companions": [
         {
           "name": "守 惑",
           "enName": "SHU YOU",
           "color": "#517BF1",
-          "iconUrl": "/images/KanadeShirabe/companions/You_2023.png",
+          "iconUrl": "/images/KanadeShirabe-student/companions/You-student.png",
           "nickName":"惑くん"
         },
         {
           "name": "天川 綾",
           "enName": "AMAKAWA AYA",
           "color": "#FF9100",
-          "iconUrl": "/images/KanadeShirabe/companions/Aya_2023.png",
+          "iconUrl": "/images/KanadeShirabe-student/companions/Aya-student.png",
           "nickName":"綾ちゃん"
         }
       ]

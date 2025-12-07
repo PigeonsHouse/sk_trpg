@@ -56,15 +56,15 @@
   "histories": [
     {
       "title": "Mua",
-      "comment": "ほんの数日にいろんなことがあったね。",
+      "comment": "先輩！見てください！デメニギスッスよ！\nこっちのデッケ～ブヨブヨが目で、ちんこい点々が目なんスよ！\nほ～らさすがにもう覚えたんスから！",
       "iconUrl": "/images/ShiomiKen/icon/ShiomiKen_icon_1.png",
       "companions": [
         {
-          "name": "セシリア・アマノ・メリニコフ",
-          "enName": "Сесилия・Амано・Мельников",
-          "color": "#808080",
-          "iconUrl": "/images/ShiomiKen/companions/cecilia.png",
-          "nickName": "セシリア"
+          "name": "村雨　迅",
+          "enName": "MURASAME JIN",
+          "color": "#391FA5",
+          "iconUrl": "/images/ShiomiKen/companions/Murasame.png",
+          "nickName": "先輩！"
         }
       ]
     }

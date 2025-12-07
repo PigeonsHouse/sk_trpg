@@ -7,7 +7,7 @@
   "colorPalette": ["#F20C43", "#FF26C5", "#FFDE00"],
   "backgroundUrl": "https://sakuranouta.biz/wp-content/uploads/2023/10/%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84%E3%81%AE%E9%83%A8%E5%B1%8B_6_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89-1-1024x576.jpg",
   "profile": {
-    "description": "3年、アルテナス寮の寮長を務めている。\n自信家で傲慢、しかしどこか人を従えさせてしまうだけのカリスマ性がある。\nそのことにも自覚があるのか、自分がこの世界の王になると語っている。\n\n「俺はこの世界の王になる男だからな！安心して付いてくるが良いぞ！」\n\n傲慢ゆえに時に無神経な発言も見受けられるが、当人としてはあくまで事実を述べているという認識である。\nだが、人情がないわけではないため、人の努力や考えを無下にはしない。\n\n「何、俺に負けて悔しいのか？それはお前の実力不足だな！\n　だが、筋は良い。ほれ、魔力の扱い方を見てやるからもう一度やってみろ。」\n\n◆バックグラウンド\n魔法族の父と非魔法族の母の間に生まれたデュアル。\n愛情深く育てられたため、自分に対して強い自信がある。\nそのため、混血であることに対しても気にしていないどころか、むしろ誇りに思っている節がある。\n\n「魔法族と非魔法族との間に生まれた俺には魔法の才が与えられた。\n　それは、俺は魔法を扱うべくして生まれたということではないか？\n　つまり、俺にこの力で世界の王に成れと神が言っているのだな！」\n\n音楽に精通しているのは音楽家の母の影響。",
+    "description": "仮想現実について研究するエンジニア。\n\n生まれつき足が悪く、ずっと車椅子生活。\nそんな中、縦横無尽に飛びまわり悪者を倒す「仮想みて☆ベタキュア（ゆめみて☆べたきゅあ）」に出会い、強いあこがれを抱く。\nいつか自分のような子供達もベタキュアのように自由にあれる世界を実現するべく、仮想現実への研究に励む。",
     "age": 27,
     "sex": "女",
     "height": "157cm",
@@ -56,49 +56,49 @@
   "histories": [
     {
       "title": "砂上のβとxへの回帰",
-      "comment": "ほんの数日にいろんなことがあったね。",
+      "comment": "あたし、歩けるんだ。うふふ、歩くってこんな感じなのね！",
       "iconUrl": "/images/SasugaKiara/icon/SasugaKiara_icon_1.png",
       "companions": [
         {
-          "name": "セシリア・アマノ・メリニコフ",
-          "enName": "Сесилия・Амано・Мельников",
-          "color": "#808080",
-          "iconUrl": "/images/SasugaKiara/companions/cecilia.png",
-          "nickName": "セシリア"
+          "name": "斎表  上六",
+          "enName": "SAIHYO UWAROKU",
+          "color": "#DCE6E8",
+          "iconUrl": "/images/companions_NoImage.png",
+          "nickName": "斎表さん"
         },
         {
-          "name": "セシリア・アマノ・メリニコフ",
-          "enName": "Сесилия・Амано・Мельников",
-          "color": "#808080",
-          "iconUrl": "/images/SasugaKiara/companions/cecilia.png",
-          "nickName": "セシリア"
+          "name": "加隈 翔太",
+          "enName": "KAGUMA SHOUTA",
+          "color": "#830000",
+          "iconUrl": "/images/SasugaKiara/companions/kakuma.png",
+          "nickName": "加隈さん"
         },
         {
-          "name": "セシリア・アマノ・メリニコフ",
-          "enName": "Сесилия・Амано・Мельников",
-          "color": "#808080",
-          "iconUrl": "/images/SasugaKiara/companions/cecilia.png",
-          "nickName": "セシリア"
+          "name": "十 十",
+          "enName": "YOKOTATE TSUNASHI",
+          "color": "#4B4B4B",
+          "iconUrl": "/images/companions_NoImage.png",
+          "nickName": "ヨコタテさん"
         }
       ]
     }
   ],
   "qaList": [
     {
-      "iconUrl": "/images/icon_にせもの3.jpg",
-      "answer": "フン、休日は休日なのだから、俺の好きなように過ごすに決まっているだろう！"
+      "iconUrl": "/images/SasugaKiara/icon/SasugaKiara_icon_1.png",
+      "answer": "休日は開発してるかな～。研究とは別で、体が不自由なコが疑似的に動いて回れる4DVR空間を作ってるの！まだまだ制作中だけどね～進捗5割！"
     },
     {
-      "iconUrl": "/images/icon_にせもの3.jpg",
-      "answer": "海か山、どちらかが良いなどとは愚かな質問だな！海にも山にも両方に良い所があるに決まっているだろう！"
+      "iconUrl": "/images/SasugaKiara/icon/SasugaKiara_icon_1.png",
+      "answer": "アタシ意外と山派なの！\n静かな山奥のコテージで環境整えて開発するの、ちょっと夢ありすぎじゃない！？\nまあ、どっちも行ったことないんだけどね。"
     },
     {
-      "iconUrl": "/images/icon_にせもの3.jpg",
-      "answer": "願い事を叶えてほしいなどとは、俺に失礼な質問だな！"
+      "iconUrl": "/images/SasugaKiara/icon/SasugaKiara_icon_1.png",
+      "answer": "え～、そうね～。アタシみたいなコが、全員五体満足になって欲しい！のは傲慢だと思うのよね。\nでもせめて、そのコの人生がキラキラしてほしい！好きなモノ見つけて、全力で追っかけて、輝いてほしいな～！"
     },
     {
-      "iconUrl": "/images/icon_にせもの3.jpg",
-      "answer": "地球が滅亡するなどとは愚かな考えだな！そんなことは起こらないに決まっているだろう！なぜなら、地球が滅亡するのなら、地球が滅亡しないようにするからだ！"
+      "iconUrl": "/images/SasugaKiara/icon/SasugaKiara_icon_1.png",
+      "answer": "そんなの、惨めに足掻いて今の開発どうにか終わらせたいよね。だってだって！未完成のまま死ねなくない！？"
     }
   ],
   "comment": "自由記述",
