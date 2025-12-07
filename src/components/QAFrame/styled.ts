@@ -46,7 +46,7 @@ export const QuestionIcon = styled.span<{ backgroundColor: string }>`
   box-sizing: border-box;
   margin-right: 16px;
   font-weight: ${FontWeight.Bold};
-  font-family: ${FontFamily.Header};
+  font-family: ${FontFamily.Question};
   user-select: none;
 `;
 
