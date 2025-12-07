@@ -7,6 +7,7 @@ export const ProfileFrameStyle = css`
   height: 460px;
   padding: 54px;
   box-sizing: border-box;
+  padding-right: 0;
 `;
 
 export const Title = styled.h2`
@@ -26,6 +27,9 @@ export const DescriptionContainer = styled.div`
   line-height: 1.8;
   white-space: pre-wrap;
   font-size: 12px;
+  width: 400px;
+  flex-shrink: 0;
+  box-sizing: border-box;
 `;
 
 export const ProfilesContainer = styled.div`
