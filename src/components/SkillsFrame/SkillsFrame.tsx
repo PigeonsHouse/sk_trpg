@@ -2,7 +2,7 @@ import { useMemo } from "react";
 import type { Skills } from "../../types";
 import { arraySplit } from "../../utils";
 import { CommonFrame } from "../CommonFrame";
-import { LabelBox } from "../LabelBox";
+import { LabelBox, MaskImage } from "../LabelBox";
 import {
   FrameStatus,
   SkillsColumnContainer,
@@ -41,7 +41,11 @@ export const SkillsFrame: React.FC<SkillsFrameProps> = ({
           {leftArray.map(([label, value]) => (
             <SkillsOneLineContainer key={label}>
               <LabelBox backgroundColor={mainColor}>
-                {label.toUpperCase()}
+                {label.startsWith("mask") ? (
+                  <MaskImage src="/images/common/skill-mask.png" />
+                ) : (
+                  label.toUpperCase()
+                )}
               </LabelBox>
               <Value>{value}</Value>
             </SkillsOneLineContainer>
@@ -51,7 +55,11 @@ export const SkillsFrame: React.FC<SkillsFrameProps> = ({
           {rightArray.map(([label, value]) => (
             <SkillsOneLineContainer key={label}>
               <LabelBox backgroundColor={mainColor}>
-                {label.toUpperCase()}
+                {label.startsWith("mask") ? (
+                  <MaskImage src="/images/common/skill-mask.png" />
+                ) : (
+                  label.toUpperCase()
+                )}
               </LabelBox>
               <Value>{value}</Value>
             </SkillsOneLineContainer>

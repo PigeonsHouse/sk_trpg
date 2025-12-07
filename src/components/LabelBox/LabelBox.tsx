@@ -10,3 +10,8 @@ export const LabelBox = styled.div<{ backgroundColor: string }>`
   color: white;
   font-size: 12px;
 `;
+
+export const MaskImage = styled.img`
+  width: 100%;
+  height: 100%;
+`;
