@@ -59,8 +59,8 @@ export const ProfileFrameStyle = css`
 export const MainSpriteImage = styled.img`
   position: absolute;
   bottom: -240px;
-  width: 560px;
-  right: 0px;
+  height: 1000px;
+  right: 0;
   pointer-events: none;
   z-index: 50;
 `;
