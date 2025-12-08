@@ -50,7 +50,9 @@ export const QuestionIcon = styled.span<{ backgroundColor: string }>`
   user-select: none;
 `;
 
-export const QuestionTitle = styled.span`
+export const QuestionTitle = styled.h3`
+  display: inline;
+  margin: 0;
   font-weight: ${FontWeight.Bold};
 `;
 
