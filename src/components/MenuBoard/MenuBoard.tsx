@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useCallback, useState } from "react";
 import { GoogleFontIcon } from "../GoogleFontIcon";
 import { TopGuideBoard } from "../TopGuideBoard";
 import {
@@ -18,10 +18,14 @@ type MenuBoardProps = {
 
 export const MenuBoard: React.FC<MenuBoardProps> = ({ className, isHide }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const onSwitchMenu = useCallback(() => {
+    setIsOpen((prev) => !prev);
+  }, [setIsOpen]);
+
   return (
     <Container className={className}>
       <BoardContainer isHide={isHide}>
-        <Board onClick={() => setIsOpen((prev) => !prev)}>
+        <Board onClick={onSwitchMenu}>
           <GoogleFontIcon
             iconName="arrow_back"
             size={88}

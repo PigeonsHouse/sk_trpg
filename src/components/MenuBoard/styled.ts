@@ -41,13 +41,15 @@ export const Bar = styled.div<{ position: "left" | "right" }>`
 export const Text = styled.span`
   font-family: ${FontFamily.Bold};
   font-weight: ${FontWeight.Bold};
+  letter-spacing: 1px;
 `;
 
 export const MenuContainer = styled.div<{ isOpen: boolean }>`
   position: absolute;
-  top: ${120 + 32 + 16}px;
+  top: 168px;
   left: 0;
   width: fit-content;
   transition: opacity 0.2s;
   opacity: ${(props) => (props.isOpen ? 1 : 0)};
+  pointer-events: ${(props) => (props.isOpen ? "auto" : "none")};
 `;
