@@ -1,9 +1,8 @@
 {
-  "number": 2,
-  "hide": true,
   "shortId": "SRB",
   "name": "奏 調",
   "enName": "KANADE SHIRABE",
+  "original": "kanade-shirabe",
   "thumbnailUrl": "https://image.iaproject.app/e9d14d6e-d91a-4015-8a0a-e8ae8d4ca567",
   "colorPalette": ["#95B2CC", "#8A809E", "#FFDE00"],
   "backgroundUrl": "https://user0514.cdnw.net/shared/img/thumb/073Kazuki17103_TP_V.jpg",
@@ -92,14 +91,14 @@
           "enName": "SHU YOU",
           "color": "#517BF1",
           "iconUrl": "/images/KanadeShirabe/companions/You_2013.png",
-          "nickName":"惑くん"
+          "nickName": "惑くん"
         },
         {
           "name": "天川 綾",
           "enName": "AMAKAWA AYA",
           "color": "#FF9100",
           "iconUrl": "/images/KanadeShirabe/companions/Aya_2013.png",
-          "nickName":"天川さん"
+          "nickName": "天川さん"
         }
       ]
     },
@@ -113,7 +112,7 @@
           "enName": "SHU YOU",
           "color": "#517BF1",
           "iconUrl": "/images/KanadeShirabe/companions/You_2013.png",
-          "nickName":"惑くん"
+          "nickName": "惑くん"
         }
       ]
     },
@@ -127,21 +126,21 @@
           "enName": "SHU YOU",
           "color": "#517BF1",
           "iconUrl": "/images/KanadeShirabe/companions/You_2023.png",
-          "nickName":"惑くん"
+          "nickName": "惑くん"
         },
         {
           "name": "天川 綾",
           "enName": "AMAKAWA AYA",
           "color": "#FF9100",
           "iconUrl": "/images/KanadeShirabe/companions/Aya_2023.png",
-          "nickName":"天川さん"
+          "nickName": "天川さん"
         },
         {
           "name": "???",
           "enName": "???",
           "color": "#ffa2fc",
           "iconUrl": "/images/KanadeShirabe/companions/JANE_DOE.png",
-          "nickName":"???ちゃん"
+          "nickName": "???ちゃん"
         }
       ]
     },

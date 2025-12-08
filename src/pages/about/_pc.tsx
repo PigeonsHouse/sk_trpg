@@ -56,82 +56,86 @@ export const PcAbout = () => {
           >
             {summary?.map((character) => {
               return (
-                <div
-                  style={{
-                    width: "50%",
-                    boxSizing: "border-box",
-                    padding: "8px",
-                    aspectRatio: "4 / 3",
-                    minWidth: 400,
-                  }}
-                  key={character.id}
-                >
-                  <Link
-                    to={`/characters/${character.id}`}
+                !character.original && (
+                  <div
                     style={{
-                      display: "inline-block",
-                      textDecoration: "none",
-                      width: "100%",
-                      height: "100%",
-                      verticalAlign: "middle",
+                      width: "50%",
+                      boxSizing: "border-box",
+                      padding: "8px",
+                      aspectRatio: "4 / 3",
+                      minWidth: 400,
                     }}
+                    key={character.id}
                   >
-                    <div
+                    <Link
+                      to={`/characters/${character.id}`}
                       style={{
-                        position: "relative",
+                        display: "inline-block",
+                        textDecoration: "none",
                         width: "100%",
                         height: "100%",
-                        boxShadow: "0 4px 20px #666",
-                        borderRadius: 4,
-                        overflow: "hidden",
-                        // backgroundColor: `rgb(from ${character.color} r g b / 0.3)`,
-                        backgroundImage: `url(${character.backgroundUrl})`,
+                        verticalAlign: "middle",
                       }}
                     >
                       <div
                         style={{
+                          position: "relative",
                           width: "100%",
                           height: "100%",
-                          backgroundColor: character.color,
-                          opacity: 0.3,
-                        }}
-                      />
-                      <div
-                        style={{
-                          position: "absolute",
-                          inset: 0,
+                          boxShadow: "0 4px 20px #666",
+                          borderRadius: 4,
+                          overflow: "hidden",
+                          // backgroundColor: `rgb(from ${character.color} r g b / 0.3)`,
+                          backgroundImage: `url(${character.backgroundUrl})`,
                         }}
                       >
-                        <img
-                          src={character.thumbnailUrl}
+                        <div
                           style={{
-                            objectFit: "cover",
                             width: "100%",
                             height: "100%",
-                            objectPosition: "top",
-                            transform: "scale(1.2)",
+                            backgroundColor: character.color,
+                            opacity: 0.3,
                           }}
                         />
+                        <div
+                          style={{
+                            position: "absolute",
+                            inset: 0,
+                          }}
+                        >
+                          <img
+                            src={character.thumbnailUrl}
+                            style={{
+                              objectFit: "cover",
+                              width: "100%",
+                              height: "100%",
+                              objectPosition: "top",
+                              transform: "scale(1.2)",
+                            }}
+                          />
+                        </div>
+                        <div
+                          style={{
+                            position: "absolute",
+                            bottom: 0,
+                            color: "#333",
+                            fontWeight: "bold",
+                            fontSize: 24,
+                            width: "100%",
+                            padding: "16px 24px",
+                            boxSizing: "border-box",
+                            background: "linear-gradient(transparent, white)",
+                          }}
+                        >
+                          {character.name}{" "}
+                          <span style={{ fontSize: 12 }}>
+                            {character.enName}
+                          </span>
+                        </div>
                       </div>
-                      <div
-                        style={{
-                          position: "absolute",
-                          bottom: 0,
-                          color: "#333",
-                          fontWeight: "bold",
-                          fontSize: 24,
-                          width: "100%",
-                          padding: "16px 24px",
-                          boxSizing: "border-box",
-                          background: "linear-gradient(transparent, white)",
-                        }}
-                      >
-                        {character.name}{" "}
-                        <span style={{ fontSize: 12 }}>{character.enName}</span>
-                      </div>
-                    </div>
-                  </Link>
-                </div>
+                    </Link>
+                  </div>
+                )
               );
             })}
           </div>

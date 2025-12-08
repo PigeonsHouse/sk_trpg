@@ -1,5 +1,4 @@
 {
-  "number": 9,
   "shortId": "KEN",
   "name": "潮海　犍",
   "enName": "SHIOMI KEN",
@@ -26,7 +25,7 @@
       "spriteUrl": "/images/ShiomiKen/sprite/ShiomiKen_sprite_2.png"
     }
   ],
-    "status": {
+  "status": {
     "type": "CoC6版",
     "str": 12,
     "con": 13,

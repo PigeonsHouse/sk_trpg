@@ -17,14 +17,21 @@ const CharacterAbout = () => {
       .then((data) => setSummary(data));
   }, []);
   useEffect(() => {
-    if (!characterId) return;
-    fetch(`${import.meta.env.BASE_URL}data/characters/${characterId}.json`)
+    if (!characterId || summary.length === 0) return;
+    const findIndex = summary.findIndex(
+      (singleSummary) => singleSummary.id === characterId
+    );
+    if (findIndex === -1) return;
+    const indexWithZero = String(findIndex).padStart(2, "0");
+    fetch(
+      `${import.meta.env.BASE_URL}data/characters/${indexWithZero}-${characterId}.json`
+    )
       .then((res) => res.json())
       .then((data) => {
         const castedData = data as CharacterDetail;
         setData(castedData);
       });
-  }, [characterId]);
+  }, [characterId, summary]);
 
   const isLoading = characterId === undefined || data === undefined;
 

@@ -1,5 +1,4 @@
 {
-  "number": 13,
   "shortId": "KEI",
   "name": "才式　恵",
   "enName": "SAISHIKI KEI",
@@ -35,21 +34,21 @@
     }
   ],
   "status": {
-      "type": "CoC6版",
-      "str": 11,
-      "con": 13,
-      "pow": 13,
-      "dex": 10,
-      "app": 10,
-      "siz": 10,
-      "int": 13,
-      "edu": 19,
-      "san": 65,
-      "hp": 12,
-      "mp": 13,
-      "luck": 65,
-      "idea": 65,
-      "knowledge": 95
+    "type": "CoC6版",
+    "str": 11,
+    "con": 13,
+    "pow": 13,
+    "dex": 10,
+    "app": 10,
+    "siz": 10,
+    "int": 13,
+    "edu": 19,
+    "san": 65,
+    "hp": 12,
+    "mp": 13,
+    "luck": 65,
+    "idea": 65,
+    "knowledge": 95
   },
   "skills": {
     "回避": 70,

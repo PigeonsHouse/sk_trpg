@@ -1,5 +1,4 @@
 {
-  "number": 12,
   "shortId": "KRY",
   "name": "色 玖竜",
   "enName": "SHIKI KURYU",
@@ -36,8 +35,8 @@
     "魅力": 3,
     "社会": 2,
     "運勢": 3
-},
-"skills": {
+  },
+  "skills": {
     "洞察": "Lv.2",
     "直感": "Lv.2",
     "観察眼": "Lv.2",

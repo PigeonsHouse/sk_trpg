@@ -1,9 +1,8 @@
 {
-  "number": 0,
-  "hide": true,
   "shortId": "SRB",
   "name": "奏 調",
   "enName": "KANADE SHIRABE",
+  "original": "kanade-shirabe",
   "thumbnailUrl": "https://image.iaproject.app/e9d14d6e-d91a-4015-8a0a-e8ae8d4ca567",
   "colorPalette": ["#B1A6DF", "#95B2CC", "#FFDE00"],
   "backgroundUrl": "https://user0514.cdnw.net/shared/img/thumb/073Kazuki17103_TP_V.jpg",
@@ -71,14 +70,14 @@
           "enName": "SHU YOU",
           "color": "#517BF1",
           "iconUrl": "/images/KanadeShirabe-student/companions/You-student.png",
-          "nickName":"惑くん"
+          "nickName": "惑くん"
         },
         {
           "name": "天川 綾",
           "enName": "AMAKAWA AYA",
           "color": "#FF9100",
           "iconUrl": "/images/KanadeShirabe-student/companions/Aya-student.png",
-          "nickName":"綾ちゃん"
+          "nickName": "綾ちゃん"
         }
       ]
     }

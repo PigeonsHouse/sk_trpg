@@ -13,7 +13,9 @@ export const useSprites = (
   characterId: string,
   sprites: Sprites[]
 ) => {
-  const [displaySpriteIndex, setDisplaySpriteIndex] = useState(0);
+  const [displaySpriteIndex, setDisplaySpriteIndex] = useState(
+    characterDefaultSpriteIndex[characterId] ?? 0
+  );
   const safeDisplaySpriteIndex = useMemo(
     () => Math.min(displaySpriteIndex, sprites.length - 1),
     [displaySpriteIndex, sprites]
@@ -27,7 +29,7 @@ export const useSprites = (
       case "kanade-shirabe":
         if (url.iconUrl.includes("hide")) {
           navigateUrl = "/characters/kanade-shirabe-student";
-        } else {
+        } else if (url.iconUrl.match(/[2-9]\.png$/g)) {
           navigateUrl = "/characters/kanade-shirabe-adult";
         }
         break;
@@ -37,7 +39,7 @@ export const useSprites = (
       case "kanade-shirabe-adult":
         if (url.iconUrl.includes("hide")) {
           navigateUrl = "/characters/kanade-shirabe-student";
-        } else if (index === 0) {
+        } else if (url.iconUrl.match(/[01]\.png$/g)) {
           navigateUrl = "/characters/kanade-shirabe";
         }
         break;
@@ -48,6 +50,7 @@ export const useSprites = (
     }
 
     return () => {
+      console.log("from onClick", setIndex);
       scrollTo({ top: 0, behavior: "smooth" });
       setDisplaySpriteIndex(setIndex);
       navigateUrl && navigate(navigateUrl);
@@ -60,14 +63,19 @@ export const useSprites = (
       imageUrl: url.iconUrl,
       onClick: onClickFactory(index, url),
     }));
-  }, [displaySpriteIndex, setDisplaySpriteIndex, onClickFactory]);
+  }, [displaySpriteIndex, onClickFactory]);
 
   useEffect(() => {
+    console.log(characterId);
+    console.log(displaySpriteIndex);
     const defaultIndex = characterDefaultSpriteIndex[characterId];
-    if (displaySpriteIndex === 0 && defaultIndex !== undefined) {
-      setDisplaySpriteIndex(defaultIndex);
-    } else {
+
+    if (defaultIndex === undefined) {
       setDisplaySpriteIndex(0);
+    } else {
+      if (displaySpriteIndex === 0) {
+        setDisplaySpriteIndex(defaultIndex);
+      }
     }
   }, [characterId]);
 

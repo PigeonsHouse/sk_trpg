@@ -5,6 +5,7 @@ export type CharacterSummary = {
   thumbnailUrl: string;
   backgroundUrl: string;
   color: string;
+  original?: string;
 };
 
 export type Profile = {
@@ -69,7 +70,7 @@ export type QA = {
 
 export type CharacterDetail = {
   number: number;
-  hide?: boolean;
+  original?: string;
   name: string;
   enName: string;
   shortId: string;

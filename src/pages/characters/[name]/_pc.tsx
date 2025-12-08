@@ -56,7 +56,8 @@ export const PcCharacterAbout: React.FC<PcCharacterAboutProps> = ({
   const { isHeaderShrink, handlePrevious, handleNext } = useHeader(
     navigate,
     summary,
-    characterId
+    characterId,
+    data.original
   );
   const { displaySpriteIndex, costumeList } = useSprites(
     navigate,

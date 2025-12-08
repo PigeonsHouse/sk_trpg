@@ -1,5 +1,4 @@
 {
-  "number": 11,
   "shortId": "KRN",
   "name": "早乙女　華恋",
   "enName": "SAOTOMEE KAREN",
@@ -31,21 +30,21 @@
     }
   ],
   "status": {
-      "type": "CoC6版",
-      "str": 6,
-      "con": 17,
-      "pow": 13,
-      "dex": 10,
-      "app": 12,
-      "siz": 9,
-      "int": 14,
-      "edu": 5,
-      "san": 65,
-      "hp": 13,
-      "mp": 13,
-      "luck": 65,
-      "idea": 70,
-      "knowledge": 25
+    "type": "CoC6版",
+    "str": 6,
+    "con": 17,
+    "pow": 13,
+    "dex": 10,
+    "app": 12,
+    "siz": 9,
+    "int": 14,
+    "edu": 5,
+    "san": 65,
+    "hp": 13,
+    "mp": 13,
+    "luck": 65,
+    "idea": 70,
+    "knowledge": 25
   },
   "skills": {
     "回避": 27,

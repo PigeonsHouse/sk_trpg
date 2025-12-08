@@ -5,7 +5,8 @@ import type { CharacterSummary } from "../../../../types";
 export const useHeader = (
   navigate: NavigateFunction,
   summary: CharacterSummary[],
-  characterId: string
+  characterId: string,
+  original?: string
 ) => {
   const [previousCharacterId, setPreviousCharacterId] = useState<
     string | undefined
@@ -29,19 +30,20 @@ export const useHeader = (
     let prevId: string | undefined = undefined;
     let nextId: string | undefined = undefined;
     let isFind = false;
+    const targetCharacterId = original ?? characterId;
     summary.map((summaryData) => {
-      if (summaryData.id === characterId) {
+      if (summaryData.id === targetCharacterId) {
         isFind = true;
-      } else if (isFind && nextId === undefined) {
+      } else if (isFind && nextId === undefined && !summaryData.original) {
         nextId = summaryData.id;
       }
-      if (!isFind) {
+      if (!isFind && !summaryData.original) {
         prevId = summaryData.id;
       }
     });
     setPreviousCharacterId(prevId);
     setNextCharacterId(nextId);
-  }, [characterId, summary]);
+  }, [characterId, original, summary]);
 
   const [isScrolled, setIsScrolled] = useState(false);
   useEffect(() => {

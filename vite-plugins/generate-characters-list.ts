@@ -28,24 +28,24 @@ export function generateCharactersList(): Plugin {
       const updatedFiles = files.map((file) => {
         const dataString = fs.readFileSync(`${charactersDir}/${file}`, "utf-8");
         const data = JSON.parse(dataString);
-        const id = file.replace(".json", "");
+        const idWithNumber = file.replace(".json", "");
+        const [index, ...rest] = idWithNumber.split("-");
+        const id = rest.join("-");
         return {
           id,
+          index: Number(index) as any,
           name: data.name,
           enName: data.enName,
           thumbnailUrl: data.thumbnailUrl,
           backgroundUrl: data.backgroundUrl,
           color: data.colorPalette[0],
-          index: data.number,
-          hide: data.hide || false,
+          original: data.original,
         };
       });
       const sorted = updatedFiles
-        .filter((file) => !file.hide)
         .sort((a, b) => a.index - b.index)
         .map((file) => {
           delete file.index;
-          delete file.hide;
           return file;
         });
 
