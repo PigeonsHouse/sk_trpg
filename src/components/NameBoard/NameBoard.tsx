@@ -1,5 +1,5 @@
 import React from "react";
-import { NameContainer } from "../";
+import { NameContainer } from "../NameContainer";
 import { Bar, BoardContainer, NameContainerStyle } from "./styled";
 
 type NameBoardProps = {

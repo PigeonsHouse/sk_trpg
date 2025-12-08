@@ -1,10 +1,14 @@
 import { useMemo } from "react";
-import { NameBoard, NameContainer, NavigateArrow } from "../";
+import { MenuBoard } from "../MenuBoard";
+import { NameBoard } from "../NameBoard";
+import { NameContainer } from "../NameContainer";
+import { NavigateArrow } from "../NavigateArrow";
 import {
   BoardContainer,
   BoardStyle,
   Container,
   Header,
+  MenuBoardStyle,
   SmallNameContainerStyle,
 } from "./styled";
 
@@ -68,6 +72,7 @@ export const CharacterHeader: React.FC<CharacterHeaderProps> = ({
             onClick={handleNext}
           />
         </BoardContainer>
+        <MenuBoard className={MenuBoardStyle} isHide={!isShrink} />
       </Header>
     </Container>
   );

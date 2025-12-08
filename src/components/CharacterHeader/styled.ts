@@ -59,3 +59,10 @@ export const ArrowContainer = styled.div`
   width: 100%;
   z-index: 1;
 `;
+
+export const MenuBoardStyle = css`
+  position: absolute;
+  top: 120px;
+  z-index: -1;
+  left: calc(50% - ${BREAK_POINT / 2}px);
+`;

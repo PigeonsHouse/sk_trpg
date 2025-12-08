@@ -1,4 +1,6 @@
-import { NameBoard, NameContainer, NavigateArrow } from "../";
+import { NameBoard } from "../NameBoard";
+import { NameContainer } from "../NameContainer";
+import { NavigateArrow } from "../NavigateArrow";
 import {
   Container,
   NameBoardContainer,

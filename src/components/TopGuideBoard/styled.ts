@@ -9,6 +9,7 @@ export const Container = styled.div`
   border: 10px solid #5a5a5a;
   padding: 32px 20px;
   flex-shrink: 0;
+  width: 360px;
 `;
 
 export const NoDecorationLinkStyle = css`
@@ -30,12 +31,13 @@ export const TopContainer = styled.div`
 
 export const ArrowStyle = css`
   transform: scaleX(-1);
+  font-weight: ${FontWeight.Bold};
 `;
 
 export const TopLabel = styled.span`
   font-size: 68px;
   font-weight: ${FontWeight.Bold};
-  margin-top: -16px;
+  margin-top: -12px;
 `;
 
 export const OneLineContainer = styled.div`
