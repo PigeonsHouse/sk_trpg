@@ -39,12 +39,14 @@ import {
 type PcCharacterAboutProps = {
   summary: CharacterSummary[];
   characterId: string;
+  index: number;
   data: CharacterDetail;
 };
 
 export const PcCharacterAbout: React.FC<PcCharacterAboutProps> = ({
   summary,
   characterId,
+  index,
   data,
 }) => {
   const navigate = useNavigate();
@@ -124,7 +126,7 @@ export const PcCharacterAbout: React.FC<PcCharacterAboutProps> = ({
               changeIndex={setSelectedHistoryIndex}
               histories={data.histories}
               shortId={data.shortId}
-              number={data.number}
+              number={index}
               color={mainColor}
               selectedColor={yellowColor}
             />

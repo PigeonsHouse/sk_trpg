@@ -9,6 +9,7 @@ import { Loading } from "./styled";
 
 const CharacterAbout = () => {
   const { name: characterId } = useParams();
+  const [index, setIndex] = useState(0);
   const [summary, setSummary] = useState<CharacterSummary[]>([]);
   const [data, setData] = useState<CharacterDetail | undefined>();
   useEffect(() => {
@@ -22,6 +23,7 @@ const CharacterAbout = () => {
       (singleSummary) => singleSummary.id === characterId
     );
     if (findIndex === -1) return;
+    setIndex(findIndex);
     const indexWithZero = String(findIndex).padStart(2, "0");
     fetch(
       `${import.meta.env.BASE_URL}data/characters/${indexWithZero}-${characterId}.json`
@@ -53,12 +55,14 @@ const CharacterAbout = () => {
               summary={summary}
               characterId={characterId}
               data={data}
+              index={index}
             />
           ) : (
             <SpCharacterAbout
               summary={summary}
               characterId={characterId}
               data={data}
+              index={index}
             />
           )}
         </>

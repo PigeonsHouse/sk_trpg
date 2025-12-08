@@ -18,6 +18,7 @@ import {
 type SpCharacterAboutProps = {
   summary: CharacterSummary[];
   characterId: string;
+  index: number;
   data: CharacterDetail;
 };
 
