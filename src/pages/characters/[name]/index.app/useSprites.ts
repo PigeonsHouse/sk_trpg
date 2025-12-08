@@ -50,7 +50,6 @@ export const useSprites = (
     }
 
     return () => {
-      console.log("from onClick", setIndex);
       scrollTo({ top: 0, behavior: "smooth" });
       setDisplaySpriteIndex(setIndex);
       navigateUrl && navigate(navigateUrl);
@@ -66,8 +65,6 @@ export const useSprites = (
   }, [displaySpriteIndex, onClickFactory]);
 
   useEffect(() => {
-    console.log(characterId);
-    console.log(displaySpriteIndex);
     const defaultIndex = characterDefaultSpriteIndex[characterId];
 
     if (defaultIndex === undefined) {
