@@ -4,8 +4,8 @@ import { Routes } from "@generouted/react-router";
 import { GlobalStyles } from "./components";
 
 createRoot(document.getElementById("root")!).render(
-  <>
+  <StrictMode>
     <GlobalStyles />
     <Routes />
-  </>
+  </StrictMode>
 );
