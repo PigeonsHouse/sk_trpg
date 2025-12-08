@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { Link } from "react-router";
 import { TopGuideBoard } from "../components";
 import type { CharacterSummary } from "../types";
@@ -10,11 +10,16 @@ export const PcTop = () => {
       .then((res) => res.json())
       .then((data) => setSummary(data));
   }, []);
+  const onScroll = useCallback((e: React.WheelEvent) => {
+    e.preventDefault();
+    e.currentTarget.scrollLeft += e.deltaY;
+  }, []);
 
   return (
     <>
       <div
         style={{ position: "relative", overflowX: "auto", height: "100dvh" }}
+        onWheel={onScroll}
       >
         <div
           style={{
