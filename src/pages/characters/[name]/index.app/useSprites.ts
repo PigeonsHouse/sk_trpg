@@ -34,7 +34,9 @@ export const useSprites = (
         }
         break;
       case "kanade-shirabe-student":
-        navigateUrl = "/characters/kanade-shirabe";
+        if (url.iconUrl.includes("hide")) {
+          navigateUrl = "/characters/kanade-shirabe";
+        }
         break;
       case "kanade-shirabe-adult":
         if (url.iconUrl.includes("hide")) {
