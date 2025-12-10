@@ -57,23 +57,8 @@ export const BottomBar = styled.div`
   bottom: calc(48px);
 `;
 
-export const LightContainer = styled.div`
+export const LightStyle = css`
   position: absolute;
-  width: 178px;
-  height: 178px;
-  background-color: ${UiColor.darkGray};
-  border-radius: 32px 32px 50% 50%;
   right: -314px;
   bottom: -34px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-
-export const Light = styled.div<{ lightColor: string }>`
-  width: 110px;
-  height: 110px;
-  border: 12px solid ${UiColor.black};
-  background-color: ${(props) => props.lightColor};
-  border-radius: 50%;
 `;

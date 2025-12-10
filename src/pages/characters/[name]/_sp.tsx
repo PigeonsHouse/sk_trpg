@@ -1,24 +1,35 @@
-import { useEffect, useMemo, useState } from "react";
+import { useMemo } from "react";
 import { useNavigate } from "react-router";
 import { css } from "@emotion/css";
 import {
   CostumeList,
   NameBoard,
   NavigateArrow,
-  type CostumeItem,
+  ShortIdBoard,
+  SingleLight,
+  TrafficLight,
 } from "../../../components";
-import { CharactersId, Url } from "../../../definitions";
+import { CharactersId } from "../../../definitions";
 import type { CharacterDetail, CharacterSummary } from "../../../types";
+import { calcNameSize } from "../../../utils";
+import { useHeader, useSprites } from "./index.app";
 import {
   GradationBackground,
   SpContainer,
+  SpHeaderContainer,
   SpMarginContainer,
+  SpMarginContainerRelative,
+  SpNameBoardStyle,
+  SpShortIdBoardStyle,
+  SpSingleLightStyle,
+  SpSprite,
   SpSpriteContainer,
+  SpTrafficLightStyle,
 } from "./styled";
 
 type SpCharacterAboutProps = {
   summary: CharacterSummary[];
-  characterId: string;
+  characterId: CharactersId;
   index: number;
   data: CharacterDetail;
 };
@@ -26,124 +37,82 @@ type SpCharacterAboutProps = {
 export const SpCharacterAbout: React.FC<SpCharacterAboutProps> = ({
   summary,
   characterId,
+  index,
   data,
 }) => {
   const navigate = useNavigate();
 
-  const [previousCharacterId, setPreviousCharacterId] = useState<
-    CharactersId | undefined
-  >();
-  const [nextCharacterId, setNextCharacterId] = useState<
-    CharactersId | undefined
-  >();
-  const [displaySpriteIndex, setDisplaySpriteIndex] = useState(0);
-
-  useEffect(() => {
-    let prevId: CharactersId | undefined = undefined;
-    let nextId: CharactersId | undefined = undefined;
-    let isFind = false;
-    summary.map((summaryData) => {
-      if (summaryData.id === characterId) {
-        isFind = true;
-      } else if (isFind && nextId === undefined) {
-        nextId = summaryData.id;
-      }
-      if (!isFind) {
-        prevId = summaryData.id;
-      }
-    });
-    setPreviousCharacterId(prevId);
-    setNextCharacterId(nextId);
-  }, [data, summary]);
-
-  const costumeList: CostumeItem[] = useMemo(() => {
-    return data.sprites.map((url, index) => ({
-      isSelected: displaySpriteIndex === index,
-      imageUrl: url.iconUrl,
-      // MEMO: 奏 調の特殊挙動はこの辺でカスタマイズできる
-      onClick: () => {
-        scrollTo(0, 0);
-        setDisplaySpriteIndex(index);
-      },
-    }));
-  }, [data, displaySpriteIndex, setDisplaySpriteIndex]);
   const [mainColor, secondColor, yellowColor] = useMemo(() => {
     return data.colorPalette;
   }, [data]);
 
-  const handlePrevious = previousCharacterId
-    ? () => {
-        setDisplaySpriteIndex(0);
-        navigate(Url.characterTo(previousCharacterId));
-      }
-    : undefined;
-  const handleNext = nextCharacterId
-    ? () => {
-        setDisplaySpriteIndex(0);
-        navigate(Url.characterTo(nextCharacterId));
-      }
-    : undefined;
+  const { handlePrevious, handleNext } = useHeader(
+    navigate,
+    summary,
+    characterId,
+    data.original
+  );
+  const { displaySpriteIndex, costumeList } = useSprites(
+    navigate,
+    characterId,
+    data.sprites
+  );
+  // const { selectedHistoryIndex, setSelectedHistoryIndex } = useHistory(
+  //   data.histories
+  // );
+
+  // const handleAboutCharacters = useCallback(() => {
+  //   navigate(Url.aboutTo("characters"));
+  // }, [navigate]);
 
   return (
     <SpContainer>
-      <div
-        style={{
-          position: "fixed",
-          top: 0,
-          left: 0,
-          right: 0,
-          backgroundColor: mainColor,
-          height: 100,
-          textAlign: "center",
-          fontSize: 60,
-        }}
-      >
-        {/* TODO: 後でtransformじゃない実装に修正する */}
+      <SpHeaderContainer bgColor={mainColor}>
+        <NavigateArrow
+          arrowHeight={24}
+          arrowDirection="left"
+          disabled={!handlePrevious}
+          onClick={handlePrevious}
+        />
         <NameBoard
           name={data.name}
           enName={data.enName}
           color={mainColor}
-          className={css`
-            transform: translateX(calc(50vw - 300px)) translateY(-38px)
-              scale(0.4);
-          `}
-        />
-        <NavigateArrow
-          arrowHeight={24}
-          arrowDirection="left"
-          style={{
-            position: "absolute",
-            top: "calc(50% - 12px)",
-            left: "calc(50% - 120px - 36px - 16px)",
-          }}
-          disabled={!handlePrevious}
-          onClick={handlePrevious}
+          isHeading
+          className={SpNameBoardStyle}
+          nameSize={calcNameSize(data.name)}
+          isSp
         />
         <NavigateArrow
           arrowHeight={24}
           arrowDirection="right"
-          style={{
-            position: "absolute",
-            top: "calc(50% - 12px)",
-            right: "calc(50% - 120px - 36px - 16px)",
-          }}
           disabled={!handleNext}
           onClick={handleNext}
         />
-      </div>
+      </SpHeaderContainer>
       <SpSpriteContainer backgroundColor={mainColor}>
-        <SpMarginContainer>
-          <img
-            style={{ width: "100%" }}
-            src={data.sprites[displaySpriteIndex].spriteUrl}
+        <SpMarginContainerRelative>
+          <TrafficLight
+            colorPalette={data.colorPalette}
+            className={SpTrafficLightStyle}
+            isSp
           />
-        </SpMarginContainer>
+          <SingleLight
+            lightColor={yellowColor}
+            className={SpSingleLightStyle}
+            isSp
+          />
+          <ShortIdBoard
+            shortId={data.shortId}
+            number={index}
+            bgColor={yellowColor}
+            className={SpShortIdBoardStyle}
+            isSp
+          />
+          <SpSprite src={data.sprites[displaySpriteIndex].spriteUrl} />
+        </SpMarginContainerRelative>
       </SpSpriteContainer>
-      <GradationBackground
-        style={{ paddingLeft: 20, paddingRight: 20 }}
-        startColor={mainColor}
-        endColor={secondColor}
-      >
+      <GradationBackground startColor={mainColor} endColor={secondColor}>
         <SpMarginContainer>
           <CostumeList
             items={costumeList}

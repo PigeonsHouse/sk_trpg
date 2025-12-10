@@ -248,23 +248,8 @@ export const BottomBar = styled.div`
   bottom: 24px;
 `;
 
-export const ShortIdBoard = styled.div<{ backgroundColor: string }>`
-  background-color: ${(props) => props.backgroundColor};
-  font-family: ${FontFamily.Header};
-  width: 260px;
-  height: 160px;
+export const BoardStyle = css`
   position: absolute;
-  font-weight: ${FontWeight.Bold};
-  font-size: 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 24px;
   left: -310px;
   bottom: -70px;
-  user-select: none;
 `;
-
-export const ShortId = styled.span``;
-export const ShortIdNumber = styled.span``;

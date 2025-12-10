@@ -3,6 +3,7 @@ import type { Status } from "../../types";
 import { arraySplit } from "../../utils";
 import { CommonFrame } from "../CommonFrame";
 import { LabelBox } from "../LabelBox";
+import { TrafficLight } from "../TrafficLight";
 import {
   BottomBar,
   FrameStatus,
@@ -11,8 +12,7 @@ import {
   StatusOneLineContainer,
   Title,
   TopBar,
-  TrafficLight,
-  TrafficLightContainer,
+  TrafficLightStyle,
   Value,
 } from "./styled";
 
@@ -61,11 +61,7 @@ export const StatusFrame: React.FC<StatusFrameProps> = ({
 
       <TopBar />
       <BottomBar />
-      <TrafficLightContainer>
-        {colorPalette.map((color, i) => (
-          <TrafficLight key={i} lightColor={color} />
-        ))}
-      </TrafficLightContainer>
+      <TrafficLight className={TrafficLightStyle} colorPalette={colorPalette} />
     </CommonFrame>
   );
 };

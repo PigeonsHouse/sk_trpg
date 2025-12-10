@@ -3,6 +3,7 @@ import type { Skills } from "../../types";
 import { arraySplit } from "../../utils";
 import { CommonFrame } from "../CommonFrame";
 import { LabelBox, MaskImage } from "../LabelBox";
+import { SingleLight } from "../SingleLight";
 import {
   FrameStatus,
   SkillsColumnContainer,
@@ -12,8 +13,7 @@ import {
   Value,
   TopBar,
   BottomBar,
-  LightContainer,
-  Light,
+  LightStyle,
 } from "./styled";
 
 type SkillsFrameProps = {
@@ -69,9 +69,7 @@ export const SkillsFrame: React.FC<SkillsFrameProps> = ({
 
       <TopBar />
       <BottomBar />
-      <LightContainer>
-        <Light lightColor={lightColor} />
-      </LightContainer>
+      <SingleLight className={LightStyle} lightColor={lightColor} />
     </CommonFrame>
   );
 };

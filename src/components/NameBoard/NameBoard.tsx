@@ -9,6 +9,7 @@ type NameBoardProps = {
   nameSize?: "lg" | "md" | "sm";
   color: string;
   isHeading?: boolean;
+  isSp?: boolean;
 };
 
 export const NameBoard: React.FC<NameBoardProps> = ({
@@ -18,15 +19,17 @@ export const NameBoard: React.FC<NameBoardProps> = ({
   nameSize,
   color,
   isHeading,
+  isSp,
 }) => (
-  <BoardContainer className={className}>
+  <BoardContainer isSp={isSp} className={className}>
     <NameContainer
       name={name}
       enName={enName}
       size={nameSize}
-      className={NameContainerStyle(nameSize)}
+      className={NameContainerStyle(nameSize, isSp)}
       isHeading={isHeading}
+      isSp={isSp}
     />
-    <Bar mainColor={color} />
+    <Bar isSp={isSp} mainColor={color} />
   </BoardContainer>
 );

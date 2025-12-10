@@ -69,6 +69,7 @@ export const GradationBackground = styled.section<{
   startColor: string;
   endColor: string;
 }>`
+  padding: 0 20px;
   padding-top: 36px;
   overflow: hidden;
   background-image:
@@ -205,15 +206,72 @@ export const BrailleBlock = styled.div<{ blockColor: string }>`
 `;
 
 /// ここからSPのみ利用するstyle
+export const SpHeaderContainer = styled.div<{ bgColor: string }>`
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: ${(props) => props.bgColor};
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 0 8px;
+  z-index: 50;
+`;
+
+export const SpNameBoardStyle = css`
+  flex-grow: 1;
+`;
+
 export const SpContainer = styled.div`
   margin-top: 100px;
 `;
 
 export const SpSpriteContainer = styled.div<{ backgroundColor: string }>`
   background-color: ${(props) => props.backgroundColor};
+  height: calc(100dvh - 100px);
+  position: relative;
+`;
+
+export const SpTrafficLightStyle = css`
+  position: absolute;
+  top: 16px;
+  left: 8px;
+`;
+
+export const SpSingleLightStyle = css`
+  position: absolute;
+  top: 40%;
+  right: 8px;
+`;
+
+export const SpShortIdBoardStyle = css`
+  position: absolute;
+  bottom: 80px;
+  left: -8px;
+`;
+
+export const SpSprite = styled.img`
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  max-width: 100vw;
+  object-fit: cover;
+  margin: 0 auto;
+  display: block;
+  z-index: 1;
 `;
 
 export const SpMarginContainer = styled.div`
   max-width: ${SP_MAX_WIDTH}px;
   margin: auto;
+  height: 100%;
+`;
+
+export const SpMarginContainerRelative = styled(SpMarginContainer)`
+  position: relative;
 `;

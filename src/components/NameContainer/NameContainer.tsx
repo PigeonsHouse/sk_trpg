@@ -6,6 +6,7 @@ export type NameContainerProps = {
   name: string;
   enName: string;
   isHeading?: boolean;
+  isSp?: boolean;
 };
 
 export const NameContainer: React.FC<NameContainerProps> = ({
@@ -14,10 +15,13 @@ export const NameContainer: React.FC<NameContainerProps> = ({
   name,
   enName,
   isHeading,
+  isSp,
 }) => {
   return (
     <Container className={className} as={isHeading ? "h1" : undefined}>
-      <CharacterName size={size}>{name}</CharacterName>
+      <CharacterName isSp={isSp} size={size}>
+        {name}
+      </CharacterName>
       <EnCharacterName>{enName.toUpperCase()}</EnCharacterName>
     </Container>
   );

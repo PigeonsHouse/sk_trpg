@@ -4,6 +4,7 @@ import type { History } from "../../types";
 import { CommonFrame } from "../CommonFrame";
 import { GoogleFontIcon } from "../GoogleFontIcon";
 import { NameContainer } from "../NameContainer";
+import { ShortIdBoard } from "../ShortIdBoard";
 import {
   Title,
   FrameStyle,
@@ -18,7 +19,6 @@ import {
   HistoryOneLineContainer,
   HistoryLight,
   HistoryTitle,
-  ShortIdBoard,
   HistoryDetailAreaContainer,
   HistoryDetailContainer,
   HistoryCommentContainer,
@@ -29,12 +29,11 @@ import {
   CompanionInfoContainer,
   SingleCompanionInfoContainer,
   CompanionIconImage,
-  ShortId,
-  ShortIdNumber,
   CompanionNameStyle,
   CallIconStyle,
   NickNameContainer,
   NickName,
+  BoardStyle,
 } from "./styled";
 
 type HistoryFrameProps = {
@@ -93,10 +92,12 @@ export const HistoryFrame: React.FC<HistoryFrameProps> = ({
 
         <TopBar />
         <BottomBar />
-        <ShortIdBoard backgroundColor={selectedColor}>
-          <ShortId>{shortId}</ShortId>
-          <ShortIdNumber>{`#${String(number).padStart(2, "0")}`}</ShortIdNumber>
-        </ShortIdBoard>
+        <ShortIdBoard
+          className={BoardStyle}
+          bgColor={selectedColor}
+          shortId={shortId}
+          number={number}
+        />
       </CommonFrame>
 
       <HistoryDetailAreaContainer>

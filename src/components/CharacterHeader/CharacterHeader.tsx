@@ -1,4 +1,5 @@
 import { useMemo } from "react";
+import { calcNameSize } from "../../utils";
 import { MenuBoard } from "../MenuBoard";
 import { NameBoard } from "../NameBoard";
 import { NameContainer } from "../NameContainer";
@@ -31,15 +32,7 @@ export const CharacterHeader: React.FC<CharacterHeaderProps> = ({
   handlePrevious,
   handleNext,
 }) => {
-  const nameSize = useMemo(() => {
-    if (name.length < 8) {
-      return "lg";
-    } else if (name.length < 12) {
-      return "md";
-    } else {
-      return "sm";
-    }
-  }, [name]);
+  const nameSize = useMemo(() => calcNameSize(name), [name]);
 
   return (
     <Container className={className}>

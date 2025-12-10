@@ -55,24 +55,8 @@ export const StatusOneLineContainer = styled.div`
 
 export const Value = styled.div``;
 
-export const TrafficLightContainer = styled.div`
+export const TrafficLightStyle = css`
   position: absolute;
-  width: 200px;
-  height: 400px;
-  background-color: ${UiColor.darkGray};
-  border-radius: 9999px;
   top: -132px;
   left: -280px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-`;
-
-export const TrafficLight = styled.div<{ lightColor: string }>`
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  background-color: ${(props) => props.lightColor};
 `;
