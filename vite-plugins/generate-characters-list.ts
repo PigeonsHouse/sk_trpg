@@ -2,6 +2,11 @@ import * as fs from "fs";
 import * as path from "path";
 import type { Plugin } from "vite";
 
+const camelize = (s: string) =>
+  s
+    .replace(/-./g, (x) => x[1].toUpperCase())
+    .replace(/^./, (x) => x.toUpperCase());
+
 /**
  * Viteプラグイン: src/data/characters/内のJSONファイル一覧を
  * src/data/characters.jsonに自動生成する
@@ -9,6 +14,7 @@ import type { Plugin } from "vite";
 export function generateCharactersList(): Plugin {
   const charactersDir = "public/data/characters";
   const outputFile = "public/data/characters.json";
+  const characterNameTypeFile = "src/definitions/charactersName.ts";
 
   function updateCharactersList() {
     try {
@@ -52,6 +58,24 @@ export function generateCharactersList(): Plugin {
       // characters.jsonに書き込み
       const jsonContent = JSON.stringify(sorted, null, 2);
       fs.writeFileSync(outputFile, jsonContent + "\n", "utf-8");
+
+      const charactersName = updatedFiles.map((file) => file.id);
+
+      const fileContents = [
+        "export const CharactersId = {",
+        "} as const;",
+        "",
+        "export type CharactersId = (typeof CharactersId)[keyof typeof CharactersId];",
+        "",
+      ];
+      fileContents.splice(
+        1,
+        0,
+        ...charactersName.map((name) => `  ${camelize(name)}: "${name}",`)
+      );
+      const fileContent = fileContents.join("\n");
+
+      fs.writeFileSync(characterNameTypeFile, fileContent, "utf-8");
 
       console.log(
         `[generate-characters-list] Updated ${outputFile} with ${files.length} characters`

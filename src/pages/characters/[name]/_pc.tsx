@@ -13,6 +13,7 @@ import {
   StatusFrame,
   Window,
 } from "../../../components";
+import { Url, type CharactersId } from "../../../definitions";
 import type { CharacterDetail, CharacterSummary } from "../../../types";
 import { useHeader, useHistory, useSprites } from "./index.app";
 import {
@@ -38,7 +39,7 @@ import {
 
 type PcCharacterAboutProps = {
   summary: CharacterSummary[];
-  characterId: string;
+  characterId: CharactersId;
   index: number;
   data: CharacterDetail;
 };
@@ -71,7 +72,7 @@ export const PcCharacterAbout: React.FC<PcCharacterAboutProps> = ({
   );
 
   const handleAboutCharacters = useCallback(() => {
-    navigate("/about#characters");
+    navigate(Url.aboutTo("characters"));
   }, [navigate]);
 
   return (

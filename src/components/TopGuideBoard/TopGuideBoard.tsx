@@ -1,5 +1,6 @@
 import type React from "react";
 import { Link } from "react-router";
+import { Url } from "../../definitions";
 import { GoogleFontIcon } from "../GoogleFontIcon";
 import {
   ArrowStyle,
@@ -21,7 +22,7 @@ type TopGuideBoardProps = {
 export const TopGuideBoard: React.FC<TopGuideBoardProps> = ({ className }) => {
   return (
     <Container className={className}>
-      <Link to="/" className={NoDecorationLinkStyle}>
+      <Link to={Url.top} className={NoDecorationLinkStyle}>
         <TopContainer>
           <GoogleFontIcon
             iconName="arrow_outward"
@@ -31,7 +32,7 @@ export const TopGuideBoard: React.FC<TopGuideBoardProps> = ({ className }) => {
           <TopLabel>TOP</TopLabel>
         </TopContainer>
       </Link>
-      <Link to="/about#about" className={NoDecorationLinkStyle}>
+      <Link to={Url.aboutTo("about")} className={NoDecorationLinkStyle}>
         <OneLineContainer>
           <Box />
           <TextContainer>
@@ -40,7 +41,7 @@ export const TopGuideBoard: React.FC<TopGuideBoardProps> = ({ className }) => {
           </TextContainer>
         </OneLineContainer>
       </Link>
-      <Link to="/about#characters" className={NoDecorationLinkStyle}>
+      <Link to={Url.aboutTo("characters")} className={NoDecorationLinkStyle}>
         <OneLineContainer>
           <Box />
           <TextContainer>
@@ -49,7 +50,7 @@ export const TopGuideBoard: React.FC<TopGuideBoardProps> = ({ className }) => {
           </TextContainer>
         </OneLineContainer>
       </Link>
-      <Link to="/about#twitter" className={NoDecorationLinkStyle}>
+      <Link to={Url.aboutTo("twitter")} className={NoDecorationLinkStyle}>
         <OneLineContainer>
           <Box />
           <TextContainer>
@@ -58,7 +59,7 @@ export const TopGuideBoard: React.FC<TopGuideBoardProps> = ({ className }) => {
           </TextContainer>
         </OneLineContainer>
       </Link>
-      <Link to="/about#skeb" className={NoDecorationLinkStyle}>
+      <Link to={Url.aboutTo("skeb")} className={NoDecorationLinkStyle}>
         <OneLineContainer>
           <Box />
           <TextContainer>

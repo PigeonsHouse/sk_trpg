@@ -7,6 +7,7 @@ import {
   NavigateArrow,
   type CostumeItem,
 } from "../../../components";
+import { CharactersId, Url } from "../../../definitions";
 import type { CharacterDetail, CharacterSummary } from "../../../types";
 import {
   GradationBackground,
@@ -30,14 +31,16 @@ export const SpCharacterAbout: React.FC<SpCharacterAboutProps> = ({
   const navigate = useNavigate();
 
   const [previousCharacterId, setPreviousCharacterId] = useState<
-    string | undefined
+    CharactersId | undefined
   >();
-  const [nextCharacterId, setNextCharacterId] = useState<string | undefined>();
+  const [nextCharacterId, setNextCharacterId] = useState<
+    CharactersId | undefined
+  >();
   const [displaySpriteIndex, setDisplaySpriteIndex] = useState(0);
 
   useEffect(() => {
-    let prevId: string | undefined = undefined;
-    let nextId: string | undefined = undefined;
+    let prevId: CharactersId | undefined = undefined;
+    let nextId: CharactersId | undefined = undefined;
     let isFind = false;
     summary.map((summaryData) => {
       if (summaryData.id === characterId) {
@@ -71,13 +74,13 @@ export const SpCharacterAbout: React.FC<SpCharacterAboutProps> = ({
   const handlePrevious = previousCharacterId
     ? () => {
         setDisplaySpriteIndex(0);
-        navigate(`/characters/${previousCharacterId}`);
+        navigate(Url.characterTo(previousCharacterId));
       }
     : undefined;
   const handleNext = nextCharacterId
     ? () => {
         setDisplaySpriteIndex(0);
-        navigate(`/characters/${nextCharacterId}`);
+        navigate(Url.characterTo(nextCharacterId));
       }
     : undefined;
 

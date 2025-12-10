@@ -1,5 +1,7 @@
+import type { CharactersId } from "../../definitions";
+
 export type CharacterSummary = {
-  id: string;
+  id: CharactersId;
   name: string;
   enName: string;
   thumbnailUrl: string;

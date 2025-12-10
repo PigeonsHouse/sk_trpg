@@ -1,20 +1,76 @@
 import { useEffect, useMemo, useState } from "react";
 import type { NavigateFunction } from "react-router";
 import type { CostumeItem } from "../../../../components";
+import { CharactersId, Url } from "../../../../definitions";
 import type { Sprites } from "../../../../types";
 
-const characterDefaultSpriteIndex: { [name: string]: number } = {
-  "kanade-shirabe-adult": 1,
-  "kanade-shirabe-student": 1,
+type Setting = {
+  defaultIndex?: number;
+  forceIndex?: number;
+  navigateUrlOnSwitchSprite: ((url: string) => string | undefined)[];
 };
+type Settings = Map<CharactersId, Setting>;
+
+const specialSettings: Settings = new Map([
+  [
+    CharactersId.KanadeShirabe,
+    {
+      navigateUrlOnSwitchSprite: [
+        (url: string) =>
+          // hideは学生の調
+          url.includes("hide")
+            ? Url.characterTo(CharactersId.KanadeShirabeStudent)
+            : undefined,
+        (url: string) =>
+          // 2以降は大人の調
+          url.match(/[2-9]\.png$/g)
+            ? Url.characterTo(CharactersId.KanadeShirabeAdult)
+            : undefined,
+      ],
+    },
+  ],
+  [
+    CharactersId.KanadeShirabeAdult,
+    {
+      defaultIndex: 1,
+      navigateUrlOnSwitchSprite: [
+        (url: string) =>
+          // hideは学生の調
+          url.includes("hide")
+            ? Url.characterTo(CharactersId.KanadeShirabeStudent)
+            : undefined,
+        (url: string) =>
+          // 1までは通常の調
+          url.match(/[01]\.png$/g)
+            ? Url.characterTo(CharactersId.KanadeShirabe)
+            : undefined,
+      ],
+    },
+  ],
+  [
+    CharactersId.KanadeShirabeStudent,
+    {
+      defaultIndex: 1,
+      navigateUrlOnSwitchSprite: [
+        (url: string) =>
+          // hideは通常の調
+          url.includes("hide")
+            ? Url.characterTo(CharactersId.KanadeShirabe)
+            : undefined,
+      ],
+      // 学生の調のページはコスチュームリストが大きく変わるため、強制的にインデックスを1にする
+      forceIndex: 1,
+    },
+  ],
+]);
 
 export const useSprites = (
   navigate: NavigateFunction,
-  characterId: string,
+  characterId: CharactersId,
   sprites: Sprites[]
 ) => {
   const [displaySpriteIndex, setDisplaySpriteIndex] = useState(
-    characterDefaultSpriteIndex[characterId] ?? 0
+    specialSettings.get(characterId)?.defaultIndex ?? 0
   );
   const safeDisplaySpriteIndex = useMemo(
     () => Math.min(displaySpriteIndex, sprites.length - 1),
@@ -23,32 +79,18 @@ export const useSprites = (
 
   const onClickFactory = (index: number, url: Sprites) => {
     let setIndex = index;
-    let navigateUrl = undefined;
+    let navigateUrl: string | undefined = undefined;
 
-    switch (characterId) {
-      case "kanade-shirabe":
-        if (url.iconUrl.includes("hide")) {
-          navigateUrl = "/characters/kanade-shirabe-student";
-        } else if (url.iconUrl.match(/[2-9]\.png$/g)) {
-          navigateUrl = "/characters/kanade-shirabe-adult";
-        }
-        break;
-      case "kanade-shirabe-student":
-        if (url.iconUrl.includes("hide")) {
-          navigateUrl = "/characters/kanade-shirabe";
-        }
-        break;
-      case "kanade-shirabe-adult":
-        if (url.iconUrl.includes("hide")) {
-          navigateUrl = "/characters/kanade-shirabe-student";
-        } else if (url.iconUrl.match(/[01]\.png$/g)) {
-          navigateUrl = "/characters/kanade-shirabe";
-        }
-        break;
-    }
-    // 学生の調のページはコスチュームリストが大きく変わるため、強制的にインデックスを1にする
-    if (navigateUrl === "/characters/kanade-shirabe-student") {
-      setIndex = 1;
+    specialSettings.get(characterId)?.navigateUrlOnSwitchSprite.map((rule) => {
+      const tmpUrl = rule(url.iconUrl);
+      if (tmpUrl) {
+        navigateUrl = tmpUrl;
+      }
+    });
+
+    const forceIndex = specialSettings.get(characterId)?.forceIndex;
+    if (forceIndex) {
+      setIndex = forceIndex;
     }
 
     return () => {
@@ -67,7 +109,7 @@ export const useSprites = (
   }, [displaySpriteIndex, onClickFactory]);
 
   useEffect(() => {
-    const defaultIndex = characterDefaultSpriteIndex[characterId];
+    const defaultIndex = specialSettings.get(characterId)?.defaultIndex;
 
     if (defaultIndex === undefined) {
       setDisplaySpriteIndex(0);
