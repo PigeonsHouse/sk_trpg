@@ -82,7 +82,8 @@ export const ImageContainer = styled.div<{
   background-color: ${(props) => props.backgroundColor};
   border-radius: 50%;
   overflow: hidden;
-  max-width: 100px;
+  width: ${IconSizeCalc};
+  aspect-ratio: 1;
   cursor: pointer;
   transition: filter 0.1s;
   ${(props) =>
