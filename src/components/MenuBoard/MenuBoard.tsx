@@ -14,9 +14,14 @@ import {
 type MenuBoardProps = {
   className?: string;
   isHide?: boolean;
+  isSp?: boolean;
 };
 
-export const MenuBoard: React.FC<MenuBoardProps> = ({ className, isHide }) => {
+export const MenuBoard: React.FC<MenuBoardProps> = ({
+  className,
+  isHide,
+  isSp,
+}) => {
   const [isOpen, setIsOpen] = useState(false);
   const onSwitchMenu = useCallback(() => {
     setIsOpen((prev) => !prev);
@@ -25,18 +30,18 @@ export const MenuBoard: React.FC<MenuBoardProps> = ({ className, isHide }) => {
   return (
     <Container className={className}>
       <BoardContainer isHide={isHide}>
-        <Board onClick={onSwitchMenu}>
+        <Board isSp={isSp} onClick={onSwitchMenu}>
           <GoogleFontIcon
             iconName="arrow_back"
-            size={88}
+            size={isSp ? 56 : 88}
             className={IconStyle(isOpen)}
           />
-          <Text>MENU</Text>
+          <Text isSp={isSp}>MENU</Text>
         </Board>
         <Bar position="left" />
         <Bar position="right" />
-        <MenuContainer isOpen={isOpen}>
-          <TopGuideBoard />
+        <MenuContainer isOpen={isOpen} isSp={isSp}>
+          <TopGuideBoard isSp={isSp} />
         </MenuContainer>
       </BoardContainer>
     </Container>

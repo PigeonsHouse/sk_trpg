@@ -3,6 +3,7 @@ import { useNavigate } from "react-router";
 import {
   CostumeList,
   GoogleFontIcon,
+  MenuBoard,
   NameBoard,
   NavigateArrow,
   ShortIdBoard,
@@ -23,6 +24,7 @@ import {
   SpHeaderContainer,
   SpMarginContainer,
   SpMarginContainerRelative,
+  SpMenuBoardStyle,
   SpNameBoardStyle,
   SpShortIdBoardStyle,
   SpSingleLightStyle,
@@ -95,6 +97,7 @@ export const SpCharacterAbout: React.FC<SpCharacterAboutProps> = ({
           disabled={!handleNext}
           onClick={handleNext}
         />
+        <MenuBoard className={SpMenuBoardStyle} isSp />
       </SpHeaderContainer>
       <SpSpriteContainer backgroundColor={mainColor}>
         <SpMarginContainerRelative>

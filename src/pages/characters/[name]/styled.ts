@@ -242,6 +242,12 @@ export const SpNameBoardStyle = css`
   flex-grow: 1;
 `;
 
+export const SpMenuBoardStyle = css`
+  position: absolute;
+  top: 100px;
+  right: 8px;
+`;
+
 export const SpContainer = styled.div`
   margin-top: 100px;
 `;

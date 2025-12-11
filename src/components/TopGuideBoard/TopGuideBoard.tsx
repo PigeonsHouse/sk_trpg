@@ -17,57 +17,59 @@ import {
 
 type TopGuideBoardProps = {
   className?: string;
+  isSp?: boolean;
 };
 
-export const TopGuideBoard: React.FC<TopGuideBoardProps> = ({ className }) => {
+export const TopGuideBoard: React.FC<TopGuideBoardProps> = ({
+  className,
+  isSp,
+}) => {
+  const menuContents = [
+    {
+      link: Url.aboutTo("about"),
+      label: "このサイトは何？",
+      enLabel: "What is this?",
+    },
+    {
+      link: Url.aboutTo("characters"),
+      label: "キャラクター",
+      enLabel: "Characters",
+    },
+    {
+      link: Url.aboutTo("twitter"),
+      label: "X",
+      enLabel: "Twitter",
+    },
+    {
+      link: Url.aboutTo("skeb"),
+      label: "Skeb",
+      enLabel: "Skeb",
+    },
+  ];
+
   return (
-    <Container className={className}>
+    <Container isSp={isSp} className={className}>
       <Link to={Url.top} className={NoDecorationLinkStyle}>
         <TopContainer>
           <GoogleFontIcon
             iconName="arrow_outward"
-            size={80}
+            size={isSp ? 64 : 80}
             className={ArrowStyle}
           />
-          <TopLabel>TOP</TopLabel>
+          <TopLabel isSp={isSp}>TOP</TopLabel>
         </TopContainer>
       </Link>
-      <Link to={Url.aboutTo("about")} className={NoDecorationLinkStyle}>
-        <OneLineContainer>
-          <Box />
-          <TextContainer>
-            <BigText>このサイトは何？</BigText>
-            <SmallText>What is this?</SmallText>
-          </TextContainer>
-        </OneLineContainer>
-      </Link>
-      <Link to={Url.aboutTo("characters")} className={NoDecorationLinkStyle}>
-        <OneLineContainer>
-          <Box />
-          <TextContainer>
-            <BigText>キャラクター</BigText>
-            <SmallText>Characters</SmallText>
-          </TextContainer>
-        </OneLineContainer>
-      </Link>
-      <Link to={Url.aboutTo("twitter")} className={NoDecorationLinkStyle}>
-        <OneLineContainer>
-          <Box />
-          <TextContainer>
-            <BigText>X</BigText>
-            <SmallText>Twitter</SmallText>
-          </TextContainer>
-        </OneLineContainer>
-      </Link>
-      <Link to={Url.aboutTo("skeb")} className={NoDecorationLinkStyle}>
-        <OneLineContainer>
-          <Box />
-          <TextContainer>
-            <BigText>Skeb</BigText>
-            <SmallText>Skeb</SmallText>
-          </TextContainer>
-        </OneLineContainer>
-      </Link>
+      {menuContents.map((content, idx) => (
+        <Link key={idx} to={content.link} className={NoDecorationLinkStyle}>
+          <OneLineContainer>
+            <Box isSp={isSp} />
+            <TextContainer>
+              <BigText isSp={isSp}>{content.label}</BigText>
+              <SmallText isSp={isSp}>{content.enLabel}</SmallText>
+            </TextContainer>
+          </OneLineContainer>
+        </Link>
+      ))}
     </Container>
   );
 };
