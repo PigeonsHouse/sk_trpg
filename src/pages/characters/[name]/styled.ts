@@ -233,6 +233,7 @@ export const SpSpriteContainer = styled.div<{ backgroundColor: string }>`
   background-color: ${(props) => props.backgroundColor};
   height: calc(100dvh - 100px);
   position: relative;
+  overflow-x: hidden;
 `;
 
 export const SpTrafficLightStyle = css`
