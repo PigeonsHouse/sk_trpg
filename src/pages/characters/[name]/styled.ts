@@ -249,6 +249,7 @@ export const SpContainer = styled.div`
 export const SpSpriteContainer = styled.div<{ backgroundColor: string }>`
   background-color: ${(props) => props.backgroundColor};
   height: calc(100svh - 100px);
+  min-height: 560px;
   position: relative;
   overflow-x: hidden;
 `;
