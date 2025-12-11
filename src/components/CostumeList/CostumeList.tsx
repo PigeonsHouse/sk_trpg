@@ -1,7 +1,6 @@
 import { arraySplit } from "../../utils";
 import {
   Bar,
-  DummyStyle,
   Image,
   ImageContainer,
   Item,
@@ -15,7 +14,6 @@ export type CostumeItem = {
   isSelected: boolean;
   imageUrl: string;
   onClick: () => void;
-  dummy?: boolean;
 };
 
 type CostumeListProps = {
@@ -36,25 +34,14 @@ export const CostumeList: React.FC<CostumeListProps> = ({
   isSp,
 }) => {
   const lastLineIndex = Math.ceil(items.length / MAX_WIDTH_ITEM) - 1;
-
-  const dummyCount =
-    (MAX_WIDTH_ITEM - (items.length % MAX_WIDTH_ITEM)) % MAX_WIDTH_ITEM;
-  const itemsWithDummy: (CostumeItem | undefined)[] = [
-    ...items,
-    ...Array(dummyCount).fill({ ...items[items.length - 1], dummy: true }),
-  ];
   const splittedList = arraySplit(items, MAX_WIDTH_ITEM);
-  const splittedListWithDummy = arraySplit(itemsWithDummy, MAX_WIDTH_ITEM);
 
   return (
     <ListContainer isSp={isSp} className={className}>
-      {splittedListWithDummy.map((splitItems, i) => (
+      {splittedList.map((splitItems, i) => (
         <OneLineContainer key={i}>
           {splitItems.map((item, j) => (
-            <Item
-              key={`${i}-${j}`}
-              className={item.dummy ? DummyStyle : undefined}
-            >
+            <Item key={`${i}-${j}`}>
               <SingleItemContainer onClick={item.onClick}>
                 <ItemLight
                   isSelected={item.isSelected}
@@ -64,7 +51,6 @@ export const CostumeList: React.FC<CostumeListProps> = ({
                 <ImageContainer
                   backgroundColor={color}
                   isSelected={item.isSelected}
-                  isSp={isSp}
                 >
                   <Image src={item.imageUrl} />
                 </ImageContainer>
@@ -74,10 +60,10 @@ export const CostumeList: React.FC<CostumeListProps> = ({
 
           <Bar
             idx={i}
-            count={splittedList[i].length}
+            count={splitItems.length}
             extendLeft={i !== 0}
             extendRight={
-              splittedList[i].length === MAX_WIDTH_ITEM && i !== lastLineIndex
+              splitItems.length === MAX_WIDTH_ITEM && i !== lastLineIndex
             }
             isSp={isSp}
           />

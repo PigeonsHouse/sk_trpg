@@ -1,4 +1,3 @@
-import { css } from "@emotion/css";
 import styled from "@emotion/styled";
 import { UiColor } from "../../definitions";
 
@@ -31,10 +30,6 @@ export const OneLineContainer = styled.div`
   display: flex;
   align-items: flex-end;
   gap: ${ItemGap}px;
-`;
-
-export const DummyStyle = css`
-  opacity: 0;
 `;
 
 export const Item = styled.li``;
@@ -81,7 +76,6 @@ export const ItemLight = styled.div<{
 export const ImageContainer = styled.div<{
   backgroundColor: string;
   isSelected: boolean;
-  isSp?: boolean;
 }>`
   display: inline-block;
   background-color: ${(props) => props.backgroundColor};
