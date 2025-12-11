@@ -1,54 +1,31 @@
+import { css } from "@emotion/css";
 import styled from "@emotion/styled";
-import { FontWeight, UiColor } from "../../definitions";
+import { UiColor } from "../../definitions";
 
-export const Container = styled.div``;
+const ItemGap = 20;
+const MaxIconSize = 100;
+const IconSizeCalc = `min(calc((100vw - var(--scrollbar-width) - ${20 * 2}px - ${ItemGap * 3}px) / 4), ${MaxIconSize}px)`;
 
-export const TitleContainer = styled.div`
-  height: 64px;
-  display: flex;
-  align-items: center;
-`;
-
-export const Title = styled.h2`
+export const ListContainer = styled.ul<{ isSp?: boolean }>`
   margin: 0;
-  font-size: 44px;
-  font-weight: ${FontWeight.Bold};
-  line-height: 1;
-`;
-
-export const ListContainer = styled.ul`
-  margin: 0;
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   padding-top: 16px;
-  padding-left: 40px;
-  padding-bottom: 48px;
-  position: relative;
+  ${(props) => (props.isSp ? "padding-left: 0;" : undefined)}
+  padding-bottom: ${(props) => (props.isSp ? 32 : 48)}px;
   box-sizing: border-box;
   list-style: none;
 `;
 
-export const Bar = styled.div<{
-  idx: number;
-  count: number;
-  extendLeft: boolean;
-  extendRight: boolean;
-}>`
-  position: absolute;
-  height: 6px;
-  width: ${(props) =>
-    (props.count - 1) * 122 +
-    (props.extendLeft ? 36 : 0) +
-    (props.extendRight ? 36 : 0)}px;
-  top: ${(props) => 40 + 156 * props.idx}px;
-  background-color: ${UiColor.gray};
-  margin-left: ${(props) => (props.extendLeft ? 12 : 48)}px;
-`;
-
 export const OneLineContainer = styled.div`
+  position: relative;
   display: flex;
   align-items: flex-end;
-  gap: 20px;
+  gap: ${ItemGap}px;
+`;
+
+export const DummyStyle = css`
+  opacity: 0;
 `;
 
 export const Item = styled.li``;
@@ -65,30 +42,47 @@ export const SingleItemContainer = styled.button`
   }
 `;
 
+const LightBoxSize = 56;
+const LightBorder = 6;
+const SelectedLightWidth = (isSp?: boolean) => (isSp ? 24 : 28);
+const UnselectedLightWidth = (isSp?: boolean) => (isSp ? 14 : 16);
 export const ItemLight = styled.div<{
   isSelected: boolean;
   selectedColor: string;
+  isSp?: boolean;
 }>`
-  width: ${(props) => (props.isSelected ? 28 : 16)}px;
-  height: ${(props) => (props.isSelected ? 28 : 16)}px;
-  border: 6px solid ${UiColor.gray};
+  width: ${(props) =>
+    props.isSelected
+      ? SelectedLightWidth(props.isSp)
+      : UnselectedLightWidth(props.isSp)}px;
+  height: ${(props) =>
+    props.isSelected
+      ? SelectedLightWidth(props.isSp)
+      : UnselectedLightWidth(props.isSp)}px;
+  border: ${LightBorder}px solid ${UiColor.gray};
   background-color: ${(props) =>
     props.isSelected ? props.selectedColor : "white"};
   border-radius: 4px;
-  margin: ${(props) => (props.isSelected ? 8 : 14)}px;
+  margin: ${(props) =>
+    (LightBoxSize -
+      (props.isSelected
+        ? SelectedLightWidth(props.isSp)
+        : UnselectedLightWidth(props.isSp))) /
+      2 -
+    LightBorder}px;
   z-index: 1;
 `;
 
 export const ImageContainer = styled.div<{
   backgroundColor: string;
   isSelected: boolean;
+  isSp?: boolean;
 }>`
   display: inline-block;
   background-color: ${(props) => props.backgroundColor};
   border-radius: 50%;
   overflow: hidden;
-  width: 100px;
-  height: 100px;
+  max-width: 100px;
   cursor: pointer;
   transition: filter 0.1s;
   ${(props) =>
@@ -101,5 +95,34 @@ export const ImageContainer = styled.div<{
 export const Image = styled.img`
   object-fit: cover;
   object-position: top;
-  width: 100px;
+  width: 100%;
+  vertical-align: middle;
+`;
+
+const BarWidth = 6;
+const TopOffset = LightBoxSize / 2 - BarWidth / 2;
+const LeftOffsetCalc = `calc(${IconSizeCalc} / 2 - ${BarWidth / 2}px)`;
+const ItemWidthCalc = `calc(${IconSizeCalc} + ${ItemGap}px)`;
+const ExtendLength = (isSp?: boolean) => (isSp ? 28 : 36);
+export const Bar = styled.div<{
+  idx: number;
+  count: number;
+  extendLeft: boolean;
+  extendRight: boolean;
+  isSp?: boolean;
+}>`
+  position: absolute;
+  height: ${BarWidth}px;
+  background-color: ${UiColor.gray};
+  left: 0;
+  top: ${TopOffset}px;
+  width: calc(
+    ${BarWidth}px + ${ItemWidthCalc} * ${(props) => props.count - 1} +
+      ${(props) => (props.extendLeft ? ExtendLength(props.isSp) : 0)}px +
+      ${(props) => (props.extendRight ? ExtendLength(props.isSp) : 0)}px
+  );
+  margin-left: calc(
+    ${LeftOffsetCalc} -
+      ${(props) => (props.extendLeft ? ExtendLength(props.isSp) : 0)}px
+  );
 `;

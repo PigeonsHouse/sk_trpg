@@ -1,6 +1,11 @@
 import { css } from "@emotion/css";
 import styled from "@emotion/styled";
-import { BREAK_POINT, SP_MAX_WIDTH, UiColor } from "../../../definitions";
+import {
+  BREAK_POINT,
+  FontWeight,
+  SP_MAX_WIDTH,
+  UiColor,
+} from "../../../definitions";
 
 export const Loading = styled.div`
   height: 100dvh;
@@ -94,6 +99,18 @@ export const GradationBackground = styled.section<{
 
 export const CostumeContainer = styled.div`
   padding-left: 32px;
+`;
+
+export const CostumeTitleContainer = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
+export const CostumeTitle = styled.h2`
+  margin: 0;
+  font-size: 44px;
+  font-weight: ${FontWeight.Bold};
+  line-height: 1;
 `;
 
 export const TwoColumnsContainer = styled.div`
@@ -275,4 +292,8 @@ export const SpMarginContainer = styled.div`
 
 export const SpMarginContainerRelative = styled(SpMarginContainer)`
   position: relative;
+`;
+
+export const SpCostumeTitle = styled(CostumeTitle)`
+  font-size: 24px;
 `;

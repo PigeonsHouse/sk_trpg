@@ -1,21 +1,24 @@
 import { useMemo } from "react";
 import { useNavigate } from "react-router";
-import { css } from "@emotion/css";
 import {
   CostumeList,
+  GoogleFontIcon,
   NameBoard,
   NavigateArrow,
   ShortIdBoard,
   SingleLight,
   TrafficLight,
 } from "../../../components";
-import { CharactersId } from "../../../definitions";
+import { CharactersId, UiColor } from "../../../definitions";
+import { useScrollbarWidth } from "../../../hooks";
 import type { CharacterDetail, CharacterSummary } from "../../../types";
 import { calcNameSize } from "../../../utils";
 import { useHeader, useSprites } from "./index.app";
 import {
+  CostumeTitleContainer,
   GradationBackground,
   SpContainer,
+  SpCostumeTitle,
   SpHeaderContainer,
   SpMarginContainer,
   SpMarginContainerRelative,
@@ -40,6 +43,8 @@ export const SpCharacterAbout: React.FC<SpCharacterAboutProps> = ({
   index,
   data,
 }) => {
+  // スタイル調整のため
+  useScrollbarWidth();
   const navigate = useNavigate();
 
   const [mainColor, secondColor, yellowColor] = useMemo(() => {
@@ -114,13 +119,19 @@ export const SpCharacterAbout: React.FC<SpCharacterAboutProps> = ({
       </SpSpriteContainer>
       <GradationBackground startColor={mainColor} endColor={secondColor}>
         <SpMarginContainer>
+          <CostumeTitleContainer>
+            <GoogleFontIcon
+              iconName="fmd_good"
+              size={32}
+              color={UiColor.darkGray}
+            />
+            <SpCostumeTitle>衣装差分</SpCostumeTitle>
+          </CostumeTitleContainer>
           <CostumeList
             items={costumeList}
             color={mainColor}
             selectedColor={yellowColor}
-            className={css`
-              transform: translateX(-60px) scale(0.6);
-            `}
+            isSp
           />
         </SpMarginContainer>
       </GradationBackground>

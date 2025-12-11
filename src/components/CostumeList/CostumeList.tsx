@@ -1,9 +1,7 @@
-import { UiColor } from "../../definitions";
 import { arraySplit } from "../../utils";
-import { GoogleFontIcon } from "../GoogleFontIcon";
 import {
   Bar,
-  Container,
+  DummyStyle,
   Image,
   ImageContainer,
   Item,
@@ -11,14 +9,13 @@ import {
   ListContainer,
   OneLineContainer,
   SingleItemContainer,
-  Title,
-  TitleContainer,
 } from "./styled";
 
 export type CostumeItem = {
   isSelected: boolean;
   imageUrl: string;
   onClick: () => void;
+  dummy?: boolean;
 };
 
 type CostumeListProps = {
@@ -26,6 +23,7 @@ type CostumeListProps = {
   items: CostumeItem[];
   color: string;
   selectedColor: string;
+  isSp?: boolean;
 };
 
 const MAX_WIDTH_ITEM = 4;
@@ -35,51 +33,56 @@ export const CostumeList: React.FC<CostumeListProps> = ({
   items,
   color,
   selectedColor,
+  isSp,
 }) => {
-  const splittedList = arraySplit(items, MAX_WIDTH_ITEM);
   const lastLineIndex = Math.ceil(items.length / MAX_WIDTH_ITEM) - 1;
 
-  return (
-    <Container>
-      <TitleContainer>
-        <GoogleFontIcon
-          iconName="fmd_good"
-          size={64}
-          color={UiColor.darkGray}
-        />
-        <Title>衣装差分</Title>
-      </TitleContainer>
-      <ListContainer className={className}>
-        {splittedList.map((splitItems, i) => (
-          <OneLineContainer key={i}>
-            {splitItems.map((item, j) => (
-              <Item key={`${i}-${j}`}>
-                <SingleItemContainer onClick={item.onClick}>
-                  <ItemLight
-                    isSelected={item.isSelected}
-                    selectedColor={selectedColor}
-                  />
-                  <ImageContainer
-                    backgroundColor={color}
-                    isSelected={item.isSelected}
-                  >
-                    <Image src={item.imageUrl} />
-                  </ImageContainer>
-                </SingleItemContainer>
-              </Item>
-            ))}
+  const dummyCount =
+    (MAX_WIDTH_ITEM - (items.length % MAX_WIDTH_ITEM)) % MAX_WIDTH_ITEM;
+  const itemsWithDummy: (CostumeItem | undefined)[] = [
+    ...items,
+    ...Array(dummyCount).fill({ ...items[items.length - 1], dummy: true }),
+  ];
+  const splittedList = arraySplit(items, MAX_WIDTH_ITEM);
+  const splittedListWithDummy = arraySplit(itemsWithDummy, MAX_WIDTH_ITEM);
 
-            <Bar
-              idx={i}
-              count={splitItems.length}
-              extendLeft={i !== 0}
-              extendRight={
-                splitItems.length === MAX_WIDTH_ITEM && i !== lastLineIndex
-              }
-            />
-          </OneLineContainer>
-        ))}
-      </ListContainer>
-    </Container>
+  return (
+    <ListContainer isSp={isSp} className={className}>
+      {splittedListWithDummy.map((splitItems, i) => (
+        <OneLineContainer key={i}>
+          {splitItems.map((item, j) => (
+            <Item
+              key={`${i}-${j}`}
+              className={item.dummy ? DummyStyle : undefined}
+            >
+              <SingleItemContainer onClick={item.onClick}>
+                <ItemLight
+                  isSelected={item.isSelected}
+                  selectedColor={selectedColor}
+                  isSp={isSp}
+                />
+                <ImageContainer
+                  backgroundColor={color}
+                  isSelected={item.isSelected}
+                  isSp={isSp}
+                >
+                  <Image src={item.imageUrl} />
+                </ImageContainer>
+              </SingleItemContainer>
+            </Item>
+          ))}
+
+          <Bar
+            idx={i}
+            count={splittedList[i].length}
+            extendLeft={i !== 0}
+            extendRight={
+              splittedList[i].length === MAX_WIDTH_ITEM && i !== lastLineIndex
+            }
+            isSp={isSp}
+          />
+        </OneLineContainer>
+      ))}
+    </ListContainer>
   );
 };

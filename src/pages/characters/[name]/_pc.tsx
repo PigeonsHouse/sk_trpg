@@ -6,6 +6,7 @@ import {
   CharacterHeader,
   CommentFrame,
   CostumeList,
+  GoogleFontIcon,
   HistoryFrame,
   ProfileFrame,
   QAFrame,
@@ -13,7 +14,7 @@ import {
   StatusFrame,
   Window,
 } from "../../../components";
-import { Url, type CharactersId } from "../../../definitions";
+import { UiColor, Url, type CharactersId } from "../../../definitions";
 import type { CharacterDetail, CharacterSummary } from "../../../types";
 import { useHeader, useHistory, useSprites } from "./index.app";
 import {
@@ -35,6 +36,8 @@ import {
   BrailleBlock,
   RoadBackGround,
   MarginContainer,
+  CostumeTitleContainer,
+  CostumeTitle,
 } from "./styled";
 
 type PcCharacterAboutProps = {
@@ -102,6 +105,14 @@ export const PcCharacterAbout: React.FC<PcCharacterAboutProps> = ({
         <GradationBackground startColor={mainColor} endColor={secondColor}>
           <MarginContainer>
             <CostumeContainer>
+              <CostumeTitleContainer>
+                <GoogleFontIcon
+                  iconName="fmd_good"
+                  size={64}
+                  color={UiColor.darkGray}
+                />
+                <CostumeTitle>衣装差分</CostumeTitle>
+              </CostumeTitleContainer>
               <CostumeList
                 items={costumeList}
                 color={mainColor}
