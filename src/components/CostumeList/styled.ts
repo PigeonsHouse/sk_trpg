@@ -2,9 +2,18 @@ import { css } from "@emotion/css";
 import styled from "@emotion/styled";
 import { UiColor } from "../../definitions";
 
+const LightBoxSize = 56;
+const LightBorder = 6;
+const SelectedLightWidth = (isSp?: boolean) => (isSp ? 24 : 28);
+const UnselectedLightWidth = (isSp?: boolean) => (isSp ? 14 : 16);
 const ItemGap = 20;
 const MaxIconSize = 100;
 const IconSizeCalc = `min(calc((100vw - var(--scrollbar-width) - ${20 * 2}px - ${ItemGap * 3}px) / 4), ${MaxIconSize}px)`;
+const BarWidth = 6;
+const BarTopOffset = LightBoxSize / 2 - BarWidth / 2;
+const BarLeftOffsetCalc = `calc(${IconSizeCalc} / 2 - ${BarWidth / 2}px)`;
+const ItemWidthCalc = `calc(${IconSizeCalc} + ${ItemGap}px)`;
+const BarExtendLength = (isSp?: boolean) => (isSp ? 28 : 36);
 
 export const ListContainer = styled.ul<{ isSp?: boolean }>`
   margin: 0;
@@ -42,10 +51,6 @@ export const SingleItemContainer = styled.button`
   }
 `;
 
-const LightBoxSize = 56;
-const LightBorder = 6;
-const SelectedLightWidth = (isSp?: boolean) => (isSp ? 24 : 28);
-const UnselectedLightWidth = (isSp?: boolean) => (isSp ? 14 : 16);
 export const ItemLight = styled.div<{
   isSelected: boolean;
   selectedColor: string;
@@ -100,11 +105,6 @@ export const Image = styled.img`
   vertical-align: middle;
 `;
 
-const BarWidth = 6;
-const TopOffset = LightBoxSize / 2 - BarWidth / 2;
-const LeftOffsetCalc = `calc(${IconSizeCalc} / 2 - ${BarWidth / 2}px)`;
-const ItemWidthCalc = `calc(${IconSizeCalc} + ${ItemGap}px)`;
-const ExtendLength = (isSp?: boolean) => (isSp ? 28 : 36);
 export const Bar = styled.div<{
   idx: number;
   count: number;
@@ -116,14 +116,14 @@ export const Bar = styled.div<{
   height: ${BarWidth}px;
   background-color: ${UiColor.gray};
   left: 0;
-  top: ${TopOffset}px;
+  top: ${BarTopOffset}px;
   width: calc(
     ${BarWidth}px + ${ItemWidthCalc} * ${(props) => props.count - 1} +
-      ${(props) => (props.extendLeft ? ExtendLength(props.isSp) : 0)}px +
-      ${(props) => (props.extendRight ? ExtendLength(props.isSp) : 0)}px
+      ${(props) => (props.extendLeft ? BarExtendLength(props.isSp) : 0)}px +
+      ${(props) => (props.extendRight ? BarExtendLength(props.isSp) : 0)}px
   );
   margin-left: calc(
-    ${LeftOffsetCalc} -
-      ${(props) => (props.extendLeft ? ExtendLength(props.isSp) : 0)}px
+    ${BarLeftOffsetCalc} -
+      ${(props) => (props.extendLeft ? BarExtendLength(props.isSp) : 0)}px
   );
 `;
