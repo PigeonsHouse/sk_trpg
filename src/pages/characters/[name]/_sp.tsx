@@ -11,7 +11,6 @@ import {
   TrafficLight,
 } from "../../../components";
 import { CharactersId, UiColor } from "../../../definitions";
-import { useScrollbarWidth } from "../../../hooks";
 import type { CharacterDetail, CharacterSummary } from "../../../types";
 import { calcNameSize } from "../../../utils";
 import { useHeader, useSprites } from "./index.app";
@@ -46,8 +45,6 @@ export const SpCharacterAbout: React.FC<SpCharacterAboutProps> = ({
   index,
   data,
 }) => {
-  // スタイル調整のため
-  useScrollbarWidth();
   const navigate = useNavigate();
 
   const [mainColor, secondColor, yellowColor] = useMemo(() => {

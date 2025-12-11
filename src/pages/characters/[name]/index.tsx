@@ -1,13 +1,16 @@
 import { useEffect, useMemo, useState } from "react";
 import { useNavigate, useParams } from "react-router";
 import { APP_NAME, CharactersId, Url } from "../../../definitions";
-import { useBreakPoint } from "../../../hooks";
+import { useBreakPoint, useScrollbarWidth } from "../../../hooks";
 import type { CharacterDetail, CharacterSummary } from "../../../types";
 import { PcCharacterAbout } from "./_pc";
 import { SpCharacterAbout } from "./_sp";
 import { Loading } from "./styled";
 
 const CharacterAbout = () => {
+  // スタイル調整のため
+  useScrollbarWidth();
+
   const navigate = useNavigate();
   const { name: rawCharacterId } = useParams();
   const characterId = useMemo(() => {
