@@ -5,13 +5,16 @@ const LightBoxSize = 56;
 const LightBorder = 6;
 const SelectedLightWidth = (isSp?: boolean) => (isSp ? 24 : 28);
 const UnselectedLightWidth = (isSp?: boolean) => (isSp ? 14 : 16);
-const ItemGap = 20;
+const ItemGap = (isSp?: boolean) => (isSp ? 16 : 20);
 const MaxIconSize = 100;
-const IconSizeCalc = `min(calc((100vw - var(--scrollbar-width) - ${20 * 2}px - ${ItemGap * 3}px) / 4), ${MaxIconSize}px)`;
+const IconSizeCalc = (isSp?: boolean) =>
+  `min(calc((100vw - var(--scrollbar-width) - ${20 * 2}px - ${ItemGap(isSp) * 3}px) / 4), ${MaxIconSize}px)`;
 const BarWidth = 6;
 const BarTopOffset = LightBoxSize / 2 - BarWidth / 2;
-const BarLeftOffsetCalc = `calc(${IconSizeCalc} / 2 - ${BarWidth / 2}px)`;
-const ItemWidthCalc = `calc(${IconSizeCalc} + ${ItemGap}px)`;
+const BarLeftOffsetCalc = (isSp?: boolean) =>
+  `calc(${IconSizeCalc(isSp)} / 2 - ${BarWidth / 2}px)`;
+const ItemWidthCalc = (isSp?: boolean) =>
+  `calc(${IconSizeCalc(isSp)} + ${ItemGap(isSp)}px)`;
 const BarExtendLength = (isSp?: boolean) => (isSp ? 28 : 36);
 
 export const ListContainer = styled.ul<{ isSp?: boolean }>`
@@ -25,11 +28,11 @@ export const ListContainer = styled.ul<{ isSp?: boolean }>`
   list-style: none;
 `;
 
-export const OneLineContainer = styled.div`
+export const OneLineContainer = styled.div<{ isSp?: boolean }>`
   position: relative;
   display: flex;
   align-items: flex-end;
-  gap: ${ItemGap}px;
+  gap: ${(props) => ItemGap(props.isSp)}px;
 `;
 
 export const Item = styled.li``;
@@ -76,12 +79,13 @@ export const ItemLight = styled.div<{
 export const ImageContainer = styled.div<{
   backgroundColor: string;
   isSelected: boolean;
+  isSp?: boolean;
 }>`
   display: inline-block;
   background-color: ${(props) => props.backgroundColor};
   border-radius: 50%;
   overflow: hidden;
-  width: ${IconSizeCalc};
+  width: ${(props) => IconSizeCalc(props.isSp)};
   aspect-ratio: 1;
   cursor: pointer;
   transition: filter 0.1s;
@@ -112,12 +116,13 @@ export const Bar = styled.div<{
   left: 0;
   top: ${BarTopOffset}px;
   width: calc(
-    ${BarWidth}px + ${ItemWidthCalc} * ${(props) => props.count - 1} +
+    ${BarWidth}px + ${(props) => ItemWidthCalc(props.isSp)} *
+      ${(props) => props.count - 1} +
       ${(props) => (props.extendLeft ? BarExtendLength(props.isSp) : 0)}px +
       ${(props) => (props.extendRight ? BarExtendLength(props.isSp) : 0)}px
   );
   margin-left: calc(
-    ${BarLeftOffsetCalc} -
+    ${(props) => BarLeftOffsetCalc(props.isSp)} -
       ${(props) => (props.extendLeft ? BarExtendLength(props.isSp) : 0)}px
   );
 `;

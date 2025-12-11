@@ -39,7 +39,7 @@ export const CostumeList: React.FC<CostumeListProps> = ({
   return (
     <ListContainer isSp={isSp} className={className}>
       {splittedList.map((splitItems, i) => (
-        <OneLineContainer key={i}>
+        <OneLineContainer key={i} isSp={isSp}>
           {splitItems.map((item, j) => (
             <Item key={`${i}-${j}`}>
               <SingleItemContainer onClick={item.onClick}>
