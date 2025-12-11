@@ -245,7 +245,7 @@ export const SpNameBoardStyle = css`
 export const SpMenuBoardStyle = css`
   position: absolute;
   top: 100px;
-  right: 8px;
+  right: calc(max(calc((100% - ${SP_MAX_WIDTH}px) / 2), 0px) + 8px);
 `;
 
 export const SpContainer = styled.div`
@@ -281,12 +281,10 @@ export const SpShortIdBoardStyle = css`
 export const SpSprite = styled.img`
   position: absolute;
   bottom: 0;
-  left: 0;
-  right: 0;
+  left: 50%;
+  transform: translateX(-50%);
   height: 100%;
-  max-width: 100vw;
   object-fit: cover;
-  margin: 0 auto;
   display: block;
   z-index: 1;
 `;
