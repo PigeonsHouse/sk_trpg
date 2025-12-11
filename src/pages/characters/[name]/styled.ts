@@ -298,3 +298,11 @@ export const SpMarginContainerRelative = styled(SpMarginContainer)`
 export const SpCostumeTitle = styled(CostumeTitle)`
   font-size: 24px;
 `;
+
+export const SpCostumeStyle = css`
+  && {
+    width: fit-content;
+    margin: 0 auto;
+    display: block;
+  }
+`;

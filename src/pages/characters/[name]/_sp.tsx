@@ -18,6 +18,7 @@ import {
   CostumeTitleContainer,
   GradationBackground,
   SpContainer,
+  SpCostumeStyle,
   SpCostumeTitle,
   SpHeaderContainer,
   SpMarginContainer,
@@ -131,6 +132,7 @@ export const SpCharacterAbout: React.FC<SpCharacterAboutProps> = ({
             items={costumeList}
             color={mainColor}
             selectedColor={yellowColor}
+            className={SpCostumeStyle}
             isSp
           />
         </SpMarginContainer>
