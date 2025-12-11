@@ -4,8 +4,8 @@ import { FontFamily, FontWeight, UiColor } from "../../definitions";
 
 export const Container = styled.div``;
 
-export const BoardContainer = styled.div<{ isHide?: boolean }>`
-  padding-top: 32px;
+export const BoardContainer = styled.div<{ isHide?: boolean; isSp?: boolean }>`
+  padding-top: ${(props) => (props.isSp ? 20 : 32)}px;
   transition: opacity 0.2s;
   opacity: ${(props) => (props.isHide ? 0 : 1)};
   position: relative;
@@ -23,16 +23,16 @@ export const Board = styled.div<{ isSp?: boolean }>`
   cursor: pointer;
 `;
 
-export const IconStyle = (isOpen: boolean) => css`
+export const IconStyle = (isOpen: boolean, isSp?: boolean) => css`
   font-weight: ${FontWeight.Bold};
   transition: transform 0.2s;
-  ${isOpen ? `transform: rotate(-90deg);` : undefined}
+  transform: rotate(${isOpen ? -90 : isSp ? -180 : 0}deg);
 `;
 
-export const Bar = styled.div<{ position: "left" | "right" }>`
+export const Bar = styled.div<{ position: "left" | "right"; isSp?: boolean }>`
   position: absolute;
-  width: 16px;
-  height: 32px;
+  width: ${(props) => (props.isSp ? 8 : 16)}px;
+  height: ${(props) => (props.isSp ? 20 : 32)}px;
   background-color: ${UiColor.gray};
   top: 0;
   ${(props) => props.position}: 8px;

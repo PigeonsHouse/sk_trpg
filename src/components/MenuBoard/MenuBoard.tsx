@@ -29,17 +29,17 @@ export const MenuBoard: React.FC<MenuBoardProps> = ({
 
   return (
     <Container className={className}>
-      <BoardContainer isHide={isHide}>
+      <BoardContainer isHide={isHide} isSp={isSp}>
         <Board isSp={isSp} onClick={onSwitchMenu}>
           <GoogleFontIcon
             iconName="arrow_back"
             size={isSp ? 56 : 88}
-            className={IconStyle(isOpen)}
+            className={IconStyle(isOpen, isSp)}
           />
           <Text isSp={isSp}>MENU</Text>
         </Board>
-        <Bar position="left" />
-        <Bar position="right" />
+        <Bar isSp={isSp} position="left" />
+        <Bar isSp={isSp} position="right" />
         <MenuContainer isOpen={isOpen} isSp={isSp}>
           <TopGuideBoard isSp={isSp} />
         </MenuContainer>
