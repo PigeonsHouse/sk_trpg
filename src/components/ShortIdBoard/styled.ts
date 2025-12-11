@@ -13,9 +13,9 @@ export const Container = styled.div<{
   justify-content: center;
   align-items: center;
   user-select: none;
-  width: ${(props) => (props.isSp ? 200 : 260)}px;
-  height: ${(props) => (props.isSp ? 140 : 160)}px;
-  font-size: ${(props) => (props.isSp ? 40 : 50)}px;
+  width: ${(props) => (props.isSp ? 177 : 260)}px;
+  height: ${(props) => (props.isSp ? 116 : 160)}px;
+  font-size: ${(props) => (props.isSp ? 32 : 50)}px;
   gap: ${(props) => (props.isSp ? 16 : 24)}px;
 `;
 
