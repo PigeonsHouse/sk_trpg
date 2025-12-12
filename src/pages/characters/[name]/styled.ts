@@ -223,6 +223,16 @@ export const BrailleBlock = styled.div<{ blockColor: string }>`
 `;
 
 /// ここからSPのみ利用するstyle
+export const SpBackdrop = styled.div<{ open?: boolean }>`
+  position: fixed;
+  inset: 0;
+  background-color: black;
+  z-index: 30;
+  transition: opacity, 0.2s;
+  opacity: ${(props) => (props.open ? 0.4 : 0)};
+  pointer-events: ${(props) => (props.open ? "unset" : "none")};
+`;
+
 export const SpHeaderContainer = styled.div<{ bgColor: string }>`
   position: fixed;
   top: 0;

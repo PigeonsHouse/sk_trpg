@@ -1,4 +1,4 @@
-import { useCallback, useState } from "react";
+import { useCallback } from "react";
 import { GoogleFontIcon } from "../GoogleFontIcon";
 import { TopGuideBoard } from "../TopGuideBoard";
 import {
@@ -15,17 +15,20 @@ type MenuBoardProps = {
   className?: string;
   isHide?: boolean;
   isSp?: boolean;
+  isOpen: boolean;
+  setIsOpen: (open: boolean) => void;
 };
 
 export const MenuBoard: React.FC<MenuBoardProps> = ({
   className,
   isHide,
   isSp,
+  isOpen,
+  setIsOpen,
 }) => {
-  const [isOpen, setIsOpen] = useState(false);
   const onSwitchMenu = useCallback(() => {
-    setIsOpen((prev) => !prev);
-  }, [setIsOpen]);
+    setIsOpen(!isOpen);
+  }, [isOpen, setIsOpen]);
 
   return (
     <Container className={className}>

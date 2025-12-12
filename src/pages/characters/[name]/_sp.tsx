@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+import { useCallback, useMemo, useState } from "react";
 import { useNavigate } from "react-router";
 import {
   CostumeList,
@@ -17,6 +17,7 @@ import { useHeader, useSprites } from "./index.app";
 import {
   CostumeTitleContainer,
   GradationBackground,
+  SpBackdrop,
   SpContainer,
   SpCostumeStyle,
   SpCostumeTitle,
@@ -70,8 +71,15 @@ export const SpCharacterAbout: React.FC<SpCharacterAboutProps> = ({
   //   navigate(Url.aboutTo("characters"));
   // }, [navigate]);
 
+  const [isBackdropOpen, setIsBackdropOpen] = useState(false);
+  const onBackdropClose = useCallback(
+    () => setIsBackdropOpen(false),
+    [setIsBackdropOpen]
+  );
+
   return (
     <SpContainer>
+      <SpBackdrop open={isBackdropOpen} onClick={onBackdropClose} />
       <SpHeaderContainer bgColor={mainColor}>
         <NavigateArrow
           arrowHeight={24}
@@ -80,12 +88,12 @@ export const SpCharacterAbout: React.FC<SpCharacterAboutProps> = ({
           onClick={handlePrevious}
         />
         <NameBoard
+          isHeading
           name={data.name}
           enName={data.enName}
           color={mainColor}
-          isHeading
-          className={SpNameBoardStyle}
           nameSize={calcNameSize(data.name)}
+          className={SpNameBoardStyle}
           isSp
         />
         <NavigateArrow
@@ -94,7 +102,12 @@ export const SpCharacterAbout: React.FC<SpCharacterAboutProps> = ({
           disabled={!handleNext}
           onClick={handleNext}
         />
-        <MenuBoard className={SpMenuBoardStyle} isSp />
+        <MenuBoard
+          isOpen={isBackdropOpen}
+          setIsOpen={setIsBackdropOpen}
+          className={SpMenuBoardStyle}
+          isSp
+        />
       </SpHeaderContainer>
       <SpSpriteContainer backgroundColor={mainColor}>
         <SpMarginContainerRelative>

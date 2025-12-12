@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import { calcNameSize } from "../../utils";
 import { MenuBoard } from "../MenuBoard";
 import { NameBoard } from "../NameBoard";
@@ -33,6 +33,7 @@ export const CharacterHeader: React.FC<CharacterHeaderProps> = ({
   handleNext,
 }) => {
   const nameSize = useMemo(() => calcNameSize(name), [name]);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <Container className={className}>
@@ -65,7 +66,12 @@ export const CharacterHeader: React.FC<CharacterHeaderProps> = ({
             onClick={handleNext}
           />
         </BoardContainer>
-        <MenuBoard className={MenuBoardStyle} isHide={!isShrink} />
+        <MenuBoard
+          className={MenuBoardStyle}
+          isOpen={isMenuOpen}
+          setIsOpen={setIsMenuOpen}
+          isHide={!isShrink}
+        />
       </Header>
     </Container>
   );
