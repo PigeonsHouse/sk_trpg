@@ -6,9 +6,9 @@ const LightBorder = 6;
 const SelectedLightWidth = (isSp?: boolean) => (isSp ? 24 : 28);
 const UnselectedLightWidth = (isSp?: boolean) => (isSp ? 14 : 16);
 const ItemGap = (isSp?: boolean) => (isSp ? 16 : 20);
-const MaxIconSize = 100;
+const MaxIconSize = (isSp?: boolean) => (isSp ? 72 : 100);
 const IconSizeCalc = (isSp?: boolean) =>
-  `min(calc((100vw - var(--scrollbar-width) - ${20 * 2}px - ${ItemGap(isSp) * 3}px) / 4), ${MaxIconSize}px)`;
+  `min(calc((100vw - var(--scrollbar-width) - ${20 * 2}px - ${ItemGap(isSp) * 3}px) / 4), ${MaxIconSize(isSp)}px)`;
 const BarWidth = 6;
 const BarTopOffset = LightBoxSize / 2 - BarWidth / 2;
 const BarLeftOffsetCalc = (isSp?: boolean) =>

@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 import type { Status } from "../../types";
-import { arraySplit } from "../../utils";
+import { arraySplitBySize } from "../../utils";
 import { CommonFrame } from "../CommonFrame";
 import { LabelBox } from "../LabelBox";
 import { TrafficLight } from "../TrafficLight";
@@ -30,7 +30,7 @@ export const StatusFrame: React.FC<StatusFrameProps> = ({
   const [leftArray, rightArray] = useMemo(() => {
     const { type, ...displayStatus } = status;
     const statusArray = Object.entries(displayStatus);
-    return arraySplit(statusArray, Math.floor(statusArray.length / 2));
+    return arraySplitBySize(statusArray, Math.floor(statusArray.length / 2));
   }, [status]);
 
   return (

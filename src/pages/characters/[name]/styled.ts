@@ -1,4 +1,4 @@
-import { css } from "@emotion/css";
+import { css, cx } from "@emotion/css";
 import styled from "@emotion/styled";
 import {
   BREAK_POINT,
@@ -320,7 +320,9 @@ export const GradationInnerContainer = styled.div`
   gap: 32px;
 `;
 
-export const SpCostumeContainer = styled.div``;
+export const SpCostumeContainer = styled.div`
+  margin-left: 16px;
+`;
 
 export const SpCostumeTitle = styled(CostumeTitle)`
   font-size: 24px;
@@ -328,9 +330,6 @@ export const SpCostumeTitle = styled(CostumeTitle)`
 
 export const SpCostumeStyle = css`
   && {
-    width: fit-content;
-    margin: 0 auto;
-    display: block;
   }
 `;
 
@@ -338,33 +337,87 @@ export const SpCommonFrameStyle = css`
   margin: 0 16px;
   padding: 22px 20px;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 `;
 
 export const SpFrameTitle = styled.h2<{ withBorder?: boolean }>`
+  display: flex;
+  align-items: center;
   margin: 0;
   font-family: ${FontFamily.Header};
   font-size: 24px;
-  margin-bottom: 16px;
   ${(props) =>
     props.withBorder ? `border-bottom: 1px solid ${UiColor.black};` : undefined}
+`;
+
+export const SpStatusContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  gap: 24px;
 `;
 
 export const SpDescription = styled.span`
   font-size: 12px;
   line-height: 14px;
   white-space: pre-wrap;
-  margin-bottom: 16px;
 `;
 
 export const SpLabelAreaContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 8px;
-  margin-top: 16px;
+  flex-grow: 1;
+`;
+
+export const SpWhiteOutContainer = styled.div<{ open?: boolean }>`
+  height: fit-content;
+  max-height: ${(props) => (props.open ? "1000px" : "200px")};
+  overflow: hidden;
+  position: relative;
+  transition: height, 0.4s;
+`;
+
+export const SpWhiteOut = styled.div<{ open?: boolean }>`
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, white);
+  opacity: ${(props) => (props.open ? 0 : 1)};
+  transition: opacity, 0.4s;
 `;
 
 export const SpLabelContainer = styled.div`
   display: flex;
-  gap: 16px;
   align-items: center;
+`;
+
+export const SpStatusLabelContainerStyle = css`
+  justify-content: space-between;
+`;
+
+export const SpLabelStyle = css`
+  margin-right: 32px;
+  height: 32px;
+`;
+
+export const SpStatusLabelStyle = cx(
+  SpLabelStyle,
+  css`
+    && {
+      width: 80px;
+      margin-right: 16px;
+    }
+  `
+);
+export const SpSkillsFrameStyle = css`
+  padding-bottom: 0;
+`;
+
+export const SpQuestionContainer = styled.section<{ bgColor: string }>`
+  background-color: ${(props) => props.bgColor};
+  padding: 32px 0;
 `;

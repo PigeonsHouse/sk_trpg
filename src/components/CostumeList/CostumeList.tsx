@@ -1,4 +1,4 @@
-import { arraySplit } from "../../utils";
+import { arraySplitBySize } from "../../utils";
 import {
   Bar,
   Image,
@@ -34,7 +34,7 @@ export const CostumeList: React.FC<CostumeListProps> = ({
   isSp,
 }) => {
   const lastLineIndex = Math.ceil(items.length / MAX_WIDTH_ITEM) - 1;
-  const splittedList = arraySplit(items, MAX_WIDTH_ITEM);
+  const splittedList = arraySplitBySize(items, MAX_WIDTH_ITEM);
 
   return (
     <ListContainer isSp={isSp} className={className}>
@@ -51,6 +51,7 @@ export const CostumeList: React.FC<CostumeListProps> = ({
                 <ImageContainer
                   backgroundColor={color}
                   isSelected={item.isSelected}
+                  isSp={isSp}
                 >
                   <Image src={item.imageUrl} />
                 </ImageContainer>

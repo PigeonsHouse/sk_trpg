@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 import type { Skills } from "../../types";
-import { arraySplit } from "../../utils";
+import { arraySplitBySize } from "../../utils";
 import { CommonFrame } from "../CommonFrame";
 import { LabelBox, MaskImage } from "../LabelBox";
 import { SingleLight } from "../SingleLight";
@@ -30,7 +30,7 @@ export const SkillsFrame: React.FC<SkillsFrameProps> = ({
   const [leftArray, rightArray] = useMemo(() => {
     const { type, ...displaySkills } = skills;
     const skillsArray = Object.entries(displaySkills);
-    return arraySplit(skillsArray, Math.ceil(skillsArray.length / 2));
+    return arraySplitBySize(skillsArray, Math.ceil(skillsArray.length / 2));
   }, [skills]);
 
   return (
