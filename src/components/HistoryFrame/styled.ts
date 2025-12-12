@@ -30,10 +30,11 @@ export const TitleContainer = styled.div`
   align-items: center;
 `;
 
-export const Title = styled.span`
+export const Title = styled.h2`
+  margin: 0;
   font-size: 36px;
   font-weight: ${FontWeight.Bold};
-  margin-top: -4px;
+  font-family: ${FontFamily.Header};
 `;
 
 export const ScrollContainer = styled.div`
@@ -100,10 +101,11 @@ export const IndexCircle = styled.div<{ borderColor: string }>`
   flex-shrink: 0;
 `;
 
-export const HistoryTitle = styled.div`
+export const HistoryTitle = styled.h3`
+  margin: 0;
+  font-family: ${FontFamily.Header};
   font-weight: ${FontWeight.Bold};
   font-size: 24px;
-  margin-top: -8px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -167,10 +169,11 @@ export const CompanionContainer = styled.div`
   padding-bottom: 32px;
 `;
 
-export const CompanionTitle = styled.h2`
+export const CompanionTitle = styled.h3`
   margin: 0;
   font-size: 24px;
   margin-bottom: 16px;
+  font-family: ${FontFamily.Header};
 `;
 
 export const CompanionInfoContainer = styled.ul`

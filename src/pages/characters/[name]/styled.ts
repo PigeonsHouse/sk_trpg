@@ -110,6 +110,7 @@ export const CostumeTitle = styled.h2`
   margin: 0;
   font-size: 44px;
   font-weight: ${FontWeight.Bold};
+  font-family: ${FontFamily.Header};
   line-height: 1;
 `;
 
@@ -353,4 +354,17 @@ export const SpDescription = styled.span`
   line-height: 14px;
   white-space: pre-wrap;
   margin-bottom: 16px;
+`;
+
+export const SpLabelAreaContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 16px;
+`;
+
+export const SpLabelContainer = styled.div`
+  display: flex;
+  gap: 16px;
+  align-items: center;
 `;

@@ -29,6 +29,8 @@ import {
   SpFrameTitle,
   SpGradationBackground,
   SpHeaderContainer,
+  SpLabelAreaContainer,
+  SpLabelContainer,
   SpMarginContainer,
   SpMarginContainerRelative,
   SpMenuBoardStyle,
@@ -161,28 +163,34 @@ export const SpCharacterAbout: React.FC<SpCharacterAboutProps> = ({
             <CommonFrame className={SpCommonFrameStyle}>
               <SpFrameTitle>プロフィール</SpFrameTitle>
               <SpDescription>{data.profile.description}</SpDescription>
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "center",
-                  gap: 8,
-                  marginTop: 16,
-                }}
-              >
+              <SpLabelAreaContainer>
                 {Object.entries(data.profile)
                   .filter(([key]) => key !== "description")
                   .map(([key, profileData]) => (
-                    <div style={{ display: "flex", gap: 16 }}>
+                    <SpLabelContainer>
                       <LabelBox backgroundColor={mainColor}>
                         {key.toUpperCase()}
                       </LabelBox>
-                      <span style={{ verticalAlign: "middle", lineHeight: 2 }}>
-                        {profileData}
-                      </span>
-                    </div>
+                      <span>{profileData}</span>
+                    </SpLabelContainer>
                   ))}
-              </div>
+              </SpLabelAreaContainer>
+            </CommonFrame>
+            <CommonFrame className={SpCommonFrameStyle}>
+              <SpFrameTitle>ステータス：{data.status.type}</SpFrameTitle>
+              <SpDescription>{data.profile.description}</SpDescription>
+              <SpLabelAreaContainer>
+                {Object.entries(data.profile)
+                  .filter(([key]) => key !== "description")
+                  .map(([key, profileData]) => (
+                    <SpLabelContainer>
+                      <LabelBox backgroundColor={mainColor}>
+                        {key.toUpperCase()}
+                      </LabelBox>
+                      <span>{profileData}</span>
+                    </SpLabelContainer>
+                  ))}
+              </SpLabelAreaContainer>
             </CommonFrame>
           </GradationInnerContainer>
         </SpMarginContainer>

@@ -1,6 +1,11 @@
 import { css } from "@emotion/css";
 import styled from "@emotion/styled";
-import { BREAK_POINT, FontWeight, UiColor } from "../../definitions";
+import {
+  BREAK_POINT,
+  FontFamily,
+  FontWeight,
+  UiColor,
+} from "../../definitions";
 
 export const FrameStatus = css`
   padding: 24px;
@@ -27,10 +32,10 @@ export const BottomBar = styled.div`
 
 export const Title = styled.h2`
   margin: 0;
-  margin-top: -8px;
   font-size: 32px;
   border-bottom: 1px solid ${UiColor.gray};
   margin-bottom: 8px;
+  font-family: ${FontFamily.Header};
 `;
 
 export const StatusContainer = styled.div`

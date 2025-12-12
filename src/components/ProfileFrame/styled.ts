@@ -1,6 +1,6 @@
 import { css } from "@emotion/css";
 import styled from "@emotion/styled";
-import { FontWeight } from "../../definitions";
+import { FontFamily, FontWeight } from "../../definitions";
 
 export const ProfileFrameStyle = css`
   width: 720px;
@@ -15,6 +15,7 @@ export const Title = styled.h2`
   font-size: 48px;
   margin-top: -4px;
   line-height: 58px;
+  font-family: ${FontFamily.Header};
 `;
 
 export const ContentsContainer = styled.div`

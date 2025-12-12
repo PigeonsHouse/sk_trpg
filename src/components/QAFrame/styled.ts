@@ -17,6 +17,7 @@ export const Title = styled.h2`
   font-size: 48px;
   margin-bottom: 48px;
   line-height: 1;
+  font-family: ${FontFamily.Header};
 `;
 
 export const ContentContainer = styled.div`
