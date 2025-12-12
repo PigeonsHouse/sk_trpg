@@ -2,6 +2,7 @@ import { css } from "@emotion/css";
 import styled from "@emotion/styled";
 import {
   BREAK_POINT,
+  FontFamily,
   FontWeight,
   SP_MAX_WIDTH,
   UiColor,
@@ -96,7 +97,6 @@ export const GradationBackground = styled.section<{
       ${UiColor.gray} 436px
     );
 `;
-
 export const CostumeContainer = styled.div`
   padding-left: 32px;
 `;
@@ -233,6 +233,16 @@ export const SpBackdrop = styled.div<{ open?: boolean }>`
   pointer-events: ${(props) => (props.open ? "unset" : "none")};
 `;
 
+export const SpMarginContainer = styled.div`
+  max-width: ${SP_MAX_WIDTH}px;
+  margin: auto;
+  height: 100%;
+`;
+
+export const SpMarginContainerRelative = styled(SpMarginContainer)`
+  position: relative;
+`;
+
 export const SpHeaderContainer = styled.div<{ bgColor: string }>`
   position: fixed;
   top: 0;
@@ -299,15 +309,17 @@ export const SpSprite = styled.img`
   z-index: 1;
 `;
 
-export const SpMarginContainer = styled.div`
-  max-width: ${SP_MAX_WIDTH}px;
-  margin: auto;
-  height: 100%;
+export const SpGradationBackground = styled(GradationBackground)`
+  padding: 32px 0;
 `;
 
-export const SpMarginContainerRelative = styled(SpMarginContainer)`
-  position: relative;
+export const GradationInnerContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 `;
+
+export const SpCostumeContainer = styled.div``;
 
 export const SpCostumeTitle = styled(CostumeTitle)`
   font-size: 24px;
@@ -319,4 +331,26 @@ export const SpCostumeStyle = css`
     margin: 0 auto;
     display: block;
   }
+`;
+
+export const SpCommonFrameStyle = css`
+  margin: 0 16px;
+  padding: 22px 20px;
+  box-sizing: border-box;
+`;
+
+export const SpFrameTitle = styled.h2<{ withBorder?: boolean }>`
+  margin: 0;
+  font-family: ${FontFamily.Header};
+  font-size: 24px;
+  margin-bottom: 16px;
+  ${(props) =>
+    props.withBorder ? `border-bottom: 1px solid ${UiColor.black};` : undefined}
+`;
+
+export const SpDescription = styled.span`
+  font-size: 12px;
+  line-height: 14px;
+  white-space: pre-wrap;
+  margin-bottom: 16px;
 `;

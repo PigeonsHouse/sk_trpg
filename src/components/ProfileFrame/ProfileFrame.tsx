@@ -28,15 +28,14 @@ export const ProfileFrame: React.FC<ProfileFrameProps> = ({
       <ContentsContainer>
         <DescriptionContainer>{profileData.description}</DescriptionContainer>
         <ProfilesContainer>
-          {Object.entries(profileData).map(([key, profileData]) => {
-            if (key === "description") return;
-            return (
+          {Object.entries(profileData)
+            .filter(([key]) => key !== "description")
+            .map(([key, profileData]) => (
               <ProfileOneLineContainer key={key}>
                 <LabelBox backgroundColor={color}>{key.toUpperCase()}</LabelBox>
                 {profileData}
               </ProfileOneLineContainer>
-            );
-          })}
+            ))}
         </ProfilesContainer>
       </ContentsContainer>
     </CommonFrame>

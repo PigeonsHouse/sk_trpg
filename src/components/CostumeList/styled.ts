@@ -22,8 +22,7 @@ export const ListContainer = styled.ul<{ isSp?: boolean }>`
   display: inline-flex;
   flex-direction: column;
   padding-top: 16px;
-  ${(props) => (props.isSp ? "padding-left: 0;" : undefined)}
-  padding-bottom: ${(props) => (props.isSp ? 32 : 48)}px;
+  ${(props) => (props.isSp ? "padding-left: 0;" : "padding-bottom: 48px;")}
   box-sizing: border-box;
   list-style: none;
 `;

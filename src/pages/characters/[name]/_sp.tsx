@@ -1,8 +1,10 @@
 import { useCallback, useMemo, useState } from "react";
 import { useNavigate } from "react-router";
 import {
+  CommonFrame,
   CostumeList,
   GoogleFontIcon,
+  LabelBox,
   MenuBoard,
   NameBoard,
   NavigateArrow,
@@ -16,11 +18,16 @@ import { calcNameSize } from "../../../utils";
 import { useHeader, useSprites } from "./index.app";
 import {
   CostumeTitleContainer,
-  GradationBackground,
+  GradationInnerContainer,
   SpBackdrop,
+  SpCommonFrameStyle,
   SpContainer,
+  SpCostumeContainer,
   SpCostumeStyle,
   SpCostumeTitle,
+  SpDescription,
+  SpFrameTitle,
+  SpGradationBackground,
   SpHeaderContainer,
   SpMarginContainer,
   SpMarginContainerRelative,
@@ -131,25 +138,55 @@ export const SpCharacterAbout: React.FC<SpCharacterAboutProps> = ({
           <SpSprite src={data.sprites[displaySpriteIndex].spriteUrl} />
         </SpMarginContainerRelative>
       </SpSpriteContainer>
-      <GradationBackground startColor={mainColor} endColor={secondColor}>
+      <SpGradationBackground startColor={mainColor} endColor={secondColor}>
         <SpMarginContainer>
-          <CostumeTitleContainer>
-            <GoogleFontIcon
-              iconName="fmd_good"
-              size={32}
-              color={UiColor.darkGray}
-            />
-            <SpCostumeTitle>衣装差分</SpCostumeTitle>
-          </CostumeTitleContainer>
-          <CostumeList
-            items={costumeList}
-            color={mainColor}
-            selectedColor={yellowColor}
-            className={SpCostumeStyle}
-            isSp
-          />
+          <GradationInnerContainer>
+            <SpCostumeContainer>
+              <CostumeTitleContainer>
+                <GoogleFontIcon
+                  iconName="fmd_good"
+                  size={32}
+                  color={UiColor.darkGray}
+                />
+                <SpCostumeTitle>衣装差分</SpCostumeTitle>
+              </CostumeTitleContainer>
+              <CostumeList
+                items={costumeList}
+                color={mainColor}
+                selectedColor={yellowColor}
+                className={SpCostumeStyle}
+                isSp
+              />
+            </SpCostumeContainer>
+            <CommonFrame className={SpCommonFrameStyle}>
+              <SpFrameTitle>プロフィール</SpFrameTitle>
+              <SpDescription>{data.profile.description}</SpDescription>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "center",
+                  gap: 8,
+                  marginTop: 16,
+                }}
+              >
+                {Object.entries(data.profile)
+                  .filter(([key]) => key !== "description")
+                  .map(([key, profileData]) => (
+                    <div style={{ display: "flex", gap: 16 }}>
+                      <LabelBox backgroundColor={mainColor}>
+                        {key.toUpperCase()}
+                      </LabelBox>
+                      <span style={{ verticalAlign: "middle", lineHeight: 2 }}>
+                        {profileData}
+                      </span>
+                    </div>
+                  ))}
+              </div>
+            </CommonFrame>
+          </GradationInnerContainer>
         </SpMarginContainer>
-      </GradationBackground>
+      </SpGradationBackground>
     </SpContainer>
   );
 };
