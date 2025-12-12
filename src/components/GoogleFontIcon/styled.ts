@@ -5,4 +5,5 @@ export const Icon = styled.span<{ rectSize: number; iconColor?: string }>`
   height: ${(props) => props.rectSize}px;
   font-size: ${(props) => props.rectSize}px;
   color: ${(props) => props.iconColor || "inherit"};
+  overflow: clip;
 `;
