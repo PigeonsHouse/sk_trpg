@@ -177,11 +177,12 @@ export const SpCharacterAbout: React.FC<SpCharacterAboutProps> = ({
               </SpLabelAreaContainer>
             </CommonFrame>
             <CommonFrame className={SpCommonFrameStyle}>
-              <SpFrameTitle>ステータス：{data.status.type}</SpFrameTitle>
-              <SpDescription>{data.profile.description}</SpDescription>
+              <SpFrameTitle withBorder>
+                ステータス：{data.status.type}
+              </SpFrameTitle>
               <SpLabelAreaContainer>
-                {Object.entries(data.profile)
-                  .filter(([key]) => key !== "description")
+                {Object.entries(data.status)
+                  .filter(([key]) => key !== "type")
                   .map(([key, profileData]) => (
                     <SpLabelContainer>
                       <LabelBox backgroundColor={mainColor}>
