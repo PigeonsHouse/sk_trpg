@@ -371,6 +371,8 @@ export const SpLabelAreaContainer = styled.div`
   flex-grow: 1;
 `;
 
+export const SpSkillsContainer = styled.div``;
+
 export const SpWhiteOutContainer = styled.div<{ open?: boolean }>`
   height: fit-content;
   max-height: ${(props) => (props.open ? "1000px" : "200px")};
@@ -390,6 +392,25 @@ export const SpWhiteOut = styled.div<{ open?: boolean }>`
   transition: opacity, 0.4s;
 `;
 
+export const SpExpandButton = styled.button`
+  background: none;
+  border: none;
+  padding: 0;
+  display: flex;
+  width: 100%;
+  height: 56px;
+  font-size: 16px;
+  font-weight: ${FontWeight.Bold};
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  color: ${UiColor.gray};
+`;
+
+export const SpExpandButtonIconStyle = css`
+  transform: rotate(180deg);
+`;
+
 export const SpLabelContainer = styled.div`
   display: flex;
   align-items: center;
@@ -404,6 +425,8 @@ export const SpLabelStyle = css`
   height: 32px;
 `;
 
+export const SpLabelValue = styled.span``;
+
 export const SpStatusLabelStyle = cx(
   SpLabelStyle,
   css`
@@ -413,11 +436,88 @@ export const SpStatusLabelStyle = cx(
     }
   `
 );
-export const SpSkillsFrameStyle = css`
-  padding-bottom: 0;
-`;
+
+export const SpSkillsFrameStyle = cx(
+  SpCommonFrameStyle,
+  css`
+    padding-bottom: 0;
+  `
+);
 
 export const SpQuestionContainer = styled.section<{ bgColor: string }>`
   background-color: ${(props) => props.bgColor};
   padding: 32px 0;
+`;
+
+export const SpQuestionFrameStyle = cx(
+  SpCommonFrameStyle,
+  css`
+    gap: 32px;
+  `
+);
+
+export const SpCenterTitle = styled(SpFrameTitle)`
+  justify-content: center;
+  text-align: center;
+  white-space: pre-wrap;
+`;
+
+export const SpQuestionItemContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+`;
+
+export const SpQuestionTitleContainer = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: ${FontWeight.Bold};
+`;
+
+export const SpQuestionLabel = styled.div<{ bgColor: string }>`
+  width: 32px;
+  aspect-ratio: 1 / 1;
+  background-color: ${(props) => props.bgColor};
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: ${FontFamily.Question};
+  flex-shrink: 0;
+`;
+
+export const SpQuestionAvatar = styled.img<{ bgColor: string }>`
+  aspect-ratio: 1 / 1;
+  width: 100px;
+  display: block;
+  margin: 0 auto;
+  background-color: ${(props) => props.bgColor};
+  border-radius: 50%;
+`;
+
+{
+  /* 三角形　w:32, h:24 */
+}
+export const SpQuestionSpeechBubble = styled.div<{ bgColor: string }>`
+  position: relative;
+  font-size: 12px;
+  padding: 16px 24px;
+  background-color: ${(props) => props.bgColor};
+  border-radius: 16px;
+  color: white;
+  margin-top: 24px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -24px;
+    left: calc(50% - 16px);
+    border-style: solid;
+    border-color: transparent;
+    border-width: 24px 16px;
+    border-top-width: 0;
+    border-bottom-color: ${(props) => props.bgColor};
+  }
 `;

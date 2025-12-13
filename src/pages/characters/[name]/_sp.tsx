@@ -1,6 +1,5 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { useNavigate } from "react-router";
-import { css, cx } from "@emotion/css";
 import {
   CommonFrame,
   CostumeList,
@@ -13,7 +12,7 @@ import {
   SingleLight,
   TrafficLight,
 } from "../../../components";
-import { CharactersId, FontWeight, UiColor } from "../../../definitions";
+import { CharactersId, UiColor } from "../../../definitions";
 import type { CharacterDetail, CharacterSummary } from "../../../types";
 import { arraySplitByCount, calcNameSize } from "../../../utils";
 import { useHeader, useSprites } from "./index.app";
@@ -27,27 +26,39 @@ import {
   SpCostumeStyle,
   SpCostumeTitle,
   SpDescription,
+  SpExpandButton,
+  SpExpandButtonIconStyle,
   SpFrameTitle,
   SpGradationBackground,
   SpHeaderContainer,
   SpLabelAreaContainer,
   SpLabelContainer,
   SpLabelStyle,
+  SpLabelValue,
   SpMarginContainer,
   SpMarginContainerRelative,
   SpMenuBoardStyle,
   SpNameBoardStyle,
   SpQuestionContainer,
+  SpQuestionFrameStyle,
+  SpQuestionItemContainer,
+  SpCenterTitle,
   SpShortIdBoardStyle,
   SpSingleLightStyle,
+  SpSkillsContainer,
   SpSkillsFrameStyle,
   SpSprite,
   SpSpriteContainer,
+  SpStatusContainer,
   SpStatusLabelContainerStyle,
   SpStatusLabelStyle,
+  SpQuestionTitleContainer,
   SpTrafficLightStyle,
   SpWhiteOut,
   SpWhiteOutContainer,
+  SpQuestionLabel,
+  SpQuestionAvatar,
+  SpQuestionSpeechBubble,
 } from "./styled";
 
 type SpCharacterAboutProps = {
@@ -98,6 +109,13 @@ export const SpCharacterAbout: React.FC<SpCharacterAboutProps> = ({
   useEffect(() => {
     setIsSkillOpen(false);
   }, [characterId]);
+
+  const questionList = [
+    "休日何してる？",
+    "待ち合わせ、早め？ちょうど？遅れがち？",
+    "もしも願い事が一つ叶うとしたら？",
+    "もしも明日地球が滅亡するなら何をする？",
+  ];
 
   return (
     <SpContainer>
@@ -175,6 +193,7 @@ export const SpCharacterAbout: React.FC<SpCharacterAboutProps> = ({
             </SpCostumeContainer>
             <CommonFrame className={SpCommonFrameStyle}>
               <SpFrameTitle>プロフィール</SpFrameTitle>
+              {/* flexの子要素だとinlineじゃなくなるのでdivでwrapをする */}
               <div>
                 <SpDescription>{data.profile.description}</SpDescription>
               </div>
@@ -189,7 +208,7 @@ export const SpCharacterAbout: React.FC<SpCharacterAboutProps> = ({
                       >
                         {key.toUpperCase()}
                       </LabelBox>
-                      <span>{profileData}</span>
+                      <SpLabelValue>{profileData}</SpLabelValue>
                     </SpLabelContainer>
                   ))}
               </SpLabelAreaContainer>
@@ -198,9 +217,7 @@ export const SpCharacterAbout: React.FC<SpCharacterAboutProps> = ({
               <SpFrameTitle withBorder>
                 ステータス：{data.status.type}
               </SpFrameTitle>
-              <div
-                style={{ display: "flex", justifyContent: "center", gap: 24 }}
-              >
+              <SpStatusContainer>
                 {arraySplitByCount(
                   Object.entries(data.status).filter(([key]) => key !== "type"),
                   2
@@ -217,16 +234,16 @@ export const SpCharacterAbout: React.FC<SpCharacterAboutProps> = ({
                         >
                           {key.toUpperCase()}
                         </LabelBox>
-                        <span>{profileData}</span>
+                        <SpLabelValue>{profileData}</SpLabelValue>
                       </SpLabelContainer>
                     ))}
                   </SpLabelAreaContainer>
                 ))}
-              </div>
+              </SpStatusContainer>
             </CommonFrame>
-            <CommonFrame className={cx(SpCommonFrameStyle, SpSkillsFrameStyle)}>
+            <CommonFrame className={SpSkillsFrameStyle}>
               <SpFrameTitle withBorder>技能値</SpFrameTitle>
-              <div>
+              <SpSkillsContainer>
                 <SpWhiteOutContainer open={isSkillOpen}>
                   <SpLabelAreaContainer>
                     {Object.entries(data.skills).map(([key, skillData]) => (
@@ -237,43 +254,23 @@ export const SpCharacterAbout: React.FC<SpCharacterAboutProps> = ({
                         >
                           {key.toUpperCase()}
                         </LabelBox>
-                        <span>{skillData}</span>
+                        <SpLabelValue>{skillData}</SpLabelValue>
                       </SpLabelContainer>
                     ))}
                     <SpWhiteOut open={isSkillOpen} />
                   </SpLabelAreaContainer>
                 </SpWhiteOutContainer>
-                <button
-                  style={{
-                    background: "none",
-                    border: "none",
-                    padding: 0,
-                    display: "flex",
-                    width: "100%",
-                    height: 56,
-                    fontSize: 16,
-                    fontWeight: FontWeight.Bold,
-                    justifyContent: "center",
-                    alignItems: "center",
-                    gap: 16,
-                    color: UiColor.gray,
-                  }}
-                  onClick={() => setIsSkillOpen((prev) => !prev)}
-                >
+                <SpExpandButton onClick={() => setIsSkillOpen((prev) => !prev)}>
                   {isSkillOpen ? "とじる" : "ひらく"}
                   <GoogleFontIcon
                     iconName="arrow_drop_down"
                     size={24}
                     className={
-                      isSkillOpen
-                        ? css`
-                            transform: rotate(180deg);
-                          `
-                        : undefined
+                      isSkillOpen ? SpExpandButtonIconStyle : undefined
                     }
                   />
-                </button>
-              </div>
+                </SpExpandButton>
+              </SpSkillsContainer>
             </CommonFrame>
             <CommonFrame className={SpCommonFrameStyle}>
               <SpFrameTitle>
@@ -295,15 +292,20 @@ export const SpCharacterAbout: React.FC<SpCharacterAboutProps> = ({
       </SpGradationBackground>
       <SpQuestionContainer bgColor={mainColor}>
         <SpMarginContainer>
-          <CommonFrame className={SpCommonFrameStyle}>
-            <SpFrameTitle
-              style={{ justifyContent: "center", textAlign: "center" }}
-            >
-              突撃！
-              <br />
-              探索者にインタビュー
-            </SpFrameTitle>
-            <div>Q 休日何してる？</div>
+          <CommonFrame className={SpQuestionFrameStyle}>
+            <SpCenterTitle>{`突撃！\n探索者にインタビュー`}</SpCenterTitle>
+            {data.qaList.map((qa, i) => (
+              <SpQuestionItemContainer>
+                <SpQuestionTitleContainer>
+                  <SpQuestionLabel bgColor={mainColor}>Q</SpQuestionLabel>
+                  <span>{questionList[i]}</span>
+                </SpQuestionTitleContainer>
+                <SpQuestionAvatar bgColor={mainColor} src={qa.iconUrl} />
+                <SpQuestionSpeechBubble bgColor={mainColor}>
+                  {qa.answer}
+                </SpQuestionSpeechBubble>
+              </SpQuestionItemContainer>
+            ))}
           </CommonFrame>
         </SpMarginContainer>
       </SpQuestionContainer>
