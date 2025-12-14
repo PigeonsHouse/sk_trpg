@@ -3,8 +3,8 @@ import { UiColor } from "../../../definitions";
 
 const LightBoxSize = 56;
 const LightBorder = 6;
-const SelectedLightWidth = (isSp?: boolean) => (isSp ? 24 : 28);
-const UnselectedLightWidth = (isSp?: boolean) => (isSp ? 14 : 16);
+const SelectedLightWidth = (isSp?: boolean) => (isSp ? 18 : 28);
+const UnselectedLightWidth = (isSp?: boolean) => (isSp ? 10 : 16);
 const ItemGap = (isSp?: boolean) => (isSp ? 16 : 20);
 const MaxIconSize = (isSp?: boolean) => (isSp ? 72 : 100);
 const IconSizeCalc = (isSp?: boolean) =>
