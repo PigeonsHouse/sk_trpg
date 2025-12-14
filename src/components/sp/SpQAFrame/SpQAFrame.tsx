@@ -28,7 +28,7 @@ export const SpQAFrame: React.FC<SpQAFrameProps> = ({
     <CommonFrame className={cx(FrameStyle, className)}>
       <Title>{`突撃！\n探索者にインタビュー`}</Title>
       {qaList.map((qa, i) => (
-        <ItemContainer>
+        <ItemContainer key={i}>
           <TitleContainer>
             <QuestionIcon bgColor={mainColor}>Q</QuestionIcon>
             <QuestionTitle>{questionList[i]}</QuestionTitle>
