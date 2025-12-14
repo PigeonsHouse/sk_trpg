@@ -2,16 +2,18 @@ import { css } from "@emotion/css";
 import styled from "@emotion/styled";
 import {
   BREAK_POINT,
+  DropShadowFilter,
   FontFamily,
   FontWeight,
   UiColor,
 } from "../../../definitions";
 
-export const FrameStatus = css`
+export const SkillFrameStyle = css`
   padding: 24px;
   min-height: 360px;
   position: relative;
   box-sizing: border-box;
+  filter: ${DropShadowFilter};
 `;
 
 export const Title = styled.h2`
@@ -66,4 +68,5 @@ export const LightStyle = css`
   position: absolute;
   right: -314px;
   bottom: -34px;
+  filter: ${DropShadowFilter};
 `;

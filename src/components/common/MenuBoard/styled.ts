@@ -1,6 +1,11 @@
 import { css } from "@emotion/css";
 import styled from "@emotion/styled";
-import { FontFamily, FontWeight, UiColor } from "../../../definitions";
+import {
+  DropShadowFilter,
+  FontFamily,
+  FontWeight,
+  UiColor,
+} from "../../../definitions";
 
 export const Container = styled.div``;
 
@@ -9,6 +14,7 @@ export const BoardContainer = styled.div<{ isHide?: boolean; isSp?: boolean }>`
   transition: opacity 0.2s;
   opacity: ${(props) => (props.isHide ? 0 : 1)};
   position: relative;
+  filter: ${DropShadowFilter};
 `;
 
 export const Board = styled.div<{ isSp?: boolean }>`

@@ -2,6 +2,7 @@ import { css } from "@emotion/css";
 import styled from "@emotion/styled";
 import {
   BREAK_POINT,
+  DropShadowFilter,
   FontFamily,
   FontWeight,
   UiColor,
@@ -22,6 +23,7 @@ export const FrameStyle = css`
   display: flex;
   flex-direction: column;
   gap: 12px;
+  filter: ${DropShadowFilter};
 `;
 
 export const TitleContainer = styled.div`
@@ -124,10 +126,10 @@ export const HistoryDetailContainer = styled.div<{ backgroundColor: string }>`
   box-sizing: border-box;
   position: relative;
   margin-bottom: 64px;
-  filter: drop-shadow(0 4px 8px rgb(from gray r g b / 0.8));
+  filter: ${DropShadowFilter};
   position: relative;
 
-  &::after {
+  &::before {
     content: "";
     position: absolute;
     border-style: solid;
@@ -255,4 +257,5 @@ export const BoardStyle = css`
   position: absolute;
   left: -310px;
   bottom: -70px;
+  filter: ${DropShadowFilter};
 `;

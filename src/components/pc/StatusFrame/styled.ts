@@ -2,14 +2,16 @@ import { css } from "@emotion/css";
 import styled from "@emotion/styled";
 import {
   BREAK_POINT,
+  DropShadowFilter,
   FontFamily,
   FontWeight,
   UiColor,
 } from "../../../definitions";
 
-export const FrameStatus = css`
+export const StatusFrameStyle = css`
   padding: 24px;
   position: relative;
+  filter: ${DropShadowFilter};
 `;
 
 export const TopBar = styled.div`
@@ -64,4 +66,5 @@ export const TrafficLightStyle = css`
   position: absolute;
   top: -132px;
   left: -280px;
+  filter: ${DropShadowFilter};
 `;

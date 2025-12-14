@@ -4,7 +4,7 @@ import { arraySplitBySize } from "../../../utils";
 import { CommonFrame, LabelBox, TrafficLight } from "../../common";
 import {
   BottomBar,
-  FrameStatus,
+  StatusFrameStyle,
   StatusColumnContainer,
   StatusContainer,
   StatusOneLineContainer,
@@ -35,7 +35,7 @@ export const StatusFrame: React.FC<StatusFrameProps> = ({
   }, [status]);
 
   return (
-    <CommonFrame className={FrameStatus}>
+    <CommonFrame className={StatusFrameStyle}>
       <Title>{title}</Title>
       <StatusContainer>
         <StatusColumnContainer>

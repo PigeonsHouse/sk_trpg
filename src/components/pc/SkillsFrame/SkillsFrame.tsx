@@ -3,7 +3,7 @@ import type { Skills } from "../../../types";
 import { arraySplitBySize } from "../../../utils";
 import { CommonFrame, LabelBox, SingleLight } from "../../common";
 import {
-  FrameStatus,
+  SkillFrameStyle,
   SkillsColumnContainer,
   StatusContainer,
   SkillsOneLineContainer,
@@ -35,7 +35,7 @@ export const SkillsFrame: React.FC<SkillsFrameProps> = ({
   }, [skills]);
 
   return (
-    <CommonFrame className={FrameStatus}>
+    <CommonFrame className={SkillFrameStyle}>
       <Title>技能値</Title>
       <StatusContainer>
         <SkillsColumnContainer>
