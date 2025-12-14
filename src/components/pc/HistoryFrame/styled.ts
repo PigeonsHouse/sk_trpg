@@ -101,6 +101,7 @@ export const IndexCircle = styled.div<{ borderColor: string }>`
   font-family: ${FontFamily.Bold};
   font-size: 20px;
   flex-shrink: 0;
+  user-select: none;
 `;
 
 export const HistoryTitle = styled.h3`

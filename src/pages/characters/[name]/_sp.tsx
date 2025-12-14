@@ -17,6 +17,7 @@ import type { CharacterDetail, CharacterSummary } from "../../../types";
 import {
   useBackdrop,
   useHeader,
+  useHistory,
   useSkillsExpand,
   useSprites,
 } from "./index.app";
@@ -67,9 +68,9 @@ export const SpCharacterAbout: React.FC<SpCharacterAboutProps> = ({
     data.sprites
   );
   const { isSkillsExpand, switchIsSkillExpand } = useSkillsExpand(characterId);
-  // const { selectedHistoryIndex, setSelectedHistoryIndex } = useHistory(
-  //   data.histories
-  // );
+  const { selectedHistoryIndex, setSelectedHistoryIndex } = useHistory(
+    data.histories
+  );
 
   // const handleAboutCharacters = useCallback(() => {
   //   navigate(Url.aboutTo("characters"));
@@ -125,7 +126,15 @@ export const SpCharacterAbout: React.FC<SpCharacterAboutProps> = ({
               isExpand={isSkillsExpand}
               switchExpand={switchIsSkillExpand}
             />
-            <SpHistoryFrame histories={data.histories} />
+            <SpHistoryFrame
+              histories={data.histories}
+              mainColor={mainColor}
+              selectedColor={yellowColor}
+              selectedHistoryIndex={selectedHistoryIndex}
+              setSelectedHistoryIndex={setSelectedHistoryIndex}
+              isBackdropOpen={isBackdropOpen}
+              onSwitchBackdropOpen={onSwitchBackdrop}
+            />
           </SpGradationInnerContainer>
         </SpMarginContainer>
       </SpGradationBackground>
