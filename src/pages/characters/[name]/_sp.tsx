@@ -203,11 +203,10 @@ export const SpCharacterAbout: React.FC<SpCharacterAboutProps> = ({
                   .map(([key, profileData]) => (
                     <SpLabelContainer key={key}>
                       <LabelBox
+                        label={key}
                         backgroundColor={mainColor}
                         className={SpLabelStyle}
-                      >
-                        {key.toUpperCase()}
-                      </LabelBox>
+                      />
                       <SpLabelValue>{profileData}</SpLabelValue>
                     </SpLabelContainer>
                   ))}
@@ -229,11 +228,10 @@ export const SpCharacterAbout: React.FC<SpCharacterAboutProps> = ({
                         className={SpStatusLabelContainerStyle}
                       >
                         <LabelBox
+                          label={key}
                           backgroundColor={mainColor}
                           className={SpStatusLabelStyle}
-                        >
-                          {key.toUpperCase()}
-                        </LabelBox>
+                        />
                         <SpLabelValue>{profileData}</SpLabelValue>
                       </SpLabelContainer>
                     ))}
@@ -249,11 +247,10 @@ export const SpCharacterAbout: React.FC<SpCharacterAboutProps> = ({
                     {Object.entries(data.skills).map(([key, skillData]) => (
                       <SpLabelContainer key={key}>
                         <LabelBox
+                          label={key}
                           backgroundColor={mainColor}
                           className={SpLabelStyle}
-                        >
-                          {key.toUpperCase()}
-                        </LabelBox>
+                        />
                         <SpLabelValue>{skillData}</SpLabelValue>
                       </SpLabelContainer>
                     ))}
