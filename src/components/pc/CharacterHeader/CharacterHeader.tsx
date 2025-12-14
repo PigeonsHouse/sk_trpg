@@ -73,8 +73,8 @@ export const CharacterHeader: React.FC<CharacterHeaderProps> = ({
         </BoardContainer>
         <MenuBoard
           className={MenuBoardStyle}
-          isOpen={isMenuOpen}
-          setIsOpen={setIsMenuOpen}
+          isBackdropOpen={isMenuOpen}
+          setIsBackdropOpen={setIsMenuOpen}
           isHide={!isShrink}
         />
       </Header>

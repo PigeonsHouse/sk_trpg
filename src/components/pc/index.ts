@@ -1,6 +1,7 @@
 export * from "./ArtGallery";
 export * from "./CharacterHeader";
 export * from "./CommentFrame";
+export * from "./CostumeArea";
 export * from "./HistoryFrame";
 export * from "./ProfileFrame";
 export * from "./QAFrame";

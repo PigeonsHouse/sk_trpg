@@ -16,10 +16,10 @@ export type CostumeItem = {
   onClick: () => void;
 };
 
-type CostumeListProps = {
+export type CostumeListProps = {
   className?: string;
   items: CostumeItem[];
-  color: string;
+  mainColor: string;
   selectedColor: string;
   isSp?: boolean;
 };
@@ -33,7 +33,7 @@ const MAX_WIDTH_ITEM = 4;
 export const CostumeList: React.FC<CostumeListProps> = ({
   className,
   items,
-  color,
+  mainColor,
   selectedColor,
   isSp,
 }) => {
@@ -53,7 +53,7 @@ export const CostumeList: React.FC<CostumeListProps> = ({
                   isSp={isSp}
                 />
                 <ImageContainer
-                  backgroundColor={color}
+                  backgroundColor={mainColor}
                   isSelected={item.isSelected}
                   isSp={isSp}
                 >

@@ -5,8 +5,7 @@ import {
   BottomNavigator,
   CharacterHeader,
   CommentFrame,
-  CostumeList,
-  GoogleFontIcon,
+  CostumeArea,
   HistoryFrame,
   ProfileFrame,
   QAFrame,
@@ -14,7 +13,7 @@ import {
   StatusFrame,
   Window,
 } from "../../../components";
-import { UiColor, Url, type CharactersId } from "../../../definitions";
+import { Url, type CharactersId } from "../../../definitions";
 import type { CharacterDetail, CharacterSummary } from "../../../types";
 import { useHeader, useHistory, useSprites } from "./index.app";
 import {
@@ -26,7 +25,6 @@ import {
   ProfileContainer,
   MainSpriteImage,
   GradationBackground,
-  CostumeContainer,
   TwoColumnsContainer,
   LeftColumnContainer,
   RightColumnContainer,
@@ -36,8 +34,6 @@ import {
   BrailleBlock,
   RoadBackGround,
   MarginContainer,
-  CostumeTitleContainer,
-  CostumeTitle,
 } from "./styled";
 
 type PcCharacterAboutProps = {
@@ -104,21 +100,11 @@ export const PcCharacterAbout: React.FC<PcCharacterAboutProps> = ({
         </ProfileContainer>
         <GradationBackground startColor={mainColor} endColor={secondColor}>
           <MarginContainer>
-            <CostumeContainer>
-              <CostumeTitleContainer>
-                <GoogleFontIcon
-                  iconName="fmd_good"
-                  size={64}
-                  color={UiColor.darkGray}
-                />
-                <CostumeTitle>衣装差分</CostumeTitle>
-              </CostumeTitleContainer>
-              <CostumeList
-                items={costumeList}
-                color={mainColor}
-                selectedColor={yellowColor}
-              />
-            </CostumeContainer>
+            <CostumeArea
+              items={costumeList}
+              mainColor={mainColor}
+              selectedColor={yellowColor}
+            />
             <TwoColumnsContainer>
               <LeftColumnContainer>
                 <StatusFrame
