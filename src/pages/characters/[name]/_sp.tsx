@@ -1,19 +1,18 @@
 import { useMemo } from "react";
 import { useNavigate } from "react-router";
 import {
-  CommonFrame,
-  GoogleFontIcon,
   ShortIdBoard,
   SingleLight,
   SpCharacterHeader,
   SpCostumeArea,
+  SpHistoryFrame,
   SpProfileFrame,
   SpQAFrame,
   SpSkillsFrame,
   SpStatusFrame,
   TrafficLight,
 } from "../../../components";
-import { CharactersId, UiColor } from "../../../definitions";
+import { CharactersId } from "../../../definitions";
 import type { CharacterDetail, CharacterSummary } from "../../../types";
 import {
   useBackdrop,
@@ -24,9 +23,7 @@ import {
 import {
   SpGradationInnerContainer,
   SpBackdrop,
-  SpCommonFrameStyle,
   SpContainer,
-  SpFrameTitle,
   SpGradationBackground,
   SpMarginContainer,
   SpMarginContainerRelative,
@@ -128,21 +125,7 @@ export const SpCharacterAbout: React.FC<SpCharacterAboutProps> = ({
               isExpand={isSkillsExpand}
               switchExpand={switchIsSkillExpand}
             />
-            <CommonFrame className={SpCommonFrameStyle}>
-              <SpFrameTitle>
-                <GoogleFontIcon
-                  iconName="fmd_good"
-                  size={32}
-                  color={UiColor.darkGray}
-                />
-                停車駅
-              </SpFrameTitle>
-              <div>
-                {data.histories.map((history, i) => (
-                  <div key={i}>{history.title}</div>
-                ))}
-              </div>
-            </CommonFrame>
+            <SpHistoryFrame histories={data.histories} />
           </SpGradationInnerContainer>
         </SpMarginContainer>
       </SpGradationBackground>

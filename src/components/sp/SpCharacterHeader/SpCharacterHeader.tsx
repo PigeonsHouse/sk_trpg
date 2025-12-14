@@ -23,6 +23,7 @@ export const SpCharacterHeader: React.FC<SpCharacterHeaderProps> = ({
   mainColor,
   handlePrevious,
   handleNext,
+  isBackdropOpen,
   onSwitchMenuOpen,
 }) => {
   return (
@@ -49,6 +50,7 @@ export const SpCharacterHeader: React.FC<SpCharacterHeaderProps> = ({
         onClick={handleNext}
       />
       <MenuBoard
+        isBackdropOpen={isBackdropOpen}
         setIsBackdropOpen={onSwitchMenuOpen}
         className={MenuBoardStyle}
         isSp

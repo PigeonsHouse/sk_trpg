@@ -1,4 +1,4 @@
-import { useCallback, useState } from "react";
+import { useCallback, useMemo, useState } from "react";
 import { GoogleFontIcon } from "../GoogleFontIcon";
 import { TopGuideBoard } from "../TopGuideBoard";
 import {
@@ -15,7 +15,8 @@ type MenuBoardProps = {
   className?: string;
   isHide?: boolean;
   isSp?: boolean;
-  setIsBackdropOpen: (open: boolean) => void;
+  isBackdropOpen?: boolean;
+  setIsBackdropOpen?: (open: boolean) => void;
 };
 
 /**
@@ -26,13 +27,23 @@ export const MenuBoard: React.FC<MenuBoardProps> = ({
   className,
   isHide,
   isSp,
+  isBackdropOpen,
   setIsBackdropOpen,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const isOpenWithBackdrop = useMemo(() => {
+    if (isBackdropOpen !== undefined) {
+      return isOpen && isBackdropOpen;
+    } else {
+      return isOpen;
+    }
+  }, [isOpen, isBackdropOpen]);
   const onSwitchMenu = useCallback(() => {
-    setIsOpen(!isOpen);
-    setIsBackdropOpen(!isOpen);
-  }, [isOpen, setIsBackdropOpen]);
+    setIsOpen(!isOpenWithBackdrop);
+    if (setIsBackdropOpen) {
+      setIsBackdropOpen(!isOpenWithBackdrop);
+    }
+  }, [isOpenWithBackdrop, setIsBackdropOpen]);
 
   return (
     <Container className={className}>
@@ -43,12 +54,12 @@ export const MenuBoard: React.FC<MenuBoardProps> = ({
           <GoogleFontIcon
             iconName="arrow_back"
             size={isSp ? 56 : 88}
-            className={IconStyle(isOpen, isSp)}
+            className={IconStyle(isOpenWithBackdrop, isSp)}
           />
           <Text isSp={isSp}>MENU</Text>
         </Board>
 
-        <MenuContainer isOpen={isOpen} isSp={isSp}>
+        <MenuContainer isOpen={isOpenWithBackdrop} isSp={isSp}>
           <TopGuideBoard isSp={isSp} />
         </MenuContainer>
       </BoardContainer>

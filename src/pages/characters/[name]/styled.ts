@@ -1,11 +1,6 @@
 import { css } from "@emotion/css";
 import styled from "@emotion/styled";
-import {
-  BREAK_POINT,
-  FontFamily,
-  SP_MAX_WIDTH,
-  UiColor,
-} from "../../../definitions";
+import { BREAK_POINT, SP_MAX_WIDTH, UiColor } from "../../../definitions";
 
 export const Loading = styled.div`
   height: 100dvh;
@@ -277,25 +272,6 @@ export const SpGradationInnerContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 32px;
-`;
-
-export const SpCommonFrameStyle = css`
-  margin: 0 16px;
-  padding: 22px 20px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-`;
-
-export const SpFrameTitle = styled.h2<{ withBorder?: boolean }>`
-  display: flex;
-  align-items: center;
-  margin: 0;
-  font-family: ${FontFamily.Header};
-  font-size: 24px;
-  ${(props) =>
-    props.withBorder ? `border-bottom: 1px solid ${UiColor.black};` : undefined}
 `;
 
 export const SpQuestionContainer = styled.section<{ bgColor: string }>`

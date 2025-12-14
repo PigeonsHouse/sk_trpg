@@ -1,6 +1,6 @@
 import { css } from "@emotion/css";
 import styled from "@emotion/styled";
-import { SP_MAX_WIDTH } from "../../../definitions";
+import { DropShadowFilter, SP_MAX_WIDTH } from "../../../definitions";
 
 export const Container = styled.div<{ bgColor: string }>`
   position: fixed;
@@ -15,6 +15,7 @@ export const Container = styled.div<{ bgColor: string }>`
   gap: 16px;
   padding: 0 8px;
   z-index: 50;
+  filter: ${DropShadowFilter};
 `;
 
 export const NameBoardStyle = css`
