@@ -59,11 +59,11 @@ export const PcAbout = () => {
                 !character.original && (
                   <div
                     style={{
-                      width: "50%",
                       boxSizing: "border-box",
                       padding: "8px",
-                      aspectRatio: "4 / 3",
-                      minWidth: 400,
+                      aspectRatio: "1.414 / 1",
+                      minWidth: 320,
+                      flexGrow: 1,
                     }}
                     key={character.id}
                   >
@@ -85,7 +85,6 @@ export const PcAbout = () => {
                           boxShadow: "0 4px 20px #666",
                           borderRadius: 4,
                           overflow: "hidden",
-                          // backgroundColor: `rgb(from ${character.color} r g b / 0.3)`,
                           backgroundImage: `url(${character.backgroundUrl})`,
                         }}
                       >

@@ -64,12 +64,11 @@ export const PcTop = () => {
                       <div
                         style={{
                           position: "relative",
-                          aspectRatio: 16 / 9,
+                          aspectRatio: 1.414 / 1,
                           height: 560,
                           boxShadow: "0 4px 20px #666",
                           borderRadius: 4,
                           overflow: "hidden",
-                          // backgroundColor: `rgb(from ${character.color} r g b / 0.3)`,
                           backgroundImage: `url(${character.backgroundUrl})`,
                         }}
                       >
