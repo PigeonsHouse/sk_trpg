@@ -130,7 +130,6 @@ export const SpHistoryFrame: React.FC<SpHistoryFrameProps> = ({
             position: "fixed",
             width: SP_MAX_WIDTH - 32,
             height: "fit-content",
-            maxHeight: 460,
             backgroundColor: mainColor,
             borderRadius: 16,
             zIndex: 60,
@@ -188,50 +187,57 @@ export const SpHistoryFrame: React.FC<SpHistoryFrameProps> = ({
             >
               同行者
             </h3>
-            {histories[selectedHistoryIndex].companions.map((companion) => (
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "space-between",
-                }}
-              >
-                <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
-                  <img
-                    src={companion.iconUrl}
+            <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+              {histories[selectedHistoryIndex].companions.map(
+                (companion, index) => (
+                  <div
+                    key={index}
                     style={{
-                      width: 40,
-                      aspectRatio: 1,
-                      borderRadius: "50%",
-                      backgroundColor: companion.color,
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "space-between",
                     }}
-                  />
-                  <NameContainer
-                    name={companion.name}
-                    enName={companion.enName}
-                    className={CompanionNameStyle}
-                    isSp
-                  />
-                </div>
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    color: mainColor,
-                  }}
-                >
-                  <GoogleFontIcon
-                    iconName="spatial_audio_off"
-                    size={24}
-                    color={mainColor}
-                    className={css`
-                      transform: scaleX(-1);
-                    `}
-                  />
-                  <span>{companion.nickName}</span>
-                </div>
-              </div>
-            ))}
+                  >
+                    <div
+                      style={{ display: "flex", alignItems: "center", gap: 8 }}
+                    >
+                      <img
+                        src={companion.iconUrl}
+                        style={{
+                          width: 40,
+                          aspectRatio: 1,
+                          borderRadius: "50%",
+                          backgroundColor: companion.color,
+                        }}
+                      />
+                      <NameContainer
+                        name={companion.name}
+                        enName={companion.enName}
+                        className={CompanionNameStyle}
+                        isSp
+                      />
+                    </div>
+                    <div
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        color: mainColor,
+                      }}
+                    >
+                      <GoogleFontIcon
+                        iconName="spatial_audio_off"
+                        size={24}
+                        color={mainColor}
+                        className={css`
+                          transform: scaleX(-1);
+                        `}
+                      />
+                      <span>{companion.nickName}</span>
+                    </div>
+                  </div>
+                )
+              )}
+            </div>
           </div>
 
           <button
