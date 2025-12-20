@@ -1,4 +1,4 @@
-import { useCallback, useMemo, useState } from "react";
+import { useCallback, useState } from "react";
 import { css, cx } from "@emotion/css";
 import {
   DropShadowFilter,
@@ -18,8 +18,6 @@ type SpHistoryFrameProps = {
   selectedColor: string;
   selectedHistoryIndex: number;
   setSelectedHistoryIndex: (index: number) => void;
-  isBackdropOpen: boolean;
-  onSwitchBackdropOpen: (isOpen: boolean) => void;
 };
 
 export const SpHistoryFrame: React.FC<SpHistoryFrameProps> = ({
@@ -29,22 +27,13 @@ export const SpHistoryFrame: React.FC<SpHistoryFrameProps> = ({
   selectedColor,
   selectedHistoryIndex,
   setSelectedHistoryIndex,
-  isBackdropOpen,
-  onSwitchBackdropOpen,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const isOpenWithBackdrop = useMemo(
-    () => isOpen && isBackdropOpen,
-    [isOpen, isBackdropOpen]
-  );
   const onSwitchMenu = useCallback(
-    (isOpen: boolean) => {
-      setIsOpen(isOpen);
-      if (onSwitchBackdropOpen) {
-        onSwitchBackdropOpen(isOpen);
-      }
+    (open: boolean) => {
+      setIsOpen(open);
     },
-    [isOpenWithBackdrop, onSwitchBackdropOpen]
+    [setIsOpen]
   );
 
   return (
@@ -123,7 +112,18 @@ export const SpHistoryFrame: React.FC<SpHistoryFrameProps> = ({
           />
         </div>
       </CommonFrame>
-      {isOpenWithBackdrop && (
+      <div
+        style={{
+          inset: 0,
+          position: "fixed",
+          backgroundColor: "rgb(from black r g b / 0.4)",
+          zIndex: 60,
+          opacity: isOpen ? 1 : 0,
+          pointerEvents: isOpen ? "unset" : "none",
+          transition: "opacity, 0.2s",
+        }}
+        onClick={() => onSwitchMenu(false)}
+      >
         <div
           style={{
             inset: 0,
@@ -132,7 +132,6 @@ export const SpHistoryFrame: React.FC<SpHistoryFrameProps> = ({
             height: "fit-content",
             backgroundColor: mainColor,
             borderRadius: 16,
-            zIndex: 60,
             margin: "auto",
             filter: DropShadowFilter,
             padding: 32,
@@ -199,7 +198,11 @@ export const SpHistoryFrame: React.FC<SpHistoryFrameProps> = ({
                     }}
                   >
                     <div
-                      style={{ display: "flex", alignItems: "center", gap: 8 }}
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        gap: 8,
+                      }}
                     >
                       <img
                         src={companion.iconUrl}
@@ -239,7 +242,6 @@ export const SpHistoryFrame: React.FC<SpHistoryFrameProps> = ({
               )}
             </div>
           </div>
-
           <button
             style={{
               position: "absolute",
@@ -266,7 +268,7 @@ export const SpHistoryFrame: React.FC<SpHistoryFrameProps> = ({
             />
           </button>
         </div>
-      )}
+      </div>
     </>
   );
 };

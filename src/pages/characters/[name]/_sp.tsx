@@ -132,8 +132,6 @@ export const SpCharacterAbout: React.FC<SpCharacterAboutProps> = ({
               selectedColor={yellowColor}
               selectedHistoryIndex={selectedHistoryIndex}
               setSelectedHistoryIndex={setSelectedHistoryIndex}
-              isBackdropOpen={isBackdropOpen}
-              onSwitchBackdropOpen={onSwitchBackdrop}
             />
           </SpGradationInnerContainer>
         </SpMarginContainer>

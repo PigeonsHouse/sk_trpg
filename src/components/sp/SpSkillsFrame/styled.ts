@@ -63,6 +63,7 @@ export const ExpandButton = styled.button`
   align-items: center;
   gap: 16px;
   color: ${UiColor.gray};
+  cursor: pointer;
 `;
 
 export const ButtonIconStyle = css`
