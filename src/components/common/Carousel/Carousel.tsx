@@ -3,6 +3,9 @@ import { NavigateArrow } from "../NavigateArrow";
 import {
   ButtonsContainer,
   Container,
+  Dot,
+  DotContainer,
+  DotsContainer,
   Item,
   ItemContainer,
   ItemListContainer,
@@ -171,25 +174,15 @@ export const Carousel: React.FC<CarouselProps> = ({
           onClick={handlePrev}
           mainColor={mainColor}
         />
-        <div style={{ display: "flex", gap: 24 }}>
+        <DotsContainer>
           {Array(carouselItems.length)
             .fill(0)
             .map((_, idx) => (
-              <div
-                style={{
-                  backgroundColor:
-                    displayIndex === idx
-                      ? mainColor
-                      : `rgb(from ${mainColor} r g b / 0.5)`,
-                  width: 12,
-                  aspectRatio: 1,
-                  borderRadius: 9999,
-                }}
-                key={idx}
-                onClick={() => onDotClick(idx)}
-              />
+              <DotContainer key={idx} onClick={() => onDotClick(idx)}>
+                <Dot isSelected={idx === displayIndex} mainColor={mainColor} />
+              </DotContainer>
             ))}
-        </div>
+        </DotsContainer>
         <NavigateArrow
           arrowDirection="right"
           arrowHeight={16}

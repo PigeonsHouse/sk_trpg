@@ -56,6 +56,29 @@ export const ButtonsContainer = styled.div`
   gap: 64px;
 `;
 
+export const DotsContainer = styled.div`
+  display: flex;
+  gap: 16px;
+`;
+
+export const DotContainer = styled.button`
+  border: none;
+  background: none;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 9999px;
+`;
+
+export const Dot = styled.div<{ isSelected?: boolean; mainColor: string }>`
+  background-color: ${(props) =>
+    props.isSelected
+      ? props.mainColor
+      : `rgb(from ${props.mainColor} r g b / 0.5)`};
+  width: 12px;
+  aspect-ratio: 1 / 1;
+  border-radius: 9999px;
+`;
+
 export const HorizontalFlipStyle = css`
   transform: scaleX(-1);
 `;
