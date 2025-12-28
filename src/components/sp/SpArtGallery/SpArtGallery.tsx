@@ -1,6 +1,6 @@
-import { useMemo } from "react";
+import { useCallback, useMemo, useState } from "react";
 import { Carousel } from "../../common";
-import { Container, Title } from "./styled";
+import { Backdrop, Container, TargetArt, Title } from "./styled";
 
 type SpArtGalleryProps = {
   artGallery: string[];
@@ -11,16 +11,32 @@ export const SpArtGallery: React.FC<SpArtGalleryProps> = ({
   artGallery,
   mainColor,
 }) => {
+  const [targetArt, setTargetArt] = useState<string | undefined>();
+  const [isArtOpen, setIsArtOpen] = useState(false);
+  const closeArt = useCallback(() => setIsArtOpen(false), [setIsArtOpen]);
   const carouselItems = useMemo(() => {
     return artGallery.map((url) => ({
       imageUrl: url,
+      onClick: () => {
+        setIsArtOpen(true);
+        setTargetArt(url);
+      },
     }));
-  }, [artGallery]);
+  }, [artGallery, setIsArtOpen]);
+  const stopPropagation = useCallback(
+    (e: React.MouseEvent<HTMLImageElement>) => e.stopPropagation(),
+    []
+  );
 
   return artGallery.length > 0 ? (
-    <Container>
-      <Title>アートギャラリー</Title>
-      <Carousel carouselItems={carouselItems} mainColor={mainColor} />
-    </Container>
+    <>
+      <Container>
+        <Title>アートギャラリー</Title>
+        <Carousel carouselItems={carouselItems} mainColor={mainColor} />
+      </Container>
+      <Backdrop isOpen={isArtOpen} onClick={closeArt}>
+        {isArtOpen && <TargetArt onClick={stopPropagation} src={targetArt} />}
+      </Backdrop>
+    </>
   ) : null;
 };

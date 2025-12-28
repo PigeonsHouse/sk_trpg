@@ -27,7 +27,7 @@ export const BottomNavigator: React.FC<BottomNavigatorProps> = ({
   handleNext,
   handleAboutCharacters,
 }) => (
-  <Container>
+  <Container isSp={isSp}>
     <NavigateArrow
       arrowDirection="left"
       disabled={!handlePrevious}

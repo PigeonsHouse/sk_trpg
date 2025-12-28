@@ -14,7 +14,7 @@ import {
 
 type CarouselItem = {
   imageUrl: string;
-  onClick?: () => void;
+  onClick: () => void;
 };
 
 const COPY_COUNT = 4;

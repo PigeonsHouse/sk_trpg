@@ -13,3 +13,20 @@ export const Title = styled.h2`
   font-size: 24px;
   text-align: center;
 `;
+
+export const Backdrop = styled.div<{ isOpen?: boolean }>`
+  inset: 0;
+  position: fixed;
+  background-color: rgb(from black r g b / 0.75);
+  z-index: 60;
+  opacity: ${(props) => (props.isOpen ? 1 : 0)};
+  pointer-events: ${(props) => (props.isOpen ? "unset" : "none")};
+  transition: opacity, 0.2s;
+  padding: 16px;
+  display: flex;
+`;
+
+export const TargetArt = styled.img`
+  max-height: 100%;
+  max-width: 100%;
+`;

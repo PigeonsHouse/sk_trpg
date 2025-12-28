@@ -2,7 +2,9 @@ import { css } from "@emotion/css";
 import styled from "@emotion/styled";
 import { BREAK_POINT } from "../../../definitions";
 
-export const Container = styled.div`
+export const Container = styled.div<{ isSp?: boolean }>`
+  ${(props) =>
+    props.isSp ? undefined : `width: ${(3.3 / (1 + 3.3 + 1)) * 100}%;`}
   max-width: ${BREAK_POINT}px;
   margin: auto;
   justify-content: space-between;
@@ -20,12 +22,12 @@ export const NameBoardContainer = styled.button`
 export const BoardStyle = (isSp?: boolean) => css`
   && {
     width: ${isSp ? 220 : 480}px;
-    height: ${isSp ? 80 : 140}px;
-    padding: 8px;
+    height: ${isSp ? 64 : 140}px;
+    padding: ${isSp ? 0 : 8}px;
     justify-content: center;
-    gap: 4px;
+    gap: ${isSp ? 2 : 4}px;
     &&& span:first-child {
-      font-size: ${isSp ? 32 : 48}px;
+      font-size: ${isSp ? 24 : 48}px;
       letter-spacing: 0;
       line-height: unset;
     }
@@ -52,16 +54,17 @@ export const BottomNameStyle = (
 ) => css`
   position: absolute;
   ${direction}: 0;
-  top: ${isSp ? 44 : 64}px;
+  top: ${isSp ? 40 : 64}px;
   & span {
     color: black;
   }
   &&& span:first-child {
-    font-size: ${isSp ? 28 : 40}px;
+    font-size: ${isSp ? 24 : 40}px;
     letter-spacing: initial;
   }
   &&& span:last-child {
-    font-size: ${isSp ? 10 : 12}px;
+    font-size: ${isSp ? 6 : 12}px;
     letter-spacing: initial;
+    white-space: nowrap;
   }
 `;
