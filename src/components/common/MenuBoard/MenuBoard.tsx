@@ -50,7 +50,7 @@ export const MenuBoard: React.FC<MenuBoardProps> = ({
       <BoardContainer isHide={isHide} isSp={isSp}>
         <Bar isSp={isSp} position="left" />
         <Bar isSp={isSp} position="right" />
-        <Board isSp={isSp} onClick={onSwitchMenu}>
+        <Board isHide={isHide} isSp={isSp} onClick={onSwitchMenu}>
           <GoogleFontIcon
             iconName="arrow_back"
             size={isSp ? 56 : 88}
