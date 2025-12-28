@@ -3,7 +3,6 @@ import styled from "@emotion/styled";
 import { BREAK_POINT } from "../../../definitions";
 
 export const Container = styled.div`
-  width: ${(3.3 / (1 + 3.3 + 1)) * 100}%;
   max-width: ${BREAK_POINT}px;
   margin: auto;
   justify-content: space-between;
@@ -18,26 +17,26 @@ export const NameBoardContainer = styled.button`
   border: none;
 `;
 
-export const BoardStyle = css`
+export const BoardStyle = (isSp?: boolean) => css`
   && {
-    width: 480px;
-    height: 140px;
+    width: ${isSp ? 220 : 480}px;
+    height: ${isSp ? 80 : 140}px;
     padding: 8px;
     justify-content: center;
     gap: 4px;
-    & span:first-child {
-      font-size: 48px;
+    &&& span:first-child {
+      font-size: ${isSp ? 32 : 48}px;
       letter-spacing: 0;
       line-height: unset;
     }
     & span:last-child {
-      font-size: 10px;
+      font-size: ${isSp ? 8 : 10}px;
     }
     & > div:last-child {
-      height: 12px;
+      height: ${isSp ? 6 : 12}px;
       &::after {
-        border-top-width: 6px;
-        border-bottom-width: 6px;
+        border-top-width: ${isSp ? 3 : 6}px;
+        border-bottom-width: ${isSp ? 3 : 6}px;
       }
     }
   }
@@ -47,15 +46,22 @@ export const BottomArrowStyle = css`
   position: relative;
 `;
 
-export const BottomNameStyle = (direction: "left" | "right") => css`
+export const BottomNameStyle = (
+  direction: "left" | "right",
+  isSp?: boolean
+) => css`
   position: absolute;
   ${direction}: 0;
-  top: 64px;
+  top: ${isSp ? 44 : 64}px;
   & span {
     color: black;
   }
-  & span:first-child {
-    font-size: 40px;
+  &&& span:first-child {
+    font-size: ${isSp ? 28 : 40}px;
+    letter-spacing: initial;
+  }
+  &&& span:last-child {
+    font-size: ${isSp ? 10 : 12}px;
     letter-spacing: initial;
   }
 `;

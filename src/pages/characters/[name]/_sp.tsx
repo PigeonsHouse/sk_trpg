@@ -1,6 +1,7 @@
-import { useMemo } from "react";
+import { useCallback, useMemo } from "react";
 import { useNavigate } from "react-router";
 import {
+  BottomNavigator,
   ShortIdBoard,
   SingleLight,
   SpArtGallery,
@@ -14,7 +15,7 @@ import {
   SpStatusFrame,
   TrafficLight,
 } from "../../../components";
-import { CharactersId } from "../../../definitions";
+import { CharactersId, Url } from "../../../definitions";
 import type { CharacterDetail, CharacterSummary } from "../../../types";
 import {
   useBackdrop,
@@ -76,9 +77,9 @@ export const SpCharacterAbout: React.FC<SpCharacterAboutProps> = ({
     data.histories
   );
 
-  // const handleAboutCharacters = useCallback(() => {
-  //   navigate(Url.aboutTo("characters"));
-  // }, [navigate]);
+  const handleAboutCharacters = useCallback(() => {
+    navigate(Url.aboutTo("characters"));
+  }, [navigate]);
 
   return (
     <SpContainer>
@@ -151,6 +152,15 @@ export const SpCharacterAbout: React.FC<SpCharacterAboutProps> = ({
           <SpCommentFrame comment={data.comment} />
         </SpMarginContainer>
         <SpArtGallery artGallery={data.artGallery} mainColor={mainColor} />
+        <SpMarginContainer>
+          <BottomNavigator
+            color={mainColor}
+            handlePrevious={handlePrevious}
+            handleNext={handleNext}
+            handleAboutCharacters={handleAboutCharacters}
+            isSp
+          />
+        </SpMarginContainer>
       </SpRoadBackGround>
     </SpContainer>
   );

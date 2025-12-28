@@ -10,6 +10,7 @@ import {
 } from "./styled";
 
 type BottomNavigatorProps = {
+  isSp?: boolean;
   color: string;
   handlePrevious?: () => void;
   handleNext?: () => void;
@@ -18,9 +19,9 @@ type BottomNavigatorProps = {
 
 /**
  * キャラクターページのボトムナビゲーター
- * TODO: レスポンシブ未対応
  */
 export const BottomNavigator: React.FC<BottomNavigatorProps> = ({
+  isSp,
   color,
   handlePrevious,
   handleNext,
@@ -30,7 +31,7 @@ export const BottomNavigator: React.FC<BottomNavigatorProps> = ({
     <NavigateArrow
       arrowDirection="left"
       disabled={!handlePrevious}
-      arrowHeight={64}
+      arrowHeight={isSp ? 40 : 64}
       mainColor={color}
       onClick={handlePrevious}
       className={BottomArrowStyle}
@@ -38,7 +39,8 @@ export const BottomNavigator: React.FC<BottomNavigatorProps> = ({
       <NameContainer
         name="まえへ"
         enName="Previous Character"
-        className={BottomNameStyle("left")}
+        className={BottomNameStyle("left", isSp)}
+        isSp={isSp}
       />
     </NavigateArrow>
     <NameBoardContainer onClick={handleAboutCharacters}>
@@ -46,12 +48,13 @@ export const BottomNavigator: React.FC<BottomNavigatorProps> = ({
         name="一覧に戻る"
         enName="GO TO CHARACTER LIST"
         color={color}
-        className={BoardStyle}
+        className={BoardStyle(isSp)}
+        isSp={isSp}
       />
     </NameBoardContainer>
     <NavigateArrow
       arrowDirection="right"
-      arrowHeight={64}
+      arrowHeight={isSp ? 40 : 64}
       mainColor={color}
       onClick={handleNext}
       disabled={!handleNext}
@@ -60,7 +63,8 @@ export const BottomNavigator: React.FC<BottomNavigatorProps> = ({
       <NameContainer
         name="つぎへ"
         enName="Next Character"
-        className={BottomNameStyle("right")}
+        className={BottomNameStyle("right", isSp)}
+        isSp={isSp}
       />
     </NavigateArrow>
   </Container>
