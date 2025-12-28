@@ -17,7 +17,11 @@ export const BoardContainer = styled.div<{ isHide?: boolean; isSp?: boolean }>`
   filter: ${DropShadowFilter};
 `;
 
-export const Board = styled.div<{ isHide?: boolean; isSp?: boolean }>`
+export const Board = styled.div<{
+  isHide?: boolean;
+  disabled?: boolean;
+  isSp?: boolean;
+}>`
   background-color: ${UiColor.yellow};
   width: ${(props) => (props.isSp ? 104 : 160)}px;
   height: ${(props) => (props.isSp ? 80 : 120)}px;
@@ -26,7 +30,10 @@ export const Board = styled.div<{ isHide?: boolean; isSp?: boolean }>`
   justify-content: center;
   align-items: center;
   user-select: none;
-  ${(props) => (props.isHide ? "pointer-events: none;" : "cursor: pointer;")}
+  ${(props) =>
+    props.isHide || props.disabled
+      ? "pointer-events: none;"
+      : "cursor: pointer;"}
 `;
 
 export const IconStyle = (isOpen: boolean, isSp?: boolean) => css`

@@ -1,11 +1,11 @@
 import { useCallback, useEffect, useRef } from "react";
 import { useLocation } from "react-router";
 
-interface AnchorProps {
+type AnchorProps = {
   id: string;
   offset?: number;
   disabledScroll?: boolean;
-}
+};
 
 /**
  * アバウトページで使用するアンカースクロールの対象

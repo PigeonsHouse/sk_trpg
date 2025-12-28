@@ -9,11 +9,13 @@ export const GoogleFontIcon: React.FC<{
   iconName: string;
   size: number;
   color?: string;
-}> = ({ className, iconName, size, color }) => {
+  fill?: boolean;
+}> = ({ className, iconName, size, color, fill }) => {
   return (
     <Icon
       rectSize={size}
       iconColor={color}
+      fill={fill}
       className={cx("material-icons", className)}
     >
       {iconName}

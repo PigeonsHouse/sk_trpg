@@ -1,6 +1,6 @@
 import type React from "react";
 import { Link } from "react-router";
-import { Url } from "../../../definitions";
+import { SkebUrl, TwitterUrl, Url } from "../../../definitions";
 import { GoogleFontIcon } from "../GoogleFontIcon";
 import {
   ArrowStyle,
@@ -27,12 +27,12 @@ const menuContents = [
     enLabel: "Characters",
   },
   {
-    link: Url.aboutTo("twitter"),
+    link: TwitterUrl,
     label: "X",
     enLabel: "Twitter",
   },
   {
-    link: Url.aboutTo("skeb"),
+    link: SkebUrl,
     label: "Skeb",
     enLabel: "Skeb",
   },
@@ -40,7 +40,9 @@ const menuContents = [
 
 type TopGuideBoardProps = {
   className?: string;
+  ref?: React.Ref<HTMLDivElement>;
   isSp?: boolean;
+  onClick?: () => void;
 };
 
 /**
@@ -48,10 +50,12 @@ type TopGuideBoardProps = {
  */
 export const TopGuideBoard: React.FC<TopGuideBoardProps> = ({
   className,
+  ref,
   isSp,
+  onClick,
 }) => {
   return (
-    <Container isSp={isSp} className={className}>
+    <Container isSp={isSp} className={className} ref={ref}>
       <Link to={Url.top} className={NoDecorationLinkStyle}>
         <TopContainer>
           <GoogleFontIcon
@@ -62,8 +66,9 @@ export const TopGuideBoard: React.FC<TopGuideBoardProps> = ({
           <TopLabel isSp={isSp}>TOP</TopLabel>
         </TopContainer>
       </Link>
-      {menuContents.map((content, idx) => (
-        <Link key={idx} to={content.link} className={NoDecorationLinkStyle}>
+      {menuContents.map((content, idx) => {
+        const isExternal = content.link.startsWith("https://");
+        const menuContentDom = (
           <OneLineContainer>
             <Box isSp={isSp} />
             <TextContainer>
@@ -71,8 +76,28 @@ export const TopGuideBoard: React.FC<TopGuideBoardProps> = ({
               <SmallText isSp={isSp}>{content.enLabel}</SmallText>
             </TextContainer>
           </OneLineContainer>
-        </Link>
-      ))}
+        );
+        return isExternal ? (
+          <a
+            key={idx}
+            href={content.link}
+            className={NoDecorationLinkStyle}
+            target="_blank"
+            onClick={onClick}
+          >
+            {menuContentDom}
+          </a>
+        ) : (
+          <Link
+            key={idx}
+            to={content.link}
+            className={NoDecorationLinkStyle}
+            onClick={onClick}
+          >
+            {menuContentDom}
+          </Link>
+        );
+      })}
     </Container>
   );
 };

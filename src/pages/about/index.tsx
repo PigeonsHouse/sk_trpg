@@ -1,6 +1,7 @@
 import { APP_NAME } from "../../definitions";
 import { useBreakPoint } from "../../hooks";
 import { PcAbout } from "./_pc";
+import { SpAbout } from "./_sp";
 
 const About = () => {
   const title = `このサイトは何？ - ${APP_NAME}`;
@@ -10,7 +11,7 @@ const About = () => {
   return (
     <>
       <title>{title}</title>
-      {isPc ? <PcAbout /> : <PcAbout />}
+      {isPc ? <PcAbout /> : <SpAbout />}
     </>
   );
 };
