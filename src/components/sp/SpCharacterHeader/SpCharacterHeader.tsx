@@ -1,3 +1,4 @@
+import { useCallback } from "react";
 import { calcNameSize } from "../../../utils";
 import { MenuBoard, NameBoard, NavigateArrow } from "../../common";
 import { Container, MenuBoardStyle, NameBoardStyle } from "./styled";
@@ -26,13 +27,26 @@ export const SpCharacterHeader: React.FC<SpCharacterHeaderProps> = ({
   isBackdropOpen,
   onSwitchMenuOpen,
 }) => {
+  const onClickPrevious = useCallback(() => {
+    if (handlePrevious) {
+      handlePrevious();
+      onSwitchMenuOpen(false);
+    }
+  }, [handlePrevious, onSwitchMenuOpen]);
+  const onClickNext = useCallback(() => {
+    if (handleNext) {
+      handleNext();
+      onSwitchMenuOpen(false);
+    }
+  }, [handleNext, onSwitchMenuOpen]);
+
   return (
     <Container bgColor={mainColor} className={className}>
       <NavigateArrow
         arrowHeight={24}
         arrowDirection="left"
         disabled={!handlePrevious}
-        onClick={handlePrevious}
+        onClick={onClickPrevious}
       />
       <NameBoard
         isHeading
@@ -47,7 +61,7 @@ export const SpCharacterHeader: React.FC<SpCharacterHeaderProps> = ({
         arrowHeight={24}
         arrowDirection="right"
         disabled={!handleNext}
-        onClick={handleNext}
+        onClick={onClickNext}
       />
       <MenuBoard
         isBackdropOpen={isBackdropOpen}
