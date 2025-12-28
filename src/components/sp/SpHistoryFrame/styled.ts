@@ -247,5 +247,6 @@ export const CardCloseButton = styled.button`
   cursor: pointer;
   span {
     font-weight: ${FontWeight.Bold};
+    vertical-align: middle;
   }
 `;

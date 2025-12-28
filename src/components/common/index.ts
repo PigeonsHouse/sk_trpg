@@ -1,5 +1,6 @@
 export * from "./Anchor";
 export * from "./BottomNavigator";
+export * from "./Carousel";
 export * from "./CommonFrame";
 export * from "./CostumeList";
 export * from "./GlobalStyles";

@@ -213,6 +213,7 @@ export const SpBackdrop = styled.div<{ open?: boolean }>`
 `;
 
 export const SpMarginContainer = styled.div`
+  width: 100%;
   max-width: ${SP_MAX_WIDTH}px;
   margin: auto;
   height: 100%;
@@ -277,4 +278,43 @@ export const SpGradationInnerContainer = styled.div`
 export const SpQuestionContainer = styled.section<{ bgColor: string }>`
   background-color: ${(props) => props.bgColor};
   padding: 32px 0;
+`;
+
+export const SpRoadBackGround = styled.div`
+  padding: 64px 0;
+  position: relative;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+`;
+
+export const SpBrailleBlock = styled.div<{ blockColor: string }>`
+  position: absolute;
+  width: 116px;
+  top: 0;
+  bottom: 0;
+  background:
+    repeating-linear-gradient(
+      180deg,
+      transparent,
+      transparent 116px,
+      white 116px,
+      white 120px
+    ),
+    linear-gradient(
+      90deg,
+      ${(props) => props.blockColor},
+      ${(props) => props.blockColor} 36px,
+      white 36px,
+      white 40px,
+      ${(props) => props.blockColor} 40px,
+      ${(props) => props.blockColor} 76px,
+      white 76px,
+      white 80px,
+      ${(props) => props.blockColor} 80px,
+      ${(props) => props.blockColor} 116px
+    );
+  left: calc(50% + 120px);
+  z-index: -1;
 `;

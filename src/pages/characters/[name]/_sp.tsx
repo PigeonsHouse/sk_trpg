@@ -3,7 +3,9 @@ import { useNavigate } from "react-router";
 import {
   ShortIdBoard,
   SingleLight,
+  SpArtGallery,
   SpCharacterHeader,
+  SpCommentFrame,
   SpCostumeArea,
   SpHistoryFrame,
   SpProfileFrame,
@@ -34,6 +36,8 @@ import {
   SpSprite,
   SpSpriteContainer,
   SpTrafficLightStyle,
+  SpBrailleBlock,
+  SpRoadBackGround,
 } from "./styled";
 
 type SpCharacterAboutProps = {
@@ -141,6 +145,13 @@ export const SpCharacterAbout: React.FC<SpCharacterAboutProps> = ({
           <SpQAFrame qaList={data.qaList} mainColor={mainColor} />
         </SpMarginContainer>
       </SpQuestionContainer>
+      <SpRoadBackGround>
+        <SpBrailleBlock blockColor={yellowColor} />
+        <SpMarginContainer>
+          <SpCommentFrame comment={data.comment} />
+        </SpMarginContainer>
+        <SpArtGallery artGallery={data.artGallery} mainColor={mainColor} />
+      </SpRoadBackGround>
     </SpContainer>
   );
 };

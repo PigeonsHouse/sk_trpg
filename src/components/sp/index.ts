@@ -1,4 +1,6 @@
+export * from "./SpArtGallery";
 export * from "./SpCharacterHeader";
+export * from "./SpCommentFrame";
 export * from "./SpCostumeArea";
 export * from "./SpHistoryFrame";
 export * from "./SpProfileFrame";
