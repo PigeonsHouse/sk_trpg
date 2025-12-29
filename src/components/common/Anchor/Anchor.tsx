@@ -38,3 +38,21 @@ export const Anchor: React.FC<AnchorProps> = ({
 
   return <div id={id} ref={ref} />;
 };
+
+type AnchorWithProps = AnchorProps & {
+  className?: string;
+  children: React.ReactNode;
+};
+
+export const AnchorWith: React.FC<AnchorWithProps> = ({
+  className,
+  children,
+  ...props
+}) => {
+  return (
+    <div className={className}>
+      <Anchor {...props} />
+      {children}
+    </div>
+  );
+};

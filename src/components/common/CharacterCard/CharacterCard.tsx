@@ -8,11 +8,13 @@ import { NoDecorationLinkStyle } from "./styled";
 type CharacterCardProps = {
   className?: string;
   data: CharacterSummary;
+  isSp?: boolean;
 };
 
 export const CharacterCard: React.FC<CharacterCardProps> = ({
   className,
   data,
+  isSp,
 }) => {
   return (
     <Link
@@ -50,7 +52,7 @@ export const CharacterCard: React.FC<CharacterCardProps> = ({
           style={{
             fontWeight: FontWeight.Bold,
             textAlign: "center",
-            fontSize: 32,
+            fontSize: isSp ? 24 : 32,
             fontFamily: FontFamily.Header,
           }}
         >

@@ -1,5 +1,6 @@
 export * from "./Anchor";
 export * from "./BottomNavigator";
+export * from "./BrailleBlock";
 export * from "./Carousel";
 export * from "./CharacterCard";
 export * from "./CommonFrame";
@@ -13,5 +14,6 @@ export * from "./NameContainer";
 export * from "./NavigateArrow";
 export * from "./ShortIdBoard";
 export * from "./SingleLight";
+export * from "./SnsLink";
 export * from "./TopGuideBoard";
 export * from "./TrafficLight";
