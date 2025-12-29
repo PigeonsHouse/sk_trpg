@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router";
 import {
   AnchorWith,
@@ -8,7 +8,7 @@ import {
   SnsLink,
 } from "../components";
 import { UiColor } from "../definitions";
-import type { CharacterSummary } from "../types";
+import { useGetSummary } from "../hooks";
 import {
   SpAboutCharactersSection,
   SpAboutContainer,
@@ -78,12 +78,7 @@ export const SpTop = () => {
     return () => window.removeEventListener("scroll", callback);
   }, [navigate]);
 
-  const [summary, setSummary] = useState<CharacterSummary[]>([]);
-  useEffect(() => {
-    fetch(`${import.meta.env.BASE_URL}data/characters.json`)
-      .then((res) => res.json())
-      .then((data) => setSummary(data));
-  }, []);
+  const { data: summary } = useGetSummary();
 
   return (
     <SpBackgroundContainer>
@@ -121,7 +116,7 @@ export const SpTop = () => {
             </AnchorWith>
             <SpCharacterCardsContainer>
               {summary
-                .filter((character) => !character.original)
+                ?.filter((character) => !character.original)
                 .map((character) => (
                   <CharacterCard
                     key={character.id}

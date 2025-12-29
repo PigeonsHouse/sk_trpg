@@ -1,11 +1,16 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { Routes } from "@generouted/react-router";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { GlobalStyles } from "./components";
+
+const queryClient = new QueryClient();
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <GlobalStyles />
-    <Routes />
+    <QueryClientProvider client={queryClient}>
+      <GlobalStyles />
+      <Routes />
+    </QueryClientProvider>
   </StrictMode>
 );

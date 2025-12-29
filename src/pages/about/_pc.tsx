@@ -8,7 +8,7 @@ import {
   TopGuideBoard,
 } from "../../components";
 import { BREAK_POINT } from "../../definitions";
-import type { CharacterSummary } from "../../types";
+import { useGetSummary } from "../../hooks";
 import {
   AboutDescription,
   AboutSection,
@@ -29,13 +29,7 @@ import {
 } from "./styled";
 
 export const PcAbout = () => {
-  const [summary, setSummary] = useState<CharacterSummary[] | undefined>();
-  useEffect(() => {
-    fetch(`${import.meta.env.BASE_URL}data/characters.json`)
-      .then((res) => res.json())
-      .then((data) => setSummary(data));
-  }, []);
-  const isLoading = summary === undefined;
+  const { data: summary, isPending } = useGetSummary();
 
   const guideBoardRef = useRef<HTMLDivElement | null>(null);
   const guideBoardWidth = useMemo(() => {
@@ -71,7 +65,7 @@ export const PcAbout = () => {
           />
         </StickyContainer>
         <AboutSection>
-          <AnchorWith id="about" offset={-280} disabledScroll={isLoading}>
+          <AnchorWith id="about" offset={-280} disabledScroll={isPending}>
             <AboutTitle>What is this place?</AboutTitle>
           </AnchorWith>
           <AboutDescription>
@@ -79,7 +73,7 @@ export const PcAbout = () => {
           </AboutDescription>
         </AboutSection>
         <CharactersSection>
-          <AnchorWith id="characters" offset={-200} disabledScroll={isLoading}>
+          <AnchorWith id="characters" offset={-200} disabledScroll={isPending}>
             <SectionTitle>CHARACTER</SectionTitle>
           </AnchorWith>
           {summary ? (

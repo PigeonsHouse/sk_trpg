@@ -1,6 +1,6 @@
-import { useCallback, useEffect, useState } from "react";
+import { useCallback } from "react";
 import { CharacterCard, TopGuideBoard } from "../components";
-import type { CharacterSummary } from "../types";
+import { useGetSummary } from "../hooks";
 import {
   CharacterCardStyle,
   TopBackgroundContainer,
@@ -9,12 +9,7 @@ import {
 } from "./styled";
 
 export const PcTop = () => {
-  const [summary, setSummary] = useState<CharacterSummary[]>([]);
-  useEffect(() => {
-    fetch(`${import.meta.env.BASE_URL}data/characters.json`)
-      .then((res) => res.json())
-      .then((data) => setSummary(data));
-  }, []);
+  const { data: summary } = useGetSummary();
   const onScroll = useCallback((e: React.WheelEvent) => {
     e.currentTarget.scrollLeft += e.deltaY;
   }, []);
@@ -25,7 +20,7 @@ export const PcTop = () => {
         <TopItemContainer>
           <TopGuideBoard />
           {summary
-            .filter((character) => !character.original)
+            ?.filter((character) => !character.original)
             .map((character) => (
               <CharacterCard
                 key={character.id}

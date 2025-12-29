@@ -1,8 +1,13 @@
 import { useEffect, useMemo, useState } from "react";
 import { useNavigate, useParams } from "react-router";
 import { APP_NAME, CharactersId, Url } from "../../../definitions";
-import { useBreakPoint, useScrollbarWidth } from "../../../hooks";
-import type { CharacterDetail, CharacterSummary } from "../../../types";
+import {
+  useBreakPoint,
+  useGetDetail,
+  useGetSummary,
+  useScrollbarWidth,
+} from "../../../hooks";
+import { useDefined } from "../../../utils";
 import { PcCharacterAbout } from "./_pc";
 import { SpCharacterAbout } from "./_sp";
 import { Loading } from "./styled";
@@ -28,30 +33,21 @@ const CharacterAbout = () => {
   }, [characterId]);
 
   const [index, setIndex] = useState(0);
-  const [summary, setSummary] = useState<CharacterSummary[]>([]);
-  const [data, setData] = useState<CharacterDetail | undefined>();
-  useEffect(() => {
-    fetch("/data/characters.json")
-      .then((res) => res.json())
-      .then((data) => setSummary(data));
-  }, []);
-  useEffect(() => {
-    if (!characterId || summary.length === 0) return;
+  const { data: summary, isPending } = useGetSummary();
+  const fileId = useMemo(() => {
+    if (!characterId || !summary || summary.length === 0) return;
     const findIndex = summary.findIndex(
       (singleSummary) => singleSummary.id === characterId
     );
     if (findIndex === -1) return;
     setIndex(findIndex);
     const indexWithZero = String(findIndex).padStart(2, "0");
-    fetch(`/data/characters/${indexWithZero}-${characterId}.json`)
-      .then((res) => res.json())
-      .then((data) => {
-        const castedData = data as CharacterDetail;
-        setData(castedData);
-      });
+    return `${indexWithZero}-${characterId}`;
   }, [characterId, summary]);
+  const { data } = useGetDetail(fileId ?? "", !!fileId);
+  const detail = useDefined(data);
 
-  const isLoading = !characterId || data === undefined;
+  const isLoading = isPending || !characterId || !summary || !detail;
 
   const title = data
     ? `${data.name} - ${APP_NAME}`
@@ -70,14 +66,14 @@ const CharacterAbout = () => {
             <PcCharacterAbout
               summary={summary}
               characterId={characterId}
-              data={data}
+              data={detail}
               index={index}
             />
           ) : (
             <SpCharacterAbout
               summary={summary}
               characterId={characterId}
-              data={data}
+              data={detail}
               index={index}
             />
           )}
