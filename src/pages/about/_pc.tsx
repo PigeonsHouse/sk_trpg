@@ -10,6 +10,7 @@ import {
 } from "../../components";
 import {
   BREAK_POINT,
+  DropShadowFilter,
   FontFamily,
   FontWeight,
   SkebUrl,
@@ -54,7 +55,7 @@ export const Bar = styled.div<{ position: "left" | "right" }>`
   height: 48px;
   background-color: ${UiColor.gray};
   top: 0;
-  ${(props) => props.position}: 8px;
+  ${(props) => props.position}: 16px;
 `;
 
 export const PcAbout = () => {
@@ -117,6 +118,7 @@ export const PcAbout = () => {
             paddingTop: 48,
             margin: "0 auto",
             width: 728,
+            filter: DropShadowFilter,
           }}
         >
           <Bar position="left" />
@@ -185,7 +187,7 @@ export const PcAbout = () => {
             className={css`
               position: absolute;
               width: fit-content;
-              right: ${isHideBoard ? 0 : -guideBoardWidth}px;
+              right: 8px;
             `}
           />
           <TopGuideBoard

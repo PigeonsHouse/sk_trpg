@@ -22,7 +22,7 @@ export const CharacterCard: React.FC<CharacterCardProps> = ({
       <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
         <div
           style={{
-            aspectRatio: 16 / 9,
+            aspectRatio: 1.414 / 1,
             backgroundImage: `url(${data.backgroundUrl})`,
             position: "relative",
           }}
