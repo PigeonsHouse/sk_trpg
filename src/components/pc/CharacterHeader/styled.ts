@@ -64,5 +64,5 @@ export const MenuBoardStyle = css`
   position: absolute;
   top: 120px;
   z-index: -1;
-  left: calc(50% - ${BREAK_POINT / 2}px);
+  right: calc(50% - ${BREAK_POINT / 2}px);
 `;

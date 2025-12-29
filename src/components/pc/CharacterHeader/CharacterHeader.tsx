@@ -21,6 +21,7 @@ type CharacterHeaderProps = {
   enName: string;
   color: string;
   isShrink?: boolean;
+  isShowMenu?: boolean;
   handlePrevious?: () => void;
   handleNext?: () => void;
 };
@@ -34,6 +35,7 @@ export const CharacterHeader: React.FC<CharacterHeaderProps> = ({
   enName,
   color,
   isShrink,
+  isShowMenu,
   handlePrevious,
   handleNext,
 }) => {
@@ -70,7 +72,7 @@ export const CharacterHeader: React.FC<CharacterHeaderProps> = ({
             onClick={handleNext}
           />
         </BoardContainer>
-        <MenuBoard className={MenuBoardStyle} isHide={!isShrink} />
+        <MenuBoard className={MenuBoardStyle} isHide={!isShowMenu} />
       </Header>
     </Container>
   );

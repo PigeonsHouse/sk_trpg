@@ -185,7 +185,7 @@ export const PcAbout = () => {
             className={css`
               position: absolute;
               width: fit-content;
-              left: ${isHideBoard ? 0 : -guideBoardWidth}px;
+              right: ${isHideBoard ? 0 : -guideBoardWidth}px;
             `}
           />
           <TopGuideBoard
@@ -212,7 +212,7 @@ export const PcAbout = () => {
           <h1
             style={{ fontSize: 88, fontFamily: FontFamily.Header, margin: 0 }}
           >
-            <Anchor id="about" offset={-200} disabledScroll={isLoading} />
+            <Anchor id="about" offset={-280} disabledScroll={isLoading} />
             What is this place?
           </h1>
           <p

@@ -11,7 +11,6 @@ export const PcTop = () => {
       .then((data) => setSummary(data));
   }, []);
   const onScroll = useCallback((e: React.WheelEvent) => {
-    e.preventDefault();
     e.currentTarget.scrollLeft += e.deltaY;
   }, []);
 
@@ -41,86 +40,88 @@ export const PcTop = () => {
             }}
           >
             <TopGuideBoard />
-            {summary.map((character, i) => {
-              return (
-                !character.original && (
-                  <div
-                    key={character.id}
-                    style={
-                      i === summary.length - 1
-                        ? {
-                            marginRight: 320,
-                          }
-                        : {}
-                    }
-                  >
-                    <Link
-                      to={`/characters/${character.id}`}
-                      style={{
-                        display: "inline-block",
-                        textDecoration: "none",
-                      }}
+            {summary
+              .filter((character) => !character.original)
+              .map((character, i) => {
+                return (
+                  !character.original && (
+                    <div
+                      key={character.id}
+                      style={
+                        i === summary.length - 1
+                          ? {
+                              marginRight: 320,
+                            }
+                          : {}
+                      }
                     >
-                      <div
+                      <Link
+                        to={`/characters/${character.id}`}
                         style={{
-                          position: "relative",
-                          aspectRatio: 1.414 / 1,
-                          height: 560,
-                          boxShadow: "0 4px 20px #666",
-                          borderRadius: 4,
-                          overflow: "hidden",
-                          backgroundImage: `url(${character.backgroundUrl})`,
+                          display: "inline-block",
+                          textDecoration: "none",
                         }}
                       >
                         <div
                           style={{
-                            width: "100%",
-                            height: "100%",
-                            backgroundColor: character.color,
-                            opacity: 0.3,
-                          }}
-                        />
-                        <div
-                          style={{
-                            position: "absolute",
-                            inset: 0,
+                            position: "relative",
+                            aspectRatio: 1.414 / 1,
+                            height: 560,
+                            boxShadow: "0 4px 20px #666",
+                            borderRadius: 4,
+                            overflow: "hidden",
+                            backgroundImage: `url(${character.backgroundUrl})`,
                           }}
                         >
-                          <img
-                            src={character.thumbnailUrl}
+                          <div
                             style={{
-                              objectFit: "cover",
                               width: "100%",
                               height: "100%",
-                              objectPosition: "top",
-                              transform: "scale(1.2)",
+                              backgroundColor: character.color,
+                              opacity: 0.3,
                             }}
                           />
+                          <div
+                            style={{
+                              position: "absolute",
+                              inset: 0,
+                            }}
+                          >
+                            <img
+                              src={character.thumbnailUrl}
+                              style={{
+                                objectFit: "cover",
+                                width: "100%",
+                                height: "100%",
+                                objectPosition: "top",
+                                transform: "scale(1.2)",
+                              }}
+                            />
+                          </div>
+                          <div
+                            style={{
+                              position: "absolute",
+                              bottom: 0,
+                              color: "#333",
+                              fontWeight: "bold",
+                              fontSize: 24,
+                              width: "100%",
+                              padding: "16px 24px",
+                              boxSizing: "border-box",
+                              background: "linear-gradient(transparent, white)",
+                            }}
+                          >
+                            {character.name}{" "}
+                            <span style={{ fontSize: 12 }}>
+                              {character.enName}
+                            </span>
+                          </div>
                         </div>
-                        <div
-                          style={{
-                            position: "absolute",
-                            bottom: 0,
-                            color: "#333",
-                            fontWeight: "bold",
-                            fontSize: 24,
-                            width: "100%",
-                            padding: "16px 24px",
-                            boxSizing: "border-box",
-                            background: "linear-gradient(transparent, white)",
-                          }}
-                        >
-                          {character.name}{" "}
-                          <span style={{ fontSize: 12 }}>
-                            {character.enName}
-                          </span>
-                        </div>
-                      </div>
-                    </Link>
-                  </div>
-                )
-              );
-            })}
+                      </Link>
+                    </div>
+                  )
+                );
+              })}
           </div>
         </div>
       </div>

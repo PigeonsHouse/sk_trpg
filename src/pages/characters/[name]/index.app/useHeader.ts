@@ -54,9 +54,21 @@ export const useHeader = (
     return () => window.removeEventListener("scroll", callback);
   }, []);
 
+  const [isShowMenu, setIsShowMenu] = useState(false);
+  useEffect(() => {
+    const callback = () => {
+      const windowHeight = document.documentElement.clientHeight;
+      const shrinkHeaderHeight = 120;
+      setIsShowMenu(window.scrollY > windowHeight - shrinkHeaderHeight);
+    };
+    window.addEventListener("scroll", callback);
+    return () => window.removeEventListener("scroll", callback);
+  }, []);
+
   return {
     handlePrevious,
     handleNext,
     isHeaderShrink: isScrolled,
+    isShowMenu,
   };
 };

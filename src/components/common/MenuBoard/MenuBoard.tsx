@@ -67,12 +67,12 @@ export const MenuBoard: React.FC<MenuBoardProps> = ({
           <GoogleFontIcon
             iconName="arrow_back"
             size={isSp ? 56 : 88}
-            className={IconStyle(isOpenWithBackdrop, isSp)}
+            className={IconStyle(isOpenWithBackdrop)}
           />
           <Text isSp={isSp}>MENU</Text>
         </Board>
 
-        <MenuContainer isOpen={isOpenWithBackdrop} isSp={isSp}>
+        <MenuContainer isOpen={isOpenWithBackdrop}>
           <TopGuideBoard isSp={isSp} onClick={onClose} />
         </MenuContainer>
       </BoardContainer>

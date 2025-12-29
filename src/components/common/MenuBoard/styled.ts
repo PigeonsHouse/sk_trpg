@@ -36,10 +36,10 @@ export const Board = styled.div<{
       : "cursor: pointer;"}
 `;
 
-export const IconStyle = (isOpen: boolean, isSp?: boolean) => css`
+export const IconStyle = (isOpen: boolean) => css`
   font-weight: ${FontWeight.Bold};
   transition: transform 0.2s;
-  transform: rotate(${isOpen ? -90 : isSp ? -180 : 0}deg);
+  transform: rotate(${isOpen ? 270 : 180}deg);
 `;
 
 export const Bar = styled.div<{ position: "left" | "right"; isSp?: boolean }>`
@@ -60,11 +60,10 @@ export const Text = styled.span<{ isSp?: boolean }>`
 
 export const MenuContainer = styled.div<{
   isOpen: boolean;
-  isSp?: boolean;
 }>`
   position: absolute;
   top: calc(100% + 16px);
-  ${(props) => (props.isSp ? "right: 0;" : "left: 0;")}
+  right: 0;
   width: fit-content;
   transition: opacity 0.2s;
   opacity: ${(props) => (props.isOpen ? 1 : 0)};

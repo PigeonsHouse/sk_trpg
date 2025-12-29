@@ -21,8 +21,9 @@ export const Anchor: React.FC<AnchorProps> = ({
 
   const handleHashChange = useCallback(() => {
     if (!disabledScroll && location.hash.substring(1) === id && ref.current) {
-      const top =
-        -window.scrollY + ref.current.offsetTop + (offset ? offset : 0);
+      const rectTop = ref.current.getBoundingClientRect().top;
+      const top = rectTop + (offset ? offset : 0);
+
       window.scrollBy({ top, behavior: "smooth" });
     }
   }, [id, disabledScroll, location, ref]);

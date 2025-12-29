@@ -55,7 +55,7 @@ export const PcCharacterAbout: React.FC<PcCharacterAboutProps> = ({
     return data.colorPalette;
   }, [data]);
 
-  const { isHeaderShrink, handlePrevious, handleNext } = useHeader(
+  const { isHeaderShrink, isShowMenu, handlePrevious, handleNext } = useHeader(
     navigate,
     summary,
     characterId,
@@ -83,6 +83,7 @@ export const PcCharacterAbout: React.FC<PcCharacterAboutProps> = ({
             enName={data.enName}
             color={mainColor}
             isShrink={isHeaderShrink}
+            isShowMenu={isShowMenu}
             handlePrevious={handlePrevious}
             handleNext={handleNext}
           />
