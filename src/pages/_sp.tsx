@@ -74,6 +74,7 @@ export const SpTop = () => {
   useEffect(() => {
     // TOPページのDOM(100vh部分)半分過ぎたらURLを書き換える
     const callback = () => {
+      if (!["/", "/about"].includes(window.location.pathname)) return;
       const targetPath =
         window.scrollY > document.documentElement.clientHeight / 2
           ? "/about"
