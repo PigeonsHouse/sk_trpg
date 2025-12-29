@@ -9,6 +9,9 @@ const styles = css`
     font-family: ${FontFamily.Regular};
     font-weight: ${FontWeight.Regular};
   }
+  body button {
+    color: unset;
+  }
 `;
 
 /**
