@@ -56,7 +56,7 @@ export const TopGuideBoard: React.FC<TopGuideBoardProps> = ({
 }) => {
   return (
     <Container isSp={isSp} className={className} ref={ref}>
-      <Link to={Url.top} className={NoDecorationLinkStyle}>
+      <Link to={Url.top} className={NoDecorationLinkStyle} onClick={onClick}>
         <TopContainer>
           <GoogleFontIcon
             iconName="arrow_outward"
