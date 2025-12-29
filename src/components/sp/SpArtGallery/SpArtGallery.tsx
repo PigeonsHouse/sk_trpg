@@ -1,6 +1,12 @@
 import { useCallback, useMemo, useState } from "react";
-import { Carousel } from "../../common";
-import { Backdrop, Container, TargetArt, Title } from "./styled";
+import { Carousel, GoogleFontIcon } from "../../common";
+import {
+  Backdrop,
+  CardCloseButton,
+  Container,
+  TargetArt,
+  Title,
+} from "./styled";
 
 type SpArtGalleryProps = {
   artGallery: string[];
@@ -36,6 +42,9 @@ export const SpArtGallery: React.FC<SpArtGalleryProps> = ({
       </Container>
       <Backdrop isOpen={isArtOpen} onClick={closeArt}>
         {isArtOpen && <TargetArt onClick={stopPropagation} src={targetArt} />}
+        <CardCloseButton mainColor={mainColor} onClick={closeArt}>
+          <GoogleFontIcon iconName="close" size={16} color="white" />
+        </CardCloseButton>
       </Backdrop>
     </>
   ) : null;
