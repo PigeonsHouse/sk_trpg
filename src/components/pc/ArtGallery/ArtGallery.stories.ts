@@ -11,9 +11,9 @@ export default {
 export const Basic: StoryObj<ArtGalleryProps> = {
   args: {
     artGallery: [
-      "https://pigeons.house/avatar.png",
-      "https://pigeons.house/avatar.png",
-      "https://pigeons.house/avatar.png",
+      "https://placehold.jp/400x300.png",
+      "https://placehold.jp/1600x900.png",
+      "https://placehold.jp/800x800.png",
     ],
   },
 };

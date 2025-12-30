@@ -31,7 +31,7 @@ export const SnsLink: React.FC<SnsLinkProps> = ({
 }) => {
   const snsInfo = SnsInfo[variant];
   return (
-    <Container className={className} href={snsInfo.url}>
+    <Container className={className} href={snsInfo.url} target="_blank">
       <Circle radius={circleRadius}>
         <LogoImage withPadding={snsInfo.withPadding} src={snsInfo.logoSrc} />
       </Circle>

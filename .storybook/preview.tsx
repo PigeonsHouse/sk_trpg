@@ -1,3 +1,4 @@
+import { BrowserRouter } from "react-router";
 import type { Preview } from "@storybook/react-vite";
 import { GlobalStyles } from "../src/components";
 
@@ -13,8 +14,10 @@ const preview: Preview = {
     (Story: React.FC) => {
       return (
         <>
-          <GlobalStyles />
-          <Story />
+          <BrowserRouter>
+            <GlobalStyles />
+            <Story />
+          </BrowserRouter>
         </>
       );
     },
