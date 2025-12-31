@@ -12,11 +12,15 @@ export const Basic: StoryObj<typeof SpProfileFrame> = {
   args: {
     mainColor: "#4A90E2",
     profile: {
-      description: "キャラクターの詳細な説明文がここに入ります。性格や特徴などを記述します。",
+      description:
+        "キャラクターの詳細な説明文がここに入ります。性格や特徴などを記述します。",
       age: "25歳",
       height: "170cm",
-      occupation: "探索者",
+      weight: "65kg",
       hobby: "読書",
+      sex: "男性",
+      job: "本屋",
+      like: "古本",
     },
   },
 };
@@ -26,14 +30,14 @@ export const DetailedProfile: StoryObj<typeof SpProfileFrame> = {
     mainColor: "#E94E77",
     profile: {
       description:
-        "より詳細なキャラクター説明。複数の特徴や背景設定を含む長めの説明文です。キャラクターの生い立ちや性格、特技などを詳しく記述することができます。",
+        "違う色はこんな感じ。キャラクターの詳細な説明文がここに入ります。性格や特徴などを記述します。",
       age: "28歳",
       height: "165cm",
       weight: "55kg",
-      occupation: "探索者",
       hobby: "音楽鑑賞",
-      birthplace: "東京都",
-      bloodType: "A型",
+      sex: "女性",
+      job: "作曲家",
+      like: "ボカロ",
     },
   },
 };
