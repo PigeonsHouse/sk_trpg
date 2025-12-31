@@ -13,7 +13,6 @@ export const Basic: StoryObj<typeof SkillsFrame> = {
   args: {
     colorPalette: ["#4A90E2", "#50C878", "#FFD700"],
     skills: {
-      type: "基本",
       聞き耳: 60,
       図書館: 70,
       目星: 75,
@@ -30,7 +29,6 @@ export const ManySkills: StoryObj<typeof SkillsFrame> = {
   args: {
     colorPalette: ["#E94E77", "#4ECDC4", "#FFD700"],
     skills: {
-      type: "詳細",
       聞き耳: 60,
       図書館: 70,
       目星: 75,
@@ -41,8 +39,8 @@ export const ManySkills: StoryObj<typeof SkillsFrame> = {
       隠れる: 45,
       忍び歩き: 35,
       運転: 50,
-      "mask001": 80,
-      "mask002": 90,
+      mask001: 80,
+      mask002: 90,
     },
   },
 };

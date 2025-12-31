@@ -14,7 +14,6 @@ export const Collapsed: StoryObj<typeof SpSkillsFrame> = {
     mainColor: "#4A90E2",
     isExpand: false,
     skills: {
-      type: "基本",
       聞き耳: 60,
       図書館: 70,
       目星: 75,
@@ -32,7 +31,6 @@ export const Expanded: StoryObj<typeof SpSkillsFrame> = {
     mainColor: "#E94E77",
     isExpand: true,
     skills: {
-      type: "詳細",
       聞き耳: 60,
       図書館: 70,
       目星: 75,
@@ -43,8 +41,8 @@ export const Expanded: StoryObj<typeof SpSkillsFrame> = {
       隠れる: 45,
       忍び歩き: 35,
       運転: 50,
-      "mask001": 80,
-      "mask002": 90,
+      mask001: 80,
+      mask002: 90,
     },
   },
 };
