@@ -13,7 +13,7 @@ export type CharacterSummary = {
 export type Profile = {
   description: string;
   age: string;
-  sex: string;
+  gender: string;
   height: string;
   weight: string;
   job: string;
