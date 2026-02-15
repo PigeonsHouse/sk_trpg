@@ -19,4 +19,6 @@ export const Title = styled.h2`
   font-size: 24px;
 `;
 
-export const Comment = styled.span``;
+export const Comment = styled.span`
+  white-space: pre-wrap;
+`;
