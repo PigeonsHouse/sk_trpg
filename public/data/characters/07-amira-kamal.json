@@ -8,7 +8,7 @@
   "profile": {
     "description": "私、刺賀　煌亜来（さすが　きあら）。\n月亜刺（つきあら）学園に通う高校一年生！\n憧れの高校生になった私は、新生活に心ラキラキ！\nだったんだけど...。\n\n変な怪物と一緒に、謎のゆるふわ生物・ニャッキーが表れて...\nもう大変！\n勢いに流されて、私はアミーラ☆カマルに変身しちゃった！？\nもう、何が何だかわかんないよ！\n\n次回：「ニャッキーのドキドキ☆潜入調査！プリンを探せ！」\n次回も～”ラキッと煌めけ！アミーラ☆カマル”！",
     "age": 16,
-    "gender": "女",
+    "gender": "女の子",
     "height": "157cm",
     "weight": "40kg",
     "job": "魔法少女",
@@ -93,20 +93,20 @@
   ],
   "qaList": [
     {
-      "iconUrl": "/images/icon_にせもの3.jpg",
-      "answer": "フン、休日は休日なのだから、俺の好きなように過ごすに決まっているだろう！"
+      "iconUrl": "/images/AmiraKamal/icon/AmiraKamal_icon_1.png",
+      "answer": "お友達と一緒に遊ぶことが多いかな～。昨日はカナちゃんのお家でお菓子作りしたの！"
     },
     {
-      "iconUrl": "/images/icon_にせもの3.jpg",
-      "answer": "海か山、どちらかが良いなどとは愚かな質問だな！海にも山にも両方に良い所があるに決まっているだろう！"
+      "iconUrl": "/images/AmiraKamal/icon/AmiraKamal_icon_1.png",
+      "answer": "いつも早く準備しているんだよ！？\nでも、コーデが決まらなくって、なんだかんだギリギリになっちゃうの...！"
     },
     {
-      "iconUrl": "/images/icon_にせもの3.jpg",
-      "answer": "願い事を叶えてほしいなどとは、俺に失礼な質問だな！"
+      "iconUrl": "/images/AmiraKamal/icon/AmiraKamal_icon_1.png",
+      "answer": "そんなの、この世界の“バグ”がいなくな...\nじゃなくて、せせせ、世界が平和に！！！なってほしいな～！！！\n※バグ = 敵の名前（という設定）"
     },
     {
-      "iconUrl": "/images/icon_にせもの3.jpg",
-      "answer": "地球が滅亡するなどとは愚かな考えだな！そんなことは起こらないに決まっているだろう！なぜなら、地球が滅亡するのなら、地球が滅亡しないようにするからだ！"
+      "iconUrl": "/images/AmiraKamal/icon/AmiraKamal_icon_1.png",
+      "answer": "そんなことさせないわ！地球メツボーを阻止してこそ魔法少女よ！"
     }
   ],
   "comment": "自由記述",

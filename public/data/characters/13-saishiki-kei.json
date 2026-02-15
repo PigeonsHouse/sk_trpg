@@ -77,6 +77,34 @@
           "nickName": "響希"
         }
       ]
+    },
+    {
+      "title": "ねむるアクアリウム",
+      "comment": "ダサいな、俺。\nまだ...怖いんだ。響希に、嫌われるかもしれなから。\nだから...まだ、言えない。",
+      "iconUrl": "/images/SaishikiKei/icon/SaishikiKei_icon_1.png",
+      "companions": [
+        {
+          "name": "京極 響希",
+          "enName": "KYOGOKU HIBIKI",
+          "color": "#DAE23B",
+          "iconUrl": "/images/SaishikiKei/companions/Hibiki.png",
+          "nickName": "響希"
+        }
+      ]
+    },
+    {
+      "title": "夏に逃げ水",
+      "comment": "響希、俺は、お前を一人になんかさせないよ。\nだから...これからも、俺の傍に居てくれるか。",
+      "iconUrl": "/images/SaishikiKei/icon/SaishikiKei_icon_1.png",
+      "companions": [
+        {
+          "name": "京極 響希",
+          "enName": "KYOGOKU HIBIKI",
+          "color": "#DAE23B",
+          "iconUrl": "/images/SaishikiKei/companions/Hibiki.png",
+          "nickName": "響希"
+        }
+      ]
     }
   ],
   "qaList": [
@@ -86,15 +114,15 @@
     },
     {
       "iconUrl": "/images/SaishikiKei/icon/SaishikiKei_icon_1.png",
-      "answer": "どっちでもい...いや、うｍ...あぁ、やっぱ、どっち派とか、ない。\n（響希と行くなら海が良いなと頭に過る）"
+      "answer": "大体、予定時刻の5分前。あんま早く着く意味、ないし。"
     },
     {
       "iconUrl": "/images/SaishikiKei/icon/SaishikiKei_icon_1.png",
-      "answer": "大学、選び直したい。東京の方に、すればよかった。\nあ、でも...。\n（そうすると響希に会えていないなと頭に過る）"
+      "answer": "大学、選び直したい。東京の方に、すればよかった。\nあ、でも...。\n（そうすると響希に会えていないな、と頭に過る）"
     },
     {
       "iconUrl": "/images/SaishikiKei/icon/SaishikiKei_icon_1.png",
-      "answer": "...会いたい人、いる。最後には、絶対。その人の顔見たら、あとは一人で死んでもいい。"
+      "answer": "...会いたい人、いる。最後には、絶対。\nその人の顔見たら、あとは一人で死んでもいい。"
     }
   ],
   "comment": "自由記述",
