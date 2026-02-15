@@ -67,6 +67,7 @@ export const SpeechBubble = styled.div<{ bgColor: string }>`
   border-radius: 16px;
   color: white;
   margin-top: 24px;
+  white-space: pre-wrap;
 
   &::before {
     content: "";
