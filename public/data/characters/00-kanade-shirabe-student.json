@@ -84,26 +84,26 @@
   ],
   "qaList": [
     {
-      "iconUrl": "/images/icon_にせもの.jpg",
-      "answer": "休日を過ごしているよ"
+      "iconUrl": "/images/KanadeShirabe/icon/kanadeshirabe_icon_4.png",
+      "answer": "最近は天文部であれこれ駆り出されるから、綾ちゃんや惑くんと遊ぶ日も増えたかな。\n（バイオリンの）練習をしていない時間は、ちょっと罪悪感があるけれど...誰かと時間を共有することも大事だよね？"
     },
     {
-      "iconUrl": "/images/icon_にせもの.jpg",
-      "answer": "海か山か...どちらも良いところがあるね"
+      "iconUrl": "/images/KanadeShirabe/icon/kanadeshirabe_icon_4.png",
+      "answer": "早めに行くかな～。といっても、のんびり向かっていたら、大体5分前とかになるのだけれど。"
     },
     {
-      "iconUrl": "/images/icon_にせもの.jpg",
-      "answer": "願い事が一つ叶うとしたら...そうだね、僕の願いが叶うなら、僕の願いを叶えてほしいかな。もしくは、僕以外の願いを叶えてほしいね。だって願い事が一つ叶うのだから、願い事は叶えたいからね。"
+      "iconUrl": "/images/KanadeShirabe/icon/kanadeshirabe_icon_4.png",
+      "answer": "難しいなぁ～、今で十分満たされているから、お願いするほどのものはない...\nいや、望遠鏡かな？この間、結局手に入らなかったし。\n新しい望遠鏡を仕入れたとなれば、観測に出かける理由ができるでしょう？"
     },
     {
-      "iconUrl": "/images/icon_にせもの.jpg",
-      "answer": "最後の一日を大切に過ごすよ"
+      "iconUrl": "/images/KanadeShirabe/icon/kanadeshirabe_icon_4.png",
+      "answer": "お世話になった人にご挨拶に行く、とかかな？\n大切な人に、何も言えないままお別れになっちゃうなんて嫌だものね。"
     }
   ],
   "comment": "自由記述",
   "artGallery": [
-    "https://pbs.twimg.com/media/GwYvKJ4boAAFEQh?format=jpg&name=large",
-    "https://pbs.twimg.com/media/GwYvKJ4boAAFEQh?format=jpg&name=large",
-    "https://pbs.twimg.com/media/GwYvKJ4boAAFEQh?format=jpg&name=large"
+    "/public/images/KanadeShirabe-student/picture/picture1.jpg",
+    "/public/images/KanadeShirabe-student/picture/picture2.png",
+    "/public/images/KanadeShirabe-student/picture/picture3.png"
   ]
 }

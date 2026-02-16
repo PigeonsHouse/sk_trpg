@@ -1,0 +1,107 @@
+{
+  "shortId": "KSM",
+  "name": "澄光 こすも",
+  "enName": "SUPIKA KOSUMO",
+  "thumbnailUrl": "/images/SupikaKosumo/sprite/SupikaKosumo_sprite_1.png",
+  "colorPalette": ["#1725E0", "#FE22A5", "#F7F144"],
+  "backgroundUrl": "https://sakuranouta.biz/wp-content/uploads/2023/10/%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84%E3%81%AE%E9%83%A8%E5%B1%8B_6_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89-1-1024x576.jpg",
+  "profile": {
+    "description": "自分のことを宇宙人だと自認している一般ヒューマン。となりのピンクの飛行物体は相棒のチャッピー。\n宇宙人と友達になることが目標。\nなので、“自分が宇宙人になる”ために、UFOを鋭意製作中。\n※なので母星や仲間といった発言はすべて嘘。\n\n「わーはっは、こすもが宇宙にいっちゃえば、宇宙から見て宇宙人、なのだ👾」\n\n魂はギャルなので、可愛いものが大好き。\nワードセンスがどうも古臭いときがある。\n「うんうん、今日の開発もちょべりぐーだね。あげぽよ☝️🌈」",
+    "age":16,
+    "gender": "女性",
+    "height": "165cm",
+    "weight": "44kg",
+    "job": "高校生",
+    "birthday": "6月24日",
+    "from": "スピカ星（富山）"
+  },
+  "sprites": [
+    {
+      "iconUrl": "/images/SupikaKosumo/icon/SupikaKosumo_icon_1.png",
+      "spriteUrl": "/images/SupikaKosumo/sprite/SupikaKosumo_sprite_1.png"
+    },
+    {
+      "iconUrl": "/images/SupikaKosumo/icon/SupikaKosumo_icon_2.png",
+      "spriteUrl": "/images/SupikaKosumo/sprite/SupikaKosumo_sprite_2.png"
+    }
+  ],
+  "status": {
+    "type": "CoC6版",
+    "str": 10,
+    "con": 10,
+    "pow": 14,
+    "dex": 10,
+    "app": 13,
+    "siz": 13,
+    "int": 16,
+    "edu": 11,
+    "san": 70,
+    "hp": 12,
+    "mp": 14,
+    "luck": 70,
+    "idea": 80,
+    "knowledge": 55
+  },
+  "skills": {
+    "回避": 50,
+    "目星": 84,
+    "操縦【UFO】": 31,
+    "電気修理": 84,
+    "オカルト": 65,
+    "コンピューター": 43,
+    "心理学": 7,
+    "天文学":21,
+    "物理学": 81
+  },
+
+  "histories": [
+    {
+      "title": "風の又三郎 ‐Scarlet Girl with Wind Voice‐",
+      "comment": "こすものUFO開発はまだまだ続くのであった...ﾄﾞﾛﾝ",
+      "iconUrl": "/images/SupikaKosumo/icon/SupikaKosumo_icon_1.png",
+      "companions": [
+        {
+          "name": "阿倍 根性",
+          "enName": "ABE KONJO",
+          "color": "#2d5079",
+          "iconUrl": "/images/SupikaKosumo/companions/Abe.png",
+          "nickName": "あべのおじ"
+        },
+        {
+          "name": "九条 優作",
+          "enName": "KUJO YUSAKU",
+          "color": "#2C642C",
+          "iconUrl": "/images/SupikaKosumo/companions/io.png",
+          "nickName": "くじょー"
+        },
+        {
+          "name": "キャプリ・ダンフォース",
+          "enName": "CAPRI DANFORTH",
+          "color": "#CCE07B",
+          "iconUrl": "/images/common/companions_NoImage.png",
+          "nickName": "きゃっぴー"
+        }
+      ]
+    }
+  ],
+  "qaList": [
+    {
+      "iconUrl": "/images/SupikaKosumo/icon/SupikaKosumo_icon_1.png",
+      "answer": "母星との交信を図るべく、通信装置の修理をしているナリ。\nナウな宇宙人は休日だって無駄にしないのだ、えらぴ。"
+    },
+    {
+      "iconUrl": "/images/SupikaKosumo/icon/SupikaKosumo_icon_1.png",
+      "answer": "宇宙の時間軸だと間に合ってるのだ。（間に合ってない）"
+    },
+    {
+      "iconUrl": "/images/SupikaKosumo/icon/SupikaKosumo_icon_1.png",
+      "answer": "今開発中のUFOがど～～～～～～しても出力足りなくて大気圏超えれないから、ギガトンエンジンほし。"
+    },
+    {
+      "iconUrl": "/images/SupikaKosumo/icon/SupikaKosumo_icon_1.png",
+      "answer": "地球滅亡の前に母星の仲間がウチを迎えに来るはずなので、人類には残念だが帰星するナリ⭐"
+    }
+  ],
+  "comment": "キャラクターシート制作は随分コツがつかめてきて、RP時に欲しいエッセンスが掴めてきたのを感じた子です。\n（総じて、人生半分ぐらいテキトーに生きてるやつは、小難しい事考えなくてよいためやりやすいだけの可能性はある）\n\nギャル語は全く勉強していなかったのでテキトーだったし、本来の想定より感情表現がオーバーな子になりましたが、宇宙人なのでオールオッケーです。",
+  "artGallery": []
+}
