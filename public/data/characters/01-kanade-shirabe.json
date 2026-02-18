@@ -131,9 +131,9 @@
   ],
   "comment": "自由記述",
   "artGallery": [
-    "/public/images/KanadeShirabe/picture/picture1_1.png",
-    "/public/images/KanadeShirabe/picture/picture1_2.png",
-    "/public/images/KanadeShirabe/picture/picture1_3.jpg"
+    "/images/KanadeShirabe/picture/picture1_1.png",
+    "/images/KanadeShirabe/picture/picture1_2.png",
+    "/images/KanadeShirabe/picture/picture1_3.jpg"
 
   ]
 }
