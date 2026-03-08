@@ -43,9 +43,6 @@ export const SingleItemContainer = styled.button`
   display: flex;
   flex-direction: column;
   align-items: center;
-  &:focus > div {
-    filter: brightness(100%);
-  }
 `;
 
 export const ItemLight = styled.div<{

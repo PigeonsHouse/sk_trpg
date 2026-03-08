@@ -5,56 +5,58 @@ import { CharactersId, Url } from "../../../../definitions";
 import type { Sprites } from "../../../../types";
 
 type Setting = {
+  // そのキャラのページを開いた際に最初に指定されているインデックス
+  // undefinedは0と同じ扱いとなる
   defaultIndex?: number;
-  forceIndex?: number;
-  navigateUrlOnSwitchSprite: ((url: string) => CharactersId | undefined)[];
+  // defaultIndexが指定されているキャラでも、指定したインデックスを維持して遷移する場合はtrue
+  keepSelectIndex?: boolean;
+  // そのキャラの衣装差分から選択した際に、画像ファイルの名前
+  // このパラメータだけ、そのキャラから遷移する際の設定
+  navigateUrlOnSwitchSprite: (url: string) => CharactersId | undefined;
 };
-type Settings = Map<CharactersId, Setting>;
+type Settings = Partial<Record<CharactersId, Setting>>;
 
-const specialSettings: Settings = new Map([
-  [
-    CharactersId.KanadeShirabe,
-    {
-      navigateUrlOnSwitchSprite: [
-        (url: string) =>
-          // hideは学生の調
-          url.includes("hide") ? CharactersId.KanadeShirabeStudent : undefined,
-        (url: string) =>
-          // 2以降は大人の調
-          url.match(/[2-9]\.png$/g)
-            ? CharactersId.KanadeShirabeAdult
-            : undefined,
-      ],
+const specialSettings: Settings = {
+  [CharactersId.KanadeShirabe]: {
+    navigateUrlOnSwitchSprite: (url: string) => {
+      if (url.includes("hide")) {
+        // hideは学生の調
+        return CharactersId.KanadeShirabeStudent;
+      } else if (url.match(/[2-9]\.png$/g)) {
+        // 2以降は大人の調
+        return CharactersId.KanadeShirabeAdult;
+      }
     },
-  ],
-  [
-    CharactersId.KanadeShirabeAdult,
-    {
-      defaultIndex: 1,
-      navigateUrlOnSwitchSprite: [
-        (url: string) =>
-          // hideは学生の調
-          url.includes("hide") ? CharactersId.KanadeShirabeStudent : undefined,
-        (url: string) =>
-          // 1までは通常の調
-          url.match(/[01]\.png$/g) ? CharactersId.KanadeShirabe : undefined,
-      ],
+  },
+  [CharactersId.KanadeShirabeAdult]: {
+    defaultIndex: 1,
+    // 青年奏から大人奏に移動する際はdefaultIndexを無視する
+    keepSelectIndex: true,
+    navigateUrlOnSwitchSprite: (url: string) => {
+      if (url.includes("hide")) {
+        // hideは学生の調
+        return CharactersId.KanadeShirabeStudent;
+      } else if (url.match(/[01]\.png$/g)) {
+        // 1までは通常の調
+        return CharactersId.KanadeShirabe;
+      }
     },
-  ],
-  [
-    CharactersId.KanadeShirabeStudent,
-    {
-      defaultIndex: 1,
-      navigateUrlOnSwitchSprite: [
-        (url: string) =>
-          // hideは通常の調
-          url.includes("hide") ? CharactersId.KanadeShirabe : undefined,
-      ],
-      // 学生の調のページはコスチュームリストが大きく変わるため、強制的にインデックスを1にする
-      forceIndex: 1,
-    },
-  ],
-]);
+  },
+  [CharactersId.KanadeShirabeStudent]: {
+    defaultIndex: 1,
+    navigateUrlOnSwitchSprite: (url: string) =>
+      // hideは通常の調
+      url.includes("hide") ? CharactersId.KanadeShirabe : undefined,
+  },
+  [CharactersId.SasugaKiara]: {
+    navigateUrlOnSwitchSprite: (url: string) =>
+      url.includes("AmiraKamal") ? CharactersId.AmiraKamal : undefined,
+  },
+  [CharactersId.AmiraKamal]: {
+    navigateUrlOnSwitchSprite: (url: string) =>
+      url.includes("SasugaKiara") ? CharactersId.SasugaKiara : undefined,
+  },
+};
 
 export const useSprites = (
   navigate: NavigateFunction,
@@ -62,7 +64,7 @@ export const useSprites = (
   sprites: Sprites[]
 ) => {
   const [displaySpriteIndex, setDisplaySpriteIndex] = useState(
-    specialSettings.get(characterId)?.defaultIndex ?? 0
+    specialSettings[characterId]?.defaultIndex ?? 0
   );
   const safeDisplaySpriteIndex = useMemo(
     () => Math.min(displaySpriteIndex, sprites.length - 1),
@@ -74,9 +76,9 @@ export const useSprites = (
     let navigateCharacterId: CharactersId | undefined = undefined;
     let navigateUrl: string | undefined = undefined;
 
-    const rules =
-      specialSettings.get(characterId)?.navigateUrlOnSwitchSprite ?? [];
-    for (const rule of rules) {
+    // 衣装選択時にキャラIDを変える設定がないか確認
+    const rule = specialSettings[characterId]?.navigateUrlOnSwitchSprite;
+    if (rule) {
       const targetId = rule(url.iconUrl);
       if (targetId) {
         navigateCharacterId = targetId;
@@ -84,10 +86,14 @@ export const useSprites = (
       }
     }
 
+    // キャラIDを変える場合、keepSelectIndexが無ければデフォルトのindexに切り替える
     if (navigateCharacterId) {
-      const forceIndex = specialSettings.get(navigateCharacterId)?.forceIndex;
-      if (forceIndex) {
-        setIndex = forceIndex;
+      const navigateCharacter = specialSettings[navigateCharacterId];
+      if (
+        navigateCharacter !== undefined &&
+        !navigateCharacter.keepSelectIndex
+      ) {
+        setIndex = navigateCharacter.defaultIndex ?? 0;
       }
     }
 
@@ -107,7 +113,7 @@ export const useSprites = (
   }, [displaySpriteIndex, onClickFactory]);
 
   useEffect(() => {
-    const defaultIndex = specialSettings.get(characterId)?.defaultIndex;
+    const defaultIndex = specialSettings[characterId]?.defaultIndex;
 
     if (defaultIndex === undefined) {
       setDisplaySpriteIndex(0);

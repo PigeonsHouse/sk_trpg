@@ -2,6 +2,7 @@
   "shortId": "KML",
   "name": "アミーラ☆カマル",
   "enName": "AMIRA KAMAL",
+  "original": "sasuga-kiara",
   "thumbnailUrl": "/images/AmiraKamal/sprite/AmiraKamal_sprite_1.png",
   "colorPalette": ["#FF26C5", "#F20C43", "#FFDE00"],
   "backgroundUrl": "https://sakuranouta.biz/wp-content/uploads/2023/10/%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84%E3%81%AE%E9%83%A8%E5%B1%8B_6_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89-1-1024x576.jpg",
@@ -27,6 +28,10 @@
     {
       "iconUrl": "/images/AmiraKamal/icon/AmiraKamal_icon_3.png",
       "spriteUrl": "/images/AmiraKamal/sprite/AmiraKamal_sprite_3.png"
+    },
+    {
+      "iconUrl": "/images/SasugaKiara/icon/SasugaKiara_icon_1.png",
+      "spriteUrl": "/images/SasugaKiara/sprite/SasugaKiara_sprite_1.png"
     }
   ],
   "status": {

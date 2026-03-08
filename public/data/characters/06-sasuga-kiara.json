@@ -23,6 +23,10 @@
     {
       "iconUrl": "/images/SasugaKiara/icon/SasugaKiara_icon_2.png",
       "spriteUrl": "/images/SasugaKiara/sprite/SasugaKiara_sprite_2.png"
+    },
+    {
+      "iconUrl": "/images/AmiraKamal/icon/AmiraKamal_icon_1.png",
+      "spriteUrl": "/images/AmiraKamal/sprite/AmiraKamal_sprite_1.png"
     }
   ],
   "status": {
@@ -101,7 +105,5 @@
     }
   ],
   "comment": "キアラは、持ってきた設定とシナリオの嚙み合わせが良く、満足のいく意思決定ができました。かなり思い入れがあります。\n詳細は語れませんが...生まれてから自分で歩くことが叶わなかった彼女が、自分の足で立てるようになりました。感動じゃない...？\n彼女の夢も叶えられたし、見届けることができてよかったなと。\nシナリオも重厚感があって非常に楽しめました...!",
-  "artGallery": [
-    "/images/SasugaKiara/picture/picture1.png"
-  ]
+  "artGallery": ["/images/SasugaKiara/picture/picture1.png"]
 }
