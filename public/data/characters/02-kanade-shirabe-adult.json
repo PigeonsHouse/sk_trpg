@@ -18,32 +18,36 @@
   },
   "sprites": [
     {
-      "iconUrl": "/images/KanadeShirabe/icon/kanadeshirabe_icon_1.png",
-      "spriteUrl": "/images/KanadeShirabe/sprite/kanadeshirabe_sprite_2.png"
+      "iconUrl": "/images/KanadeShirabe/icon/KanadeShirabe_icon_0.png",
+      "spriteUrl": "/images/KanadeShirabe/sprite/KanadeShirabe_sprite_0.png"
     },
     {
-      "iconUrl": "/images/KanadeShirabe/icon/kanadeshirabe_icon_2.png",
-      "spriteUrl": "/images/KanadeShirabe/sprite/kanadeshirabe_sprite_2.png"
+      "iconUrl": "/images/KanadeShirabe/icon/KanadeShirabe_icon_1.png",
+      "spriteUrl": "/images/KanadeShirabe/sprite/KanadeShirabe_sprite_2.png"
     },
     {
-      "iconUrl": "/images/KanadeShirabe/icon/kanadeshirabe_icon_3.png",
-      "spriteUrl": "/images/KanadeShirabe/sprite/kanadeshirabe_sprite_3.png"
+      "iconUrl": "/images/KanadeShirabe/icon/KanadeShirabe_icon_2.png",
+      "spriteUrl": "/images/KanadeShirabe/sprite/KanadeShirabe_sprite_2.png"
     },
     {
-      "iconUrl": "/images/KanadeShirabe/icon/kanadeshirabe_icon_5.png",
-      "spriteUrl": "/images/KanadeShirabe/sprite/kanadeshirabe_sprite_5.png"
+      "iconUrl": "/images/KanadeShirabe/icon/KanadeShirabe_icon_3.png",
+      "spriteUrl": "/images/KanadeShirabe/sprite/KanadeShirabe_sprite_3.png"
     },
     {
-      "iconUrl": "/images/KanadeShirabe/icon/kanadeshirabe_icon_4_hide.png",
-      "spriteUrl": "/images/KanadeShirabe/sprite/kanadeshirabe_sprite_4.png"
+      "iconUrl": "/images/KanadeShirabe/icon/KanadeShirabe_icon_5.png",
+      "spriteUrl": "/images/KanadeShirabe/sprite/KanadeShirabe_sprite_5.png"
     },
     {
-      "iconUrl": "/images/KanadeShirabe/icon/kanadeshirabe_icon_6.png",
-      "spriteUrl": "/images/KanadeShirabe/sprite/kanadeshirabe_sprite_6.png"
+      "iconUrl": "/images/KanadeShirabe/icon/KanadeShirabe_icon_4_hide.png",
+      "spriteUrl": "/images/KanadeShirabe/sprite/KanadeShirabe_sprite_4.png"
     },
     {
-      "iconUrl": "/images/KanadeShirabe/icon/kanadeshirabe_icon_7.png",
-      "spriteUrl": "/images/KanadeShirabe/sprite/kanadeshirabe_sprite_7.png"
+      "iconUrl": "/images/KanadeShirabe/icon/KanadeShirabe_icon_6.png",
+      "spriteUrl": "/images/KanadeShirabe/sprite/KanadeShirabe_sprite_6.png"
+    },
+    {
+      "iconUrl": "/images/KanadeShirabe/icon/KanadeShirabe_icon_7.png",
+      "spriteUrl": "/images/KanadeShirabe/sprite/KanadeShirabe_sprite_7.png"
     }
   ],
   "status": {
@@ -84,7 +88,7 @@
     {
       "title": "星の神話、エンドロール",
       "comment": "ほんの数日にいろんなことがあったね。\n悲しい事だってあったけど...それがみんなの\"選択\"なら、僕は肯定するよ。\nふふっ、またみんなに会いたいな～、ちょっと連絡してみるよ。",
-      "iconUrl": "/images/KanadeShirabe/icon/kanadeshirabe_icon_2.png",
+      "iconUrl": "/images/KanadeShirabe/icon/KanadeShirabe_icon_2.png",
       "companions": [
         {
           "name": "守 惑",
@@ -105,7 +109,7 @@
     {
       "title": "ごぜんにじにあいにきて。",
       "comment": "惑くんからのお誘い、うれしかったなぁ。不思議な体験もしたし。\n...ふふっ、久しぶりにたくさんお話もできて、楽しかったなぁ。\nまた誘ってくれる？",
-      "iconUrl": "/images/KanadeShirabe/icon/kanadeshirabe_icon_2.png",
+      "iconUrl": "/images/KanadeShirabe/icon/KanadeShirabe_icon_2.png",
       "companions": [
         {
           "name": "守 惑",
@@ -119,7 +123,7 @@
     {
       "title": "井藤チアキと云ふ女",
       "comment": "正直、僕が死んでもみんなは絶対に送り届けようと思ってたから...。\nちゃんと、みんなで、生きて帰れて良かった～！",
-      "iconUrl": "/images/KanadeShirabe/icon/kanadeshirabe_icon_2.png",
+      "iconUrl": "/images/KanadeShirabe/icon/KanadeShirabe_icon_2.png",
       "companions": [
         {
           "name": "守 惑",
@@ -147,43 +151,43 @@
     {
       "title": "Stella-della-sera",
       "comment": "いや～珍しく酔いすぎちゃったね。\nちょっと怖いこともあったし...お酒はしばらくいいかな～！",
-      "iconUrl": "/images/KanadeShirabe/icon/kanadeshirabe_icon_2.png",
+      "iconUrl": "/images/KanadeShirabe/icon/KanadeShirabe_icon_2.png",
       "companions": []
     },
     {
       "title": "次、止まります",
       "comment": "驚いた...なんというか、自分の気づいていない内面を認識させられたなあ。\n僕って、案外おせっかいなのかもね？",
-      "iconUrl": "/images/KanadeShirabe/icon/kanadeshirabe_icon_2.png",
+      "iconUrl": "/images/KanadeShirabe/icon/KanadeShirabe_icon_2.png",
       "companions": []
     },
     {
       "title": "ホワイトブラッククリスマス",
       "comment": "ひどい目に合ったねぇ...。穏やかなクリスマスを過ごせると思っていたんだけど...。\nまあ、五体満足だし！ちょっといいこともあったし。よかったねぇ。",
-      "iconUrl": "/images/KanadeShirabe/icon/kanadeshirabe_icon_2.png",
+      "iconUrl": "/images/KanadeShirabe/icon/KanadeShirabe_icon_2.png",
       "companions": []
     },
     {
       "title": "伽藍堂書店へようこそ",
       "comment": "僕という人間の物語は、どうやらまだまだ続くみたい。\nふふっ、ここから先は、自分で書き続けなきゃいけないみたいだ...ちゃんと、歩んでいかないとね。",
-      "iconUrl": "/images/KanadeShirabe/icon/kanadeshirabe_icon_2.png",
+      "iconUrl": "/images/KanadeShirabe/icon/KanadeShirabe_icon_2.png",
       "companions": []
     },
     {
       "title": "葬儀屋のアポトーシス",
       "comment": "",
-      "iconUrl": "/images/KanadeShirabe/icon/kanadeshirabe_icon_2.png",
+      "iconUrl": "/images/KanadeShirabe/icon/KanadeShirabe_icon_2.png",
       "companions": []
     },
     {
       "title": "Fall in the festival!",
       "comment": "なんだか、変な夢見ちゃった。\nあぁ、そうだ...そちらの惑くんと天川さんも、どうかそのワガママ坊やのことを見捨てないでやっておくれ。\n案外、寂しがりやで1人じゃ生きていけないボンクラだからね。",
-      "iconUrl": "/images/KanadeShirabe/icon/kanadeshirabe_icon_2.png",
+      "iconUrl": "/images/KanadeShirabe/icon/KanadeShirabe_icon_2.png",
       "companions": []
     },
     {
       "title": "ifの為のお茶会を",
       "comment": "",
-      "iconUrl": "/images/KanadeShirabe/icon/kanadeshirabe_icon_2.png",
+      "iconUrl": "/images/KanadeShirabe/icon/KanadeShirabe_icon_2.png",
       "companions": []
     }
   ],

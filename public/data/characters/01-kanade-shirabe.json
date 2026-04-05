@@ -17,32 +17,36 @@
   },
   "sprites": [
     {
-      "iconUrl": "/images/KanadeShirabe/icon/kanadeshirabe_icon_1.png",
-      "spriteUrl": "/images/KanadeShirabe/sprite/kanadeshirabe_sprite_1.png"
+      "iconUrl": "/images/KanadeShirabe/icon/KanadeShirabe_icon_0.png",
+      "spriteUrl": "/images/KanadeShirabe/sprite/KanadeShirabe_sprite_0.png"
     },
     {
-      "iconUrl": "/images/KanadeShirabe/icon/kanadeshirabe_icon_2.png",
-      "spriteUrl": "/images/KanadeShirabe/sprite/kanadeshirabe_sprite_2.png"
+      "iconUrl": "/images/KanadeShirabe/icon/KanadeShirabe_icon_1.png",
+      "spriteUrl": "/images/KanadeShirabe/sprite/KanadeShirabe_sprite_1.png"
     },
     {
-      "iconUrl": "/images/KanadeShirabe/icon/kanadeshirabe_icon_3.png",
-      "spriteUrl": "/images/KanadeShirabe/sprite/kanadeshirabe_sprite_3.png"
+      "iconUrl": "/images/KanadeShirabe/icon/KanadeShirabe_icon_2.png",
+      "spriteUrl": "/images/KanadeShirabe/sprite/KanadeShirabe_sprite_2.png"
     },
     {
-      "iconUrl": "/images/KanadeShirabe/icon/kanadeshirabe_icon_5.png",
-      "spriteUrl": "/images/KanadeShirabe/sprite/kanadeshirabe_sprite_5.png"
+      "iconUrl": "/images/KanadeShirabe/icon/KanadeShirabe_icon_3.png",
+      "spriteUrl": "/images/KanadeShirabe/sprite/KanadeShirabe_sprite_3.png"
     },
     {
-      "iconUrl": "/images/KanadeShirabe/icon/kanadeshirabe_icon_4_hide.png",
-      "spriteUrl": "/images/KanadeShirabe/sprite/kanadeshirabe_sprite_4.png"
+      "iconUrl": "/images/KanadeShirabe/icon/KanadeShirabe_icon_5.png",
+      "spriteUrl": "/images/KanadeShirabe/sprite/KanadeShirabe_sprite_5.png"
     },
     {
-      "iconUrl": "/images/KanadeShirabe/icon/kanadeshirabe_icon_6.png",
-      "spriteUrl": "/images/KanadeShirabe/sprite/kanadeshirabe_sprite_6.png"
+      "iconUrl": "/images/KanadeShirabe/icon/KanadeShirabe_icon_4_hide.png",
+      "spriteUrl": "/images/KanadeShirabe/sprite/KanadeShirabe_sprite_4.png"
     },
     {
-      "iconUrl": "/images/KanadeShirabe/icon/kanadeshirabe_icon_7.png",
-      "spriteUrl": "/images/KanadeShirabe/sprite/kanadeshirabe_sprite_7.png"
+      "iconUrl": "/images/KanadeShirabe/icon/KanadeShirabe_icon_6.png",
+      "spriteUrl": "/images/KanadeShirabe/sprite/KanadeShirabe_sprite_6.png"
+    },
+    {
+      "iconUrl": "/images/KanadeShirabe/icon/KanadeShirabe_icon_7.png",
+      "spriteUrl": "/images/KanadeShirabe/sprite/KanadeShirabe_sprite_7.png"
     }
   ],
   "status": {
@@ -78,7 +82,7 @@
     {
       "title": "星の神話、エンドロール",
       "comment": "ほんの数日にいろんなことがあったね。\n悲しい事だってあったけど...それがみんなの\"選択\"なら、僕は肯定するよ。\nふふっ、またみんなに会いたいな～、ちょっと連絡してみるよ。",
-      "iconUrl": "/images/KanadeShirabe/icon/kanadeshirabe_icon_2.png",
+      "iconUrl": "/images/KanadeShirabe/icon/KanadeShirabe_icon_2.png",
       "companions": [
         {
           "name": "守 惑",
@@ -99,7 +103,7 @@
     {
       "title": "ごぜんにじにあいにきて。",
       "comment": "惑くんからのお誘い、うれしかったなぁ。不思議な体験もしたし。\n...ふふっ、久しぶりにたくさんお話もできて、楽しかったなぁ。\nまた誘ってくれる？",
-      "iconUrl": "/images/KanadeShirabe/icon/kanadeshirabe_icon_2.png",
+      "iconUrl": "/images/KanadeShirabe/icon/KanadeShirabe_icon_2.png",
       "companions": [
         {
           "name": "守 惑",
@@ -113,19 +117,19 @@
   ],
   "qaList": [
     {
-      "iconUrl": "/images/KanadeShirabe/icon/kanadeshirabe_icon_1.png",
+      "iconUrl": "/images/KanadeShirabe/icon/KanadeShirabe_icon_1.png",
       "answer": "休日は、うーん...インプットに努めることが多いかな？\n気になっていた本を読んでみたり、街を歩いてウィンドウショッピングしたり...。\n日々の発見が仕事につながることもあると思って。"
     },
     {
-      "iconUrl": "/images/KanadeShirabe/icon/kanadeshirabe_icon_1.png",
+      "iconUrl": "/images/KanadeShirabe/icon/KanadeShirabe_icon_1.png",
       "answer": "集合場所には、予定時刻の数分前に行くようにしてるかな。\nあんまり早く着いて待ってると気を遣わせちゃうでしょ？\n思ったより早めに着いた時も大体周辺で時間潰してから行くかな。"
     },
     {
-      "iconUrl": "/images/KanadeShirabe/icon/kanadeshirabe_icon_1.png",
+      "iconUrl": "/images/KanadeShirabe/icon/KanadeShirabe_icon_1.png",
       "answer": "急に難しい質問だね...？願いが叶うなら、か...。\nそうだな、もう一回みんなで旅行に行きたいかな。だって、あの時全然ロンドン回れなかったんだよ？僕、行きたかった場所まだまだあるんだ。"
     },
     {
-      "iconUrl": "/images/KanadeShirabe/icon/kanadeshirabe_icon_1.png",
+      "iconUrl": "/images/KanadeShirabe/icon/KanadeShirabe_icon_1.png",
       "answer": "あと一日って時にできることなんて限られちゃうよね。\nあぁ、でも...大切な人には、最後に会っておきたいものだよね。\nお礼も言えずに死んじゃうのは嫌かも。"
     }
   ],

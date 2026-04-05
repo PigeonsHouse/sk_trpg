@@ -61,25 +61,25 @@
       "iconUrl": "/images/SupikaKosumo/icon/SupikaKosumo_icon_1.png",
       "companions": [
         {
-          "name": "阿倍 根性",
-          "enName": "ABE KONJO",
+          "name": "百々独活 どどう",
+          "enName": "DODOUDO DODOU",
           "color": "#2d5079",
           "iconUrl": "/images/SupikaKosumo/companions/Abe.png",
           "nickName": "あべのおじ"
         },
         {
-          "name": "九条 優作",
-          "enName": "KUJO YUSAKU",
+          "name": "水野 孝",
+          "enName": "MIZUNO TAKASHI",
           "color": "#2C642C",
-          "iconUrl": "/images/SupikaKosumo/companions/io.png",
+          "iconUrl": "/images/SupikaKosumo/companions/Mizuno.png",
           "nickName": "くじょー"
         },
         {
-          "name": "キャプリ・ダンフォース",
-          "enName": "CAPRI DANFORTH",
+          "name": "茂古 模故",
+          "enName": "MOKO MOKO",
           "color": "#CCE07B",
           "iconUrl": "/images/common/companions_NoImage.png",
-          "nickName": "きゃっぴー"
+          "nickName": "もこぴ"
         }
       ]
     }

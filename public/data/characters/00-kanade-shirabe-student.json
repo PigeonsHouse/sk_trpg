@@ -18,12 +18,12 @@
   },
   "sprites": [
     {
-      "iconUrl": "/images/KanadeShirabe/icon/kanadeshirabe_icon_1_hide.png",
-      "spriteUrl": "/images/KanadeShirabe/sprite/kanadeshirabe_sprite_4.png"
+      "iconUrl": "/images/KanadeShirabe/icon/KanadeShirabe_icon_1_hide.png",
+      "spriteUrl": "/images/KanadeShirabe/sprite/KanadeShirabe_sprite_4.png"
     },
     {
-      "iconUrl": "/images/KanadeShirabe/icon/kanadeshirabe_icon_4.png",
-      "spriteUrl": "/images/KanadeShirabe/sprite/kanadeshirabe_sprite_4.png"
+      "iconUrl": "/images/KanadeShirabe/icon/KanadeShirabe_icon_4.png",
+      "spriteUrl": "/images/KanadeShirabe/sprite/KanadeShirabe_sprite_4.png"
     }
   ],
   "status": {
@@ -63,7 +63,7 @@
     {
       "title": "Fall in the festival!",
       "comment": "なんだか、2年目の学祭は夢みたいな日だったね...。\nうふふ、でも、みんなと約束しちゃったからね。\nさぁて！次の流星群はいつだろうね？",
-      "iconUrl": "/images/KanadeShirabe/icon/kanadeshirabe_icon_4.png",
+      "iconUrl": "/images/KanadeShirabe/icon/KanadeShirabe_icon_4.png",
       "companions": [
         {
           "name": "守 惑",
@@ -84,19 +84,19 @@
   ],
   "qaList": [
     {
-      "iconUrl": "/images/KanadeShirabe/icon/kanadeshirabe_icon_4.png",
+      "iconUrl": "/images/KanadeShirabe/icon/KanadeShirabe_icon_4.png",
       "answer": "最近は天文部であれこれ駆り出されるから、綾ちゃんや惑くんと遊ぶ日も増えたかな。\n（バイオリンの）練習をしていない時間は、ちょっと罪悪感があるけれど...誰かと時間を共有することも大事だよね？"
     },
     {
-      "iconUrl": "/images/KanadeShirabe/icon/kanadeshirabe_icon_4.png",
+      "iconUrl": "/images/KanadeShirabe/icon/KanadeShirabe_icon_4.png",
       "answer": "早めに行くかな～。といっても、のんびり向かっていたら、大体5分前とかになるのだけれど。"
     },
     {
-      "iconUrl": "/images/KanadeShirabe/icon/kanadeshirabe_icon_4.png",
+      "iconUrl": "/images/KanadeShirabe/icon/KanadeShirabe_icon_4.png",
       "answer": "難しいなぁ～、今で十分満たされているから、お願いするほどのものはない...\nいや、望遠鏡かな？この間、結局手に入らなかったし。\n新しい望遠鏡を仕入れたとなれば、観測に出かける理由ができるでしょう？"
     },
     {
-      "iconUrl": "/images/KanadeShirabe/icon/kanadeshirabe_icon_4.png",
+      "iconUrl": "/images/KanadeShirabe/icon/KanadeShirabe_icon_4.png",
       "answer": "お世話になった人にご挨拶に行く、とかかな？\n大切な人に、何も言えないままお別れになっちゃうなんて嫌だものね。"
     }
   ],
