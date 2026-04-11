@@ -64,25 +64,25 @@
       "iconUrl": "/images/ShinoKunosuke/icon/ShinoKunosuke_icon_1.png",
       "companions": [
         {
-          "name": "百々独活 どどう",
-          "enName": "DODOUDO DODOU",
+          "name": "森宮 孝一",
+          "enName": "MORIMIYA KOUICHI",
           "color": "#2d5079",
           "iconUrl": "/images/ShinoKunosuke/companions/Abe.png",
-          "nickName": "あべのおじ"
+          "nickName": "森宮せんせー"
         },
         {
-          "name": "水野 孝",
-          "enName": "MIZUNO TAKASHI",
+          "name": "犬熊 圭介",
+          "enName": "INUGUMA KEISUKE",
           "color": "#2C642C",
           "iconUrl": "/images/ShinoKunosuke/companions/Mizuno.png",
-          "nickName": "くじょー"
+          "nickName": "犬熊せんせー"
         },
         {
-          "name": "茂古 模故",
-          "enName": "MOKO MOKO",
+          "name": "星金 萌香",
+          "enName": "HOSHIGANE MOCA",
           "color": "#CCE07B",
           "iconUrl": "/images/common/companions_NoImage.png",
-          "nickName": "もこぴ"
+          "nickName": "星金せんせー"
         }
       ]
     }

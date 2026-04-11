@@ -27,10 +27,6 @@
     {
       "iconUrl": "/images/ScarletKrieger/icon/ScarletKrieger_icon_3.png",
       "spriteUrl": "/images/ScarletKrieger/sprite/ScarletKrieger_sprite_3.png"
-    },
-    {
-      "iconUrl": "/images/ScarletKrieger/icon/ScarletKrieger_icon_4.png",
-      "spriteUrl": "/images/ScarletKrieger/sprite/ScarletKrieger_sprite_4.png"
     }
   ],
   "status": {
