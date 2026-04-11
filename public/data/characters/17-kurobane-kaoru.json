@@ -1,0 +1,102 @@
+{
+  "shortId": "KOR",
+  "name": "黒羽根 香",
+  "enName": "KUROBANE KAORU",
+  "thumbnailUrl": "/images/KurobaneKaoru/sprite/KurobaneKaoru_sprite_1.png",
+  "colorPalette": ["#291806", "#111111", "#E2A00E"],
+  "backgroundUrl": "https://sakuranouta.biz/wp-content/uploads/2023/10/%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84%E3%81%AE%E9%83%A8%E5%B1%8B_6_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89-1-1024x576.jpg",
+  "profile": {
+    "description": "未記入",
+    "age": "??",
+    "gender": "オトメ♡ ※オカマである",
+    "height": "172cm",
+    "weight": "84kg",
+    "job": "オーナーシェフ",
+    "birthday": "??",
+    "from": "??"
+  },
+  "sprites": [
+    {
+      "iconUrl": "/images/KurobaneKaoru/icon/KurobaneKaoru_icon_1.png",
+      "spriteUrl": "/images/KurobaneKaoru/sprite/KurobaneKaoru_sprite_1.png"
+    },
+    {
+      "iconUrl": "/images/KurobaneKaoru/icon/KurobaneKaoru_icon_2.png",
+      "spriteUrl": "/images/KurobaneKaoru/sprite/KurobaneKaoru_sprite_2.png"
+    }
+  ],
+  "status": {
+    "type": "CoC6版",
+    "str": 14,
+    "con": 10,
+    "pow": 15,
+    "dex": 9,
+    "app": 14,
+    "siz": 11,
+    "int": 15,
+    "edu": 12,
+    "san": 75,
+    "hp": 11,
+    "mp": 15,
+    "luck": 73,
+    "idea": 75,
+    "knowledge": 60
+  },
+  "skills": {
+    "mask01": 78,
+    "mask02": 80,
+    "mask03": 75,
+    "mask04": 70,
+    "mask05": 72,
+    "mask06": 60,
+    "mask07": 60,
+    "mask08":65,
+    "mask09": 6,
+    "芸術【動物使い】": 35,
+    "経理": 25
+  },
+
+  "histories": [
+    {
+      "title": "愛罠蜂",
+      "comment": "未記入",
+      "iconUrl": "/images/KurobaneKaoru/icon/KurobaneKaoru_icon_1.png",
+      "companions": [
+        {
+          "name": "百々独活 どどう",
+          "enName": "DODOUDO DODOU",
+          "color": "#2d5079",
+          "iconUrl": "/images/KurobaneKaoru/companions/Abe.png",
+          "nickName": "あべのおじ"
+        },
+        {
+          "name": "水野 孝",
+          "enName": "MIZUNO TAKASHI",
+          "color": "#2C642C",
+          "iconUrl": "/images/KurobaneKaoru/companions/Mizuno.png",
+          "nickName": "くじょー"
+        }
+      ]
+    }
+  ],
+  "qaList": [
+    {
+      "iconUrl": "/images/KurobaneKaoru/icon/KurobaneKaoru_icon_1.png",
+      "answer": "未記入"
+    },
+    {
+      "iconUrl": "/images/KurobaneKaoru/icon/KurobaneKaoru_icon_1.png",
+      "answer": "未記入"
+    },
+    {
+      "iconUrl": "/images/KurobaneKaoru/icon/KurobaneKaoru_icon_1.png",
+      "answer": "未記入"
+    },
+    {
+      "iconUrl": "/images/KurobaneKaoru/icon/KurobaneKaoru_icon_1.png",
+      "answer": "未記入"
+    }
+  ],
+  "comment": "未記入",
+  "artGallery": []
+}

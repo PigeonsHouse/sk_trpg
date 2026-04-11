@@ -1,0 +1,110 @@
+{
+  "shortId": "KNS",
+  "name": "偲野 空之介",
+  "enName": "SHINO KUNOSUKE",
+  "thumbnailUrl": "/images/ShinoKunosuke/sprite/ShinoKunosuke_sprite_1.png",
+  "colorPalette": ["#3A8C59", "#3A588C", "#D4FF16"],
+  "backgroundUrl": "https://sakuranouta.biz/wp-content/uploads/2023/10/%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84%E3%81%AE%E9%83%A8%E5%B1%8B_6_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89-1-1024x576.jpg",
+  "profile": {
+    "description": "中学校の美術教師。\n常にぼやっとしており、何を考えているのかがわからない。感情の起伏がなく、掴みどころもない。\n授業時間以外は、美術室に篭って彫像を熱心に制作していたり、はたまた廊下の窓でぼーっと空を眺め続けていたりする。\n\n「今日は…ひつじさんたち(うろこ雲)が、群れを成して行進しているね。季節の変わり目だし、きっと移牧中なんだね。」\n\nマイペースが過ぎるので、かなりの確率で授業に遅刻する。\n遅刻の件で教頭先生に怒られているところが頻繁に目撃される。",
+    "age":28,
+    "gender": "男性",
+    "height": "183cm",
+    "weight": "57kg",
+    "job": "美術教員",
+    "birthday": "4月9日",
+    "from": "神奈川県"
+  },
+  "sprites": [
+    {
+      "iconUrl": "/images/ShinoKunosuke/icon/ShinoKunosuke_icon_1.png",
+      "spriteUrl": "/images/ShinoKunosuke/sprite/ShinoKunosuke_sprite_1.png"
+    },
+    {
+      "iconUrl": "/images/ShinoKunosuke/icon/ShinoKunosuke_icon_2.png",
+      "spriteUrl": "/images/ShinoKunosuke/sprite/ShinoKunosuke_sprite_2.png"
+    }
+  ],
+  "status": {
+    "type": "CoC6版",
+    "str": 8,
+    "con": 5,
+    "pow": 16,
+    "dex": 10,
+    "app": 15,
+    "siz": 13,
+    "int": 17,
+    "edu": 13,
+    "san": 80,
+    "hp": 12,
+    "mp": 14,
+    "luck": 80,
+    "idea": 85,
+    "knowledge": 65
+  },
+  "skills": {
+    "回避": 60,
+    "応急手当": 70,
+    "mask01": 70,
+    "写真術": 70,
+    "mask02": 30,
+    "図書館": 75,
+    "目星": 85,
+    "信用":50,
+    "芸術【彫刻】": 80,
+    "人類学": 21,
+    "歴史": 25,
+    "mask03": 80
+  },
+
+  "histories": [
+    {
+      "title": "ソープスクール",
+      "comment": "空之介の空は、空みたいに、でっかい心...ってね。そんな人に、なりたいな。",
+      "iconUrl": "/images/ShinoKunosuke/icon/ShinoKunosuke_icon_1.png",
+      "companions": [
+        {
+          "name": "百々独活 どどう",
+          "enName": "DODOUDO DODOU",
+          "color": "#2d5079",
+          "iconUrl": "/images/ShinoKunosuke/companions/Abe.png",
+          "nickName": "あべのおじ"
+        },
+        {
+          "name": "水野 孝",
+          "enName": "MIZUNO TAKASHI",
+          "color": "#2C642C",
+          "iconUrl": "/images/ShinoKunosuke/companions/Mizuno.png",
+          "nickName": "くじょー"
+        },
+        {
+          "name": "茂古 模故",
+          "enName": "MOKO MOKO",
+          "color": "#CCE07B",
+          "iconUrl": "/images/common/companions_NoImage.png",
+          "nickName": "もこぴ"
+        }
+      ]
+    }
+  ],
+  "qaList": [
+    {
+      "iconUrl": "/images/ShinoKunosuke/icon/ShinoKunosuke_icon_1.png",
+      "answer": "未記入"
+    },
+    {
+      "iconUrl": "/images/ShinoKunosuke/icon/ShinoKunosuke_icon_1.png",
+      "answer": "未記入"
+    },
+    {
+      "iconUrl": "/images/ShinoKunosuke/icon/ShinoKunosuke_icon_1.png",
+      "answer": "未記入"
+    },
+    {
+      "iconUrl": "/images/ShinoKunosuke/icon/ShinoKunosuke_icon_1.png",
+      "answer": "未記入"
+    }
+  ],
+  "comment": "未記入",
+  "artGallery": []
+}

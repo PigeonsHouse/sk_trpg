@@ -1,0 +1,107 @@
+{
+  "shortId": "SHU",
+  "name": "言 周",
+  "enName": "KOTONOHA SHU",
+  "thumbnailUrl": "/images/KotonohaShu/sprite/KotonohaShu_sprite_1.png",
+  "colorPalette": ["#C6C6C8", "#323233", "#FFDE00"],
+  "backgroundUrl": "https://sakuranouta.biz/wp-content/uploads/2023/10/%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84%E3%81%AE%E9%83%A8%E5%B1%8B_6_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89-1-1024x576.jpg",
+  "profile": {
+    "description": "謎多き指揮官。\n来歴・出自が一切不明。また、自分の素性を語らない。\n\n音楽に関する知識に長けている。\n要領もよく、あらゆる楽器を人並み以上に演奏できる。また、オーパスの指揮能力が高く、元指揮者ではないかと噂されている。当人は否定も否定もしない。\n\n「俺の前職…？それを知って、何か意味があるのかい？」",
+    "age":27,
+    "gender": "男性",
+    "height": "171cm",
+    "weight": "55kg",
+    "job": "指揮官",
+    "birthday": "??",
+    "from": "??"
+  },
+  "sprites": [
+    {
+      "iconUrl": "/images/KotonohaShu/icon/KotonohaShu_icon_1.png",
+      "spriteUrl": "/images/KotonohaShu/sprite/KotonohaShu_sprite_1.png"
+    },
+    {
+      "iconUrl": "/images/KotonohaShu/icon/KotonohaShu_icon_2.png",
+      "spriteUrl": "/images/KotonohaShu/sprite/KotonohaShu_sprite_2.png"
+    }
+  ],
+  "status": {
+    "type": "CoC6版",
+    "str": 10,
+    "con": 10,
+    "pow": 14,
+    "dex": 10,
+    "app": 13,
+    "siz": 13,
+    "int": 16,
+    "edu": 11,
+    "san": 70,
+    "hp": 12,
+    "mp": 14,
+    "luck": 70,
+    "idea": 80,
+    "knowledge": 55
+  },
+  "skills": {
+    "回避": 58,
+    "目星": 70,
+    "精神分析": 51,
+    "図書館": 65,
+    "信用": 70,
+    "mask01": 61,
+    "芸術【音楽】": 70,
+    "心理学":85,
+    "mask02": 85
+  },
+
+  "histories": [
+    {
+      "title": "al fine に鳴く夜鳴鶯",
+      "comment": "俺が君のバディであり続ける限り、俺は言 周であり続けるよ。\n君の命が果てるまでは見届けよう。",
+      "iconUrl": "/images/KotonohaShu/icon/KotonohaShu_icon_1.png",
+      "companions": [
+        {
+          "name": "黒江 拍節",
+          "enName": "KUROE PARUSU",
+          "color": "#2d5079",
+          "iconUrl": "/images/KotonohaShu/companions/Abe.png",
+          "nickName": "黒江君"
+        },
+        {
+          "name": "ルミナ・フロイデ",
+          "enName": "LUMINA FREUDE",
+          "color": "#2C642C",
+          "iconUrl": "/images/KotonohaShu/companions/Mizuno.png",
+          "nickName": "ルミナさん"
+        },
+        {
+          "name": "ティナ",
+          "enName": "TINA",
+          "color": "#CCE07B",
+          "iconUrl": "/images/common/companions_NoImage.png",
+          "nickName": "ティナ"
+        }
+      ]
+    }
+  ],
+  "qaList": [
+    {
+      "iconUrl": "/images/KotonohaShu/icon/KotonohaShu_icon_1.png",
+      "answer": "未記入"
+    },
+    {
+      "iconUrl": "/images/KotonohaShu/icon/KotonohaShu_icon_1.png",
+      "answer": "未記入"
+    },
+    {
+      "iconUrl": "/images/KotonohaShu/icon/KotonohaShu_icon_1.png",
+      "answer": "未記入"
+    },
+    {
+      "iconUrl": "/images/KotonohaShu/icon/KotonohaShu_icon_1.png",
+      "answer": "未記入"
+    }
+  ],
+  "comment": "未記入",
+  "artGallery": []
+}

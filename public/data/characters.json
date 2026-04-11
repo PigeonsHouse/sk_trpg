@@ -137,5 +137,45 @@
     "thumbnailUrl": "/images/SupikaKosumo/sprite/SupikaKosumo_sprite_1.png",
     "backgroundUrl": "https://sakuranouta.biz/wp-content/uploads/2023/10/%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84%E3%81%AE%E9%83%A8%E5%B1%8B_6_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89-1-1024x576.jpg",
     "color": "#1725E0"
+  },
+  {
+    "id": "kurobane-kaoru",
+    "name": "黒羽根 香",
+    "enName": "KUROBANE KAORU",
+    "thumbnailUrl": "/images/KurobaneKaoru/sprite/KurobaneKaoru_sprite_1.png",
+    "backgroundUrl": "https://sakuranouta.biz/wp-content/uploads/2023/10/%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84%E3%81%AE%E9%83%A8%E5%B1%8B_6_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89-1-1024x576.jpg",
+    "color": "#291806"
+  },
+  {
+    "id": "aoi",
+    "name": "葵",
+    "enName": "DeepOne666",
+    "thumbnailUrl": "/images/Aoi/sprite/Aoi_sprite_1.png",
+    "backgroundUrl": "https://sakuranouta.biz/wp-content/uploads/2023/10/%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84%E3%81%AE%E9%83%A8%E5%B1%8B_6_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89-1-1024x576.jpg",
+    "color": "#60B3A9"
+  },
+  {
+    "id": "kotonoha-shu",
+    "name": "言 周",
+    "enName": "KOTONOHA SHU",
+    "thumbnailUrl": "/images/KotonohaShu/sprite/KotonohaShu_sprite_1.png",
+    "backgroundUrl": "https://sakuranouta.biz/wp-content/uploads/2023/10/%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84%E3%81%AE%E9%83%A8%E5%B1%8B_6_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89-1-1024x576.jpg",
+    "color": "#C6C6C8"
+  },
+  {
+    "id": "shino-kunosuke",
+    "name": "偲野 空之介",
+    "enName": "SHINO KUNOSUKE",
+    "thumbnailUrl": "/images/ShinoKunosuke/sprite/ShinoKunosuke_sprite_1.png",
+    "backgroundUrl": "https://sakuranouta.biz/wp-content/uploads/2023/10/%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84%E3%81%AE%E9%83%A8%E5%B1%8B_6_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89-1-1024x576.jpg",
+    "color": "#3A8C59"
+  },
+  {
+    "id": "someya-kureno",
+    "name": "染矢 暮乃",
+    "enName": "SOMEYA KURENO",
+    "thumbnailUrl": "/images/SomeyaKureno/sprite/SomeyaKureno_sprite_1.png",
+    "backgroundUrl": "https://sakuranouta.biz/wp-content/uploads/2023/10/%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84%E3%81%AE%E9%83%A8%E5%B1%8B_6_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89-1-1024x576.jpg",
+    "color": "#5375BA"
   }
 ]

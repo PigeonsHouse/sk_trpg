@@ -1,0 +1,107 @@
+{
+  "shortId": "AOI",
+  "name": "葵",
+  "enName":"DeepOne666",
+  "thumbnailUrl": "/images/Aoi/sprite/Aoi_sprite_1.png",
+  "colorPalette": ["#60B3A9", "#215884", "#DBD51F"],
+  "backgroundUrl": "https://sakuranouta.biz/wp-content/uploads/2023/10/%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84%E3%81%AE%E9%83%A8%E5%B1%8B_6_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89-1-1024x576.jpg",
+  "profile": {
+    "description": "未記入",
+    "age":"??",
+    "gender": "オス",
+    "height": "183cm",
+    "weight": "71kg",
+    "job": "??",
+    "birthday": "??",
+    "from": "??"
+  },
+  "sprites": [
+    {
+      "iconUrl": "/images/Aoi/icon/Aoi_icon_1.png",
+      "spriteUrl": "/images/Aoi/sprite/Aoi_sprite_1.png"
+    },
+    {
+      "iconUrl": "/images/Aoi/icon/Aoi_icon_2.png",
+      "spriteUrl": "/images/Aoi/sprite/Aoi_sprite_2.png"
+    }
+  ],
+  "status": {
+    "type": "CoC6版",
+    "str": 10,
+    "con": 10,
+    "pow": 14,
+    "dex": 10,
+    "app": 13,
+    "siz": 13,
+    "int": 16,
+    "edu": 11,
+    "san": 70,
+    "hp": 12,
+    "mp": 14,
+    "luck": 70,
+    "idea": 80,
+    "knowledge": 55
+  },
+  "skills": {
+    "回避": 50,
+    "目星": 84,
+    "操縦【UFO】": 31,
+    "電気修理": 84,
+    "オカルト": 65,
+    "コンピューター": 43,
+    "心理学": 7,
+    "天文学":21,
+    "物理学": 81
+  },
+
+  "histories": [
+    {
+      "title": "特異点",
+      "comment": "も、もういいですかぁ...?俺、海に帰りますよぉ...文句ないですよねぇえ...??",
+      "iconUrl": "/images/Aoi/icon/Aoi_icon_1.png",
+      "companions": [
+        {
+          "name": "百々独活 どどう",
+          "enName": "DODOUDO DODOU",
+          "color": "#2d5079",
+          "iconUrl": "/images/Aoi/companions/Abe.png",
+          "nickName": "あべのおじ"
+        },
+        {
+          "name": "水野 孝",
+          "enName": "MIZUNO TAKASHI",
+          "color": "#2C642C",
+          "iconUrl": "/images/Aoi/companions/Mizuno.png",
+          "nickName": "くじょー"
+        },
+        {
+          "name": "茂古 模故",
+          "enName": "MOKO MOKO",
+          "color": "#CCE07B",
+          "iconUrl": "/images/common/companions_NoImage.png",
+          "nickName": "もこぴ"
+        }
+      ]
+    }
+  ],
+  "qaList": [
+    {
+      "iconUrl": "/images/Aoi/icon/Aoi_icon_1.png",
+      "answer": "未記入"
+    },
+    {
+      "iconUrl": "/images/Aoi/icon/Aoi_icon_1.png",
+      "answer": "未記入"
+    },
+    {
+      "iconUrl": "/images/Aoi/icon/Aoi_icon_1.png",
+      "answer": "未記入"
+    },
+    {
+      "iconUrl": "/images/Aoi/icon/Aoi_icon_1.png",
+      "answer": "未記入"
+    }
+  ],
+  "comment": "未記入",
+  "artGallery": []
+}
