@@ -63,22 +63,22 @@
         {
           "name": "黒江 拍節",
           "enName": "KUROE PARUSU",
-          "color": "#2d5079",
-          "iconUrl": "/images/KotonohaShu/companions/Abe.png",
+          "color": "#03befc",
+          "iconUrl": "/images/KotonohaShu/companions/Kuroe.png",
           "nickName": "黒江君"
         },
         {
           "name": "ルミナ・フロイデ",
           "enName": "LUMINA FREUDE",
-          "color": "#2C642C",
-          "iconUrl": "/images/KotonohaShu/companions/Mizuno.png",
+          "color": "#faf0af",
+          "iconUrl": "/images/KotonohaShu/companions/Lumina.png",
           "nickName": "ルミナさん"
         },
         {
           "name": "ティナ",
           "enName": "TINA",
-          "color": "#CCE07B",
-          "iconUrl": "/images/common/companions_NoImage.png",
+          "color": "#050dfc",
+          "iconUrl": "/images/KotonohaShu/companions/Tina.png",
           "nickName": "ティナ"
         }
       ]

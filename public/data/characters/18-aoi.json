@@ -19,10 +19,6 @@
     {
       "iconUrl": "/images/Aoi/icon/Aoi_icon_1.png",
       "spriteUrl": "/images/Aoi/sprite/Aoi_sprite_1.png"
-    },
-    {
-      "iconUrl": "/images/Aoi/icon/Aoi_icon_2.png",
-      "spriteUrl": "/images/Aoi/sprite/Aoi_sprite_2.png"
     }
   ],
   "status": {
@@ -65,22 +61,22 @@
         {
           "name": "長山 朱希",
           "enName": "NAGAYAMA AKI",
-          "color": "#2d5079",
-          "iconUrl": "/images/Aoi/companions/Abe.png",
+          "color": "#6b3434",
+          "iconUrl": "/images/common/companions_NoImage.png",
           "nickName": "（覚えてない）"
         },
         {
           "name": "興梠 独",
           "enName": "KOROGI DOKU",
-          "color": "#2C642C",
-          "iconUrl": "/images/Aoi/companions/Mizuno.png",
+          "color": "#fceb4c",
+          "iconUrl": "/images/Aoi/companions/Korogi.png",
           "nickName": "（覚えてない）"
         },
         {
           "name": "双葉",
           "enName": "No.28",
-          "color": "#CCE07B",
-          "iconUrl": "/images/common/companions_NoImage.png",
+          "color": "#77f3f7",
+          "iconUrl": "/images/Aoi/companions/Hutaba.png",
           "nickName": "（覚えてない）"
         }
       ]

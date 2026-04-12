@@ -48,6 +48,10 @@
     {
       "iconUrl": "/images/KanadeShirabe/icon/KanadeShirabe_icon_7.png",
       "spriteUrl": "/images/KanadeShirabe/sprite/KanadeShirabe_sprite_7.png"
+    },
+    {
+      "iconUrl": "/images/KanadeShirabe/icon/KanadeShirabe_icon_8.png",
+      "spriteUrl": "/images/KanadeShirabe/sprite/KanadeShirabe_sprite_8.png"
     }
   ],
   "status": {
@@ -189,6 +193,12 @@
       "comment": "",
       "iconUrl": "/images/KanadeShirabe/icon/KanadeShirabe_icon_2.png",
       "companions": []
+    },
+    {
+      "title": "探索者格付けチェック",
+      "comment": "",
+      "iconUrl": "/images/KanadeShirabe/icon/KanadeShirabe_icon_2.png",
+      "companions": []
     }
   ],
   "qaList": [
@@ -209,7 +219,7 @@
       "answer": "最後の一日を大切に過ごすよ"
     }
   ],
-  "comment": "自由記述",
+  "comment": "鈴木乖離のTRPGにお熱になった原因の男です。\nこの男が、というのもありますが、卓の満足度がとにかく高く、「また奏調と旅がしたい」と思ってしまいました。\n今では散々継続に連れ回し、存在しない卓の思い出（という名のSS）を書き連ねています。この男が本当に好きなんですよね。\n\n年を重ねるごとに性癖が歪んできておりますが、この男のせいで「ちょっと中性的な優しいお兄さん」が癖になりました。こういう顔の男にめっぽう弱くなり、狂わされたなと感じます。まだまだ君には死んでもらっては困るよ、一緒に旅しておくれよ",
   "artGallery": [
     "/images/KanadeShirabe/picture/picture2_1.jpg",
     "/images/KanadeShirabe/picture/picture2_2.jpg",

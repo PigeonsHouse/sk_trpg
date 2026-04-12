@@ -19,10 +19,6 @@
     {
       "iconUrl": "/images/ShinoKunosuke/icon/ShinoKunosuke_icon_1.png",
       "spriteUrl": "/images/ShinoKunosuke/sprite/ShinoKunosuke_sprite_1.png"
-    },
-    {
-      "iconUrl": "/images/ShinoKunosuke/icon/ShinoKunosuke_icon_2.png",
-      "spriteUrl": "/images/ShinoKunosuke/sprite/ShinoKunosuke_sprite_2.png"
     }
   ],
   "status": {
@@ -66,22 +62,22 @@
         {
           "name": "森宮 孝一",
           "enName": "MORIMIYA KOUICHI",
-          "color": "#2d5079",
+          "color": "#364239",
           "iconUrl": "/images/ShinoKunosuke/companions/Abe.png",
           "nickName": "森宮せんせー"
         },
         {
           "name": "犬熊 圭介",
           "enName": "INUGUMA KEISUKE",
-          "color": "#2C642C",
-          "iconUrl": "/images/ShinoKunosuke/companions/Mizuno.png",
+          "color": "#182c6a",
+          "iconUrl": "/images/ShinoKunosuke/companions/Inuguma.png",
           "nickName": "犬熊せんせー"
         },
         {
           "name": "星金 萌香",
           "enName": "HOSHIGANE MOCA",
-          "color": "#CCE07B",
-          "iconUrl": "/images/common/companions_NoImage.png",
+          "color": "#385237",
+          "iconUrl": "/images/common/Hoshigane.png",
           "nickName": "星金せんせー"
         }
       ]

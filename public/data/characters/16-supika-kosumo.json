@@ -19,10 +19,6 @@
     {
       "iconUrl": "/images/SupikaKosumo/icon/SupikaKosumo_icon_1.png",
       "spriteUrl": "/images/SupikaKosumo/sprite/SupikaKosumo_sprite_1.png"
-    },
-    {
-      "iconUrl": "/images/SupikaKosumo/icon/SupikaKosumo_icon_2.png",
-      "spriteUrl": "/images/SupikaKosumo/sprite/SupikaKosumo_sprite_2.png"
     }
   ],
   "status": {
@@ -63,22 +59,22 @@
         {
           "name": "百々独活 どどう",
           "enName": "DODOUDO DODOU",
-          "color": "#2d5079",
-          "iconUrl": "/images/SupikaKosumo/companions/Abe.png",
-          "nickName": "あべのおじ"
+          "color": "#FFE948",
+          "iconUrl": "/images/SupikaKosumo/companions/Dodoudo.png",
+          "nickName": "どっち"
         },
         {
           "name": "水野 孝",
           "enName": "MIZUNO TAKASHI",
-          "color": "#2C642C",
+          "color": "#097880",
           "iconUrl": "/images/SupikaKosumo/companions/Mizuno.png",
-          "nickName": "くじょー"
+          "nickName": "たかぴ"
         },
         {
           "name": "茂古 模故",
           "enName": "MOKO MOKO",
-          "color": "#CCE07B",
-          "iconUrl": "/images/common/companions_NoImage.png",
+          "color": "#d7fafa",
+          "iconUrl": "/images/SupikaKosumo/companions/Moko.png",
           "nickName": "もこぴ"
         }
       ]

@@ -19,10 +19,6 @@
     {
       "iconUrl": "/images/KurobaneKaoru/icon/KurobaneKaoru_icon_1.png",
       "spriteUrl": "/images/KurobaneKaoru/sprite/KurobaneKaoru_sprite_1.png"
-    },
-    {
-      "iconUrl": "/images/KurobaneKaoru/icon/KurobaneKaoru_icon_2.png",
-      "spriteUrl": "/images/KurobaneKaoru/sprite/KurobaneKaoru_sprite_2.png"
     }
   ],
   "status": {
@@ -63,18 +59,18 @@
       "iconUrl": "/images/KurobaneKaoru/icon/KurobaneKaoru_icon_1.png",
       "companions": [
         {
-          "name": "百々独活 どどう",
-          "enName": "DODOUDO DODOU",
-          "color": "#2d5079",
-          "iconUrl": "/images/KurobaneKaoru/companions/Abe.png",
-          "nickName": "あべのおじ"
+          "name": "梨 れもん",
+          "enName": "SAWARAGI REMON",
+          "color": "#f5cbdd",
+          "iconUrl": "/images/KurobaneKaoru/companions/Sawaragi.png",
+          "nickName": "れもんチャン"
         },
         {
-          "name": "水野 孝",
-          "enName": "MIZUNO TAKASHI",
-          "color": "#2C642C",
-          "iconUrl": "/images/KurobaneKaoru/companions/Mizuno.png",
-          "nickName": "くじょー"
+          "name": "ハニー ※PCの愛猫",
+          "enName": "HONEY",
+          "color": "#a6740a",
+          "iconUrl": "/images/KurobaneKaoru/companions/Honey.png",
+          "nickName": "ハニーチャン"
         }
       ]
     }

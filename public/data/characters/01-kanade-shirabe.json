@@ -47,6 +47,10 @@
     {
       "iconUrl": "/images/KanadeShirabe/icon/KanadeShirabe_icon_7.png",
       "spriteUrl": "/images/KanadeShirabe/sprite/KanadeShirabe_sprite_7.png"
+    },
+    {
+      "iconUrl": "/images/KanadeShirabe/icon/KanadeShirabe_icon_8.png",
+      "spriteUrl": "/images/KanadeShirabe/sprite/KanadeShirabe_sprite_8.png"
     }
   ],
   "status": {
@@ -133,7 +137,7 @@
       "answer": "あと一日って時にできることなんて限られちゃうよね。\nあぁ、でも...大切な人には、最後に会っておきたいものだよね。\nお礼も言えずに死んじゃうのは嫌かも。"
     }
   ],
-  "comment": "自由記述",
+  "comment": "鈴木乖離のTRPGにお熱になった原因の男です。\nこの男が、というのもありますが、卓の満足度がとにかく高く、「また奏調と旅がしたい」と思ってしまいました。\n\nバックグランドとしては、奏家という音楽の名家に生まれという設定です。\n誇り高く思想が偏った人が多いせいか、家庭内での衝突が頻発するため、周囲の人間の顔色を伺い続け丸く収まる「最適解」を選び続けてきました。\nその結果、環境への適応ばかり上手くなり、個としての”自分”を見出せないまま大人になりました。今まで生きる意味を見出せなかった彼ですが、旅で出会った出会った仲間に救われ、今に至ります。\n初めて「奏調」として向き合ってくれた仲間のことは大切だし、命に代えても大切にしたいと思っている。一つ人生の生きる意味ができた彼は、真の意味で強い人間になったように感じます。\n",
   "artGallery": [
     "/images/KanadeShirabe/picture/picture1_1.png",
     "/images/KanadeShirabe/picture/picture1_2.png",
