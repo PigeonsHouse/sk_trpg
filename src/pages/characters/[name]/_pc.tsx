@@ -56,6 +56,7 @@ export const PcCharacterAbout: React.FC<PcCharacterAboutProps> = ({
   }, [data]);
 
   const { isHeaderShrink, isShowMenu, handlePrevious, handleNext } = useHeader(
+    "pc",
     navigate,
     summary,
     characterId,
