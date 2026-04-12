@@ -3,6 +3,7 @@ import type { NavigateFunction } from "react-router";
 import type { CharacterSummary } from "../../../../types";
 
 export const useHeader = (
+  pageType: "pc" | "sp",
   navigate: NavigateFunction,
   summary: CharacterSummary[],
   characterId: string,
@@ -58,12 +59,12 @@ export const useHeader = (
   useEffect(() => {
     const callback = () => {
       const windowHeight = document.documentElement.clientHeight;
-      const shrinkHeaderHeight = 120;
-      setIsShowMenu(window.scrollY > windowHeight - shrinkHeaderHeight);
+      const headerHeight = pageType === "pc" ? 120 : 100;
+      setIsShowMenu(window.scrollY > windowHeight - headerHeight);
     };
     window.addEventListener("scroll", callback);
     return () => window.removeEventListener("scroll", callback);
-  }, []);
+  }, [pageType]);
 
   return {
     handlePrevious,

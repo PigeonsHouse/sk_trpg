@@ -8,6 +8,7 @@ type SpCharacterHeaderProps = {
   name: string;
   enName: string;
   mainColor: string;
+  isShowMenu: boolean;
   handlePrevious?: () => void;
   handleNext?: () => void;
   isBackdropOpen: boolean;
@@ -22,6 +23,7 @@ export const SpCharacterHeader: React.FC<SpCharacterHeaderProps> = ({
   name,
   enName,
   mainColor,
+  isShowMenu,
   handlePrevious,
   handleNext,
   isBackdropOpen,
@@ -67,6 +69,7 @@ export const SpCharacterHeader: React.FC<SpCharacterHeaderProps> = ({
         isBackdropOpen={isBackdropOpen}
         setIsBackdropOpen={onSwitchMenuOpen}
         className={MenuBoardStyle}
+        isHide={!isShowMenu}
         isSp
       />
     </Container>

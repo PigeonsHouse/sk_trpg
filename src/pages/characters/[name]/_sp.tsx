@@ -61,7 +61,8 @@ export const SpCharacterAbout: React.FC<SpCharacterAboutProps> = ({
   }, [data]);
 
   const { isBackdropOpen, onSwitchBackdrop, onBackdropClose } = useBackdrop();
-  const { handlePrevious, handleNext } = useHeader(
+  const { isShowMenu, handlePrevious, handleNext } = useHeader(
+    "sp",
     navigate,
     summary,
     characterId,
@@ -88,6 +89,7 @@ export const SpCharacterAbout: React.FC<SpCharacterAboutProps> = ({
         mainColor={mainColor}
         name={data.name}
         enName={data.enName}
+        isShowMenu={isShowMenu}
         handlePrevious={handlePrevious}
         handleNext={handleNext}
         isBackdropOpen={isBackdropOpen}
