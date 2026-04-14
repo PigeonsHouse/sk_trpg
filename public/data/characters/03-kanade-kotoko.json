@@ -2,7 +2,7 @@
   "shortId": "KTK",
   "name": "奏 琴子",
   "enName": "KANADE KOTOKO",
-  "thumbnailUrl": "/images/KanadeKotoko/sprite/kanadekotoko_sprite_1.png",
+  "thumbnailUrl": "/images/KanadeKotoko/sprite/KanadeKotoko_sprite_1.png",
   "colorPalette": ["#1B29A4", "#9398B2", "#ECF222"],
   "backgroundUrl": "https://user0514.cdnw.net/shared/img/thumb/PK-sc02-IMGP6388-h_TP_V.jpg",
   "profile": {
@@ -17,8 +17,12 @@
   },
   "sprites": [
     {
-      "spriteUrl": "/images/KanadeKotoko/sprite/kanadekotoko_sprite_1.png",
-      "iconUrl": "/images/KanadeKotoko/icon/kanadekotoko_icon_1.png"
+      "spriteUrl": "/images/KanadeKotoko/sprite/KanadeKotoko_sprite_0.png",
+      "iconUrl": "/images/KanadeKotoko/icon/KanadeKotoko_icon_0.png"
+    },
+    {
+      "spriteUrl": "/images/KanadeKotoko/sprite/KanadeKotoko_sprite_1.png",
+      "iconUrl": "/images/KanadeKotoko/icon/KanadeKotoko_icon_1.png"
     }
   ],
   "status": {
@@ -57,7 +61,7 @@
     {
       "title": "凍夏",
       "comment": "うふふ！うち、やっぱ軽音が好きやなぁ...。\nだって、心で繋がっとる感じがせん？\nって、みんな興味なさそうな顔せんで！もーいいもん、早く練習やろ！",
-      "iconUrl": "/images/KanadeKotoko/icon/kanadekotoko_icon_1.png",
+      "iconUrl": "/images/KanadeKotoko/icon/KanadeKotoko_icon_1.png",
       "companions": [
         {
           "name": "夜想 八",

@@ -17,20 +17,24 @@
   },
   "sprites": [
     {
-      "iconUrl": "/images/Son/icon/son_icon_1.png",
-      "spriteUrl": "/images/Son/sprite/son_sprite_1.png"
+      "iconUrl": "/images/Son/icon/SonKleinbeck_icon_0.png",
+      "spriteUrl": "/images/Son/sprite/SonKleinbeck_sprite_0.png"
     },
     {
-      "iconUrl": "/images/Son/icon/son_icon_2.png",
-      "spriteUrl": "/images/Son/sprite/son_sprite_2.png"
+      "iconUrl": "/images/Son/icon/SonKleinbeck_icon_1.png",
+      "spriteUrl": "/images/Son/sprite/SonKleinbeck_sprite_1.png"
     },
     {
-      "iconUrl": "/images/Son/icon/son_icon_3.png",
-      "spriteUrl": "/images/Son/sprite/son_sprite_3.png"
+      "iconUrl": "/images/Son/icon/SonKleinbeck_icon_2.png",
+      "spriteUrl": "/images/Son/sprite/SonKleinbeck_sprite_2.png"
     },
     {
-      "iconUrl": "/images/Son/icon/son_icon_4.png",
-      "spriteUrl": "/images/Son/sprite/son_sprite_4.png"
+      "iconUrl": "/images/Son/icon/SonKleinbeck_icon_3.png",
+      "spriteUrl": "/images/Son/sprite/SonKleinbeck_sprite_3.png"
+    },
+    {
+      "iconUrl": "/images/Son/icon/SonKleinbeck_icon_4.png",
+      "spriteUrl": "/images/Son/sprite/SonKleinbeck_sprite_4.png"
     }
   ],
   "status": {
@@ -69,7 +73,7 @@
     {
       "title": "夜明けを求めた者たち",
       "comment": "フン、まったく...ろくでもない1年だった。\n俺の貴重な一年を費やしてやったんだ...この借りは高く付くぞ？",
-      "iconUrl": "/images/Son/icon/son_icon_1.png",
+      "iconUrl": "/images/Son/icon/SonKleinbeck_icon_1.png",
       "companions": [
         {
           "name": "セシリア・アマノ・メリニコフ",
