@@ -1,0 +1,107 @@
+{
+  "shortId": "KAN",
+  "name": "静江 観",
+  "enName": "SHIZUE KAN",
+  "thumbnailUrl": "/images/ShizueKan/sprite/ShizueKan_sprite_1.png",
+  "colorPalette": ["#586E43", "#5961E1", "#E4DE22"],
+  "backgroundUrl": "https://sakuranouta.biz/wp-content/uploads/2023/10/%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84%E3%81%AE%E9%83%A8%E5%B1%8B_6_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89-1-1024x576.jpg",
+  "profile": {
+    "description": "世界に名を馳せる日本画家。日本の雄大な自然と、その諸行無常の表現を得意とする。\n浄土真宗の寺の出身であり、時折仏教的な思想が見受けられる。\n\n「命とは、時と共にはらりと移ろい、形を変えゆくもの。だからこそ、その一瞬にこそ価値があるのです。\n　ですので、私は一瞬の生命の瞬きを、丁寧に掬い取って描くのです。私の捉えた輝きを、皆様にも知っていただくために、ね。」\n\n性格は柔和で温厚。物腰が低く、良くも悪くもイタリアの地では浮いて見えるほど日本人らしい。\nしかし、生来の鋭い目つきが原因で、初対面の人にはやや近寄りがたい印象を与えることが多い。",
+    "age":30,
+    "gender": "男性",
+    "height": "171cm",
+    "weight": "65kg",
+    "job": "美術家",
+    "birthday": "4月8日",
+    "from": "和歌山県"
+  },
+  "sprites": [
+    {
+      "iconUrl": "/images/ShizueKan/icon/ShizueKan_icon_1.png",
+      "spriteUrl": "/images/ShizueKan/sprite/ShizueKan_sprite_1.png"
+    },
+    {
+      "iconUrl": "/images/ShizueKan/icon/ShizueKan_icon_2.png",
+      "spriteUrl": "/images/ShizueKan/sprite/ShizueKan_sprite_2.png"
+    }
+  ],
+  "status": {
+    "type": "CoC6版",
+    "str": 11,
+    "con": 9,
+    "pow": 15,
+    "dex": 8,
+    "app": 11,
+    "siz": 9,
+    "int": 17,
+    "edu": 18,
+    "san": 75,
+    "hp": 9,
+    "mp": 15,
+    "luck": 75,
+    "idea": 85,
+    "knowledge": 80
+  },
+  "skills": {
+    "回避": 66,
+    "こぶし(パンチ)": 50,
+    "応急手当": 60,
+    "図書館": 75,
+    "目星": 85,
+    "信用": 75,
+    "言語(イタリア語)": 77,
+    "芸術(日本画)":21,
+    "心理学": 55
+  },
+
+  "histories": [
+    {
+      "title": "静なるテロリスタ",
+      "comment": "未記入",
+      "iconUrl": "/images/ShizueKan/icon/ShizueKan_icon_1.png",
+      "companions": [
+        {
+          "name": "越本 暦",
+          "enName": "KOSHIMOTO KOYOMI",
+          "color": "#A1B4BA",
+          "iconUrl": "/images/common/companions_NoImage.png",
+          "nickName": "暦さん"
+        },
+        {
+          "name": "兜町 仙鶴",
+          "enName": "KABUTOMACHI SENKAKU",
+          "color": "#353535",
+          "iconUrl": "/images/ShizueKan/companions/kabutomachi.png",
+          "nickName": "兜町さん"
+        },
+        {
+          "name": "ハロ・カウラディ",
+          "enName": "HALO KAULADI",
+          "color": "#77A274",
+          "iconUrl": "/images/ShizueKan/companions/halo.png",
+          "nickName": "ハロさん"
+        }
+      ]
+    }
+  ],
+  "qaList": [
+    {
+      "iconUrl": "/images/ShizueKan/icon/ShizueKan_icon_1.png",
+      "answer": "未記入"
+    },
+    {
+      "iconUrl": "/images/ShizueKan/icon/ShizueKan_icon_1.png",
+      "answer": "未記入"
+    },
+    {
+      "iconUrl": "/images/ShizueKan/icon/ShizueKan_icon_1.png",
+      "answer": "未記入"
+    },
+    {
+      "iconUrl": "/images/ShizueKan/icon/ShizueKan_icon_1.png",
+      "answer": "未記入"
+    }
+  ],
+  "comment": "未記入",
+  "artGallery": []
+}
