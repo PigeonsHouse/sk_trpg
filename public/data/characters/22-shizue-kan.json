@@ -87,21 +87,24 @@
   "qaList": [
     {
       "iconUrl": "/images/ShizueKan/icon/ShizueKan_icon_1.png",
-      "answer": "未記入"
+      "answer": "画家をやっているとあまり休みの概念はなくって。強いて言うなら、息抜きに散歩ぐらいには出ますかね。\nイタリアの生活も長くなりましたので、この景色にもずいぶん慣れてきました。"
     },
     {
       "iconUrl": "/images/ShizueKan/icon/ShizueKan_icon_1.png",
-      "answer": "未記入"
+      "answer": "ちょうど、ですかね。\n人様をお待たせするわけにはいきませんので。"
     },
     {
       "iconUrl": "/images/ShizueKan/icon/ShizueKan_icon_1.png",
-      "answer": "未記入"
+      "answer": "この命一つあれば、他に願いなど何もありません。\n授かったこの命というご縁が、永く続いてくれれば、それで。"
     },
     {
       "iconUrl": "/images/ShizueKan/icon/ShizueKan_icon_1.png",
-      "answer": "未記入"
+      "answer": "世界の終焉をこの目に焼き付けて、来世の自分に託したいですね。\n生まれかった私は、どんな画を描くのでしょうね？"
     }
   ],
-  "comment": "未記入",
-  "artGallery": []
+  "comment": "一貫して己の矜持を体現し続けた男です。\n事前に設定掘りまくってキャラに思い入れがあった上、本編は他PCのおかげで愉快な旅路となり、本当に大好きな卓です。\n1点、まともな人持っていったつもりが、ことごとく他PLの地雷踏み抜いてノンデリ枠になったの許せなさすぎる。お前ら歩道に地雷仕込むなよ！！",
+  "artGallery": [
+    "/images/ShizueKan/picture/picture1.png",
+    "/images/ShizueKan/picture/picture2.png"
+  ]
 }

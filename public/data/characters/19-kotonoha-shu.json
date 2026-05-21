@@ -23,6 +23,10 @@
     {
       "iconUrl": "/images/KotonohaShu/icon/KotonohaShu_icon_2.png",
       "spriteUrl": "/images/KotonohaShu/sprite/KotonohaShu_sprite_2.png"
+    },
+    {
+      "iconUrl": "/images/KotonohaShu/icon/KotonohaShu_icon_3.png",
+      "spriteUrl": "/images/KotonohaShu/sprite/KotonohaShu_sprite_3.png"
     }
   ],
   "status": {
@@ -87,21 +91,24 @@
   "qaList": [
     {
       "iconUrl": "/images/KotonohaShu/icon/KotonohaShu_icon_1.png",
-      "answer": "未記入"
+      "answer": "特に、何も。\n最近はどこぞの子犬の散歩で忙しい。"
     },
     {
       "iconUrl": "/images/KotonohaShu/icon/KotonohaShu_icon_1.png",
-      "answer": "未記入"
+      "answer": "時間通り。"
     },
     {
       "iconUrl": "/images/KotonohaShu/icon/KotonohaShu_icon_1.png",
-      "answer": "未記入"
+      "answer": "...退屈な日々が続いてくれれば、それでいい。"
     },
     {
       "iconUrl": "/images/KotonohaShu/icon/KotonohaShu_icon_1.png",
-      "answer": "未記入"
+      "answer": "何もしない。地球が終わろうが何だろうが、別に何も変わらないんだから。"
     }
   ],
-  "comment": "未記入",
-  "artGallery": []
+  "comment": "鋭い方はお察しいただけるかと思いますが、奏調のIF世界線です。奏調（オリジナル）のある地点から分岐して、言周が生まれました。\nシナリオの根幹にかかわるので詳細は語れませんが...奏調を生み落としてからずっとやりたかったことが叶いました。\nとてもテストプレイでやる所業ではない！！！！許可してくれたKPありがとう！！！！！",
+  "artGallery": [
+    "/images/KotonohaShu/picture/picture1.png",
+    "/images/KotonohaShu/picture/picture2.png"
+  ]
 }
