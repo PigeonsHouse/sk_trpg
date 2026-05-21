@@ -86,21 +86,24 @@
   "qaList": [
     {
       "iconUrl": "/images/ShinoKunosuke/icon/ShinoKunosuke_icon_1.png",
-      "answer": "未記入"
+      "answer": "ん～...いろいろ？日差しがぽかぽかならお外出るし、雨降ってるなら一日寝るし。\nあっでも、最近は公園で見つけたアリの巣の観察してる。"
     },
     {
       "iconUrl": "/images/ShinoKunosuke/icon/ShinoKunosuke_icon_1.png",
-      "answer": "未記入"
+      "answer": "待ち合わせ、苦手なんだよね。いっつも遅いって言われるから。\nちゃんと目的地には行ってるんだけどなぁ。"
     },
     {
       "iconUrl": "/images/ShinoKunosuke/icon/ShinoKunosuke_icon_1.png",
-      "answer": "未記入"
+      "answer": "う～ん...。もっと「強い人」になりたい。"
     },
     {
       "iconUrl": "/images/ShinoKunosuke/icon/ShinoKunosuke_icon_1.png",
-      "answer": "未記入"
+      "answer": "へへ、ないしょ。\nでも最期のときは一人はヤだなっておもう。"
     }
   ],
   "comment": "未記入",
-  "artGallery": []
+  "artGallery": [
+    "/images/ShinoKunosuke/picture/picture1.png",
+    "/images/ShinoKunosuke/picture/picture2.png"
+  ]
 }

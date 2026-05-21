@@ -6,7 +6,7 @@
   "colorPalette": ["#60B3A9", "#215884", "#DBD51F"],
   "backgroundUrl": "https://sakuranouta.biz/wp-content/uploads/2023/10/%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84%E3%81%AE%E9%83%A8%E5%B1%8B_6_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89-1-1024x576.jpg",
   "profile": {
-    "description": "未記入",
+    "description": "深きものの混血。\n強い内気さと偏屈な気質を抱えている。自己評価は極端に低く、自分を世界で最も下等な生物だと考えている。\nその価値観の延長として、人間もまた下等であると見なしており、種族としてほとんど信用していない。\n人間が動物の一種に過ぎないにもかかわらず尊大に振る舞う点に強い違和感を持つ。\n図鑑を通して知った人間以外の動物の方が、むしろ理解しやすいと感じている。\n\n左手で右腕の首元を握る癖がある。\nその仕草をしていないと落ち着かず、手を離している時間が長いと徐々に震え始める。\n",
     "age":"??",
     "gender": "オス",
     "height": "183cm",
@@ -76,7 +76,7 @@
           "name": "双葉",
           "enName": "No.28",
           "color": "#77f3f7",
-          "iconUrl": "/images/Aoi/companions/Hutaba.png",
+          "iconUrl": "/images/Aoi/companions/Futaba.png",
           "nickName": "（覚えてない）"
         }
       ]
@@ -85,21 +85,21 @@
   "qaList": [
     {
       "iconUrl": "/images/Aoi/icon/Aoi_icon_1.png",
-      "answer": "未記入"
+      "answer": "や、休みなんてないですよぉ...常に監視されて...\nひｨ、なんですか、こんなこと聞いて、俺をどうしようって言うんですか...!"
     },
     {
       "iconUrl": "/images/Aoi/icon/Aoi_icon_1.png",
-      "answer": "未記入"
+      "answer": "知らないですよォ、い、いつも人間の都合で連れていかれるんですから..."
     },
     {
       "iconUrl": "/images/Aoi/icon/Aoi_icon_1.png",
-      "answer": "未記入"
+      "answer": "う、海に、帰りたいです、早く、帰りたい..."
     },
     {
       "iconUrl": "/images/Aoi/icon/Aoi_icon_1.png",
-      "answer": "未記入"
+      "answer": "ほ、滅ぶんだったら...\nもももう、人間を、倒して、海に、帰りますよォォ...最後ぐらいは、海のそこで死にたいですよ...。"
     }
   ],
-  "comment": "未記入",
+  "comment": "卑屈で極度な人間嫌いにしようと思ってRPしたら、想像の5億倍社不になりました。鈴木乖離の社不3兄弟の長男です。おかしい...。ちがうんや...俺はみんなと仲良く...いや、こいつは仲良くなれる要因なかったな。\nKPも同卓PLの皆さんにもほんまに、すいませんでした...。",
   "artGallery": []
 }
