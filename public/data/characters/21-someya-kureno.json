@@ -6,7 +6,7 @@
   "colorPalette": ["#5375BA", "#E2864B", "#FFFCB1"],
   "backgroundUrl": "https://sakuranouta.biz/wp-content/uploads/2023/10/%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84%E3%81%AE%E9%83%A8%E5%B1%8B_6_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89-1-1024x576.jpg",
   "profile": {
-    "description": "未記入",
+    "description": "普通の女子高校生。\n家族が死んだ後は、親戚の援助を受けながら一人暮らししている。\n\n普通に大学を出て、普通に社会人になって、…普通に死ねたらよかったのに。\n過去がそうはさせてくれなかった。\n家族の死は、絶対に普通じゃなかったから。\n\nお父さん、お母さん、明乃。\n私、みんなを殺した悪魔の正体を絶対突き止めるよ。\nそしたら私もそっちにいくから。\n普通になんて、死んでやらない。",
     "age":17,
     "gender": "女性",
     "height": "158cm",
@@ -50,16 +50,16 @@
 
   "histories": [
     {
-      "title": "未記入",
-      "comment": "未記入",
+      "title": "夕星シンフォニア",
+      "comment": "私、なんだかんだ、普通の人間のままになっちゃったな。\nでも...普遍的なものこそ、案外稀有で大切なんだと思う。\nあなたはどう思う？桜ちゃん。",
       "iconUrl": "/images/SomeyaKureno/icon/SomeyaKureno_icon_1.png",
       "companions": [
         {
-          "name": "未記入",
-          "enName": "---",
+          "name": "竜崎 桜",
+          "enName": "RYUZAKI SAKURA",
           "color": "#2d5079",
-          "iconUrl": "/images/SomeyaKureno/companions/Abe.png",
-          "nickName": "---"
+          "iconUrl": "/images/SomeyaKureno/companions/Sakura.png",
+          "nickName": "桜ちゃん"
         }
       ]
     }
@@ -67,21 +67,24 @@
   "qaList": [
     {
       "iconUrl": "/images/SomeyaKureno/icon/SomeyaKureno_icon_1.png",
-      "answer": "未記入"
+      "answer": "受験勉強、かな。大学入試も遠い話じゃないし、ここからしっかり準備しないと本番が怖いし。\n※なお成績は学年1位"
     },
     {
       "iconUrl": "/images/SomeyaKureno/icon/SomeyaKureno_icon_1.png",
-      "answer": "未記入"
+      "answer": "そうね、いつも早く着くようにしている、かな。\n早く着けば、あとは待つだけだし。"
     },
     {
       "iconUrl": "/images/SomeyaKureno/icon/SomeyaKureno_icon_1.png",
-      "answer": "未記入"
+      "answer": "...もう一度、みんな（家族）に会いたいな。特に、明乃は私のこと心配してるだろうし。\nちゃんと一人でもやっていけてるって教えてあげたいな。"
     },
     {
       "iconUrl": "/images/SomeyaKureno/icon/SomeyaKureno_icon_1.png",
-      "answer": "未記入"
+      "answer": "静かに終わる時を待つ、かな。...\nわがままを言うなら、最後に桜ちゃんにはご挨拶しておきたいわ。桜ちゃんは人気者だから、そんな時間はないかもしれないけれど。"
     }
   ],
   "comment": "未記入",
-  "artGallery": []
+  "artGallery": [
+    "/images/SomeyaKureno/picture/picture1.png",
+    "/images/SomeyaKureno/picture/picture2.png"
+  ]
 }
