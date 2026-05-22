@@ -88,7 +88,7 @@
     "enName": "SHUANG JU",
     "thumbnailUrl": "/images/ShuangJu/sprite/ShuangJu_sprite_1.png",
     "backgroundUrl": "https://sakuranouta.biz/wp-content/uploads/2023/10/%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84%E3%81%AE%E9%83%A8%E5%B1%8B_6_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89-1-1024x576.jpg",
-    "color": "#AAE030"
+    "color": "#a5e90c"
   },
   {
     "id": "saotome-karen",
@@ -160,7 +160,7 @@
     "enName": "KOTONOHA SHU",
     "thumbnailUrl": "/images/KotonohaShu/sprite/KotonohaShu_sprite_1.png",
     "backgroundUrl": "https://sakuranouta.biz/wp-content/uploads/2023/10/%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84%E3%81%AE%E9%83%A8%E5%B1%8B_6_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89-1-1024x576.jpg",
-    "color": "#C6C6C8"
+    "color": "#aaaaaa"
   },
   {
     "id": "shino-kunosuke",

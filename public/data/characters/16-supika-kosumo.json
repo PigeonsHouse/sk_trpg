@@ -78,6 +78,20 @@
           "nickName": "もこぴ"
         }
       ]
+    },
+    {
+      "title": "ifの為のお茶会を",
+      "comment": "しうっち待ってろよ、鳥取いくからな～！...って、鳥取のドコ！？",
+      "iconUrl": "/images/SupikaKosumo/icon/SupikaKosumo_icon_1.png",
+      "companions": [
+        {
+          "name": "倉野 紫雨",
+          "enName": "KURANO SHIU",
+          "color": "#FEB7D7",
+          "iconUrl": "/images/common/companions_NoImage.png",
+          "nickName": "しうっち"
+        }
+      ]
     }
   ],
   "qaList": [
