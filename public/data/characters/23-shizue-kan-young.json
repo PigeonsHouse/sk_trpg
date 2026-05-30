@@ -22,8 +22,8 @@
       "spriteUrl": "/images/ShizueKan/sprite/ShizueKan_sprite_1.png"
     },
     {
-      "iconUrl": "/images/ShizueKan/icon/ShizueKan_icon_2.png",
-      "spriteUrl": "/images/ShizueKan/sprite/ShizueKan_sprite_2.png"
+      "iconUrl": "/images/ShizueKan-young/icon/ShizueKan-young_icon_1.png",
+      "spriteUrl": "/images/ShizueKan-young/sprite/ShizueKan-young_sprite_1.png"
     }
   ],
   "status": {
@@ -58,7 +58,7 @@
     {
       "title": "静なるテロリスタ",
       "comment": "未記入",
-      "iconUrl": "/images/ShizueKan/icon/ShizueKan_icon_2.png",
+      "iconUrl": "/images/ShizueKan-young/icon/ShizueKan-young_icon_2.png",
       "companions": [
         {
           "name": "静江 聞 ※本編と無関係ののNPC",

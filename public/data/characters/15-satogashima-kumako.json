@@ -90,6 +90,20 @@
           "nickName": "きりのおじ"
         }
       ]
+    },
+    {
+      "title": "聞き耳たてますか？",
+      "comment": "おじい！おばあ！すまんのじゃ～！特売逃してしまったのじゃ～！",
+      "iconUrl": "/images/SatogashimaKumako/icon/SatogashimaKumako_icon_1.png",
+      "companions": [
+        {
+          "name": "阿倍 根性",
+          "enName": "ABE KONJO",
+          "color": "#2d5079",
+          "iconUrl": "/images/SatogashimaKumako/companions/Abe.png",
+          "nickName": "あべのおじ"
+        }
+      ]
     }
   ],
   "qaList": [
