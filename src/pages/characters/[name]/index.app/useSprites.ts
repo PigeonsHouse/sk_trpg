@@ -56,6 +56,17 @@ const specialSettings: Settings = {
     navigateUrlOnSwitchSprite: (url: string) =>
       url.includes("SasugaKiara") ? CharactersId.SasugaKiara : undefined,
   },
+  [CharactersId.ShizueKan]: {
+    keepSelectIndex: true,
+    navigateUrlOnSwitchSprite: (url: string) =>
+      url.includes("young") ? CharactersId.ShizueKanYoung : undefined,
+  },
+  [CharactersId.ShizueKanYoung]: {
+    defaultIndex: 1,
+    keepSelectIndex: true,
+    navigateUrlOnSwitchSprite: (url: string) =>
+      !url.includes("young") ? CharactersId.ShizueKan : undefined,
+  },
 };
 
 export const useSprites = (
