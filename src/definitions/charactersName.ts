@@ -23,6 +23,7 @@ export const CharactersId = {
   SomeyaKureno: "someya-kureno",
   ShizueKan: "shizue-kan",
   ShizueKanYoung: "shizue-kan-young",
+  SaihyouKoga: "saihyou-koga",
 } as const;
 
 export type CharactersId = (typeof CharactersId)[keyof typeof CharactersId];

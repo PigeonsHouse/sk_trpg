@@ -4,7 +4,7 @@
   "enName": "SAOTOME KAITO",
   "thumbnailUrl": "/images/SaotomeKaito/sprite/SaotomeKaito_sprite_1.png",
   "colorPalette": ["#FF1C7E", "#431BA4", "#EFFF17"],
-  "backgroundUrl": "/images/SaotomeKaito/bk.jpg",
+  "backgroundUrl": "/images/bg/bg_kaito.jpg",
   "profile": {
     "description": "顔が良くてタッパがあるが、それしかないので人から信用がない。\nよく女の子を口説いているところを目撃されるが、学園内の女子からは軽くあしらわれる日々。一番モテるのは新年度始まって1か月。新入生に手を出しては撃沈する。\n\n顔は良いし、根が悪い奴というわけではないのでのけ者にされているわけではないが、あくまで面白いヤツとしか思われていない。\n当人としては、割と本気で彼女が欲しいと思っている。\nしかし、未だにアプローチの方法が分からないために失敗している。\n\n「あ～あ、俺ってばこんなに顔がいいってのになんでモテないんだろ～ね。そろそろブラックサンダー飽きたんですけど？」\n",
     "age": 17,
@@ -74,19 +74,19 @@
   ],
   "qaList": [
     {
-      "iconUrl": "/images/SaotomeKaito/icon/SaotomeKaito_icon_1.png",
+      "iconUrl": "/images/SaotomeKaito/icon/SaotomeKaito_icon_0.png",
       "answer": "ん～、ゲームして～、イソスタ見て～、ゴロゴロしてぇ～...ってしてたら、一日終ってるわぁ。マジ一日って呆気ね～！"
     },
     {
-      "iconUrl": "/images/SaotomeKaito/icon/SaotomeKaito_icon_1.png",
+      "iconUrl": "/images/SaotomeKaito/icon/SaotomeKaito_icon_0.png",
       "answer": "できる男は30分前に到着っしょ！\n※なお実際のところは集合時刻ジャストからやや遅れ気味"
     },
     {
-      "iconUrl": "/images/SaotomeKaito/icon/SaotomeKaito_icon_1.png",
+      "iconUrl": "/images/SaotomeKaito/icon/SaotomeKaito_icon_0.png",
       "answer": "ハ～ン、そんなの「彼女が欲しい」の一択よ！\nカワイくて、気遣いもできて、俺のこと大切にしてくれる子で頼んます！"
     },
     {
-      "iconUrl": "/images/SaotomeKaito/icon/SaotomeKaito_icon_1.png",
+      "iconUrl": "/images/SaotomeKaito/icon/SaotomeKaito_icon_0.png",
       "answer": "諦めてウメェ飯食うかな～。\nせっかくなら高層ビル30Fくらいにあるべラボ～に高い飯食いたくね？\nあいや、彼女がいたら最優先は別だぜ？"
     }
   ],

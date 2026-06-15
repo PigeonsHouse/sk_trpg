@@ -5,9 +5,9 @@
   "original": "shizue-kan",
   "thumbnailUrl": "/images/ShizueKan/sprite/ShizueKan_sprite_1.png",
   "colorPalette": ["#586E43", "#5961E1", "#E4DE22"],
-  "backgroundUrl": "https://sakuranouta.biz/wp-content/uploads/2023/10/%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84%E3%81%AE%E9%83%A8%E5%B1%8B_6_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89-1-1024x576.jpg",
+  "backgroundUrl": "/images/bg/bg_kan.png",
   "profile": {
-    "description": "生まれてすぐ寺に拾われ、和尚の手で育った少年。\n血の繋がらない和尚に世話になることに負い目を抱えながら育つ。\nそんな時、和尚が愛した日本画に心を奪われ、「これを極めて一人前になる」と決めて寺を出た。\n\n寺を出てからは、スラムの片隅で暮らしている。\n怪しげな老人に生きる知恵を叩き込まれつつ、野草を擦り潰して絵の具を作り、残った金で和紙を買う。\n貧しくとも、筆だけは手放さない。\n\n性格は無骨でぶっきらぼう。\n気に入らないことがあれば手が先に出る荒っぽさもある。\n一方で、懐に入った相手には驚くほど気前がいい。\n夢見がちな野心家でもある。\n\n粗削りで不器用なまま、それでも一人前になって和尚のもとへ帰る日を、どこかで信じている。",
+    "description": "生まれてすぐ寺に拾われ、和尚の手で育った少年。\n血の繋がらない和尚に世話になることに負い目を抱えながら育つ。\nそんな時、和尚が愛した日本画に心を奪われ、「これを極めて一人前になる」と決めて寺を出た。\n\n寺を出てからは、スラムの片隅で暮らしている。怪しげな老人に生きる知恵を叩き込まれつつ、野草を擦り潰して絵の具を作り、残った金で和紙を買う。貧しくとも、筆だけは手放さない。\n\n性格は無骨でぶっきらぼう。\n気に入らないことがあれば手が先に出る荒っぽさもある。\n一方で、懐に入った相手には驚くほど気前がいい。\n夢見がちな野心家でもある。\n\n粗削りで不器用なまま、それでも一人前になって和尚のもとへ帰る日を、どこかで信じている。",
     "age":15,
     "gender": "男性",
     "height": "152cm",
@@ -58,10 +58,10 @@
     {
       "title": "静なるテロリスタ",
       "comment": "未記入",
-      "iconUrl": "/images/ShizueKan-young/icon/ShizueKan-young_icon_2.png",
+      "iconUrl": "/images/ShizueKan-young/icon/ShizueKan-young_icon_1.png",
       "companions": [
         {
-          "name": "静江 聞 ※本編と無関係ののNPC",
+          "name": "静江 聞 ※本編と無関係のNPC",
           "enName": "SHIZUE MON",
           "color": "#586E43",
           "iconUrl": "/images/common/companions_NoImage.png",
@@ -72,19 +72,19 @@
   ],
   "qaList": [
     {
-      "iconUrl": "/images/ShizueKan/icon/ShizueKan_icon_1.png",
+      "iconUrl": "/images/ShizueKan-young/icon/ShizueKan-young_icon_1.png",
       "answer": "未記入"
     },
     {
-      "iconUrl": "/images/ShizueKan/icon/ShizueKan_icon_1.png",
+      "iconUrl": "/images/ShizueKan-young/icon/ShizueKan-young_icon_1.png",
       "answer": "未記入"
     },
     {
-      "iconUrl": "/images/ShizueKan/icon/ShizueKan_icon_1.png",
+      "iconUrl": "/images/ShizueKan-young/icon/ShizueKan-young_icon_1.png",
       "answer": "未記入"
     },
     {
-      "iconUrl": "/images/ShizueKan/icon/ShizueKan_icon_1.png",
+      "iconUrl": "/images/ShizueKan-young/icon/ShizueKan-young_icon_1.png",
       "answer": "未記入"
     }
   ],

@@ -1,0 +1,118 @@
+{
+  "shortId": "KUG",
+  "name": "砕豹 黒牙",
+  "enName": "SAIHYOU KOUGA",
+  "thumbnailUrl": "/images/SaihyouKouga/sprite/SaihyouKouga_sprite_1.png",
+  "colorPalette": ["#1B1B1C", "#393A3B", "#F8D244"],
+  "backgroundUrl": "/images/bg/bg_kouga.png",
+  "profile": {
+    "description": "マフィアの元用心棒兼殺し屋。\n幼い頃に両親を組織に殺され、自分も殺されかけた時「強くなるから雇ってくれ」と懇願し、ボスに拾われた。\nボスを親として慕い、命令こそが生きる理由だった。\nだが任務中にアジトが襲撃され、帰還した時にはボスは瀕死。\n最期に「お前だけは死ぬな。自分で命を絶つことは許さない」と命じられ、その言葉だけを遺される。\n\n「おやっさん。死ぬなって言われたって...俺はどう生きたらいいんだよ。教えてくれよ。」\n\n主も命令も失い、初めて“自分で生き方を選ばねばならない”状況に放り出される。",
+    "age":15,
+    "gender": "男性",
+    "height": "178cm",
+    "weight": "71kg",
+    "job": "???",
+    "birthday": "???",
+    "from": "???"
+  },
+  "sprites": [
+    {
+      "iconUrl": "/images/SaihyouKouga/icon/SaihyouKouga_icon_1.png",
+      "spriteUrl": "/images/SaihyouKouga/sprite/SaihyouKouga_sprite_1.png"
+    },
+    {
+      "iconUrl": "/images/SaihyouKouga/icon/SaihyouKouga_icon_2.png",
+      "spriteUrl": "/images/SaihyouKouga/sprite/SaihyouKouga_sprite_2.png"
+    },
+    {
+      "iconUrl": "/images/SaihyouKouga/icon/SaihyouKouga_icon_3.png",
+      "spriteUrl": "/images/SaihyouKouga/sprite/SaihyouKouga_sprite_3.png"
+    }
+  ],
+  "status": {
+    "type": "CoC6版",
+    "str": 11,
+    "con": 9,
+    "pow": 15,
+    "dex": 8,
+    "app": 11,
+    "siz": 9,
+    "int": 17,
+    "edu": 10,
+    "san": 75,
+    "hp": 9,
+    "mp": 15,
+    "luck": 75,
+    "idea": 85,
+    "knowledge": 50
+  },
+  "skills": {
+    "回避": 74,
+    "キック": 70,
+    "投擲": 55,
+    "拳銃": 75,
+    "応急手当": 70,
+    "隠れる": 25,
+    "聞き耳": 80,
+    "忍び歩き": 30,
+    "目星": 65,
+    "運転(ｵｰﾄﾊﾞｲ)":70,
+    "芸術(料理)": 15,
+    "クトゥルフ神話": 35
+  },
+
+  "histories": [
+    {
+      "title": "Radiant Abyss",
+      "comment": "またな。少しだけ待ってやる。",
+      "iconUrl": "/images/SaihyouKouga/icon/SaihyouKouga_icon_1.png",
+      "companions": [
+        {
+          "name": "小西 沙織",
+          "enName": "KONISHI SAORI",
+          "color": "#5FB359",
+          "iconUrl": "/images/common/companions_NoImage.png",
+          "nickName": "コニシ"
+        },
+        {
+          "name": "実詞 すずの",
+          "enName": "MIKOTOBA SUZUNO",
+          "color": "#2A383D",
+          "iconUrl": "/images/SaihyouKouga/companions/mikotoba.png",
+          "nickName": "ミコトバ"
+        },
+        {
+          "name": "九十九 玲司",
+          "enName": "KUTSUMO REIJI",
+          "color": "#174163",
+          "iconUrl": "/images/SaihyouKouga/companions/kutsumo.png",
+          "nickName": "???"
+        }
+      ]
+    }
+  ],
+  "qaList": [
+    {
+      "iconUrl": "/images/SaihyouKouga/icon/SaihyouKouga_icon_1.png",
+      "answer": "（数刻考えたが、休みという概念があまりなく、思いつかず黙ってしまう。）"
+    },
+    {
+      "iconUrl": "/images/SaihyouKouga/icon/SaihyouKouga_icon_1.png",
+      "answer": "目的地には、時間通りに着いておかないと、怒られる。"
+    },
+    {
+      "iconUrl": "/images/SaihyouKouga/icon/SaihyouKouga_icon_1.png",
+      "answer": "あの日をやり直せたら、と思う。だが、今の俺には...もう、必要ない。"
+    },
+    {
+      "iconUrl": "/images/SaihyouKouga/icon/SaihyouKouga_icon_1.png",
+      "answer": "地球が、滅亡。...コーヒーでも飲んで、気長に待つ。どうせ、することはない。"
+    }
+  ],
+  "comment": "デカメロ男です。鈴木乖離は軽率に傷あり男を作ってしまう...。\n相方が白くて細いおしゃべりなので、黒くてデカイ朴念仁にしました。でも、意外と行動で語るし、ダイスで魅せる男でした。\n死に場所を求めていたのに、ダイスは死なせてくれなかったのも最高にドラマでした。自分で言うのもなんだが、かっこいいヤツだったなぁ。　\n想像以上にLOVE男になりました。俺は...ッ！！！！細身の男が好みなのに！！！！！",
+  "artGallery": [
+    "/images/SaihyouKouga/picture/picture_2.png",
+    "/images/SaihyouKouga/picture/picture_3.png",
+    "/images/SaihyouKouga/picture/picture_1.png"
+  ]
+}

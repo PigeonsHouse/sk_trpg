@@ -17,12 +17,12 @@
   },
   "sprites": [
     {
-      "iconUrl": "/images/SarashinaKenji/icon/SarashinaKenji_icon_1.png",
-      "spriteUrl": "/images/SarashinaKenji/sprite/SarashinaKenji_sprite_1.png"
+      "iconUrl": "/images/SarashinaKenji/icon/SarashinaKenji_icon_0.png",
+      "spriteUrl": "/images/SarashinaKenji/sprite/SarashinaKenji_sprite_0.png"
     },
     {
-      "iconUrl": "/images/SarashinaKenji/icon/SarashinaKenji_icon_2.png",
-      "spriteUrl": "/images/SarashinaKenji/sprite/SarashinaKenji_sprite_2.png"
+      "iconUrl": "/images/SarashinaKenji/icon/SarashinaKenji_icon_1.png",
+      "spriteUrl": "/images/SarashinaKenji/sprite/SarashinaKenji_sprite_1.png"
     }
   ],
   "status": {

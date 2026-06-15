@@ -17,12 +17,12 @@
   },
   "sprites": [
     {
-      "iconUrl": "/images/SasugaKiara/icon/SasugaKiara_icon_1.png",
-      "spriteUrl": "/images/SasugaKiara/sprite/SasugaKiara_sprite_1.png"
+      "iconUrl": "/images/SasugaKiara/icon/SasugaKiara_icon_0.png",
+      "spriteUrl": "/images/SasugaKiara/sprite/SasugaKiara_sprite_0.png"
     },
     {
-      "iconUrl": "/images/SasugaKiara/icon/SasugaKiara_icon_2.png",
-      "spriteUrl": "/images/SasugaKiara/sprite/SasugaKiara_sprite_2.png"
+      "iconUrl": "/images/SasugaKiara/icon/SasugaKiara_icon_1.png",
+      "spriteUrl": "/images/SasugaKiara/sprite/SasugaKiara_sprite_1.png"
     },
     {
       "iconUrl": "/images/AmiraKamal/icon/AmiraKamal_icon_1.png",
@@ -88,19 +88,19 @@
   ],
   "qaList": [
     {
-      "iconUrl": "/images/SasugaKiara/icon/SasugaKiara_icon_1.png",
+      "iconUrl": "/images/SasugaKiara/icon/SasugaKiara_icon_0.png",
       "answer": "休日は開発してるかな～。研究とは別で、体が不自由なコが疑似的に動いて回れる4DVR空間を作ってるの！まだまだ制作中だけどね～進捗5割！"
     },
     {
-      "iconUrl": "/images/SasugaKiara/icon/SasugaKiara_icon_1.png",
+      "iconUrl": "/images/SasugaKiara/icon/SasugaKiara_icon_0.png",
       "answer": "15分前行動が社会人の嗜みよ！自分のせいで人待たせちゃうのとかヤだし！"
     },
     {
-      "iconUrl": "/images/SasugaKiara/icon/SasugaKiara_icon_1.png",
+      "iconUrl": "/images/SasugaKiara/icon/SasugaKiara_icon_0.png",
       "answer": "え～、そうね～。アタシみたいなコが、全員健常者になって欲しい！のは傲慢だと思うのよね。\nでもせめて、そのコの人生がキラキラしてほしいわ！好きなモノ見つけて、全力で追っかけて、輝いてほしいな～！"
     },
     {
-      "iconUrl": "/images/SasugaKiara/icon/SasugaKiara_icon_1.png",
+      "iconUrl": "/images/SasugaKiara/icon/SasugaKiara_icon_0.png",
       "answer": "そんなの、惨めに足掻いて今の開発どうにか終わらせたいよね...。だってだって！未完成のまま死ねなくない！？"
     }
   ],
