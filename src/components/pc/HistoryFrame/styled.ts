@@ -24,6 +24,7 @@ export const FrameStyle = css`
   flex-direction: column;
   gap: 12px;
   filter: ${DropShadowFilter};
+  flex-shrink: 0;
 `;
 
 export const TitleContainer = styled.div`
