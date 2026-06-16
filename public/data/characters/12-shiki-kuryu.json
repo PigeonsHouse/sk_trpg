@@ -17,6 +17,10 @@
   },
   "sprites": [
     {
+      "iconUrl": "/images/ShikiKuryu/icon/ShikiKuryu_icon_0.png",
+      "spriteUrl": "/images/ShikiKuryu/sprite/ShikiKuryu_sprite_0.png"
+    },
+    {
       "iconUrl": "/images/ShikiKuryu/icon/ShikiKuryu_icon_1.png",
       "spriteUrl": "/images/ShikiKuryu/sprite/ShikiKuryu_sprite_1.png"
     },
@@ -73,19 +77,19 @@
   ],
   "qaList": [
     {
-      "iconUrl": "/images/ShikiKuryu/icon/ShikiKuryu_icon_1.png",
+      "iconUrl": "/images/ShikiKuryu/icon/ShikiKuryu_icon_0.png",
       "answer": "そんなの訊いてどうすんだよ。別に、なんもしてねぇよ。\n俺みたいな陰キャは、マンガ読んでゲームして、ただ日々を浪費するんだよ。"
     },
     {
-      "iconUrl": "/images/ShikiKuryu/icon/ShikiKuryu_icon_1.png",
+      "iconUrl": "/images/ShikiKuryu/icon/ShikiKuryu_icon_0.png",
       "answer": "大体丁度に行くよ。\n早く行っても待つだけだし、遅れるのは信用失うし。"
     },
     {
-      "iconUrl": "/images/ShikiKuryu/icon/ShikiKuryu_icon_1.png",
+      "iconUrl": "/images/ShikiKuryu/icon/ShikiKuryu_icon_0.png",
       "answer": "...別に、ねぇよ。ただ、面倒ごとが起きないでくれれば、それで。\n（フードを少し深くかぶり直したかと思うと、目線を逸らしてしまった。）"
     },
     {
-      "iconUrl": "/images/ShikiKuryu/icon/ShikiKuryu_icon_1.png",
+      "iconUrl": "/images/ShikiKuryu/icon/ShikiKuryu_icon_0.png",
       "answer": "いつも通り過ごして寝る。\n次の日が来たら日常に戻るだけだし、滅ぶなら俺の知らないところで世界は終わってるだろ。\n過度な期待は不要だよ。"
     }
   ],

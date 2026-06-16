@@ -17,6 +17,10 @@
   },
   "sprites": [
     {
+      "iconUrl": "/images/SaishikiKei/icon/SaishikiKei_icon_0.png",
+      "spriteUrl": "/images/SaishikiKei/sprite/SaishikiKei_sprite_0.png"
+    },
+    {
       "iconUrl": "/images/SaishikiKei/icon/SaishikiKei_icon_1.png",
       "spriteUrl": "/images/SaishikiKei/sprite/SaishikiKei_sprite_1.png"
     },
@@ -109,19 +113,19 @@
   ],
   "qaList": [
     {
-      "iconUrl": "/images/SaishikiKei/icon/SaishikiKei_icon_1.png",
+      "iconUrl": "/images/SaishikiKei/icon/SaishikiKei_icon_0.png",
       "answer": "ゲーム。平日は、大学行くだけで疲れるし...。\n土日に、ボン達、やりにいく。 \n※ボン達：ボンゴの達人。ボンゴを叩くリズムゲーム。"
     },
     {
-      "iconUrl": "/images/SaishikiKei/icon/SaishikiKei_icon_1.png",
+      "iconUrl": "/images/SaishikiKei/icon/SaishikiKei_icon_0.png",
       "answer": "大体、予定時刻の5分前。あんま早く着く意味、ないし。"
     },
     {
-      "iconUrl": "/images/SaishikiKei/icon/SaishikiKei_icon_1.png",
+      "iconUrl": "/images/SaishikiKei/icon/SaishikiKei_icon_0.png",
       "answer": "大学、選び直したい。東京の方に、すればよかった。\nあ、でも...。\n（そうすると響希に会えていないな、と頭に過る）"
     },
     {
-      "iconUrl": "/images/SaishikiKei/icon/SaishikiKei_icon_1.png",
+      "iconUrl": "/images/SaishikiKei/icon/SaishikiKei_icon_0.png",
       "answer": "...会いたい人、いる。最後には、絶対。\nその人の顔見たら、あとは一人で死んでもいい。"
     }
   ],

@@ -17,16 +17,16 @@
   },
   "sprites": [
     {
+      "iconUrl": "/images/SaotomeKaren/icon/SaotomeKaren_icon_0.png",
+      "spriteUrl": "/images/SaotomeKaren/sprite/SaotomeKaren_sprite_0.png"
+    },
+    {
       "iconUrl": "/images/SaotomeKaren/icon/SaotomeKaren_icon_1.png",
       "spriteUrl": "/images/SaotomeKaren/sprite/SaotomeKaren_sprite_1.png"
     },
     {
       "iconUrl": "/images/SaotomeKaren/icon/SaotomeKaren_icon_2.png",
       "spriteUrl": "/images/SaotomeKaren/sprite/SaotomeKaren_sprite_2.png"
-    },
-    {
-      "iconUrl": "/images/SaotomeKaren/icon/SaotomeKaren_icon_3.png",
-      "spriteUrl": "/images/SaotomeKaren/sprite/SaotomeKaren_sprite_3.png"
     }
   ],
   "status": {
@@ -81,19 +81,19 @@
   ],
   "qaList": [
     {
-      "iconUrl": "/images/SaotomeKaren/icon/SaotomeKaren_icon_1.png",
+      "iconUrl": "/images/SaotomeKaren/icon/SaotomeKaren_icon_0.png",
       "answer": "休日はとってもいそがしいんですの。なんたって、リサーチは欠かせませんもの...!\n（そう言って大切そうに㊙と書かれたノートを抱きかかえている）"
     },
     {
-      "iconUrl": "/images/SaotomeKaren/icon/SaotomeKaren_icon_1.png",
+      "iconUrl": "/images/SaotomeKaren/icon/SaotomeKaren_icon_0.png",
       "answer": "乙女は遅刻なんてゲンキンですのよ。\nあぁでもっ...!急いで前が見えていなかったために角で誰かとぶつかるなんていうのも、恋の始まりには必要ですものね...!"
     },
     {
-      "iconUrl": "/images/SaotomeKaren/icon/SaotomeKaren_icon_1.png",
+      "iconUrl": "/images/SaotomeKaren/icon/SaotomeKaren_icon_0.png",
       "answer": "そうですわね...私の王子さまは、いつか迎えに来る“運命”ですし、それ以外のもの...。\nあっ、そうですわ！ボンボンドロップシールが欲しいんですの！最近どこも売り切れていていましてよ？"
     },
     {
-      "iconUrl": "/images/SaotomeKaren/icon/SaotomeKaren_icon_1.png",
+      "iconUrl": "/images/SaotomeKaren/icon/SaotomeKaren_icon_0.png",
       "answer": "そんなの、1つしかなくってよ？\n私の王子さまが白馬に乗って登場し、行くあてのない愛のトウヒコウにくりだすんですの。"
     }
   ],

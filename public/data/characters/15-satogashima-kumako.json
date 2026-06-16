@@ -17,12 +17,12 @@
   },
   "sprites": [
     {
-      "iconUrl": "/images/SatogashimaKumako/icon/SatogashimaKumako_icon_1.png",
-      "spriteUrl": "/images/SatogashimaKumako/sprite/SatogashimaKumako_sprite_1.png"
+      "iconUrl": "/images/SatogashimaKumako/icon/SatogashimaKumako_icon_0.png",
+      "spriteUrl": "/images/SatogashimaKumako/sprite/SatogashimaKumako_sprite_0.png"
     },
     {
-      "iconUrl": "/images/SatogashimaKumako/icon/SatogashimaKumako_icon_2.png",
-      "spriteUrl": "/images/SatogashimaKumako/sprite/SatogashimaKumako_sprite_2.png"
+      "iconUrl": "/images/SatogashimaKumako/icon/SatogashimaKumako_icon_1.png",
+      "spriteUrl": "/images/SatogashimaKumako/sprite/SatogashimaKumako_sprite_1.png"
     }
   ],
   "status": {
@@ -108,19 +108,19 @@
   ],
   "qaList": [
     {
-      "iconUrl": "/images/SatogashimaKumako/icon/SatogashimaKumako_icon_1.png",
+      "iconUrl": "/images/SatogashimaKumako/icon/SatogashimaKumako_icon_0.png",
       "answer": "メシ食って寝る！"
     },
     {
-      "iconUrl": "/images/SatogashimaKumako/icon/SatogashimaKumako_icon_1.png",
+      "iconUrl": "/images/SatogashimaKumako/icon/SatogashimaKumako_icon_0.png",
       "answer": "行けたことがないのじゃ。だいたい誰かが迎えに来るのじゃ。"
     },
     {
-      "iconUrl": "/images/SatogashimaKumako/icon/SatogashimaKumako_icon_1.png",
+      "iconUrl": "/images/SatogashimaKumako/icon/SatogashimaKumako_icon_0.png",
       "answer": "そうじゃな...\n狂気山脈よりデカい山が見つかって欲しいのじゃ！制覇じゃ！"
     },
     {
-      "iconUrl": "/images/SatogashimaKumako/icon/SatogashimaKumako_icon_1.png",
+      "iconUrl": "/images/SatogashimaKumako/icon/SatogashimaKumako_icon_0.png",
       "answer": "じいじとばあばに恩返しするのじゃ。\nいっつも山やってばかりで家を空けているから、ずっと心配かけてきたのじゃ。\n最後にはうんまい肉！一緒にくうのじゃ！"
     }
   ],
