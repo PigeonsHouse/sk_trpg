@@ -87,7 +87,7 @@ export const SpTop = () => {
         <SpTopFilter>
           <SpMarginContainer>
             <SpTopTitleContainer>
-              <SpTopTitle>{`鈴木乖離の\n探索者サイト`}</SpTopTitle>
+              <SpTopTitle>{`KAIRI\nSTATION`}</SpTopTitle>
             </SpTopTitleContainer>
           </SpMarginContainer>
         </SpTopFilter>
