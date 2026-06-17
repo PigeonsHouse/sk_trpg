@@ -107,7 +107,7 @@ export const SpTop = () => {
               <SpAboutSectionTitle>Where is this?</SpAboutSectionTitle>
             </AnchorWith>
             <SpAboutDescription>
-              {`鈴木乖離という人間が\nTRPGで生み出した探索者のまとめサイトです。\nかわいいうちの子を見て行ってください～！`}
+              {`鈴木乖離という人間がTRPGで生み出したプレイキャラクターのまとめサイトです。\n\nサイトテーマは「駅」です。\nキャラクターの歩んできた物語を「停車駅」に見立て、彼らの人生という旅路の一端を記録しています。\n\n自慢の我が子達をぜひ見てってください！`}
             </SpAboutDescription>
           </SpAboutDescriptionSection>
           <SpAboutCharactersSection>

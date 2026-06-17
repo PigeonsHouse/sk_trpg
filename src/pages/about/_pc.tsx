@@ -69,7 +69,7 @@ export const PcAbout = () => {
             <AboutTitle>What is this place?</AboutTitle>
           </AnchorWith>
           <AboutDescription>
-            {`鈴木乖離という人間が\nTRPGで生み出した探索者のまとめサイトです。\nかわいいうちの子を見ていってください～！`}
+              {`鈴木乖離という人間がTRPGで生み出したプレイキャラクターのまとめサイトです。\n\nサイトテーマは「駅」です。\nキャラクターの歩んできた物語を「停車駅」に見立て、彼らの人生という旅路の一端を記録しています。\n\n自慢の我が子達をぜひ見てってください！`}
           </AboutDescription>
         </AboutSection>
         <CharactersSection>
