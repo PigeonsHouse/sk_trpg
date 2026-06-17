@@ -85,6 +85,7 @@ export const AboutTitle = styled.h2`
 `;
 
 export const AboutDescription = styled.p`
+  padding: 0 48px;
   margin: 0;
   font-size: 32px;
   letter-spacing: 2px;

@@ -94,7 +94,7 @@ export const SpTop = () => {
       </SpTopContainer>
       <SpAboutContainer>
         <BrailleBlock
-          className={SpBrailleBlockStyle({ top: 280 })}
+          className={SpBrailleBlockStyle({ top: 400 })}
           {...brailleBlockProps}
         />
         <BrailleBlock

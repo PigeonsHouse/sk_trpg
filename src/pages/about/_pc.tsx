@@ -69,7 +69,7 @@ export const PcAbout = () => {
             <AboutTitle>What is this place?</AboutTitle>
           </AnchorWith>
           <AboutDescription>
-              {`鈴木乖離という人間がTRPGで生み出したプレイキャラクターのまとめサイトです。\n\nサイトテーマは「駅」です。\nキャラクターの歩んできた物語を「停車駅」に見立て、彼らの人生という旅路の一端を記録しています。\n\n自慢の我が子達をぜひ見てってください！`}
+            {`鈴木乖離という人間がTRPGで生み出したプレイキャラクターのまとめサイトです。\n\nサイトテーマは「駅」です。\nキャラクターの歩んできた物語を「停車駅」に見立て、彼らの人生という旅路の一端を記録しています。\n\n自慢の我が子達をぜひ見てってください！`}
           </AboutDescription>
         </AboutSection>
         <CharactersSection>
@@ -102,7 +102,7 @@ export const PcAbout = () => {
       <HeadBoardContainer>
         <HeadBoard label="このサイトは何？" enLabel="What is this place?" />
       </HeadBoardContainer>
-      <BrailleBlock top={720} />
+      <BrailleBlock top={1040} />
       <BrailleBlock bottom={640} />
     </Container>
   );

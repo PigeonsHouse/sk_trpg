@@ -157,6 +157,7 @@ export const SpAboutSectionTitle = styled.h2`
 `;
 
 export const SpAboutDescription = styled.p`
+  width: 320px;
   margin: 0;
   white-space: pre-wrap;
   font-size: 12px;
