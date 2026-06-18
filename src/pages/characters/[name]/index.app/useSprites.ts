@@ -3,6 +3,7 @@ import type { NavigateFunction } from "react-router";
 import type { CostumeItem } from "../../../../components";
 import { CharactersId, Url } from "../../../../definitions";
 import type { Sprites } from "../../../../types";
+import { getImageUrl } from "../../../../utils";
 
 type Setting = {
   // そのキャラのページを開いた際に最初に指定されているインデックス
@@ -90,7 +91,7 @@ export const useSprites = (
     // 衣装選択時にキャラIDを変える設定がないか確認
     const rule = specialSettings[characterId]?.navigateUrlOnSwitchSprite;
     if (rule) {
-      const targetId = rule(url.iconUrl);
+      const targetId = rule(getImageUrl(url, "icon"));
       if (targetId) {
         navigateCharacterId = targetId;
         navigateUrl = Url.characterTo(targetId);
@@ -118,7 +119,7 @@ export const useSprites = (
   const costumeList: CostumeItem[] = useMemo(() => {
     return sprites.map((url, index) => ({
       isSelected: displaySpriteIndex === index,
-      imageUrl: url.iconUrl,
+      imageUrl: getImageUrl(url, "icon"),
       onClick: onClickFactory(index, url),
     }));
   }, [displaySpriteIndex, onClickFactory]);

@@ -1,4 +1,5 @@
 import type { QA } from "../../../types";
+import { getImageUrl } from "../../../utils";
 import { CommonFrame } from "../../common";
 import {
   Answer,
@@ -40,7 +41,10 @@ export const QAFrame: React.FC<QAFrameProps> = ({ qaList, color }) => {
               <QuestionTitle>{questionList[i]}</QuestionTitle>
             </QuestionContainer>
             <AnswerContainer>
-              <AnswerIcon backgroundColor={color} src={qa.iconUrl} />
+              <AnswerIcon
+                backgroundColor={color}
+                src={getImageUrl(qa, "icon")}
+              />
               <Answer backgroundColor={color}>{qa.answer}</Answer>
             </AnswerContainer>
           </QAContainer>

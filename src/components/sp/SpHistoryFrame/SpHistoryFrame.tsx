@@ -2,6 +2,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { cx } from "@emotion/css";
 import { UiColor } from "../../../definitions";
 import type { History } from "../../../types";
+import { getImageUrl } from "../../../utils";
 import { CommonFrame, GoogleFontIcon, NameContainer } from "../../common";
 import {
   Backdrop,
@@ -117,7 +118,9 @@ export const SpHistoryFrame: React.FC<SpHistoryFrameProps> = ({
       <Backdrop isOpen={isOpen} onClick={onCloseMenu}>
         <HistoryCard mainColor={mainColor} onClick={stopPropagation}>
           <CardTitle>COMMENT</CardTitle>
-          <CardAvatar src={histories[selectedHistoryIndex].iconUrl} />
+          <CardAvatar
+            src={getImageUrl(histories[selectedHistoryIndex], "icon")}
+          />
           <CardComment>{histories[selectedHistoryIndex].comment}</CardComment>
           <CardCompanionContainer>
             <CardCompanionTitle>同行者</CardCompanionTitle>
@@ -129,7 +132,7 @@ export const SpHistoryFrame: React.FC<SpHistoryFrameProps> = ({
                       <CompanionContainer key={index}>
                         <CompanionLeftContainer>
                           <CompanionIcon
-                            src={companion.iconUrl}
+                            src={getImageUrl(companion, "icon")}
                             companionColor={companion.color}
                           />
                           <NameContainer

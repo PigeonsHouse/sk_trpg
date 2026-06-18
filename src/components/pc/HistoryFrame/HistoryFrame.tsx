@@ -1,6 +1,7 @@
 import { useMemo } from "react";
 import { UiColor } from "../../../definitions";
 import type { History } from "../../../types";
+import { getImageUrl } from "../../../utils";
 import {
   CommonFrame,
   GoogleFontIcon,
@@ -108,7 +109,7 @@ export const HistoryFrame: React.FC<HistoryFrameProps> = ({
       <HistoryDetailAreaContainer>
         <HistoryDetailContainer backgroundColor={color}>
           <HistoryCommentContainer>
-            <HistoryIconImage src={selectedHistory.iconUrl} />
+            <HistoryIconImage src={getImageUrl(selectedHistory, "icon")} />
             <HistoryComment>{selectedHistory.comment}</HistoryComment>
           </HistoryCommentContainer>
           {selectedHistory.companions.length > 0 && (
@@ -118,7 +119,7 @@ export const HistoryFrame: React.FC<HistoryFrameProps> = ({
                 {selectedHistory.companions.map((companion, i) => (
                   <SingleCompanionInfoContainer key={i}>
                     <CompanionIconImage
-                      src={companion.iconUrl}
+                      src={getImageUrl(companion, "icon")}
                       backgroundColor={companion.color}
                     />
                     <NameContainer

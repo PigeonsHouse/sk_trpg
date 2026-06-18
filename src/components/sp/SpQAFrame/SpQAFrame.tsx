@@ -1,5 +1,6 @@
 import { cx } from "@emotion/css";
 import type { QA } from "../../../types";
+import { getImageUrl } from "../../../utils";
 import { CommonFrame } from "../../common";
 import { questionList } from "../../pc";
 import {
@@ -33,7 +34,7 @@ export const SpQAFrame: React.FC<SpQAFrameProps> = ({
             <QuestionIcon bgColor={mainColor}>Q</QuestionIcon>
             <QuestionTitle>{questionList[i]}</QuestionTitle>
           </TitleContainer>
-          <AnswerIcon bgColor={mainColor} src={qa.iconUrl} />
+          <AnswerIcon bgColor={mainColor} src={getImageUrl(qa, "icon")} />
           <SpeechBubble bgColor={mainColor}>{qa.answer}</SpeechBubble>
         </ItemContainer>
       ))}

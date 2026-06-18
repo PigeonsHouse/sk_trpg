@@ -17,6 +17,7 @@ import {
 } from "../../../components";
 import { CharactersId, Url } from "../../../definitions";
 import type { CharacterDetail, CharacterSummary } from "../../../types";
+import { getImageList, getImageUrl } from "../../../utils";
 import {
   useBackdrop,
   useHeader,
@@ -114,7 +115,9 @@ export const SpCharacterAbout: React.FC<SpCharacterAboutProps> = ({
             className={SpShortIdBoardStyle}
             isSp
           />
-          <SpSprite src={data.sprites[displaySpriteIndex].spriteUrl} />
+          <SpSprite
+            src={getImageUrl(data.sprites[displaySpriteIndex], "sprite")}
+          />
         </SpMarginContainerRelative>
       </SpSpriteContainer>
       <SpGradationBackground startColor={mainColor} endColor={secondColor}>
@@ -153,7 +156,10 @@ export const SpCharacterAbout: React.FC<SpCharacterAboutProps> = ({
         <SpMarginContainer>
           <SpCommentFrame comment={data.comment} />
         </SpMarginContainer>
-        <SpArtGallery artGallery={data.artGallery} mainColor={mainColor} />
+        <SpArtGallery
+          artGallery={getImageList(data, "artGallery")}
+          mainColor={mainColor}
+        />
         <SpMarginContainer>
           <BottomNavigator
             color={mainColor}

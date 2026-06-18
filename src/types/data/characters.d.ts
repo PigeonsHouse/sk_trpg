@@ -5,7 +5,9 @@ export type CharacterSummary = {
   name: string;
   enName: string;
   thumbnailUrl: string;
+  convertedThumbnailUrl?: string;
   backgroundUrl: string;
+  convertedBackgroundUrl?: string;
   color: string;
   original?: string;
 };
@@ -23,7 +25,9 @@ export type Profile = {
 
 type Sprites = {
   spriteUrl: string;
+  convertedSpriteUrl?: string;
   iconUrl: string;
+  convertedIconUrl?: string;
 };
 
 type Coc6Status = {
@@ -55,6 +59,7 @@ export type Companion = {
   enName: string;
   color: string;
   iconUrl: string;
+  convertedIconUrl?: string;
   nickName: string;
 };
 
@@ -62,12 +67,14 @@ export type History = {
   title: string;
   comment: string;
   iconUrl: string;
+  convertedIconUrl?: string;
   companions: Companion[];
 };
 
 export type QA = {
   answer: string;
   iconUrl: string;
+  convertedIconUrl?: string;
 };
 
 export type CharacterDetail = {
@@ -77,8 +84,10 @@ export type CharacterDetail = {
   enName: string;
   shortId: string;
   thumbnailUrl: string;
+  convertedThumbnailUrl?: string;
   colorPalette: string[];
   backgroundUrl: string;
+  convertedBackgroundUrl?: string;
   profile: Profile;
   sprites: Sprites[];
   status: Status;
@@ -87,4 +96,5 @@ export type CharacterDetail = {
   qaList: QA[];
   comment: string;
   artGallery: string[];
+  convertedArtGallery?: string[];
 };

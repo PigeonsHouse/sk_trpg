@@ -15,6 +15,7 @@ import {
 } from "../../../components";
 import { Url, type CharactersId } from "../../../definitions";
 import type { CharacterDetail, CharacterSummary } from "../../../types";
+import { getImageList, getImageUrl } from "../../../utils";
 import { useHeader, useHistory, useSprites } from "./index.app";
 import {
   CharacterHeaderContainer,
@@ -90,14 +91,16 @@ export const PcCharacterAbout: React.FC<PcCharacterAboutProps> = ({
           />
         </CharacterHeaderContainer>
         <ProfileContainer>
-          <BackgroundImage src={data.backgroundUrl} />
+          <BackgroundImage src={getImageUrl(data, "background")} />
           <ProfileMainContainer>
             <ProfileFrame
               className={ProfileFrameStyle}
               color={mainColor}
               profileData={data.profile}
             />
-            <MainSpriteImage src={data.sprites[displaySpriteIndex].spriteUrl} />
+            <MainSpriteImage
+              src={getImageUrl(data.sprites[displaySpriteIndex], "sprite")}
+            />
           </ProfileMainContainer>
         </ProfileContainer>
         <GradationBackground startColor={mainColor} endColor={secondColor}>
@@ -147,9 +150,9 @@ export const PcCharacterAbout: React.FC<PcCharacterAboutProps> = ({
           <MarginContainer>
             <BrailleBlock blockColor={yellowColor} />
             <CommentFrame comment={data.comment} />
-            {data.artGallery.length > 0 && (
+            {getImageList(data, "artGallery").length > 0 && (
               <MarginContainer>
-                <ArtGallery artGallery={data.artGallery} />
+                <ArtGallery artGallery={getImageList(data, "artGallery")} />
               </MarginContainer>
             )}
           </MarginContainer>

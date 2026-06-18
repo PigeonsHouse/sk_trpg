@@ -3,6 +3,7 @@ import { Link } from "react-router";
 import { cx } from "@emotion/css";
 import { FontFamily, FontWeight, Url } from "../../../definitions";
 import type { CharacterSummary } from "../../../types";
+import { getImageUrl } from "../../../utils";
 import { NoDecorationLinkStyle } from "./styled";
 
 type CharacterCardProps = {
@@ -25,7 +26,7 @@ export const CharacterCard: React.FC<CharacterCardProps> = ({
         <div
           style={{
             aspectRatio: 1.414 / 1,
-            backgroundImage: `url(${data.backgroundUrl})`,
+            backgroundImage: `url(${getImageUrl(data, "background")})`,
             position: "relative",
           }}
         >
@@ -45,7 +46,7 @@ export const CharacterCard: React.FC<CharacterCardProps> = ({
               height: "100%",
               objectFit: "contain",
             }}
-            src={data.thumbnailUrl}
+            src={getImageUrl(data, "thumbnail")}
           />
         </div>
         <div
