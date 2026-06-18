@@ -1,8 +1,13 @@
 import generouted from "@generouted/react-router/plugin";
 import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
-import { generateCharactersList } from "./vite-plugins/generate-characters-list";
+import { generateCharactersList, publicWebpConverter } from "./vite-plugins";
 
 export default defineConfig({
-  plugins: [react(), generouted(), generateCharactersList()],
+  plugins: [
+    react(),
+    generouted(),
+    generateCharactersList(),
+    publicWebpConverter(),
+  ],
 });

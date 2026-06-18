@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import skillMaskUrl from "../../../assets/skill-mask.png";
 
 const isMasking = (label: string) => label.toLowerCase().startsWith("mask");
 
@@ -29,7 +30,7 @@ export const LabelBox = styled.div<{ backgroundColor: string; label: string }>`
     background-size: contain;
     ${(props) =>
       isMasking(props.label)
-        ? `background-image: url("/images/common/skill-mask.png");`
+        ? `background-image: url("${skillMaskUrl}");`
         : ""}
   }
 `;

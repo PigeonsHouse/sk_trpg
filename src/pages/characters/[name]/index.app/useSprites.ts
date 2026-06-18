@@ -22,7 +22,7 @@ const specialSettings: Settings = {
       if (url.includes("hide")) {
         // hideは学生の調
         return CharactersId.KanadeShirabeStudent;
-      } else if (url.match(/[2-9]\.png$/g)) {
+      } else if (url.match(/[2-9]\.(png|webp)$/g)) {
         // 2以降は大人の調
         return CharactersId.KanadeShirabeAdult;
       }
@@ -36,7 +36,7 @@ const specialSettings: Settings = {
       if (url.includes("hide")) {
         // hideは学生の調
         return CharactersId.KanadeShirabeStudent;
-      } else if (url.match(/[01]\.png$/g)) {
+      } else if (url.match(/[01]\.(png|webp)$/g)) {
         // 1までは通常の調
         return CharactersId.KanadeShirabe;
       }
