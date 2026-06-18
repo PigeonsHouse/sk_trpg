@@ -26,7 +26,6 @@ export const CharacterCard: React.FC<CharacterCardProps> = ({
         <div
           style={{
             aspectRatio: 1.414 / 1,
-            backgroundImage: `url(${getImageUrl(data, "background")})`,
             position: "relative",
           }}
         >

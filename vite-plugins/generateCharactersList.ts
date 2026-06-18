@@ -43,7 +43,6 @@ export function generateCharactersList(): Plugin {
           name: data.name,
           enName: data.enName,
           thumbnailUrl: data.thumbnailUrl,
-          backgroundUrl: data.backgroundUrl,
           color: data.colorPalette[0],
           original: data.original,
         };

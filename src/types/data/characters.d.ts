@@ -6,7 +6,6 @@ export type CharacterSummary = {
   enName: string;
   thumbnailUrl: string;
   convertedThumbnailUrl?: string;
-  backgroundUrl: string;
   convertedBackgroundUrl?: string;
   color: string;
   original?: string;

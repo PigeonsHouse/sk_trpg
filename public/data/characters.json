@@ -4,7 +4,6 @@
     "name": "奏 調",
     "enName": "KANADE SHIRABE",
     "thumbnailUrl": "https://image.iaproject.app/e9d14d6e-d91a-4015-8a0a-e8ae8d4ca567",
-    "backgroundUrl": "https://user0514.cdnw.net/shared/img/thumb/073Kazuki17103_TP_V.jpg",
     "color": "#B1A6DF",
     "original": "kanade-shirabe"
   },
@@ -13,7 +12,6 @@
     "name": "奏 調",
     "enName": "KANADE SHIRABE",
     "thumbnailUrl": "/images/KanadeShirabe/KanadeShirabe_ad.png",
-    "backgroundUrl": "https://user0514.cdnw.net/shared/img/thumb/073Kazuki17103_TP_V.jpg",
     "color": "#8A809E"
   },
   {
@@ -21,7 +19,6 @@
     "name": "奏 調",
     "enName": "KANADE SHIRABE",
     "thumbnailUrl": "https://image.iaproject.app/e9d14d6e-d91a-4015-8a0a-e8ae8d4ca567",
-    "backgroundUrl": "https://user0514.cdnw.net/shared/img/thumb/073Kazuki17103_TP_V.jpg",
     "color": "#95B2CC",
     "original": "kanade-shirabe"
   },
@@ -30,7 +27,6 @@
     "name": "奏 琴子",
     "enName": "KANADE KOTOKO",
     "thumbnailUrl": "/images/KanadeKotoko/KanadeKotoko_ad.png",
-    "backgroundUrl": "https://user0514.cdnw.net/shared/img/thumb/PK-sc02-IMGP6388-h_TP_V.jpg",
     "color": "#1B29A4"
   },
   {
@@ -38,7 +34,6 @@
     "name": "早乙女 海翔",
     "enName": "SAOTOME KAITO",
     "thumbnailUrl": "/images/SaotomeKaito/SaotomeKaito_ad.png",
-    "backgroundUrl": "/images/bg/bg_kaito.jpg",
     "color": "#FF1C7E"
   },
   {
@@ -46,7 +41,6 @@
     "name": "ソーン･クラインベック",
     "enName": "SON KLEINBECK",
     "thumbnailUrl": "/images/Son/SonKleinbeck_ad.png",
-    "backgroundUrl": "https://sakuranouta.biz/wp-content/uploads/2023/10/%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84%E3%81%AE%E9%83%A8%E5%B1%8B_6_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89-1-1024x576.jpg",
     "color": "#FF0A0A"
   },
   {
@@ -54,7 +48,6 @@
     "name": "刺賀　煌亜来",
     "enName": "SASUGA KIARA",
     "thumbnailUrl": "/images/SasugaKiara/SasugaKiara_ad.png",
-    "backgroundUrl": "https://sakuranouta.biz/wp-content/uploads/2023/10/%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84%E3%81%AE%E9%83%A8%E5%B1%8B_6_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89-1-1024x576.jpg",
     "color": "#F20C43"
   },
   {
@@ -62,7 +55,6 @@
     "name": "アミーラ☆カマル",
     "enName": "AMIRA KAMAL",
     "thumbnailUrl": "/images/AmiraKamal/sprite/AmiraKamal_sprite_1.png",
-    "backgroundUrl": "https://sakuranouta.biz/wp-content/uploads/2023/10/%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84%E3%81%AE%E9%83%A8%E5%B1%8B_6_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89-1-1024x576.jpg",
     "color": "#FF26C5",
     "original": "sasuga-kiara"
   },
@@ -71,7 +63,6 @@
     "name": "更科　健治",
     "enName": "SRASHINA KENJI",
     "thumbnailUrl": "/images/SarashinaKenji/SarashinaKenji_ad.png",
-    "backgroundUrl": "https://sakuranouta.biz/wp-content/uploads/2023/10/%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84%E3%81%AE%E9%83%A8%E5%B1%8B_6_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89-1-1024x576.jpg",
     "color": "#EE861E"
   },
   {
@@ -79,7 +70,6 @@
     "name": "潮海　犍",
     "enName": "SHIOMI KEN",
     "thumbnailUrl": "/images/ShiomiKen/ShiomiKen_ad.png",
-    "backgroundUrl": "https://sakuranouta.biz/wp-content/uploads/2023/10/%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84%E3%81%AE%E9%83%A8%E5%B1%8B_6_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89-1-1024x576.jpg",
     "color": "#1616FF"
   },
   {
@@ -87,7 +77,6 @@
     "name": "霜菊 ",
     "enName": "SHUANG JU",
     "thumbnailUrl": "/images/ShuangJu/ShuangJu_ad.png",
-    "backgroundUrl": "https://sakuranouta.biz/wp-content/uploads/2023/10/%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84%E3%81%AE%E9%83%A8%E5%B1%8B_6_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89-1-1024x576.jpg",
     "color": "#a5e90c"
   },
   {
@@ -95,7 +84,6 @@
     "name": "早乙女 華恋",
     "enName": "SAOTOMEE KAREN",
     "thumbnailUrl": "/images/SaotomeKaren/SaotomeKaren_ad.png",
-    "backgroundUrl": "https://sakuranouta.biz/wp-content/uploads/2023/10/%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84%E3%81%AE%E9%83%A8%E5%B1%8B_6_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89-1-1024x576.jpg",
     "color": "#F85C9F"
   },
   {
@@ -103,7 +91,6 @@
     "name": "色 玖竜",
     "enName": "SHIKI KURYU",
     "thumbnailUrl": "/images/ShikiKuryu/ShikiKuryu_ad.png",
-    "backgroundUrl": "https://sakuranouta.biz/wp-content/uploads/2023/10/%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84%E3%81%AE%E9%83%A8%E5%B1%8B_6_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89-1-1024x576.jpg",
     "color": "#1F4E22"
   },
   {
@@ -111,7 +98,6 @@
     "name": "才式 恵",
     "enName": "SAISHIKI KEI",
     "thumbnailUrl": "/images/SaishikiKei/SaishikiKei_ad.png",
-    "backgroundUrl": "https://sakuranouta.biz/wp-content/uploads/2023/10/%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84%E3%81%AE%E9%83%A8%E5%B1%8B_6_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89-1-1024x576.jpg",
     "color": "#187178"
   },
   {
@@ -119,7 +105,6 @@
     "name": "スカーレット・クリーガー",
     "enName": "SCARLET KRIEGER",
     "thumbnailUrl": "/images/ScarletKrieger/ScarletKrieger_ad.png",
-    "backgroundUrl": "https://sakuranouta.biz/wp-content/uploads/2023/10/%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84%E3%81%AE%E9%83%A8%E5%B1%8B_6_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89-1-1024x576.jpg",
     "color": "#FF2B00"
   },
   {
@@ -127,7 +112,6 @@
     "name": "郷ヶ島 熊子",
     "enName": "SATOGASHIMA KUMAKO",
     "thumbnailUrl": "/images/SatogashimaKumako/SatogashimaKumako_ad.png",
-    "backgroundUrl": "https://sakuranouta.biz/wp-content/uploads/2023/10/%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84%E3%81%AE%E9%83%A8%E5%B1%8B_6_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89-1-1024x576.jpg",
     "color": "#B15E00"
   },
   {
@@ -135,7 +119,6 @@
     "name": "澄光 こすも",
     "enName": "SUPIKA KOSUMO",
     "thumbnailUrl": "/images/SupikaKosumo/sprite/SupikaKosumo_sprite_1.png",
-    "backgroundUrl": "https://sakuranouta.biz/wp-content/uploads/2023/10/%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84%E3%81%AE%E9%83%A8%E5%B1%8B_6_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89-1-1024x576.jpg",
     "color": "#1725E0"
   },
   {
@@ -143,7 +126,6 @@
     "name": "黒羽根 香",
     "enName": "KUROBANE KAORU",
     "thumbnailUrl": "/images/KurobaneKaoru/sprite/KurobaneKaoru_sprite_1.png",
-    "backgroundUrl": "https://sakuranouta.biz/wp-content/uploads/2023/10/%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84%E3%81%AE%E9%83%A8%E5%B1%8B_6_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89-1-1024x576.jpg",
     "color": "#291806"
   },
   {
@@ -151,7 +133,6 @@
     "name": "葵",
     "enName": "DeepOne666",
     "thumbnailUrl": "/images/Aoi/sprite/Aoi_sprite_1.png",
-    "backgroundUrl": "https://sakuranouta.biz/wp-content/uploads/2023/10/%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84%E3%81%AE%E9%83%A8%E5%B1%8B_6_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89-1-1024x576.jpg",
     "color": "#60B3A9"
   },
   {
@@ -159,7 +140,6 @@
     "name": "言 周",
     "enName": "KOTONOHA SHU",
     "thumbnailUrl": "/images/KotonohaShu/sprite/KotonohaShu_sprite_1.png",
-    "backgroundUrl": "https://sakuranouta.biz/wp-content/uploads/2023/10/%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84%E3%81%AE%E9%83%A8%E5%B1%8B_6_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89-1-1024x576.jpg",
     "color": "#aaaaaa"
   },
   {
@@ -167,7 +147,6 @@
     "name": "偲野 空之介",
     "enName": "SHINO KUNOSUKE",
     "thumbnailUrl": "/images/ShinoKunosuke/sprite/ShinoKunosuke_sprite_1.png",
-    "backgroundUrl": "https://sakuranouta.biz/wp-content/uploads/2023/10/%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84%E3%81%AE%E9%83%A8%E5%B1%8B_6_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89-1-1024x576.jpg",
     "color": "#3A8C59"
   },
   {
@@ -175,7 +154,6 @@
     "name": "染矢 暮乃",
     "enName": "SOMEYA KURENO",
     "thumbnailUrl": "/images/SomeyaKureno/SomeyaKureno_ad.png",
-    "backgroundUrl": "https://sakuranouta.biz/wp-content/uploads/2023/10/%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84%E3%81%AE%E9%83%A8%E5%B1%8B_6_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89-1-1024x576.jpg",
     "color": "#5375BA"
   },
   {
@@ -183,7 +161,6 @@
     "name": "静江 観",
     "enName": "SHIZUE KAN",
     "thumbnailUrl": "/images/ShizueKan/ShizueKan_ad.png",
-    "backgroundUrl": "/images/bg/bg_kan.png",
     "color": "#586E43"
   },
   {
@@ -191,7 +168,6 @@
     "name": "静江 観",
     "enName": "SHIZUE KAN",
     "thumbnailUrl": "/images/ShizueKan/ShizueKan_ad.png",
-    "backgroundUrl": "/images/bg/bg_kan.png",
     "color": "#586E43",
     "original": "shizue-kan"
   },
@@ -200,7 +176,6 @@
     "name": "砕豹 黒牙",
     "enName": "SAIHYOU KOUGA",
     "thumbnailUrl": "/images/SaihyouKouga/SaihyouKouga_ad.png",
-    "backgroundUrl": "/images/bg/bg_kouga.png",
     "color": "#1B1B1C"
   }
 ]
