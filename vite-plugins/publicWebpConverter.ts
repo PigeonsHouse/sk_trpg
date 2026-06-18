@@ -1,6 +1,6 @@
+import { glob } from "glob";
 import fs from "node:fs/promises";
 import path from "node:path";
-import { glob } from "glob";
 import sharp from "sharp";
 import type { Plugin, ResolvedConfig } from "vite";
 
@@ -9,10 +9,9 @@ const SOURCE_IMAGE_PATTERN = `**/*.{${SOURCE_IMAGE_EXTENSIONS.join(",")}}`;
 const IMAGE_URL_PATTERN =
   /\/images\/[^"'\\\s?#]+\.(?:png|jpe?g)(?=$|["'\\\s?#])/gi;
 
-const toWebpPath = (value: string) =>
-  value.replace(/\.(png|jpe?g)$/i, ".webp");
+const toWebpPath = (value: string) => value.replace(/\.(png|jpe?g)$/i, ".webp");
 
-export function publicWebpConverter(): Plugin {
+export function publicWebpConverter(quality: number): Plugin {
   let config: ResolvedConfig;
 
   return {
@@ -35,14 +34,23 @@ export function publicWebpConverter(): Plugin {
         windowsPathsNoEscape: true,
       });
 
-      await Promise.all(
+      const webpSizeRates = await Promise.all(
         sourceImages.map(async (imagePath) => {
           const webpPath = toWebpPath(imagePath);
+          const originalSize = (await fs.stat(imagePath)).size;
 
-          await sharp(imagePath).webp({ quality: 80 }).toFile(webpPath);
+          await sharp(imagePath).webp({ quality }).toFile(webpPath);
+          const webpSize = (await fs.stat(webpPath)).size;
           await fs.rm(imagePath);
+
+          return originalSize === 0 ? 0 : (webpSize / originalSize) * 100;
         })
       );
+      const averageWebpSizeRate =
+        webpSizeRates.length === 0
+          ? 0
+          : webpSizeRates.reduce((sum, rate) => sum + rate, 0) /
+            webpSizeRates.length;
 
       const jsonFiles = await glob("**/*.json", {
         cwd: dataDir,
@@ -68,7 +76,8 @@ export function publicWebpConverter(): Plugin {
       );
 
       console.log(
-        `[public-webp-converter] Converted ${sourceImages.length} images and updated ${updatedJsonCount} JSON files.`
+        `[public-webp-converter] Converted ${sourceImages.length} images and updated ${updatedJsonCount} JSON files.` +
+          `WebP images are ${averageWebpSizeRate.toFixed(2)}% of the original size on average.`
       );
     },
   };

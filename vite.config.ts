@@ -8,6 +8,6 @@ export default defineConfig({
     react(),
     generouted(),
     generateCharactersList(),
-    publicWebpConverter(),
+    publicWebpConverter(50),
   ],
 });
