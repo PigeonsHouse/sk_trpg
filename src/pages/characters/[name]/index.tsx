@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { useNavigate, useParams } from "react-router";
+import { MetaTags } from "../../../components";
 import { characterDetails, characterSummaries } from "../../../content";
 import { APP_NAME, CharactersId, Url } from "../../../definitions";
 import { useBreakPoint, useScrollbarWidth } from "../../../hooks";
@@ -45,12 +46,20 @@ const CharacterAbout = () => {
   const title = detail
     ? `${detail.name} - ${APP_NAME}`
     : `キャラクター - ${APP_NAME}`;
+  const description = detail?.profile.description;
+  const imageUrl = detail?.convertedThumbnailUrl ?? detail?.thumbnailUrl;
 
   const { isPc } = useBreakPoint();
 
   return (
     <>
-      <title>{title}</title>
+      <MetaTags
+        title={title}
+        description={description}
+        imageUrl={imageUrl}
+        path={characterId ? Url.characterTo(characterId) : "/characters"}
+        type="article"
+      />
       {isLoading ? (
         <Loading>isLoading...</Loading>
       ) : (

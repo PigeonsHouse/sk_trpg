@@ -1,3 +1,4 @@
+import { MetaTags } from "../components";
 import { APP_NAME } from "../definitions";
 import { useBreakPoint } from "../hooks";
 import { PcTop } from "./_pc";
@@ -10,7 +11,7 @@ const Top = () => {
 
   return (
     <>
-      <title>{title}</title>
+      <MetaTags title={title} path="/" />
       {isPc ? <PcTop /> : <SpTop />}
     </>
   );

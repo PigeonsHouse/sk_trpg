@@ -9,6 +9,7 @@ export * from "./GlobalStyles";
 export * from "./GoogleFontIcon";
 export * from "./LabelBox";
 export * from "./MenuBoard";
+export * from "./MetaTags";
 export * from "./NameBoard";
 export * from "./NameContainer";
 export * from "./NavigateArrow";

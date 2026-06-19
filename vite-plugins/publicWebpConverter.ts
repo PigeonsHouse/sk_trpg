@@ -134,7 +134,7 @@ export function publicWebpConverter(quality: number): Plugin {
       );
     },
 
-    async closeBundle() {
+    async writeBundle() {
       const distDir = path.resolve(config.root, config.build.outDir);
       const imagesDir = path.join(distDir, "images");
       const dataDir = path.join(distDir, "data");
