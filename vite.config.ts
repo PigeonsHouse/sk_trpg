@@ -10,7 +10,8 @@ import { generateCharactersList, publicWebpConverter } from "./vite-plugins";
 
 const dirname = path.dirname(fileURLToPath(import.meta.url));
 const require = createRequire(import.meta.url);
-const vitePrerender = require("vite-plugin-prerender") as typeof vitePrerenderType;
+const vitePrerender =
+  require("vite-plugin-prerender") as typeof vitePrerenderType;
 const PuppeteerRenderer = vitePrerender.PuppeteerRenderer;
 
 const getPrerenderRoutes = () => {
@@ -26,6 +27,14 @@ const getPrerenderRoutes = () => {
   return ["/", "/about", ...characterRoutes];
 };
 
+const removeHydratedClass = (html: string) =>
+  html
+    .replace(/\sclass="app-hydrated"/, "")
+    .replace(/\sclass="([^"]*)\bapp-hydrated\b([^"]*)"/, (_match, before, after) => {
+      const className = `${before} ${after}`.trim().replace(/\s+/g, " ");
+      return className ? ` class="${className}"` : "";
+    });
+
 export default defineConfig({
   build: {
     target: "es2018",
@@ -38,10 +47,39 @@ export default defineConfig({
     vitePrerender({
       staticDir: path.join(dirname, "dist"),
       routes: getPrerenderRoutes(),
+      postProcess(renderedRoute) {
+        renderedRoute.route = renderedRoute.originalRoute;
+        renderedRoute.html = removeHydratedClass(renderedRoute.html);
+
+        if (renderedRoute.route === "/") {
+          return renderedRoute;
+        }
+
+        const nestedOutputPath = path.join(
+          dirname,
+          "dist",
+          renderedRoute.route,
+          "index.html"
+        );
+        fs.mkdirSync(path.dirname(nestedOutputPath), { recursive: true });
+        fs.writeFileSync(nestedOutputPath, renderedRoute.html.trim(), "utf-8");
+
+        renderedRoute.outputPath = path.join(
+          dirname,
+          "dist",
+          `${renderedRoute.route.slice(1)}.html`
+        );
+
+        return renderedRoute;
+      },
       renderer: new PuppeteerRenderer({
         args: ["--no-sandbox", "--disable-setuid-sandbox"],
         maxConcurrentRoutes: 1,
         renderAfterTime: 500,
+        viewport: {
+          width: 1200,
+          height: 900,
+        },
       }),
     }),
   ],
