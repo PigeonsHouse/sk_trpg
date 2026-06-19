@@ -3,7 +3,11 @@
   "name": "潮海　犍",
   "enName": "SHIOMI KEN",
   "thumbnailUrl": "/images/ShiomiKen/ShiomiKen_ad.png",
-  "colorPalette": ["#1616FF", "#FF9900", "#F7FF00"],
+  "colorPalette": [
+    "#1616FF",
+    "#FF9900",
+    "#F7FF00"
+  ],
   "backgroundUrl": "https://sakuranouta.biz/wp-content/uploads/2023/10/%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84%E3%81%AE%E9%83%A8%E5%B1%8B_6_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89-1-1024x576.jpg",
   "profile": {
     "description": "北国育ちの水族館職員。雪を溶かしてしまいそうな、明るく溌溂とした性格。生粋の後輩気質があり、先輩に気に入られがち。\n幼いときの鮮烈な記憶をよすがに、Muaに入職する。\n深海の冷たさは、北国育ちの彼にとっては心地よいのかもしれない。\n\n海とは無縁の生活だったため、重度の金槌。\n清掃中に誤って水槽に転落した際、まったく泳ぐことができず溺れかける。以降数か月、水槽周りの清掃当番から外されることとなった。",

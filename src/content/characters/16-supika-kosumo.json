@@ -3,11 +3,15 @@
   "name": "澄光 こすも",
   "enName": "SUPIKA KOSUMO",
   "thumbnailUrl": "/images/SupikaKosumo/sprite/SupikaKosumo_sprite_1.png",
-  "colorPalette": ["#1725E0", "#FE22A5", "#F7F144"],
+  "colorPalette": [
+    "#1725E0",
+    "#FE22A5",
+    "#F7F144"
+  ],
   "backgroundUrl": "https://sakuranouta.biz/wp-content/uploads/2023/10/%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84%E3%81%AE%E9%83%A8%E5%B1%8B_6_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89-1-1024x576.jpg",
   "profile": {
     "description": "自分のことを宇宙人だと自認している一般ヒューマン。となりのピンクの飛行物体は相棒のチャッピー。\n宇宙人と友達になることが目標。\nなので、“自分が宇宙人になる”ために、UFOを鋭意製作中。\n※なので母星や仲間といった発言はすべて嘘。\n\n「わーはっは、こすもが宇宙にいっちゃえば、宇宙から見て宇宙人、なのだ👾」\n\n魂はギャルなので、可愛いものが大好き。\nワードセンスがどうも古臭いときがある。\n「うんうん、今日の開発もちょべりぐーだね。あげぽよ☝️🌈」",
-    "age":16,
+    "age": 16,
     "gender": "女性",
     "height": "165cm",
     "weight": "44kg",
@@ -46,10 +50,9 @@
     "オカルト": 65,
     "コンピューター": 43,
     "心理学": 7,
-    "天文学":21,
+    "天文学": 21,
     "物理学": 81
   },
-
   "histories": [
     {
       "title": "風の又三郎 ‐Scarlet Girl with Wind Voice‐",

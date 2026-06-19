@@ -7,8 +7,8 @@ import {
   MenuBoard,
   SnsLink,
 } from "../components";
+import { characterSummaries } from "../content";
 import { UiColor } from "../definitions";
-import { useGetSummary } from "../hooks";
 import {
   SpAboutCharactersSection,
   SpAboutContainer,
@@ -78,8 +78,6 @@ export const SpTop = () => {
     return () => window.removeEventListener("scroll", callback);
   }, [navigate]);
 
-  const { data: summary } = useGetSummary();
-
   return (
     <SpBackgroundContainer>
       <MenuBoard isSp className={SpMenuBoardStyle} />
@@ -115,8 +113,8 @@ export const SpTop = () => {
               <SpAboutSectionTitle>CHARACTER</SpAboutSectionTitle>
             </AnchorWith>
             <SpCharacterCardsContainer>
-              {summary
-                ?.filter((character) => !character.original)
+              {characterSummaries
+                .filter((character) => !character.original)
                 .map((character) => (
                   <CharacterCard
                     key={character.id}

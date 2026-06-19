@@ -7,8 +7,8 @@ import {
   SnsLink,
   TopGuideBoard,
 } from "../../components";
+import { characterSummaries } from "../../content";
 import { BREAK_POINT } from "../../definitions";
-import { useGetSummary } from "../../hooks";
 import {
   AboutDescription,
   AboutSection,
@@ -29,8 +29,6 @@ import {
 } from "./styled";
 
 export const PcAbout = () => {
-  const { data: summary, isPending } = useGetSummary();
-
   const guideBoardRef = useRef<HTMLDivElement | null>(null);
   const guideBoardWidth = useMemo(() => {
     if (!guideBoardRef.current) return 0;
@@ -65,7 +63,7 @@ export const PcAbout = () => {
           />
         </StickyContainer>
         <AboutSection>
-          <AnchorWith id="about" offset={-280} disabledScroll={isPending}>
+          <AnchorWith id="about" offset={-280}>
             <AboutTitle>What is this place?</AboutTitle>
           </AnchorWith>
           <AboutDescription>
@@ -73,22 +71,20 @@ export const PcAbout = () => {
           </AboutDescription>
         </AboutSection>
         <CharactersSection>
-          <AnchorWith id="characters" offset={-200} disabledScroll={isPending}>
+          <AnchorWith id="characters" offset={-200}>
             <SectionTitle>CHARACTER</SectionTitle>
           </AnchorWith>
-          {summary ? (
-            <CharacterCardsContainer>
-              {summary
-                .filter((character) => !character.original)
-                .map((character) => (
-                  <CharacterCard
-                    key={character.id}
-                    data={character}
-                    className={CharacterCardStyle}
-                  />
-                ))}
-            </CharacterCardsContainer>
-          ) : null}
+          <CharacterCardsContainer>
+            {characterSummaries
+              .filter((character) => !character.original)
+              .map((character) => (
+                <CharacterCard
+                  key={character.id}
+                  data={character}
+                  className={CharacterCardStyle}
+                />
+              ))}
+          </CharacterCardsContainer>
         </CharactersSection>
         <ContactSection>
           <SectionTitle>CONTACT</SectionTitle>

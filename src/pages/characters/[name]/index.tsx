@@ -1,13 +1,8 @@
 import { useEffect, useMemo, useState } from "react";
 import { useNavigate, useParams } from "react-router";
+import { characterDetails, characterSummaries } from "../../../content";
 import { APP_NAME, CharactersId, Url } from "../../../definitions";
-import {
-  useBreakPoint,
-  useGetDetail,
-  useGetSummary,
-  useScrollbarWidth,
-} from "../../../hooks";
-import { useDefined } from "../../../utils";
+import { useBreakPoint, useScrollbarWidth } from "../../../hooks";
 import { PcCharacterAbout } from "./_pc";
 import { SpCharacterAbout } from "./_sp";
 import { Loading } from "./styled";
@@ -33,24 +28,22 @@ const CharacterAbout = () => {
   }, [characterId]);
 
   const [index, setIndex] = useState(0);
-  const { data: summary, isPending } = useGetSummary();
   const fileId = useMemo(() => {
-    if (!characterId || !summary || summary.length === 0) return;
-    const findIndex = summary.findIndex(
+    if (!characterId || characterSummaries.length === 0) return;
+    const findIndex = characterSummaries.findIndex(
       (singleSummary) => singleSummary.id === characterId
     );
     if (findIndex === -1) return;
     setIndex(findIndex);
     const indexWithZero = String(findIndex).padStart(2, "0");
     return `${indexWithZero}-${characterId}`;
-  }, [characterId, summary]);
-  const { data } = useGetDetail(fileId ?? "", !!fileId);
-  const detail = useDefined(data);
+  }, [characterId]);
+  const detail = fileId ? characterDetails[fileId] : undefined;
 
-  const isLoading = isPending || !characterId || !summary || !detail;
+  const isLoading = !characterId || !detail;
 
-  const title = data
-    ? `${data.name} - ${APP_NAME}`
+  const title = detail
+    ? `${detail.name} - ${APP_NAME}`
     : `キャラクター - ${APP_NAME}`;
 
   const { isPc } = useBreakPoint();
@@ -64,14 +57,14 @@ const CharacterAbout = () => {
         <>
           {isPc ? (
             <PcCharacterAbout
-              summary={summary}
+              summary={characterSummaries}
               characterId={characterId}
               data={detail}
               index={index}
             />
           ) : (
             <SpCharacterAbout
-              summary={summary}
+              summary={characterSummaries}
               characterId={characterId}
               data={detail}
               index={index}

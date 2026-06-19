@@ -3,11 +3,15 @@
   "name": "染矢 暮乃",
   "enName": "SOMEYA KURENO",
   "thumbnailUrl": "/images/SomeyaKureno/SomeyaKureno_ad.png",
-  "colorPalette": ["#5375BA", "#E2864B", "#FFFCB1"],
+  "colorPalette": [
+    "#5375BA",
+    "#E2864B",
+    "#FFFCB1"
+  ],
   "backgroundUrl": "https://sakuranouta.biz/wp-content/uploads/2023/10/%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84%E3%81%AE%E9%83%A8%E5%B1%8B_6_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89-1-1024x576.jpg",
   "profile": {
     "description": "普通の女子高校生。\n家族が死んだ後は、親戚の援助を受けながら一人暮らししている。\n\n普通に大学を出て、普通に社会人になって、…普通に死ねたらよかったのに。\n過去がそうはさせてくれなかった。\n家族の死は、絶対に普通じゃなかったから。\n\nお父さん、お母さん、明乃。\n私、みんなを殺した悪魔の正体を絶対突き止めるよ。\nそしたら私もそっちにいくから。\n普通になんて、死んでやらない。",
-    "age":17,
+    "age": 17,
     "gender": "女性",
     "height": "158cm",
     "weight": "50kg",
@@ -44,11 +48,10 @@
     "危機察知": "Lv.2",
     "ディベート": "Lv.2",
     "心理": "Lv.2",
-    "医術":"Lv.1",
-    "技巧:料理":"Lv.1",
-    "芸術:歌唱":"Lv.1"
+    "医術": "Lv.1",
+    "技巧:料理": "Lv.1",
+    "芸術:歌唱": "Lv.1"
   },
-
   "histories": [
     {
       "title": "夕星シンフォニア",

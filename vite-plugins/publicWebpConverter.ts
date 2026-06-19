@@ -57,6 +57,8 @@ const addConvertedImagePaths = (value: unknown): unknown => {
   const updatedValue: Record<string, unknown> = {};
 
   for (const [key, childValue] of Object.entries(value)) {
+    if (key.startsWith("converted")) continue;
+
     const updatedChildValue = addConvertedImagePaths(childValue);
     updatedValue[key] = updatedChildValue;
 
@@ -69,15 +71,67 @@ const addConvertedImagePaths = (value: unknown): unknown => {
   return updatedValue;
 };
 
+const updateJsonFiles = async (dir: string) => {
+  const jsonFiles = await fs
+    .access(dir)
+    .then(() =>
+      glob("**/*.json", {
+        cwd: dir,
+        absolute: true,
+        nodir: true,
+        windowsPathsNoEscape: true,
+      })
+    )
+    .catch(() => []);
+
+  const updateResults = await Promise.all(
+    jsonFiles.map(async (jsonPath) => {
+      const content = await fs.readFile(jsonPath, "utf-8");
+      const updatedContent =
+        JSON.stringify(addConvertedImagePaths(JSON.parse(content)), null, 2) +
+        "\n";
+
+      if (updatedContent === content) return false;
+
+      await fs.writeFile(jsonPath, updatedContent, "utf-8");
+      return true;
+    })
+  );
+
+  return updateResults.filter(Boolean).length;
+};
+
 export function publicWebpConverter(quality: number): Plugin {
   let config: ResolvedConfig;
+  let contentDir: string;
 
   return {
     name: "public-webp-converter",
+    enforce: "pre",
     apply: "build",
 
     configResolved(resolvedConfig) {
       config = resolvedConfig;
+      contentDir = path.resolve(config.root, "src/content");
+    },
+
+    transform(code, id) {
+      const cleanId = id.split("?")[0];
+      const normalizedId = path.normalize(cleanId);
+      const normalizedContentDir = path.normalize(contentDir);
+
+      if (
+        !normalizedId.startsWith(normalizedContentDir) ||
+        !normalizedId.endsWith(".json")
+      ) {
+        return;
+      }
+
+      return JSON.stringify(
+        addConvertedImagePaths(JSON.parse(code)),
+        null,
+        2
+      );
     },
 
     async closeBundle() {
@@ -110,31 +164,7 @@ export function publicWebpConverter(quality: number): Plugin {
           : webpSizeRates.reduce((sum, rate) => sum + rate, 0) /
             webpSizeRates.length;
 
-      const jsonFiles = await glob("**/*.json", {
-        cwd: dataDir,
-        absolute: true,
-        nodir: true,
-        windowsPathsNoEscape: true,
-      });
-
-      let updatedJsonCount = 0;
-
-      await Promise.all(
-        jsonFiles.map(async (jsonPath) => {
-          const content = await fs.readFile(jsonPath, "utf-8");
-          const updatedContent =
-            JSON.stringify(
-              addConvertedImagePaths(JSON.parse(content)),
-              null,
-              2
-            ) + "\n";
-
-          if (updatedContent !== content) {
-            updatedJsonCount += 1;
-            await fs.writeFile(jsonPath, updatedContent, "utf-8");
-          }
-        })
-      );
+      const updatedJsonCount = await updateJsonFiles(dataDir);
 
       console.log(
         `[public-webp-converter] Converted ${sourceImages.length} images and updated ${updatedJsonCount} JSON files.` +

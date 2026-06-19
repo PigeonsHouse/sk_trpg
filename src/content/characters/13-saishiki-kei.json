@@ -3,7 +3,11 @@
   "name": "才式 恵",
   "enName": "SAISHIKI KEI",
   "thumbnailUrl": "/images/SaishikiKei/SaishikiKei_ad.png",
-  "colorPalette": ["#187178", "#1B1C1C", "#F3FD02"],
+  "colorPalette": [
+    "#187178",
+    "#1B1C1C",
+    "#F3FD02"
+  ],
   "backgroundUrl": "https://sakuranouta.biz/wp-content/uploads/2023/10/%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84%E3%81%AE%E9%83%A8%E5%B1%8B_6_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89-1-1024x576.jpg",
   "profile": {
     "description": "大学2年生、医学部。\n医学部を現役主席で入学した秀才。\n医学部を選んだ理由は「一番難しいの、ここって聞いたから。」\n\n元々一番熱中できるものが勉強だっただけ。\nハイスコア系のゲームにハマる感覚と同じ。\n集めたスキル（知識）を活かしてハイスコア（テストの点数）を出すゲームだと思って楽しんでいる。\n\n医学部に関しても、6年制のところをどうにか飛び級で早期卒業できないか挑んでいる。\n目指せ卒業RTA。\n",

@@ -3,7 +3,11 @@
   "name": "刺賀　煌亜来",
   "enName": "SASUGA KIARA",
   "thumbnailUrl": "/images/SasugaKiara/SasugaKiara_ad.png",
-  "colorPalette": ["#F20C43", "#FF26C5", "#FFDE00"],
+  "colorPalette": [
+    "#F20C43",
+    "#FF26C5",
+    "#FFDE00"
+  ],
   "backgroundUrl": "https://sakuranouta.biz/wp-content/uploads/2023/10/%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84%E3%81%AE%E9%83%A8%E5%B1%8B_6_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89-1-1024x576.jpg",
   "profile": {
     "description": "仮想現実について研究するエンジニア。\n\n生まれつき足が悪く、ずっと車椅子生活。\nそんな中、縦横無尽に飛びまわり悪者を倒す「仮想みて☆ベタキュア（ゆめみて☆べたきゅあ）」に出会い、強いあこがれを抱く。\nいつか自分のような子供達もベタキュアのように自由にあれる世界を実現するべく、仮想現実への研究に励む。",
@@ -105,5 +109,7 @@
     }
   ],
   "comment": "キアラは、持ってきた設定とシナリオの嚙み合わせが良く、満足のいく意思決定ができました。かなり思い入れがあります。\n詳細は語れませんが...生まれてから自分で歩くことが叶わなかった彼女が、自分の足で立てるようになりました。感動じゃない...？\n彼女の夢も叶えられたし、見届けることができてよかったなと。\nシナリオも重厚感があって非常に楽しめました...!",
-  "artGallery": ["/images/SasugaKiara/picture/picture1.png"]
+  "artGallery": [
+    "/images/SasugaKiara/picture/picture1.png"
+  ]
 }

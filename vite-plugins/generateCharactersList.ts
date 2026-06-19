@@ -8,12 +8,12 @@ const camelize = (s: string) =>
     .replace(/^./, (x) => x.toUpperCase());
 
 /**
- * Viteプラグイン: src/data/characters/内のJSONファイル一覧を
- * src/data/characters.jsonに自動生成する
+ * Viteプラグイン: src/content/characters/内のJSONファイル一覧を
+ * src/content/characters.jsonに自動生成する
  */
 export function generateCharactersList(): Plugin {
-  const charactersDir = "public/data/characters";
-  const outputFile = "public/data/characters.json";
+  const charactersDir = "src/content/characters";
+  const outputFile = "src/content/characters.json";
   const characterNameTypeFile = "src/definitions/charactersName.ts";
 
   function updateCharactersList() {
