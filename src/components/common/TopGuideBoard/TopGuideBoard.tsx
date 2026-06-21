@@ -5,33 +5,38 @@ import { GoogleFontIcon } from "../GoogleFontIcon";
 import {
   ArrowStyle,
   BigText,
-  Box,
   Container,
   NoDecorationLinkStyle,
   OneLineContainer,
+  SkebLogo,
   SmallText,
   TextContainer,
   TopContainer,
   TopLabel,
+  XLogo,
 } from "./styled";
 
 const menuContents = [
   {
+    icon: (size: number) => <GoogleFontIcon iconName="help_outline" size={size} />,
     link: Url.aboutTo("about"),
     label: "このサイトは何？",
     enLabel: "What is this?",
   },
   {
+    icon: (size: number) => <GoogleFontIcon iconName="account_circle" size={size} />,
     link: Url.aboutTo("characters"),
     label: "キャラクター",
     enLabel: "Characters",
   },
   {
+    icon: (size: number) => <XLogo size={size} src="/logos/x-logo.svg" />,
     link: TwitterUrl,
     label: "X",
     enLabel: "Twitter",
   },
   {
+    icon: (size: number) => <SkebLogo size={size} src="/logos/skeb.svg" />,
     link: SkebUrl,
     label: "Skeb",
     enLabel: "Skeb",
@@ -70,7 +75,7 @@ export const TopGuideBoard: React.FC<TopGuideBoardProps> = ({
         const isExternal = content.link.startsWith("https://");
         const menuContentDom = (
           <OneLineContainer>
-            <Box isSp={isSp} />
+            {content.icon(isSp ? 50 : 60)}
             <TextContainer>
               <BigText isSp={isSp}>{content.label}</BigText>
               <SmallText isSp={isSp}>{content.enLabel}</SmallText>
