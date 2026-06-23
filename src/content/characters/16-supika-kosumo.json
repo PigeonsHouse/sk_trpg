@@ -2,7 +2,7 @@
   "shortId": "KSM",
   "name": "澄光 こすも",
   "enName": "SUPIKA KOSUMO",
-  "thumbnailUrl": "/images/SupikaKosumo/sprite/SupikaKosumo_sprite_1.png",
+  "thumbnailUrl": "/images/SupikaKosumo/SupikaKosumo_ad.png",
   "colorPalette": [
     "#1725E0",
     "#FE22A5",
@@ -20,6 +20,10 @@
     "from": "スピカ星(富山)"
   },
   "sprites": [
+    {
+      "iconUrl": "/images/SupikaKosumo/icon/SupikaKosumo_icon_0.png",
+      "spriteUrl": "/images/SupikaKosumo/sprite/SupikaKosumo_sprite_0.png"
+    },
     {
       "iconUrl": "/images/SupikaKosumo/icon/SupikaKosumo_icon_1.png",
       "spriteUrl": "/images/SupikaKosumo/sprite/SupikaKosumo_sprite_1.png"
@@ -99,19 +103,19 @@
   ],
   "qaList": [
     {
-      "iconUrl": "/images/SupikaKosumo/icon/SupikaKosumo_icon_1.png",
+      "iconUrl": "/images/SupikaKosumo/icon/SupikaKosumo_icon_0.png",
       "answer": "母星との交信を図るべく、通信装置の修理をしているナリ。\nナウな宇宙人は休日だって無駄にしないのだ、えらぴ。"
     },
     {
-      "iconUrl": "/images/SupikaKosumo/icon/SupikaKosumo_icon_1.png",
+      "iconUrl": "/images/SupikaKosumo/icon/SupikaKosumo_icon_0.png",
       "answer": "宇宙の時間軸だと間に合ってるのだ。（間に合ってない）"
     },
     {
-      "iconUrl": "/images/SupikaKosumo/icon/SupikaKosumo_icon_1.png",
+      "iconUrl": "/images/SupikaKosumo/icon/SupikaKosumo_icon_0.png",
       "answer": "今開発中のUFOがど～～～～～～しても出力足りなくて大気圏超えれないから、ギガトンエンジンほし。"
     },
     {
-      "iconUrl": "/images/SupikaKosumo/icon/SupikaKosumo_icon_1.png",
+      "iconUrl": "/images/SupikaKosumo/icon/SupikaKosumo_icon_0.png",
       "answer": "地球滅亡の前に母星の仲間がウチを迎えに来るはずなので、人類には残念だが帰星するナリ⭐"
     }
   ],
