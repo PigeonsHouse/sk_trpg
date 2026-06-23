@@ -25,6 +25,7 @@ export const PcTop = () => {
                 key={character.id}
                 data={character}
                 className={CharacterCardStyle}
+                withoutName
               />
             ))}
         </TopItemContainer>

@@ -9,12 +9,14 @@ import { NoDecorationLinkStyle } from "./styled";
 type CharacterCardProps = {
   className?: string;
   data: CharacterSummary;
+  withoutName?: boolean;
   isSp?: boolean;
 };
 
 export const CharacterCard: React.FC<CharacterCardProps> = ({
   className,
   data,
+  withoutName,
   isSp,
 }) => {
   return (
@@ -48,16 +50,18 @@ export const CharacterCard: React.FC<CharacterCardProps> = ({
             src={getImageUrl(data, "thumbnail")}
           />
         </div>
-        <div
-          style={{
-            fontWeight: FontWeight.Bold,
-            textAlign: "center",
-            fontSize: isSp ? 24 : 32,
-            fontFamily: FontFamily.Header,
-          }}
-        >
-          {data.name}
-        </div>
+        {!withoutName && (
+          <div
+            style={{
+              fontWeight: FontWeight.Bold,
+              textAlign: "center",
+              fontSize: isSp ? 24 : 32,
+              fontFamily: FontFamily.Header,
+            }}
+          >
+            {data.name}
+          </div>
+        )}
       </div>
     </Link>
   );
