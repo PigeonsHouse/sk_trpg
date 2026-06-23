@@ -2,7 +2,7 @@
   "shortId": "AOI",
   "name": "葵",
   "enName": "DeepOne666",
-  "thumbnailUrl": "/images/Aoi/sprite/Aoi_sprite_1.png",
+  "thumbnailUrl": "/images/Aoi/Aoi_ad.png",
   "colorPalette": [
     "#60B3A9",
     "#215884",
@@ -20,6 +20,10 @@
     "from": "??"
   },
   "sprites": [
+    {
+      "iconUrl": "/images/Aoi/icon/Aoi_icon_0.png",
+      "spriteUrl": "/images/Aoi/sprite/Aoi_sprite_0.png"
+    },
     {
       "iconUrl": "/images/Aoi/icon/Aoi_icon_1.png",
       "spriteUrl": "/images/Aoi/sprite/Aoi_sprite_1.png"
