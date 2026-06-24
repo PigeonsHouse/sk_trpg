@@ -2,7 +2,7 @@
   "shortId": "SHU",
   "name": "言 周",
   "enName": "KOTONOHA SHU",
-  "thumbnailUrl": "/images/KotonohaShu/sprite/KotonohaShu_sprite_1.png",
+  "thumbnailUrl": "/images/KotonohaShu/KotonohaShu_ad.png",
   "colorPalette": [
     "#aaaaaa",
     "#323233",
@@ -20,6 +20,10 @@
     "from": "??"
   },
   "sprites": [
+    {
+      "iconUrl": "/images/KotonohaShu/icon/KotonohaShu_icon_0.png",
+      "spriteUrl": "/images/KotonohaShu/sprite/KotonohaShu_sprite_0.png"
+    },
     {
       "iconUrl": "/images/KotonohaShu/icon/KotonohaShu_icon_1.png",
       "spriteUrl": "/images/KotonohaShu/sprite/KotonohaShu_sprite_1.png"
