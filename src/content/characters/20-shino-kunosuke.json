@@ -2,7 +2,7 @@
   "shortId": "KNS",
   "name": "偲野 空之介",
   "enName": "SHINO KUNOSUKE",
-  "thumbnailUrl": "/images/ShinoKunosuke/sprite/ShinoKunosuke_sprite_1.png",
+  "thumbnailUrl": "/images/ShinoKunosuke/ShinoKunosuke_ad.png",
   "colorPalette": [
     "#3A8C59",
     "#3A588C",
@@ -20,6 +20,10 @@
     "from": "神奈川県"
   },
   "sprites": [
+    {
+      "iconUrl": "/images/ShinoKunosuke/icon/ShinoKunosuke_icon_0.png",
+      "spriteUrl": "/images/ShinoKunosuke/sprite/ShinoKunosuke_sprite_0.png"
+    },
     {
       "iconUrl": "/images/ShinoKunosuke/icon/ShinoKunosuke_icon_1.png",
       "spriteUrl": "/images/ShinoKunosuke/sprite/ShinoKunosuke_sprite_1.png"
@@ -88,19 +92,19 @@
   ],
   "qaList": [
     {
-      "iconUrl": "/images/ShinoKunosuke/icon/ShinoKunosuke_icon_1.png",
+      "iconUrl": "/images/ShinoKunosuke/icon/ShinoKunosuke_icon_0.png",
       "answer": "ん～...いろいろ？日差しがぽかぽかならお外出るし、雨降ってるなら一日寝るし。\nあっでも、最近は公園で見つけたアリの巣の観察してる。"
     },
     {
-      "iconUrl": "/images/ShinoKunosuke/icon/ShinoKunosuke_icon_1.png",
+      "iconUrl": "/images/ShinoKunosuke/icon/ShinoKunosuke_icon_0.png",
       "answer": "待ち合わせ、苦手なんだよね。いっつも遅いって言われるから。\nちゃんと目的地には行ってるんだけどなぁ。"
     },
     {
-      "iconUrl": "/images/ShinoKunosuke/icon/ShinoKunosuke_icon_1.png",
+      "iconUrl": "/images/ShinoKunosuke/icon/ShinoKunosuke_icon_0.png",
       "answer": "う～ん...。もっと「強い人」になりたい。"
     },
     {
-      "iconUrl": "/images/ShinoKunosuke/icon/ShinoKunosuke_icon_1.png",
+      "iconUrl": "/images/ShinoKunosuke/icon/ShinoKunosuke_icon_0.png",
       "answer": "へへ、ないしょ。\nでも最期のときは一人はヤだなっておもう。"
     }
   ],
