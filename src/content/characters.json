@@ -60,7 +60,7 @@
   },
   {
     "id": "sarashina-kenji",
-    "name": "更科　健治",
+    "name": "更科 健治",
     "enName": "SRASHINA KENJI",
     "thumbnailUrl": "/images/SarashinaKenji/SarashinaKenji_ad.png",
     "color": "#EE861E"
@@ -139,14 +139,14 @@
     "id": "kotonoha-shu",
     "name": "言 周",
     "enName": "KOTONOHA SHU",
-    "thumbnailUrl": "/images/KotonohaShu/sprite/KotonohaShu_sprite_1.png",
+    "thumbnailUrl": "/images/KotonohaShu/KotonohaShu_ad.png",
     "color": "#aaaaaa"
   },
   {
     "id": "shino-kunosuke",
     "name": "偲野 空之介",
     "enName": "SHINO KUNOSUKE",
-    "thumbnailUrl": "/images/ShinoKunosuke/sprite/ShinoKunosuke_sprite_1.png",
+    "thumbnailUrl": "/images/ShinoKunosuke/ShinoKunosuke_ad.png",
     "color": "#3A8C59"
   },
   {

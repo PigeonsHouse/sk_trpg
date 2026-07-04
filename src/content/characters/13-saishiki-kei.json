@@ -16,7 +16,7 @@
     "height": "173cm",
     "weight": "65kg",
     "job": "大学生",
-    "birthday": "",
+    "birthday": "9月28日",
     "from": "三重県"
   },
   "sprites": [
@@ -89,7 +89,7 @@
     {
       "title": "ねむるアクアリウム",
       "comment": "ダサいな、俺。\nまだ...怖いんだ。響希に、嫌われるかもしれなから。\nだから...まだ、言えない。",
-      "iconUrl": "/images/SaishikiKei/icon/SaishikiKei_icon_1.png",
+      "iconUrl": "/images/SaishikiKei/icon/SaishikiKei_icon_3.png",
       "companions": [
         {
           "name": "京極 響希",
@@ -103,7 +103,7 @@
     {
       "title": "夏に逃げ水",
       "comment": "響希、俺は、お前を一人になんかさせないよ。\nだから...これからも、俺の傍に居てくれるか。",
-      "iconUrl": "/images/SaishikiKei/icon/SaishikiKei_icon_1.png",
+      "iconUrl": "/images/SaishikiKei/icon/SaishikiKei_icon_4.png",
       "companions": [
         {
           "name": "京極 響希",

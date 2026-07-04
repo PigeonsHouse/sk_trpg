@@ -14,10 +14,9 @@
     "age": 11,
     "gender": "乙女",
     "height": "153cm",
-    "weight": "",
+    "weight": "㊙",
     "job": "小学生",
-    "birthday": "8月28日",
-    "from": ""
+    "birthday": "8月28日"
   },
   "sprites": [
     {

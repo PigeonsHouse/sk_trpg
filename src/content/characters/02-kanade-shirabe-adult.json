@@ -96,7 +96,7 @@
     {
       "title": "星の神話、エンドロール",
       "comment": "ほんの数日にいろんなことがあったね。\n悲しい事だってあったけど...それがみんなの\"選択\"なら、僕は肯定するよ。\nふふっ、またみんなに会いたいな～、ちょっと連絡してみるよ。",
-      "iconUrl": "/images/KanadeShirabe/icon/KanadeShirabe_icon_2.png",
+      "iconUrl": "/images/KanadeShirabe/icon/KanadeShirabe_icon_1.png",
       "companions": [
         {
           "name": "守 惑",
@@ -117,7 +117,7 @@
     {
       "title": "ごぜんにじにあいにきて。",
       "comment": "惑くんからのお誘い、うれしかったなぁ。不思議な体験もしたし。\n...ふふっ、久しぶりにたくさんお話もできて、楽しかったなぁ。\nまた誘ってくれる？",
-      "iconUrl": "/images/KanadeShirabe/icon/KanadeShirabe_icon_2.png",
+      "iconUrl": "/images/KanadeShirabe/icon/KanadeShirabe_icon_1.png",
       "companions": [
         {
           "name": "守 惑",
@@ -131,7 +131,7 @@
     {
       "title": "井藤チアキと云ふ女",
       "comment": "正直、僕が死んでもみんなは絶対に送り届けようと思ってたから...。\nちゃんと、みんなで、生きて帰れて良かった～！",
-      "iconUrl": "/images/KanadeShirabe/icon/KanadeShirabe_icon_2.png",
+      "iconUrl": "/images/KanadeShirabe/icon/KanadeShirabe_icon_3.png",
       "companions": [
         {
           "name": "守 惑",
@@ -170,21 +170,65 @@
     },
     {
       "title": "ホワイトブラッククリスマス",
-      "comment": "ひどい目に合ったねぇ...。穏やかなクリスマスを過ごせると思っていたんだけど...。\nまあ、五体満足だし！ちょっといいこともあったし。よかったねぇ。",
+      "comment": "久方ぶりのクリスマスにお休みだったんだけど...\nまあ、なんだかんだ解決したようですし？たまには良しとしましょうか。",
       "iconUrl": "/images/KanadeShirabe/icon/KanadeShirabe_icon_2.png",
-      "companions": []
+      "companions": [
+        {
+          "name": "いつでもエグチ 食べ助",
+          "enName": "ITSUDEMO EGUCHI TABESUKE",
+          "color": "#E15742",
+          "iconUrl": "/images/common/companions_NoImage.png",
+          "nickName": "食べ助くん"
+        },
+        {
+          "name": "間 恵",
+          "enName": "HAZAMA MEGUMI",
+          "color": "#4F4582",
+          "iconUrl": "/images/KanadeShirabe/companions/Hazama.png",
+          "nickName": "間さん"
+        },
+        {
+          "name": "エリオット",
+          "enName": "ELLIOT",
+          "color": "#00040C",
+          "iconUrl": "/images/common/companions_NoImage.png",
+          "nickName": "エリオットさん"
+        }
+      ]
     },
     {
       "title": "伽藍堂書店へようこそ",
       "comment": "僕という人間の物語は、どうやらまだまだ続くみたい。\nふふっ、ここから先は、自分で書き続けなきゃいけないみたいだ...ちゃんと、歩んでいかないとね。",
-      "iconUrl": "/images/KanadeShirabe/icon/KanadeShirabe_icon_2.png",
+      "iconUrl": "/images/KanadeShirabe/icon/KanadeShirabe_icon_5.png",
       "companions": []
     },
     {
       "title": "葬儀屋のアポトーシス",
-      "comment": "",
+      "comment": "ふと。死というものに思いを馳せては、自分の行く末を案じるものだよね。\n僕は...、願わくば、1人でひっそりと、誰も知らないうちに息を引き取りたいものだね。",
       "iconUrl": "/images/KanadeShirabe/icon/KanadeShirabe_icon_2.png",
-      "companions": []
+      "companions": [
+        {
+          "name": "守 惑",
+          "enName": "SHU YOU",
+          "color": "#517BF1",
+          "iconUrl": "/images/KanadeShirabe/companions/You_2023_2.png",
+          "nickName": "惑くん"
+        },
+        {
+          "name": "夜想 八",
+          "enName": "YASOU HACHI",
+          "color": "#0346B9",
+          "iconUrl": "/images/KanadeKotoko/companions/yasohachi.png",
+          "nickName": "夜想くん"
+        },
+        {
+          "name": "田中 たけし",
+          "enName": "TANAKA TAKESHI",
+          "color": "#C6364F",
+          "iconUrl": "/images/common/companions_NoImage.png",
+          "nickName": "田中くん"
+        }
+      ]
     },
     {
       "title": "Fall in the festival!",
@@ -194,15 +238,94 @@
     },
     {
       "title": "ifの為のお茶会を",
-      "comment": "",
+      "comment": "やはり、君と僕の世界が交わったのは神様の気まぐれだったようだね。\nあの時、君が書いていた曲が聞けないのは、少々残念だけれど...また、どこかで。会えるといいね。",
       "iconUrl": "/images/KanadeShirabe/icon/KanadeShirabe_icon_2.png",
-      "companions": []
+      "companions": [
+        {
+          "name": "大福 珠",
+          "enName": "DAIFUKU TAMA",
+          "color": "#F5A356",
+          "iconUrl": "/images/common/companions_NoImage.png",
+          "nickName": "大福さん"
+        }
+      ]
+    },
+    {
+      "title": "ケミカルゴーストパレード",
+      "comment": "わぁい、お菓子貰ったのなんて何年ぶりだろうね？\nハロウィンをイベントとして真摯に興じることなんて、この年になるとないからね～！年甲斐もなく楽しんじゃったなぁ。",
+      "iconUrl": "/images/KanadeShirabe/icon/KanadeShirabe_icon_7.png",
+      "companions": [
+        {
+          "name": "国光 颯",
+          "enName": "KUNIMITSU HAYATO",
+          "color": "#97A791",
+          "iconUrl": "/images/KanadeShirabe/companions/kunimitsu.png",
+          "nickName": "国光くん"
+        },
+        {
+          "name": "絆馬 赤",
+          "enName": "HANBA AKA",
+          "color": "#B20000",
+          "iconUrl": "/images/KanadeShirabe/companions/yasohachi.png",
+          "nickName": "絆馬くん"
+        },
+        {
+          "name": "大福 珠",
+          "enName": "DAIFUKU TAMA",
+          "color": "#F5A356",
+          "iconUrl": "/images/common/companions_NoImage.png",
+          "nickName": "大福さん"
+        },
+        {
+          "name": "坂牧 折途 ",
+          "enName": "SAKAMAKI TORU",
+          "color": "#36373A",
+          "iconUrl": "/images/common/companions_NoImage.png",
+          "nickName": "坂牧くん"
+        },
+        {
+          "name": "酒山 桃",
+          "enName": "SAKAYAMA MOMO",
+          "color": "#B5B8C1",
+          "iconUrl": "/images/common/companions_NoImage.png",
+          "nickName": "酒山くん"
+        }
+      ]
     },
     {
       "title": "探索者格付けチェック",
-      "comment": "",
-      "iconUrl": "/images/KanadeShirabe/icon/KanadeShirabe_icon_2.png",
-      "companions": []
+      "comment": "君たちと一緒に居ると、とことんこういった類に縁があるようだね？あははっ、本当に退屈しなくて助かるよ。\n...勝手にどこか遠くに行ったりしないでおくれよ。",
+      "iconUrl": "/images/KanadeShirabe/icon/KanadeShirabe_icon_8.png",
+      "companions": [
+        {
+          "name": "守 惑",
+          "enName": "SHU YOU",
+          "color": "#517BF1",
+          "iconUrl": "/images/KanadeShirabe/companions/You_2023_3.png",
+          "nickName": "惑くん"
+        },
+        {
+          "name": "天川 綾",
+          "enName": "AMAKAWA AYA",
+          "color": "#FF9100",
+          "iconUrl": "/images/KanadeShirabe/companions/Aya_2023_2.png",
+          "nickName": "天川さん"
+        },
+        {
+          "name": "中村 黎来",
+          "enName": "NAKAMURA REIRA",
+          "color": "#C9EDFF",
+          "iconUrl": "/images/common/companions_NoImage.png",
+          "nickName": "中村さん"
+        },
+        {
+          "name": "那岐平 遼佑",
+          "enName": "NAGIHIRA RYOSUKE",
+          "color": "#D8D5CF",
+          "iconUrl": "/images/common/companions_NoImage.png",
+          "nickName": "那岐平くん"
+        }
+      ]
     }
   ],
   "qaList": [

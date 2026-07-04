@@ -153,6 +153,7 @@ export const CardAvatar = styled.img`
 export const CardComment = styled.span`
   font-size: 12px;
   color: white;
+  white-space: pre-wrap;
 `;
 
 export const CardCompanionContainer = styled.div`

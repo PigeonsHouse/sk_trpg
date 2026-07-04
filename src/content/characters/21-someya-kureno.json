@@ -21,6 +21,10 @@
   },
   "sprites": [
     {
+      "iconUrl": "/images/SomeyaKureno/icon/SomeyaKureno_icon_0.png",
+      "spriteUrl": "/images/SomeyaKureno/sprite/SomeyaKureno_sprite_0.png"
+    },
+    {
       "iconUrl": "/images/SomeyaKureno/icon/SomeyaKureno_icon_1.png",
       "spriteUrl": "/images/SomeyaKureno/sprite/SomeyaKureno_sprite_1.png"
     },
@@ -70,23 +74,23 @@
   ],
   "qaList": [
     {
-      "iconUrl": "/images/SomeyaKureno/icon/SomeyaKureno_icon_1.png",
+      "iconUrl": "/images/SomeyaKureno/icon/SomeyaKureno_icon_0.png",
       "answer": "受験勉強、かな。大学入試も遠い話じゃないし、ここからしっかり準備しないと本番が怖いし。\n※なお成績は学年1位"
     },
     {
-      "iconUrl": "/images/SomeyaKureno/icon/SomeyaKureno_icon_1.png",
+      "iconUrl": "/images/SomeyaKureno/icon/SomeyaKureno_icon_0.png",
       "answer": "そうね、いつも早く着くようにしている、かな。\n早く着けば、あとは待つだけだし。"
     },
     {
-      "iconUrl": "/images/SomeyaKureno/icon/SomeyaKureno_icon_1.png",
+      "iconUrl": "/images/SomeyaKureno/icon/SomeyaKureno_icon_0.png",
       "answer": "...もう一度、みんな（家族）に会いたいな。特に、明乃は私のこと心配してるだろうし。\nちゃんと一人でもやっていけてるって教えてあげたいな。"
     },
     {
-      "iconUrl": "/images/SomeyaKureno/icon/SomeyaKureno_icon_1.png",
+      "iconUrl": "/images/SomeyaKureno/icon/SomeyaKureno_icon_0.png",
       "answer": "静かに終わる時を待つ、かな。...\nわがままを言うなら、最後に桜ちゃんにはご挨拶しておきたいわ。桜ちゃんは人気者だから、そんな時間はないかもしれないけれど。"
     }
   ],
-  "comment": "未記入",
+    "comment": "直近社不しかおらず、大変心を痛めた鈴木乖離は素直な女の子をお呼びしました。こういうのでいいんだよこういうので...!\nおとなしい優等生タイプ、それでいて内には強い信念がある...そんな子でした。\n相方にも恵まれたおかげで、時に衝突もありながらも、言葉を交わすことで互いに成長できた卓でした。\n\n夕星シンフォニアというシナリオ自体も、エモクロアのシステムを最大出力で遊ばせてくれて、物語としてもゲームとしても楽しめました。最高！全人類遊んでほしい。",
   "artGallery": [
     "/images/SomeyaKureno/picture/picture1.png",
     "/images/SomeyaKureno/picture/picture2.png"

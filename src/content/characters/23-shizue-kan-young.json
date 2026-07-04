@@ -60,11 +60,11 @@
   "histories": [
     {
       "title": "静なるテロリスタ",
-      "comment": "未記入",
+      "comment": "聞のおっさん、でっけぇ男になった日にゃ帰ってくるからよ。ちぃとばかし待っといてくれや。",
       "iconUrl": "/images/ShizueKan-young/icon/ShizueKan-young_icon_1.png",
       "companions": [
         {
-          "name": "静江 聞 ※本編と無関係のNPC",
+          "name": "静江 聞",
           "enName": "SHIZUE MON",
           "color": "#586E43",
           "iconUrl": "/images/common/companions_NoImage.png",
@@ -76,21 +76,21 @@
   "qaList": [
     {
       "iconUrl": "/images/ShizueKan-young/icon/ShizueKan-young_icon_1.png",
-      "answer": "未記入"
+      "answer": "あぁ？寺の手伝いやって終わりだよ。\n修行だ何だってよォ、休む暇もありゃしねェ...！ひっでえもんだぜ。"
     },
     {
       "iconUrl": "/images/ShizueKan-young/icon/ShizueKan-young_icon_1.png",
-      "answer": "未記入"
+      "answer": "んあ？何の話だ？\n※待ち合わせは高確率で遅れがち"
     },
     {
       "iconUrl": "/images/ShizueKan-young/icon/ShizueKan-young_icon_1.png",
-      "answer": "未記入"
+      "answer": "そりゃァ、夢はでっかく億万長者よ！\n金がありゃ、今の暮らしも随分よくなるってもんだ。ボロッボロのこの寺も、ちぃとはマシなツラにできんじゃねぇか？"
     },
     {
       "iconUrl": "/images/ShizueKan-young/icon/ShizueKan-young_icon_1.png",
-      "answer": "未記入"
+      "answer": "はぁ～ッくだらねェ！ンな話してどうすんだよ。\nまァ？そうだなァ...落ちる先が地獄じゃねェこと祈ってとっととくたばるかね。"
     }
   ],
-  "comment": "未記入",
+  "comment": "聞のおっさんは本編と無関係のNPCです。\nおっさんとのRPで40分はやった。でも、本編には一切出てきませんでした。なんで？？？\nこんなクソガキ引き取ってくれたおっさん、ほんまにありがとう。付き合ってくれたKP、BIGありがとう。\n\n個別導入がある、かつ導入から本編までに時間があるとのことで、成長の見込みがありそうな子を作りました。\n15年後の成長した姿にどうやったらなるのか...？とは思いましたが、観ちゃんが変わらなければいけない理由は十分にあったかなと。随分大きくなってくれて、俺はうれしいよ。\n\n余談ですが、静テロ通過後の観ちゃんはまだ寺には帰っていません。彼が帰れるのはまだ先のお話になるでしょう。",
   "artGallery": []
 }
