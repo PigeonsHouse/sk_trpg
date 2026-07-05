@@ -36,14 +36,6 @@ export const CharacterCard: React.FC<CharacterCardProps> = ({
               : undefined,
           }}
         >
-          <div
-            style={{
-              width: "100%",
-              height: "100%",
-              backgroundColor: data.color,
-              opacity: 0.3,
-            }}
-          />
           <img
             style={{
               position: "absolute",
