@@ -173,17 +173,7 @@ export const CharacterColumn = styled.div`
   align-items: center;
 `;
 
-export const NoDecorationLinkStyle = css`
-  text-decoration: none;
-  color: inherit;
-  display: block;
-  transition: opacity 0.15s;
-  &:hover {
-    opacity: 0.7;
-  }
-`;
-
-// PC版の立ち絵リンク。ホバー時にopacityではなく、キャラクターのcolorPalette[0]を使ったドロップシャドウを付ける
+// 立ち絵リンク。ホバー(SPではタップ)時にopacityではなく、キャラクターのcolorPalette[0]を使ったドロップシャドウを付ける
 export const SpriteLinkStyle = (shadowColor: string) => css`
   text-decoration: none;
   color: inherit;

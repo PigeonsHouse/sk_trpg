@@ -5,7 +5,6 @@ import { getImageUrl } from "../../../utils";
 import {
   CharacterColumn,
   Container,
-  NoDecorationLinkStyle,
   SpBaselineBar,
   SpCaptionContainer,
   SpCaptionHeight,
@@ -26,6 +25,7 @@ import {
   SpSpriteImage,
   SpTitle,
   SpTitleContainer,
+  SpriteLinkStyle,
 } from "./styled";
 import {
   GUIDE_LINE_COUNT,
@@ -79,7 +79,7 @@ export const SpCharacterHeight: React.FC<SpCharacterHeightProps> = ({
               >
                 <Link
                   to={Url.characterTo(entry.id as CharactersId)}
-                  className={NoDecorationLinkStyle}
+                  className={SpriteLinkStyle(entry.color)}
                 >
                   <SpSpriteImage
                     src={getImageUrl(entry, "sprite")}
