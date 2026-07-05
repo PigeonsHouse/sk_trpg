@@ -104,7 +104,6 @@ export const SpTopContainer = styled.section<{ backgroundUrl?: string }>`
 export const SpTopFilter = styled.div`
   width: 100%;
   height: 100%;
-  background-color: ${withAlpha(UiColor.white, 0.75)};
 `;
 
 export const SpTopTitleContainer = styled.div`
@@ -117,9 +116,12 @@ export const SpTopTitleContainer = styled.div`
 export const SpTopTitle = styled.h1`
   margin: 0;
   white-space: pre-wrap;
-  font-family: ${FontFamily.Header};
+  font-family: ${FontFamily.Regular};
+  font-weight: ${FontWeight.Thin};
   font-size: 48px;
   margin-left: 16px;
+  color: ${UiColor.white};
+  filter: drop-shadow(2px 4px 6px ${withAlpha(UiColor.yellow, 0.2)});
 `;
 
 export const SpAboutContainer = styled.section`

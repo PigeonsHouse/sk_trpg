@@ -82,6 +82,7 @@ export const PcAbout = () => {
                   key={character.id}
                   data={character}
                   className={CharacterCardStyle}
+                  borderWidth={1}
                 />
               ))}
           </CharacterCardsContainer>

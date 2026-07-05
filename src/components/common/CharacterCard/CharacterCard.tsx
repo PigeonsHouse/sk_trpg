@@ -1,7 +1,7 @@
 import type React from "react";
 import { Link } from "react-router";
 import { cx } from "@emotion/css";
-import { FontFamily, FontWeight, Url } from "../../../definitions";
+import { FontFamily, FontWeight, UiColor, Url } from "../../../definitions";
 import type { CharacterSummary } from "../../../types";
 import { getImageUrl } from "../../../utils";
 import { NoDecorationLinkStyle } from "./styled";
@@ -11,6 +11,7 @@ type CharacterCardProps = {
   data: CharacterSummary;
   withoutName?: boolean;
   isSp?: boolean;
+  borderWidth?: number;
 };
 
 export const CharacterCard: React.FC<CharacterCardProps> = ({
@@ -18,6 +19,7 @@ export const CharacterCard: React.FC<CharacterCardProps> = ({
   data,
   withoutName,
   isSp,
+  borderWidth,
 }) => {
   return (
     <Link
@@ -29,6 +31,9 @@ export const CharacterCard: React.FC<CharacterCardProps> = ({
           style={{
             aspectRatio: 1.414 / 1,
             position: "relative",
+            border: borderWidth
+              ? `${borderWidth}px solid ${UiColor.gray}`
+              : undefined,
           }}
         >
           <div

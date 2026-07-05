@@ -81,7 +81,7 @@ export const SpTop = () => {
   return (
     <SpBackgroundContainer>
       <MenuBoard isSp className={SpMenuBoardStyle} />
-      <SpTopContainer backgroundUrl={undefined}>
+      <SpTopContainer backgroundUrl="/images/FV.png">
         <SpTopFilter>
           <SpMarginContainer>
             <SpTopTitleContainer>
@@ -121,6 +121,7 @@ export const SpTop = () => {
                     data={character}
                     className={SpCharacterCardStyle}
                     isSp
+                    borderWidth={2}
                   />
                 ))}
             </SpCharacterCardsContainer>
