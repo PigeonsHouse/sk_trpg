@@ -28,3 +28,8 @@ export const getImageList = <Key extends string>(
 
   return data[convertedKey] ?? data[originalKey];
 };
+
+// public/配下のpng/jpgはビルド時にwebpへ変換され元ファイルは削除されるため、
+// JSONを介さずソースコードから直接パスを参照する場合はこちらで解決する
+export const getStaticImageUrl = (url: string) =>
+  import.meta.env.PROD ? url.replace(/\.(png|jpe?g)$/i, ".webp") : url;

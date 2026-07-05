@@ -9,6 +9,7 @@ import {
 } from "../components";
 import { characterSummaries } from "../content";
 import { UiColor } from "../definitions";
+import { getStaticImageUrl } from "../utils";
 import {
   SpAboutCharactersSection,
   SpAboutContainer,
@@ -81,7 +82,7 @@ export const SpTop = () => {
   return (
     <SpBackgroundContainer>
       <MenuBoard isSp className={SpMenuBoardStyle} />
-      <SpTopContainer backgroundUrl="/images/FV.png">
+      <SpTopContainer backgroundUrl={getStaticImageUrl("/images/FV.png")}>
         <SpTopFilter>
           <SpMarginContainer>
             <SpTopTitleContainer>
