@@ -1,0 +1,128 @@
+[
+  {
+    "id": "kanade-kotoko",
+    "name": "奏 琴子",
+    "height": "147cm",
+    "spriteUrl": "/images/KanadeKotoko/sprite/KanadeKotoko_sprite_0.png"
+  },
+  {
+    "id": "saotome-karen",
+    "name": "早乙女 華恋",
+    "height": "153cm",
+    "spriteUrl": "/images/SaotomeKaren/sprite/SaotomeKaren_sprite_0.png"
+  },
+  {
+    "id": "son-kleinbeck",
+    "name": "ソーン･クラインベック",
+    "height": "157cm(靴込み)",
+    "spriteUrl": "/images/Son/sprite/SonKleinbeck_sprite_0.png"
+  },
+  {
+    "id": "sasuga-kiara",
+    "name": "刺賀 煌亜来",
+    "height": "157cm",
+    "spriteUrl": "/images/SasugaKiara/sprite/SasugaKiara_sprite_0.png"
+  },
+  {
+    "id": "someya-kureno",
+    "name": "染矢 暮乃",
+    "height": "158cm",
+    "spriteUrl": "/images/SomeyaKureno/sprite/SomeyaKureno_sprite_0.png"
+  },
+  {
+    "id": "shuang-ju",
+    "name": "霜菊 ",
+    "height": "160cm",
+    "spriteUrl": "/images/ShuangJu/sprite/ShuangJu_sprite_0.png"
+  },
+  {
+    "id": "satogashima-kumako",
+    "name": "郷ヶ島 熊子",
+    "height": "160cm",
+    "spriteUrl": "/images/SatogashimaKumako/sprite/SatogashimaKumako_sprite_0.png"
+  },
+  {
+    "id": "supika-kosumo",
+    "name": "澄光 こすも",
+    "height": "165cm",
+    "spriteUrl": "/images/SupikaKosumo/sprite/SupikaKosumo_sprite_0.png"
+  },
+  {
+    "id": "shiki-kuryu",
+    "name": "色 玖竜",
+    "height": "168cm",
+    "spriteUrl": "/images/ShikiKuryu/sprite/ShikiKuryu_sprite_0.png"
+  },
+  {
+    "id": "kanade-shirabe",
+    "name": "奏 調",
+    "height": "171cm",
+    "spriteUrl": "/images/KanadeShirabe/sprite/KanadeShirabe_sprite_0.png"
+  },
+  {
+    "id": "kotonoha-shu",
+    "name": "言 周",
+    "height": "171cm",
+    "spriteUrl": "/images/KotonohaShu/sprite/KotonohaShu_sprite_0.png"
+  },
+  {
+    "id": "sarashina-kenji",
+    "name": "更科 健治",
+    "height": "172cm",
+    "spriteUrl": "/images/SarashinaKenji/sprite/SarashinaKenji_sprite_0.png"
+  },
+  {
+    "id": "kurobane-kaoru",
+    "name": "黒羽根 香",
+    "height": "172cm",
+    "spriteUrl": "/images/KurobaneKaoru/sprite/KurobaneKaoru_sprite_1.png"
+  },
+  {
+    "id": "saishiki-kei",
+    "name": "才式 恵",
+    "height": "173cm",
+    "spriteUrl": "/images/SaishikiKei/sprite/SaishikiKei_sprite_0.png"
+  },
+  {
+    "id": "shiomi-ken",
+    "name": "潮海 犍",
+    "height": "176cm",
+    "spriteUrl": "/images/ShiomiKen/sprite/ShiomiKen_sprite_0.png"
+  },
+  {
+    "id": "saihyou-koga",
+    "name": "砕豹 黒牙",
+    "height": "178cm",
+    "spriteUrl": "/images/SaihyouKouga/sprite/SaihyouKouga_sprite_1.png"
+  },
+  {
+    "id": "scarlet-krieger",
+    "name": "スカーレット・クリーガー",
+    "height": "181cm",
+    "spriteUrl": "/images/ScarletKrieger/sprite/ScarletKrieger_sprite_0.png"
+  },
+  {
+    "id": "shizue-kan",
+    "name": "静江 観",
+    "height": "181cm(下駄込)",
+    "spriteUrl": "/images/ShizueKan/sprite/ShizueKan_sprite_1.png"
+  },
+  {
+    "id": "aoi",
+    "name": "葵",
+    "height": "183cm",
+    "spriteUrl": "/images/Aoi/sprite/Aoi_sprite_0.png"
+  },
+  {
+    "id": "shino-kunosuke",
+    "name": "偲野 空之介",
+    "height": "183cm",
+    "spriteUrl": "/images/ShinoKunosuke/sprite/ShinoKunosuke_sprite_0.png"
+  },
+  {
+    "id": "saotome-kaito",
+    "name": "早乙女 海翔",
+    "height": "189cm",
+    "spriteUrl": "/images/SaotomeKaito/sprite/SaotomeKaito_sprite_0.png"
+  }
+]
