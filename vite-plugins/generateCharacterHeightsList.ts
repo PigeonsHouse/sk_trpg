@@ -55,6 +55,7 @@ export function generateCharacterHeightsList(): Plugin {
             name: data.name,
             height,
             spriteUrl: data.sprites?.[0]?.spriteUrl,
+            color: data.colorPalette?.[0],
             heightCm: Number(heightMatch[0]),
           };
         })

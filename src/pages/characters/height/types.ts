@@ -3,6 +3,8 @@ export type CharacterHeightEntry = {
   name: string;
   height: string;
   spriteUrl: string;
+  convertedSpriteUrl?: string;
+  color: string;
 };
 
 export type SortOrder = "asc" | "desc";

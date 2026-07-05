@@ -1,6 +1,7 @@
 import { Link } from "react-router";
 import { GoogleFontIcon, MenuBoard } from "../../../components";
 import { Url, type CharactersId } from "../../../definitions";
+import { getImageUrl } from "../../../utils";
 import {
   CharacterColumn,
   Container,
@@ -80,7 +81,10 @@ export const SpCharacterHeight: React.FC<SpCharacterHeightProps> = ({
                   to={Url.characterTo(entry.id as CharactersId)}
                   className={NoDecorationLinkStyle}
                 >
-                  <SpSpriteImage src={entry.spriteUrl} alt={entry.name} />
+                  <SpSpriteImage
+                    src={getImageUrl(entry, "sprite")}
+                    alt={entry.name}
+                  />
                 </Link>
                 <SpCaptionContainer>
                   <SpCaptionName>{entry.name}</SpCaptionName>

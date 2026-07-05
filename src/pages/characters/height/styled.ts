@@ -7,6 +7,7 @@ import {
   SP_MAX_WIDTH,
   UiColor,
 } from "../../../definitions";
+import { withAlpha } from "../../../utils";
 import { GUIDE_LINE_STEP } from "./types";
 
 // PCは横スクロールバーを画面下部に固定したいのでheight:100dvh+overflow:hiddenで高さを固定する。
@@ -179,6 +180,17 @@ export const NoDecorationLinkStyle = css`
   transition: opacity 0.15s;
   &:hover {
     opacity: 0.7;
+  }
+`;
+
+// PC版の立ち絵リンク。ホバー時にopacityではなく、キャラクターのcolorPalette[0]を使ったドロップシャドウを付ける
+export const SpriteLinkStyle = (shadowColor: string) => css`
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: filter 0.15s;
+  &:hover {
+    filter: drop-shadow(0 0 16px ${withAlpha(shadowColor, 0.5)});
   }
 `;
 

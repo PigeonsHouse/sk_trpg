@@ -1,6 +1,7 @@
 import { Link } from "react-router";
 import { GoogleFontIcon, HeadBoard, MenuBoard } from "../../../components";
 import { Url, type CharactersId } from "../../../definitions";
+import { getImageUrl } from "../../../utils";
 import {
   BaselineBar,
   CaptionContainer,
@@ -17,11 +18,11 @@ import {
   HeadBoardContainer,
   MainContentsContainer,
   MenuBoardStyle,
-  NoDecorationLinkStyle,
   SortSignBoard,
   SortSignLabel,
   SortSignWrapper,
   SpriteImage,
+  SpriteLinkStyle,
 } from "./styled";
 import {
   GUIDE_LINE_COUNT,
@@ -78,9 +79,12 @@ export const PcCharacterHeight: React.FC<PcCharacterHeightProps> = ({
               <CharacterColumn key={entry.id}>
                 <Link
                   to={Url.characterTo(entry.id as CharactersId)}
-                  className={NoDecorationLinkStyle}
+                  className={SpriteLinkStyle(entry.color)}
                 >
-                  <SpriteImage src={entry.spriteUrl} alt={entry.name} />
+                  <SpriteImage
+                    src={getImageUrl(entry, "sprite")}
+                    alt={entry.name}
+                  />
                 </Link>
                 <CaptionContainer>
                   <CaptionName>{entry.name}</CaptionName>

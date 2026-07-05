@@ -6,7 +6,11 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { defineConfig } from "vite";
 import type vitePrerenderType from "vite-plugin-prerender";
-import { generateCharactersList, publicWebpConverter } from "./vite-plugins";
+import {
+  generateCharacterHeightsList,
+  generateCharactersList,
+  publicWebpConverter,
+} from "./vite-plugins";
 
 const dirname = path.dirname(fileURLToPath(import.meta.url));
 const require = createRequire(import.meta.url);
@@ -30,10 +34,13 @@ const getPrerenderRoutes = () => {
 const removeHydratedClass = (html: string) =>
   html
     .replace(/\sclass="app-hydrated"/, "")
-    .replace(/\sclass="([^"]*)\bapp-hydrated\b([^"]*)"/, (_match, before, after) => {
-      const className = `${before} ${after}`.trim().replace(/\s+/g, " ");
-      return className ? ` class="${className}"` : "";
-    });
+    .replace(
+      /\sclass="([^"]*)\bapp-hydrated\b([^"]*)"/,
+      (_match, before, after) => {
+        const className = `${before} ${after}`.trim().replace(/\s+/g, " ");
+        return className ? ` class="${className}"` : "";
+      }
+    );
 
 export default defineConfig({
   build: {
@@ -43,6 +50,7 @@ export default defineConfig({
     react(),
     generouted(),
     generateCharactersList(),
+    generateCharacterHeightsList(),
     publicWebpConverter(50),
     vitePrerender({
       staticDir: path.join(dirname, "dist"),
