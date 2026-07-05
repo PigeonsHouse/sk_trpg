@@ -259,14 +259,14 @@
           "name": "国光 颯",
           "enName": "KUNIMITSU HAYATO",
           "color": "#97A791",
-          "iconUrl": "/images/KanadeShirabe/companions/kunimitsu.png",
+          "iconUrl": "/images/KanadeShirabe/companions/Kunimitsu.png",
           "nickName": "国光くん"
         },
         {
           "name": "絆馬 赤",
           "enName": "HANBA AKA",
-          "color": "#B20000",
-          "iconUrl": "/images/KanadeShirabe/companions/yasohachi.png",
+          "color": "#9b0404",
+          "iconUrl": "/images/KanadeShirabe/companions/Hanba.png",
           "nickName": "絆馬くん"
         },
         {
@@ -330,20 +330,20 @@
   ],
   "qaList": [
     {
-      "iconUrl": "/images/icon_にせもの.jpg",
-      "answer": "休日、"
+      "iconUrl": "/images/KanadeShirabe/icon/KanadeShirabe_icon_0.png",
+      "answer": "休日は、うーん...インプットに努めることが多いかな？\n気になっていた本を読んでみたり、街を歩いてウィンドウショッピングしたり...。\n日々の発見が仕事につながることもあると思って。"
     },
     {
-      "iconUrl": "/images/icon_にせもの.jpg",
-      "answer": "海か山か...どちらも良いところがあるね"
+      "iconUrl": "/images/KanadeShirabe/icon/KanadeShirabe_icon_0.png",
+      "answer": "集合場所には、予定時刻の数分前に行くようにしてるかな。\nあんまり早く着いて待ってると気を遣わせちゃうでしょ？\n思ったより早めに着いた時も大体周辺で時間潰してから行くかな。"
     },
     {
-      "iconUrl": "/images/icon_にせもの.jpg",
-      "answer": "願い事が一つ叶うとしたら...そうだね、僕の願いが叶うなら、僕の願いを叶えてほしいかな。もしくは、僕以外の願いを叶えてほしいね。だって願い事が一つ叶うのだから、願い事は叶えたいからね。"
+      "iconUrl": "/images/KanadeShirabe/icon/KanadeShirabe_icon_0.png",
+      "answer": "そうだなぁ。ありきたりかもしれないけど、毎日が退屈なほど平穏であって欲しいな。\n誰も、傷つかない世界であってくれれば、それで十分だよ。"
     },
     {
-      "iconUrl": "/images/icon_にせもの.jpg",
-      "answer": "最後の一日を大切に過ごすよ"
+      "iconUrl": "/images/KanadeShirabe/icon/KanadeShirabe_icon_0.png",
+      "answer": "あと一日って時にできることなんて限られちゃうよね。\nあぁ、でも...大切な人には、最後に会っておきたいものだよね。\n彼のことは、一人にはできないもの。"
     }
   ],
   "comment": "鈴木乖離のTRPGにお熱になった原因の男です。\nこの男が、というのもありますが、卓の満足度がとにかく高く、「また奏調と旅がしたい」と思ってしまいました。\n今では散々継続に連れ回し、存在しない卓の思い出（という名のSS）を書き連ねています。この男が本当に好きなんですよね。\n\n年を重ねるごとに性癖が歪んできておりますが、この男のせいで「ちょっと中性的な優しいお兄さん」が癖になりました。こういう顔の男にめっぽう弱くなり、狂わされたなと感じます。まだまだ君には死んでもらっては困るよ、一緒に旅しておくれよ",
