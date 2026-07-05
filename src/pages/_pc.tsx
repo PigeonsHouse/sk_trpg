@@ -26,7 +26,7 @@ export const PcTop = () => {
                 data={character}
                 className={CharacterCardStyle}
                 withoutName
-                borderWidth={1}
+                borderWidth={2}
               />
             ))}
         </TopItemContainer>
