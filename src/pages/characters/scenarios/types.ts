@@ -16,6 +16,8 @@ export type ScenarioAutoEntry = {
 export type ScenarioManualData = {
   completedExtra: string[];
   upcoming: string[];
+  watched: string[];
+  wishlist: string[];
 };
 
 // 画面表示用に自動生成分と手動追加分をマージした1件分

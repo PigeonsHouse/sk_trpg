@@ -28,18 +28,22 @@ import type { ScenarioListItem } from "./types";
 type PcCharacterScenariosProps = {
   completedList: ScenarioListItem[];
   upcomingList: string[];
+  watchedList: string[];
+  wishlist: string[];
 };
 
 export const PcCharacterScenarios: React.FC<PcCharacterScenariosProps> = ({
   completedList,
   upcomingList,
+  watchedList,
+  wishlist,
 }) => {
   return (
     <Container>
       <MenuBoard className={MenuBoardStyle} />
 
       <HeadBoardContainer>
-        <HeadBoard label="通過シナリオ一覧" enLabel="Scenario History" />
+        <HeadBoard label="線路図" enLabel="Route Map" />
       </HeadBoardContainer>
 
       <MainContentsContainer>
@@ -90,6 +94,28 @@ export const PcCharacterScenarios: React.FC<PcCharacterScenariosProps> = ({
           )}
         </Section>
 
+        {watchedList.length > 0 && (
+          <Section>
+            <SectionTitleContainer>
+              <SectionTitle>視聴済みシナリオ</SectionTitle>
+              <SectionEnTitle>Watched</SectionEnTitle>
+            </SectionTitleContainer>
+
+            <ListCard>
+              <ScenarioList>
+                {watchedList.map((title, idx) => (
+                  <ScenarioItem key={`${title}-${idx}`}>
+                    <ScenarioTitleRow>
+                      <ScenarioBullet />
+                      <ScenarioTitle>{title}</ScenarioTitle>
+                    </ScenarioTitleRow>
+                  </ScenarioItem>
+                ))}
+              </ScenarioList>
+            </ListCard>
+          </Section>
+        )}
+
         {upcomingList.length > 0 && (
           <Section>
             <SectionTitleContainer>
@@ -100,6 +126,28 @@ export const PcCharacterScenarios: React.FC<PcCharacterScenariosProps> = ({
             <ListCard>
               <ScenarioList>
                 {upcomingList.map((title, idx) => (
+                  <ScenarioItem key={`${title}-${idx}`}>
+                    <ScenarioTitleRow>
+                      <ScenarioBullet />
+                      <ScenarioTitle>{title}</ScenarioTitle>
+                    </ScenarioTitleRow>
+                  </ScenarioItem>
+                ))}
+              </ScenarioList>
+            </ListCard>
+          </Section>
+        )}
+
+        {wishlist.length > 0 && (
+          <Section>
+            <SectionTitleContainer>
+              <SectionTitle>行きたいシナリオ</SectionTitle>
+              <SectionEnTitle>Wishlist</SectionEnTitle>
+            </SectionTitleContainer>
+
+            <ListCard>
+              <ScenarioList>
+                {wishlist.map((title, idx) => (
                   <ScenarioItem key={`${title}-${idx}`}>
                     <ScenarioTitleRow>
                       <ScenarioBullet />

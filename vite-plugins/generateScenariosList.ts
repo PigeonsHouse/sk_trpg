@@ -14,6 +14,57 @@ type ScenarioEntry = {
   characters: ScenarioCharacterRef[];
 };
 
+// scenarioManual.json内でキャラJSON側の反映有無をチェックする対象のキー
+const MANUAL_LIST_KEYS = [
+  "completedExtra",
+  "upcoming",
+  "watched",
+  "wishlist",
+] as const;
+
+/**
+ * scenarioManual.json(手動更新分)のうち、キャラJSON側にhistoriesとして
+ * 既に反映されたタイトルを取り除く(通過予定→通過済み、行きたい→通過済み等で
+ * 不要になった手動記述の掃除)
+ */
+function pruneManualScenarios(autoTitles: Set<string>, manualFile: string) {
+  try {
+    if (!fs.existsSync(manualFile)) return;
+
+    const raw = fs.readFileSync(manualFile, "utf-8");
+    const manual = JSON.parse(raw);
+    let changed = false;
+
+    const pruned = { ...manual };
+    for (const key of MANUAL_LIST_KEYS) {
+      const list: unknown = manual[key];
+      if (!Array.isArray(list)) continue;
+
+      const filtered = list.filter(
+        (title) => typeof title !== "string" || !autoTitles.has(title)
+      );
+      if (filtered.length !== list.length) changed = true;
+      pruned[key] = filtered;
+    }
+
+    if (!changed) return;
+
+    fs.writeFileSync(
+      manualFile,
+      JSON.stringify(pruned, null, 2) + "\n",
+      "utf-8"
+    );
+    console.log(
+      `[generate-scenarios-list] Pruned scenarios already covered by character pages from ${manualFile}`
+    );
+  } catch (error) {
+    console.error(
+      "[generate-scenarios-list] Failed to prune scenarioManual.json:",
+      error
+    );
+  }
+}
+
 /**
  * Viteプラグイン: src/content/characters/内のJSONファイルから
  * シナリオ一覧ページ用のsrc/content/scenarios.jsonを自動生成する
@@ -21,10 +72,14 @@ type ScenarioEntry = {
  *
  * 各キャラクターのhistories[0](最初の履歴)のシナリオのみ、
  * そのシナリオを通過したキャラクターとして紐付ける
+ *
+ * あわせて、src/content/scenarioManual.json(手動更新分)のうち
+ * キャラJSON側に反映済みとなったタイトルを自動で取り除く
  */
 export function generateScenariosList(): Plugin {
   const charactersDir = "src/content/characters";
   const outputFile = "src/content/scenarios.json";
+  const manualFile = "src/content/scenarioManual.json";
 
   function updateScenariosList() {
     try {
@@ -85,6 +140,8 @@ export function generateScenariosList(): Plugin {
       console.log(
         `[generate-scenarios-list] Updated ${outputFile} with ${entries.length} scenarios`
       );
+
+      pruneManualScenarios(new Set(scenarioMap.keys()), manualFile);
     } catch (error) {
       console.error("[generate-scenarios-list] Error:", error);
     }

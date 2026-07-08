@@ -30,11 +30,15 @@ import type { ScenarioListItem } from "./types";
 type SpCharacterScenariosProps = {
   completedList: ScenarioListItem[];
   upcomingList: string[];
+  watchedList: string[];
+  wishlist: string[];
 };
 
 export const SpCharacterScenarios: React.FC<SpCharacterScenariosProps> = ({
   completedList,
   upcomingList,
+  watchedList,
+  wishlist,
 }) => {
   return (
     <SpContainer>
@@ -42,8 +46,8 @@ export const SpCharacterScenarios: React.FC<SpCharacterScenariosProps> = ({
 
       <SpMainContentsContainer>
         <SpTitleContainer>
-          <SpTitle>通過シナリオ一覧</SpTitle>
-          <SpEnTitle>Scenario History</SpEnTitle>
+          <SpTitle>線路図</SpTitle>
+          <SpEnTitle>Route Map</SpEnTitle>
         </SpTitleContainer>
 
         <SpSection>
@@ -93,6 +97,28 @@ export const SpCharacterScenarios: React.FC<SpCharacterScenariosProps> = ({
           )}
         </SpSection>
 
+        {watchedList.length > 0 && (
+          <SpSection>
+            <SpSectionTitleContainer>
+              <SpSectionTitle>視聴済みシナリオ</SpSectionTitle>
+              <SpSectionEnTitle>Watched</SpSectionEnTitle>
+            </SpSectionTitleContainer>
+
+            <SpListCard>
+              <SpScenarioList>
+                {watchedList.map((title, idx) => (
+                  <SpScenarioItem key={`${title}-${idx}`}>
+                    <SpScenarioTitleRow>
+                      <SpScenarioBullet />
+                      <SpScenarioTitle>{title}</SpScenarioTitle>
+                    </SpScenarioTitleRow>
+                  </SpScenarioItem>
+                ))}
+              </SpScenarioList>
+            </SpListCard>
+          </SpSection>
+        )}
+
         {upcomingList.length > 0 && (
           <SpSection>
             <SpSectionTitleContainer>
@@ -103,6 +129,28 @@ export const SpCharacterScenarios: React.FC<SpCharacterScenariosProps> = ({
             <SpListCard>
               <SpScenarioList>
                 {upcomingList.map((title, idx) => (
+                  <SpScenarioItem key={`${title}-${idx}`}>
+                    <SpScenarioTitleRow>
+                      <SpScenarioBullet />
+                      <SpScenarioTitle>{title}</SpScenarioTitle>
+                    </SpScenarioTitleRow>
+                  </SpScenarioItem>
+                ))}
+              </SpScenarioList>
+            </SpListCard>
+          </SpSection>
+        )}
+
+        {wishlist.length > 0 && (
+          <SpSection>
+            <SpSectionTitleContainer>
+              <SpSectionTitle>行きたいシナリオ</SpSectionTitle>
+              <SpSectionEnTitle>Wishlist</SpSectionEnTitle>
+            </SpSectionTitleContainer>
+
+            <SpListCard>
+              <SpScenarioList>
+                {wishlist.map((title, idx) => (
                   <SpScenarioItem key={`${title}-${idx}`}>
                     <SpScenarioTitleRow>
                       <SpScenarioBullet />
