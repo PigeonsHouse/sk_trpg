@@ -1,10 +1,11 @@
 import { Helmet } from "react-helmet-async";
 import { APP_NAME } from "../../../definitions";
+import { getStaticImageUrl } from "../../../utils";
 
 const SITE_URL = import.meta.env.VITE_SITE_URL?.replace(/\/$/, "") ?? "";
 const DEFAULT_DESCRIPTION =
   "鈴木乖離という人間がTRPGで生み出したプレイキャラクターのまとめサイトです。";
-const DEFAULT_IMAGE_URL = "/images/SuzukiKairi/icon.png";
+const DEFAULT_IMAGE_URL = getStaticImageUrl("/images/FV_ogp.png");
 
 const toAbsoluteUrl = (url: string) => {
   if (url.startsWith("http://") || url.startsWith("https://")) return url;
