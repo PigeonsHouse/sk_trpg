@@ -2,7 +2,7 @@
   "shortId": "KOR",
   "name": "黒羽根 香",
   "enName": "KUROBANE KAORU",
-  "thumbnailUrl": "/images/KurobaneKaoru/sprite/KurobaneKaoru_sprite_1.png",
+  "thumbnailUrl": "/images/KurobaneKaoru/KurobaneKaoru_ad.png",
   "colorPalette": [
     "#291806",
     "#111111",
@@ -20,6 +20,10 @@
     "from": "??"
   },
   "sprites": [
+    {
+      "iconUrl": "/images/KurobaneKaoru/icon/KurobaneKaoru_icon_0.png",
+      "spriteUrl": "/images/KurobaneKaoru/sprite/KurobaneKaoru_sprite_0.png"
+    },
     {
       "iconUrl": "/images/KurobaneKaoru/icon/KurobaneKaoru_icon_1.png",
       "spriteUrl": "/images/KurobaneKaoru/sprite/KurobaneKaoru_sprite_1.png"
@@ -80,19 +84,19 @@
   ],
   "qaList": [
     {
-      "iconUrl": "/images/KurobaneKaoru/icon/KurobaneKaoru_icon_1.png",
+      "iconUrl": "/images/KurobaneKaoru/icon/KurobaneKaoru_icon_0.png",
       "answer": "オフはエステ行ったりコスメ会に行ったり、自分磨きで忙しいわ。\n平日はお店もあって、なかなかカラダのお手入れができなくってネ..."
     },
     {
-      "iconUrl": "/images/KurobaneKaoru/icon/KurobaneKaoru_icon_1.png",
+      "iconUrl": "/images/KurobaneKaoru/icon/KurobaneKaoru_icon_0.png",
       "answer": "基本時間ぴったりに合わせるワ。待つのも待たせるのも好きじゃないわね。"
     },
     {
-      "iconUrl": "/images/KurobaneKaoru/icon/KurobaneKaoru_icon_1.png",
+      "iconUrl": "/images/KurobaneKaoru/icon/KurobaneKaoru_icon_0.png",
       "answer": "願いはかな...あ～んやだ、なんてもないわよ。\nやっぱり老けないカラダが欲しいわ。この顔が老けるの、世界の危機が過ぎるデショ...？"
     },
     {
-      "iconUrl": "/images/KurobaneKaoru/icon/KurobaneKaoru_icon_1.png",
+      "iconUrl": "/images/KurobaneKaoru/icon/KurobaneKaoru_icon_0.png",
       "answer": "ウ～ン、地球は捨てて別の星にでも行ってやりたいわね。\nだぁって、みすみす終わりを待つなんて癪じゃない！"
     }
   ],
