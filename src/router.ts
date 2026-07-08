@@ -2,7 +2,13 @@
 /* eslint-disable */
 import { components, hooks, utils } from "@generouted/react-router/client";
 
-export type Path = `/` | `/about` | `/characters/:name` | `/characters/height`;
+export type Path =
+  | `/`
+  | `/about`
+  | `/characters/:name`
+  | `/characters/color-wheel`
+  | `/characters/height`
+  | `/characters/scenarios`;
 
 export type Params = {
   "/characters/:name": { name: string };

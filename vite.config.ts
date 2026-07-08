@@ -11,6 +11,7 @@ import {
   generateCharactersList,
   publicWebpConverter,
 } from "./vite-plugins";
+import { generateScenariosList } from "./vite-plugins/generateScenariosList";
 
 const dirname = path.dirname(fileURLToPath(import.meta.url));
 const require = createRequire(import.meta.url);
@@ -51,6 +52,7 @@ export default defineConfig({
     generouted(),
     generateCharactersList(),
     generateCharacterHeightsList(),
+    generateScenariosList(),
     publicWebpConverter(50),
     vitePrerender({
       staticDir: path.join(dirname, "dist"),

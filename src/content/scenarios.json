@@ -1,0 +1,253 @@
+[
+  {
+    "title": "星の神話、エンドロール",
+    "characters": [
+      {
+        "id": "kanade-shirabe",
+        "name": "奏 調",
+        "iconUrl": "/images/KanadeShirabe/icon/KanadeShirabe_icon_0.png",
+        "color": "#8A809E"
+      }
+    ]
+  },
+  {
+    "title": "ごぜんにじにあいにきて。",
+    "characters": []
+  },
+  {
+    "title": "凍夏",
+    "characters": [
+      {
+        "id": "kanade-kotoko",
+        "name": "奏 琴子",
+        "iconUrl": "/images/KanadeKotoko/icon/KanadeKotoko_icon_0.png",
+        "color": "#1B29A4"
+      }
+    ]
+  },
+  {
+    "title": "星の吸血鬼にさよならを",
+    "characters": [
+      {
+        "id": "saotome-kaito",
+        "name": "早乙女 海翔",
+        "iconUrl": "/images/SaotomeKaito/icon/SaotomeKaito_icon_0.png",
+        "color": "#FF1C7E"
+      }
+    ]
+  },
+  {
+    "title": "夜明けを求めた者たち",
+    "characters": [
+      {
+        "id": "son-kleinbeck",
+        "name": "ソーン･クラインベック",
+        "iconUrl": "/images/Son/icon/SonKleinbeck_icon_0.png",
+        "color": "#FF0A0A"
+      }
+    ]
+  },
+  {
+    "title": "砂上のβとxへの回帰",
+    "characters": [
+      {
+        "id": "sasuga-kiara",
+        "name": "刺賀 煌亜来",
+        "iconUrl": "/images/SasugaKiara/icon/SasugaKiara_icon_0.png",
+        "color": "#F20C43"
+      }
+    ]
+  },
+  {
+    "title": "彼方からの君に捧ぐ",
+    "characters": [
+      {
+        "id": "sarashina-kenji",
+        "name": "更科 健治",
+        "iconUrl": "/images/SarashinaKenji/icon/SarashinaKenji_icon_0.png",
+        "color": "#EE861E"
+      }
+    ]
+  },
+  {
+    "title": "Mua",
+    "characters": [
+      {
+        "id": "shiomi-ken",
+        "name": "潮海 犍",
+        "iconUrl": "/images/ShiomiKen/icon/ShiomiKen_icon_0.png",
+        "color": "#1616FF"
+      }
+    ]
+  },
+  {
+    "title": "幽世常世の満天下",
+    "characters": [
+      {
+        "id": "shuang-ju",
+        "name": "霜菊 ",
+        "iconUrl": "/images/ShuangJu/icon/ShuangJu_icon_0.png",
+        "color": "#a5e90c"
+      }
+    ]
+  },
+  {
+    "title": "不思議書店と夢の魔本",
+    "characters": [
+      {
+        "id": "saotome-karen",
+        "name": "早乙女 華恋",
+        "iconUrl": "/images/SaotomeKaren/icon/SaotomeKaren_icon_0.png",
+        "color": "#F85C9F"
+      }
+    ]
+  },
+  {
+    "title": "私のエトワール",
+    "characters": [
+      {
+        "id": "shiki-kuryu",
+        "name": "色 玖竜",
+        "iconUrl": "/images/ShikiKuryu/icon/ShikiKuryu_icon_0.png",
+        "color": "#1F4E22"
+      }
+    ]
+  },
+  {
+    "title": "辜月のN",
+    "characters": [
+      {
+        "id": "saishiki-kei",
+        "name": "才式 恵",
+        "iconUrl": "/images/SaishikiKei/icon/SaishikiKei_icon_0.png",
+        "color": "#187178"
+      }
+    ]
+  },
+  {
+    "title": "ねむるアクアリウム",
+    "characters": []
+  },
+  {
+    "title": "夏に逃げ水",
+    "characters": []
+  },
+  {
+    "title": "爛爛",
+    "characters": [
+      {
+        "id": "scarlet-krieger",
+        "name": "スカーレット・クリーガー",
+        "iconUrl": "/images/ScarletKrieger/icon/ScarletKrieger_icon_0.png",
+        "color": "#FF2B00"
+      }
+    ]
+  },
+  {
+    "title": "狂気山脈 ～邪神の山嶺～",
+    "characters": [
+      {
+        "id": "satogashima-kumako",
+        "name": "郷ヶ島 熊子",
+        "iconUrl": "/images/SatogashimaKumako/icon/SatogashimaKumako_icon_0.png",
+        "color": "#B15E00"
+      }
+    ]
+  },
+  {
+    "title": "聞き耳たてますか？",
+    "characters": []
+  },
+  {
+    "title": "風の又三郎 ‐Scarlet Girl with Wind Voice‐",
+    "characters": [
+      {
+        "id": "supika-kosumo",
+        "name": "澄光 こすも",
+        "iconUrl": "/images/SupikaKosumo/icon/SupikaKosumo_icon_0.png",
+        "color": "#1725E0"
+      }
+    ]
+  },
+  {
+    "title": "ifの為のお茶会を",
+    "characters": []
+  },
+  {
+    "title": "愛罠蜂",
+    "characters": [
+      {
+        "id": "kurobane-kaoru",
+        "name": "黒羽根 香",
+        "iconUrl": "/images/KurobaneKaoru/icon/KurobaneKaoru_icon_1.png",
+        "color": "#291806"
+      }
+    ]
+  },
+  {
+    "title": "特異点",
+    "characters": [
+      {
+        "id": "aoi",
+        "name": "葵",
+        "iconUrl": "/images/Aoi/icon/Aoi_icon_0.png",
+        "color": "#60B3A9"
+      }
+    ]
+  },
+  {
+    "title": "al fine に鳴く夜鳴鶯",
+    "characters": [
+      {
+        "id": "kotonoha-shu",
+        "name": "言 周",
+        "iconUrl": "/images/KotonohaShu/icon/KotonohaShu_icon_0.png",
+        "color": "#aaaaaa"
+      }
+    ]
+  },
+  {
+    "title": "ソープスクール",
+    "characters": [
+      {
+        "id": "shino-kunosuke",
+        "name": "偲野 空之介",
+        "iconUrl": "/images/ShinoKunosuke/icon/ShinoKunosuke_icon_0.png",
+        "color": "#3A8C59"
+      }
+    ]
+  },
+  {
+    "title": "夕星シンフォニア",
+    "characters": [
+      {
+        "id": "someya-kureno",
+        "name": "染矢 暮乃",
+        "iconUrl": "/images/SomeyaKureno/icon/SomeyaKureno_icon_0.png",
+        "color": "#5375BA"
+      }
+    ]
+  },
+  {
+    "title": "静なるテロリスタ",
+    "characters": [
+      {
+        "id": "shizue-kan",
+        "name": "静江 観",
+        "iconUrl": "/images/ShizueKan/icon/ShizueKan_icon_1.png",
+        "color": "#586E43"
+      }
+    ]
+  },
+  {
+    "title": "Radiant Abyss",
+    "characters": [
+      {
+        "id": "saihyou-koga",
+        "name": "砕豹 黒牙",
+        "iconUrl": "/images/SaihyouKouga/icon/SaihyouKouga_icon_1.png",
+        "color": "#1B1B1C"
+      }
+    ]
+  }
+]
