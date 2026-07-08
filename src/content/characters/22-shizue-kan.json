@@ -21,6 +21,10 @@
   },
   "sprites": [
     {
+      "iconUrl": "/images/ShizueKan/icon/ShizueKan_icon_0.png",
+      "spriteUrl": "/images/ShizueKan/sprite/ShizueKan_sprite_0.png"
+    },
+    {
       "iconUrl": "/images/ShizueKan/icon/ShizueKan_icon_1.png",
       "spriteUrl": "/images/ShizueKan/sprite/ShizueKan_sprite_1.png"
     },
