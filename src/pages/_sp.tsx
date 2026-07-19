@@ -23,6 +23,14 @@ import {
   SpContactSection,
   SpMarginContainer,
   SpMenuBoardStyle,
+  SpProfileDescription,
+  SpProfileIcon,
+  SpProfileName,
+  SpProfileTagLabel,
+  SpProfileTagRow,
+  SpProfileTagsContainer,
+  SpProfileTagValue,
+  SpProfileTextBlock,
   SpSnsContainer,
   SpTopContainer,
   SpTopFilter,
@@ -97,7 +105,7 @@ export const SpTop = () => {
           {...brailleBlockProps}
         />
         <BrailleBlock
-          className={SpBrailleBlockStyle({ bottom: 520 })}
+          className={SpBrailleBlockStyle({ bottom: 750 })}
           {...brailleBlockProps}
         />
         <SpMarginContainer>
@@ -128,10 +136,34 @@ export const SpTop = () => {
             </SpCharacterCardsContainer>
           </SpAboutCharactersSection>
           <SpContactSection>
-            <SpAboutSectionTitle>CONTACT</SpAboutSectionTitle>
+            <SpAboutSectionTitle>PROFILE</SpAboutSectionTitle>
+            <SpProfileIcon
+              src={getStaticImageUrl("/images/SuzukiKairi/icon.png")}
+              alt="鈴木乖離"
+            />
+            <SpProfileName>鈴木乖離</SpProfileName>
+            <SpProfileTextBlock>
+              <SpProfileDescription>
+                {`しがないTRPGプレイヤー。好きな色は黄色。\n絵を描くのが好きなので、立ち絵をいっぱい描けるTRPGの沼にどっぷりはまってしまったよ。自PCの妄想を詰み重ねて三千里。\nキャラは社不を生みがち。生みの親が社不だからなのかも。`}
+              </SpProfileDescription>
+              <SpProfileTagsContainer>
+                <SpProfileTagRow>
+                  <SpProfileTagLabel>よく遊ぶ時間</SpProfileTagLabel>
+                  <SpProfileTagValue>{`平日21:00～24:00\n休日は終日`}</SpProfileTagValue>
+                </SpProfileTagRow>
+                <SpProfileTagRow>
+                  <SpProfileTagLabel>ゲームシステム</SpProfileTagLabel>
+                  <SpProfileTagValue>CoC、エモクロア</SpProfileTagValue>
+                </SpProfileTagRow>
+                <SpProfileTagRow>
+                  <SpProfileTagLabel>好きなシナリオ傾向</SpProfileTagLabel>
+                  <SpProfileTagValue>エモシ</SpProfileTagValue>
+                </SpProfileTagRow>
+              </SpProfileTagsContainer>
+            </SpProfileTextBlock>
             <SpSnsContainer>
-              <SnsLink variant="x" circleRadius={128} />
-              <SnsLink variant="skeb" circleRadius={128} />
+              <SnsLink variant="x" circleRadius={80} />
+              <SnsLink variant="skeb" circleRadius={80} />
             </SpSnsContainer>
           </SpContactSection>
         </SpMarginContainer>

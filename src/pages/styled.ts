@@ -190,12 +190,77 @@ export const SpContactSection = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 48px;
+  gap: 24px;
   margin-bottom: 32px;
 `;
 
 export const SpSnsContainer = styled.div`
   display: flex;
+  flex-direction: row;
+  gap: 56px;
+`;
+
+export const SpProfileIcon = styled.img`
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  object-fit: cover;
+`;
+
+export const SpProfileName = styled.p`
+  margin: 0;
+  font-size: 24px;
+  font-family: ${FontFamily.Header};
+  font-weight: ${FontWeight.Bold};
+  color: ${UiColor.black};
+`;
+
+export const SpProfileDescription = styled.p`
+  width: 310px;
+  margin: 0;
+  font-size: 12px;
+  line-height: 20px;
+  white-space: pre-wrap;
+  text-align: left;
+  color: ${UiColor.black};
+`;
+
+export const SpProfileTagsContainer = styled.div`
+  display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 8px;
+`;
+
+export const SpProfileTextBlock = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  background: ${UiColor.white};
+  padding: 16px;
+`;
+
+export const SpProfileTagRow = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 16px;
+`;
+
+export const SpProfileTagLabel = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 144px;
+  height: 40px;
+  flex-shrink: 0;
+  background: ${UiColor.yellow};
+  font-size: 12px;
+`;
+
+export const SpProfileTagValue = styled.p`
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  white-space: pre-wrap;
 `;

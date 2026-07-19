@@ -79,7 +79,7 @@ export const AboutSection = styled.section`
 
 export const AboutTitle = styled.h2`
   margin: 0;
-  font-size: 88px;
+  font-size: 64px;
   font-family: ${FontFamily.Header};
   text-align: center;
 `;
@@ -87,7 +87,7 @@ export const AboutTitle = styled.h2`
 export const AboutDescription = styled.p`
   padding: 0 48px;
   margin: 0;
-  font-size: 32px;
+  font-size: 24px;
   letter-spacing: 2px;
   line-height: 2;
   text-align: center;
@@ -113,7 +113,7 @@ export const SectionTitle = styled.h3`
 
 export const SnsLinksContainer = styled.div`
   display: flex;
-  gap: 144px;
+  gap: 56px;
 `;
 
 export const CharacterCardsContainer = styled.div`
@@ -132,6 +132,90 @@ export const ContactSection = styled.section`
   flex-direction: column;
   gap: 96px;
   margin-bottom: 160px;
+`;
+
+export const ProfileRow = styled.div`
+  display: flex;
+  gap: 48px;
+  align-items: flex-start;
+  padding: 0 48px;
+`;
+
+export const ProfileIconColumn = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  flex-shrink: 0;
+`;
+
+export const ProfileIcon = styled.img`
+  width: 250px;
+  height: 250px;
+  border-radius: 125px;
+  object-fit: cover;
+`;
+
+export const ProfileName = styled.p`
+  margin: 0;
+  font-size: 36px;
+  font-family: ${FontFamily.Header};
+  font-weight: ${FontWeight.Bold};
+  color: ${UiColor.black};
+`;
+
+export const ProfileInfoColumn = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  flex: 1;
+`;
+
+export const ProfileTextBlock = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  background: ${UiColor.white};
+  padding: 24px;
+`;
+
+export const ProfileDescription = styled.p`
+  margin: 0;
+  font-size: 12px;
+  line-height: 20px;
+  color: ${UiColor.black};
+  white-space: pre-wrap;
+`;
+
+export const ProfileTagsContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+`;
+
+export const ProfileTagRow = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 16px;
+`;
+
+export const ProfileTagLabel = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 144px;
+  height: 40px;
+  flex-shrink: 0;
+  background: ${UiColor.yellow};
+  font-size: 12px;
+`;
+
+export const ProfileTagValue = styled.p`
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  white-space: pre-wrap;
 `;
 
 export const HeadBoardContainer = styled.div`

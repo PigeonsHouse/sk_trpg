@@ -7,7 +7,7 @@ export const Container = styled.a`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
+  gap: 8px;
 `;
 
 export const Circle = styled.div<{ radius: number }>`
@@ -28,6 +28,6 @@ export const LogoImage = styled.img<{ withPadding: boolean }>`
 
 export const Label = styled.span`
   font-family: ${FontFamily.Header};
-  font-size: 32px;
+  font-size: 16px;
   font-weight: ${FontWeight.Bold};
 `;

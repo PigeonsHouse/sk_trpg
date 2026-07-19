@@ -9,6 +9,7 @@ import {
 } from "../../components";
 import { characterSummaries } from "../../content";
 import { BREAK_POINT } from "../../definitions";
+import { getStaticImageUrl } from "../../utils";
 import {
   AboutDescription,
   AboutSection,
@@ -21,6 +22,17 @@ import {
   Container,
   HeadBoardContainer,
   MainContentsContainer,
+  ProfileDescription,
+  ProfileIcon,
+  ProfileIconColumn,
+  ProfileInfoColumn,
+  ProfileName,
+  ProfileRow,
+  ProfileTagLabel,
+  ProfileTagRow,
+  ProfileTagsContainer,
+  ProfileTagValue,
+  ProfileTextBlock,
   SectionTitle,
   SnsLinksContainer,
   StickyContainer,
@@ -88,19 +100,49 @@ export const PcAbout = () => {
           </CharacterCardsContainer>
         </CharactersSection>
         <ContactSection>
-          <SectionTitle>CONTACT</SectionTitle>
-          <SnsLinksContainer>
-            <SnsLink variant="x" circleRadius={200} />
-            <SnsLink variant="skeb" circleRadius={200} />
-          </SnsLinksContainer>
+          <SectionTitle>PROFILE</SectionTitle>
+          <ProfileRow>
+            <ProfileIconColumn>
+              <ProfileIcon
+                src={getStaticImageUrl("/images/SuzukiKairi/icon.png")}
+                alt="鈴木乖離"
+              />
+              <ProfileName>鈴木乖離</ProfileName>
+            </ProfileIconColumn>
+            <ProfileInfoColumn>
+              <ProfileTextBlock>
+                <ProfileDescription>
+                  {`しがないTRPGプレイヤー。好きな色は黄色。\n絵を描くのが好きなので、立ち絵をいっぱい描けるTRPGの沼にどっぷりはまってしまったよ。自PCの妄想を詰み重ねて三千里。\nキャラは社不を生みがち。生みの親が社不だからなのかも。`}
+                </ProfileDescription>
+                <ProfileTagsContainer>
+                  <ProfileTagRow>
+                    <ProfileTagLabel>よく遊ぶ時間</ProfileTagLabel>
+                    <ProfileTagValue>{`平日21:00～24:00\n休日は終日`}</ProfileTagValue>
+                  </ProfileTagRow>
+                  <ProfileTagRow>
+                    <ProfileTagLabel>ゲームシステム</ProfileTagLabel>
+                    <ProfileTagValue>CoC、エモクロア</ProfileTagValue>
+                  </ProfileTagRow>
+                  <ProfileTagRow>
+                    <ProfileTagLabel>好きなシナリオ傾向</ProfileTagLabel>
+                    <ProfileTagValue>エモシ</ProfileTagValue>
+                  </ProfileTagRow>
+                </ProfileTagsContainer>
+              </ProfileTextBlock>
+              <SnsLinksContainer>
+                <SnsLink variant="x" circleRadius={80} />
+                <SnsLink variant="skeb" circleRadius={80} />
+              </SnsLinksContainer>
+            </ProfileInfoColumn>
+          </ProfileRow>
         </ContactSection>
       </MainContentsContainer>
 
       <HeadBoardContainer>
         <HeadBoard label="このサイトは何？" enLabel="What is this place?" />
       </HeadBoardContainer>
-      <BrailleBlock top={1040} />
-      <BrailleBlock bottom={640} />
+      <BrailleBlock top={800} />
+      <BrailleBlock bottom={920} />
     </Container>
   );
 };
