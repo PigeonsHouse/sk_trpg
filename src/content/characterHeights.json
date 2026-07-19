@@ -87,7 +87,7 @@
     "id": "kurobane-kaoru",
     "name": "黒羽根 香",
     "height": "172cm",
-    "spriteUrl": "/images/KurobaneKaoru/sprite/KurobaneKaoru_sprite_1.png",
+    "spriteUrl": "/images/KurobaneKaoru/sprite/KurobaneKaoru_sprite_0.png",
     "color": "#291806"
   },
   {
@@ -108,7 +108,7 @@
     "id": "saihyou-koga",
     "name": "砕豹 黒牙",
     "height": "178cm",
-    "spriteUrl": "/images/SaihyouKouga/sprite/SaihyouKouga_sprite_1.png",
+    "spriteUrl": "/images/SaihyouKouga/sprite/SaihyouKouga_sprite_0.png",
     "color": "#1B1B1C"
   },
   {
@@ -122,7 +122,7 @@
     "id": "shizue-kan",
     "name": "静江 観",
     "height": "181cm(下駄込)",
-    "spriteUrl": "/images/ShizueKan/sprite/ShizueKan_sprite_1.png",
+    "spriteUrl": "/images/ShizueKan/sprite/ShizueKan_sprite_0.png",
     "color": "#586E43"
   },
   {

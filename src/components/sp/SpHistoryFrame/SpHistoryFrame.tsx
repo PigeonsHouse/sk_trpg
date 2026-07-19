@@ -122,45 +122,47 @@ export const SpHistoryFrame: React.FC<SpHistoryFrameProps> = ({
             src={getImageUrl(histories[selectedHistoryIndex], "icon")}
           />
           <CardComment>{histories[selectedHistoryIndex].comment}</CardComment>
-          <CardCompanionContainer>
-            <CardCompanionTitle>同行者</CardCompanionTitle>
-            <CardCompanionCoverContainer>
-              <CardCompanionScrollContainer ref={nameContainerRef}>
-                <CompanionListContainer>
-                  {histories[selectedHistoryIndex].companions.map(
-                    (companion, index) => (
-                      <CompanionContainer key={index}>
-                        <CompanionLeftContainer>
-                          <CompanionIcon
-                            src={getImageUrl(companion, "icon")}
-                            companionColor={companion.color}
-                          />
-                          <NameContainer
-                            name={companion.name}
-                            enName={companion.enName}
-                            className={CompanionNameStyle}
-                            isSp
-                          />
-                        </CompanionLeftContainer>
-                        <CompanionRightContainer mainColor={mainColor}>
-                          <GoogleFontIcon
-                            iconName="spatial_audio_off"
-                            size={24}
-                            color={mainColor}
-                            className={IconSwapStyle}
-                          />
-                          <CompanionNickName>
-                            {companion.nickName}
-                          </CompanionNickName>
-                        </CompanionRightContainer>
-                      </CompanionContainer>
-                    )
-                  )}
-                </CompanionListContainer>
-              </CardCompanionScrollContainer>
-              {isRemainRight && <WhiteGradation />}
-            </CardCompanionCoverContainer>
-          </CardCompanionContainer>
+          {histories[selectedHistoryIndex].companions.length > 0 && (
+            <CardCompanionContainer>
+              <CardCompanionTitle>同行者</CardCompanionTitle>
+              <CardCompanionCoverContainer>
+                <CardCompanionScrollContainer ref={nameContainerRef}>
+                  <CompanionListContainer>
+                    {histories[selectedHistoryIndex].companions.map(
+                      (companion, index) => (
+                        <CompanionContainer key={index}>
+                          <CompanionLeftContainer>
+                            <CompanionIcon
+                              src={getImageUrl(companion, "icon")}
+                              companionColor={companion.color}
+                            />
+                            <NameContainer
+                              name={companion.name}
+                              enName={companion.enName}
+                              className={CompanionNameStyle}
+                              isSp
+                            />
+                          </CompanionLeftContainer>
+                          <CompanionRightContainer mainColor={mainColor}>
+                            <GoogleFontIcon
+                              iconName="spatial_audio_off"
+                              size={24}
+                              color={mainColor}
+                              className={IconSwapStyle}
+                            />
+                            <CompanionNickName>
+                              {companion.nickName}
+                            </CompanionNickName>
+                          </CompanionRightContainer>
+                        </CompanionContainer>
+                      )
+                    )}
+                  </CompanionListContainer>
+                </CardCompanionScrollContainer>
+                {isRemainRight && <WhiteGradation />}
+              </CardCompanionCoverContainer>
+            </CardCompanionContainer>
+          )}
           <CardCloseButton onClick={onCloseMenu}>
             <GoogleFontIcon iconName="close" size={24} color={mainColor} />
           </CardCloseButton>

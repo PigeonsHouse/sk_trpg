@@ -179,7 +179,7 @@
       {
         "id": "kurobane-kaoru",
         "name": "黒羽根 香",
-        "iconUrl": "/images/KurobaneKaoru/icon/KurobaneKaoru_icon_1.png",
+        "iconUrl": "/images/KurobaneKaoru/icon/KurobaneKaoru_icon_0.png",
         "color": "#291806"
       }
     ]
@@ -234,7 +234,7 @@
       {
         "id": "shizue-kan",
         "name": "静江 観",
-        "iconUrl": "/images/ShizueKan/icon/ShizueKan_icon_1.png",
+        "iconUrl": "/images/ShizueKan/icon/ShizueKan_icon_0.png",
         "color": "#586E43"
       }
     ]
@@ -245,9 +245,13 @@
       {
         "id": "saihyou-koga",
         "name": "砕豹 黒牙",
-        "iconUrl": "/images/SaihyouKouga/icon/SaihyouKouga_icon_1.png",
+        "iconUrl": "/images/SaihyouKouga/icon/SaihyouKouga_icon_0.png",
         "color": "#1B1B1C"
       }
     ]
+  },
+  {
+    "title": "ディア/Anonymity",
+    "characters": []
   }
 ]
