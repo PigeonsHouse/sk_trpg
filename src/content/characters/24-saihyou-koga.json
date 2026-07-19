@@ -21,6 +21,10 @@
   },
   "sprites": [
     {
+      "iconUrl": "/images/SaihyouKouga/icon/SaihyouKouga_icon_0.png",
+      "spriteUrl": "/images/SaihyouKouga/sprite/SaihyouKouga_sprite_0.png"
+    },
+    {
       "iconUrl": "/images/SaihyouKouga/icon/SaihyouKouga_icon_1.png",
       "spriteUrl": "/images/SaihyouKouga/sprite/SaihyouKouga_sprite_1.png"
     },
@@ -92,23 +96,29 @@
           "nickName": "???"
         }
       ]
+    },
+    {
+      "title": "ディア/Anonymity",
+      "comment": "待ってたぜ、相棒。",
+      "iconUrl": "/images/SaihyouKouga/icon/SaihyouKouga_icon_3-2.png",
+      "companions": []
     }
   ],
   "qaList": [
     {
-      "iconUrl": "/images/SaihyouKouga/icon/SaihyouKouga_icon_1.png",
+      "iconUrl": "/images/SaihyouKouga/icon/SaihyouKouga_icon_0.png",
       "answer": "（数刻考えたが、休みという概念があまりなく、思いつかず黙ってしまう。）"
     },
     {
-      "iconUrl": "/images/SaihyouKouga/icon/SaihyouKouga_icon_1.png",
+      "iconUrl": "/images/SaihyouKouga/icon/SaihyouKouga_icon_0.png",
       "answer": "目的地には、時間通りに着いておかないと、怒られる。"
     },
     {
-      "iconUrl": "/images/SaihyouKouga/icon/SaihyouKouga_icon_1.png",
+      "iconUrl": "/images/SaihyouKouga/icon/SaihyouKouga_icon_0.png",
       "answer": "あの日をやり直せたら、と思う。だが、今の俺には...もう、必要ない。"
     },
     {
-      "iconUrl": "/images/SaihyouKouga/icon/SaihyouKouga_icon_1.png",
+      "iconUrl": "/images/SaihyouKouga/icon/SaihyouKouga_icon_0.png",
       "answer": "地球が、滅亡。...コーヒーでも飲んで、気長に待つ。どうせ、することはない。"
     }
   ],
