@@ -177,5 +177,26 @@
     "enName": "SAIHYOU KOUGA",
     "thumbnailUrl": "/images/SaihyouKouga/SaihyouKouga_ad.png",
     "color": "#1B1B1C"
+  },
+  {
+    "id": "sandoria-k",
+    "name": "サンドリア・K",
+    "enName": "SANDORIA K",
+    "thumbnailUrl": "/images/SandoriaK/SandoriaK_ad.png",
+    "color": "#32cfcf"
+  },
+  {
+    "id": "sekai-chan",
+    "name": "せかいちゃん",
+    "enName": "SEKAI CHAN",
+    "thumbnailUrl": "/images/SekaiChan/SekaiChan_ad.png",
+    "color": "#cedddf"
+  },
+  {
+    "id": "souma-kuniteru",
+    "name": "爽間 国輝",
+    "enName": "SOUMA KUNITERU",
+    "thumbnailUrl": "/images/SoumaKuniteru/SoumaKuniteru_ad.png",
+    "color": "#E85125"
   }
 ]

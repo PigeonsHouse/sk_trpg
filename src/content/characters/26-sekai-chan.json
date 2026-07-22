@@ -1,0 +1,82 @@
+{
+  "shortId": "SKI",
+  "name": "せかいちゃん",
+  "enName": "SEKAI CHAN",
+  "thumbnailUrl": "/images/SekaiChan/SekaiChan_ad.png",
+  "colorPalette": [
+    "#cedddf",
+    "#D5F6CC",
+    "#F5F69E"
+  ],
+  "backgroundUrl": "/images/bg/SekaiChan_bg.jpg",
+  "profile": {
+    "description": "「はじめまして！僕はせかいちゃん！この世界のことなーんでもしってるから、せかいちゃん！\n　わかんないことあったら、どどーんと任せておいて！\n　…なんてね。誰もいないっていうのにね。」\n\n名前は勝手に自分でそう呼んでいるだけ。\n理由は、「名前ってのがあった方がなんか素敵」だから。\n本当の名前があったのかさえもわからない。",
+    "age": "？？？",
+    "gender": "女性",
+    "height": "158cm",
+    "weight": "43kg",
+    "job": "ダミー",
+    "birthday": "ダミー",
+    "from": "？？？"
+  },
+  "sprites": [
+    {
+      "spriteUrl": "/images/SekaiChan/sprite/SekaiChan_sprite_1.png",
+      "iconUrl": "/images/SekaiChan/icon/SekaiChan_icon_1.png"
+    }
+  ],
+  "status": {
+    "type": "CoC6版",
+    "str": 13,
+    "con": 16,
+    "pow": 8,
+    "dex": 10,
+    "app": 18,
+    "siz": 10,
+    "int": 8,
+    "edu": 13,
+    "san": 40,
+    "hp": 13,
+    "mp": 8,
+    "luck": 40,
+    "idea": 40,
+    "knowledge": 65
+  },
+  "skills": {
+    "回避": 67,
+    "隠れる": 70,
+    "聞き耳": 65,
+    "目星": 50,
+    "製作(石のオブジェ)": 80,
+    "ナビゲート": 50,
+    "物理学": 71
+  },
+  "histories": [
+    {
+      "title": "Good morning ALL",
+      "comment": "ひっせい、みてみて！きれいな石をみつけたの！\nしょうがないな～、これひっせいにあげるよ！",
+      "iconUrl": "/images/SekaiChan/icon/SekaiChan_icon_1.png",
+      "companions": []
+    }
+  ],
+  "qaList": [
+    {
+      "answer": "",
+      "iconUrl": "/images/SekaiChan/icon/SekaiChan_icon_1.png"
+    },
+    {
+      "answer": "",
+      "iconUrl": "/images/SekaiChan/icon/SekaiChan_icon_1.png"
+    },
+    {
+      "answer": "",
+      "iconUrl": "/images/SekaiChan/icon/SekaiChan_icon_1.png"
+    },
+    {
+      "answer": "",
+      "iconUrl": "/images/SekaiChan/icon/SekaiChan_icon_1.png"
+    }
+  ],
+  "comment": "ダミー",
+  "artGallery": []
+}

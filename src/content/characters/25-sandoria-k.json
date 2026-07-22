@@ -1,0 +1,83 @@
+{
+  "shortId": "KSK",
+  "name": "サンドリア・K",
+  "enName": "SANDORIA K",
+  "thumbnailUrl": "/images/SandoriaK/SandoriaK_ad.png",
+  "colorPalette": [
+    "#32cfcf",
+    "#0B173C",
+    "#F4F925"
+  ],
+  "backgroundUrl": "/images/bg/SandoriaK_bg.jpg",
+  "profile": {
+    "description": "紗凪家の母 兼 巷で人気のマジシャン“Mrs.KiSaki”。本名は紗凪　刻煌（さなぎ きさき）。裏の顔は怪盗。\n最初はただの大道芸レベルだったが、気がつけばテレビやショーで引っ張りだこの売れっ子に。マジシャンらしからぬ母性がお茶の間にウケたようだ。\n\n「うっふふ、マジックにタネも仕掛けもないんですよ？\n　ほおら、あなたのその目で、確認してくださって良いのよ？」\n\n嘘である。タネと仕掛けだらけである。\nだがそれを感じ取らせない技術と、巧みな話術で人々を欺き続ける。彼女の手腕もあってか、怪盗サンドリア・Kが目の前にいるなど誰も気づかない。",
+    "age": "32（本当は45）",
+    "gender": "女性",
+    "height": "157cm",
+    "weight": "???",
+    "job": "手品師（怪盗）",
+    "birthday": "ダミー",
+    "from": "徳島"
+  },
+  "sprites": [
+    {
+      "spriteUrl": "/images/SandoriaK/sprite/SandoriaK_sprite_1.png",
+      "iconUrl": "/images/SandoriaK/icon/SandoriaK_icon_1.png"
+    }
+  ],
+  "status": {
+    "type": "CoC6版",
+    "str": 10,
+    "con": 8,
+    "pow": 15,
+    "dex": 12,
+    "app": 12,
+    "siz": 9,
+    "int": 11,
+    "edu": 14,
+    "san": 75,
+    "hp": 9,
+    "mp": 15,
+    "luck": 75,
+    "idea": 55,
+    "knowledge": 70
+  },
+  "skills": {
+    "応急手当": 50,
+    "隠す": 76,
+    "図書館": 65,
+    "目星": 75,
+    "変装": 61,
+    "説得": 75,
+    "心理学": 75,
+    "物理学": 31
+  },
+  "histories": [
+    {
+      "title": "豪華客船と怪盗団",
+      "comment": "うっふふ、今日はご馳走ね！トクベツに、焼肉にしちゃいましょうか！",
+      "iconUrl": "/images/SandoriaK/icon/SandoriaK_icon_1.png",
+      "companions": []
+    }
+  ],
+  "qaList": [
+    {
+      "answer": "",
+      "iconUrl": "/images/SandoriaK/icon/SandoriaK_icon_1.png"
+    },
+    {
+      "answer": "",
+      "iconUrl": "/images/SandoriaK/icon/SandoriaK_icon_1.png"
+    },
+    {
+      "answer": "",
+      "iconUrl": "/images/SandoriaK/icon/SandoriaK_icon_1.png"
+    },
+    {
+      "answer": "",
+      "iconUrl": "/images/SandoriaK/icon/SandoriaK_icon_1.png"
+    }
+  ],
+  "comment": "※耳寄り情報※胸は実はまな板。胸パットで盛っています。",
+  "artGallery": []
+}

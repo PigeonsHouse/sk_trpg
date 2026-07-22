@@ -28,11 +28,25 @@
     "color": "#F20C43"
   },
   {
+    "id": "sandoria-k",
+    "name": "サンドリア・K",
+    "height": "157cm",
+    "spriteUrl": "/images/SandoriaK/sprite/SandoriaK_sprite_1.png",
+    "color": "#32cfcf"
+  },
+  {
     "id": "someya-kureno",
     "name": "染矢 暮乃",
     "height": "158cm",
     "spriteUrl": "/images/SomeyaKureno/sprite/SomeyaKureno_sprite_0.png",
     "color": "#5375BA"
+  },
+  {
+    "id": "sekai-chan",
+    "name": "せかいちゃん",
+    "height": "158cm",
+    "spriteUrl": "/images/SekaiChan/sprite/SekaiChan_sprite_1.png",
+    "color": "#cedddf"
   },
   {
     "id": "shuang-ju",
@@ -138,6 +152,13 @@
     "height": "183cm",
     "spriteUrl": "/images/ShinoKunosuke/sprite/ShinoKunosuke_sprite_0.png",
     "color": "#3A8C59"
+  },
+  {
+    "id": "souma-kuniteru",
+    "name": "爽間 国輝",
+    "height": "186cm",
+    "spriteUrl": "/images/SoumaKuniteru/sprite/SoumaKuniteru_sprite_1.png",
+    "color": "#E85125"
   },
   {
     "id": "saotome-kaito",

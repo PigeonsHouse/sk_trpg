@@ -253,5 +253,38 @@
   {
     "title": "ディア/Anonymity",
     "characters": []
+  },
+  {
+    "title": "豪華客船と怪盗団",
+    "characters": [
+      {
+        "id": "sandoria-k",
+        "name": "サンドリア・K",
+        "iconUrl": "/images/SandoriaK/icon/SandoriaK_icon_1.png",
+        "color": "#32cfcf"
+      }
+    ]
+  },
+  {
+    "title": "Good morning ALL",
+    "characters": [
+      {
+        "id": "sekai-chan",
+        "name": "せかいちゃん",
+        "iconUrl": "/images/SekaiChan/icon/SekaiChan_icon_1.png",
+        "color": "#cedddf"
+      }
+    ]
+  },
+  {
+    "title": "後書きに花束を",
+    "characters": [
+      {
+        "id": "souma-kuniteru",
+        "name": "爽間 国輝",
+        "iconUrl": "/images/SoumaKuniteru/icon/SoumaKuniteru_icon_1.png",
+        "color": "#E85125"
+      }
+    ]
   }
 ]

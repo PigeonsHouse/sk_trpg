@@ -1,0 +1,95 @@
+{
+  "shortId": "KNT",
+  "name": "爽間 国輝",
+  "enName": "SOUMA KUNITERU",
+  "thumbnailUrl": "/images/SoumaKuniteru/SoumaKuniteru_ad.png",
+  "colorPalette": [
+    "#E85125",
+    "#AECED3",
+    "#FFFB00"
+  ],
+  "backgroundUrl": "/images/bg/SoumaKuniteru_bg.jpg",
+  "profile": {
+    "description": "交番のおまわりさん。笑顔がチャームポイント。誰にでも笑顔で挨拶してくれる。\n\n元野球球児。学生時代から野球選手になりたいといった願望はなく、ただ好きで野球をしていただけ。\n文武両道で勉強もそこそこにやっていた。しっかり将来を見据えて勉強も欠かさないタイプ。俗にいう優等生。だが、それを鼻にかけない上持ち前の人柄でクラスの誰とでも仲良くできる。その人柄のまま、順当にまっすぐ大人になった。\n深空 凪咲とは幼馴染の腐れ縁。ずっと特別な感情を抱いていたが、それが恋だと気付いたのは中学生になってから。恋愛感情には鈍感。",
+    "age": "25",
+    "gender": "男性",
+    "height": "186cm",
+    "weight": "83kg",
+    "job": "警察官",
+    "birthday": "ダミー",
+    "from": "東京都"
+  },
+  "sprites": [
+    {
+      "spriteUrl": "/images/SoumaKuniteru/sprite/SoumaKuniteru_sprite_1.png",
+      "iconUrl": "/images/SoumaKuniteru/icon/SoumaKuniteru_icon_1.png"
+    }
+  ],
+  "status": {
+    "type": "CoC6版",
+    "str": 10,
+    "con": 11,
+    "pow": 13,
+    "dex": 13,
+    "app": 10,
+    "siz": 15,
+    "int": 15,
+    "edu": 15,
+    "san": 65,
+    "hp": 13,
+    "mp": 13,
+    "luck": 65,
+    "idea": 75,
+    "knowledge": 75
+  },
+  "skills": {
+    "回避": 76,
+    "組み付き": 75,
+    "こぶし（パンチ）": 70,
+    "投擲": 70,
+    "応急手当": 60,
+    "写真術": 34,
+    "図書館": 70,
+    "目星": 75,
+    "運転(パトカー)": 65,
+    "水泳": 65,
+    "説得": 65,
+    "心理学": 43
+  },
+  "histories": [
+    {
+      "title": "後書きに花束を",
+      "comment": "は～あ、こんなタイミングで告るつもりなかったんだけどなぁ。\nいや、まあ、遅くなったのは俺のせいだけどさ。\n...なんだよ。悪かったな、遅くなって！",
+      "iconUrl": "/images/SoumaKuniteru/icon/SoumaKuniteru_icon_1.png",
+      "companions": [
+        {
+          "name": "深空 凪咲",
+          "enName": "MISORA NAGISA",
+          "color": "#AECED3",
+          "iconUrl": "/images/SaihyouKouga/companions/.png",
+          "nickName": "凪咲"
+        }
+      ]
+    }
+  ],
+  "qaList": [
+    {
+      "answer": "難しいな、特筆して趣味とかはないからな...。\nあ、そうだ。強いて言うなら同僚と草野球するとかか？\n休日が変則的だからなかなか人数集まらないんだけどさ、やっぱやると面白いんだよな。",
+      "iconUrl": "/images/SoumaKuniteru/icon/SoumaKuniteru_icon_1.png"
+    },
+    {
+      "answer": "まあ、早めかな。\n予定までの隙間時間に何かやるの苦手でさ、気づいたら早く待ち合わせ場所に着いているんだよね。俺、時間の使い方下手なんだよなぁ。",
+      "iconUrl": "/images/SoumaKuniteru/icon/SoumaKuniteru_icon_1.png"
+    },
+    {
+      "answer": "我儘なのは百も承知だが、高校あたりから人生やり直したいな。\n...早めにやりたかったことがあるもんで。",
+      "iconUrl": "/images/SoumaKuniteru/icon/SoumaKuniteru_icon_1.png"
+    },
+    {
+      "answer": "世話になった人に片っ端から電話かけるかな。せっかくだから疎遠になった人にも連絡して、最後に声聞いておきたいよな。\n...おいおい、臭いセリフでも言うと思ったかい？",
+      "iconUrl": "/images/SoumaKuniteru/icon/SoumaKuniteru_icon_1.png"
+    }
+  ],
+  "comment": "ダミー",
+  "artGallery": []
+}
