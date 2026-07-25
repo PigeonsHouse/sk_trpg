@@ -236,6 +236,7 @@ export const SpProfileTextBlock = styled.div`
   flex-direction: column;
   gap: 16px;
   width: 100%;
+  box-sizing: border-box;
   background: ${UiColor.white};
   padding: 16px;
 `;
