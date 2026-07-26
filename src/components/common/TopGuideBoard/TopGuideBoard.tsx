@@ -1,22 +1,30 @@
+import { cx } from "@emotion/css";
 import type React from "react";
 import { Link } from "react-router";
-import { SkebUrl, TwitterUrl, Url } from "../../../definitions";
+import { Url } from "../../../definitions";
 import { GoogleFontIcon } from "../GoogleFontIcon";
 import {
   ArrowStyle,
   BigText,
   Container,
+  DisabledMenuItemStyle,
   NoDecorationLinkStyle,
   OneLineContainer,
-  SkebLogo,
   SmallText,
   TextContainer,
   TopContainer,
   TopLabel,
-  XLogo,
 } from "./styled";
 
-const menuContents = [
+type MenuContent = {
+  icon: (size: number) => React.ReactNode;
+  link?: string;
+  label: string;
+  enLabel: string;
+  disabled?: boolean;
+};
+
+const menuContents: MenuContent[] = [
   {
     icon: (size: number) => <GoogleFontIcon iconName="help_outline" size={size} />,
     link: Url.aboutTo("about"),
@@ -30,16 +38,16 @@ const menuContents = [
     enLabel: "Characters",
   },
   {
-    icon: (size: number) => <XLogo size={size} src="/logos/x-logo.svg" />,
-    link: TwitterUrl,
-    label: "X",
-    enLabel: "Twitter",
+    icon: (size: number) => <GoogleFontIcon iconName="info_outline" size={size} />,
+    link: Url.aboutTo("profile"),
+    label: "プロフィール",
+    enLabel: "Profile",
   },
   {
-    icon: (size: number) => <SkebLogo size={size} src="/logos/skeb.svg" />,
-    link: SkebUrl,
-    label: "Skeb",
-    enLabel: "Skeb",
+    icon: (size: number) => <GoogleFontIcon iconName="menu_book" size={size} />,
+    label: "読み物",
+    enLabel: "Coming Soon",
+    disabled: true,
   },
 ];
 
@@ -72,7 +80,6 @@ export const TopGuideBoard: React.FC<TopGuideBoardProps> = ({
         </TopContainer>
       </Link>
       {menuContents.map((content, idx) => {
-        const isExternal = content.link.startsWith("https://");
         const menuContentDom = (
           <OneLineContainer>
             {content.icon(isSp ? 50 : 60)}
@@ -82,17 +89,19 @@ export const TopGuideBoard: React.FC<TopGuideBoardProps> = ({
             </TextContainer>
           </OneLineContainer>
         );
-        return isExternal ? (
-          <a
-            key={idx}
-            href={content.link}
-            className={NoDecorationLinkStyle}
-            target="_blank"
-            onClick={onClick}
-          >
-            {menuContentDom}
-          </a>
-        ) : (
+
+        if (content.disabled || !content.link) {
+          return (
+            <div
+              key={idx}
+              className={cx(NoDecorationLinkStyle, DisabledMenuItemStyle)}
+            >
+              {menuContentDom}
+            </div>
+          );
+        }
+
+        return (
           <Link
             key={idx}
             to={content.link}

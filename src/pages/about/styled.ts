@@ -2,6 +2,7 @@ import { css } from "@emotion/css";
 import styled from "@emotion/styled";
 import {
   BREAK_POINT,
+  DropShadowFilter,
   FontFamily,
   FontWeight,
   UiColor,
@@ -109,6 +110,90 @@ export const SectionTitle = styled.h3`
   font-family: ${FontFamily.Header};
   margin: 0;
   text-align: center;
+`;
+
+export const ScenarioLinkContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+`;
+
+export const ScenarioLinkCaption = styled.p`
+  margin: 0;
+  font-size: 12px;
+  line-height: 20px;
+  color: ${UiColor.black};
+`;
+
+export const ScenarioLinkRow = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+`;
+
+export const ScenarioLinkStyle = css`
+  text-decoration: none;
+  color: inherit;
+`;
+
+export const ScenarioSignBoard = styled.div`
+  width: fit-content;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 28px;
+  border: 4px solid ${UiColor.darkGray};
+  background-color: ${UiColor.yellow};
+  filter: ${DropShadowFilter};
+  transition: transform 0.15s;
+
+  &:hover {
+    transform: scale(1.04);
+  }
+`;
+
+export const ScenarioSignLabelColumn = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const ScenarioSignLabel = styled.span`
+  font-family: ${FontFamily.Header};
+  font-weight: ${FontWeight.Bold};
+  font-size: 20px;
+  letter-spacing: 2px;
+`;
+
+export const ScenarioSignEnLabel = styled.span`
+  font-family: ${FontFamily.Header};
+  font-size: 12px;
+  color: ${UiColor.darkGray};
+  letter-spacing: 1px;
+`;
+
+/**
+ * 路線図ボタンの隣に並べる、駅の構内にある案内ピクトグラム風の飾り
+ */
+export const ScenarioDecorRow = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 12px;
+`;
+
+export const ScenarioDecorTile = styled.div`
+  width: 52px;
+  height: 52px;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid ${UiColor.darkGray};
+  background-color: ${UiColor.black};
+  filter: ${DropShadowFilter};
 `;
 
 export const SnsLinksContainer = styled.div`

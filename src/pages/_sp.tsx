@@ -1,14 +1,15 @@
 import { useEffect } from "react";
-import { useLocation, useNavigate } from "react-router";
+import { Link, useLocation, useNavigate } from "react-router";
 import {
   AnchorWith,
   BrailleBlock,
   CharacterCard,
+  GoogleFontIcon,
   MenuBoard,
   SnsLink,
 } from "../components";
 import { characterSummaries } from "../content";
-import { UiColor } from "../definitions";
+import { UiColor, Url } from "../definitions";
 import { getStaticImageUrl } from "../utils";
 import {
   SpAboutCharactersSection,
@@ -31,6 +32,13 @@ import {
   SpProfileTagsContainer,
   SpProfileTagValue,
   SpProfileTextBlock,
+  SpScenarioLinkCaption,
+  SpScenarioLinkContainer,
+  SpScenarioLinkStyle,
+  SpScenarioSignBoard,
+  SpScenarioSignEnLabel,
+  SpScenarioSignLabel,
+  SpScenarioSignLabelColumn,
   SpSnsContainer,
   SpTopContainer,
   SpTopFilter,
@@ -105,7 +113,7 @@ export const SpTop = () => {
           {...brailleBlockProps}
         />
         <BrailleBlock
-          className={SpBrailleBlockStyle({ bottom: 750 })}
+          className={SpBrailleBlockStyle({ bottom: 850 })}
           {...brailleBlockProps}
         />
         <SpMarginContainer>
@@ -136,7 +144,9 @@ export const SpTop = () => {
             </SpCharacterCardsContainer>
           </SpAboutCharactersSection>
           <SpContactSection>
-            <SpAboutSectionTitle>PROFILE</SpAboutSectionTitle>
+            <AnchorWith id="profile" offset={-116}>
+              <SpAboutSectionTitle>PROFILE</SpAboutSectionTitle>
+            </AnchorWith>
             <SpProfileIcon
               src={getStaticImageUrl("/images/SuzukiKairi/icon.png")}
               alt="鈴木乖離"
@@ -160,6 +170,20 @@ export const SpTop = () => {
                   <SpProfileTagValue>エモシ</SpProfileTagValue>
                 </SpProfileTagRow>
               </SpProfileTagsContainer>
+              <SpScenarioLinkContainer>
+                <SpScenarioLinkCaption>
+                  鈴木乖離の通過済み等シナリオ事情はこちら
+                </SpScenarioLinkCaption>
+                <Link to={Url.scenarios} className={SpScenarioLinkStyle}>
+                  <SpScenarioSignBoard>
+                    <GoogleFontIcon iconName="route" size={32} />
+                    <SpScenarioSignLabelColumn>
+                      <SpScenarioSignLabel>線路図</SpScenarioSignLabel>
+                      <SpScenarioSignEnLabel>Route Map</SpScenarioSignEnLabel>
+                    </SpScenarioSignLabelColumn>
+                  </SpScenarioSignBoard>
+                </Link>
+              </SpScenarioLinkContainer>
             </SpProfileTextBlock>
             <SpSnsContainer>
               <SnsLink variant="x" circleRadius={80} />

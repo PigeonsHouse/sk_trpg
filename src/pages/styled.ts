@@ -1,6 +1,12 @@
 import { css } from "@emotion/css";
 import styled from "@emotion/styled";
-import { FontFamily, FontWeight, SP_MAX_WIDTH, UiColor } from "../definitions";
+import {
+  DropShadowFilter,
+  FontFamily,
+  FontWeight,
+  SP_MAX_WIDTH,
+  UiColor,
+} from "../definitions";
 import { withAlpha } from "../utils";
 
 export const TopPageContainer = styled.div`
@@ -264,4 +270,60 @@ export const SpProfileTagValue = styled.p`
   font-size: 16px;
   line-height: 20px;
   white-space: pre-wrap;
+`;
+
+export const SpScenarioLinkContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+`;
+
+export const SpScenarioLinkCaption = styled.p`
+  margin: 0;
+  font-size: 12px;
+  line-height: 20px;
+  color: ${UiColor.black};
+  text-align: center;
+`;
+
+export const SpScenarioLinkStyle = css`
+  text-decoration: none;
+  color: inherit;
+`;
+
+export const SpScenarioSignBoard = styled.div`
+  width: fit-content;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 28px;
+  border: 4px solid ${UiColor.darkGray};
+  background-color: ${UiColor.yellow};
+  filter: ${DropShadowFilter};
+  transition: transform 0.15s;
+
+  &:hover {
+    transform: scale(1.04);
+  }
+`;
+
+export const SpScenarioSignLabelColumn = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const SpScenarioSignLabel = styled.span`
+  font-family: ${FontFamily.Header};
+  font-weight: ${FontWeight.Bold};
+  font-size: 20px;
+  letter-spacing: 2px;
+`;
+
+export const SpScenarioSignEnLabel = styled.span`
+  font-family: ${FontFamily.Header};
+  font-size: 12px;
+  color: ${UiColor.darkGray};
+  letter-spacing: 1px;
 `;

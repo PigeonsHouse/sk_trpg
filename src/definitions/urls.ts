@@ -5,6 +5,7 @@ export const Url = {
   about: "/about",
   aboutTo: (anchor: string) => `/about#${anchor}`,
   characterTo: (characterId: CharactersId) => `/characters/${characterId}`,
+  scenarios: "/characters/scenarios",
 };
 
 export const TwitterUrl = "https://x.com/Suzuki_sepa";

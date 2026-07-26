@@ -34,6 +34,7 @@ export const CharacterCard: React.FC<CharacterCardProps> = ({
             border: borderWidth
               ? `${borderWidth}px solid ${UiColor.gray}`
               : undefined,
+            backgroundColor: UiColor.gray
           }}
         >
           <img

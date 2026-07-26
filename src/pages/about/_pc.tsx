@@ -1,14 +1,16 @@
 import { useEffect, useMemo, useRef, useState } from "react";
+import { Link } from "react-router";
 import {
   AnchorWith,
   CharacterCard,
+  GoogleFontIcon,
   HeadBoard,
   MenuBoard,
   SnsLink,
   TopGuideBoard,
 } from "../../components";
 import { characterSummaries } from "../../content";
-import { BREAK_POINT } from "../../definitions";
+import { BREAK_POINT, UiColor, Url } from "../../definitions";
 import { getStaticImageUrl } from "../../utils";
 import {
   AboutDescription,
@@ -33,6 +35,16 @@ import {
   ProfileTagsContainer,
   ProfileTagValue,
   ProfileTextBlock,
+  ScenarioDecorRow,
+  ScenarioDecorTile,
+  ScenarioLinkCaption,
+  ScenarioLinkContainer,
+  ScenarioLinkRow,
+  ScenarioLinkStyle,
+  ScenarioSignBoard,
+  ScenarioSignEnLabel,
+  ScenarioSignLabel,
+  ScenarioSignLabelColumn,
   SectionTitle,
   SnsLinksContainer,
   StickyContainer,
@@ -100,7 +112,9 @@ export const PcAbout = () => {
           </CharacterCardsContainer>
         </CharactersSection>
         <ContactSection>
-          <SectionTitle>PROFILE</SectionTitle>
+          <AnchorWith id="profile" offset={-200}>
+            <SectionTitle>PROFILE</SectionTitle>
+          </AnchorWith>
           <ProfileRow>
             <ProfileIconColumn>
               <ProfileIcon
@@ -128,6 +142,52 @@ export const PcAbout = () => {
                     <ProfileTagValue>エモシ</ProfileTagValue>
                   </ProfileTagRow>
                 </ProfileTagsContainer>
+                <ScenarioLinkContainer>
+                  <ScenarioLinkCaption>
+                    鈴木乖離の通過済み等シナリオ事情はこちら
+                  </ScenarioLinkCaption>
+                  <ScenarioLinkRow>
+                    <Link to={Url.scenarios} className={ScenarioLinkStyle}>
+                      <ScenarioSignBoard>
+                        <GoogleFontIcon iconName="route" size={32} />
+                        <ScenarioSignLabelColumn>
+                          <ScenarioSignLabel>線路図</ScenarioSignLabel>
+                          <ScenarioSignEnLabel>Route Map</ScenarioSignEnLabel>
+                        </ScenarioSignLabelColumn>
+                      </ScenarioSignBoard>
+                    </Link>
+                    <ScenarioDecorRow>
+                      <ScenarioDecorTile>
+                        <GoogleFontIcon
+                          iconName="train"
+                          size={28}
+                          color={UiColor.white}
+                        />
+                      </ScenarioDecorTile>
+                      <ScenarioDecorTile>
+                        <GoogleFontIcon
+                          iconName="menu_book"
+                          size={28}
+                          color={UiColor.white}
+                        />
+                      </ScenarioDecorTile>
+                      <ScenarioDecorTile>
+                        <GoogleFontIcon
+                          iconName="confirmation_number"
+                          size={28}
+                          color={UiColor.white}
+                        />
+                      </ScenarioDecorTile>
+                      <ScenarioDecorTile>
+                        <GoogleFontIcon
+                          iconName="directions_walk"
+                          size={28}
+                          color={UiColor.white}
+                        />
+                      </ScenarioDecorTile>
+                    </ScenarioDecorRow>
+                  </ScenarioLinkRow>
+                </ScenarioLinkContainer>
               </ProfileTextBlock>
               <SnsLinksContainer>
                 <SnsLink variant="x" circleRadius={80} />

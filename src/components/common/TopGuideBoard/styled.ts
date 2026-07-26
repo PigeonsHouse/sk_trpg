@@ -23,6 +23,11 @@ export const NoDecorationLinkStyle = css`
   }
 `;
 
+export const DisabledMenuItemStyle = css`
+  cursor: not-allowed;
+  opacity: 0.45;
+`;
+
 export const TopContainer = styled.div`
   margin-left: -16px;
   display: flex;
@@ -44,19 +49,6 @@ export const OneLineContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 8px;
-`;
-
-export const XLogo = styled.img<{ size: number }>`
-  width: ${(props) => props.size - 12}px;
-  height: ${(props) => props.size - 12}px;
-  filter: brightness(0);
-  padding: 6px;
-`;
-
-export const SkebLogo = styled.img<{ size: number }>`
-  width: ${(props) => props.size - 2}px;
-  height: ${(props) => props.size - 2}px;
-  padding: 1px;
 `;
 
 export const TextContainer = styled.div``;
