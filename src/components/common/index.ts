@@ -16,5 +16,6 @@ export * from "./NavigateArrow";
 export * from "./ShortIdBoard";
 export * from "./SingleLight";
 export * from "./SnsLink";
+export * from "./StationSprites";
 export * from "./TopGuideBoard";
 export * from "./TrafficLight";

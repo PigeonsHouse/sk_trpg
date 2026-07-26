@@ -13,6 +13,7 @@ export const TopPageContainer = styled.div`
   position: relative;
   height: 100dvh;
   overflow-x: auto;
+  overflow-y: hidden;
 `;
 
 export const TopBackgroundContainer = styled.div`
@@ -46,6 +47,7 @@ export const TopBackgroundContainer = styled.div`
 `;
 
 export const TopItemContainer = styled.div`
+  position: relative;
   display: flex;
   padding-top: 200px;
   padding-left: 48px;
