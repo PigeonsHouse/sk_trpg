@@ -31,6 +31,10 @@
     {
       "iconUrl": "/images/SomeyaKureno/icon/SomeyaKureno_icon_2.png",
       "spriteUrl": "/images/SomeyaKureno/sprite/SomeyaKureno_sprite_2.png"
+    },
+    {
+      "iconUrl": "/images/SomeyaKureno/icon/SomeyaKureno_icon_3.png",
+      "spriteUrl": "/images/SomeyaKureno/sprite/SomeyaKureno_sprite_3.png"
     }
   ],
   "status": {
@@ -67,6 +71,20 @@
           "enName": "RYUZAKI SAKURA",
           "color": "#2d5079",
           "iconUrl": "/images/SomeyaKureno/companions/Sakura.png",
+          "nickName": "桜ちゃん"
+        }
+      ]
+    },
+    {
+      "title": "禍者",
+      "comment": "私も、少しは上手に立ち回れるようになったかな？\n私にしかできないこと、少し分かってきた、かも。",
+      "iconUrl": "/images/SomeyaKureno/icon/SomeyaKureno_icon_3.png",
+      "companions": [
+        {
+          "name": "竜崎 桜",
+          "enName": "RYUZAKI SAKURA",
+          "color": "#2d5079",
+          "iconUrl": "/images/SomeyaKureno/companions/Sakura_2.png",
           "nickName": "桜ちゃん"
         }
       ]
