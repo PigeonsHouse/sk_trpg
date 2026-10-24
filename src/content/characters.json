@@ -177,12 +177,5 @@
     "enName": "SAIHYOU KOUGA",
     "thumbnailUrl": "/images/SaihyouKouga/SaihyouKouga_ad.png",
     "color": "#1B1B1C"
-  },
-  {
-    "id": "shikimori-kanemitsu",
-    "name": "式護 曲満",
-    "enName": "SHIKIMORI KANEMITSU",
-    "thumbnailUrl": "/images/ShikimoriKanemitsu/ShikimoriKanemitsu_ad.png",
-    "color": "#839E96"
   }
 ]
