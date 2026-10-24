@@ -286,5 +286,53 @@
         "color": "#E85125"
       }
     ]
+  },
+  {
+    "title": "ガシャン！",
+    "characters": [
+      {
+        "id": "sen-kikusaburou",
+        "name": "千 菊三郎",
+        "iconUrl": "/images/SenKikusaburou/icon/SenKikusaburou_icon_0.png",
+        "color": "#A21211"
+      }
+    ]
+  },
+  {
+    "title": "鰯と柊",
+    "characters": [
+      {
+        "id": "shigureba-karasu",
+        "name": "慈雨羽 鴉",
+        "iconUrl": "/images/ShigurebaKarasu/icon/ShigurebaKarasu_icon_1.png",
+        "color": "#0E2634"
+      }
+    ]
+  },
+  {
+    "title": "マジックブルーの境界線",
+    "characters": [
+      {
+        "id": "serifune-kokone",
+        "name": "台詞根 ここね",
+        "iconUrl": "/images/SerifuneKokone/icon/SerifuneKokone_icon_0.png",
+        "color": "#FEB43F"
+      }
+    ]
+  },
+  {
+    "title": "イザナミの棺",
+    "characters": [
+      {
+        "id": "shikimori-kanemitsu",
+        "name": "式護 曲満",
+        "iconUrl": "/images/ShikimoriKanemitsu/icon/ShikimoriKanemitsu_icon_0.png",
+        "color": "#839E96"
+      }
+    ]
+  },
+  {
+    "title": "OOしないと出られない部屋",
+    "characters": []
   }
 ]

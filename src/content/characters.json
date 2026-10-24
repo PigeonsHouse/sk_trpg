@@ -198,5 +198,33 @@
     "enName": "SOUMA KUNITERU",
     "thumbnailUrl": "/images/SoumaKuniteru/SoumaKuniteru_ad.png",
     "color": "#E85125"
+  },
+  {
+    "id": "sen-kikusaburou",
+    "name": "千 菊三郎",
+    "enName": "SEN KIKUSABUROU",
+    "thumbnailUrl": "/images/SenKikusaburou/SenKikusaburou_ad.png",
+    "color": "#A21211"
+  },
+  {
+    "id": "shigureba-karasu",
+    "name": "慈雨羽 鴉",
+    "enName": "SHIGUREBA KARASU",
+    "thumbnailUrl": "/images/ShigurebaKarasu/ShigurebaKarasu_ad.png",
+    "color": "#0E2634"
+  },
+  {
+    "id": "serifune-kokone",
+    "name": "台詞根 ここね",
+    "enName": "SERIFUNE KOKONE",
+    "thumbnailUrl": "/images/SerifuneKokone/SerifuneKokone_ad.png",
+    "color": "#FEB43F"
+  },
+  {
+    "id": "shikimori-kanemitsu",
+    "name": "式護 曲満",
+    "enName": "SHIKIMORI KANEMITSU",
+    "thumbnailUrl": "/images/ShikimoriKanemitsu/ShikimoriKanemitsu_ad.png",
+    "color": "#839E96"
   }
 ]

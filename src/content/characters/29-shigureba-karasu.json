@@ -1,0 +1,108 @@
+{
+  "shortId": "KRS",
+  "name": "慈雨羽 鴉",
+  "enName": "SHIGUREBA KARASU",
+  "thumbnailUrl": "/images/ShigurebaKarasu/ShigurebaKarasu_ad.png",
+  "colorPalette": [
+    "#0E2634",
+    "#040B29",
+    "#E1DD1F"
+  ],
+  "backgroundUrl": "/images/bg/ShigurebaKarasu_bg.jpg",
+  "profile": {
+    "description": "",
+    "age": 27,
+    "gender": "男性",
+    "height": "180cm",
+    "weight": "68kg",
+    "job": "教祖",
+    "birthday": "9月6日",
+    "from": "???"
+  },
+  "sprites": [
+    {
+      "iconUrl": "/images/ShigurebaKarasu/icon/ShigurebaKarasu_icon_1.png",
+      "spriteUrl": "/images/ShigurebaKarasu/sprite/ShigurebaKarasu_sprite_1.png"
+    },
+    {
+      "iconUrl": "/images/ShigurebaKarasu/icon/ShigurebaKarasu_icon_2.png",
+      "spriteUrl": "/images/ShigurebaKarasu/sprite/ShigurebaKarasu_sprite_2.png"
+    },
+    {
+      "iconUrl": "/images/ShigurebaKarasu/icon/ShigurebaKarasu_icon_3.png",
+      "spriteUrl": "/images/ShigurebaKarasu/sprite/ShigurebaKarasu_sprite_3.png"
+    },
+    {
+      "iconUrl": "/images/ShigurebaKarasu/icon/ShigurebaKarasu_icon_4.png",
+      "spriteUrl": "/images/ShigurebaKarasu/sprite/ShigurebaKarasu_sprite_4.png"
+    }
+  ],
+  "status": {
+    "type": "CoC6版",
+    "str": 11,
+    "con": 11,
+    "pow": 13,
+    "dex": 10,
+    "app": 16,
+    "siz": 12,
+    "int": 10,
+    "edu": 12,
+    "hp": 12,
+    "mp": 13,
+    "san": 65,
+    "idea": 50,
+    "luck": 65,
+    "knowledge": 60
+  },
+  "skills": {
+    "聞き耳": 75,
+    "精神分析": 71,
+    "目星": 75,
+    "信用": 85,
+    "心理学": 75,
+    "天文学": 31
+  },
+  "histories": [
+    {
+      "title": "鰯と柊",
+      "comment": "",
+      "iconUrl": "/images/ShigurebaKarasu/icon/ShigurebaKarasu_icon_1.png",
+      "companions": [
+        {
+          "name": "",
+          "enName": "",
+          "color": "#000000",
+          "iconUrl": "/images/ShigurebaKarasu/companions/companion_1.png",
+          "nickName": ""
+        }
+      ]
+    }
+  ],
+  "qaList": [
+    {
+      "iconUrl": "/images/ShigurebaKarasu/icon/ShigurebaKarasu_icon_1.png",
+      "answer": ""
+    },
+    {
+      "iconUrl": "/images/ShigurebaKarasu/icon/ShigurebaKarasu_icon_1.png",
+      "answer": ""
+    },
+    {
+      "iconUrl": "/images/ShigurebaKarasu/icon/ShigurebaKarasu_icon_1.png",
+      "answer": ""
+    },
+    {
+      "iconUrl": "/images/ShigurebaKarasu/icon/ShigurebaKarasu_icon_1.png",
+      "answer": ""
+    }
+  ],
+  "comment": "両ロスしました！！！！！！！！狂う！！！！！！！！！実際狂ってる。めっちゃ狂った。",
+  "artGallery": [
+    "/images/ShigurebaKarasu/picture/picture_1.png",
+    "/images/ShigurebaKarasu/picture/picture_2.png",
+    "/images/ShigurebaKarasu/picture/picture_3.png",
+    "/images/ShigurebaKarasu/picture/picture_4.png",
+    "/images/ShigurebaKarasu/picture/picture_5.png",
+    "/images/ShigurebaKarasu/picture/picture_6.png"
+  ]
+}

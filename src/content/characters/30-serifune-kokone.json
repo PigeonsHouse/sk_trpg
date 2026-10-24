@@ -1,0 +1,95 @@
+{
+  "shortId": "KKN",
+  "name": "台詞根 ここね",
+  "enName": "SERIFUNE KOKONE",
+  "thumbnailUrl": "/images/SerifuneKokone/SerifuneKokone_ad.png",
+  "colorPalette": [
+    "#FEB43F",
+    "#F09D49",
+    "#FEF200"
+  ],
+  "backgroundUrl": "/images/bg/SerifuneKokone_bg.jpg",
+  "profile": {
+    "description": "漫画研究部所属の一年生。\n漫画が大好き。絵を描くのも物語を考えるのもどっちもたのしい。\n漫画の世界に生きていると思っているし、どんなキャラクターにだってなれると信じている。\nだから漫画を描き続ける。\n\n「『やあ諸君！私の名前はアルマヒド3世！私が来たからもう安心だ！』\n　…あ。台詞ね、ここね。」\n（吹き出しボードを指さして、今の発言が吹き出しに入ることを示している。）",
+    "age": "17",
+    "gender": "女性",
+    "height": "146cm",
+    "weight": "39kg",
+    "job": "高校1年生",
+    "birthday": "5月5日"
+  },
+  "sprites": [
+    {
+      "iconUrl": "/images/SerifuneKokone/icon/SerifuneKokone_icon_0.png",
+      "spriteUrl": "/images/SerifuneKokone/sprite/SerifuneKokone_sprite_0.png"
+    },
+    {
+      "iconUrl": "/images/SerifuneKokone/icon/SerifuneKokone_icon_1.png",
+      "spriteUrl": "/images/SerifuneKokone/sprite/SerifuneKokone_sprite_1.png"
+    }
+  ],
+  "status": {
+    "type": "エモクロア",
+    "身体": 2,
+    "器用": 6,
+    "精神": 4,
+    "五感": 5,
+    "知力": 4,
+    "魅力": 2,
+    "社会": 2,
+    "運勢": 3
+  },
+  "skills": {
+    "検索": "Lv.1",
+    "直感": "Lv.2",
+    "観察眼": "Lv.3",
+    "聞き耳": "Lv.1",
+    "専門知識:美術解剖学": "Lv.1",
+    "事情通": "Lv.1",
+    "業界:コミック": "Lv.1",
+    "芸術:漫画": "Lv.2"
+  },
+  "histories": [
+    {
+      "title": "マジックブルーの境界線",
+      "comment": "『ふっふっふ、我々の冒険はこれからだ！』\n...ふっふっふ、この漫画、もう少しで完成しそう。",
+      "iconUrl": "/images/SerifuneKokone/icon/SerifuneKokone_icon_0.png",
+      "companions": [
+        {
+          "name": "",
+          "enName": "",
+          "color": "#000000",
+          "iconUrl": "/images/SerifuneKokone/companions/companion_1.png",
+          "nickName": ""
+        },
+        {
+          "name": "",
+          "enName": "",
+          "color": "#000000",
+          "iconUrl": "/images/SerifuneKokone/companions/companion_2.png",
+          "nickName": ""
+        }
+      ]
+    }
+  ],
+  "qaList": [
+    {
+      "iconUrl": "/images/SerifuneKokone/icon/SerifuneKokone_icon_0.png",
+      "answer": "『ふっ、休みだと？我が拳に休息はない。今日も己を鍛え、強くなるのみ…！』\n（タブレットには汗だくで拳を握る少年漫画の主人公。ここね自身も真剣な顔でぐっと拳を握ってみせる）"
+    },
+    {
+      "iconUrl": "/images/SerifuneKokone/icon/SerifuneKokone_icon_0.png",
+      "answer": "『遅刻など、三流のすることだ。我は常に先んじて行く』\n（タブレットには目を細めた剣士の横顔。ここねは涼しい顔で静かに腕を組んでいる）"
+    },
+    {
+      "iconUrl": "/images/SerifuneKokone/icon/SerifuneKokone_icon_0.png",
+      "answer": "『叶うなら、ただ一つ…大好きなみんなと、この時間がずっと続きますように』\n（タブレットには頬を染めた少女漫画のヒロイン。ここねは両手を胸の前できゅっと組んでいる）"
+    },
+    {
+      "iconUrl": "/images/SerifuneKokone/icon/SerifuneKokone_icon_0.png",
+      "answer": "『この世界に終焉をもたらすのは我...だが、後悔はしない。これが、我の覇道なり。』\n（タブレットには不敵に笑うダークヒーロー。ここねは前髪で片目を隠すように俯いている）"
+    }
+  ],
+  "comment": "",
+  "artGallery": []
+}

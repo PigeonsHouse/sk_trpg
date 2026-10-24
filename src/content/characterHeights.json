@@ -1,5 +1,12 @@
 [
   {
+    "id": "serifune-kokone",
+    "name": "台詞根 ここね",
+    "height": "146cm",
+    "spriteUrl": "/images/SerifuneKokone/sprite/SerifuneKokone_sprite_0.png",
+    "color": "#FEB43F"
+  },
+  {
     "id": "kanade-kotoko",
     "name": "奏 琴子",
     "height": "147cm",
@@ -112,6 +119,20 @@
     "color": "#187178"
   },
   {
+    "id": "sen-kikusaburou",
+    "name": "千 菊三郎",
+    "height": "173cm",
+    "spriteUrl": "/images/SenKikusaburou/sprite/SenKikusaburou_sprite_0.png",
+    "color": "#A21211"
+  },
+  {
+    "id": "shikimori-kanemitsu",
+    "name": "式護 曲満",
+    "height": "175cm",
+    "spriteUrl": "/images/ShikimoriKanemitsu/sprite/ShikimoriKanemitsu_sprite_0.png",
+    "color": "#839E96"
+  },
+  {
     "id": "shiomi-ken",
     "name": "潮海 犍",
     "height": "176cm",
@@ -124,6 +145,13 @@
     "height": "178cm",
     "spriteUrl": "/images/SaihyouKouga/sprite/SaihyouKouga_sprite_0.png",
     "color": "#1B1B1C"
+  },
+  {
+    "id": "shigureba-karasu",
+    "name": "慈雨羽 鴉",
+    "height": "180cm",
+    "spriteUrl": "/images/ShigurebaKarasu/sprite/ShigurebaKarasu_sprite_1.png",
+    "color": "#0E2634"
   },
   {
     "id": "scarlet-krieger",

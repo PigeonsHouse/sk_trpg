@@ -56,7 +56,14 @@
       "title": "Good morning ALL",
       "comment": "ひっせい、みてみて！きれいな石をみつけたの！\nしょうがないな～、これひっせいにあげるよ！",
       "iconUrl": "/images/SekaiChan/icon/SekaiChan_icon_1.png",
-      "companions": []
+      "companions": [
+        {
+          "name": "芥川 畢生",
+          "enName": "AKUTAGAWA HISSEI",
+          "color": "#211816",
+          "iconUrl": "/images/SekaiChan/companions/Hissei.png",
+          "nickName": "ひっせい"
+        }]
     }
   ],
   "qaList": [

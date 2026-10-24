@@ -27,6 +27,10 @@ export const CharactersId = {
   SandoriaK: "sandoria-k",
   SekaiChan: "sekai-chan",
   SoumaKuniteru: "souma-kuniteru",
+  SenKikusaburou: "sen-kikusaburou",
+  ShigurebaKarasu: "shigureba-karasu",
+  SerifuneKokone: "serifune-kokone",
+  ShikimoriKanemitsu: "shikimori-kanemitsu",
 } as const;
 
 export type CharactersId = (typeof CharactersId)[keyof typeof CharactersId];

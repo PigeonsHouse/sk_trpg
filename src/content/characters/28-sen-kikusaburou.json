@@ -1,0 +1,100 @@
+{
+  "shortId": "KKS",
+  "name": "千 菊三郎",
+  "enName": "SEN KIKUSABUROU",
+  "thumbnailUrl": "/images/SenKikusaburou/SenKikusaburou_ad.png",
+  "colorPalette": [
+    "#A21211",
+    "#507874",
+    "#FFE208"
+  ],
+  "backgroundUrl": "/images/bg/SenKikusaburou_bg.jpg",
+  "profile": {
+    "description": "",
+    "age": 23,
+    "gender": "男性",
+    "height": "173cm",
+    "weight": "59kg",
+    "job": "作家",
+    "birthday": "9月9日",
+    "from": "東京都"
+  },
+  "sprites": [
+    {
+      "iconUrl": "/images/SenKikusaburou/icon/SenKikusaburou_icon_0.png",
+      "spriteUrl": "/images/SenKikusaburou/sprite/SenKikusaburou_sprite_0.png"
+    }
+  ],
+  "status": {
+    "type": "CoC7版",
+    "str": 45,
+    "con": 50,
+    "pow": 45,
+    "dex": 50,
+    "app": 75,
+    "siz": 55,
+    "int": 80,
+    "edu": 65,
+    "hp": 10,
+    "mp": 9,
+    "san": 45,
+    "idea": 80,
+    "luck": 40,
+    "knowledge": 65
+  },
+  "skills": {
+    "近接戦闘(刀剣)": 80,
+    "図書館": 80,
+    "目星": 80,
+    "信用": 55,
+    "説得": 70,
+    "母国語": 85,
+    "オカルト": 85,
+    "心理学": 40
+  },
+  "histories": [
+    {
+      "title": "ガシャン！",
+      "comment": "",
+      "iconUrl": "/images/SenKikusaburou/icon/SenKikusaburou_icon_0.png",
+      "companions": [
+        {
+          "name": "",
+          "enName": "",
+          "color": "#000000",
+          "iconUrl": "/images/SenKikusaburou/companions/companion_1.png",
+          "nickName": ""
+        },
+        {
+          "name": "",
+          "enName": "",
+          "color": "#000000",
+          "iconUrl": "/images/SenKikusaburou/companions/companion_2.png",
+          "nickName": ""
+        }
+      ]
+    }
+  ],
+  "qaList": [
+    {
+      "iconUrl": "/images/SenKikusaburou/icon/SenKikusaburou_icon_0.png",
+      "answer": ""
+    },
+    {
+      "iconUrl": "/images/SenKikusaburou/icon/SenKikusaburou_icon_0.png",
+      "answer": ""
+    },
+    {
+      "iconUrl": "/images/SenKikusaburou/icon/SenKikusaburou_icon_0.png",
+      "answer": ""
+    },
+    {
+      "iconUrl": "/images/SenKikusaburou/icon/SenKikusaburou_icon_0.png",
+      "answer": ""
+    }
+  ],
+  "comment": "",
+  "artGallery": [
+    "/images/SenKikusaburou/picture/picture_1.png"
+  ]
+}
