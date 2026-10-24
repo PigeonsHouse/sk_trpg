@@ -1,0 +1,122 @@
+{
+  "shortId": "KNM",
+  "name": "式護 曲満",
+  "enName": "SHIKIMORI KANEMITSU",
+  "thumbnailUrl": "/images/ShikimoriKanemitsu/ShikimoriKanemitsu_ad.png",
+  "colorPalette": [
+    "#839E96",
+    "#624A6E",
+    "#F9EC07"
+  ],
+  "backgroundUrl": "/images/bg/ShikimoriKanemitsu_bg.jpg",
+  "profile": {
+    "description": "刑事部所属の警官。職位は警部補。\n警官とは思えないほどに素行が悪い（例：極度のヘビースモーカー、女好きで勤務中にナンパ、捜査と嘘をつきパチンコ屋に入店）。\nしかし、腕は確かであるからか順調に昇進をしている。\n\n軽薄で掴みどころがなく、自身のパーソナルスペースに踏み入られないよう人との距離を作る。\n一方、どこか人を勘繰り、深層心理を引き出そうとしてくる。",
+    "age": 27,
+    "gender": "男性",
+    "height": "175cm",
+    "weight": "???",
+    "job": "陰陽師",
+    "birthday": "4月3日",
+    "from": "兵庫県"
+  },
+  "sprites": [
+    {
+      "iconUrl": "/images/ShikimoriKanemitsu/icon/ShikimoriKanemitsu_icon_0.png",
+      "spriteUrl": "/images/ShikimoriKanemitsu/sprite/ShikimoriKanemitsu_sprite_0.png"
+    },
+    {
+      "iconUrl": "/images/ShikimoriKanemitsu/icon/ShikimoriKanemitsu_icon_1.png",
+      "spriteUrl": "/images/ShikimoriKanemitsu/sprite/ShikimoriKanemitsu_sprite_1.png"
+    },
+    {
+      "iconUrl": "/images/ShikimoriKanemitsu/icon/ShikimoriKanemitsu_icon_2.png",
+      "spriteUrl": "/images/ShikimoriKanemitsu/sprite/ShikimoriKanemitsu_sprite_2.png"
+    }
+  ],
+  "status": {
+    "type": "CoC7版",
+    "str": 60,
+    "con": 55,
+    "pow": 60,
+    "dex": 70,
+    "app": 85,
+    "siz": 65,
+    "int": 75,
+    "edu": 90,
+    "hp": 12,
+    "mp": 12,
+    "san": 60,
+    "idea": 75,
+    "luck": 65,
+    "knowledge": 90
+  },
+  "skills": {
+    "回避": 70,
+    "近接戦闘(槍)": 75,
+    "陰陽道": 77,
+    "応急手当": 70,
+    "聞き耳": 60,
+    "隠密": 70,
+    "図書館": 50,
+    "目星": 75,
+    "信用": 35,
+    "魅惑": 75,
+    "心理学": 65
+  },
+  "histories": [
+    {
+      "title": "イザナミの棺",
+      "comment": "なァに、俺達ァ共犯者だよ。罪も折半ってワケだ。ちゃーんと半分はオタクが持てよ？",
+      "iconUrl": "/images/ShikimoriKanemitsu/icon/ShikimoriKanemitsu_icon_0.png",
+      "companions": [
+        {
+          "name": "温羅 嶽丸",
+          "enName": "URA TAKEMARU",
+          "color": "#E5A4A2",
+          "iconUrl": "/images/ShikimoriKanemitsu/companions/onchan.png",
+          "nickName": "おんちゃん"
+        }
+      ]
+    },
+    {
+      "title": "OOしないと出られない部屋",
+      "comment": "ハーン、俺ちゃん疲れてるのかねぇ...温ちゃん、今日もう帰らね？",
+      "iconUrl": "/images/ShikimoriKanemitsu/icon/ShikimoriKanemitsu_icon_0.png",
+      "companions": [
+        {
+          "name": "温羅 嶽丸",
+          "enName": "URA TAKEMARU",
+          "color": "#E5A4A2",
+          "iconUrl": "/images/ShikimoriKanemitsu/companions/onchan.png",
+          "nickName": "おんちゃん"
+        }
+      ]
+    }
+  ],
+  "qaList": [
+    {
+      "iconUrl": "/images/ShikimoriKanemitsu/icon/ShikimoriKanemitsu_icon_0.png",
+      "answer": "俺ちゃんのような高潔な人間は～...優雅に目覚めてコーヒーなんぞ嗜みながら読書...いや、ちょっとばかし散歩してフラァ～っと美術館に立ち寄る、の方が文化人っぽくて良いかァ？\n※正解はパチンコ、時々キャバクラ。"
+    },
+    {
+      "iconUrl": "/images/ShikimoriKanemitsu/icon/ShikimoriKanemitsu_icon_0.png",
+      "answer": "そりゃぁレディを待たせるわけにはいきませんので、早くいくに決まってるじゃないですか～！\n※女性相手以外は時間ぴったりに来がち。"
+    },
+    {
+      "iconUrl": "/images/ShikimoriKanemitsu/icon/ShikimoriKanemitsu_icon_0.png",
+      "answer": "う～ん、世界平和？\nありきたりに聞こえるカモだけどさァ、俺ちゃんの仕事がなくなってくれる世界になって欲しいモンよねェ～。早く帰らせてくれよォ～！"
+    },
+    {
+      "iconUrl": "/images/ShikimoriKanemitsu/icon/ShikimoriKanemitsu_icon_0.png",
+      "answer": "ハァン、なんも思いつかね～なァ。仕事なくなったらいよいよ暇だろうし、交通整備でもやっとこうか？...いや、死ぬ間際に交通整備は流石にヤかも！"
+    }
+  ],
+  "comment": "かねち～！本当に最高の男だった～！ここぞというときにバッチリ決めてくれて本当に偉かった。かっこいいよ～！\n\n卓の1か月以上前から入念に準備をしていった子なので、シナリオ開始後も（心境の変化はあれど）軸がブレることがなく非常に納得感がありました。\nあと卓を構成するすべてが最高だったため、卓の満足感がすんごいのなんの。（同卓者、相方PC、シナリオetc…）皆さんのおかげで最高に楽しませてもらえたなぁと感じています。こっからも一緒に遊ぼうな、かねち！",
+  "artGallery": [
+    "/images/ShikimoriKanemitsu/picture/picture_1.png",
+    "/images/ShikimoriKanemitsu/picture/picture_2.png",
+    "/images/ShikimoriKanemitsu/picture/picture_3.png",
+    "/images/ShikimoriKanemitsu/picture/picture_4.png",
+    "/images/ShikimoriKanemitsu/picture/picture_5.png"
+  ]
+}
